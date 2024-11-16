@@ -1,0 +1,29 @@
+#org @EventScript_Borgo_Ponente_4_0_tileA_text1
+Mamma: Ciao [PLAYER],\pfinalmente ti sei svegliato,\nspero tu abbia dormito bene.\pTuo fratello Crispy ti stava\ncercando, mi ha detto qualcosa\lriguardo il percorso 1.
+
+#org @EventScript_Borgo_Ponente_4_0_mom_text1
+Mamma: Ciao [PLAYER], sei andato a\nparlare con Crispy?
+
+#org @EventScript_Borgo_Ponente_4_0_mom_text2
+Mamma: Ciao [PLAYER], tu e i tuoi\nPoke'mon sembrate molto stanchi,\lperche' non riposate un po'?
+
+#org @EventScript_Borgo_Ponente_4_0_mom_text3
+Mamma: Adesso si che avete un'aria\nriposata e pronta all'avventura...\pFate buon viaggio!
+
+#org @Borgo_Ponente_4_0_Sign0_text1
+In TV c'e' un documentario sui\nPoke'mon di tipo drago.
+
+#org @EventScript_Borgo_Ponente_4_0_mom_text4
+Mamma: Ciao [PLAYER], come sta\nandando la tua avventura?
+
+#org @EventScript_Borgo_Ponente_4_0_mom_text5
+[PLAYER]: ...
+
+#org @EventScript_Borgo_Ponente_4_0_mom_text6
+Mamma: Wow, incredibile!\pHai davvero affrontato il Team\nRocket assieme a tuo fratello?\pOrmai non sei piu' il piccolo\nbambino di una volta...\pCome mamma devo riconoscerlo e non\nimpedirti di proseguire il tuo\lpercorso...\pPrendi queste!
+
+#org @EventScript_Borgo_Ponente_4_0_mom_text7
+[PLAYER] riceve le Scarpe da Corsa!
+
+#org @EventScript_Borgo_Ponente_4_0_mom_text8
+Mamma: D'ora in poi puoi premere B\nper correre piu' veloce!

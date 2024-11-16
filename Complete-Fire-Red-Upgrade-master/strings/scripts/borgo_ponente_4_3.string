@@ -1,0 +1,62 @@
+#org @Borgo_Ponente_4_3_MapScriptOnFrame_text1
+Prof Oak: Ciao ragazzi, a cosa\ndevo questa visita?
+
+#org @Borgo_Ponente_4_3_MapScriptOnFrame_text2
+Brandon: Salve Prof Oak,  siamo\nvenuti qui per farle vedere il\lPoke'mon che [PLAYER] ha catturato\lnel Percorso 11.
+
+#org @Borgo_Ponente_4_3_MapScriptOnFrame_text3
+Prof. Oak: Ma certo, vediamo\lsubito di che Poke'mon si tratta...
+
+#org @Borgo_Ponente_4_3_MapScriptOnFrame_text4
+Prof Oak: Wow incredibile, un Axew!\pHai avuto davvero molta fortuna,\ngli esemplari di Axew sono\lrarissimi, addirittura non\lpensavo ce ne fossero nel Percorso1.\pAd ogni modo questo esemplare\nsembra molto in salute ed\laffezionato a te, sara' sicuramente\lun ottimo compagno di viaggio [PLAYER].
+
+#org @Borgo_Ponente_4_3_MapScriptOnFrame_text5
+Prof Oak: Ora che [PLAYER] ha un\nPoke'mon suppongo che anche tu\lBrandon ne voglia uno, non e' vero?
+
+#org @Borgo_Ponente_4_3_MapScriptOnFrame_text6
+Brandon: Si esatto!!!\nNon sto piu' nella pelle!
+
+#org @Borgo_Ponente_4_3_MapScriptOnFrame_text7
+Prof Oak: Non preoccuparti, penso\ldi avere il Poke'mon che fa proprio\lal caso tuo...
+
+#org @Borgo_Ponente_4_3_MapScriptOnFrame_text8
+Prof Oak: Ecco Brandon, tieni!
+
+#org @Borgo_Ponente_4_3_MapScriptOnFrame_text9
+Brandon riceve Deino!
+
+#org @Borgo_Ponente_4_3_MapScriptOnFrame_text10
+Brandon: Wooow questo Poke'mon\nsembra fortissimo!\pGrazie mille Prof Oak.
+
+#org @Borgo_Ponente_4_3_MapScriptOnFrame_text11
+Prof Oak: e' propio cosi' Brandon\nsono convinto che tu e il tuo Deino\lsarete degli ottimi rivali per\l[PLAYER] e il suo Axew!
+
+#org @Borgo_Ponente_4_3_MapScriptOnFrame_text12
+[PLAYER]: ...
+
+#org @Borgo_Ponente_4_3_MapScriptOnFrame_text13
+Prof. Oak: ...Perche' non vi sfidate?\pSono convinto che una bella sfida\nvi aiuterebbe ad entrare in\lsintonia con i vostri Poke'mon.
+
+#org @Borgo_Ponente_4_3_MapScriptOnFrame_text14
+Brandon: Ma certo!\nAspettavo questo momento\lda tantissimo tempo [PLAYER]!\pNon c'e' tempo da perdere,\nvado subito ad allenarmi con\lil mio Deino nel Percorso 11.\p[PLAYER], ti aspetto li'!
+
+#org @Borgo_Ponente_4_3_MapScriptOnFrame_text15
+Prof. Oak: Quel Brandon sembra\ndavvero una testa calda,\lpero' sono sicuro che diventerete\lgrandi amici.\pOra perche' non vai a sfidarlo nel\nPercorso 11?\pDevo finire un esperimento in\nlaboratorio e poi verro'\lanche io da quelli parti,\lspero solo non troppo tardi da\lperdermi l'incontro...
+
+#org @EventScript_Borgo_Ponente_4_3_NPC1_text1
+Prof. Oak: Ciao [PLAYER],\ncome procede con il tuo Pokedex?
+
+#org @EventScript_Borgo_Ponente_4_3_NPC0_text1
+Sono l'assistente del Prof Oak\nda molti anni ormai.\pQuesto lavoro e' un sogno per me!
+
+#org @Borgo_Ponente_4_3_Sign0_text1
+Questi scaffali contengono\nmoltissimi libri sui Poke'mon.
+
+#org @Borgo_Ponente_4_3_Sign1_text1
+Sembrano dei macchinari molto\navanzati per allevare i Poke'mon!
+
+#org @Borgo_Ponente_4_3_Sign2_text1
+Questi devono essere gli\nappunti personali del Prof Oak.
+
+#org @Borgo_Ponente_4_3_Sign3_text1
+Questo macchinario ha molte\nlucine, meglio non toccare\lniente...

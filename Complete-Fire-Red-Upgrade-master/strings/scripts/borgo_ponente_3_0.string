@@ -1,0 +1,62 @@
+#org @Borgo_Ponente_Sign0
+Casa di [PLAYER].
+
+#org @Borgo_Ponente_Sign1
+Casa di Brandon.
+
+#org @Borgo_Ponente_Sign2
+[ARROW_RIGHT] Laboratorio del Prof Oak.
+
+#org @Borgo_Ponente_Sign3
+Laboratorio del Prof Oak\nIl miglior esperto di Poke'mon\lal mondo.
+
+#org @Borgo_Ponente_Sign4
+[ARROW_RIGHT] Percorso 11.
+
+#org @Borgo_Ponente_Sign5
+Borgo Ponente:\pDove la brezza montana non\nsmette mai di soffiare.
+
+#org @Borgo_Ponente_Sign6
+Borgo Ponente:\nU Percorso 1\lR Percorso 11\lD Sentiero Cascabruma
+
+#org @Borgo_Ponente_3_0_crispy1_text1
+Crispy: Ciao [PLAYER], da quanto tempo!\pOrmai sei diventato grande e quindi\nanche pronto ad iniziare la tua\lavventura nel mondo dei pokemon.\pPerche' non vai a chiamare il\nnostro vicino di casa Brandon?\pVoglio far vedere una cosa a\nentrambi.
+
+#org @Borgo_Ponente_Brandon_text1
+Brandon: Eccoti qui [PLAYER],\nnon sto piu' nella pelle!
+
+#org @Borgo_Ponente_Crispy_text1
+Crispy: Sei andato a chiamare\nBrandon?\pMi sembra abiti in una delle case\npiu' a Nord di Borgo Ponente.
+
+#org @Borgo_Ponente_Crispy_text2
+Crispy: Eccoti [PLAYER],\nfinalmente sei arrivato anche te,\lBrandon non sta piu' nella pelle!\pOrmai avete entrambi 16 anni,\ndunque e' giunta l'ora anche per\lvoi di iniziare il vostro viaggio\lnella regione di Eyros...
+
+#org @Borgo_Ponente_Crispy_text3
+Brandon: Non ci credo,\ndavvero stai per regalarci\lun Poke'mon?!?
+
+#org @Borgo_Ponente_Crispy_text4
+Crispy: Eehm, purtroppo no,\nnon avrei nessun Poke'mon da\ldarvi e in piu' non spetta a me...\pPero' sono qui per mostrarvi come\ncatturarne uno.
+
+#org @Borgo_Ponente_Crispy_text5
+Brandon: Evviva!
+
+#org @Borgo_Ponente_Crispy_text6
+Crispy: Bene, allora andiamo!
+
+#org @Borgo_Ponente_Crispy_text7
+Crispy: Eccoci, di solito i Poke'mon\nsi nascondono nell'erba alta,\lcome quella in cui sono ora.\pNon ci resta che aspett...
+
+#org @EventScript_Borgo_Ponente_3_0_tile0_P1_text1
+[PLAYER]: Non posso addentrarmi\nin un Percorso senza Poke'mon!\pMeglio andare a cercare\nBrandon.
+
+#org @EventScript_Borgo_Ponente_3_0_tile0_P1_text2
+[PLAYER]: Non posso andare qui,\ndevo andare nel Percorso 11 a\lsfidare Brandon!
+
+#org @Borgo_Ponente_NPC1_text1
+Vorrei andare nel Laboratorio del\nProf Oak per chiedergli un\lPoke'mon, ma non ce la faccio...\p...Sono troppo timido...
+
+#org @Borgo_Ponente_NPC0_text1
+Non c'e' nulla di piu' rilassante che\npassare le giornate all'aperto.\pAbitare a Borgo Ponente e' un sogno.
+
+#org @Borgo_Ponente_OakDoot_text1
+La porta e' chiusa.

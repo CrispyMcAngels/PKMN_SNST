@@ -1,0 +1,23 @@
+#org @EventScript_Borgo_Ponente_4_2_text1
+Brandon: Ciao [PLAYER]!\pChe piacere vederti,\ncosa ti porta da queste parti?
+
+#org @EventScript_Borgo_Ponente_4_2_text2
+[PLAYER]: ...
+
+#org @EventScript_Borgo_Ponente_4_2_text3
+Brandon: Sul serio!?!\pTuo fratello vuole farci vedere\nqualcosa nel Percorso 1?\pNon sto piu' nella pelle,\nparto subito!!!
+
+#org @EventScript_Borgo_Ponente_4_2_NPC0_text1
+La vita qui e' cosi' tranquilla...\pSpero Brandon si stia divertendo.
+
+#org @EventScript_Borgo_Ponente_4_2_NPC0_text2
+Stai cercando Brandon?\nDovrebbe essere di sopra in\lcamera sua.
+
+#org @EventScript_Borgo_Ponente_4_2_NPC1_text1
+Non vedo l'ora di diventare grande\ncome il mio fratellone e iniziare\lil mio viaggio nel mondo dei Poke'mon!
+
+#org @EventScript_Borgo_Ponente_4_2_NPC3_text1
+Un Percorso attraversabile\nsolamente sul dorso di un Poke'mon\lin grado di volare?\pMa certo, per attraversare il\nPercorso 11, cosi' come molti\laltri percorsi nella Regione\ldi Eyros, hai bisogno di un Poke'mon\lin grado di usare la mossa\lSorvolazione.
+
+#org @Borgo_Ponente_4_2_Sign0_text1
+E' il PC di Brandon, meglio\nnon cliccare niente...

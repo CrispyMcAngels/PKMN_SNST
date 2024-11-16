@@ -1,0 +1,98 @@
+#org @Miralba_3_1_NPC0_text1
+Crispy: ...Mmh dunque mi stai\ndicendo che sono state scoperte\ldelle rovine vicino al Percorso 2?
+
+#org @Miralba_3_1_NPC0_text2
+Filiberto: Esatto, mi e' stato\nriferito che un gruppo di\lallenatori si e' accorto di\lquest'insenatura nella Fores...
+
+#org @Miralba_3_1_NPC0_text3
+Crispy: Hei [PLAYER], ce l'hai fatta\nad arrivare!\pTi presento Filiberto, un mio\namico di vecchia data, nonche'\lesperto archeologo e Capopalestra\ldi Ardesiopoli.
+
+#org @Miralba_3_1_NPC0_text4
+Filiberto: Piacere di conoscerti\n[PLAYER], se buon sangue non mente\lpure te diventerai un allenatore\lmolto in gamba.\pStavo giusto dicendo a tuo\nfratello che una nuova scoperta\larcheologica e' stata fatta poco\llontano da qui...
+
+#org @Miralba_3_1_NPC0_text5
+Filiberto: Infatti il mio dovere di\ncapo archeologo mi chiama...\pTi aspetto li' Crispy.
+
+#org @Miralba_3_1_NPC0_text6
+Crispy: Certamente, sono molto\ncurioso pure io di vedere cos'e'\lstato scoperto!\pMostro la citta' di Miralba a\n[PLAYER] e ti raggiungo.
+
+#org @Miralba_3_1_NPC0_text7
+Filiberto: A dopo!
+
+#org @Miralba_3_1_NPC0_text8
+Crispy: Adesso seguimi, ti mostro\ncome orientarti in questa citta'.
+
+#org @Miralba_3_1_NPC0_text9
+Crispy: Questo qui e' un Centro\nPoke'mon, puoi portarci i tuoi\lPoke'mon esausti per farli riposare,\lricordatelo bene durante le tue\lavventure!\pLo puoi riconoscere in ogni citta'\ngrazie al suo caratteristico tetto\lrosso!\pBene, proseguiamo.
+
+#org @Miralba_3_1_NPC0_text10
+Crispy: Gli edifici col tetto blu\ninvece si chiamano Poke'mon Market,\lal loro interno puoi comprare\lstrumenti utili, come Poke'ball e\lPozioni.
+
+#org @Miralba_3_1_NPC0_text11
+Crispy: A proposito di Poke'ball,\nho saputo che con la Poke'ball che\lti ho regalato nel Percorso 1 hai\lcatturato un Axew,\lcomplimenti, e' un Poke'mon davvero\lforte!\pSpero che un giorno potremmo\nsfidarci!\pCrispy: Tieni, visto che una l'hai\nusata nel migliore dei modi voglio\lregalartene un altro po'!
+
+#org @Miralba_3_1_NPC0_text12
+Chatot-Chatot
+
+#org @Miralba_3_1_NPC0_text13
+Crispy: Questo qui invece e' Chatot.\pNe troverai uno in ogni citta',\ninteragisci con lui quando non saprai\lcome continuare la tua avventura,\lavra' sicuramente qualche\lconsiglio per te!
+
+#org @Miralba_3_1_NPC0_text14
+Crispy: Come hai sentito prima,\nora devo raggiungere Filiberto,\lmi pare che il posto si chiami\lForesta Frondosa...\pPerche' non vieni pure te?\pCosi' vedrai come si comportano dei\lveri allenatori di Poke'mon!
+
+#org @Miralba_3_1_NPC0_text15
+[PLAYER]: ...
+
+#org @Miralba_Sign0_text1
+Miralba: La solare cittadina dove\nil sole nascente splende sempre.
+
+#org @Miralba_Sign2_text1
+Centro Poke'mon\nPer rinvigorire i tuoi amici stanchi!
+
+#org @Miralba_Sign4_text1
+Miralba\p[ARROW_LEFT] Percorso 2
+
+#org @Miralba_Sign5_text1
+Piazza Nascente
+
+#org @Miralba_Sign6_text1
+Poke'mon-Market\nStrumenti per ogni esigenza!
+
+#org @Miralba_Sign8_text1
+Questo pozzo sembra molto profondo\pSul fondo pero' si vede\nuno spiraglio di luce.\pVuoi a saltarci dentro?
+
+#org @Miralba_3_1_NPC1_text1
+???: ...
+
+#org @Miralba_3_1_Tile0_text1
+Hei tu, sei un allenatore giusto?\nTi prego ho bisogno del tuo aiuto.\pSeguimi!
+
+#org @Miralba_3_1_Tile0_text2
+Sono venuta qui in questa piazza a\ngiocare assieme al mio fratellino,\lmi sono distratta un momento per\lguardare dei fiori e lui e' sparito!\pTi prego, dammi una mano a\ncercarlo, non vorrei si fosse\lcacciato nei guai da qualche parte...\pConto sul tuo aiuto ;)
+
+#org @Miralba_3_1_Tile0_text3
+Hei! Sei riuscito a trovare il mio\nfratellino?
+
+#org @Miralba_3_1_Tile0_text4
+L'ultima volta che l'ho visto stava\ngiocando in questa direzione.
+
+#org @Miralba_3_1_NPC5_text1
+Grazie ancora per il tuo aiuto, ora\nil mio fratellino e' al sicuro.
+
+#org @Miralba_3_1_MapScriptOnFrame_text1
+Grazie mille per aver aiutato il\nmio fratellino, adesso avra'\limparato a giocare in posti piu'\lsicuri, ti siamo riconoscenti.\pEcco tieni!
+
+#org @Miralba_3_1_MapScriptOnFrame_text2
+E anche questo!
+
+#org @Miralba_3_1_MapScriptOnFrame_text3
+Ti auguro buona fortuna per il\ntuo viaggio!
+
+#org @Miralba_3_1_NPC4_text1
+D'ora in poi staro' sempre attento\nquando giochero' da solo!
+
+#org @Miralba_3_1_NPC3_text1
+Questa piazza e' molto frequentata\nda gente di tutti i tipi.\pD'altronde come si fa a non\nrilassarsi in un posto del genere?
+
+#org @Miralba_3_1_NPC7_text1
+Sto facendo un lungo viaggio,\ni miei Poke'mon erano esausti,\lper fortuna ho trovato questo\lCentro Poke'mon.
