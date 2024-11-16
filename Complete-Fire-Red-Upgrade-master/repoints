@@ -279,8 +279,8 @@ gEventObjectPic_NPC0Pal 0835B968
 
 #NPC18_Bullo
 gEventObjectGraphicsInfo_NPC18 08EB1048
-gEventObjectPic_NPC18Pal 08249700
+gEventObjectPic_NPC18Pal 08248E40
 
 #NPC20
 gEventObjectGraphicsInfo_NPC20 08EB1050  
-gEventObjectPic_NPC20Pal 08249780
+gEventObjectPic_NPC20Pal 08249680

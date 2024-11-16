@@ -90,7 +90,7 @@
     const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_NPC18 =
     {
         .tileTag = 0xFFFF,
-        .paletteTag1 = 0x1200,
+        .paletteTag1 = 0x114F,
         .paletteTag2 = EVENT_OBJ_PAL_TAG_NONE,
         .size = (32 * 32) / 2,
         .width = 32,
@@ -130,7 +130,7 @@
     const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_NPC20 =
     {
         .tileTag = 0xFFFF,
-        .paletteTag1 = 0x1201,
+        .paletteTag1 = 0x1150,
         .paletteTag2 = EVENT_OBJ_PAL_TAG_NONE,
         .size = (32 * 32) / 2,
         .width = 32,
