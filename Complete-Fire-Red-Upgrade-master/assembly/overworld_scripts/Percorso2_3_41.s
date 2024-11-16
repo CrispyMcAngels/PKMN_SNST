@@ -95,7 +95,10 @@ EventScript_Percorso_2_3_41_NPC6:
 EventScript_Percorso_2_3_41_NPC1_2:
 	lock
 	faceplayer
+	pause 0x1E
+	showpokepic 0x3BB 0x0 0x6
 	msgbox Percorso_2_3_41_NPC1_2_text1 MSG_NORMAL
+    special 0x15A
 	release
 	end
 
