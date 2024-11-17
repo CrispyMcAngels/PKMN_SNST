@@ -275,12 +275,224 @@ gText_TextSpeedInstant 083cc338
 
 #NPC0_PLAYER
 gEventObjectGraphicsInfo_NPC0 08EB1000
-gEventObjectPic_NPC0Pal 0835B968
+gEventsObjectPic_NPC0Pal 08F15EB0
 
-#NPC18_Bullo
+#NPC14
+gEventObjectGraphicsInfo_NPC14 08EB1038
+gEventsObjectPic_NPC14Pal 08F15E70
+
+#NPC15
+gEventObjectGraphicsInfo_NPC15 08EB103C
+gEventsObjectPic_NPC15Pal 08F15E78
+
+#NPC16
+gEventObjectGraphicsInfo_NPC16 08EB1040
+gEventsObjectPic_NPC16Pal 08F15E80
+
+#NPC17
+gEventObjectGraphicsInfo_NPC17 08EB1044
+gEventsObjectPic_NPC17Pal 08F15E88
+
+#NPC18
 gEventObjectGraphicsInfo_NPC18 08EB1048
-gEventObjectPic_NPC18Pal 08248E40
+gEventsObjectPic_NPC18Pal 08F15E90
+
+#NPC19
+gEventObjectGraphicsInfo_NPC19 08EB104C
+gEventsObjectPic_NPC19Pal 08F15E98
 
 #NPC20
-gEventObjectGraphicsInfo_NPC20 08EB1050  
-gEventObjectPic_NPC20Pal 08249680
+gEventObjectGraphicsInfo_NPC20 08EB1050
+gEventsObjectPic_NPC20Pal 08F15EA0
+
+#NPC21
+gEventObjectGraphicsInfo_NPC21 08EB1054
+gEventsObjectPic_NPC21Pal 08F15EA8
+
+#NPC22
+gEventObjectGraphicsInfo_NPC22 08EB1058
+gEventsObjectPic_NPC22Pal 08F15EC8
+
+#NPC23
+gEventObjectGraphicsInfo_NPC23 08EB105C
+gEventsObjectPic_NPC23Pal 08F15ED0
+
+#NPC24
+gEventObjectGraphicsInfo_NPC24 08EB1060
+gEventsObjectPic_NPC24Pal 08F15ED8
+
+#NPC25
+gEventObjectGraphicsInfo_NPC25 08EB1064
+gEventsObjectPic_NPC25Pal 08F15EE0
+
+#NPC26
+gEventObjectGraphicsInfo_NPC26 08EB1068
+gEventsObjectPic_NPC26Pal 08F15EE8
+
+#NPC27
+gEventObjectGraphicsInfo_NPC27 08EB106C
+gEventsObjectPic_NPC27Pal 08F15EF8
+
+#NPC28
+gEventObjectGraphicsInfo_NPC28 08EB1070
+gEventsObjectPic_NPC28Pal 08F15EF0
+
+#NPC29
+gEventObjectGraphicsInfo_NPC29 08EB1074
+gEventsObjectPic_NPC29Pal 08F15F00
+
+#NPC30
+gEventObjectGraphicsInfo_NPC30 08EB1078
+gEventsObjectPic_NPC30Pal 08F15F08
+
+#NPC31
+gEventObjectGraphicsInfo_NPC31 08EB107C
+gEventsObjectPic_NPC31Pal 08F15F10
+
+#NPC32
+gEventObjectGraphicsInfo_NPC32 08EB1080
+gEventsObjectPic_NPC32Pal 08F15F18
+
+#NPC33
+gEventObjectGraphicsInfo_NPC33 08EB1084
+gEventsObjectPic_NPC33Pal 08F15F20
+
+#NPC34
+gEventObjectGraphicsInfo_NPC34 08EB1088
+gEventsObjectPic_NPC34Pal 08F15F28
+
+#NPC35
+gEventObjectGraphicsInfo_NPC35 08EB108C
+gEventsObjectPic_NPC35Pal 08F15F30
+
+#NPC36
+gEventObjectGraphicsInfo_NPC36 08EB1090
+gEventsObjectPic_NPC36Pal 08F15F38
+
+#NPC37
+gEventObjectGraphicsInfo_NPC37 08EB1094
+gEventsObjectPic_NPC37Pal 08F15F40
+
+#NPC38
+gEventObjectGraphicsInfo_NPC38 08EB1098
+gEventsObjectPic_NPC38Pal 08F15F48
+
+#NPC39
+gEventObjectGraphicsInfo_NPC39 08EB109C
+gEventsObjectPic_NPC39Pal 08F15F50
+
+#NPC40
+gEventObjectGraphicsInfo_NPC40 08EB10A0
+gEventsObjectPic_NPC40Pal 08F15F58
+
+#NPC41
+gEventObjectGraphicsInfo_NPC41 08EB10A4
+gEventsObjectPic_NPC41Pal 08F15F60
+
+#NPC42
+gEventObjectGraphicsInfo_NPC42 08EB10A8
+gEventsObjectPic_NPC42Pal 08F15F68
+
+#NPC43
+gEventObjectGraphicsInfo_NPC43 08EB10AC
+gEventsObjectPic_NPC43Pal 08F15F70
+
+#NPC44
+gEventObjectGraphicsInfo_NPC44 08EB10B0
+gEventsObjectPic_NPC44Pal 08F15F78
+
+#NPC45
+gEventObjectGraphicsInfo_NPC45 08EB10B4
+gEventsObjectPic_NPC45Pal 08F15F80
+
+#NPC46
+gEventObjectGraphicsInfo_NPC46 08EB10B8
+gEventsObjectPic_NPC46Pal 08F15F88
+
+#NPC47
+gEventObjectGraphicsInfo_NPC47 08EB10BC
+gEventsObjectPic_NPC47Pal 08F15F90
+
+#NPC48
+gEventObjectGraphicsInfo_NPC48 08EB10C0
+gEventsObjectPic_NPC48Pal 08F15F98
+
+#NPC49
+gEventObjectGraphicsInfo_NPC49 08EB10C4
+gEventsObjectPic_NPC49Pal 08F15FA0
+
+#NPC50
+gEventObjectGraphicsInfo_NPC50 08EB10C8
+gEventsObjectPic_NPC50Pal 08F15FA8
+
+#NPC51
+gEventObjectGraphicsInfo_NPC51 08EB10CC
+gEventsObjectPic_NPC51Pal 08F15FB0
+
+#NPC52
+gEventObjectGraphicsInfo_NPC52 08EB10D0
+gEventsObjectPic_NPC52Pal 08F15FB8
+
+#NPC53
+gEventObjectGraphicsInfo_NPC53 08EB10D4
+gEventsObjectPic_NPC53Pal 08F15FC0
+
+#NPC54
+gEventObjectGraphicsInfo_NPC54 08EB10D8
+gEventsObjectPic_NPC54Pal 08F15FC8
+
+#NPC55
+gEventObjectGraphicsInfo_NPC55 08EB10DC
+gEventsObjectPic_NPC55Pal 08F15FD0
+
+#NPC56
+gEventObjectGraphicsInfo_NPC56 08EB10E0
+gEventsObjectPic_NPC56Pal 08F15FD8
+
+#NPC57
+gEventObjectGraphicsInfo_NPC57 08EB10E4
+gEventsObjectPic_NPC57Pal 08F15FE0
+
+#NPC58
+gEventObjectGraphicsInfo_NPC58 08EB10E8
+gEventsObjectPic_NPC58Pal 08F15FE8
+
+#NPC59
+gEventObjectGraphicsInfo_NPC59 08EB10EC
+gEventsObjectPic_NPC59Pal 08F15FF0
+
+#NPC60
+gEventObjectGraphicsInfo_NPC60 08EB10F0
+gEventsObjectPic_NPC60Pal 08F15FF8
+
+#NPC61
+gEventObjectGraphicsInfo_NPC61 08EB10F4
+gEventsObjectPic_NPC61Pal 08F16000
+
+#NPC62
+gEventObjectGraphicsInfo_NPC62 08EB10F8
+gEventsObjectPic_NPC62Pal 08F16008
+
+#NPC66
+gEventObjectGraphicsInfo_NPC66 08EB1108
+gEventsObjectPic_NPC66Pal 08F16028
+
+#NPC67
+gEventObjectGraphicsInfo_NPC67 08EB110C
+gEventsObjectPic_NPC67Pal 08F16030
+
+#NPC69
+gEventObjectGraphicsInfo_NPC69 08EB1114
+gEventsObjectPic_NPC69Pal 08F16040
+
+#NPC71
+gEventObjectGraphicsInfo_NPC71 08EB111C
+gEventsObjectPic_NPC71Pal 08F16050
+
+#NPC72
+gEventObjectGraphicsInfo_NPC72 08EB1120
+gEventsObjectPic_NPC72Pal 08F16058
+
+#NPC73
+gEventObjectGraphicsInfo_NPC73 08EB1124
+gEventsObjectPic_NPC73Pal 08F16060
