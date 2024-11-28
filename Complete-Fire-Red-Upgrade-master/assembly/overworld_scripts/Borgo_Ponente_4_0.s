@@ -179,7 +179,6 @@ EventScript_Borgo_Ponente_4_0_mom:
 		setvar 0x501F 0x12E
 		setvar 0x4051 0x29
 		setvar 0x4050 0x6
-		clearflag 0x230
 		playsong 0x0 0x0
 		writebytetooffset 0x30 0x4000012
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text10 MSG_NORMAL
