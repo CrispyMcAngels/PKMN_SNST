@@ -19,7 +19,7 @@ EventScript_Rovine_Ancestrali_1_34_Sign0:
 	setvar 0x405c 0xC
 	setvar 0x405d 0x12
 	setvar 0x405e 0x8
-	setvar 0x501F 0x1B2
+	setvar 0x501F 0x12E
 	warpmuted 0x0 0x5 0xFF 0x07 0x05
 	end
 
@@ -612,6 +612,8 @@ gMapScripts_Rovine_Ancestrali_1_34:
 			if 0x1 _goto Rovine_Ancestrali_1_34_MapScriptOnFrame_P2
 			compare 0x4051 0x21
 			if 0x1 _goto Rovine_Ancestrali_1_34_MapScriptOnFrame_P3
+			compare 0x4051 0x26
+			if 0x1 _goto Rovine_Ancestrali_1_34_MapScriptOnFrame_P4
 			releaseall
 			end
 
@@ -896,3 +898,34 @@ gMapScripts_Rovine_Ancestrali_1_34:
 				.byte 0x1A
 				.byte 0x63
 				.byte 0xFE
+
+		Rovine_Ancestrali_1_34_MapScriptOnFrame_P4:
+			pause 0x1E
+			applymovement 0x9 Rovine_Ancestrali_1_34_MapScriptOnFrame_P4_mov1
+			waitmovement 0x0
+			pause 0x1E
+			showpokepic 0x3B4 0x0 0x6
+			msgbox Rovine_Ancestrali_1_34_tile6_text1 MSG_NORMAL
+			special 0x15A
+			pause 0x1E
+			showpokepic 0x3AD 0x15 0x6
+			msgbox Rovine_Ancestrali_1_34_tile6_text2 MSG_NORMAL
+			special 0x15A
+			pause 0x1E
+			//activate level script
+			setvar 0x4050 0x5						
+			//trigger level script p2 
+			setvar 0x4051 0x27
+			//apply player sprite
+			setvar 0x501F 0x100
+			writebytetooffset 0x0 0x2036E28
+			setflag 0x95B
+			setflag 0x95A
+			warpmuted 0x3 0x29 0xFF 0x1C 0x04
+			releaseall
+			end
+			
+			Rovine_Ancestrali_1_34_MapScriptOnFrame_P4_mov1:
+				.byte 0x62
+				.byte 0xFE
+	

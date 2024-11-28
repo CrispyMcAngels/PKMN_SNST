@@ -40,6 +40,31 @@ Crispy: Sarebbe bello se anche te\nindagassi sui malanni del Team\lRocket, perch
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text2
 Crispy: Questa mappa ti permette di\nvisualizzare la mappa della\lregione di Eyros in qualsiasi\listante, cosi' non perderai mai la\ltua strada!\pAh anzi, hai avvisato la Mamma che\nstarai lontano da casa per un po'?\pForse e' meglio se vai a salutarla...
 
+#org @Percorso2_3_41_MapScriptOnFrameBegin_text3
+[PLAYER]: ...
+
+#org @Percorso2_3_41_MapScriptOnFrameBegin_text4
+[PLAYER]: Crispy, devo dirti una\ncosa...\pPoche ore fa, prima di entrare\nnella Foresta Frondosa, mi sono\lscontrato con un uomo incappuciato\lproprio qui...
+
+#org @Percorso2_3_41_MapScriptOnFrameBegin_text5
+Crispy: Non capisco...\pSei riuscito a vederlo in faccia?
+
+#org @Percorso2_3_41_MapScriptOnFrameBegin_text6
+[PLAYER]: Purtroppo no, il volto\nera completamente coperto dal\lmantello.\pAveva, pero'...\nUn'aria familiare...
+
+#org @Percorso2_3_41_MapScriptOnFrameBegin_text7
+Crispy: Ma certo!\pSe non sbaglio Steven aveva\nmenzionato di essere stato\lsconfitto da un uomo misterioso\lsubito prima che arrivassimo\lnoi...
+
+//cutscene backthere
+
+#org @Percorso2_3_41_MapScriptOnFrameBegin_text8
+Crispy: ... Che si riferisse alla\nstessa persona?\pSperiamo dunque che per qualsiasi\nmotivo questo uomo misterioso sia\ldalla nostra parte!
+
+//again at Percorso_2_3_41_NPC3_text3
+
+#org @Percorso2_3_41_MapScriptOnFrameBegin_text9
+Crispy: [PLAYER], io ora devo\nandare.\pRicordati di andare nel\nlaboratorio di Filiberto ad\lArdesiopoli dopo essere passato a\lsalutare la mamma...
+
 #org @Percorso_2_3_41_NPC6_text1
 Io non sono molto alto, quasi\nscompaio nell'erba alta.\pL'erba mi arriva sopra al naso[.]\nFaffaffaffaffa[.]\pFaffa[.] etciu'!
 
@@ -59,7 +84,14 @@ lo!
 Alla fine, sei te a fare carriera!
 
 #org @Percorso_2_3_41_NPC9_text3
-Se voglio continuare a far strada, \ndevo catturare piu' Poke'mon.
+Se voglio continuare a far strada,\ndevo catturare piu' Poke'mon.
 
 #org @Percorso2_3_41_tile2_text1
 ???: Se non sbaglio tu sei\nl'allenatore che prima ha portato\lle bacche ai Treecko giusto?\pPiacere di conoscerti, il mio\nnome e' Raito.\pTi ho osservato molto bene prima e\nnon ho potuto fare a meno di\lnotare qualcosa di speciale in te...\p...Che sia il legame con i tuoi\nPoke'mon?\pRaito: Non e' ancora ora di\nscoprirlo, ma sono sicuro che ci\lrivedremo presto...\p...[PLAYER]...
+
+#org @Percorso2_3_41_tile3_text1
+[PLAYER]: Meglio che vada a salutare\nla Mamma prima di continuare!
+
+
+
+

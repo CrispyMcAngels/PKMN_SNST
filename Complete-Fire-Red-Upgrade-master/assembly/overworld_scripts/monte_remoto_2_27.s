@@ -296,10 +296,10 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part2:
 
     applymovement 0xFF MonteRemoto_2_27_MapScriptOnFrame_mov14
     waitmovement 0x0
-    createsprite 0x65 0x06 0x0B 0x10 0x1 0x0
+    movesprite 0x7 0x0B 0x10
     applymovement 0xFF MonteRemoto_2_27_MapScriptOnFrame_mov15
     waitmovement 0x0
-    createsprite 0x65 0x07 0x0D 0x10 0x1 0x0
+    movesprite 0x8 0x0D 0x10
     applymovement 0xFF MonteRemoto_2_27_MapScriptOnFrame_mov16
     waitmovement 0x0
 
@@ -822,8 +822,6 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part5:
     showpokepic 0x3B2 0xE 0x7
     pause 0x1E
     pause 0x1E
-    applymovement 0x7 MonteRemoto_2_27_MapScriptOnFrame_mov37
-    waitmovement 0x0
     special 0x15A
     special 0x15A
     special 0x15A
@@ -839,7 +837,6 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part5:
     warpmuted 0x4 0x1 0xFF 0x4 0x6
     fadescreen 0x0
     return
-
 
 MonteRemoto_2_27_MapScriptOnFrame_mov30:
     .byte 0x1 
@@ -902,26 +899,4 @@ MonteRemoto_2_27_MapScriptOnFrame_mov36:
     .byte 0x11
     .byte 0x11
     .byte 0x11
-    .byte 0xFE
-
-MonteRemoto_2_27_MapScriptOnFrame_mov37:
-    .byte 0x12
-    .byte 0x12
-    .byte 0x12
-    .byte 0x12
-    .byte 0x12
-    .byte 0x12
-    .byte 0x12
-    .byte 0x12
-    .byte 0x12
-    .byte 0x12
-    .byte 0x12
-    .byte 0x12
-    .byte 0x12
-    .byte 0x12
-    .byte 0x12
-    .byte 0x12
-    .byte 0x12
-    .byte 0x12
-    .byte 0x60
     .byte 0xFE

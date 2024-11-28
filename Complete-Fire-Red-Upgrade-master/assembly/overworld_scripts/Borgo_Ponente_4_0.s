@@ -167,9 +167,32 @@ EventScript_Borgo_Ponente_4_0_mom:
 		showpokepic 0x3b3 0x0 0x6
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text8 MSG_NORMAL
 		special 0x15A
+		pause 0x1E
+		applymovement 0x1 Borgo_Ponente_4_0_mom_P3_mov2
+		waitmovement 0x0
+		faceplayer
+		showpokepic 0x3b3 0x0 0x6
+		msgbox EventScript_Borgo_Ponente_4_0_mom_text9 MSG_NORMAL
+		special 0x15A
+		pause 0x1E
+		fadescreen 0x1
+		setvar 0x501F 0x12E
+		setvar 0x4051 0x29
+		setvar 0x4050 0x6
+		clearflag 0x230
+		playsong 0x0 0x0
+		writebytetooffset 0x30 0x4000012
+		msgbox EventScript_Borgo_Ponente_4_0_mom_text10 MSG_NORMAL
+		writebytetooffset 0x0 0x4000012
+		warpmuted 0x04 0x01 0xFF 0x02 0x05
 		release
 		end			
 
 		Borgo_Ponente_4_0_mom_P3_mov1:
 			.byte 0x62
+			.byte 0xFE
+
+		Borgo_Ponente_4_0_mom_P3_mov2:
+			.byte 0x2 
+			.byte 0x1B
 			.byte 0xFE

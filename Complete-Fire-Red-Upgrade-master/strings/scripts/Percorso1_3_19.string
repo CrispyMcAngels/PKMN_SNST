@@ -20,7 +20,7 @@ Brandon: Beh, direi proprio che\nper oggi possa bastare!\pMeglio tornare a casa 
 [PLAYER]: Meglio non addentrarsi\nnell'erba alta senza un Poke'mon!
 
 #org @EventScript_Percorso1_3_19_tile1_text1
-Stunky: ROAAARRHH!!!
+Skuntank: ROAAARRHH!!!
 
 #org @EventScript_Percorso1_3_19_tile1_text2
 Brandon: Aiutooo!\p[PLAYER] fai qualcosa!!!
@@ -32,7 +32,7 @@ Brandon: Aiutooo!\p[PLAYER] fai qualcosa!!!
 Axew: Axew-Axew!
 
 #org @EventScript_Percorso1_3_19_tile1_text5
-Brandon: Fiuuu, per un pelo!\pSe non fosse stato per questo\nAxew che ci ha aiutato saremmo\lstati spacciati contro quello\lStunky...\pBrandon: Grazie mille piccolino :)
+Brandon: Fiuuu, per un pelo!\pSe non fosse stato per questo\nAxew che ci ha aiutato saremmo\lstati spacciati contro quello\lSkuntank...\pBrandon: Grazie mille piccolino :)
 
 #org @EventScript_Percorso1_3_19_tile1_text6
 Brandon: [PLAYER], sembra proprio\nche questo Axew voglia\ldiventare un tuo Poke'mon,\lperche' non provi a catturarlo\lcon la Poke'ball che ti ha\ldato tuo fratello?

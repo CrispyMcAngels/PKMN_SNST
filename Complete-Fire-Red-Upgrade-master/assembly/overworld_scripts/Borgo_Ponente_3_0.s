@@ -326,6 +326,8 @@ gMapScripts_Borgo_Ponente_3_0:
 		if 0x1 _call Borgo_Ponente_3_0_MapScriptOnLoad_move_Brandon
 		compare 0x4051 0xF
 		if 0x1 _call Borgo_Ponente_3_0_MapScriptOnLoad_move_Crispy
+		compare 0x4051 0xD 
+		if 0x1 _call Borgo_Ponente_3_0_MapScriptOnLoad_door
 		compare 0x4051 0xE 
 		if 0x1 _call Borgo_Ponente_3_0_MapScriptOnLoad_door
 		compare 0x4051 0xF

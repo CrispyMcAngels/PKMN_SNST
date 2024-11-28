@@ -774,19 +774,14 @@ CieloStellato_2_60_MapScriptOnFrameBegin:
 Part1:
     msgbox CieloStellato_2_60_MapScriptOnFrame_text1 MSG_NORMAL
     pause 0x1E
-
     msgbox CieloStellato_2_60_MapScriptOnFrame_text2 MSG_NORMAL
     pause 0x1E
-
     msgbox CieloStellato_2_60_MapScriptOnFrame_text3 MSG_NORMAL
     pause 0x1E
-
     msgbox CieloStellato_2_60_MapScriptOnFrame_text4 MSG_NORMAL
     pause 0x1E
-
     msgbox CieloStellato_2_60_MapScriptOnFrame_text5 MSG_NORMAL
     pause 0x1E
-
     fadescreen 0x1
     pause 0x1E
     writebytetooffset 0x30 0x4000012
