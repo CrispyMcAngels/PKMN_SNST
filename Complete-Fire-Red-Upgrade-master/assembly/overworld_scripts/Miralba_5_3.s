@@ -8,7 +8,7 @@
 EventScript_Miralba_5_3_NPC1:
 	lock
 	faceplayer
-	msgbox EventScript_Miralba_5_3_NPC1_text1 MSG_NORMAL
+	msgbox EventScript_Miralba_5_3_NPC1_text1 0x7
 	release
 	end
 
@@ -16,7 +16,7 @@ EventScript_Miralba_5_3_NPC1:
 EventScript_Miralba_5_3_NPC2:
 	lock
 	faceplayer
-	msgbox EventScript_Miralba_5_3_NPC2_text1 MSG_NORMAL
+	msgbox EventScript_Miralba_5_3_NPC2_text1 0x7
 	release
 	end
 

@@ -8,7 +8,7 @@
 EventScript_Percorso_2_28_0_NPC0:
 	lock
 	faceplayer
-	msgbox Percorso_2_28_0_NPC0_text1 MSG_NORMAL
+	msgbox Percorso_2_28_0_NPC0_text1 0x7
 	release
 	end
 
@@ -36,7 +36,7 @@ EventScript_Percorso_2_28_0_Sign2:
 		end
 
 		No_berries_28_0:
-			msgbox Percorso_2_28_0_Sign2_text2 MSG_NORMAL
+			msgbox Percorso_2_28_0_Sign2_text2 0x7
 			releaseall
 			end
 

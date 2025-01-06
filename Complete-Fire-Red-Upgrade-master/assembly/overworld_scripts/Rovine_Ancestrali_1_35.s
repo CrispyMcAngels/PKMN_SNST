@@ -20,11 +20,11 @@ gMapScripts_Rovine_Ancestrali_1_35:
 			special 0x113
 			applymovement 0xFF Rovine_Ancestrali_1_35_L_mov1
 			waitmovement 0x0
-			msgbox Rovine_Ancestrali_1_35_L_text1 MSG_NORMAL
+			msgbox Rovine_Ancestrali_1_35_L_text1 0x7
 			pause 0x1E
 			fadescreen 0x2
 			pause 0x1E
-			msgbox Rovine_Ancestrali_1_35_L_text2 MSG_NORMAL
+			msgbox Rovine_Ancestrali_1_35_L_text2 0x7
 			setvar 0x4050 0x2
 			releaseall
 			end
@@ -297,7 +297,7 @@ EventScript_Rovine_Ancestrali_1_35_Sign0:
 		setvar 0x4051 0x21
 		setvar 0x4050 0x4
 		setvar 0x501F 0x0100
-		msgbox Rovine_Ancestrali_1_35_SOL_text1 MSG_NORMAL
+		msgbox Rovine_Ancestrali_1_35_SOL_text1 0x7
 		closeonkeypress
 		warpmuted 0x1 0x22 0xFF 0x0B 0x07
 		releaseall

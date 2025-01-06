@@ -32,14 +32,14 @@ EventScript_Borgo_Ponente_4_3_NPC1:
 	compare 0x4051 0x12
 	if 0x1 _call EventScript_Borgo_Ponente_4_3_NPC1_P1
 	showpokepic 0x3B7 0x0 0x6
-	msgbox EventScript_Borgo_Ponente_4_3_NPC1_text1 MSG_NORMAL
+	msgbox EventScript_Borgo_Ponente_4_3_NPC1_text1 0x7
 	special 0x15A
 	release
 	end
 
 	EventScript_Borgo_Ponente_4_3_NPC1_P1:
 		showpokepic 0x3B7 0x0 0x6
-		msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text15 MSG_NORMAL
+		msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text15 0x7
 		special 0x15A
 		release
 		end	
@@ -48,7 +48,7 @@ EventScript_Borgo_Ponente_4_3_NPC1:
 EventScript_Borgo_Ponente_4_3_NPC0:
 	lock
 	faceplayer
-	msgbox EventScript_Borgo_Ponente_4_3_NPC0_text1 MSG_NORMAL
+	msgbox EventScript_Borgo_Ponente_4_3_NPC0_text1 0x7
 	release
 	end
 
@@ -83,43 +83,43 @@ gMapScripts_Borgo_Ponente_4_3:
 					spriteface 0xFF 0x2
 				    showpokepic 0x3b7 0x0 0x6
     				//Ciao ragazzi...
-					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text1 MSG_NORMAL
+					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text1 0x7
 					special 0x15A
 					pause 0x1E
 					showpokepic 0x3b5 0x15 0x6
     				//salve prof oak..
-					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text2 MSG_NORMAL
+					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text2 0x7
 					special 0x15A
 					pause 0x1E
 					showpokepic 0x3b7 0x0 0x6
     				//Ma certo...
-					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text3 MSG_NORMAL
+					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text3 0x7
 					special 0x15A
 					pause 0x1E
 					applymovement 0x2 Borgo_Ponente_4_3_MapScriptOnFrame_mov1
 					waitmovement 0x0
 					showpokepic 0x3b7 0x0 0x6
     				//wow incredibile...
-					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text4 MSG_NORMAL
+					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text4 0x7
 					special 0x15A
 					pause 0x1E
 					applymovement 0x2 Borgo_Ponente_4_3_MapScriptOnFrame_mov2
 					waitmovement 0x0
 					showpokepic 0x3b7 0x0 0x6
     				//ora che player ha...
-					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text5 MSG_NORMAL
+					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text5 0x7
 					special 0x15A
 					pause 0x1E
 					applymovement 0x4 Borgo_Ponente_4_3_MapScriptOnFrame_mov3
 					waitmovement 0x0
 					showpokepic 0x3b5 0x15 0x6
     				//si esatto..
-					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text6 MSG_NORMAL
+					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text6 0x7
 					special 0x15A
 					pause 0x1E
 					showpokepic 0x3b7 0x0 0x6
     				//Non preoccuparti
-					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text7 MSG_NORMAL
+					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text7 0x7
 					special 0x15A
 					pause 0x1E
 					applymovement 0x2 Borgo_Ponente_4_3_MapScriptOnFrame_mov4
@@ -130,39 +130,39 @@ gMapScripts_Borgo_Ponente_4_3:
 					waitmovement 0x0
 					showpokepic 0x3b7 0x0 0x6
     				//Ecco Brandon, tieni!
-					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text8 MSG_NORMAL
+					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text8 0x7
 					special 0x15A
 					fanfare 0x013E
 					//brandon riceve Deino
-					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text9 MSG_NORMAL
+					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text9 0x7
 
 					pause 0x1E
 					showpokepic 0x3b5 0x15 0x6
     				//wow questo pokemon sembra fortissimo
-					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text10 MSG_NORMAL
+					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text10 0x7
 					special 0x15A
 					pause 0x1E
 					showpokepic 0x3b7 0x0 0x6
     				//e' proprio cosi...
-					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text11 MSG_NORMAL
+					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text11 0x7
 					special 0x15A
 					pause 0x1E
 					showpokepic 0x3b6 0x0 0x6
     				//player: ...
-					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text12 MSG_NORMAL
+					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text12 0x7
 					special 0x15A
 					applymovement 0x4 Borgo_Ponente_4_3_MapScriptOnFrame_mov6
 					waitmovement 0x0
 					pause 0x1E
 					showpokepic 0x3b7 0x0 0x6
     				//perche non vi sfidate...
-					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text13 MSG_NORMAL
+					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text13 0x7
 					special 0x15A
 					applymovement 0x4 Borgo_Ponente_4_3_MapScriptOnFrame_mov7
 					waitmovement 0x0
 					showpokepic 0x3b5 0x15 0x6
     				//Ma certo...
-					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text14 MSG_NORMAL
+					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text14 0x7
 					special 0x15A
 					playsong 0x13C 0x0
 					applymovement 0x4 Borgo_Ponente_4_3_MapScriptOnFrame_mov8
@@ -175,7 +175,7 @@ gMapScripts_Borgo_Ponente_4_3:
 					pause 0x1E
 					showpokepic 0x3b7 0x0 0x6
     				//quel brandon...
-					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text15 MSG_NORMAL
+					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text15 0x7
 					special 0x15A
 					setvar 0x4050 0x2
 					setvar 0x4051 0x12

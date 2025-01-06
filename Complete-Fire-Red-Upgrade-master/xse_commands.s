@@ -1,4 +1,4 @@
-@All scripting macros off of XSE and http://sphericalice.com/romhacking/documents/script/index.html
+@All scripting macros off of XSE and http://sphaericalice.com/romhacking/documents/script/index.html
 
 @Message box types
 .equ MSG_OBTAIN, 0x0

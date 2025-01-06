@@ -23,14 +23,10 @@ map 1 33 gMapScripts_Rovine_Ancestrali_1_33
 map 1 34 gMapScripts_Rovine_Ancestrali_1_34
 tile 1 34 0 EventScript_Rovine_Ancestrali_1_34_tile0
 tile 1 34 1 EventScript_Rovine_Ancestrali_1_34_tile1
-tile 1 34 2 EventScript_Rovine_Ancestrali_1_34_tile2
-tile 1 34 3 EventScript_Rovine_Ancestrali_1_34_tile3
-tile 1 34 4 EventScript_Rovine_Ancestrali_1_34_tile4
-tile 1 34 5 EventScript_Rovine_Ancestrali_1_34_tile5
-tile 1 34 6 EventScript_Rovine_Ancestrali_1_34_tile6
-tile 1 34 7 EventScript_Rovine_Ancestrali_1_34_tile6
-tile 1 34 8 EventScript_Rovine_Ancestrali_1_34_tile8
-tile 1 34 9 EventScript_Rovine_Ancestrali_1_34_tile8
+tile 1 34 2 EventScript_Rovine_Ancestrali_1_34_tile6
+tile 1 34 3 EventScript_Rovine_Ancestrali_1_34_tile6
+tile 1 34 4 EventScript_Rovine_Ancestrali_1_34_tile8
+tile 1 34 5 EventScript_Rovine_Ancestrali_1_34_tile8
 sign 1 34 0 EventScript_Rovine_Ancestrali_1_34_Sign0
 sign 1 34 1 EventScript_Rovine_Ancestrali_1_34_Sign0
 npc 1 34 0 EventScript_Rovine_Ancestrali_1_34_NPC0
@@ -183,8 +179,8 @@ tile 3 0 1 EventScript_Borgo_Ponente_3_0_tile0
 tile 3 0 2 EventScript_Borgo_Ponente_3_0_tile0
 tile 3 0 3 EventScript_Borgo_Ponente_3_0_tile1
 tile 3 0 4 EventScript_Borgo_Ponente_3_0_tile1
-tile 3 0 5 EventScript_Borgo_Ponente_3_0_tile2
-tile 3 0 6 EventScript_Borgo_Ponente_3_0_tile2
+tile 3 0 5 EventScript_Borgo_Ponente_3_0_tile5
+tile 3 0 6 EventScript_Borgo_Ponente_3_0_tile5
 
 npc 3 1 0 EventScript_Miralba_3_1_NPC0
 npc 3 1 1 EventScript_Miralba_3_1_NPC1
@@ -246,6 +242,7 @@ sign 3 19 3 EventScript_Percorso_1_3_19_Sign3
 npc 3 19 0 EventScript_Percorso_1_3_19_NPC0
 npc 3 19 1 EventScript_Percorso_1_3_19_NPC1
 npc 3 19 8 EventScript_Percorso_1_3_19_NPC8
+npc 3 19 3 EventScript_Percorso_1_3_19_NPC3
 
 map 3 25 gMapScripts_Percorso11_3_25
 npc 3 25 0 EventScript_Percorso_11_Brandon
@@ -278,3 +275,6 @@ sign 3 39 1 EventScript_Sentiero_Cascabruma_3_39_Sign1
 sign 3 39 2 EventScript_Sentiero_Cascabruma_3_39_Sign1
 npc 3 39 0 EventScript_Sentiero_Cascabruma_3_39_NPC0
 npc 3 39 1 EventScript_Sentiero_Cascabruma_3_39_NPC1
+
+map 0 6 gMapScripts_Capp_temporale_0_6
+map 3 47 gMapScripts_Capp_temporale_3_47

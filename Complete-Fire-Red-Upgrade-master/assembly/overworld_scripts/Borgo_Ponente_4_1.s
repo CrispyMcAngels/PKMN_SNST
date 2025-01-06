@@ -29,7 +29,7 @@ gMapScripts_Borgo_Ponente_4_1:
 		Borgo_Ponente_4_1_MapScriptOnLoad_night:
 			setweather 0xB
 			doweather
-			movesprite 0x1 0x07 0x07
+			movesprite2 0x1 0x07 0x06
 			end
 		
 	Borgo_Ponente_4_1_MapScriptOnFrame:
@@ -41,11 +41,11 @@ gMapScripts_Borgo_Ponente_4_1:
 		applymovement 0xFF Borgo_Ponente_4_1_mov1
 		waitmovement 0x0 
 		writebytetooffset 0x30 0x4000012
-		msgbox EventScript_Borgo_Ponente_4_1_MapScriptOnFrameBegin_text1 MSG_NORMAL
+		msgbox EventScript_Borgo_Ponente_4_1_MapScriptOnFrameBegin_text1 0x7
 		writebytetooffset 0x0 0x4000012
 		setvar 0x4051 0x2A
-		setvar 0x501F 0x149
-		warpmuted 0x3 0x 0xFF 0x0C 0x11
+		setvar 0x501F 0x12e
+		warpmuted 0x0 0x6 0xFF 0x0C 0x16
 		releaseall
 		end
 		

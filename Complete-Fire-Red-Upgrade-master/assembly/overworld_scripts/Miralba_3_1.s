@@ -46,17 +46,17 @@ gMapScripts_Miralba_3_1:
 		Miralba_3_1_MapScriptOnFrame_Part1:
 			//spriteface 0xFF 0x2
 			//Grazie mille...
-			msgbox Miralba_3_1_MapScriptOnFrame_text1 MSG_NORMAL
+			msgbox Miralba_3_1_MapScriptOnFrame_text1 0x7
 			pause 0x1E
 			giveitem 0x3 0x3 MSG_OBTAIN
 			pause 0x1E
 			//E anche questo...
-			msgbox Miralba_3_1_MapScriptOnFrame_text2 MSG_NORMAL
+			msgbox Miralba_3_1_MapScriptOnFrame_text2 0x7
 			pause 0x1E
 			giveitem 0xD 0x3 MSG_OBTAIN
 			pause 0x1E
 			//ti auguro buona...
-			msgbox Miralba_3_1_MapScriptOnFrame_text3 MSG_NORMAL
+			msgbox Miralba_3_1_MapScriptOnFrame_text3 0x7
 			setvar 0x4051 0x17
 			setvar 0x4050 0x2
 			setvar 0x4052 0x1
@@ -72,7 +72,7 @@ EventScript_Miralba_3_1_NPC5:
 	if 0x1 _call EventScript_Miralba_3_1_NPC5_P1
 	compare 0x4051 0x15
 	if 0x1 _call EventScript_Miralba_3_1_NPC5_P2
-	msgbox Miralba_3_1_NPC5_text1 MSG_NORMAL
+	msgbox Miralba_3_1_NPC5_text1 0x7
 	release
 	end
 
@@ -81,12 +81,12 @@ EventScript_Miralba_3_1_NPC5:
 		applymovement 0x6 Miralba_3_1_NPC5_mov1
 		waitmovement 0x0
 		pause 0x1E
-		msgbox Miralba_3_1_Tile0_text1 MSG_NORMAL
+		msgbox Miralba_3_1_Tile0_text1 0x7
 		applymovement 0x6 Miralba_3_1_NPC5_mov2
 		applymovement 0xFF Miralba_3_1_NPC5_mov3
 		waitmovement 0x0
 		pause 0x1E
-		msgbox Miralba_3_1_Tile0_text2 MSG_NORMAL
+		msgbox Miralba_3_1_Tile0_text2 0x7
 		applymovement 0x6 Miralba_3_1_NPC5_mov4
 		waitmovement 0x0
 		clearflag 0x952
@@ -135,12 +135,12 @@ EventScript_Miralba_3_1_NPC5:
 		applymovement 0x6 Miralba_3_1_NPC5_mov1
 		waitmovement 0x0
 		pause 0x1E
-		msgbox Miralba_3_1_Tile0_text3 MSG_NORMAL
+		msgbox Miralba_3_1_Tile0_text3 0x7
 		applymovement 0x6 Miralba_3_1_NPC5_mov2
 		applymovement 0xFF Miralba_3_1_NPC5_mov3
 		waitmovement 0x0
 		pause 0x1E
-		msgbox Miralba_3_1_Tile0_text4 MSG_NORMAL
+		msgbox Miralba_3_1_Tile0_text4 0x7
 		applymovement 0x6 Miralba_3_1_NPC5_mov4
 		waitmovement 0x0
 		release
@@ -160,12 +160,12 @@ EventScript_Miralba_3_1_Tile0:
 		waitmovement 0x0
 		pause 0x1E
 		spriteface 0xFF 0x2
-		msgbox Miralba_3_1_Tile0_text1 MSG_NORMAL
+		msgbox Miralba_3_1_Tile0_text1 0x7
 		applymovement 0x6 Miralba_3_1_Tile0_mov2
 		applymovement 0xFF Miralba_3_1_Tile0_mov3
 		waitmovement 0x0
 		pause 0x1E
-		msgbox Miralba_3_1_Tile0_text2 MSG_NORMAL
+		msgbox Miralba_3_1_Tile0_text2 0x7
 		applymovement 0x6 Miralba_3_1_Tile0_mov4
 		waitmovement 0x0
 		clearflag 0x952
@@ -216,12 +216,12 @@ EventScript_Miralba_3_1_Tile0:
 		waitmovement 0x0
 		pause 0x1E
 		spriteface 0xFF 0x2
-		msgbox Miralba_3_1_Tile0_text3 MSG_NORMAL
+		msgbox Miralba_3_1_Tile0_text3 0x7
 		applymovement 0x6 Miralba_3_1_Tile0_mov2
 		applymovement 0xFF Miralba_3_1_Tile0_mov3
 		waitmovement 0x0
 		pause 0x1E
-		msgbox Miralba_3_1_Tile0_text4 MSG_NORMAL
+		msgbox Miralba_3_1_Tile0_text4 0x7
 		applymovement 0x6 Miralba_3_1_Tile0_mov4
 		waitmovement 0x0
 		releaseall
@@ -277,7 +277,7 @@ EventScript_Miralba_Sign8:
 .global EventScript_Miralba_3_1_NPC1
 EventScript_Miralba_3_1_NPC1:
 	showpokepic 0x3B8 0x0 0x6
-	msgbox Miralba_3_1_NPC1_text1 MSG_NORMAL
+	msgbox Miralba_3_1_NPC1_text1 0x7
 	special 0x15A
 	end
 
@@ -285,46 +285,46 @@ EventScript_Miralba_3_1_NPC1:
 EventScript_Miralba_3_1_NPC0:
 	lock
 	showpokepic 0x3B4 0x0 0x6
-	msgbox Miralba_3_1_NPC0_text1 MSG_NORMAL
+	msgbox Miralba_3_1_NPC0_text1 0x7
 	special 0x15A
 	pause 0x1E
 	showpokepic 0x3B8 0x15 0x6
-	msgbox Miralba_3_1_NPC0_text2 MSG_NORMAL
+	msgbox Miralba_3_1_NPC0_text2 0x7
 	special 0x15A
 	applymovement 0x1 Miralba_3_1_NPC0_mov1
 	applymovement 0x2 Miralba_3_1_NPC0_mov1
 	waitmovement 0x0
 	pause 0x1E
 	showpokepic 0x3B4 0x0 0x6
-	msgbox Miralba_3_1_NPC0_text3 MSG_NORMAL
+	msgbox Miralba_3_1_NPC0_text3 0x7
 	special 0x15A
 	pause 0x1E
 	showpokepic 0x3B8 0x15 0x6
-	msgbox Miralba_3_1_NPC0_text4 MSG_NORMAL
+	msgbox Miralba_3_1_NPC0_text4 0x7
 	special 0x15A
 	applymovement 0x2 Miralba_3_1_NPC0_mov2
 	waitmovement 0x0
 	pause 0x1E
 	showpokepic 0x3B8 0x15 0x6
-	msgbox Miralba_3_1_NPC0_text5 MSG_NORMAL
+	msgbox Miralba_3_1_NPC0_text5 0x7
 	special 0x15A
 	pause 0x1E
 	applymovement 0x1 Miralba_3_1_NPC0_mov3
 	waitmovement 0x0
 	pause 0x1E
 	showpokepic 0x3B4 0x0 0x6
-	msgbox Miralba_3_1_NPC0_text6 MSG_NORMAL
+	msgbox Miralba_3_1_NPC0_text6 0x7
 	special 0x15A
 	pause 0x1E
 	showpokepic 0x3B8 0x15 0x6
-	msgbox Miralba_3_1_NPC0_text7 MSG_NORMAL
+	msgbox Miralba_3_1_NPC0_text7 0x7
 	special 0x15A
 	applymovement 0x2 Miralba_3_1_NPC0_mov4
 	waitmovement 0x2
 	spriteface 0x1 0x1
 	pause 0x1E
 	showpokepic 0x3B4 0x0 0x6
-	msgbox Miralba_3_1_NPC0_text8 MSG_NORMAL
+	msgbox Miralba_3_1_NPC0_text8 0x7
 	special 0x15A
 	pause 0x1E	
 	playsong 0x0110 0x0
@@ -333,7 +333,7 @@ EventScript_Miralba_3_1_NPC0:
 	waitmovement 0xFF	
 	fadedefault
 	showpokepic 0x3B4 0x0 0x6
-	msgbox Miralba_3_1_NPC0_text9 MSG_NORMAL
+	msgbox Miralba_3_1_NPC0_text9 0x7
 	special 0x15A
 	pause 0x1E	
 	playsong 0x0110 0x0
@@ -342,13 +342,13 @@ EventScript_Miralba_3_1_NPC0:
 	waitmovement 0xFF	
 	fadedefault
 	showpokepic 0x3B4 0x0 0x6
-	msgbox Miralba_3_1_NPC0_text10 MSG_NORMAL
+	msgbox Miralba_3_1_NPC0_text10 0x7
 	special 0x15A
 	pause 0x1E
 	spriteface 0xFF 0x4
 	spriteface 0x1 0x3
 	showpokepic 0x3B4 0x0 0x6
-	msgbox Miralba_3_1_NPC0_text11 MSG_NORMAL
+	msgbox Miralba_3_1_NPC0_text11 0x7
 	special 0x15A
 	pause 0x1E
 	giveitem 0x4 0x5 MSG_OBTAIN
@@ -358,9 +358,9 @@ EventScript_Miralba_3_1_NPC0:
 	pause 0x1E
 	spriteface 0x3 0x2
 	cry 0x1EE 0x0
-	msgbox Miralba_3_1_NPC0_text12 MSG_NORMAL
+	msgbox Miralba_3_1_NPC0_text12 0x7
 	showpokepic 0x3B4 0x0 0x6
-	msgbox Miralba_3_1_NPC0_text13 MSG_NORMAL
+	msgbox Miralba_3_1_NPC0_text13 0x7
 	special 0x15A
 	pause 0x1E
 	spriteface 0x3 0x1
@@ -369,11 +369,11 @@ EventScript_Miralba_3_1_NPC0:
 	spriteface 0x1 0x3
 	pause 0x1E
 	showpokepic 0x3B4 0x0 0x6
-	msgbox Miralba_3_1_NPC0_text14 MSG_NORMAL
+	msgbox Miralba_3_1_NPC0_text14 0x7
 	special 0x15A
 	pause 0x1E
 	showpokepic 0x3B6 0x15 0x6
-	msgbox Miralba_3_1_NPC0_text15 MSG_NORMAL
+	msgbox Miralba_3_1_NPC0_text15 0x7
 	special 0x15A
 	playsong 0x13B 0x0
 	applymovement 0x1 Miralba_3_1_NPC0_mov9
@@ -541,7 +541,7 @@ EventScript_Miralba_3_1_NPC0:
 EventScript_Miralba_3_1_NPC4:
 	lock
 	faceplayer
-	msgbox Miralba_3_1_NPC4_text1 MSG_NORMAL
+	msgbox Miralba_3_1_NPC4_text1 0x7
 	release
 	end
 
@@ -549,7 +549,7 @@ EventScript_Miralba_3_1_NPC4:
 EventScript_Miralba_3_1_NPC3:
 	lock
 	faceplayer
-	msgbox Miralba_3_1_NPC3_text1 MSG_NORMAL
+	msgbox Miralba_3_1_NPC3_text1 0x7
 	release
 	end
 
@@ -557,6 +557,6 @@ EventScript_Miralba_3_1_NPC3:
 EventScript_Miralba_3_1_NPC7:
 	lock
 	faceplayer
-	msgbox Miralba_3_1_NPC7_text1 MSG_NORMAL
+	msgbox Miralba_3_1_NPC7_text1 0x7
 	release
 	end

@@ -772,20 +772,28 @@ CieloStellato_2_60_MapScriptOnFrameBegin:
     end
 
 Part1:
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text1 MSG_NORMAL
+    playsong 0x188 0x0
+    writebytetooffset 0x30 0x4000012
+    //writebytetooffset 0x2 0x20204B6
+    //writebytetooffset 0xE 0x20204B8
+    msgbox CieloStellato_2_60_MapScriptOnFrame_text1 0x7 
     pause 0x1E
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text2 MSG_NORMAL
+    msgbox CieloStellato_2_60_MapScriptOnFrame_text2 0x7 
     pause 0x1E
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text3 MSG_NORMAL
+    msgbox CieloStellato_2_60_MapScriptOnFrame_text3 0x7 
     pause 0x1E
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text4 MSG_NORMAL
+    msgbox CieloStellato_2_60_MapScriptOnFrame_text4 0x7 
     pause 0x1E
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text5 MSG_NORMAL
+    msgbox CieloStellato_2_60_MapScriptOnFrame_text5 0x7 
+    writebytetooffset 0x0 0x4000012
+    //writebytetooffset 0xF 0x20204B6
+    //writebytetooffset 0x4 0x20204B8
+    fadedefault
     pause 0x1E
     fadescreen 0x1
     pause 0x1E
     writebytetooffset 0x30 0x4000012
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text6 MSG_NORMAL
+    msgbox CieloStellato_2_60_MapScriptOnFrame_text6 0x7
     writebytetooffset 0x0 0x4000012
     pause 0x1E
     //setflag 0x900
@@ -806,7 +814,7 @@ InitialBlack:
 
 RaikouEyes:
     pause 0x1E
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text7 MSG_NORMAL
+    msgbox CieloStellato_2_60_MapScriptOnFrame_text7 0x7
     setvar 0x4051 0x4
     warpmuted 0x2 0x3C 0xFF 0x06 0x04
     return
@@ -814,14 +822,14 @@ RaikouEyes:
 RaikouFull:
     pause 0x1E
     cry 0xF3 0x0
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text8 MSG_NORMAL
+    msgbox CieloStellato_2_60_MapScriptOnFrame_text8 0x7
     setvar 0x4051 0x5
     warpmuted 0x2 0x3C 0xFF 0x06 0x04
     return
 
 SuicuneEyes:
     pause 0x1E
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text7 MSG_NORMAL
+    msgbox CieloStellato_2_60_MapScriptOnFrame_text7 0x7
     setvar 0x4051 0x6
     warpmuted 0x2 0x3C 0xFF 0x06 0x04
     return
@@ -829,14 +837,14 @@ SuicuneEyes:
 SuicuneFull:
     pause 0x1E
     cry 0xF5 0x0
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text8 MSG_NORMAL
+    msgbox CieloStellato_2_60_MapScriptOnFrame_text8 0x7
     setvar 0x4051 0x7
     warpmuted 0x2 0x3C 0xFF 0x06 0x04
     return
 
 EnteiEyes:
     pause 0x1E
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text7 MSG_NORMAL
+    msgbox CieloStellato_2_60_MapScriptOnFrame_text7 0x7
     setvar 0x4051 0x8
     warpmuted 0x2 0x3C 0xFF 0x06 0x04
     return
@@ -844,7 +852,7 @@ EnteiEyes:
 EnteiFull:
     pause 0x1E
     cry 0xF4 0x0
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text8 MSG_NORMAL
+    msgbox CieloStellato_2_60_MapScriptOnFrame_text8 0x7
     setvar 0x4051 0x9
     setvar 0x4050 0x1
     writebytetooffset 0x2 0x2036E28

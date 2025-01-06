@@ -13,7 +13,6 @@ gMapScripts_Percorso11_3_25:
 		setvar 0x5007 0x0
 		end
 
-
 .global EventScript_Percorso_11_3_25_Sign0
 EventScript_Percorso_11_3_25_Sign0:
 	msgbox Percorso_11_3_25_Sign0_text1 MSG_SIGN
@@ -31,7 +30,7 @@ EventScript_Percorso_11_Brandon:
 	if 0x1 _call EventScript_Percorso_11_Brandon_Part1
 	faceplayer
 	showpokepic 0x3B5 0x15 0x6
-	msgbox Percorso_11_Brandon_text1 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text1 0x7
 	special 0x15A
 	release
 	end
@@ -40,32 +39,38 @@ EventScript_Percorso_11_Brandon:
 	EventScript_Percorso_11_Brandon_Part1:
 	//mmh dannzione
 	showpokepic 0x3B5 0x15 0x6
-	msgbox Percorso_11_Brandon_text2 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text2 0x7
 	special 0x15A
 	applymovement 0x1 EventScript_Percorso_11_Brandon_mov1
-	applymovement 0x2 EventScript_Percorso_11_Brandon_mov1
 	waitmovement 0x0
 	playsong 0x13C 0x0
 	//mmh dannzione
 	showpokepic 0x3B5 0x15 0x6
-	msgbox Percorso_11_Brandon_text3 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text3 0x7
 	special 0x15A
 	applymovement 0xFF EventScript_Percorso_11_Brandon_mov2
 	waitmovement 0x0
-	applymovement 0x2 EventScript_Percorso_11_Brandon_mov3
-	waitmovement 0x0
 	//vai axew...
 	showpokepic 0x3B6 0x0 0x6
-	msgbox Percorso_11_Brandon_text4 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text4 0x7
 	special 0x15A
 	movesprite 0x7 0x0F 0x0A
 	pause 0x1E
 	movesprite 0x6 0x0F 0x0A
 	hidesprite 0x7
-	msgbox Percorso_11_Brandon_text5 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text5 0x7
 	cry 0x297 0x0
 	pause 0x1E
-	msgbox Percorso_11_Brandon_text6 MSG_NORMAL
+	//vai deinoo...
+	showpokepic 0x3B5 0x15 0x6
+	msgbox Percorso_11_Brandon_text5a 0x7
+	special 0x15A
+	movesprite 0x7 0x10 0x0A
+	showsprite 0x7
+	pause 0x1E
+	movesprite 0x2 0x10 0x0A
+	hidesprite 0x7
+	msgbox Percorso_11_Brandon_text6 0x7
 	cry 0x2AE 0x0
 	fadedefault
 
@@ -75,7 +80,7 @@ EventScript_Percorso_11_Brandon:
 	trainerbattle3 0x3 0x146 0x100 Percorso_11_Brandon_textIntro
 
 	showpokepic 0x3B5 0x15 0x6
-	msgbox Percorso_11_Brandon_text7 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text7 0x7
 	special 0x15A
 	cry 0x2AE 0x0
 	movesprite2 0x2 0x09 0x0B
@@ -83,7 +88,7 @@ EventScript_Percorso_11_Brandon:
 	pause 0x1E
 	//ottimo lavoro axew...
 	showpokepic 0x3B6 0x0 0x6
-	msgbox Percorso_11_Brandon_text8 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text8 0x7
 	special 0x15A
 	cry 0x297 0x0
 	hidesprite 0x6
@@ -100,45 +105,44 @@ EventScript_Percorso_11_Brandon:
 	waitmovement 0x0
 	//eccomi ragazzi...
 	showpokepic 0x3B7 0x0 0x6
-	msgbox Percorso_11_Brandon_text9 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text9 0x7
 	special 0x15A
 	fanfare 0x0101
-	setflag 0x829
-	msgbox Percorso_11_Brandon_text10 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text10 0x7
 	applymovement 0x5 EventScript_Percorso_11_Brandon_mov7
 	waitmovement 0x0
 	//tieni brandon...
 	showpokepic 0x3B7 0x0 0x6
-	msgbox Percorso_11_Brandon_text11 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text11 0x7
 	special 0x15A
 	pause 0x1E
 	fanfare 0x0101
-	msgbox Percorso_11_Brandon_text12 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text12 0x7
 	//questo strumento
 	showpokepic 0x3B7 0x0 0x6
-	msgbox Percorso_11_Brandon_text13 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text13 0x7
 	special 0x15A
 	pause 0x1E
 	//grazie mille prof oak
 	showpokepic 0x3B5 0x15 0x6
-	msgbox Percorso_11_Brandon_text14 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text14 0x7
 	special 0x15A
 	pause 0x1E
 	//certamente...
 	showpokepic 0x3B7 0x0 0x6
-	msgbox Percorso_11_Brandon_text15 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text15 0x7
 	special 0x15A
 	applymovement 0x1 EventScript_Percorso_11_Brandon_mov8
 	waitmovement 0x0
 	//hai sentito player?
 	showpokepic 0x3B5 0x15 0x6
-	msgbox Percorso_11_Brandon_text16 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text16 0x7
 	special 0x15A
 	spriteface 0x1 0x2
 	pause 0x1E
 	//sono certo...
 	showpokepic 0x3B7 0x0 0x6
-	msgbox Percorso_11_Brandon_text17 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text17 0x7
 	special 0x15A
 	playsong 0x012E 0x0 
 	applymovement 0x5 EventScript_Percorso_11_Brandon_mov9
@@ -149,13 +153,14 @@ EventScript_Percorso_11_Brandon:
 	spriteface 0x1 0x3
 	pause 0x1E
 	showpokepic 0x3B5 0x15 0x6
-	msgbox Percorso_11_Brandon_text1 MSG_NORMAL
+	msgbox Percorso_11_Brandon_text1 0x7
 	special 0x15A
 	applymovement 0x1 EventScript_Percorso_11_Brandon_mov10
 	waitmovement 0x0
 	special 0x0
 	setvar 0x4051 0x13
 	clearflag 0x950
+	setflag 0x829
 	release
 	end
 	
@@ -172,11 +177,6 @@ EventScript_Percorso_11_Brandon:
 		.byte 0x3 
 		.byte 0xFE
 
-	EventScript_Percorso_11_Brandon_mov3:
-		.byte 0x12
-		.byte 0x10
-		.byte 0x2 
-		.byte 0xFE
 
 	EventScript_Percorso_11_Brandon_mov4:
 		.byte 0x13
@@ -236,7 +236,7 @@ EventScript_Percorso_11_Brandon:
 EventScript_Percorso_11_3_25_NPC3:
 	lock
 	faceplayer
-	msgbox Percorso_11_3_25_NPC3_text1 MSG_NORMAL
+	msgbox Percorso_11_3_25_NPC3_text1 0x7
 	release
 	end
 
@@ -245,7 +245,7 @@ EventScript_Percorso_11_3_25_NPC2:
 	lock
 	faceplayer
 	cry 0x1C1 0x0
-	msgbox Percorso_11_3_25_NPC2_text1 MSG_NORMAL
+	msgbox Percorso_11_3_25_NPC2_text1 0x7
 	release
 	end
 
@@ -254,6 +254,6 @@ EventScript_Percorso_11_3_25_NPC1:
 	lock
 	faceplayer
 	cry 0x2AE 0x0
-	msgbox Percorso_11_3_25_NPC1_text1 MSG_NORMAL
+	msgbox Percorso_11_3_25_NPC1_text1 0x7
 	release
 	end

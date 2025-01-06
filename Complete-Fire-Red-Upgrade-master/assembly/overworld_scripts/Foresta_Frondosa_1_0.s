@@ -64,7 +64,7 @@ EventScript_Foresta_Frondosa_1_0_Sign5:
 		end
 
 	Foresta_Frondosa_1_0_Sign5_after:
-		msgbox Foresta_Frondosa_1_0_Sign5_text2 MSG_NORMAL
+		msgbox Foresta_Frondosa_1_0_Sign5_text2 0x7
 		releaseall
 		end
 
@@ -72,13 +72,13 @@ EventScript_Foresta_Frondosa_1_0_Sign5:
 		checkitem 0x98 0x1
 		compare 0x800D 0x1
 		if 0x1 _goto EventScript_Foresta_Frondosa_1_0_Sign5_P1
-		msgbox Foresta_Frondosa_1_0_Sign5_text3 MSG_NORMAL
+		msgbox Foresta_Frondosa_1_0_Sign5_text3 0x7
 		releaseall
 		end
 
 	EventScript_Foresta_Frondosa_1_0_Sign5_P1:
 		removeitem 0x98 0x1
-		msgbox Foresta_Frondosa_1_0_Sign5_text4 MSG_NORMAL
+		msgbox Foresta_Frondosa_1_0_Sign5_text4 0x7
 		pause 0x1E
 		applymovement 0x8 Foresta_Frondosa_1_0_Sign5_mov1
 		applymovement 0x9 Foresta_Frondosa_1_0_Sign5_mov2
@@ -86,7 +86,7 @@ EventScript_Foresta_Frondosa_1_0_Sign5:
 		applymovement 0xFF Foresta_Frondosa_1_0_Sign5_mov4
 		waitmovement 0xA
 		pause 0x1E
-		msgbox Foresta_Frondosa_1_0_NPC9_text1 MSG_NORMAL
+		msgbox Foresta_Frondosa_1_0_NPC9_text1 0x7
 		cry 0x115 0x0 
 		pause 0x1E
 		applymovement 0x8 Foresta_Frondosa_1_0_Sign5_mov6
@@ -102,7 +102,7 @@ EventScript_Foresta_Frondosa_1_0_Sign5:
 		spriteface 0xFF 0x4 
 		pause 0x1E
 		showpokepic 0x3BA 0x0 0x6
-		msgbox Foresta_Frondosa_1_0_Sign5_text5 MSG_NORMAL
+		msgbox Foresta_Frondosa_1_0_Sign5_text5 0x7
 		special 0x15A
 		pause 0x1E
 		applymovement 0xB Foresta_Frondosa_1_0_Sign5_mov8
@@ -110,7 +110,7 @@ EventScript_Foresta_Frondosa_1_0_Sign5:
 		movesprite2 0xB 0x1 0x0
 		pause 0x1E
 		showpokepic 0x3B6 0x0 0x6
-		msgbox Foresta_Frondosa_1_0_Sign5_text6 MSG_NORMAL
+		msgbox Foresta_Frondosa_1_0_Sign5_text6 0x7
 		closeonkeypress
 		special 0x15A
 		setflag 0x954
@@ -253,7 +253,7 @@ EventScript_Foresta_Frondosa_1_0_Sign5:
 EventScript_Foresta_Frondosa_1_0_NPC0:
 
 	trainerbattle0 0x0 0x4 0x0 Foresta_Frondosa_1_0_NPC0_text1 Foresta_Frondosa_1_0_NPC0_text2
-	msgbox Foresta_Frondosa_1_0_NPC0_text3 MSG_NORMAL
+	msgbox Foresta_Frondosa_1_0_NPC0_text3 0x7
 
 	end
 
@@ -261,7 +261,7 @@ EventScript_Foresta_Frondosa_1_0_NPC0:
 EventScript_Foresta_Frondosa_1_0_NPC1:
 
 	trainerbattle0 0x0 0x5 0x0 Foresta_Frondosa_1_0_NPC1_text1 Foresta_Frondosa_1_0_NPC1_text2
-	msgbox Foresta_Frondosa_1_0_NPC1_text3 MSG_NORMAL
+	msgbox Foresta_Frondosa_1_0_NPC1_text3 0x7
 
 	end
 
@@ -269,7 +269,7 @@ EventScript_Foresta_Frondosa_1_0_NPC1:
 EventScript_Foresta_Frondosa_1_0_NPC2:
 
 	trainerbattle0 0x0 0x6 0x0 Foresta_Frondosa_1_0_NPC2_text1 Foresta_Frondosa_1_0_NPC2_text2
-	msgbox Foresta_Frondosa_1_0_NPC2_text3 MSG_NORMAL
+	msgbox Foresta_Frondosa_1_0_NPC2_text3 0x7
 
 	end
 
@@ -277,7 +277,7 @@ EventScript_Foresta_Frondosa_1_0_NPC2:
 EventScript_Foresta_Frondosa_1_0_NPC3:
 
 	trainerbattle0 0x0 0x7 0x0 Foresta_Frondosa_1_0_NPC3_text1 Foresta_Frondosa_1_0_NPC3_text2
-	msgbox Foresta_Frondosa_1_0_NPC3_text3 MSG_NORMAL
+	msgbox Foresta_Frondosa_1_0_NPC3_text3 0x7
 
 	end
 
@@ -285,7 +285,7 @@ EventScript_Foresta_Frondosa_1_0_NPC3:
 EventScript_Foresta_Frondosa_1_0_NPC4:
 
 	trainerbattle0 0x0 0x8 0x0 Foresta_Frondosa_1_0_NPC4_text1 Foresta_Frondosa_1_0_NPC4_text2
-	msgbox Foresta_Frondosa_1_0_NPC4_text3 MSG_NORMAL
+	msgbox Foresta_Frondosa_1_0_NPC4_text3 0x7
 
 	end
 
@@ -293,7 +293,7 @@ EventScript_Foresta_Frondosa_1_0_NPC4:
 EventScript_Foresta_Frondosa_1_0_NPC5:
 
 	trainerbattle0 0x0 0x9 0x0 Foresta_Frondosa_1_0_NPC5_text1 Foresta_Frondosa_1_0_NPC5_text2
-	msgbox Foresta_Frondosa_1_0_NPC5_text3 MSG_NORMAL
+	msgbox Foresta_Frondosa_1_0_NPC5_text3 0x7
 
 	end
 
@@ -301,7 +301,7 @@ EventScript_Foresta_Frondosa_1_0_NPC5:
 EventScript_Foresta_Frondosa_1_0_NPC6:
 
 	trainerbattle0 0x0 0xA 0x0 Foresta_Frondosa_1_0_NPC6_text1 Foresta_Frondosa_1_0_NPC6_text2
-	msgbox Foresta_Frondosa_1_0_NPC6_text3 MSG_NORMAL
+	msgbox Foresta_Frondosa_1_0_NPC6_text3 0x7
 
 	end
 
@@ -314,12 +314,12 @@ EventScript_Foresta_Frondosa_1_0_NPC7:
 	applymovement 0x7 Foresta_Frondosa_1_0_NPC7_mov1
 	waitmovement 0x0
 	cry 0x115 0x0 
-    msgbox Foresta_Frondosa_1_0_NPC7_text1 MSG_NORMAL	
+    msgbox Foresta_Frondosa_1_0_NPC7_text1 0x7	
 	pause 0x1E
 	applymovement 0xFF Foresta_Frondosa_1_0_NPC7_mov2
 	waitmovement 0xFF
 	showpokepic 0x3B6 0x0 0x6
-    msgbox Foresta_Frondosa_1_0_NPC7_text2 MSG_NORMAL
+    msgbox Foresta_Frondosa_1_0_NPC7_text2 0x7
     special 0x15A
 	pause 0x1E
 	compare 0x4051 0x18
@@ -338,7 +338,7 @@ EventScript_Foresta_Frondosa_1_0_NPC7:
 		spriteface 0xFF 0x4
 		pause 0x1E
 		showpokepic 0x3BA 0x0 0x6
-		msgbox Foresta_Frondosa_1_0_NPC7_text3 MSG_NORMAL
+		msgbox Foresta_Frondosa_1_0_NPC7_text3 0x7
 		special 0x15A
 		pause 0x1E
 		applymovement 0xB Foresta_Frondosa_1_0_NPC7_mov4
@@ -382,12 +382,12 @@ EventScript_Foresta_Frondosa_1_0_NPC8:
 	applymovement 0x7 Foresta_Frondosa_1_0_NPC7_mov1
 	waitmovement 0x0
 	cry 0x115 0x0 
-    msgbox Foresta_Frondosa_1_0_NPC7_text1 MSG_NORMAL	
+    msgbox Foresta_Frondosa_1_0_NPC7_text1 0x7	
 	pause 0x1E
 	applymovement 0xFF Foresta_Frondosa_1_0_NPC7_mov2
 	waitmovement 0xFF
 	showpokepic 0x3B6 0x0 0x6
-    msgbox Foresta_Frondosa_1_0_NPC7_text2 MSG_NORMAL
+    msgbox Foresta_Frondosa_1_0_NPC7_text2 0x7
     special 0x15A
 	pause 0x1E
 	compare 0x4051 0x18
@@ -406,7 +406,7 @@ EventScript_Foresta_Frondosa_1_0_NPC8:
 		spriteface 0xFF 0x4
 		pause 0x1E
 		showpokepic 0x3BA 0x0 0x6
-		msgbox Foresta_Frondosa_1_0_NPC7_text3 MSG_NORMAL
+		msgbox Foresta_Frondosa_1_0_NPC7_text3 0x7
 		special 0x15A
 		pause 0x1E
 		applymovement 0xB Foresta_Frondosa_1_0_NPC8_mov4
@@ -438,7 +438,7 @@ EventScript_Foresta_Frondosa_1_0_NPC8:
 EventScript_Foresta_Frondosa_1_0_NPC9:
 	lock
 	faceplayer
-    msgbox Foresta_Frondosa_1_0_NPC9_text1 MSG_NORMAL	
+    msgbox Foresta_Frondosa_1_0_NPC9_text1 0x7	
 	cry 0x115 0x0 
 	wildbattle 0x115 0x5 0x0
 	hidesprite 0xA
@@ -453,7 +453,7 @@ EventScript_Foresta_Frondosa_1_0_NPC10:
 	lock
 	faceplayer
 	showpokepic 0x3BA 0x0 0x6
-	msgbox Foresta_Frondosa_1_0_NPC10_text1 MSG_NORMAL
+	msgbox Foresta_Frondosa_1_0_NPC10_text1 0x7
 	special 0x15A
 	release
 	end
@@ -464,7 +464,7 @@ EventScript_Foresta_Frondosa_1_0_NPC10:
 EventScript_Foresta_Frondosa_1_0_NPC11:
 
 	trainerbattle0 0x0 0xB 0x0 Foresta_Frondosa_1_0_NPC11_text1 Foresta_Frondosa_1_0_NPC11_text2
-	msgbox Foresta_Frondosa_1_0_NPC11_text3 MSG_NORMAL
+	msgbox Foresta_Frondosa_1_0_NPC11_text3 0x7
 
 	end
 
@@ -472,7 +472,7 @@ EventScript_Foresta_Frondosa_1_0_NPC11:
 EventScript_Foresta_Frondosa_1_0_NPC12:
 
 	trainerbattle0 0x0 0xC 0x0 Foresta_Frondosa_1_0_NPC12_text1 Foresta_Frondosa_1_0_NPC12_text2
-	msgbox Foresta_Frondosa_1_0_NPC12_text3 MSG_NORMAL
+	msgbox Foresta_Frondosa_1_0_NPC12_text3 0x7
 
 	end
 
@@ -482,7 +482,7 @@ EventScript_Foresta_Frondosa_1_0_NPC12:
 EventScript_Foresta_Frondosa_1_0_NPC13:
 	lock
 	faceplayer
-	msgbox Foresta_Frondosa_1_0_NPC13_text1 MSG_NORMAL
+	msgbox Foresta_Frondosa_1_0_NPC13_text1 0x7
 	release
 	end
 
@@ -490,7 +490,7 @@ EventScript_Foresta_Frondosa_1_0_NPC13:
 EventScript_Foresta_Frondosa_1_0_NPC14:
 	lock
 	faceplayer
-	msgbox Foresta_Frondosa_1_0_NPC14_text1 MSG_NORMAL
+	msgbox Foresta_Frondosa_1_0_NPC14_text1 0x7
 	release
 	end
 
@@ -498,7 +498,7 @@ EventScript_Foresta_Frondosa_1_0_NPC14:
 EventScript_Foresta_Frondosa_1_0_NPC15:
 	lock
 	faceplayer
-	msgbox Foresta_Frondosa_1_0_NPC15_text1 MSG_NORMAL
+	msgbox Foresta_Frondosa_1_0_NPC15_text1 0x7
 	release
 	end
 

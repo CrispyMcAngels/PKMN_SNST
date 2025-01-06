@@ -280,6 +280,10 @@ gEventsObjectPic_NPC0Pal 08F15EB0
 gEventObjectGraphicsInfo_NPC14 08EB1038
 gEventsObjectPic_NPC14Pal 08F15E70
 
+#NPC15
+gEventObjectGraphicsInfo_NPC15 08EB103C
+gEventsObjectPic_NPC15Pal 08F15E78
+
 #NPC16
 gEventObjectGraphicsInfo_NPC16 08EB1040
 gEventsObjectPic_NPC16Pal 08F15E80
@@ -548,6 +552,14 @@ gEventsObjectPic_NPC96Pal 08F16118
 gEventObjectGraphicsInfo_NPC97 08EB1184
 gEventsObjectPic_NPC97Pal 08F16120
 
+#NPC100
+gEventObjectGraphicsInfo_NPC100 08EB1190
+gEventsObjectPic_NPC100Pal 08F16138
+
+#NPC101
+gEventObjectGraphicsInfo_NPC101 08EB1194
+gEventsObjectPic_NPC101Pal 08F16140
+
 #NPC102
 gEventObjectGraphicsInfo_NPC102 08EB1198
 gEventsObjectPic_NPC102Pal 08F16148
@@ -592,6 +604,10 @@ gEventsObjectPic_NPC142Pal 08F16288
 gEventObjectGraphicsInfo_NPC143 08EB123C
 gEventsObjectPic_NPC143Pal 08F16290
 
+#NPC146
+gEventObjectGraphicsInfo_NPC146 08EB1248
+gEventsObjectPic_NPC146Pal 08F162A8
+
 #NPC152
 gEventObjectGraphicsInfo_NPC152 08EB1260
 gEventsObjectPic_NPC152Pal 08F162D8
@@ -602,32 +618,32 @@ gEventsObjectPic_NPC153Pal 08F162E0
 
 #NPC154
 gEventObjectGraphicsInfo_NPC154 08EB1268
-gEventsObjectPic_NPC154Pal 08F162E8
+gEventsObjectPic_NPC154Pal 08F162E0
 
 #NPC155
 gEventObjectGraphicsInfo_NPC155 08EB126C
-gEventsObjectPic_NPC155Pal 08F162F0
+gEventsObjectPic_NPC155Pal 08F162E0
 
 #NPC156
 gEventObjectGraphicsInfo_NPC156 08EB1270
-gEventsObjectPic_NPC156Pal 08F162F8
+gEventsObjectPic_NPC156Pal 08F162E0
 
 #NPC157
 gEventObjectGraphicsInfo_NPC157 08EB1274
-gEventsObjectPic_NPC157Pal 08F16300
+gEventsObjectPic_NPC157Pal 08F162E0
 
 #NPC158
 gEventObjectGraphicsInfo_NPC158 08EB1278
-gEventsObjectPic_NPC158Pal 08F16308
+gEventsObjectPic_NPC158Pal 08F162E0
 
 #NPC159
 gEventObjectGraphicsInfo_NPC159 08EB127C
-gEventsObjectPic_NPC159Pal 08F16310
+gEventsObjectPic_NPC159Pal 08F162E0
 
 #NPC160
 gEventObjectGraphicsInfo_NPC160 08EB1280
-gEventsObjectPic_NPC160Pal 08F16318
+gEventsObjectPic_NPC160Pal 08F162E0
 
 #NPC161
 gEventObjectGraphicsInfo_NPC161 08EB1284
-gEventsObjectPic_NPC161Pal 08F16320
+gEventsObjectPic_NPC161Pal 08F162E0

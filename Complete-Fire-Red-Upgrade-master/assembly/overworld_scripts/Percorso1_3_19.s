@@ -8,7 +8,7 @@
 EventScript_Percorso_1_3_19_NPC0:
 	lock
 	faceplayer
-	msgbox Percorso_1_3_19_NPC0_text1 MSG_NORMAL
+	msgbox Percorso_1_3_19_NPC0_text1 0x7
 	release
 	end
 
@@ -16,7 +16,7 @@ EventScript_Percorso_1_3_19_NPC0:
 EventScript_Percorso_1_3_19_NPC1:
 
 	trainerbattle0 0x0 0x0 0x0 Percorso_1_3_19_NPC1_text1 Percorso_1_3_19_NPC1_text2
-	msgbox Percorso_1_3_19_NPC1_text3 MSG_NORMAL
+	msgbox Percorso_1_3_19_NPC1_text3 0x7
 
 	end
 
@@ -24,7 +24,7 @@ EventScript_Percorso_1_3_19_NPC1:
 EventScript_Percorso_1_3_19_NPC8:
 	
 	trainerbattle0 0x0 0x1 0x0 Percorso_1_3_19_NPC8_text1 Percorso_1_3_19_NPC8_text2
-	msgbox Percorso_1_3_19_NPC8_text3 MSG_NORMAL
+	msgbox Percorso_1_3_19_NPC8_text3 0x7
 
 	end
 
@@ -77,18 +77,18 @@ gMapScripts_Percorso1_3_19:
 			waitmovement 0x0
 			showpokepic 0x3B4 0x0 0x6
 			//Wow, non avevo ancora...
-			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text8 MSG_NORMAL
+			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text8 0x7
 			special 0x15A
 			applymovement 0x3 MapScripts_Percorso1_3_19_MapScriptOnFrame_mov9
 			waitmovement 0x0
 			showpokepic 0x3B4 0x0 0x6
 			//Ah player, prendi questa...
-			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text9 MSG_NORMAL
+			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text9 0x7
 			special 0x15A
 			giveitem 0x4 0x1 MSG_OBTAIN
 			showpokepic 0x3B4 0x0 0x6
 			//Ci si vede
-			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text10 MSG_NORMAL
+			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text10 0x7
 			special 0x15A
 			playsong 0x13B
 			applymovement 0x3 MapScripts_Percorso1_3_19_MapScriptOnFrame_mov10
@@ -99,17 +99,17 @@ gMapScripts_Percorso1_3_19:
 
 			showpokepic 0x3B5 0x15 0x6
 			//tuo fratello...
-			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text11 MSG_NORMAL
+			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text11 0x7
 			special 0x15A
 			pause 0x1E
 			showpokepic 0x3B6 0x0 0x6
 			//...
-			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text12 MSG_NORMAL
+			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text12 0x7
 			special 0x15A	
 
 			showpokepic 0x3B5 0x15 0x6
 			//Per oggi puo' bastare
-			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text13 MSG_NORMAL
+			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text13 0x7
 			special 0x15A
 			setflag 0x951
 			setvar 0x4050 0x2
@@ -164,7 +164,7 @@ gMapScripts_Percorso1_3_19:
 EventScript_Percorso1_3_19_tile0:
 	lockall
 	showpokepic 0x3B6 0x0 0x6
-    msgbox EventScript_Percorso1_3_19_tile0_text1 MSG_NORMAL
+    msgbox EventScript_Percorso1_3_19_tile0_text1 0x7
     special 0x15A
 	applymovement 0xFF EventScript_Percorso1_3_19_tile0_mov1
 	waitmovement 0xFF
@@ -191,18 +191,18 @@ EventScript_Percorso1_3_19_tile1:
 	lockall
 	applymovement 0x5 EventScript_Percorso1_3_19_tile1_mov2
 	waitmovement 0x0
-	msgbox EventScript_Percorso1_3_19_tile1_text1 MSG_NORMAL
+	msgbox EventScript_Percorso1_3_19_tile1_text1 0x7
 	pause 0x1E
 	applymovement 0x4 EventScript_Percorso1_3_19_tile1_mov2a
 	waitmovement 0x0
 	showpokepic 0x3B5 0x15 0x6
 	//Aiutooo
-    msgbox EventScript_Percorso1_3_19_tile1_text2 MSG_NORMAL
+    msgbox EventScript_Percorso1_3_19_tile1_text2 0x7
     special 0x15A
 	pause 0x1E
 	showpokepic 0x3B6 0x0 0x6
 	//...
-    msgbox EventScript_Percorso1_3_19_tile1_text3 MSG_NORMAL
+    msgbox EventScript_Percorso1_3_19_tile1_text3 0x7
     special 0x15A
 	playsong 0x0116
 	special 0x113
@@ -217,10 +217,10 @@ EventScript_Percorso1_3_19_tile1:
 	applymovement 0x5 EventScript_Percorso1_3_19_tile1_mov6
 	waitmovement 0x0
 	cry 0x1E7 0x0
-	msgbox EventScript_Percorso1_3_19_tile1_text1 MSG_NORMAL
+	msgbox EventScript_Percorso1_3_19_tile1_text1 0x7
 	pause 0x1E
 	cry 0x297 0x0
-	msgbox EventScript_Percorso1_3_19_tile1_text4 MSG_NORMAL
+	msgbox EventScript_Percorso1_3_19_tile1_text4 0x7
 	applymovement 0x6 EventScript_Percorso1_3_19_tile1_mov7
 	waitmovement 0x0
 	fadescreen 0x3
@@ -235,17 +235,17 @@ EventScript_Percorso1_3_19_tile1:
 	pause 0x1E
 	showpokepic 0x3B5 0x15 0x6
 	//Fiuuu, per un pelo!
-    msgbox EventScript_Percorso1_3_19_tile1_text5 MSG_NORMAL
+    msgbox EventScript_Percorso1_3_19_tile1_text5 0x7
     special 0x15A
 	pause 0x1E
 	applymovement 0x6 EventScript_Percorso1_3_19_tile1_mov9
 	waitmovement 0x0
 	pause 0x1E
 	cry 0x297 0x0	
-	msgbox EventScript_Percorso1_3_19_tile1_text4 MSG_NORMAL
+	msgbox EventScript_Percorso1_3_19_tile1_text4 0x7
 	showpokepic 0x3B5 0x15 0x6
 	//sembra proprio che...
-    msgbox EventScript_Percorso1_3_19_tile1_text6 MSG_NORMAL
+    msgbox EventScript_Percorso1_3_19_tile1_text6 0x7
     special 0x15A
 	pause 0x1E
 	//capire come fare yes or no
@@ -259,7 +259,7 @@ EventScript_Percorso1_3_19_tile1:
 	EventScript_Percorso1_3_19_tile1_yes:
 		showpokepic 0x3B6 0x0 0x6
 		//vai, pokeball....
-		msgbox EventScript_Percorso1_3_19_tile1_text8 MSG_NORMAL
+		msgbox EventScript_Percorso1_3_19_tile1_text8 0x7
 		special 0x15A
 		movesprite 0x7 0x0A 0x23
 		pause 0x1E
@@ -268,14 +268,14 @@ EventScript_Percorso1_3_19_tile1:
 		givepokemon 0x297 0x5 0x0 0x0 0x0 0x0
 		removeitem 0x4 0x1
 		fanfare 0x013E
-		msgbox EventScript_Percorso1_3_19_tile1_text9 MSG_NORMAL
+		msgbox EventScript_Percorso1_3_19_tile1_text9 0x7
 		pause 0x1E
 		pause 0x1E
 		applymovement 0x4 EventScript_Percorso1_3_19_tile1_mov10
 		waitmovement 0x0
 		showpokepic 0x3B5 0x15 0x6
 		//complimenti player
-		msgbox EventScript_Percorso1_3_19_tile1_text10 MSG_NORMAL
+		msgbox EventScript_Percorso1_3_19_tile1_text10 0x7
 		special 0x15A
 		setflag 0x02A
 		setflag 0x828
@@ -290,7 +290,7 @@ EventScript_Percorso1_3_19_tile1:
 		pause 0x1E
 		showpokepic 0x3B5 0x0 0x6
 		//sei sicuro?
-		msgbox EventScript_Percorso1_3_19_tile1_text11 MSG_NORMAL
+		msgbox EventScript_Percorso1_3_19_tile1_text11 0x7
 		special 0x15A
 		msgbox EventScript_Percorso1_3_19_tile1_text7 MSG_YESNO
 		compare 0x800D 0x1
@@ -409,7 +409,7 @@ EventScript_Percorso1_3_19_tile2:
 	lockall
 	applymovement 0x8 EventScript_Percorso1_3_19_tile2_mov1
 	waitmovement 0x8
-    msgbox EventScript_Percorso1_3_19_tile2_text1 MSG_NORMAL
+    msgbox EventScript_Percorso1_3_19_tile2_text1 0x7
     setvar 0x4050 0x3
 	warp 0x04 0x04 0xFF 0x04 0x05
 	releaseall
@@ -428,7 +428,7 @@ EventScript_Percorso1_3_19_tile3:
 	lockall
 	applymovement 0x8 EventScript_Percorso1_3_19_tile3_mov1
 	waitmovement 0x8
-    msgbox EventScript_Percorso1_3_19_tile2_text1 MSG_NORMAL
+    msgbox EventScript_Percorso1_3_19_tile2_text1 0x7
     setvar 0x4050 0x3
 	warp 0x04 0x04 0xFF 0x04 0x05
 	releaseall
@@ -442,3 +442,13 @@ EventScript_Percorso1_3_19_tile3:
 		.byte 0x10
 		.byte 0x12
 		.byte 0xFE
+
+.global EventScript_Percorso_1_3_19_NPC3
+EventScript_Percorso_1_3_19_NPC3:
+	lock
+	faceplayer
+	showpokepic 0x3B5 0x15 0x6
+	msgbox Percorso_1_3_19_NPC3_text1 0x7
+	special 0x15A
+	release
+	end

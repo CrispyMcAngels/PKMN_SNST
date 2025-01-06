@@ -38,7 +38,7 @@ gMapScripts_Miralba_5_4:
 EventScript_Miralba_5_4_NPC1:
 	lock
 	faceplayer
-	msgbox EventScript_Miralba_5_4_NPC1_text1 MSG_NORMAL
+	msgbox EventScript_Miralba_5_4_NPC1_text1 0x7
 	release
 	end
 
@@ -46,7 +46,7 @@ EventScript_Miralba_5_4_NPC1:
 EventScript_Miralba_5_4_NPC2:
 	lock
 	faceplayer
-	msgbox EventScript_Miralba_5_4_NPC2_text1 MSG_NORMAL
+	msgbox EventScript_Miralba_5_4_NPC2_text1 0x7
 	release
 	end
 
@@ -54,6 +54,6 @@ EventScript_Miralba_5_4_NPC2:
 EventScript_Miralba_5_4_NPC3:
 	lock
 	faceplayer
-	msgbox EventScript_Miralba_5_4_NPC3_text1 MSG_NORMAL
+	msgbox EventScript_Miralba_5_4_NPC3_text1 0x7
 	release
 	end

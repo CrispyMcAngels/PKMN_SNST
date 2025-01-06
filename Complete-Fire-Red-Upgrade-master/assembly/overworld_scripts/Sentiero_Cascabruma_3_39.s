@@ -8,7 +8,7 @@
 EventScript_Sentiero_Cascabruma_3_39_NPC1:
 	lock
 	faceplayer
-	msgbox Sentiero_Cascabruma_3_39_NPC1_text1 MSG_NORMAL
+	msgbox Sentiero_Cascabruma_3_39_NPC1_text1 0x7
 	release
 	end
 
@@ -16,7 +16,7 @@ EventScript_Sentiero_Cascabruma_3_39_NPC1:
 EventScript_Sentiero_Cascabruma_3_39_NPC0:
 
 	trainerbattle0 0x0 0x1F 0x0 Sentiero_Cascabruma_3_39_NPC0_text1 Sentiero_Cascabruma_3_39_NPC0_text2
-	msgbox Sentiero_Cascabruma_3_39_NPC0_text3 MSG_NORMAL
+	msgbox Sentiero_Cascabruma_3_39_NPC0_text3 0x7
 
 	end
 

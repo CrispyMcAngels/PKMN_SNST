@@ -10,12 +10,12 @@ EventScript_Percorso_1_4_4_NPC0:
 	faceplayer
     checkflag 0x91E
     if 0x1 _call Percorso_1_4_4_NPC0_P1
-	msgbox Percorso_1_4_4_NPC0_text0 MSG_NORMAL
+	msgbox Percorso_1_4_4_NPC0_text0 0x7
 	release
 	end
 
     Percorso_1_4_4_NPC0_P1:
-    msgbox Percorso_1_4_4_NPC0_text1 MSG_NORMAL
+    msgbox Percorso_1_4_4_NPC0_text1 0x7
 	release
 	end
 
@@ -23,7 +23,7 @@ EventScript_Percorso_1_4_4_NPC0:
 EventScript_Percorso_1_4_4_NPC1:
 	lock
 	faceplayer
-	msgbox Percorso_1_4_4_NPC1_text1 MSG_NORMAL
+	msgbox Percorso_1_4_4_NPC1_text1 0x7
 	release
 	end
 
@@ -58,25 +58,25 @@ Borgo_Ponente_4_4_MapScriptOnFrameBegin:
 Borgo_Ponente_4_4_MapScriptOnFrameBegin_P1:
     lockall
     spriteface 0xFF 0x2
-    msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text1 MSG_NORMAL
+    msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text1 0x7
     applymovement 0x1 Borgo_Ponente_4_4_MapScriptOnFrame_mov1
     waitmovement 0x0  
     pause 0x1E
-    msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text2 MSG_NORMAL    
+    msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text2 0x7    
     applymovement 0x1 Borgo_Ponente_4_4_MapScriptOnFrame_mov2
     waitmovement 0x0
     hidesprite 0x2
     pause 0x1E
     applymovement 0x1 Borgo_Ponente_4_4_MapScriptOnFrame_mov3
     waitmovement 0x0  
-    msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text3 MSG_NORMAL
+    msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text3 0x7
     fanfare 0x0101
-    msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text4 MSG_NORMAL
+    msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text4 0x7
     pause 0x1E
-    msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text5 MSG_NORMAL
+    msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text5 0x7
     pause 0x1E
     pause 0x1E
-    msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text6 MSG_NORMAL
+    msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text6 0x7
     setvar 0x4050 0x2
     setvar 0x4051 0x14
     setflag 0x91E
