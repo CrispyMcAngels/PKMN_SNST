@@ -45,7 +45,7 @@ gMapScripts_Percorso2_3_41:
 			pause 0x1E
 			showpokepic 0x3B4 0x15 0x6
 			//aaa
-			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text1 0x7
+			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text1 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
 			giveitem 0x169 0x1 MSG_OBTAIN
@@ -56,22 +56,31 @@ gMapScripts_Percorso2_3_41:
 			end			
 
 		Percorso2_3_41_MapScriptOnFrame_P1b:
+			lockall
+			pause 0x1E
 			showpokepic 0x3B4 0x15 0x6
-			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text2 0x7
+			special 0x15A
+			showpokepic 0x3B4 0x15 0x6
+			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text2 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
 			showpokepic 0x3B6 0x0 0x6
-			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text3 0x7			
+			special 0x15A
+			showpokepic 0x3B6 0x0 0x6
+			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text3 MSG_NORMAL			
 			special 0x15A
 			pause 0x1E
 			showpokepic 0x3B6 0x0 0x6
-			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text4 0x7
+			special 0x15A
+			showpokepic 0x3B6 0x0 0x6
+			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text4 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
 			//P2 PREPARATION
 			setflag 0x952
 			setvar 0x4051 0x24
 			writebytetooffset 0x2 0x2036E28
+			writebytetooffset 0x89 0x350A34
 			warpmuted 0x3 0x29 0xFF 0x1C 0x06
 			releaseall
 			end
@@ -79,7 +88,9 @@ gMapScripts_Percorso2_3_41:
 
 		//cutscene tipo mascherato P_2 
 		Percorso2_3_41_MapScriptOnFrame_P2:
-			playsong 0x0 0x0
+			lockall
+			pause 0x1E
+			playsong 0x189 0x0
 			pause 0x1E
 			applymovement 0xFF Percorso2_3_41_MapScriptOnFrameBegin_P2_mov1
 			waitmovement 0x0
@@ -90,7 +101,9 @@ gMapScripts_Percorso2_3_41:
 			waitmovement 0x0
 			pause 0x1E
 			showpokepic 0x3B9 0x0 0x6
-    		msgbox EventScript_Percorso2_3_41_tile0_text1 0x7
+			special 0x15A
+			showpokepic 0x3B9 0x0 0x6
+    		msgbox EventScript_Percorso2_3_41_tile0_text1 MSG_NORMAL
 			closeonkeypress
 			special 0x15A
 			pause 0x1E
@@ -99,12 +112,13 @@ gMapScripts_Percorso2_3_41:
 			applymovement 0xFF Percorso2_3_41_MapScriptOnFrameBegin_P2_mov5
 			waitmovement 0x0
 			showpokepic 0x3B6 0x0 0x6
-    		msgbox EventScript_Percorso2_3_41_tile0_text2 0x7
+    		msgbox EventScript_Percorso2_3_41_tile0_text2 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
 			clearflag 0x952
 			setvar 0x4051 0x25
 			writebytetooffset 0x0 0x2036E28
+			writebytetooffset 0x25 0x350A34
 			warpmuted 0x3 0x29 0xFF 0x1C 0x04
 			releaseall
 			end				
@@ -147,18 +161,27 @@ gMapScripts_Percorso2_3_41:
 				.byte 0xFE
 
 		Percorso2_3_41_MapScriptOnFrame_P3:
+			lockall
+			pause 0x1E
+			pause 0x1E
 			showpokepic 0x3B4 0x15 0x6
-			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text5 0x7
+			special 0x15A
+			showpokepic 0x3B4 0x15 0x6
+			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text5 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
 			showpokepic 0x3B6 0x0 0x6
-			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text6 0x7
+			special 0x15A
+			showpokepic 0x3B6 0x0 0x6
+			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text6 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
 			applymovement 0x1 Percorso2_3_41_MapScriptOnFrameBegin_mov0
 			waitmovement 0x0
 			showpokepic 0x3B4 0x15 0x6
-			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text7 0x7
+			special 0x15A
+			showpokepic 0x3B4 0x15 0x6
+			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text7 MSG_NORMAL
 			special 0x15A
 			//CUTSCENE PREPARATION
 			clearflag 0x95B
@@ -171,25 +194,33 @@ gMapScripts_Percorso2_3_41:
 			setvar 0x4051 0x26
 			//set screen to sepia
 			writebytetooffset 0x2 0x2036E28
+			writebytetooffset 0x89 0x34F5DC
 			warpmuted 0x01 0x22 0xFF 0x0B 0x08
 			release
 			end
 			
 		Percorso2_3_41_MapScriptOnFrame_P4:	
+			lockall
 			pause 0x1E
 			showpokepic 0x3B4 0x15 0x6
-			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text8 0x7
+			special 0x15A	
+			showpokepic 0x3B4 0x15 0x6
+			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text8 MSG_NORMAL
 			special 0x15A			
 			pause 0x1E
 			showpokepic 0x3B6 0x0 0x6
-			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text3 0x7
+			special 0x15A
+			showpokepic 0x3B6 0x0 0x6
+			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text3 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
 			showpokepic 0x3B4 0x15 0x6
-			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text9 0x7
+			special 0x15A
+			showpokepic 0x3B4 0x15 0x6
+			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text9 MSG_NORMAL
 			special 0x15A	
 			pause 0x1E
-			playsong 0x13B
+			playsong 0x18A 0x0
 			applymovement 0x1 Percorso2_3_41_MapScriptOnFrameBegin_mov1
 			waitmovement 0x0
 			fadedefault
@@ -224,7 +255,7 @@ gMapScripts_Percorso2_3_41:
 EventScript_Percorso_2_3_41_NPC7:
 
 	trainerbattle0 0x0 0x17 0x0 Percorso_2_3_41_NPC7_text1 Percorso_2_3_41_NPC7_text2
-	msgbox Percorso_2_3_41_NPC7_text3 0x7
+	msgbox Percorso_2_3_41_NPC7_text3 MSG_NORMAL
 
 	release
 	end
@@ -233,7 +264,7 @@ EventScript_Percorso_2_3_41_NPC7:
 EventScript_Percorso_2_3_41_NPC9:
 
 	trainerbattle0 0x0 0x18 0x0 Percorso_2_3_41_NPC9_text1 Percorso_2_3_41_NPC9_text2
-	msgbox Percorso_2_3_41_NPC9_text3 0x7
+	msgbox Percorso_2_3_41_NPC9_text3 MSG_NORMAL
 
 	release
 	end
@@ -242,7 +273,7 @@ EventScript_Percorso_2_3_41_NPC9:
 EventScript_Percorso_2_3_41_NPC6:
 	lock
 	faceplayer
-	msgbox Percorso_2_3_41_NPC6_text1 0x7
+	msgbox Percorso_2_3_41_NPC6_text1 MSG_NORMAL
 	release
 	end
 
@@ -252,7 +283,7 @@ EventScript_Percorso_2_3_41_NPC1_2:
 	faceplayer
 	pause 0x1E
 	showpokepic 0x3BB 0x0 0x6
-	msgbox Percorso_2_3_41_NPC1_2_text1 0x7
+	msgbox Percorso_2_3_41_NPC1_2_text1 MSG_NORMAL
     special 0x15A
 	release
 	end
@@ -261,30 +292,30 @@ EventScript_Percorso_2_3_41_NPC1_2:
 EventScript_Percorso_2_3_41_NPC3:
 
 	trainerbattle0 0x0 0x3 0x0 Percorso_2_3_41_NPC3_text1 Percorso_2_3_41_NPC3_text1
-	msgbox Percorso_2_3_41_NPC3_text3 0x7
+	msgbox Percorso_2_3_41_NPC3_text3 MSG_NORMAL
 	end
 
 .global EventScript_Percorso_2_3_41_NPC4
 EventScript_Percorso_2_3_41_NPC4:
 
 	trainerbattle0 0x0 0x2 0x0 Percorso_2_3_41_NPC4_text1 Percorso_2_3_41_NPC4_text1
-	msgbox Percorso_2_3_41_NPC4_text3 0x7
+	msgbox Percorso_2_3_41_NPC4_text3 MSG_NORMAL
 
 	end
 
 .global EventScript_Percorso_2_3_41_Sign0
 EventScript_Percorso_2_3_41_Sign0:
-	msgbox Percorso_2_3_41_Sign0_text1 MSG_SIGN
+	msgbox Percorso_2_3_41_Sign0_text1 0x7
 	end
 
 .global EventScript_Percorso_2_3_41_Sign1
 EventScript_Percorso_2_3_41_Sign1:
-	msgbox Percorso_2_3_41_Sign1_text1 MSG_SIGN
+	msgbox Percorso_2_3_41_Sign1_text1 0x7
 	end
 
 .global EventScript_Percorso_2_3_41_Sign2
 EventScript_Percorso_2_3_41_Sign2:
-	msgbox Percorso_2_3_41_Sign2_text1 MSG_SIGN
+	msgbox Percorso_2_3_41_Sign2_text1 0x7
 	end
 
 .global EventScript_Percorso2_3_41_tile0
@@ -303,7 +334,7 @@ EventScript_Percorso2_3_41_tile0:
 	waitmovement 0xFF
 	pause 0x1E
 	showpokepic 0x3B9 0x0 0x6
-    msgbox EventScript_Percorso2_3_41_tile0_text1 0x7
+    msgbox EventScript_Percorso2_3_41_tile0_text1 MSG_NORMAL
 	closeonkeypress
     special 0x15A
 	pause 0x1E
@@ -313,7 +344,7 @@ EventScript_Percorso2_3_41_tile0:
 	pause 0x1E
 	spriteface 0xFF 0x1
 	showpokepic 0x3B6 0x0 0x6
-    msgbox EventScript_Percorso2_3_41_tile0_text2 0x7
+    msgbox EventScript_Percorso2_3_41_tile0_text2 MSG_NORMAL
     special 0x15A
 	setvar 0x4051 0x18
 	fadedefault
@@ -366,7 +397,7 @@ EventScript_Percorso2_3_41_tile1:
 	waitmovement 0xFF
 	pause 0x1E
 	showpokepic 0x3B9 0x0 0x6
-    msgbox EventScript_Percorso2_3_41_tile0_text1 0x7
+    msgbox EventScript_Percorso2_3_41_tile0_text1 MSG_NORMAL
 	closeonkeypress
     special 0x15A
 	applymovement 0x6 EventScript_Percorso2_3_41_tile1_mov3
@@ -375,7 +406,7 @@ EventScript_Percorso2_3_41_tile1:
 	pause 0x1E
 	spriteface 0xFF 0x1
 	showpokepic 0x3B6 0x0 0x6
-    msgbox EventScript_Percorso2_3_41_tile0_text2 0x7
+    msgbox EventScript_Percorso2_3_41_tile0_text2 MSG_NORMAL
     special 0x15A
 	setvar 0x4051 0x18
 	fadedefault
@@ -403,16 +434,18 @@ EventScript_Percorso2_3_41_tile1:
 EventScript_Percorso2_3_41_tile2:
 	lockall
 	pause 0x1E
+	playsong 0x169 0x0
 	applymovement 0x9 EventScript_Percorso2_3_41_tile2_mov1
 	waitmovement 0x0
 	showpokepic 0x3BA 0x0 0x6
-    msgbox Percorso2_3_41_tile2_text1 0x7
+    msgbox Percorso2_3_41_tile2_text1 MSG_NORMAL
     special 0x15A	
 	applymovement 0x9 EventScript_Percorso2_3_41_tile2_mov2
 	waitmovement 0x0
 	setflag 0x95C
 	hidesprite 0x9
-	setvar 0x4051 0x2E
+	setvar 0x4051 0x2F
+	fadedefault
 	releaseall
 	end
 
@@ -446,7 +479,7 @@ EventScript_Percorso2_3_41_tile3:
 	lockall
 	pause 0x1E
 	showpokepic 0x3B6 0x0 0x6
-	msgbox Percorso2_3_41_tile3_text1 0x7
+	msgbox Percorso2_3_41_tile3_text1 MSG_NORMAL
     special 0x15A
 	pause 0x1E
 	applymovement 0xFF EventScript_Percorso2_3_41_tile3_mov1
@@ -457,3 +490,22 @@ EventScript_Percorso2_3_41_tile3:
 	EventScript_Percorso2_3_41_tile3_mov1:
 		.byte 0x13
 		.byte 0xFE
+
+
+.global EventScript_Percorso_2_3_41_NPC1_ALPHA
+EventScript_Percorso_2_3_41_NPC1_ALPHA:
+	lock
+	faceplayer
+	msgbox Percorso_2_3_41_NPC1_ALPHA MSG_NORMAL
+	release
+	end
+
+.global EventScript_Percorso_2_3_41_NPC12
+EventScript_Percorso_2_3_41_NPC12:
+	giveitem 0xD 0x1 MSG_FIND
+	end
+	
+.global EventScript_Percorso_2_3_41_NPC13
+EventScript_Percorso_2_3_41_NPC13:
+	giveitem 0x40 0x1 MSG_FIND
+	end

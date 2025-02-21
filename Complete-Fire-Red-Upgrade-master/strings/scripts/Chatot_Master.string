@@ -9,3 +9,9 @@ Aiuta la ragazza a trovare il suo\nfratellino!\pChatot - Chatot!
 
 #org @EventScript_Chatot_Master_text2
 Raggiungi Filiberto ad Ardesiopoli\nper analizzare le incisioni!\pChatot - Chatot!
+
+#org @Mission_Received_text1
+Nuova missione secondaria disponibile!\pVisualizza le missioni secondarie\ndisponibili tramite la voce Quests\lnel Menu.
+
+#org @Mission_Completed_text1
+Complimenti, hai completato una\nmissione secondaria!

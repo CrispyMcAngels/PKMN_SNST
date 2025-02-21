@@ -13,6 +13,8 @@ gMapScripts_Capp_temporale_3_47:
 	Capp_temporale_3_47_MapScriptOnLoad:
 		compare 0x4051 0x2B
 		if 0x1 _goto Capp_temporale_3_47_MapScriptOnLoad_Portal
+		compare 0x4051 0x2C
+		if 0x1 _goto Capp_temporale_3_47_MapScriptOnLoad_TimeGear
 		end 
 
 	Capp_temporale_3_47_MapScriptOnLoad_Portal:
@@ -46,6 +48,9 @@ gMapScripts_Capp_temporale_3_47:
 		setmaptile 0x08 0x0A 0x334 0x0
 		end
 
+	Capp_temporale_3_47_MapScriptOnLoad_TimeGear:
+		movesprite2 0x1 0x06 0x0C
+		end
 	
 	Capp_temporale_3_47_MapScriptOnFrame:
 		levelscript 0x4050, 6, Capp_temporale_3_47_MapScriptOnFrameBegin
@@ -65,14 +70,14 @@ gMapScripts_Capp_temporale_3_47:
 		applymovement 0x4 Capp_temporale_3_47_mov1
 		waitmovement 0x0
 		showpokepic 0x3B9 0x0 0x6
-    	msgbox EventScript_Capp_temporale_3_47_text1 0x7
+    	msgbox EventScript_Capp_temporale_3_47_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1e
 		movesprite 0x1 0x06 0x0C
 		sound 0xC
 		pause 0x1e
 		showpokepic 0x3B9 0x0 0x6
-    	msgbox EventScript_Capp_temporale_3_47_text2 0x7
+    	msgbox EventScript_Capp_temporale_3_47_text2 MSG_NORMAL
 		special 0x15A		
 		pause 0x1e
 		applymovement 0x4 Capp_temporale_3_47_mov2
@@ -80,7 +85,7 @@ gMapScripts_Capp_temporale_3_47:
 		waitmovement 0x4
 		pause 0x1e
 		showpokepic 0x3B9 0x0 0x6
-    	msgbox EventScript_Capp_temporale_3_47_text3 0x7
+    	msgbox EventScript_Capp_temporale_3_47_text3 MSG_NORMAL
 		special 0x15A		
 		pause 0x1e	
 		movesprite 0x3 0x05 0x09
@@ -90,17 +95,17 @@ gMapScripts_Capp_temporale_3_47:
 		movesprite 0x2 0x06 0x09
 		pause 0x1E
 		cry 0xFB 0x0
-		msgbox EventScript_Capp_temporale_3_47_text4 0x7
+		msgbox EventScript_Capp_temporale_3_47_text4 MSG_NORMAL
 		applymovement 0x2 Capp_temporale_3_47_mov4
 		waitmovement 0x0
 		spritebehave 0x2 0x43
 		spriteface 0x4 0x3
 		showpokepic 0x3B9 0x0 0x6
-    	msgbox EventScript_Capp_temporale_3_47_text5 0x7
+    	msgbox EventScript_Capp_temporale_3_47_text5 MSG_NORMAL
 		special 0x15A		
 		pause 0x1e
 		cry 0xFB 0x0
-		msgbox EventScript_Capp_temporale_3_47_text4 0x7
+		msgbox EventScript_Capp_temporale_3_47_text4 MSG_NORMAL
 
 		applymovement 0x2 Capp_temporale_3_47_mov5
 		waitmovement 0x0
@@ -108,6 +113,10 @@ gMapScripts_Capp_temporale_3_47:
 		spriteface 0x4 0x2
 		cry 0xFB 0x0
 		fadescreen 0x3
+		playsong 0x141
+		pause 0x1E
+		pause 0x1E
+		pause 0x1E
 		setvar 0x4051 0x2B
 		warpmuted 0x3 0x2F 0xFF 0x06 0x0A
 		releaseall
@@ -175,7 +184,7 @@ gMapScripts_Capp_temporale_3_47:
 	Capp_temporale_3_47_MapScriptOnFrameBegin_P2:
 		pause 0x1E
 		cry 0xFB 0x0
-		msgbox EventScript_Capp_temporale_3_47_text4 0x7
+		msgbox EventScript_Capp_temporale_3_47_text4 MSG_NORMAL
 		applymovement 0x2 Capp_temporale_3_47_mov6
 		waitmovement 0x2
 		sound 0x09
@@ -184,7 +193,7 @@ gMapScripts_Capp_temporale_3_47:
 		waitmovement 0x4
 		pause 0x1E
 		showpokepic 0x3B9 0x0 0x6
-    	msgbox EventScript_Capp_temporale_3_47_text6 0x7
+    	msgbox EventScript_Capp_temporale_3_47_text6 MSG_NORMAL
 		special 0x15A
 		pause 0x1e
 		applymovement 0x4 Capp_temporale_3_47_mov8
@@ -222,9 +231,17 @@ gMapScripts_Capp_temporale_3_47:
 		pause 0x1E
 		pause 0x1E
 		msgbox EventScript_Capp_temporale_3_47_text7 0x7
-		setvar 0x4050 0x7
+		setvar 0x4050 0x6
 		setvar 0x4051 0x2D
 		setvar 0x501F 0x100
+		playsong 0x0 0x0
+		fadescreen 0x1
+		writebytetooffset 0x30 0x4000012
+		playsong 0x116 0x0
+		pause 0x1E
+		msgbox EventScript_Capp_temporale_3_47_text8 0x7
+		writebytetooffset 0x0 0x4000012
+		pause 0x1E
 		warpmuted 0x04 0x01 0xFF 0x07 0x06
 		releaseall
 		end

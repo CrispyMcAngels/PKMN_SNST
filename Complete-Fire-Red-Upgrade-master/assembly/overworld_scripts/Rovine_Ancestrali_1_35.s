@@ -299,6 +299,7 @@ EventScript_Rovine_Ancestrali_1_35_Sign0:
 		setvar 0x501F 0x0100
 		msgbox Rovine_Ancestrali_1_35_SOL_text1 0x7
 		closeonkeypress
+		compare 0x4054 0x0
 		warpmuted 0x1 0x22 0xFF 0x0B 0x07
 		releaseall
 		end
@@ -3247,14 +3248,16 @@ EventScript_Rovine_Ancestrali_1_35_tile0:
 			
 	Rovine_Ancestrali_1_35_up0_tile0:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movU	
-		waitmovement 0xA	
+		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x0	
 		releaseall	
 		end	
 			
 	Rovine_Ancestrali_1_35_left0_tile0:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movL	
-		waitmovement 0xA	
+		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x0	
 		releaseall	
 		end	
@@ -3806,7 +3809,8 @@ EventScript_Rovine_Ancestrali_1_35_tile1:
 			
 	Rovine_Ancestrali_1_35_up0_tile1:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movU	
-		waitmovement 0xA	
+		waitmovement 0xA
+		sound 0x22		
 		setvar 0x4055 0x1	
 		releaseall	
 		end	
@@ -3814,6 +3818,7 @@ EventScript_Rovine_Ancestrali_1_35_tile1:
 	Rovine_Ancestrali_1_35_left0_tile1:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movL	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x1	
 		releaseall	
 		end	
@@ -3821,6 +3826,7 @@ EventScript_Rovine_Ancestrali_1_35_tile1:
 	Rovine_Ancestrali_1_35_right0_tile1:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movR	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x1	
 		releaseall	
 		end	
@@ -4338,6 +4344,7 @@ EventScript_Rovine_Ancestrali_1_35_tile2:
 	Rovine_Ancestrali_1_35_up0_tile2:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movU	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x2	
 		releaseall	
 		end	
@@ -4352,6 +4359,7 @@ EventScript_Rovine_Ancestrali_1_35_tile2:
 	Rovine_Ancestrali_1_35_right0_tile2:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movR	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x2	
 		releaseall	
 		end	
@@ -4869,6 +4877,7 @@ EventScript_Rovine_Ancestrali_1_35_tile3:
 	Rovine_Ancestrali_1_35_up0_tile3:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movU	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x3	
 		releaseall	
 		end	
@@ -4876,6 +4885,7 @@ EventScript_Rovine_Ancestrali_1_35_tile3:
 	Rovine_Ancestrali_1_35_left0_tile3:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movL	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x3	
 		releaseall	
 		end	
@@ -5384,6 +5394,7 @@ EventScript_Rovine_Ancestrali_1_35_tile4:
 	Rovine_Ancestrali_1_35_down0_tile4:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movD	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x4	
 		releaseall	
 		end	
@@ -5391,6 +5402,7 @@ EventScript_Rovine_Ancestrali_1_35_tile4:
 	Rovine_Ancestrali_1_35_up0_tile4:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movU	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x4	
 		releaseall	
 		end	
@@ -5398,6 +5410,7 @@ EventScript_Rovine_Ancestrali_1_35_tile4:
 	Rovine_Ancestrali_1_35_left0_tile4:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movL	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x4	
 		releaseall	
 		end	
@@ -5405,6 +5418,7 @@ EventScript_Rovine_Ancestrali_1_35_tile4:
 	Rovine_Ancestrali_1_35_right0_tile4:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movR	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x4	
 		releaseall	
 		end	
@@ -5915,6 +5929,7 @@ EventScript_Rovine_Ancestrali_1_35_tile5:
 	Rovine_Ancestrali_1_35_down0_tile5:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movD	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x5	
 		releaseall	
 		end	
@@ -5922,6 +5937,7 @@ EventScript_Rovine_Ancestrali_1_35_tile5:
 	Rovine_Ancestrali_1_35_up0_tile5:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movU	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x5	
 		releaseall	
 		end	
@@ -5929,6 +5945,7 @@ EventScript_Rovine_Ancestrali_1_35_tile5:
 	Rovine_Ancestrali_1_35_left0_tile5:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movL	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x5	
 		releaseall	
 		end	
@@ -5936,6 +5953,7 @@ EventScript_Rovine_Ancestrali_1_35_tile5:
 	Rovine_Ancestrali_1_35_right0_tile5:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movR	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x5	
 		releaseall	
 		end	
@@ -6446,6 +6464,7 @@ EventScript_Rovine_Ancestrali_1_35_tile6:
 	Rovine_Ancestrali_1_35_down0_tile6:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movD	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x6	
 		releaseall	
 		end	
@@ -6453,6 +6472,7 @@ EventScript_Rovine_Ancestrali_1_35_tile6:
 	Rovine_Ancestrali_1_35_up0_tile6:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movU	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x6	
 		releaseall	
 		end	
@@ -6460,6 +6480,7 @@ EventScript_Rovine_Ancestrali_1_35_tile6:
 	Rovine_Ancestrali_1_35_left0_tile6:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movL	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x6	
 		releaseall	
 		end	
@@ -6467,6 +6488,7 @@ EventScript_Rovine_Ancestrali_1_35_tile6:
 	Rovine_Ancestrali_1_35_right0_tile6:		
 		applymovement 0xA Rovine_Ancestrali_1_35_movR	
 		waitmovement 0xA	
+		sound 0x22	
 		setvar 0x4055 0x6	
 		releaseall	
 		end	
@@ -6984,6 +7006,7 @@ EventScript_Rovine_Ancestrali_1_35_tile7:
 	Rovine_Ancestrali_1_35_up0_tile7:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movU
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x7
 		releaseall
 		end
@@ -6998,6 +7021,7 @@ EventScript_Rovine_Ancestrali_1_35_tile7:
 	Rovine_Ancestrali_1_35_right0_tile7:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movR
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x7
 		releaseall
 		end
@@ -7508,6 +7532,7 @@ EventScript_Rovine_Ancestrali_1_35_tile8:
 	Rovine_Ancestrali_1_35_down0_tile8:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movD
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x8
 		releaseall
 		end
@@ -7515,6 +7540,7 @@ EventScript_Rovine_Ancestrali_1_35_tile8:
 	Rovine_Ancestrali_1_35_up0_tile8:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movU
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x8
 		releaseall
 		end
@@ -7522,6 +7548,7 @@ EventScript_Rovine_Ancestrali_1_35_tile8:
 	Rovine_Ancestrali_1_35_left0_tile8:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movL
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x8
 		releaseall
 		end
@@ -8030,6 +8057,7 @@ EventScript_Rovine_Ancestrali_1_35_tile9:
 	Rovine_Ancestrali_1_35_down0_tile9:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movD
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x9
 		releaseall
 		end
@@ -8037,6 +8065,7 @@ EventScript_Rovine_Ancestrali_1_35_tile9:
 	Rovine_Ancestrali_1_35_up0_tile9:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movU
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x9
 		releaseall
 		end
@@ -8044,6 +8073,7 @@ EventScript_Rovine_Ancestrali_1_35_tile9:
 	Rovine_Ancestrali_1_35_left0_tile9:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movL
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x9
 		releaseall
 		end
@@ -8051,6 +8081,7 @@ EventScript_Rovine_Ancestrali_1_35_tile9:
 	Rovine_Ancestrali_1_35_right0_tile9:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movR
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x9
 		releaseall
 		end
@@ -8561,6 +8592,7 @@ EventScript_Rovine_Ancestrali_1_35_tileA:
 	Rovine_Ancestrali_1_35_down0_tileA:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movD
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xA
 		releaseall
 		end
@@ -8568,6 +8600,7 @@ EventScript_Rovine_Ancestrali_1_35_tileA:
 	Rovine_Ancestrali_1_35_up0_tileA:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movU
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xA
 		releaseall
 		end
@@ -8575,6 +8608,7 @@ EventScript_Rovine_Ancestrali_1_35_tileA:
 	Rovine_Ancestrali_1_35_left0_tileA:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movL
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xA
 		releaseall
 		end
@@ -8582,6 +8616,7 @@ EventScript_Rovine_Ancestrali_1_35_tileA:
 	Rovine_Ancestrali_1_35_right0_tileA:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movR
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xA
 		releaseall
 		end
@@ -9092,6 +9127,7 @@ EventScript_Rovine_Ancestrali_1_35_tileB:
 	Rovine_Ancestrali_1_35_down0_tileB:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movD
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xB
 		releaseall
 		end
@@ -9099,6 +9135,7 @@ EventScript_Rovine_Ancestrali_1_35_tileB:
 	Rovine_Ancestrali_1_35_up0_tileB:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movU
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xB
 		releaseall
 		end
@@ -9106,6 +9143,7 @@ EventScript_Rovine_Ancestrali_1_35_tileB:
 	Rovine_Ancestrali_1_35_left0_tileB:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movL
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xB
 		releaseall
 		end
@@ -9113,6 +9151,7 @@ EventScript_Rovine_Ancestrali_1_35_tileB:
 	Rovine_Ancestrali_1_35_right0_tileB:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movR
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xB
 		releaseall
 		end
@@ -9623,6 +9662,7 @@ EventScript_Rovine_Ancestrali_1_35_tileC:
 	Rovine_Ancestrali_1_35_down0_tileC:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movD
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xC
 		releaseall
 		end
@@ -9630,6 +9670,7 @@ EventScript_Rovine_Ancestrali_1_35_tileC:
 	Rovine_Ancestrali_1_35_up0_tileC:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movU
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xC
 		releaseall
 		end
@@ -9644,6 +9685,7 @@ EventScript_Rovine_Ancestrali_1_35_tileC:
 	Rovine_Ancestrali_1_35_right0_tileC:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movR
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xC
 		releaseall
 		end
@@ -10154,6 +10196,7 @@ EventScript_Rovine_Ancestrali_1_35_tileD:
 	Rovine_Ancestrali_1_35_down0_tileD:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movD
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xD
 		releaseall
 		end
@@ -10168,6 +10211,7 @@ EventScript_Rovine_Ancestrali_1_35_tileD:
 	Rovine_Ancestrali_1_35_left0_tileD:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movL
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xD
 		releaseall
 		end
@@ -10676,6 +10720,7 @@ EventScript_Rovine_Ancestrali_1_35_tileE:
 	Rovine_Ancestrali_1_35_down0_tileE:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movD
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xE
 		releaseall
 		end
@@ -10683,6 +10728,7 @@ EventScript_Rovine_Ancestrali_1_35_tileE:
 	Rovine_Ancestrali_1_35_up0_tileE:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movU
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xE
 		releaseall
 		end
@@ -10690,6 +10736,7 @@ EventScript_Rovine_Ancestrali_1_35_tileE:
 	Rovine_Ancestrali_1_35_left0_tileE:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movL
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xE
 		releaseall
 		end
@@ -10697,6 +10744,7 @@ EventScript_Rovine_Ancestrali_1_35_tileE:
 	Rovine_Ancestrali_1_35_right0_tileE:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movR
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xE
 		releaseall
 		end
@@ -11207,6 +11255,7 @@ EventScript_Rovine_Ancestrali_1_35_tileF:
 	Rovine_Ancestrali_1_35_down0_tileF:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movD
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xF
 		releaseall
 		end
@@ -11214,6 +11263,7 @@ EventScript_Rovine_Ancestrali_1_35_tileF:
 	Rovine_Ancestrali_1_35_up0_tileF:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movU
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xF
 		releaseall
 		end
@@ -11221,6 +11271,7 @@ EventScript_Rovine_Ancestrali_1_35_tileF:
 	Rovine_Ancestrali_1_35_left0_tileF:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movL
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xF
 		releaseall
 		end
@@ -11228,6 +11279,7 @@ EventScript_Rovine_Ancestrali_1_35_tileF:
 	Rovine_Ancestrali_1_35_right0_tileF:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movR
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0xF
 		releaseall
 		end
@@ -11738,6 +11790,7 @@ EventScript_Rovine_Ancestrali_1_35_tile10:
 	Rovine_Ancestrali_1_35_down0_tile10:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movD
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x10
 		releaseall
 		end
@@ -11745,6 +11798,7 @@ EventScript_Rovine_Ancestrali_1_35_tile10:
 	Rovine_Ancestrali_1_35_up0_tile10:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movU
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x10
 		releaseall
 		end
@@ -11752,6 +11806,7 @@ EventScript_Rovine_Ancestrali_1_35_tile10:
 	Rovine_Ancestrali_1_35_left0_tile10:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movL
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x10
 		releaseall
 		end
@@ -11759,6 +11814,7 @@ EventScript_Rovine_Ancestrali_1_35_tile10:
 	Rovine_Ancestrali_1_35_right0_tile10:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movR
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x10
 		releaseall
 		end
@@ -12269,6 +12325,7 @@ EventScript_Rovine_Ancestrali_1_35_tile11:
 	Rovine_Ancestrali_1_35_down0_tile11:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movD
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x11
 		releaseall
 		end
@@ -12290,6 +12347,7 @@ EventScript_Rovine_Ancestrali_1_35_tile11:
 	Rovine_Ancestrali_1_35_right0_tile11:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movR
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x11
 		releaseall
 		end
@@ -12800,6 +12858,7 @@ EventScript_Rovine_Ancestrali_1_35_tile12:
 	Rovine_Ancestrali_1_35_down0_tile12:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movD
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x12
 		releaseall
 		end
@@ -12814,6 +12873,7 @@ EventScript_Rovine_Ancestrali_1_35_tile12:
 	Rovine_Ancestrali_1_35_left0_tile12:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movL
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x12
 		releaseall
 		end
@@ -13322,6 +13382,7 @@ EventScript_Rovine_Ancestrali_1_35_tile13:
 	Rovine_Ancestrali_1_35_down0_tile13:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movD
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x13
 		releaseall
 		end
@@ -13336,6 +13397,7 @@ EventScript_Rovine_Ancestrali_1_35_tile13:
 	Rovine_Ancestrali_1_35_left0_tile13:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movL
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x13
 		releaseall
 		end
@@ -13343,6 +13405,7 @@ EventScript_Rovine_Ancestrali_1_35_tile13:
 	Rovine_Ancestrali_1_35_right0_tile13:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movR
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x13
 		releaseall
 		end
@@ -13853,6 +13916,7 @@ EventScript_Rovine_Ancestrali_1_35_tile14:
 	Rovine_Ancestrali_1_35_down0_tile14:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movD
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x14
 		releaseall
 		end
@@ -13874,6 +13938,7 @@ EventScript_Rovine_Ancestrali_1_35_tile14:
 	Rovine_Ancestrali_1_35_right0_tile14:	
 		applymovement 0xA Rovine_Ancestrali_1_35_movR
 		waitmovement 0xA
+		sound 0x22	
 		setvar 0x4055 0x14
 		releaseall
 		end

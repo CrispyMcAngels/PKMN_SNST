@@ -31,19 +31,19 @@ EventScript_Chatot_Master:
 	end
 
 	EventScript_Chatot_Master_0:
-	msgbox EventScript_Chatot_Master_text0 0x7
+	msgbox EventScript_Chatot_Master_text0 MSG_NORMAL
 	cry 0x1EE 0x0
 	release
 	end
 
 	EventScript_Chatot_Master_1:
-	msgbox EventScript_Chatot_Master_text1 0x7
+	msgbox EventScript_Chatot_Master_text1 MSG_NORMAL
 	cry 0x1EE 0x0
 	release
 	end
 
 	EventScript_Chatot_Master_2:
-	msgbox EventScript_Chatot_Master_text2 0x7
+	msgbox EventScript_Chatot_Master_text2 MSG_NORMAL
 	cry 0x1EE 0x0
 	release
 	end

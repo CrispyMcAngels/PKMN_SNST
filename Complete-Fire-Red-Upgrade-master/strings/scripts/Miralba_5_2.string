@@ -1,8 +1,32 @@
 #org @EventScript_Miralba_5_2_NPC0_text1
-Miralba e' un punto di passaggio\nper molti viaggiatori.\pLa sua vicinanza al Percorso 11 e\nal Percorso 2 la rendono la tappa\lideale per riposare durante un\llungo viaggio.
+Sai perche' Miralba si chiama\ncosi'?\pBeh e' molto semplice.\pQui vicino, nella parte piu' a\nNord del Percorso 2, c'e' un punto\lpanoramico da dove e' possibile\lammirare delle albe mozzafiato.\pPerche' non vai a vederlo con i\ntuoi stessi occhi?
 
 #org @EventScript_Miralba_5_2_NPC1_text1
-Sai perche' Miralba si chiama\ncosi'?\pBeh e' molto semplice.\pQui vicino, nella parte piu' a\nNord del Percorso 2, c'e' un punto\lpanoramico da dove e' possibile\lammirare delle albe mozzafiato.\pPerche' non vai a vederlo con i\ntuoi stessi occhi?
+Qualche giorno fa sono andata con\nmio nonno nella Foresta Frondosa.\pDa lontano ho visto un Poke'mon\nbellissimo, aveva quattro zampe,\lle corna, e una pelliccia marrone\le verde.\pFarei di tutto per averlo!\nPotresti catturarlo per me?
+
+#org @EventScript_Miralba_5_2_NPC1_text2
+Hai trovato il Poke'mon di cui ti\nho parlato?
+
+#org @EventScript_Miralba_5_2_NPC1_text3
+Uffiii!\nQuel Poke'mon e' davvero introvabile!
+
+#org @EventScript_Miralba_5_2_NPC1_text4
+Nooo, questo non e' il Poke'mon\nche cercavo... 
+
+#org @EventScript_Miralba_5_2_NPC1_text5
+[PLAYER] da Skiddo alla ragazza.
+
+#org @EventScript_Miralba_5_2_NPC1_text6
+Wow, non ci credo!\nSei riuscito a trovare uno Skiddo!\pPrendi questo come ricompensa!
+
+#org @EventScript_Miralba_5_2_NPC1_text7
+[PLAYER] riceve vestiti verdi.
+
+#org @EventScript_Miralba_5_2_NPC1_text8
+Puoi cambiare i tuoi vestiti\ninteragendo con l'armadio\ldi casa tua.
+
+#org @EventScript_Miralba_5_2_NPC1_text9
+Allenero' Skiddo fino a quando\nnon sara' fortissimo!
 
 #org @EventScript_Miralba_5_2_Sign1_text1
 Sta andando in onda il PokeTG,\npare che sia successo qualcosa\lnella Foresta Frondosa...

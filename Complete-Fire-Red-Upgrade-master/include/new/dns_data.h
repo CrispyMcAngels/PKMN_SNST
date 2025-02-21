@@ -251,39 +251,50 @@ const struct DNSPalFade gDNSNightFadingByTime[24][6] =
 const struct SpecificTilesetFade gSpecificTilesetFades[] =
 {
 	//These Palette Town ones have been left in as examples. Feel free to remove.
-	{ //Palette Town - Player's Door
-		.tilesetPointer = 0x82D4AAC, //Tileset 1
-		.paletteNumToFade = 8,
-		.paletteIndicesToFade =
-		{
-			{8,  RGB(31, 31, 20)},
-			{9,  RGB(31, 31, 11)},
-			{10, RGB(31, 31, 10)},
-			TILESET_PAL_FADE_END
-		},
-	},
-	{ //Palette Town - Oak's Lab Windows
+	//{ //Palette Town - Player's Door
+	//	.tilesetPointer = 0x82D4AAC, //Tileset 1
+	//	.paletteNumToFade = 8,
+	//	.paletteIndicesToFade =
+	//	{
+	//		{1,  RGB(31, 31, 20)},
+	//		{9,  RGB(31, 31, 11)},
+	//		{10, RGB(31, 31, 10)},
+	//	},
+	//},
+	{ //Tileset 1 - Borgo Ponente - overall windows
 		.tilesetPointer = 0x82D4AAC, //Tileset 1
 		.paletteNumToFade = 9,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 20)},
-			{9,  RGB(31, 31, 14)},
-			{10, RGB(31, 30, 0)},
+			{1,  RGB(31, 31, 20)},
+			{6, RGB(31, 30, 0)},
+			{12,  RGB(31, 31, 14)},
 			TILESET_PAL_FADE_END
 		},
 	},
-	{ //Palette Town - Oak's Lab Door
-		.tilesetPointer = 0x82D4AAC, //Tileset 1
+	{ //Tileset 0 - Centro Pokemon
+		.tilesetPointer = 0x82D4A94, //Tileset 0
+		.paletteNumToFade = 2,
+		.paletteIndicesToFade =
+		{
+			{1,  RGB(31, 31, 14)}, //medio
+			{3, RGB(31, 30, 0)}, //scuro
+			{6,  RGB(31, 31, 20)}, //chiaro
+			TILESET_PAL_FADE_END
+		},
+	},
+	{ //Tileset 2 - Case Miralbe
+		.tilesetPointer = 0x82D4AC4, //Tileset 2
 		.paletteNumToFade = 10,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 20)},
-			{9,  RGB(31, 31, 14)},
-			{10, RGB(31, 30, 0)},
+			{1,  RGB(31, 31, 14)}, //2
+			{4,  RGB(31, 31, 11)}, //3
+			{5,  RGB(31, 30, 0)}, //4 scuro
+			{13,  RGB(31, 31, 20)}, //1 chiaro
 			TILESET_PAL_FADE_END
 		},
-	},
+	},	
 };
 
 #else //For Pokemon Unbound - Feel free to remove

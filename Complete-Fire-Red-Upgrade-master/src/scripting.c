@@ -3083,8 +3083,8 @@ void ConvertCoinInt(u32 coinAmount)
 //waitstate
 
 //Text Declarations
-extern const u8 sExampleText_1[];
-extern const u8 sExampleText_2[];
+extern const u8 sBlueOwText_1[];
+extern const u8 sOrangeOwText_1[];
 extern const u8 sExampleText_3[];
 extern const u8 sExampleText_4[];
 extern const u8 sExampleText_5[];
@@ -3113,22 +3113,14 @@ extern const u8 sText_15[];
 //Scrolling Lists
 static const u8* sMultichoiceSet1[] =
 {
-	sExampleText_1,
-	sExampleText_2,
-	sExampleText_3,
-	sExampleText_4,
-	sExampleText_5,
-	sExampleText_6,
-	sExampleText_7,
-	sExampleText_8,
-	sExampleText_9,
-	sExampleText_10,
+	sBlueOwText_1,
+	sOrangeOwText_1,
 };
 
 static const u8* sMultichoiceSet2[] =
 {
-	sExampleText_1,
-	sExampleText_2,
+	sBlueOwText_1,
+	sOrangeOwText_1,
 	sExampleText_3,
 	sExampleText_4,
 	sExampleText_5,

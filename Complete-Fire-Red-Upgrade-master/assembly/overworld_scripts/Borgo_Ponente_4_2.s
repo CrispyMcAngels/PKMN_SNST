@@ -7,7 +7,7 @@
 
 .global EventScript_Borgo_Ponente_4_2_Sign0
 EventScript_Borgo_Ponente_4_2_Sign0:
-	msgbox Borgo_Ponente_4_2_Sign0_text1 MSG_SIGN
+	msgbox Borgo_Ponente_4_2_Sign0_text1 0x7
 	end
 
 .global EventScript_Borgo_Ponente_4_2
@@ -28,18 +28,19 @@ EventScript_Borgo_Ponente_4_2_Left:
 	faceplayer
 	setflag 0x02A
     showpokepic 0x3B5 0x15 0x6
-    msgbox EventScript_Borgo_Ponente_4_2_text1 0x7
+    msgbox EventScript_Borgo_Ponente_4_2_text1 MSG_NORMAL
     special 0x15A
 	pause 0x1E
+	textcolor 0x00
     showpokepic 0x3B6 0x0 0x6
-    msgbox EventScript_Borgo_Ponente_4_2_text2 0x7
+    msgbox EventScript_Borgo_Ponente_4_2_text2 MSG_NORMAL
     special 0x15A
 	pause 0x1E
 	sound 0x5
 	applymovement 0x3 Borgo_Ponente_4_2_mov1a
 	waitmovement 0x0
     showpokepic 0x3B5 0x15 0x6
-    msgbox EventScript_Borgo_Ponente_4_2_text3 0x7
+    msgbox EventScript_Borgo_Ponente_4_2_text3 MSG_NORMAL
     special 0x15A
 	pause 0x1E
 	playsong 0x13C 0x0
@@ -65,33 +66,34 @@ Borgo_Ponente_4_2_mov2a:
 	.byte 0x12
 	.byte 0x12
 	.byte 0x12
-	.byte 0x12
-	.byte 0x12
-	.byte 0x12
 	.byte 0x11
 	.byte 0x11
-	.byte 0x13
-	.byte 0x13
+	.byte 0x12
+	.byte 0x12
+	.byte 0x12
 	.byte 0x60
 	.byte 0xFE
+
 
 EventScript_Borgo_Ponente_4_2_Down:
 	lock
 	faceplayer
 	setflag 0x02A
+	textcolor 0x01
     showpokepic 0x3B5 0x15 0x6
-    msgbox EventScript_Borgo_Ponente_4_2_text1 0x7
+    msgbox EventScript_Borgo_Ponente_4_2_text1 MSG_NORMAL
     special 0x15A
 	pause 0x1E
+	textcolor 0x00
     showpokepic 0x3B6 0x0 0x6
-    msgbox EventScript_Borgo_Ponente_4_2_text2 0x7
+    msgbox EventScript_Borgo_Ponente_4_2_text2 MSG_NORMAL
     special 0x15A
 	pause 0x1E
 	sound 0x5
 	applymovement 0x3 Borgo_Ponente_4_2_mov1b
 	waitmovement 0x0
     showpokepic 0x3B5 0x15 0x6
-    msgbox EventScript_Borgo_Ponente_4_2_text3 0x7
+    msgbox EventScript_Borgo_Ponente_4_2_text3 MSG_NORMAL
     special 0x15A
 	pause 0x1E
 	playsong 0x13C 0x0
@@ -115,35 +117,33 @@ Borgo_Ponente_4_2_mov1b:
 Borgo_Ponente_4_2_mov2b:
 	.byte 0x12
 	.byte 0x12
-	.byte 0x10
-	.byte 0x12
-	.byte 0x12
-	.byte 0x12
 	.byte 0x12
 	.byte 0x11
-	.byte 0x11
-	.byte 0x13
-	.byte 0x13
+	.byte 0x12
+	.byte 0x12
+	.byte 0x12
 	.byte 0x60
 	.byte 0xFE
+
 
 EventScript_Borgo_Ponente_4_2_Right:
 	lock
 	faceplayer
 	setflag 0x02A
     showpokepic 0x3B5 0x15 0x6
-    msgbox EventScript_Borgo_Ponente_4_2_text1 0x7
+    msgbox EventScript_Borgo_Ponente_4_2_text1 MSG_NORMAL
     special 0x15A
 	pause 0x1E
+	textcolor 0x00
     showpokepic 0x3B6 0x0 0x6
-    msgbox EventScript_Borgo_Ponente_4_2_text2 0x7
+    msgbox EventScript_Borgo_Ponente_4_2_text2 MSG_NORMAL
     special 0x15A
 	pause 0x1E
 	sound 0x5
 	applymovement 0x3 Borgo_Ponente_4_2_mov1c
 	waitmovement 0x0
     showpokepic 0x3B5 0x15 0x6
-    msgbox EventScript_Borgo_Ponente_4_2_text3 0x7
+    msgbox EventScript_Borgo_Ponente_4_2_text3 MSG_NORMAL
     special 0x15A
 	pause 0x1E
 	playsong 0x13C 0x0
@@ -170,12 +170,12 @@ EventScript_Borgo_Ponente_4_2_NPC0:
 	faceplayer
 	compare 0x4051 0xE
 	if 0x1 _call EventScript_Borgo_Ponente_4_2_NPC0_P1
-	msgbox EventScript_Borgo_Ponente_4_2_NPC0_text1 0x7
+	msgbox EventScript_Borgo_Ponente_4_2_NPC0_text1 MSG_NORMAL
 	release
 	end
 
 	EventScript_Borgo_Ponente_4_2_NPC0_P1:
-		msgbox EventScript_Borgo_Ponente_4_2_NPC0_text2 0x7
+		msgbox EventScript_Borgo_Ponente_4_2_NPC0_text2 MSG_NORMAL
 		release
 		end	
 
@@ -183,7 +183,7 @@ EventScript_Borgo_Ponente_4_2_NPC0:
 EventScript_Borgo_Ponente_4_2_NPC1:
 	lock
 	faceplayer
-	msgbox EventScript_Borgo_Ponente_4_2_NPC1_text1 0x7
+	msgbox EventScript_Borgo_Ponente_4_2_NPC1_text1 MSG_NORMAL
 	release
 	end
 
@@ -191,6 +191,6 @@ EventScript_Borgo_Ponente_4_2_NPC1:
 EventScript_Borgo_Ponente_4_2_NPC3:
 	lock
 	faceplayer
-	msgbox EventScript_Borgo_Ponente_4_2_NPC3_text1 0x7
+	msgbox EventScript_Borgo_Ponente_4_2_NPC3_text1 MSG_NORMAL
 	release
 	end

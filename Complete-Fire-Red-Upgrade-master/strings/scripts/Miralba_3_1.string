@@ -92,7 +92,19 @@ Ti auguro buona fortuna per il\ntuo viaggio!
 D'ora in poi staro' sempre attento\nquando giochero' da solo!
 
 #org @Miralba_3_1_NPC3_text1
-Questa piazza e' molto frequentata\nda gente di tutti i tipi.\pD'altronde come si fa a non\nrilassarsi in un posto del genere?
+Ah, giovane, vedo che osservi\nquesto vecchio pozzo.\pVuoi che ti racconti la sua storia?
+
+#org @Miralba_3_1_NPC3_text2
+Sai, non e' solo un ammasso di\npietre consumate dal tempo...\pQuesto pozzo era speciale,\nun tempo.\pLo chiamavano il\nPozzo dei Desideri.\pSi diceva che, se lanciavi una\nmoneta d'argento e pronunciavi\lun desiderio con cuore puro,\lil pozzo avrebbe risposto.\pNon era magia, bada bene...\nma qualcosa di piu' misterioso.\pGli anziani dicevano che in\nfondo dimorava un Poke'mon.\pUno spirito benevolo, capace\ndi ascoltare i desideri sinceri\ldi chi aveva intenzioni pure,\lsenza avidita' o cattiveria.\pUna volta, un bambino chiese\ndi salvare il suo Torchic\lmalato, e il giorno dopo il\lPoke'mon si riprese.\pMa quando un mercante arrogante\nlancio' monete per chiedere\loro e successo, non accadde\lnulla.\pIl pozzo rimase muto.\pUn giorno, pero', lo spirito\ndel pozzo scomparve.\pNessuno sa perche', ma forse le\npersone chiedevano troppo.\pForse lo spirito decise che il\nmondo non aveva piu' bisogno\ldi lui.\pDa allora, e' solo...\nun vecchio pozzo.\pMa io credo che, se qualcuno\ncon un cuore davvero puro\lfacesse un desiderio sincero...\lforse lo spirito tornerebbe...
+
+#org @Miralba_3_1_NPC3_text3
+E' una bella storia,\nnon trovi?
+
+#org @Miralba_3_1_NPC3_text4
+Wow, raccontanfoti questa storia\nho davvero perso il filo del\ltempo.\pPrendi questo come ricompensa\nper avermi ascoltato!
+
+#org @Miralba_3_1_NPC3_text5
+Torna quando vorrai ascoltarla.
 
 #org @Miralba_3_1_NPC7_text1
 Sto facendo un lungo viaggio,\ni miei Poke'mon erano esausti,\lper fortuna ho trovato questo\lCentro Poke'mon.

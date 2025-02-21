@@ -24,15 +24,22 @@ gMapScripts_Capp_temporale_0_6:
 		pause 0x1E
 		pause 0x1E
 		showpokepic 0x3B9 0x0 0x6
-    	msgbox EventScript_Capp_temporale_0_6_text1 0x7
+    	msgbox EventScript_Capp_temporale_0_6_text1 MSG_NORMAL
 		special 0x15A
 		applymovement 0x1 Capp_temporale_0_6_mov1
-		waitmovement 0x1 
+		waitmovement 0x1
+		applymovement 0x1 Capp_temporale_0_6_mov1a
+		applymovement 0x2 Capp_temporale_0_6_mov1b
+		waitmovement 0x0
 		sound 0x9
-		hidesprite 0x1 
+		hidesprite 0x1
+		pause 0x1E
+		applymovement 0x2 Capp_temporale_0_6_mov1c
+		waitmovement 0x0		
 		pause 0x1E
 		applymovement 0xFF Capp_temporale_0_6_mov2
 		waitmovement 0x0
+		pause 0x1E
 		warpmuted 0x3 0x2f 0xFF 0x06 0x0D
 		releaseall
 		end
@@ -41,8 +48,20 @@ gMapScripts_Capp_temporale_0_6:
 		.byte 0x1C
 		.byte 0x11
 		.byte 0x11
+		.byte 0xFE
+
+	Capp_temporale_0_6_mov1a:
 		.byte 0x11
-		.byte 0x60
+		.byte 0xFE
+
+	Capp_temporale_0_6_mov1b:
+		.byte 0x2e 
+		.byte 0x2F
+		.byte 0xFE
+
+	Capp_temporale_0_6_mov1c:
+		.byte 0x2e 
+		.byte 0x2d
 		.byte 0xFE
 
 	Capp_temporale_0_6_mov2:

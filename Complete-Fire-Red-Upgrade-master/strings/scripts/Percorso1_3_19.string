@@ -1,11 +1,41 @@
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text8
-Crispy: Wow! Non avevo ancora\ncatturato questo Poke'mon!\pNatu sara' sicuramente una grande\naggiunta alla mia squadra.\pOgnimodo spero abbiate imparato\ncome catturare un Poke'mon:\lprima di lanciargli una Poke'ball e'\lsempre utile indebolirlo.\pOh! Si e' fatto tardi...\pScusatemi ma ora devo andare a\nMiralba per delle cose da sbrigare...
+Crispy: Wow! Non avevo ancora\ncatturato questo Poke'mon!\pNatu sara' sicuramente una grande\naggiunta alla mia squadra.\pAd ognimodo spero abbiate imparato\ncome catturare un Poke'mon:\lprima di lanciargli una Poke'ball e'\lsempre utile indebolirlo...
 
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text9
 Crispy: Ah [PLAYER], prendi questa,\nti sara' utile.
 
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text10
-Crispy: Ci si vede!
+Crispy: Grazie alle sue ottime\ncondizioni climatiche, la regione\ldi Eyors e' casa di molti Poke'mon\lprovienti da Regioni lontane.\pIn particolare questo percorso,\nil Percorso 1, offre una vastissima\lbiodiversita', con ben oltre 10\lspecie di Poke'mon diversi.\pCrispy: Ti consiglio dunque di usare\nquella Poke'ball per il Poke'mon\lgiusto, quando se ne presentera'\ll'occasione...
+
+//nuovi
+
+//Naomi saltella + !!
+#org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text10a
+Naomi: Hey Crispy, non avresti\nuna Poke'ball anche per me?
+
+//Crispy si muove giu e guarda a dx
+#org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text10b
+Crispy: Mi dispiace Naomi,\npurtroppo quella che ho dato a\l[PLAYER] era l'ultima Poke'ball rimasta...
+
+//Crispy !
+#org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text10c
+Crispy: Ma certo!\nPerche' non andate a far visita\lal Prof. Kraemer a Borgo Ponente?\pSono sicuro che avra' un Poke'mon\nper entrambi.
+
+//Naomi ?
+#org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text10d
+Naomi: Sei sicuro?
+
+//Naomi face up + PLAYER face down
+#org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text10e
+Naomi: [PLAYER], che stiamo aspettando?\nAndiamo subito li'!
+
+//Crispy, naomi + PLAYER face left
+#org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text10f
+Crispy: Oh! Si e' fatto tardi...\pScusatemi ma ora devo andare a\nMiralba per delle cose da sbrigare...
+
+//crispy move up and face right
+#org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text10g
+Crispy: Naomi, [PLAYER], perche' non\nvi dirigete pure voi verso Miralaba\lnon appena il Prof. Kraemer vi\lavra' dato un Poke'mon?\pVi aspetto li'!
 
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text11
 Brandom: Tuo fratello e' davvero\nin gamba, spero di poter\ldiventare un allenatore forte\lcome lui un giorno.
@@ -14,7 +44,7 @@ Brandom: Tuo fratello e' davvero\nin gamba, spero di poter\ldiventare un allenat
 [PLAYER]: ...
 
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text13
-Brandon: Beh, direi proprio che\nper oggi possa bastare!\pMeglio tornare a casa prima che\nqualche Poke'mon selvatico ci\lattacchi...
+Naomi: Beh, direi proprio che\nper oggi possa bastare!\pMeglio tornare a casa prima che\nqualche Poke'mon selvatico ci\lattacchi...
 
 #org @EventScript_Percorso1_3_19_tile0_text1
 [PLAYER]: Meglio non addentrarsi\nnell'erba alta senza un Poke'mon!
@@ -23,7 +53,7 @@ Brandon: Beh, direi proprio che\nper oggi possa bastare!\pMeglio tornare a casa 
 Skuntank: ROAAARRHH!!!
 
 #org @EventScript_Percorso1_3_19_tile1_text2
-Brandon: Aiutooo!\p[PLAYER] fai qualcosa!!!
+Naomi: Aiutooo!\p[PLAYER] fai qualcosa!!!
 
 #org @EventScript_Percorso1_3_19_tile1_text3
 [PLAYER]: ...
@@ -32,10 +62,10 @@ Brandon: Aiutooo!\p[PLAYER] fai qualcosa!!!
 Axew: Axew-Axew!
 
 #org @EventScript_Percorso1_3_19_tile1_text5
-Brandon: Fiuuu, per un pelo!\pSe non fosse stato per questo\nAxew che ci ha aiutato saremmo\lstati spacciati contro quello\lSkuntank...\pBrandon: Grazie mille piccolino :)
+Naomi: Fiuuu, per un pelo!\pSe non fosse stato per questo\nAxew che ci ha aiutato saremmo\lstati spacciati contro quello\lSkuntank...\pNaomi: Grazie mille piccolino :)
 
 #org @EventScript_Percorso1_3_19_tile1_text6
-Brandon: [PLAYER], sembra proprio\nche questo Axew voglia\ldiventare un tuo Poke'mon,\lperche' non provi a catturarlo\lcon la Poke'ball che ti ha\ldato tuo fratello?
+Naomi: [PLAYER], sembra proprio\nche questo Axew voglia\ldiventare un tuo Poke'mon,\lperche' non provi a catturarlo\lcon la Poke'ball che ti ha\ldato tuo fratello?
 
 #org @EventScript_Percorso1_3_19_tile1_text7
 [PLAYER], vuoi lanciare una Poke'ball?
@@ -47,10 +77,10 @@ Brandon: [PLAYER], sembra proprio\nche questo Axew voglia\ldiventare un tuo Poke
 Hai catturato Axew!
 
 #org @EventScript_Percorso1_3_19_tile1_text10
-Brandon: Wow [PLAYER] complimenti!\pHai catturato il tuo primo\nPoke'mon, sono sicuro che tu e\lAxew diventerete un'ottima\lsquadra.\p...\pBrandon: Vieni,\nandiamo a far vedere il tuo Poke'mon\lal Professor Oak...\pMagari dara' un Poke'mon pure a me.
+Naomi: Wow [PLAYER] complimenti!\pHai catturato il tuo primo\nPoke'mon, sono sicuro che tu e\lAxew diventerete un'ottima\lsquadra.\p...\pNaomi: Vieni,\nandiamo a far vedere il tuo Poke'mon\lal Professor Kraemer...\pE' un tipo un po' strano,\nproveniente da una regione lontana,\lmagari mi dara' un Poke'mon!
 
 #org @EventScript_Percorso1_3_19_tile1_text11
-Brandon: [PLAYER] sei sicuro?\nAxew mi sembra un ottimo\lPoke'mon per iniziare la tua\lavventura...
+Naomi: [PLAYER] sei sicuro?\nAxew mi sembra un ottimo\lPoke'mon per iniziare la tua\lavventura...
 
 #org @EventScript_Percorso1_3_19_tile2_text1
 Hei tu!\pPer caso sei un allenatore?\nLa mia azienda ha appena lanciato\lun nuovo dispositivo che aiuta gli\lallenatori ad individuare i Poke'mon\lnell'erba alta.\pTi interessa?\nSeguimi!
@@ -59,13 +89,13 @@ Hei tu!\pPer caso sei un allenatore?\nLa mia azienda ha appena lanciato\lun nuov
 Percorso 1:\n[ARROW_UP] Miralba\l[ARROW_DOWN] Borgo Ponente
 
 #org @Percorso_1_3_19_Sign2_text1
-Il Percorso 1 e' habitat di\nmoltissimi Poke'mon, spesso\lprovenienti da regione differenti.
+Grazie alle sue uniche condizioni\nclimatiche, causate dal costante\lsoffiare del vento e la presenza\ldi corsi d'acqua, il Percorso 1 e'\lhabitat di moltissimi Poke'mon,\lspesso provenienti da regioni\ldifferenti.
 
 #org @Percorso_1_3_19_Sign3_text1
 Consigli utili:\nPorta sempre con te un Poke'mon\lquando ti addentri nell'erba alta.
 
 #org @Percorso_1_3_19_NPC0_text1
-L'ho visto proprio li', nell'erba\nalta, un Poke'mon uccello di\lcolore rosso.\pNon so che Poke'mon sia, e' la\nprima volta che lo vedo!
+L'ho visto proprio li', nell'erba\nalta, un Poke'mon uccello di\lcolore rosso.\pNon so che Poke'mon sia, e' la\nprima volta che lo vedo!\pDev'essere uno quei tanti Poke'mon\narrivati ad Eyros da regioni\llontane, probabilmente Kalos o\lUnima.
 
 #org @Percorso_1_3_19_NPC1_text1
 Hey, pensi di passare senza sfidarmi?
@@ -74,7 +104,7 @@ Hey, pensi di passare senza sfidarmi?
 Dannazione, sei troppo forte!
 
 #org @Percorso_1_3_19_NPC1_text3
-Vorrei tanto andare a Miralba,\nma la strada e' ancora lunga.
+Vorrei tanto andare a Miralba,\nma non posso continuare ora che\li miei Poke'mon sono esausti.
 
 #org @Percorso_1_3_19_NPC8_text1
 Assaggerai la forza dei miei\lPoke'mon coleottero!
@@ -86,4 +116,4 @@ Qualcosa non ha funzionato...
 I Poke'mon coleottero sono molto\ncomodi da allevare, poiche' salgono\lvelocemente di livello.
 
 #org @Percorso_1_3_19_NPC3_text1
-Brandon: Meglio tornare a casa\nprima che qualche Poke'mon\lselvatico ci attacchi...
+Naomi: Meglio tornare a casa\nprima che qualche Poke'mon\lselvatico ci attacchi...

@@ -6,12 +6,12 @@
 
 .global EventScript_Borgo_Ponente_4_1_Sign0
 EventScript_Borgo_Ponente_4_1_Sign0:
-	msgbox Borgo_Ponente_4_1_Sign0_text1 MSG_SIGN
+	msgbox Borgo_Ponente_4_1_Sign0_text1 0x7
 	end
 
 .global EventScript_Borgo_Ponente_4_1_Sign1
 EventScript_Borgo_Ponente_4_1_Sign1:
-	msgbox Borgo_Ponente_4_1_Sign1_text1 MSG_SIGN
+	msgbox Borgo_Ponente_4_1_Sign1_text1 0x7
 	end
 
 
@@ -37,6 +37,13 @@ gMapScripts_Borgo_Ponente_4_1:
 		.hword MAP_SCRIPT_TERMIN		
 
 	Borgo_Ponente_4_1_MapScriptOnFrameBegin:
+		compare 0x4051 0x29
+		if 0x1 _call Borgo_Ponente_4_1_MapScriptOnFrame_P1
+		compare 0x4051 0x2D
+		if 0x1 _call Borgo_Ponente_4_1_MapScriptOnFrame_P2
+		end
+		
+	Borgo_Ponente_4_1_MapScriptOnFrame_P1:
 		playsong 0x0 0x0
 		applymovement 0xFF Borgo_Ponente_4_1_mov1
 		waitmovement 0x0 
@@ -67,3 +74,29 @@ gMapScripts_Borgo_Ponente_4_1:
 		.byte 0xF 
 		.byte 0xF 
 		.byte 0xFE
+
+	Borgo_Ponente_4_1_MapScriptOnFrame_P2:
+		lockall
+		pause 0x1E
+		textcolor 0x00
+		showpokepic 0x3B6 0x0 0x6
+		msgbox EventScript_Borgo_Ponente_4_1_MapScriptOnFrameBegin_text2 MSG_NORMAL
+		special 0x15A
+		applymovement 0xFF Borgo_Ponente_4_1_mov2
+		waitmovement 0x0
+		pause 0x1E
+		textcolor 0x00
+		showpokepic 0x3B6 0x0 0x6
+		msgbox EventScript_Borgo_Ponente_4_1_MapScriptOnFrameBegin_text3 MSG_NORMAL
+		special 0x15A
+		setvar 0x4051 0x2E
+		setvar 0x4050 0x7
+		setvar 0x5201 0x0
+		releaseall
+		end
+
+	Borgo_Ponente_4_1_mov2:
+		.byte 0x50
+		.byte 0x0 
+		.byte 0xFE
+

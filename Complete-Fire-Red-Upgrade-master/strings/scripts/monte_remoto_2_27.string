@@ -2,7 +2,7 @@
 ...
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text2
-???: Il Monte Remoto...\pIl posto dove il tempo non scorre,\nrimane fermo,\ldove il sole non tramonta mai...
+???: Il Monte Remoto...\pIl posto dove il tempo non scorre,\nrimane fermo, dove il sole\lnon tramonta mai...
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text3
 ???: ...Il tramonto d'altronde e'\nlo stesso di allora...
@@ -11,7 +11,7 @@
 ???: ...Incantevole...
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text5
-???: Chi l'avrebbe mai detto che\ndopo mezzo secolo ci avrei fatto\lritorno...\pQuesta volta pero' i tre cani\nguardiani non potranno fare nulla\lper ostacolarmi e potro' finalmente\lrisvegliare il Poke'mon leggendario\lguardiano del tempo, grazie al quale\lportero' a termine la mia missione...
+???: Chi l'avrebbe mai detto che\ndopo mezzo millenio ci avrei fatto\lritorno...\pQuesta volta pero' i tre cani\nguardiani non potranno fare nulla\lper ostacolarmi e potro' finalmente\lrisvegliare il Poke'mon leggendario\lguardiano del tempo, grazie al\lquale portero' a termine la mia\lmissione...
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text6
 ???: ...Fermare il tempo...
@@ -20,10 +20,10 @@
 ???: Il tempo e' il tiranno che\ngoverna il mondo: guerra, carestie\le sofferenze...\pTutto cio' e' causato dalla sua\nimplacabile avanzata...\pFermare il tempo e' l'unico modo\nper porre fine a questi mali.
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text8
-???: Io, Crono, ho il coraggio e la\nvolonta' di farlo, anche se\lsignificherebbe sacrificare tutto.\pIl tempo dovra' piegarsi alla mia\nvolonta e, l'universo trovera' la\lpace che tanto merita.\pIl mio nome sara' ricordato come\ncolui che ha sconfitto il tempo e\lha portato l'era della perfezione...\pHo fondato e addestrato il Team\nRocket solo a questo scopo,\lquesta volta nulla andra' storto...
+???: Io, Crono, ho il coraggio e la\nvolonta' di farlo, anche se\lsignificherebbe sacrificare tutto.\pIl tempo dovra' piegarsi alla mia\nvolonta e, l'universo trovera' la\lpace che tanto merita.\pIl mio nome sara' ricordato come\ncolui che ha sconfitto il tempo e\lha portato l'era della perfezione...\pHo fondato e addestrato il Team\nDusk solo a questo scopo, questa\lvolta nulla andra' storto...
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text9
-Crono: ...Da allora nulla sembra\nessere cambiato...\p...Ricordo ancora quel giorno\ncome se fosse ieri...
+Crono: ...Da allora nulla sembra\nessere cambiato...\p...Ricordo ancora quel giorno come\nse fosse ieri...
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text10
 Monte Remoto...\p...500 anni fa...
@@ -32,7 +32,7 @@ Monte Remoto...\p...500 anni fa...
 Crono: La fine del mio viaggio e'\nvicina...\pIl Monte Remoto, dimora di Ho-oh,\nil guardiano del tempo...\pOra che le tre Bestie Leggendarie\nsono state sconfitte nessuno puo'\lfermarmi nel mio intento!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text12
-Crono: Grazie alla Fiamma\nArcobaleno presto questo\lpotere...\pSara' mio!
+Crono: Grazie alla Fiamma Tramonto\npresto questo potere...\pSara' mio!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text13
 Crono: Oh guardiano del tempo,\nvieni a me!!!
@@ -79,6 +79,9 @@ Crono: Non capisco, che succede?
 #org @MonteRemoto_2_27_MapScriptOnFrame_text28
 Crono: HO-OH, RITIRATA!!!
 
+#org @MonteRemoto_2_27_MapScriptOnFrame_text28a
+Crono: .............
+
 #org @MonteRemoto_2_27_MapScriptOnFrame_text29
 Crono: Non e' possibile, i cani\nguardiani si sono uniti per fermare\lil Poke'mon leggendario...\pTutto il lavoro fatto finora per\narrivare a questo punto e' stato\linvano...\pNon c'e' piu' motivo di stare qui...\pEppure...\pDev'esserci un modo per risvegliare\nHo-oh anche in queste condizioni...
 
@@ -89,16 +92,19 @@ Crono: Non ho altra scelta...\nGirero' la regione di Eyros in lungo\le in largo 
 Monte Remoto...\p...Presente
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text32
-Crono: Ebbene si...\pDopo secoli passati a vagabondare per\nEyros ho trovato la soluzione...\pDopo piu' di 500 anni il Poke'mon\nleggendario finalmente si risvegliera'\le nessuno potra' piu' fermarmi...
+Crono: Ebbene si...\pDopo secoli passati a vagabondare\nper Eyros ho trovato la soluzione...\pDopo piu' di 500 anni il Poke'mon\nleggendario finalmente si\lrisvegliera' e nessuno potra' piu'\lfermarmi...
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text33
-Steven: Maestro Crono,\nci siamo quasi..\pAbbiamo individuato un indizio che\npotrebbe mostrarci dove sono nascosti\li focolari, le nostre reclute sono\lgia' in viaggio.
+Vesper: Maestro Crono,\nci siamo quasi..\pAbbiamo individuato un indizio che\npotrebbe mostrarci dove sono\lnascosti i focolari...
+
+#org @MonteRemoto_2_27_MapScriptOnFrame_text33a
+Umbra: Le nostre reclute sono\ngia' in viaggio!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text34
-Crono: Eccellente Steven, fa in\nmodo che tutto vada secondo i piani!
+Crono: Eccellente!\pUmbra, Vesper, fate in modo che\ntutto vada secondo i piani!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text35
-Steven: Sissignore!
+Umbra: Sissignore!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text36
 Crono: A presto,\pmio vecchio amico...

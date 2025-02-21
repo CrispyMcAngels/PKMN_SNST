@@ -1,23 +1,23 @@
 #org @Percorso_2_3_41_NPC1_2_text1
 Recluta Rocket: Hei moccioso,\nfila via!\pLa strada oggi e' chiusa hehe!
 
-#org @Percorso_2_3_41_NPC3_text1
-Pensi di passare di qui senza\nsfidarmi?
+#org @Percorso_2_3_41_NPC7_text1
+Dopo questo Percorso si trova la\nprima Palestra Poke'mon della\lregione di Eyros, pensi di essere\lpronto?\pVediamo come te la cavi contro di\nme!
 
-#org @Percorso_2_3_41_NPC3_text2
+#org @Percorso_2_3_41_NPC7_text2
 Ah... Che rovina!
 
+#org @Percorso_2_3_41_NPC7_text3
+Uff... Forse dovrei allenarmi di\npiu', ma non significa che tu sia\lmigliore di me!
+
+#org @Percorso_2_3_41_NPC3_text1
+I miei Poke'mon Coleottero sono\npiccoli, ma incredibilmente\lforti! Vedrai!
+
+#org @Percorso_2_3_41_NPC3_text2
+Forse devo dare loro piu' tempo\nper evolversi...
+
 #org @Percorso_2_3_41_NPC3_text3
-Se i tuoi occhi incontrano quelli di\nun altro allenatore, devi sfidarlo!
-
-#org @Percorso_2_3_41_NPC4_text1
-Se hai dei Poke'mon, sei ufficialmente\nun allenatore di Poke'mon!\pNon puoi rifiutare la mia sfida!
-
-#org @Percorso_2_3_41_NPC4_text2
-Ahah, ho perso...
-
-#org @Percorso_2_3_41_NPC4_text3
-Avresti dovuto dirmi che eri cosi'\nforte!
+Sei stato bravo, ma i miei\nColeottero non si arrenderanno\lmai!
 
 #org @Percorso_2_3_41_Sign0_text1
 Percorso 2\p[ARROW_LEFT] Ardesiopoli
@@ -35,7 +35,7 @@ Consigli utili: se fatti tenere\nai Poke'mon, alcuni strumenti ne\lmigliorano le
 [PLAYER]: Chi era quell'uomo?
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text1
-Crispy: Sarebbe bello se anche te\nindagassi sui malanni del Team\lRocket, perche' non vai ad\lArdesiopoli a vedere a che punto\le' l'esperimento di Filiberto?\pLa citta' non e' molto lontana, ma\ntieni questo, cosi' non ti perderai!
+Crispy: Sarebbe bello se anche te\nindagassi sui malanni del Team\lDusk, perche' non vai ad\lArdesiopoli a vedere a che punto\le' l'esperimento di Filiberto?\pLa citta' non e' molto lontana, ma\ntieni questo, cosi' non ti perderai!
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text2
 Crispy: Questa mappa ti permette di\nvisualizzare la mappa della\lregione di Eyros in qualsiasi\listante, cosi' non perderai mai la\ltua strada!\pAh anzi, hai avvisato la Mamma che\nstarai lontano da casa per un po'?\pForse e' meglio se vai a salutarla...
@@ -66,32 +66,33 @@ Crispy: ... Che si riferisse alla\nstessa persona?\pSperiamo dunque che per qual
 Crispy: [PLAYER], io ora devo\nandare.\pRicordati di andare nel\nlaboratorio di Filiberto ad\lArdesiopoli dopo essere passato a\lsalutare la mamma...
 
 #org @Percorso_2_3_41_NPC6_text1
-Io non sono molto alto, quasi\nscompaio nell'erba alta.\pL'erba mi arriva sopra al naso[.]\nFaffaffaffaffa[.]\pFaffa[.] etciu'!
+Hai visto quanti Poke'mon\nselvatici ci sono?\pAlla scuola Poke'mon di\nArdesiopoli ho studiato che Eyros\le' ricca di biodiversita' grazie\lalla sua magnifica natura!\pSi racconta che tutto sia iniziato\ndopo la grande guerra che\ldistrusse i tre regni della\lregione 5 secoli fa...\pDa li' in poi si decisa di\nricostrutire Eyros mantenedo un\lforte contatto con la natura!
 
-#org @Percorso_2_3_41_NPC7_text1
+#org @Percorso_2_3_41_NPC4_text1
 Sei allenatore da poco tempo? 
 
-#org @Percorso_2_3_41_NPC7_text2
+#org @Percorso_2_3_41_NPC4_text2
 Ho richiamato la tua attenzione perche'\npensavo di vincere
 
-#org @Percorso_2_3_41_NPC7_text3
+#org @Percorso_2_3_41_NPC4_text3
 Non ho mai vinto fino ad ora.\nSpero di riuscirci prima o poi[.]
 
 #org @Percorso_2_3_41_NPC9_text1
-lo!
+I miei Poke'mon sono belli e\nforti!\pVediamo se puoi dire lo stesso dei\ntuoi!
 
 #org @Percorso_2_3_41_NPC9_text2
-Alla fine, sei te a fare carriera!
+Ugh, i miei Poke'mon sono\nfantastici, e' solo che oggi non e'\lil loro giorno...
 
 #org @Percorso_2_3_41_NPC9_text3
-Se voglio continuare a far strada,\ndevo catturare piu' Poke'mon.
+La prossima volta saro' ancora piu'\nfavolosa e ti battero' con grazia!
 
 #org @Percorso2_3_41_tile2_text1
-???: Se non sbaglio tu sei\nl'allenatore che prima ha portato\lle bacche ai Treecko giusto?\pPiacere di conoscerti, il mio\nnome e' Raito.\pTi ho osservato molto bene prima e\nnon ho potuto fare a meno di\lnotare qualcosa di speciale in te...\p...Che sia il legame con i tuoi\nPoke'mon?\pRaito: Non e' ancora ora di\nscoprirlo, ma sono sicuro che ci\lrivedremo presto...\p...[PLAYER]...
+???: Se non sbaglio tu sei\nl'allenatore che prima ha portato\lle bacche ai Treecko, giusto?\pPiacere di conoscerti, il mio\nnome e' Raito.\pTi ho osservato molto bene prima e\nnon ho potuto fare a meno di\lnotare qualcosa di speciale in te...\p...Che sia il legame con i tuoi\nPoke'mon?\pRaito: Non e' ancora ora di\nscoprirlo, ma sono sicuro che ci\lrivedremo presto...\p...[PLAYER]...
 
 #org @Percorso2_3_41_tile3_text1
 [PLAYER]: Meglio che vada a salutare\nla Mamma prima di continuare!
 
-
+#org @Percorso_2_3_41_NPC1_ALPHA
+Ben arrivato Viandante del Vento!\pComplimenti per aver completato la\nversione Alpha di Pokemon Sunset!\pSpero il gioco ti sia piaciuto :D\pNon dimenticarti di compilare il\nquestionario per lasciare la tua\lrecensione!
 
 

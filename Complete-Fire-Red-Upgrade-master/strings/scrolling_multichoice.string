@@ -2,11 +2,11 @@
 
 #ifdef SCROLLING_MULTICHOICE
 
-#org @sExampleText_1
-Example 1
+#org @sBlueOwText_1
+Blu
 
-#org @sExampleText_2
-Example 2
+#org @sOrangeOwText_1
+Arancioni
 
 #org @sExampleText_3
 Example 3

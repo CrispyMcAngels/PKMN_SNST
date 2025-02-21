@@ -6,37 +6,37 @@
 
 .global EventScript_Borgo_Ponente_Sign0
 EventScript_Borgo_Ponente_Sign0:
-	msgbox Borgo_Ponente_Sign0 MSG_SIGN
+	msgbox Borgo_Ponente_Sign0 0x7
 	end
 
 .global EventScript_Borgo_Ponente_Sign1
 EventScript_Borgo_Ponente_Sign1:
-	msgbox Borgo_Ponente_Sign1 MSG_SIGN
+	msgbox Borgo_Ponente_Sign1 0x7
 	end
 
 .global EventScript_Borgo_Ponente_Sign2
 EventScript_Borgo_Ponente_Sign2:
-	msgbox Borgo_Ponente_Sign2 MSG_SIGN
+	msgbox Borgo_Ponente_Sign2 0x7
 	end
 
 .global EventScript_Borgo_Ponente_Sign3
 EventScript_Borgo_Ponente_Sign3:
-	msgbox Borgo_Ponente_Sign3 MSG_SIGN
+	msgbox Borgo_Ponente_Sign3 0x7
 	end
 
 .global EventScript_Borgo_Ponente_Sign4
 EventScript_Borgo_Ponente_Sign4:
-	msgbox Borgo_Ponente_Sign4 MSG_SIGN
+	msgbox Borgo_Ponente_Sign4 0x7
 	end
 
 .global EventScript_Borgo_Ponente_Sign5
 EventScript_Borgo_Ponente_Sign5:
-	msgbox Borgo_Ponente_Sign5 MSG_SIGN
+	msgbox Borgo_Ponente_Sign5 0x7
 	end
 
 .global EventScript_Borgo_Ponente_Sign6
 EventScript_Borgo_Ponente_Sign6:
-	msgbox Borgo_Ponente_Sign6 MSG_SIGN
+	msgbox Borgo_Ponente_Sign6 0x7
 	end
 
 .global EventScript_Borgo_Ponente_OakDoor
@@ -52,7 +52,7 @@ EventScript_Borgo_Ponente_OakDoor:
 	end
 
 	EventScript_Borgo_Ponente_OakDoor_P1:
-		msgbox Borgo_Ponente_OakDoot_text1 MSG_SIGN
+		msgbox Borgo_Ponente_OakDoot_text1 0x7
 		end
 
 .global EventScript_Borgo_Ponente_3_0_tile0
@@ -66,8 +66,9 @@ EventScript_Borgo_Ponente_3_0_tile0:
 	end
 
 	EventScript_Borgo_Ponente_3_0_tile0_P1:
+		textcolor 0x00
 		showpokepic 0x3B6 0x0 0x6
-		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text1 0x7
+		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		applymovement 0xFF EventScript_Borgo_Ponente_3_0_tile0_P1_mov0
@@ -80,8 +81,9 @@ EventScript_Borgo_Ponente_3_0_tile0:
 			.byte 0xFE
 
 	EventScript_Borgo_Ponente_3_0_tile0_P2:
+		textcolor 0x00
 		showpokepic 0x3B6 0x0 0x6
-		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text2 0x7
+		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		applymovement 0xFF EventScript_Borgo_Ponente_3_0_tile0_P1_mov0
@@ -100,8 +102,9 @@ EventScript_Borgo_Ponente_3_0_tile1:
 	end
 
 	EventScript_Borgo_Ponente_3_0_tile1_P1:
+		textcolor 0x00
 		showpokepic 0x3B6 0x0 0x6
-		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text1 0x7
+		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		applymovement 0xFF EventScript_Borgo_Ponente_3_0_tile1_P1_mov0
@@ -124,8 +127,9 @@ EventScript_Borgo_Ponente_3_0_tile2:
 	end
 
 	EventScript_Borgo_Ponente_3_0_tile2_P1:
+		textcolor 0x00
 		showpokepic 0x3B6 0x0 0x6
-		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text1 0x7
+		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		applymovement 0xFF EventScript_Borgo_Ponente_3_0_tile1_P1_mov0
@@ -135,8 +139,9 @@ EventScript_Borgo_Ponente_3_0_tile2:
 
 
 	EventScript_Borgo_Ponente_3_0_tile2_P2:
+		textcolor 0x00
 		showpokepic 0x3B6 0x0 0x6
-		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text2 0x7
+		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		applymovement 0xFF EventScript_Borgo_Ponente_3_0_tile1_P1_mov0
@@ -157,8 +162,9 @@ EventScript_Borgo_Ponente_3_0_tile5:
 	end
 
 	EventScript_Borgo_Ponente_3_0_tile5_P1:
+		textcolor 0x00
 		showpokepic 0x3B6 0x0 0x6
-		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text1 0x7
+		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		applymovement 0xFF EventScript_Borgo_Ponente_3_0_tile1_P1_mov0
@@ -168,8 +174,9 @@ EventScript_Borgo_Ponente_3_0_tile5:
 
 
 	EventScript_Borgo_Ponente_3_0_tile5_P2:
+	    textcolor 0x00
 		showpokepic 0x3B6 0x0 0x6
-		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text2 0x7
+		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		applymovement 0xFF EventScript_Borgo_Ponente_3_0_tile1_P1_mov0
@@ -184,7 +191,8 @@ EventScript_Borgo_Ponente_3_0_tile5:
 EventScript_Borgo_Ponente_NPC1:
 	lock
 	faceplayer
-	msgbox Borgo_Ponente_NPC1_text1 0x7
+	textcolor 0x00
+	msgbox Borgo_Ponente_NPC1_text1 MSG_NORMAL
 	release
 	end
 
@@ -192,7 +200,8 @@ EventScript_Borgo_Ponente_NPC1:
 EventScript_Borgo_Ponente_NPC0:
 	lock
 	faceplayer
-	msgbox Borgo_Ponente_NPC0_text1 0x7
+    textcolor 0x01
+	msgbox Borgo_Ponente_NPC0_text1 MSG_NORMAL
 	release
 	end
 
@@ -201,8 +210,9 @@ EventScript_Borgo_Ponente_NPC0:
 EventScript_Borgo_Ponente_Brandon:
 	lock
 	faceplayer
+    textcolor 0x01
 	showpokepic 0x3B5 0x0 0x6
-	msgbox Borgo_Ponente_Brandon_text1 0x7
+	msgbox Borgo_Ponente_Brandon_text1 MSG_NORMAL
 	special 0x15A
 	release
 	end
@@ -213,39 +223,45 @@ EventScript_Borgo_Ponente_Crispy:
 	faceplayer
 	compare 0x4051 0xF
 	if 0x1 _goto EventScript_Borgo_Ponente_Crispy_Part1
+    textcolor 0x00
 	showpokepic 0x3B4 0x0 0x6
-	msgbox Borgo_Ponente_Crispy_text1 0x7
+	msgbox Borgo_Ponente_Crispy_text1 MSG_NORMAL
 	special 0x15A
 	release
 	end
 
 EventScript_Borgo_Ponente_Crispy_Part1:
+    textcolor 0x00
 	showpokepic 0x3B4 0x0 0x6
 	//Eccoti player...
-	msgbox Borgo_Ponente_Crispy_text2 0x7
+	msgbox Borgo_Ponente_Crispy_text2 MSG_NORMAL
 	special 0x15A
 	applymovement 0x4 EventScript_Borgo_Ponente_Crispy_mov1
 	waitmovement 0x0
+    textcolor 0x01
 	showpokepic 0x3B5 0x15 0x6
 	//Non ci credo, davvero stai per...
-	msgbox Borgo_Ponente_Crispy_text3 0x7
+	msgbox Borgo_Ponente_Crispy_text3 MSG_NORMAL
 	special 0x15A
 	applymovement 0x3 EventScript_Borgo_Ponente_Crispy_mov2
 	waitmovement 0x0
+	textcolor 0x00
 	showpokepic 0x3B4 0x0 0x6
 	//Eehm, purtroppo no,...
-	msgbox Borgo_Ponente_Crispy_text4 0x7
+	msgbox Borgo_Ponente_Crispy_text4 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
+	textcolor 0x01
 	showpokepic 0x3B5 0x15 0x6
 	//Evviva...
-	msgbox Borgo_Ponente_Crispy_text5 0x7
+	msgbox Borgo_Ponente_Crispy_text5 MSG_NORMAL
 	special 0x15A
 	applymovement 0x3 EventScript_Borgo_Ponente_Crispy_mov3
 	waitmovement 0x0
+	textcolor 0x00
 	showpokepic 0x3B4 0x0 0x6
 	//Bene, allora andiamo...
-	msgbox Borgo_Ponente_Crispy_text6 0x7
+	msgbox Borgo_Ponente_Crispy_text6 MSG_NORMAL
 	special 0x15A
 
 	//follow me music + applymovement
@@ -257,16 +273,27 @@ EventScript_Borgo_Ponente_Crispy_Part1:
 	pause 0x1E
 	fadedefault
 
+	textcolor 0x00
 	showpokepic 0x3B4 0x0 0x6
 	//eccoci, di solito i pokemon...
-	msgbox Borgo_Ponente_Crispy_text7 0x7
+	msgbox Borgo_Ponente_Crispy_text7 MSG_NORMAL
 	special 0x15A
 	clearflag 0x02A
 	setflag 0x029
 	//interruzione
+
+	spriteface 0xFF 0x3
+	setvar 0x8004 0x00B1	
+	setvar 0x8005 0x5
+	special 0x9C
+	waitstate
+
 	setvar 0x4050 0x3
 	setvar 0x4051 0x10
-	fadescreen 0x3
+
+
+
+
 
 	warpmuted 0x3 0x13 0xFF 0x0A 0x23
 	release
@@ -407,16 +434,18 @@ gMapScripts_Borgo_Ponente_3_0:
 				pause 0x1E
 				applymovement 0x3 Borgo_Ponente_3_0_MapScriptOnFrame_mov1
 				waitmovement 0x0
-				playsong 0x13B
+				playsong 0x18A 0x0
 				pause 0x1E
 				applymovement 0x3 Borgo_Ponente_3_0_MapScriptOnFrame_mov2
 				waitmovement 0x0	
+				textcolor 0x00
 				showpokepic 0x3B4 0x0 0x6
-				msgbox Borgo_Ponente_3_0_crispy1_text1 0x7
+				msgbox Borgo_Ponente_3_0_crispy1_text1 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
 				applymovement 0x3 Borgo_Ponente_3_0_MapScriptOnFrame_mov3
 				waitmovement 0x0
+				movesprite2 0x3 0x0E 0x06
 				fadedefault
 				setvar 0x4051 0xE
 				setvar 0x4050 0x2

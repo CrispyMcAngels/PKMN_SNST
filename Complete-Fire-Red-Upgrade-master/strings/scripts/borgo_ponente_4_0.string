@@ -33,3 +33,49 @@ Mamma: [PLAYER] devi essere\nesausto dopo tutto quello che e'\lsuccesso, perche'
 
 #org @EventScript_Borgo_Ponente_4_0_mom_text10
 Dopo una lunga giornata di\navventure, [PLAYER] riesce\lfinalmente a riposarsi...
+
+#org @EventScript_Borgo_Ponente_4_0_mom_P1a_text1
+Mamma: Eccoti [PLAYER], che cosa\nvoleva tuo fratello?
+
+#org @EventScript_Borgo_Ponente_4_0_mom_P1a_text2
+Mamma: Che cosa?\nHai catturato un Poke'mon?\pMa e' fantastico, di che Poke'mon\nsi tratta?
+
+#org @EventScript_Borgo_Ponente_4_0_mom_P1a_text3
+[PLAYER] mostra Axew alla Mamma...
+
+#org @EventScript_Borgo_Ponente_4_0_mom_P1a_text4
+Mamma: Wow, un Axew! sei stato\ndavvero fortunato!\pCome hai fatto a catturarlo?
+
+#org @EventScript_Borgo_Ponente_4_0_mom_P1a_text5
+Mamma: Uno Skuntank ha attaccato\nte e Naomi e Axew e' arrivato a\lproteggervi?\pA questo punto sembra proprio che\nAxew fosse destinato ad essere il\ltuo Poke'mon...
+
+#org @EventScript_Borgo_Ponente_4_0_mom_P1a_text6
+Mamma: Questo spiegherebbe anche\nperche' i tuoi vestiti sono tutti\lsporchi!\pTieni, prendi questi vestiti\npuliti!
+
+#org @EventScript_Borgo_Ponente_4_0_mom_P1a_text7
+[PLAYER] riceve Vestiti Arancioni! 
+
+#org @EventScript_Borgo_Ponente_4_0_mom_P1a_text8
+Mamma: Per cambiarti i vestiti,\ninteragisci con l'armadio in fondo\lalle scale.
+
+#org @Borgo_Ponente_4_0_Armadio_text1
+[PLAYER]: Questo armadio e' vuoto...
+
+#org @Borgo_Ponente_4_0_Armadio_Arancione_text1
+[PLAYER] interagisce con l'armadio:
+
+#org @blu_ow_text
+Blu
+
+#org @orange_ow_text
+Arancioni
+
+#org @armadio_msg
+Quali vestiti vuoi indossare?
+
+#org @Borgo_Ponente_4_0_Armadio_already_blue_text1
+Stai gia' indossando i vestiti\nblu!
+
+#org @Borgo_Ponente_4_0_Armadio_already_orange_text1
+Stai gia' indossando i vestiti\narancioni!
+

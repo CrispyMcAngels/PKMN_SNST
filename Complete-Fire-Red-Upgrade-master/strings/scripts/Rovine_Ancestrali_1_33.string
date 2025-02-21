@@ -1,23 +1,23 @@
 #org @EventScript_Rovine_Ancestrali_1_33_tile0_text1
-Brandon: Eccoti [PLAYER], finalmente\nsono riuscito a raggiungerti!\pWow, hai visto cosa hanno\ncombinato questi farabutti del\lTeam Rocket?\pChissa cosa stanno cercando qui\nsotto...\pI tuoi Poke'mon sono stanchi?\pLascia che li rimetta in sesto...
+Naomi: Eccoti [PLAYER], finalmente\nsono riuscito a raggiungerti!\pWow, hai visto cosa hanno\ncombinato questi farabutti del\lTeam Dusk?\pChissa cosa stanno cercando qui\nsotto...\pI tuoi Poke'mon sono stanchi?\pLascia che li rimetta in sesto...
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile0_text2
-Brandon ha rimesso in sesto i\nPoke'mon di [PLAYER].
+Naomi ha rimesso in sesto i\nPoke'mon di [PLAYER].
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile0_text3
-Brandon: Queste reclute del Team\nRocket sembrano essere molto forti...\pPerche' non continuiamo insieme?\pSono sicuro che unendo le nostre\nforze li sconfiggeremo!
+Naomi: Queste reclute del Team\nDusk sembrano essere molto forti...\pPerche' non continuiamo insieme?\pSono sicuro che unendo le nostre\nforze li sconfiggeremo!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile0_text4
-Brandon: [PLAYER], non possiamo\nandarcene ora.\lDobbiamo sconfiggere il Team\lRocket!
+Naomi: [PLAYER], non possiamo\nandarcene ora.\lDobbiamo sconfiggere il Team\lDusk!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile0_text5
-Brandon: Eccoti [PLAYER], non\npossiamo mollare proprio ora.\pSconfiggeremo il Team Rocket\ninsieme!
+Naomi: Eccoti [PLAYER], non\npossiamo mollare proprio ora.\pSconfiggeremo il Team Dusk\ninsieme!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile1_text1
-Recluta Rocket: Cosa ci fate voi qui?
+Recluta Dusk: Cosa ci fate voi qui?
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile1_text2
-Recluta Rocket: Troverete pane per i\nvostri denti!
+Recluta Dusk: Troverete pane per i\nvostri denti!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile1_text3
 Umiliati da dei marmocchi...
@@ -26,34 +26,52 @@ Umiliati da dei marmocchi...
 E' stata solo fortuna!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile4_text1
-Recluta Rocket: Preparatevi ad\nandare a piangere dalla mammina!
+Recluta Dusk: Preparatevi ad\nandare a piangere dalla mammina!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile4_text2
-Recluta Rocket: Come osate mettere\ni bastoni tra le ruote al Team\lRocket?
+Recluta Dusk: Come osate mettere\ni bastoni tra le ruote al Team\lDusk?
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile4_text3
-Recluta Rocket: Che figura, alla\nfine piango io!
+Recluta Dusk: Che figura, alla\nfine piango io!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile4_text4
-Recluta Rocket: Avete coraggio,\nquesto lo rispetto!
+Recluta Dusk: Avete coraggio,\nquesto lo rispetto!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile5_text1
-Recluta Rocket: Non vi lasciero'\npassare!
+Recluta Dusk: Non vi lasciero'\npassare!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile5_text2
-Recluta Rocket: Siete al\ncapolinea!
+Recluta Dusk: Siete al\ncapolinea!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile5_text3
-Recluta Rocket: Non esultate in\nanticipo, il capo vi ridurra' in\lpolvere!
+Recluta Dusk: Non esultate in\nanticipo, il capo vi ridurra' in\lpolvere!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile5_text4
-Recluta Rocket: Sconfitta da voi\ndue...\pNon merito di far parte del Team\nRocket forse...
+Recluta Dusk: Sconfitta da voi\ndue...\pNon merito di far parte del Team\nDusk forse...
 
 #org @Rovine_Ancestrali_1_33_NPC0_text1
-Brandon: Tieni duro [PLAYER], ci\nsiamo quasi!
+Naomi: Tieni duro [PLAYER], ci\nsiamo quasi!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile7_text1
-Brandon: Wow, riesco a crederci a\nstento che siamo arrivati fino a\lquesto punto!\pOra non resta che vedere cosa si\ncela dentro quel tronco!
+Naomi: Wow, riesco a crederci a\nstento che siamo arrivati fino a\lquesto punto!\pOra non resta che vedere cosa si\ncela dentro quel tronco!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile7_text2
-Brandon: Ci vediamo dall'altra\nparte [PLAYER]!
+Naomi: Coraggio [PLAYER], andiamo!
+
+#org @EventScript_Rovine_Ancestrali_1_33_NPC1_text1
+Recluta Dusk: Sembra che in\nqueste rovine sia custodito\lqualcosa di molto prezioso...
+
+#org @EventScript_Rovine_Ancestrali_1_33_NPC2_text1
+Recluta Dusk: Sarebbe stato meglio\nattaccare una spiaggia o un posto\lcaldo, non una foresta dimenticata...
+
+#org @EventScript_Rovine_Ancestrali_1_33_NPC3_text1
+Recluta Dusk: In questo posto c'e'\nuna puzza di chiuso allucinante,\lnon ne posso piu'!
+
+#org @EventScript_Rovine_Ancestrali_1_33_NPC4_text1
+Recluta Dusk: Come dici?\pNon hai mai sentito parlare\ndel Team Dusk?\lCambierai presto opinione!
+
+#org @EventScript_Rovine_Ancestrali_1_33_NPC5_text1
+Recluta Dusk: Questa e' la mia\pprima missione...\nVesper non sara' molto contento...
+
+#org @EventScript_Rovine_Ancestrali_1_33_NPC6_text1
+Recluta Dusk: Il mio obbiettivo e'\ndiventare una comandante forte\le rispettata come Umbra.

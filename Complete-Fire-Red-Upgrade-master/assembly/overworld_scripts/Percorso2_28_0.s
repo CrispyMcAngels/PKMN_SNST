@@ -8,23 +8,23 @@
 EventScript_Percorso_2_28_0_NPC0:
 	lock
 	faceplayer
-	msgbox Percorso_2_28_0_NPC0_text1 0x7
+	msgbox Percorso_2_28_0_NPC0_text1 MSG_NORMAL
 	release
 	end
 
 .global EventScript_Percorso_2_28_0_Sign0
 EventScript_Percorso_2_28_0_Sign0:
-	msgbox Percorso_2_28_0_Sign0_text1 MSG_SIGN
+	msgbox Percorso_2_28_0_Sign0_text1 0x7
 	end
 
-.global EventScript_Percorso_2_28_0_Sign2
-EventScript_Percorso_2_28_0_Sign2:
-	lockall
+.global EventScript_Percorso_2_28_0_NPC1
+EventScript_Percorso_2_28_0_NPC1:
+	lock
 	msgbox Percorso_2_28_0_Sign2_text1 MSG_YESNO
 	compare 0x800D 0x1
 	if 0x1 _goto EventScript_Percorso_2_28_0_Sign2_yes
 	if 0x0 _goto EventScript_Percorso_2_28_0_Sign2_no
-	releaseall
+	release
 	end
 
 	EventScript_Percorso_2_28_0_Sign2_yes:
@@ -36,7 +36,7 @@ EventScript_Percorso_2_28_0_Sign2:
 		end
 
 		No_berries_28_0:
-			msgbox Percorso_2_28_0_Sign2_text2 0x7
+			msgbox Percorso_2_28_0_Sign2_text2 MSG_NORMAL
 			releaseall
 			end
 

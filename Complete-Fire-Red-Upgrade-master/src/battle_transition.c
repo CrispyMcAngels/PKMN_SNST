@@ -730,26 +730,14 @@ const TaskFunc sBT_Phase2Tasks[] =
 };
 
 #ifdef VAR_BATTLE_TRANSITION_LOGO
-extern const u8 ShadowBattleLogoTiles[];
-extern const u16 ShadowBattleLogoPal[];
-extern const u8 ShadowBattleLogoMap[];
-extern const u8 LORBattleLogoTiles[];
-extern const u16 LORBattleLogoPal[];
-extern const u8 LORBattleLogoMap[];
-extern const u8 BlackEmboarBattleLogoTiles[];
-extern const u16 BlackEmboarBattleLogoPal[];
-extern const u8 BlackEmboarBattleLogoMap[];
-extern const u8 TerrorGranbullBattleLogoTiles[];
-extern const u16 TerrorGranbullBattleLogoPal[];
-extern const u8 TerrorGranbullBattleLogoMap[];
-extern const u8 BlackFerrothornBattleLogoTiles[];
-extern const u16 BlackFerrothornBattleLogoPal[];
-extern const u8 BlackFerrothornBattleLogoMap[];
+extern const u8 TeamDuskBattleLogoTiles[];
+extern const u16 TeamDuskBattleLogoPal[];
+extern const u8 TeamDuskBattleLogoMap[];
 
 const struct BattleTransitionLogo gBattleTransitionLogos[] =
 {
 	#ifndef UNBOUND //Modify this section
-	{},
+	{CLASS_TEAM_ROCKET, TeamDuskBattleLogoTiles, TeamDuskBattleLogoPal, TeamDuskBattleLogoMap},
 	#else //For Pokemon Unbound
 	{CLASS_SHADOW, ShadowBattleLogoTiles, ShadowBattleLogoPal, ShadowBattleLogoMap},
 	{CLASS_LOR, LORBattleLogoTiles, LORBattleLogoPal, LORBattleLogoMap},
@@ -820,7 +808,7 @@ static bool8 BT_Phase2CustomLogo_Init(struct Task *task)
 	BT_GetBg0TilemapAndTilesetBase(&tilemapAddr, &tilesetAddr);
 	CpuFill16(0, tilemapAddr, 0x800);
 	LZDecompressVram(customLogoTiles, tilesetAddr);
-	LoadPalette(customLogoPal, 0xF0, 0x20);
+	LoadPalette(customLogoPal, 0x0, 0x14);
 	#endif
 
 	++task->tState;

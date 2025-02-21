@@ -1,11 +1,11 @@
 #org @Percorso_11_Brandon_text1
-Brandon: [PLAYER] te parti pure,\nio voglio restare un po' qui a\lguardare l'orizzonte.
+Naomi: [PLAYER] te parti pure,\nio voglio restare un po' qui a\lguardare l'orizzonte.
 
 #org @Percorso_11_Brandon_text2
-Brandon: Mmmh dannazione,\nsembra che non si possa proseguire\lda questa parte senza un Poke'mon\lin grado di volare...
+Naomi: Mmmh dannazione, sembra che\nnon si possa proseguire da questa\lparte senza un Poke'mon in grado di\lvolare...
 
 #org @Percorso_11_Brandon_text3
-Brandon: Hei [PLAYER], finalmente ti\nsei deciso a venire a sfidarmi...\pIo e Denio ti daremo molto\nfilo da torcere...\pFatti sotto!
+Naomi: Hei [PLAYER], finalmente ti\nsei deciso a venire a sfidarmi...\pIo e Dieno ti daremo molto filo\nda torcere...\pFatti sotto!
 
 #org @Percorso_11_Brandon_text4
 [PLAYER]: Vai, Axew!
@@ -14,7 +14,7 @@ Brandon: Hei [PLAYER], finalmente ti\nsei deciso a venire a sfidarmi...\pIo e De
 Axew: Ax-Axew!
 
 #org @Percorso_11_Brandon_text5a
-Brandon: Vai, Deino!
+Naomi: Vai, Deino!
 
 #org @Percorso_11_Brandon_text6
 Deino: Deino-De!
@@ -23,46 +23,64 @@ Deino: Deino-De!
 Impossibile!
 
 #org @Percorso_11_Brandon_text7
-Brandon: Wow [PLAYER], sono sbalordito,\nil tuo legame con Axew e' gia'\lmolto forte!\pSono curioso di vedere quanto\nforti diventerete.\pPer quanto mi riguarda invece devo\nancora allenarmi molto con Deino,\lma sono sicuro faremo presto dei\lprogressi!\pPer ora basta cosi' piccolino,\nrientra.
+Naomi: Wow [PLAYER], sono sbalordita,\nil tuo legame con Axew e' gia'\lmolto forte!\pSono curiosa di vedere quanto\nforti diventerete.\pPer quanto mi riguarda invece devo\nancora allenarmi molto con Deino,\lma sono sicura faremo presto dei\lprogressi!\pPer ora basta cosi' piccolino,\nrientra.
 
 #org @Percorso_11_Brandon_text8
 [PLAYER]: Ottimo lavoro Axew,\nrientra pure te!
 
 #org @Percorso_11_Brandon_text9
-Prof Oak: Eccomi ragazzi, sono\narrivato giusto in tempo per\lvedere la vostra sfida\lda lontano.\pDevo dire che nonostante l'esito,\nsono molto soddisfatto di entrambi.\pOrmai siete a tutti gli effetti\ndegli allenatori e, come ogni\lallenatore Poke'mon che si rispetti,\lavete bisogno di questo...
+Prof. Kraemer: Hallo Jungs, sono\narrivato giusto in tempo per\lvedere vostra sfida da lontano...\pDavvero un bello spettacolo, sehr\nschon, sono soddisfatto von euch!\pOrmai, ihr seid schon allenatori\nPoke'mon, qvindi, avrete bisogno\ldi qvesto...
 
 #org @Percorso_11_Brandon_text10
 [PLAYER] riceve Poke'dex!
 
 #org @Percorso_11_Brandon_text11
-Prof Oak: Tieni Brandon,\nuno anche a te!
+Prof. Kraemer: Tieni Naomi, uno\nanche fur dich!
 
 #org @Percorso_11_Brandon_text12
-Brandon riceve Poke'dex!
+Naomi riceve Poke'dex!
 
 #org @Percorso_11_Brandon_text13
-Prof Oak: questo strumento funge\nda enciclopedia per Poke'mon:\logni volta che incontrerete un\lPoke'mon nuovo, il Poke'dex lo\lregistrera', assieme ai suoi dati.\pRaccogliere informazioni su tutti\ni tipi di Poke'mon e' lo scopo\lprincipale della mia ricerca,\ladesso pero' sono troppo vecchio\lper farlo da solo e quindi mi\laffido a voi giovanotti!
+Prof. Kraemer: Pokedex essere\ncome enciclopedia Poke'mon:\lse voi vedere nuovo Poke'mon,\lPokedex registrera'.
+
+#org @Percorso_11_Brandon_text13a
+Naomi: La ringrazio Prof. Kraemer...\pMa perche' [PLAYER] ed io dovremmo\ncompletare questo Pokedex?
+
+#org @Percorso_11_Brandon_text13b
+Prof. Kraemer: Raccogliere\nInformationen uber tutti i tipi von\lPoke'mon e' lo scopo di mia ricerca\lqui in Eyros, dove sono tanti\lPoke'mon di regioni lontane...
 
 #org @Percorso_11_Brandon_text14
-Brandom: Grazie mille Prof Oak!\nSono sicuro che grazie al Poke'dex\lriusciro' a registrare tutti i\lPoke'mon della regione di Eyros...\pll mio Deino pero' non puo' volare,\ncome faccio ad attraversare questo\lburrone?
+Naomi: Sono sicura che grazie al\nPoke'dex riusciro' a registrare\ltutti i Poke'mon della regione di\lEyros...
+
+#org @Percorso_11_Brandon_text14a
+Naomi: Non trovi [PLAYER]?
+
+#org @Percorso_11_Brandon_text14b
+[PLAYER]: ...
 
 #org @Percorso_11_Brandon_text15
-Prof. Oak: Certamente, ricordate\ndi passare al mio laboratorio a\lfarmi vedere i progressi del\lvostro Poke'dex di tanto in tanto.\pQuesto percorso porta alla citta'\ndi Borgo Levante, ed e'\lattraversabile solamente volando\lassieme ad un Poke'mon con la\lmossa sorvolazione.\pPer iniziare la vostra avventura\nvi consiglio di seguire il\lPercorso 1 in direzione della\lcitta' di Miralba...\pSi, e' proprio li' che dovreste\nandare!
+Prof. Kraemer: Genau!\nAber ricordatevi di venire in mio\llaboratorio per vedere progressi\ldi Poke'dex, geil?
+
+#org @Percorso_11_Brandon_text15a
+Naomi: Certamente, passero' di\nsicuro a farle vedere i miei\lprogressi!\pll mio Deino pero' non puo'\nvolare, come faccio ad\lattraversare questo burrone?
+
+#org @Percorso_11_Brandon_text15b
+Qvesto Percorso porta nach Borgo\nLevante.\pPercorso 11 puo' essere\nattraversato solo se vostro\lPoke'mon kann MN Zenit...\pPer iniziare euere Abenteuer vi\nconsiglio di andare a Percorso 1,\lverso citta' Miralba...
 
 #org @Percorso_11_Brandon_text16
-Brandon: hai sentito [PLAYER]?\pSono sicuro che nel PERCORSO 1\nriusciro' ad allenare molto bene\lil mio Deino, cosi' finalmente\lriusciremo a battervi...
+Naomi: hai sentito [PLAYER]?\pSono sicura che nel Percorso 1\nriusciro' ad allenare molto bene\lil mio Deino...\pPer la nostra prossima sfida non\nmi faro' trovare impreparata!
 
 #org @Percorso_11_Brandon_text17
-Prof Oak: Sono certo che questa\nrivalita' vi fara' crescere molto!\pOra devo tornare nel mio\nlaboratorio, fate buon viaggio!
+Prof. Kraemer: Alles gut!\pIch bin sicher che qvesta\nrivalita' vi fara' crescere viel!\pJetzt devo tornare zuruck in meinem\nlaboratorio...\pFate buono viaggio verso Miralba!
 
 #org @Percorso_11_3_25_Sign0_text1
 Percorso 11:\n[ARROW_LEFT] Borgo Ponente\p[ARROW_RIGHT] Borgo Levante
 
 #org @Percorso_11_3_25_Sign1_text1
-Il Percorso 11 e' caratterizzato\nda un gigantesco burrone,\lattraversabile solamente grazie\lalla MN Sorvolazione.\pAll'estremo Ovest del burrone\nsorge la citta' di Borgo Ponente,\lmentre a Est la citta' di Borgo\lLevante.
+Il Percorso 11 e' caratterizzato\nda un gigantesco burrone,\lattraversabile solamente grazie\lalla MN Zenit.\pAll'estremo Ovest del burrone\nsorge la citta' di Borgo Ponente,\lmentre a Est la citta' di Borgo\lLevante.
 
 #org @Percorso_11_3_25_NPC3_text1
-La mia famiglia abita a Borgo\nLevante.\pVorrei tanto andare a trovarli ma\nil mio Starly purtroppo non\lconosce la mossa Sorvolazione.
+La mia famiglia abita a Borgo\nLevante.\pVorrei tanto andare a trovarli ma\nil mio Starly purtroppo non\lconosce la MN Zenit.
 
 #org @Percorso_11_3_25_NPC2_text1
 Starly Starly!

@@ -5,4 +5,16 @@ Mi sono trasferito a Miralba\normai trent'anni fa, mentre i\lmiei nipoti vengono
 Sono stufa di stare qui, voglio\ntornare a Stellavia.
 
 #org @EventScript_Miralba_5_0_NPC2_text1
-Hai visto quel pozzo aperto nel\nmezzo della Piazza Nascente?\pSecondo me e' molto pericoloso,\nnon mi meraviglierei se qualche\lbambino ci cadesse dentro...
+Non ci posso credere, stavo\nriordinando la mia libreria quando\lun Poke'mon e' entrato dalla\lfinestra, ha afferrato\luna delle mie antiche pergamene\led e' volato via.\pNon so davvero cosa fare...\pL'unica cosa che ha lasciato\ne' stata questa piuma...
+
+#org @EventScript_Miralba_5_0_NPC2_text2
+Hei, ti perche' non mi dai una mano\na cercare la pergamena? Se la\ltrovi ti daro' una lauta\lricompensa!
+
+#org @EventScript_Miralba_5_0_NPC2_text3
+Sei riuscito a trovare la\npergamena?
+
+#org @EventScript_Miralba_5_0_NPC2_text4
+!!!\pSei davvero riuscito a trovare la\npergamena.\pAvevo quasi perso le speranze...\nTieni questa come ricompensa!
+
+#org @EventScript_Miralba_5_0_NPC2_text5
+La prossima volta chiudero' le\nfinestre prima di riordinare la\llibreria!
