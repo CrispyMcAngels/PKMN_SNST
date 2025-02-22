@@ -3990,3 +3990,79 @@
 		.affineAnims = gDummySpriteAffineAnimTable,
 	};
 
+//_____NPC163_____
+
+	extern const u8 gEventsObjectPic_NPC163Tiles[];
+
+	static const struct SpriteFrameImage gEventObjectPicTable_NPC163[] =
+	{
+		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 0),
+		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 1),
+		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 2),
+		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 3),
+		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 4),
+		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 5),
+		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 6),
+		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 7),
+		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 8),
+	};
+
+	const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_NPC163 =
+	{
+		.tileTag = 0xFFFF,
+		.paletteTag1 = 0x1194,
+		.paletteTag2 = EVENT_OBJ_PAL_TAG_NONE,
+		.size = (32 * 32) / 2,
+		.width = 32,
+		.height = 32,
+		.paletteSlot = 0,
+		.shadowSize = SHADOW_SIZE_M,
+		.inanimate = FALSE,
+		.disableReflectionPaletteLoad = FALSE,
+		.tracks = TRACKS_FOOT,
+		.gender = MALE,
+		.oam = gEventObjectBaseOam_32x32,
+		.subspriteTables = gEventObjectSpriteOamTables_32x32,
+		.anims = gEventObjectImageAnimTable_Standard,
+		.images = gEventObjectPicTable_NPC163,
+		.affineAnims = gDummySpriteAffineAnimTable,
+	};
+
+//_____NPC164_____
+
+	extern const u8 gEventsObjectPic_NPC164Tiles[];
+
+	static const struct SpriteFrameImage gEventObjectPicTable_NPC164[] =
+	{
+		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 0),
+		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 1),
+		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 2),
+		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 3),
+		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 4),
+		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 5),
+		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 6),
+		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 7),
+		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 8),
+	};
+
+	const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_NPC164 =
+	{
+		.tileTag = 0xFFFF,
+		.paletteTag1 = 0x1195,
+		.paletteTag2 = EVENT_OBJ_PAL_TAG_NONE,
+		.size = (32 * 32) / 2,
+		.width = 32,
+		.height = 32,
+		.paletteSlot = 0,
+		.shadowSize = SHADOW_SIZE_M,
+		.inanimate = FALSE,
+		.disableReflectionPaletteLoad = FALSE,
+		.tracks = TRACKS_FOOT,
+		.gender = MALE,
+		.oam = gEventObjectBaseOam_32x32,
+		.subspriteTables = gEventObjectSpriteOamTables_32x32,
+		.anims = gEventObjectImageAnimTable_Standard,
+		.images = gEventObjectPicTable_NPC164,
+		.affineAnims = gDummySpriteAffineAnimTable,
+	};
+
