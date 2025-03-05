@@ -3085,7 +3085,7 @@ void ConvertCoinInt(u32 coinAmount)
 //Text Declarations
 extern const u8 sBlueOwText_1[];
 extern const u8 sOrangeOwText_1[];
-extern const u8 sExampleText_3[];
+extern const u8 sGreenOwText_1[];
 extern const u8 sExampleText_4[];
 extern const u8 sExampleText_5[];
 extern const u8 sExampleText_6[];
@@ -3120,15 +3120,14 @@ static const u8* sMultichoiceSet1[] =
 static const u8* sMultichoiceSet2[] =
 {
 	sBlueOwText_1,
+	sGreenOwText_1,
+};
+
+static const u8* sMultichoiceSet3[] =
+{
+	sBlueOwText_1,
 	sOrangeOwText_1,
-	sExampleText_3,
-	sExampleText_4,
-	sExampleText_5,
-	sExampleText_6,
-	sExampleText_7,
-	sExampleText_8,
-	sExampleText_9,
-	sExampleText_10,
+	sGreenOwText_1,
 };
 
 // Multichoice Lists
@@ -3136,6 +3135,7 @@ const struct ScrollingMulti gScrollingSets[] =
 {
 	{sMultichoiceSet1, ARRAY_COUNT(sMultichoiceSet1)},
 	{sMultichoiceSet2, ARRAY_COUNT(sMultichoiceSet2)},
+	{sMultichoiceSet2, ARRAY_COUNT(sMultichoiceSet3)},
 };
 
 //Link number of opts shown at once to the box height

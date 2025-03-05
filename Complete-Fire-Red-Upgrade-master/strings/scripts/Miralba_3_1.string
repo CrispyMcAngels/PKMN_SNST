@@ -2,7 +2,7 @@
 Crispy: ...Mmh dunque mi stai\ndicendo che sono state scoperte\ldelle rovine vicino al Percorso 2?
 
 #org @Miralba_3_1_NPC0_text2
-Filiberto: Esatto, mi e' stato\nriferito che un gruppo di\lallenatori si e' accorto di\lquest'insenatura nella Fores...
+Filiberto: Esatto, mi e' stato\nriferito che un gruppo di\lallenatori si e' accorto di un'\linsenatura nella Fores...
 
 #org @Miralba_3_1_NPC0_text3
 Crispy: Hei [PLAYER], ce l'hai fatta\nad arrivare!\pTi presento Filiberto, un mio\namico di vecchia data, nonche'\lesperto archeologo e Capopalestra\ldi Ardesiopoli.
@@ -95,13 +95,13 @@ D'ora in poi staro' sempre attento\nquando giochero' da solo!
 Ah, giovane, vedo che osservi\nquesto vecchio pozzo.\pVuoi che ti racconti la sua storia?
 
 #org @Miralba_3_1_NPC3_text2
-Sai, non e' solo un ammasso di\npietre consumate dal tempo...\pQuesto pozzo era speciale,\nun tempo.\pLo chiamavano il\nPozzo dei Desideri.\pSi diceva che, se lanciavi una\nmoneta d'argento e pronunciavi\lun desiderio con cuore puro,\lil pozzo avrebbe risposto.\pNon era magia, bada bene...\nma qualcosa di piu' misterioso.\pGli anziani dicevano che in\nfondo dimorava un Poke'mon.\pUno spirito benevolo, capace\ndi ascoltare i desideri sinceri\ldi chi aveva intenzioni pure,\lsenza avidita' o cattiveria.\pUna volta, un bambino chiese\ndi salvare il suo Torchic\lmalato, e il giorno dopo il\lPoke'mon si riprese.\pMa quando un mercante arrogante\nlancio' monete per chiedere\loro e successo, non accadde\lnulla.\pIl pozzo rimase muto.\pUn giorno, pero', lo spirito\ndel pozzo scomparve.\pNessuno sa perche', ma forse le\npersone chiedevano troppo.\pForse lo spirito decise che il\nmondo non aveva piu' bisogno\ldi lui.\pDa allora, e' solo...\nun vecchio pozzo.\pMa io credo che, se qualcuno\ncon un cuore davvero puro\lfacesse un desiderio sincero...\lforse lo spirito tornerebbe...
+Sai, non e' solo un ammasso di\npietre consumate dal tempo...\pQuesto pozzo era speciale, un\ntempo.\pLo chiamavano il Pozzo dei\nDesideri.\pSi diceva che, se lanciavi una\nmoneta d'argento e pronunciavi un\ldesiderio con cuore puro, il pozzo\lavrebbe risposto.\pNon era magia, bada bene...\nMa qualcosa di piu' misterioso.\pGli anziani dicevano che in fondo\ndimorasse un Poke'mon.\pUno spirito benevolo, capace di\nascoltare i desideri sinceri di chi\laveva intenzioni pure, senza avidita'\lo cattiveria.\pUna volta, un bambino chiese di\nsalvare il suo Torchic malato,\le il giorno dopo il Poke'mon si riprese.\pMa quando un mercante arrogante\nlancio' delle monete per chiedere oro\le successo, non accadde nulla.\pIl pozzo rimase muto.\pUn giorno, pero', lo spirito del pozzo\nscomparve.\pNessuno sa perche', ma forse le\npersone chiedevano troppo.\pForse lo spirito decise che il mondo\nnon aveva piu' bisogno di lui.\pDa allora, e' solo...\n...un vecchio pozzo.\pMa io credo che, se qualcuno con un\ncuore davvero puro facesse un\ldesiderio sincero...\lforse lo spirito tornerebbe...
 
 #org @Miralba_3_1_NPC3_text3
 E' una bella storia,\nnon trovi?
 
 #org @Miralba_3_1_NPC3_text4
-Wow, raccontanfoti questa storia\nho davvero perso il filo del\ltempo.\pPrendi questo come ricompensa\nper avermi ascoltato!
+Wow, raccontandoti questa storia ho\ndavvero perso il filo del\ltempo.\pPrendi questo come ricompensa\nper avermi ascoltato!
 
 #org @Miralba_3_1_NPC3_text5
 Torna quando vorrai ascoltarla.

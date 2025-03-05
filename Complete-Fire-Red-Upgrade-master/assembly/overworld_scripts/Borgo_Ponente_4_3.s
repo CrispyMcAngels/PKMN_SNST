@@ -158,7 +158,12 @@ gMapScripts_Borgo_Ponente_4_3:
 					special 0x15A
 					pause 0x1E
 					textcolor 0x00
-					showpokepic 0x3b6 0x0 0x6
+					compare 0x501F 0x100
+					if 0x1 _call Player_Blue
+					compare 0x501F 0x1A3
+					if 0x1 _call Player_Orange
+					compare 0x501F 0x1A4
+					if 0x1 _call Player_Green
     				//player: ...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text12 MSG_NORMAL
 					special 0x15A
@@ -172,6 +177,7 @@ gMapScripts_Borgo_Ponente_4_3:
 					special 0x15A
 					applymovement 0x4 Borgo_Ponente_4_3_MapScriptOnFrame_mov7
 					waitmovement 0x0
+					spriteface 0x4 0x4
 					spriteface 0xFF 0x3
 					textcolor 0x01
 					showpokepic 0x3b5 0x15 0x6
@@ -265,3 +271,15 @@ gMapScripts_Borgo_Ponente_4_3:
 						.byte 0x13
 						.byte 0x1 
 						.byte 0xFE
+
+		Player_Blue:
+			showpokepic 0x3b6 0x15 0x6
+			return
+
+		Player_Orange:
+			showpokepic 0x3bE 0x15 0x6
+			return
+
+		Player_Green:
+			showpokepic 0x3bF 0x15 0x6
+			return

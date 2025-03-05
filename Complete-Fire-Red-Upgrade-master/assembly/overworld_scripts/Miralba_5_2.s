@@ -129,6 +129,9 @@ EventScript_Miralba_5_2_NPC1:
 				end
 
 			EventScript_Miralba_5_2_NPC1_P4:
+				lock
+				faceplayer
+				spritebehave 0x2 0x8
 				textcolor 0x2
 				msgbox EventScript_Miralba_5_2_NPC1_text5 MSG_NORMAL
 				pause 0x1E
@@ -136,15 +139,18 @@ EventScript_Miralba_5_2_NPC1:
 				lock
 				textcolor 0x2
 				msgbox Mission_Completed_text1 MSG_NORMAL
+				spritebehave 0x2 0x8
 				textcolor 0x1
 				msgbox EventScript_Miralba_5_2_NPC1_text6 MSG_NORMAL
 				pause 0x1E
 				textcolor 0x2
 				fanfare 0x0101
+				spritebehave 0x2 0x8
 				msgbox EventScript_Miralba_5_2_NPC1_text7 MSG_NORMAL
 				pause 0x1E
 				msgbox EventScript_Miralba_5_2_NPC1_text8 MSG_NORMAL
 				setflag 0x966
+				spritebehave 0x2 0x2
 				release
 				end
 

@@ -647,7 +647,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part3:
 
 
     //tutto bianco
-    sound 0xC
+    sound 0xE
     fadescreen 0x3
     cry 0xFA 0x0
     clearflag 0x230
@@ -837,8 +837,6 @@ MonteRemoto_2_27_MapScriptOnFrame_mov28a:
     .byte 0x10
     .byte 0x10
     .byte 0x10
-    .byte 0x10
-    .byte 0x10
     .byte 0xFE  
 
 MonteRemoto_2_27_MapScriptOnFrame_mov28:
@@ -1009,7 +1007,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part5:
     setvar 0x501F 0x0100
     sethealingplace 0x01
     writebytetooffset 0x0 0x4000012
-    warpmuted 0x4 0x1 0xFF 0x4 0x6
+    warpmuted 0x4 0x1 0xFF 0x1 0x3
     fadescreen 0x0
     releaseall
     end

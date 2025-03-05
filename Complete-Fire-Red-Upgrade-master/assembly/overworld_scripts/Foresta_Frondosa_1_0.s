@@ -103,6 +103,7 @@ EventScript_Foresta_Frondosa_1_0_Sign5:
 		spriteface 0xFF 0x4 
 		pause 0x1E
 		showpokepic 0x3BA 0x0 0x6
+		textcolor 0x0
 		msgbox Foresta_Frondosa_1_0_Sign5_text5 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -110,7 +111,12 @@ EventScript_Foresta_Frondosa_1_0_Sign5:
 		waitmovement 0xB
 		movesprite2 0xB 0x1 0x0
 		pause 0x1E
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox Foresta_Frondosa_1_0_Sign5_text6 MSG_NORMAL
 		closeonkeypress
 		special 0x15A
@@ -316,15 +322,22 @@ EventScript_Foresta_Frondosa_1_0_NPC7:
 	applymovement 0x7 Foresta_Frondosa_1_0_NPC7_mov1
 	waitmovement 0x0
 	cry 0x115 0x0 
+	textcolor 0x2
     msgbox Foresta_Frondosa_1_0_NPC7_text1 MSG_NORMAL	
 	pause 0x1E
 	applymovement 0xFF Foresta_Frondosa_1_0_NPC7_mov2
 	waitmovement 0xFF
-	showpokepic 0x3B6 0x0 0x6
+	textcolor 0x0
+	compare 0x501F 0x100
+	if 0x1 _call Player_Blue
+	compare 0x501F 0x1A3
+	if 0x1 _call Player_Orange
+	compare 0x501F 0x1A4
+	if 0x1 _call Player_Green
     msgbox Foresta_Frondosa_1_0_NPC7_text2 MSG_NORMAL
     special 0x15A
 	pause 0x1E
-	compare 0x4051 0x18
+	compare 0x4051 0x19
 	if 0x0 _call EventScript_Foresta_Frondosa_1_0_NPC7_P1
 	if 0x1 _call EventScript_Foresta_Frondosa_1_0_NPC7_P2
 	release
@@ -354,9 +367,11 @@ EventScript_Foresta_Frondosa_1_0_NPC7:
 		pause 0x1E
 		applymovement 0xFF Foresta_Frondosa_1_0_NPC7_mov5
 		waitmovement 0xFF		
-		setvar 0x4051 0x18
+		setvar 0x4051 0x19
 		release
 		end
+
+
 
 	Foresta_Frondosa_1_0_NPC7_mov1:
 		.byte 0x62
@@ -402,15 +417,22 @@ EventScript_Foresta_Frondosa_1_0_NPC8:
 	applymovement 0x7 Foresta_Frondosa_1_0_NPC7_mov1
 	waitmovement 0x0
 	cry 0x115 0x0 
+	textcolor 0x2
     msgbox Foresta_Frondosa_1_0_NPC7_text1 MSG_NORMAL	
 	pause 0x1E
 	applymovement 0xFF Foresta_Frondosa_1_0_NPC7_mov2
 	waitmovement 0xFF
-	showpokepic 0x3B6 0x0 0x6
+	textcolor 0x0
+	compare 0x501F 0x100
+	if 0x1 _call Player_Blue
+	compare 0x501F 0x1A3
+	if 0x1 _call Player_Orange
+	compare 0x501F 0x1A4
+	if 0x1 _call Player_Green
     msgbox Foresta_Frondosa_1_0_NPC7_text2 MSG_NORMAL
     special 0x15A
 	pause 0x1E
-	compare 0x4051 0x18
+	compare 0x4051 0x19
 	if 0x0 _call EventScript_Foresta_Frondosa_1_0_NPC8_P1
 	if 0x1 _call EventScript_Foresta_Frondosa_1_0_NPC8_P2
 	release
@@ -467,6 +489,7 @@ EventScript_Foresta_Frondosa_1_0_NPC8:
 EventScript_Foresta_Frondosa_1_0_NPC9:
 	lock
 	faceplayer
+	textcolor 0x2
     msgbox Foresta_Frondosa_1_0_NPC9_text1 MSG_NORMAL	
 	cry 0x115 0x0 
 	wildbattle 0x115 0x5 0x0
@@ -571,7 +594,12 @@ EventScript_Foresta_Frondosa_1_0_NPC21:
 	faceplayer
 	checkflag 0x95E
 	if 0x1 _goto EventScript_Foresta_Frondosa_1_0_NPC21_P2
-	showpokepic 0x3B6 0x0 0x6
+	compare 0x501F 0x100
+	if 0x1 _call Player_Blue
+	compare 0x501F 0x1A3
+	if 0x1 _call Player_Orange
+	compare 0x501F 0x1A4
+	if 0x1 _call Player_Green
 	msgbox Foresta_Frondosa_1_0_NPC21_text1 MSG_NORMAL
 	special 0x15A
 	release
@@ -579,17 +607,32 @@ EventScript_Foresta_Frondosa_1_0_NPC21:
 
 
 	EventScript_Foresta_Frondosa_1_0_NPC21_P2:
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox Foresta_Frondosa_1_0_NPC21_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		playsong 0x18B 0x0
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox Foresta_Frondosa_1_0_NPC21_text3 MSG_NORMAL
 		special 0x15A
 		fadedefault
 		pause 0x1E
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox Foresta_Frondosa_1_0_NPC21_text4 MSG_NORMAL
 		special 0x15A		
 		getplayerpos 0x4001 0x4002
@@ -605,22 +648,33 @@ EventScript_Foresta_Frondosa_1_0_NPC21:
 			movesprite 0x15 0xA 0x1B
 			cry 0x1C2 0x0
 			applymovement 0xFF Foresta_Frondosa_1_0_NPC21_mov2d
-			waitmovement 0x0
+			waitmovement 0xFF
 			pause 0x1E
-			showpokepic 0x3B6 0x0 0x6
+			compare 0x501F 0x100
+			if 0x1 _call Player_Blue
+			compare 0x501F 0x1A3
+			if 0x1 _call Player_Orange
+			compare 0x501F 0x1A4
+			if 0x1 _call Player_Green
 			msgbox Foresta_Frondosa_1_0_NPC21_text4a MSG_NORMAL
 			special 0x15A	
 			applymovement 0x15 Foresta_Frondosa_1_0_NPC21_mov3d
 			waitmovement 0x0
 			pause 0x1E		
 			cry 0x1C2 0x0	
+			textcolor 0x2
 			msgbox Foresta_Frondosa_1_0_NPC21_text5 MSG_NORMAL
 			wildbattle 0x1C2 0xA 0x0
 			fadedefault
 			hidesprite 0x15
 			pause 0x1E
 			spriteface 0xFF 0x2
-			showpokepic 0x3B6 0x0 0x6
+			compare 0x501F 0x100
+			if 0x1 _call Player_Blue
+			compare 0x501F 0x1A3
+			if 0x1 _call Player_Orange
+			compare 0x501F 0x1A4
+			if 0x1 _call Player_Green
 			msgbox Foresta_Frondosa_1_0_NPC21_text6 MSG_NORMAL
 			special 0x15A
 			giveitem 0x112 0x1 MSG_OBTAIN
@@ -644,28 +698,39 @@ EventScript_Foresta_Frondosa_1_0_NPC21:
 			movesprite 0x15 0x09 0x1B
 			cry 0x1C2 0x0
 			applymovement 0xFF Foresta_Frondosa_1_0_NPC21_mov2l
-			waitmovement 0x0
+			waitmovement 0xFF
 			pause 0x1E
-			showpokepic 0x3B6 0x0 0x6
+			compare 0x501F 0x100
+			if 0x1 _call Player_Blue
+			compare 0x501F 0x1A3
+			if 0x1 _call Player_Orange
+			compare 0x501F 0x1A4
+			if 0x1 _call Player_Green
 			msgbox Foresta_Frondosa_1_0_NPC21_text4a MSG_NORMAL
 			special 0x15A	
 			applymovement 0x15 Foresta_Frondosa_1_0_NPC21_mov3l
 			waitmovement 0x0
 			pause 0x1E		
 			cry 0x1C2 0x0	
+			textcolor 0x2
 			msgbox Foresta_Frondosa_1_0_NPC21_text5 MSG_NORMAL
 			wildbattle 0x1C2 0xA 0x0
 			fadedefault
 			hidesprite 0x15
 			setflag 0x95F
 			pause 0x1E
-			spriteface 0xFF 0x2
-			showpokepic 0x3B6 0x0 0x6
+			compare 0x501F 0x100
+			if 0x1 _call Player_Blue
+			compare 0x501F 0x1A3
+			if 0x1 _call Player_Orange
+			compare 0x501F 0x1A4
+			if 0x1 _call Player_Green
 			msgbox Foresta_Frondosa_1_0_NPC21_text6 MSG_NORMAL
 			special 0x15A			
 			hidesprite 0x16
 			setflag 0x95F
-			giveitem 0x112 0x1 MSG_FIND
+			giveitem 0x112 0x1 MSG_OBTAIN
+			warpmuted 0x1 0x0 0xFF 0xA 0x19
 			release
 			end
 
@@ -680,4 +745,14 @@ EventScript_Foresta_Frondosa_1_0_NPC21:
 					.byte 0x1e
 					.byte 0xFE
 
-	
+		Player_Blue:
+			showpokepic 0x3b6 0x15 0x6
+			return
+
+		Player_Orange:
+			showpokepic 0x3bE 0x15 0x6
+			return
+
+		Player_Green:
+			showpokepic 0x3bF 0x15 0x6
+			return

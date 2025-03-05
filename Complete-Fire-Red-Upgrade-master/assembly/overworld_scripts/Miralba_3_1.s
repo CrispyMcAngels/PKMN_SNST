@@ -46,6 +46,7 @@ gMapScripts_Miralba_3_1:
 		Miralba_3_1_MapScriptOnFrame_Part1:
 			//spriteface 0xFF 0x2
 			//Grazie mille...
+			textcolor 0x1
 			msgbox Miralba_3_1_MapScriptOnFrame_text1 MSG_NORMAL
 			pause 0x1E
 			giveitem 0x3 0x3 MSG_OBTAIN
@@ -56,6 +57,7 @@ gMapScripts_Miralba_3_1:
 			giveitem 0xD 0x3 MSG_OBTAIN
 			pause 0x1E
 			//ti auguro buona...
+			textcolor 0x1
 			msgbox Miralba_3_1_MapScriptOnFrame_text3 MSG_NORMAL
 			pause 0x1E
 			fanfare 0x0103
@@ -143,6 +145,7 @@ EventScript_Miralba_3_1_NPC5:
 		applymovement 0x6 Miralba_3_1_NPC5_mov1
 		waitmovement 0x0
 		pause 0x1E
+		textcolor 0x1
 		msgbox Miralba_3_1_Tile0_text3 MSG_NORMAL
 		applymovement 0x6 Miralba_3_1_NPC5_mov2
 		applymovement 0xFF Miralba_3_1_NPC5_mov3
@@ -168,6 +171,7 @@ EventScript_Miralba_3_1_Tile0:
 		waitmovement 0x0
 		pause 0x1E
 		spriteface 0xFF 0x2
+		textcolor 0x1
 		msgbox Miralba_3_1_Tile0_text1 MSG_NORMAL
 		applymovement 0x6 Miralba_3_1_Tile0_mov2
 		applymovement 0xFF Miralba_3_1_Tile0_mov3
@@ -228,6 +232,7 @@ EventScript_Miralba_3_1_Tile0:
 		waitmovement 0x0
 		pause 0x1E
 		spriteface 0xFF 0x2
+		textcolor 0x1
 		msgbox Miralba_3_1_Tile0_text3 MSG_NORMAL
 		applymovement 0x6 Miralba_3_1_Tile0_mov2
 		applymovement 0xFF Miralba_3_1_Tile0_mov3
@@ -377,7 +382,9 @@ EventScript_Miralba_3_1_NPC1:
 .global EventScript_Miralba_3_1_tile1
 EventScript_Miralba_3_1_tile1:
 	lockall
+	spriteface 0xFF 0x2
 	showpokepic 0x3B4 0x0 0x6
+	textcolor 0x0
 	msgbox Miralba_3_1_NPC0_text1 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
@@ -410,6 +417,7 @@ EventScript_Miralba_3_1_tile1:
 	special 0x15A
 	pause 0x1E
 	showpokepic 0x3B8 0x15 0x6
+	textcolor 0x0
 	msgbox Miralba_3_1_NPC0_text7 MSG_NORMAL
 	special 0x15A
 	applymovement 0x2 Miralba_3_1_NPC0_mov4
@@ -420,6 +428,7 @@ EventScript_Miralba_3_1_tile1:
 	spriteface 0x1 0x1
 	pause 0x1E
 	showpokepic 0x3B4 0x0 0x6
+	textcolor 0x0
 	msgbox Miralba_3_1_NPC0_text8 MSG_NORMAL
 	special 0x15A
 	pause 0x1E	
@@ -429,6 +438,7 @@ EventScript_Miralba_3_1_tile1:
 	waitmovement 0xFF	
 	fadedefault
 	showpokepic 0x3B4 0x0 0x6
+	textcolor 0x0
 	msgbox Miralba_3_1_NPC0_text9 MSG_NORMAL
 	special 0x15A
 	pause 0x1E	
@@ -444,6 +454,7 @@ EventScript_Miralba_3_1_tile1:
 	spriteface 0xFF 0x4
 	spriteface 0x1 0x3
 	showpokepic 0x3B4 0x0 0x6
+	textcolor 0x0
 	msgbox Miralba_3_1_NPC0_text11 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
@@ -468,7 +479,12 @@ EventScript_Miralba_3_1_tile1:
 	msgbox Miralba_3_1_NPC0_text14 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
-	showpokepic 0x3B6 0x15 0x6
+	compare 0x501F 0x100
+	if 0x1 _call Player_Blue
+	compare 0x501F 0x1A3
+	if 0x1 _call Player_Orange
+	compare 0x501F 0x1A4
+	if 0x1 _call Player_Green
 	msgbox Miralba_3_1_NPC0_text15 MSG_NORMAL
 	special 0x15A
 	playsong 0x18A 0x0
@@ -703,3 +719,15 @@ EventScript_Miralba_3_1_NPC8:
 EventScript_Miralba_3_1_NPC9:
 	giveitem 0x56 0x1 MSG_FIND
 	end
+
+		Player_Blue:
+			showpokepic 0x3b6 0x15 0x6
+			return
+
+		Player_Orange:
+			showpokepic 0x3bE 0x15 0x6
+			return
+
+		Player_Green:
+			showpokepic 0x3bF 0x15 0x6
+			return

@@ -8,10 +8,10 @@ Naomi: [PLAYER], non credo ai miei\nocchi!\pGuarda dove siamo finiti...
 Naomi: Quest'antica sala si\ntrova nascosta nei meandri della\lForesta Frondosa da chissa'\lquanto tempo ed e' stata scoperta\lsolo ora...\pE' incredibile!
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text3
-Naomi: Facciamoci coraggio\n[PLAYER], non possiamo tirarci\lindietro proprio ora!\pFacciamo vedere a queste ultime\nreclute di che pasta siamo fatti.
+Naomi: Facciamoci coraggio\n[PLAYER], non possiamo tirarci indietro\lproprio ora!\pFacciamo vedere a queste ultime\nreclute di che pasta siamo fatti.
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text4
-Naomi: Lascia che rimetta in\nsesto la tua squadra.
+Naomi: Lascia che rimetta in sesto\nla tua squadra.
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text5
 Naomi: Bene, ora non abbiamo\npiu' scuse.\pDiamoci da fare!
@@ -74,7 +74,7 @@ Filiberto: Come dici?\nI Poke'mon leggendari?!?\pPensavo quelle fossero solo ant
 Vesper: Sei un tipo sveglio,\nd'altronde da uno scienziato come\lte ce lo si poteva aspettare...\pCome si suol dire, in ogni leggenda\nc'e' un filo di verita', e il Team\lDusk ha ormai scoperto tutto\lquello che c'era da scoprire sugli\lantichi Poke'mon leggendari...\pForza ragazzi, leviamo le tende!
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_text1
-Crispy: [PLAYER], Naomi!\nEro sicuro che ci avreste\lraggiunto anche voi, grazie per\laverci aiutato!\pQuei furfanti sono riusciti a\nsvignarsela con quello\lche volevano..\pSe solo fossimo arrivati un attimo\nprima...
+Crispy: [PLAYER], Naomi!\nEro sicuro che ci avreste\lraggiunto anche voi, grazie per\laverci aiutato!\pQuei furfanti sono riusciti a\nsvignarsela con quello che volevano..\pSe solo fossimo arrivati un attimo\nprima...
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_text2
 Filiberto: Non sentierti cosi' in\ncolpa Crispy, non potevamo\lesserne al corrente...\pPiuttosto, guardiamo anche noi cosa\ncontengono queste Rovine...
@@ -101,13 +101,13 @@ Naomi: Non trovi sia emozionante\ncombattere i cattivi assieme ad\lallenatori fo
 Queste incisioni raffigurano gli\nantichi Poke'mon leggendari della\lregione di Eyors.
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text1
-Filiberto: E' incredibile [PLAYER]!\nSei riuscito a risolvere l'enigma.\pE' proprio vero che buon sangue non mente!
+Filiberto: E' incredibile [PLAYER]!\nSei riuscito a risolvere l'enigma.\pE' proprio vero che buon sangue\nnon mente!
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text2
 Crispy: Davvero impressionante!\pCosa ti sembrano queste incisioni,\nFiliberto?
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text3
-Filiberto: A prima vista, queste\nincisioni sembrano combaciare con\lle informazioni fornite dal Team\lDusk...\pTuttavia, per esserne certi,\nvorrei prelevarne un frammento e\lportarlo nel mio laboratorio ad\lArdesiopoli.\pLi' potro' analizzarlo con maggiore\nattenzione e confermare con\lprecisione le sue vere origini.\pSe le nostre ipotesi sono\ncorrette, potremmo essere di\lfronte a una scoperta fondamentale!\pNon c'e' tempo da perdere!\nDevo tornare subito al mio\llaboratorio e mettermi al lavoro\lper analizzare questo frammento...\pCripy, [PLAYER], vi aspettero'\nproprio li' per mostrarvi i\lrisultati delle analisi.
+Filiberto: A prima vista, queste\nincisioni sembrano combaciare con\lle informazioni fornite dal Team\lDusk...\pTuttavia, per esserne certi,\nvorrei prelevarne un frammento e\lportarlo nel mio laboratorio ad\lArdesiopoli.\pLi' potro' analizzarlo con maggiore\nattenzione e confermare con\lprecisione le sue vere origini.\pSe le nostre ipotesi sono\ncorrette, potremmo essere di fronte\la una scoperta fondamentale!\pNon c'e' tempo da perdere!\nDevo tornare subito al mio\llaboratorio e mettermi al lavoro\lper analizzare questo frammento...\pCripy, [PLAYER], vi aspettero'\nproprio li' per mostrarvi i\lrisultati delle analisi.
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text4
 Crispy: Complimenti [PLAYER]!\nE' chiaro che come allenatore sei\lgia' maturato molto!\pMa parliamone fuori di qui...

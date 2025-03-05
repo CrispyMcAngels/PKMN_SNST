@@ -67,7 +67,12 @@ EventScript_Borgo_Ponente_3_0_tile0:
 
 	EventScript_Borgo_Ponente_3_0_tile0_P1:
 		textcolor 0x00
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -80,9 +85,26 @@ EventScript_Borgo_Ponente_3_0_tile0:
 			.byte 0x10
 			.byte 0xFE
 
+		Player_Blue:
+			showpokepic 0x3b6 0x15 0x6
+			return
+
+		Player_Orange:
+			showpokepic 0x3bE 0x15 0x6
+			return
+
+		Player_Green:
+			showpokepic 0x3bF 0x15 0x6
+			return
+
 	EventScript_Borgo_Ponente_3_0_tile0_P2:
 		textcolor 0x00
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -103,7 +125,12 @@ EventScript_Borgo_Ponente_3_0_tile1:
 
 	EventScript_Borgo_Ponente_3_0_tile1_P1:
 		textcolor 0x00
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -128,7 +155,12 @@ EventScript_Borgo_Ponente_3_0_tile2:
 
 	EventScript_Borgo_Ponente_3_0_tile2_P1:
 		textcolor 0x00
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -140,7 +172,12 @@ EventScript_Borgo_Ponente_3_0_tile2:
 
 	EventScript_Borgo_Ponente_3_0_tile2_P2:
 		textcolor 0x00
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -163,7 +200,12 @@ EventScript_Borgo_Ponente_3_0_tile5:
 
 	EventScript_Borgo_Ponente_3_0_tile5_P1:
 		textcolor 0x00
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -175,7 +217,12 @@ EventScript_Borgo_Ponente_3_0_tile5:
 
 	EventScript_Borgo_Ponente_3_0_tile5_P2:
 	    textcolor 0x00
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox EventScript_Borgo_Ponente_3_0_tile0_P1_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -406,8 +453,8 @@ gMapScripts_Borgo_Ponente_3_0:
 		return
 
 	Borgo_Ponente_3_0_MapScriptOnLoad_move_Crispy0:
-		movesprite2 0x3 0x0D 0x17
-		spritebehave 0x3 0x8
+		movesprite2 0x8 0x0D 0x17
+		spritebehave 0x8 0x8
 		return
 
 	Borgo_Ponente_3_0_MapScriptOnLoad_move_Crispy:
@@ -432,20 +479,21 @@ gMapScripts_Borgo_Ponente_3_0:
 
 			Borgo_Ponente_3_0_MapScriptOnFrame_Part1:
 				pause 0x1E
-				applymovement 0x3 Borgo_Ponente_3_0_MapScriptOnFrame_mov1
+				applymovement 0x8 Borgo_Ponente_3_0_MapScriptOnFrame_mov1
 				waitmovement 0x0
 				playsong 0x18A 0x0
 				pause 0x1E
-				applymovement 0x3 Borgo_Ponente_3_0_MapScriptOnFrame_mov2
+				applymovement 0x8 Borgo_Ponente_3_0_MapScriptOnFrame_mov2
 				waitmovement 0x0	
 				textcolor 0x00
 				showpokepic 0x3B4 0x0 0x6
 				msgbox Borgo_Ponente_3_0_crispy1_text1 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
-				applymovement 0x3 Borgo_Ponente_3_0_MapScriptOnFrame_mov3
+				applymovement 0x8 Borgo_Ponente_3_0_MapScriptOnFrame_mov3
 				waitmovement 0x0
-				movesprite2 0x3 0x0E 0x06
+				movesprite 0x8 0x0E 0x16
+				movesprite2 0x8 0x0E 0x16
 				fadedefault
 				setvar 0x4051 0xE
 				setvar 0x4050 0x2

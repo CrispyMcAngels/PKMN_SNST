@@ -3990,79 +3990,100 @@
 		.affineAnims = gDummySpriteAffineAnimTable,
 	};
 
-//_____NPC163_____
+//NPC163__PLAYER_ORANGE
 
-	extern const u8 gEventsObjectPic_NPC163Tiles[];
+extern const u8 gEventsObjectPic_NPC163Tiles[];
 
-	static const struct SpriteFrameImage gEventObjectPicTable_NPC163[] =
-	{
-		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 0),
-		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 1),
-		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 2),
-		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 3),
-		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 4),
-		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 5),
-		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 6),
-		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 7),
-		overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 8),
-	};
+static const struct SpriteFrameImage gEventObjectPicTable_NPC163[] =
+{
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 0),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 1),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 2),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 3),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 4),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 5),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 6),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 7),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 8),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 9),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 10),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 11),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 12),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 13),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 14),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 15),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 16),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 17),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 18),
+	overworld_frame(gEventsObjectPic_NPC163Tiles, 4, 4, 19),
+};
 
-	const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_NPC163 =
-	{
-		.tileTag = 0xFFFF,
-		.paletteTag1 = 0x1194,
-		.paletteTag2 = EVENT_OBJ_PAL_TAG_NONE,
-		.size = (32 * 32) / 2,
-		.width = 32,
-		.height = 32,
-		.paletteSlot = 0,
-		.shadowSize = SHADOW_SIZE_M,
-		.inanimate = FALSE,
-		.disableReflectionPaletteLoad = FALSE,
-		.tracks = TRACKS_FOOT,
-		.gender = MALE,
-		.oam = gEventObjectBaseOam_32x32,
-		.subspriteTables = gEventObjectSpriteOamTables_32x32,
-		.anims = gEventObjectImageAnimTable_Standard,
-		.images = gEventObjectPicTable_NPC163,
-		.affineAnims = gDummySpriteAffineAnimTable,
-	};
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_NPC163 =
+{
+	.tileTag = 0xFFFF,
+	.paletteTag1 = 0x1194,
+	.paletteTag2 = EVENT_OBJ_PAL_TAG_NONE,
+	.size = (32 * 32) / 2,
+	.width = 32,
+	.height = 32,
+	.paletteSlot = 0,
+	.shadowSize = SHADOW_SIZE_M, //Can also be SHADOW_SIZE_S, SHADOW_SIZE_L, or SHADOW_SIZE_XL
+	.inanimate = FALSE,
+	.disableReflectionPaletteLoad = FALSE,
+	.tracks = TRACKS_FOOT, //Can also be TRACKS_TIRE
+	.gender = MALE, //Can also be FEMALE
+	.oam = gEventObjectBaseOam_32x32,
+	.subspriteTables = gEventObjectSpriteOamTables_32x32,
+	.anims = gEventObjectImageAnimTable_PlayerNormal,
+	.images = gEventObjectPicTable_NPC163,
+	.affineAnims = gDummySpriteAffineAnimTable,
+};
 
-//_____NPC164_____
+//NPC164__PLAYER_GREEN
 
-	extern const u8 gEventsObjectPic_NPC164Tiles[];
+extern const u8 gEventsObjectPic_NPC164Tiles[];
 
-	static const struct SpriteFrameImage gEventObjectPicTable_NPC164[] =
-	{
-		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 0),
-		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 1),
-		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 2),
-		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 3),
-		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 4),
-		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 5),
-		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 6),
-		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 7),
-		overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 8),
-	};
+static const struct SpriteFrameImage gEventObjectPicTable_NPC164[] =
+{
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 0),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 1),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 2),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 3),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 4),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 5),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 6),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 7),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 8),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 9),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 10),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 11),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 12),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 13),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 14),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 15),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 16),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 17),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 18),
+	overworld_frame(gEventsObjectPic_NPC164Tiles, 4, 4, 19),
+};
 
-	const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_NPC164 =
-	{
-		.tileTag = 0xFFFF,
-		.paletteTag1 = 0x1195,
-		.paletteTag2 = EVENT_OBJ_PAL_TAG_NONE,
-		.size = (32 * 32) / 2,
-		.width = 32,
-		.height = 32,
-		.paletteSlot = 0,
-		.shadowSize = SHADOW_SIZE_M,
-		.inanimate = FALSE,
-		.disableReflectionPaletteLoad = FALSE,
-		.tracks = TRACKS_FOOT,
-		.gender = MALE,
-		.oam = gEventObjectBaseOam_32x32,
-		.subspriteTables = gEventObjectSpriteOamTables_32x32,
-		.anims = gEventObjectImageAnimTable_Standard,
-		.images = gEventObjectPicTable_NPC164,
-		.affineAnims = gDummySpriteAffineAnimTable,
-	};
-
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_NPC164 =
+{
+	.tileTag = 0xFFFF,
+	.paletteTag1 = 0x1195,
+	.paletteTag2 = EVENT_OBJ_PAL_TAG_NONE,
+	.size = (32 * 32) / 2,
+	.width = 32,
+	.height = 32,
+	.paletteSlot = 0,
+	.shadowSize = SHADOW_SIZE_M, //Can also be SHADOW_SIZE_S, SHADOW_SIZE_L, or SHADOW_SIZE_XL
+	.inanimate = FALSE,
+	.disableReflectionPaletteLoad = FALSE,
+	.tracks = TRACKS_FOOT, //Can also be TRACKS_TIRE
+	.gender = MALE, //Can also be FEMALE
+	.oam = gEventObjectBaseOam_32x32,
+	.subspriteTables = gEventObjectSpriteOamTables_32x32,
+	.anims = gEventObjectImageAnimTable_PlayerNormal,
+	.images = gEventObjectPicTable_NPC164,
+	.affineAnims = gDummySpriteAffineAnimTable,
+};

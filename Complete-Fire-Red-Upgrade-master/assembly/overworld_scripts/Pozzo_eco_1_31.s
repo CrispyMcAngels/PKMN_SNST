@@ -12,7 +12,12 @@ EventScript_Pozzo_eco_1_31_NPC0:
 	//Bambino: Sigh.. Sigh...
 	msgbox Pozzo_Eco_1_31_NPC0_text1 MSG_NORMAL
 	pause 0x1E
-	showpokepic 0x3B6 0x0 0x6
+	compare 0x501F 0x100
+	if 0x1 _call Player_Blue
+	compare 0x501F 0x1A3
+	if 0x1 _call Player_Orange
+	compare 0x501F 0x1A4
+	if 0x1 _call Player_Green
 	//Hei piccolino, stai bene?
 	msgbox Pozzo_Eco_1_31_NPC0_text2 MSG_NORMAL
 	special 0x15A
@@ -20,7 +25,12 @@ EventScript_Pozzo_eco_1_31_NPC0:
 	//Ero sceso...
 	msgbox Pozzo_Eco_1_31_NPC0_text3 MSG_NORMAL
 	pause 0x1E
-	showpokepic 0x3B6 0x0 0x6
+	compare 0x501F 0x100
+	if 0x1 _call Player_Blue
+	compare 0x501F 0x1A3
+	if 0x1 _call Player_Orange
+	compare 0x501F 0x1A4
+	if 0x1 _call Player_Green
 	//Non preoccuparti...
 	msgbox Pozzo_Eco_1_31_NPC0_text4 MSG_NORMAL
 	special 0x15A
@@ -32,3 +42,15 @@ EventScript_Pozzo_eco_1_31_NPC0:
 	warpmuted 0x3 0x1 0xFF 0x13 0x09
 	release
 	end
+
+Player_Blue:
+	showpokepic 0x3b6 0x15 0x6
+	return
+
+Player_Orange:
+	showpokepic 0x3bE 0x15 0x6
+	return
+
+Player_Green:
+	showpokepic 0x3bF 0x15 0x6
+	return

@@ -173,7 +173,12 @@ gMapScripts_Percorso1_3_19:
 			special 0x15A
 			pause 0x1E
 			textcolor 0x00
-			showpokepic 0x3B6 0x0 0x6
+			compare 0x501F 0x100
+			if 0x1 _call Player_Blue
+			compare 0x501F 0x1A3
+			if 0x1 _call Player_Orange
+			compare 0x501F 0x1A4
+			if 0x1 _call Player_Green
 			//...
 			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text12 MSG_NORMAL
 			special 0x15A	
@@ -259,7 +264,12 @@ gMapScripts_Percorso1_3_19:
 EventScript_Percorso1_3_19_tile0:
 	lockall
 	textcolor 0x00
-	showpokepic 0x3B6 0x0 0x6
+	compare 0x501F 0x100
+	if 0x1 _call Player_Blue
+	compare 0x501F 0x1A3
+	if 0x1 _call Player_Orange
+	compare 0x501F 0x1A4
+	if 0x1 _call Player_Green
     msgbox EventScript_Percorso1_3_19_tile0_text1 MSG_NORMAL
     special 0x15A
 	applymovement 0xFF EventScript_Percorso1_3_19_tile0_mov1
@@ -298,7 +308,12 @@ EventScript_Percorso1_3_19_tile1:
     special 0x15A
 	pause 0x1E
 	textcolor 0x00
-	showpokepic 0x3B6 0x0 0x6
+	compare 0x501F 0x100
+	if 0x1 _call Player_Blue
+	compare 0x501F 0x1A3
+	if 0x1 _call Player_Orange
+	compare 0x501F 0x1A4
+	if 0x1 _call Player_Green
 	//...
     msgbox EventScript_Percorso1_3_19_tile1_text3 MSG_NORMAL
     special 0x15A
@@ -361,7 +376,12 @@ EventScript_Percorso1_3_19_tile1:
 
 	EventScript_Percorso1_3_19_tile1_yes:
 		textcolor 0x00
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		//vai, pokeball....
 		msgbox EventScript_Percorso1_3_19_tile1_text8 MSG_NORMAL
 		special 0x15A
@@ -565,3 +585,15 @@ EventScript_Percorso_1_3_19_NPC3:
 	special 0x15A
 	release
 	end
+
+Player_Blue:
+	showpokepic 0x3b6 0x15 0x6
+	return
+
+Player_Orange:
+	showpokepic 0x3bE 0x15 0x6
+	return
+
+Player_Green:
+	showpokepic 0x3bF 0x15 0x6
+	return

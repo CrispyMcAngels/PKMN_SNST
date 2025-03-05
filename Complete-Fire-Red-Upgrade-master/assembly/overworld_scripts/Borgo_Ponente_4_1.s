@@ -14,6 +14,10 @@ EventScript_Borgo_Ponente_4_1_Sign1:
 	msgbox Borgo_Ponente_4_1_Sign1_text1 0x7
 	end
 
+.global EventScript_Borgo_Ponente_4_1_Sign3
+EventScript_Borgo_Ponente_4_1_Sign3:
+	msgbox Borgo_Ponente_4_1_Sign3_text1 0x7
+	end
 
 .global gMapScripts_Borgo_Ponente_4_1
 gMapScripts_Borgo_Ponente_4_1:
@@ -29,7 +33,7 @@ gMapScripts_Borgo_Ponente_4_1:
 		Borgo_Ponente_4_1_MapScriptOnLoad_night:
 			setweather 0xB
 			doweather
-			movesprite2 0x1 0x07 0x06
+			movesprite2 0x1 0x01 0x03
 			end
 		
 	Borgo_Ponente_4_1_MapScriptOnFrame:
@@ -79,14 +83,24 @@ gMapScripts_Borgo_Ponente_4_1:
 		lockall
 		pause 0x1E
 		textcolor 0x00
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox EventScript_Borgo_Ponente_4_1_MapScriptOnFrameBegin_text2 MSG_NORMAL
 		special 0x15A
 		applymovement 0xFF Borgo_Ponente_4_1_mov2
 		waitmovement 0x0
 		pause 0x1E
 		textcolor 0x00
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox EventScript_Borgo_Ponente_4_1_MapScriptOnFrameBegin_text3 MSG_NORMAL
 		special 0x15A
 		setvar 0x4051 0x2E
@@ -96,7 +110,18 @@ gMapScripts_Borgo_Ponente_4_1:
 		end
 
 	Borgo_Ponente_4_1_mov2:
-		.byte 0x50
+		.byte 0x51
 		.byte 0x0 
 		.byte 0xFE
 
+		Player_Blue:
+			showpokepic 0x3b6 0x15 0x6
+			return
+
+		Player_Orange:
+			showpokepic 0x3bE 0x15 0x6
+			return
+
+		Player_Green:
+			showpokepic 0x3bF 0x15 0x6
+			return

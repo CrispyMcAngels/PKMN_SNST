@@ -13,27 +13,19 @@ EventScript_Borgo_Ponente_4_0_Sign0:
 EventScript_Borgo_Ponente_4_0_Armadio:
 	checkflag 0x964
 	if 0x1 _goto EventScript_Borgo_Ponente_4_0_Armadio_Arancione
+	checkflag 0x966
+	if 0x1 _goto EventScript_Borgo_Ponente_4_0_Armadio_Verde
 	msgbox Borgo_Ponente_4_0_Armadio_text1 MSG_NORMAL
 	end
 
 	EventScript_Borgo_Ponente_4_0_Armadio_Arancione:
+		checkflag 0x966
+		if 0x1 _goto EventScript_Borgo_Ponente_4_0_Armadio_Arancione_Verde
 		msgbox Borgo_Ponente_4_0_Armadio_Arancione_text1 MSG_NORMAL
-
-		//setvar 0x8006 0x0
-		//loadpointer 0x0 blu_ow_text
-		//special 0x25
-		//setvar 0x8006 0x1
-		//loadpointer 0x0 orange_ow_text
-		//special 0x25
-
 		preparemsg armadio_msg
 		waitmsg
-		//multichoice 0x0 0x0 0x20 0x0
-		
-		setvar 0x8000 0x0 
-		setvar 0x8001 0x3
-		special 0x158
-		waitstate
+		//msgbox armadio_msg MSG_NORMAL
+		multichoice 0x0 0x0 0x15 0x0
 		compare 0x800D 0x7F 
 		if 0x1 _goto Set_OW_canceled
 		compare 0x800D 0x0
@@ -45,7 +37,12 @@ EventScript_Borgo_Ponente_4_0_Armadio:
 			Set_blue_OW:
 				compare 0x501F 0x100 
 				if 0x1 _goto Already_Blue_OW
+				//OW
 				setvar 0x501F 0x100
+				//frontsprite
+				setvar 0x5026 0x0
+				//backsprite
+				setvar 0x5006 0x0
 				warp 0x4 0x0 0xFF 0x8 0x3 
 				end
 
@@ -54,9 +51,14 @@ EventScript_Borgo_Ponente_4_0_Armadio:
 					end
 
 			Set_orange_OW:
-				compare 0x501F 0x107 
+				compare 0x501F 0x1A3 
 				if 0x1 _goto Already_Orange_OW
-				setvar 0x501F 0x107
+				//OW
+				setvar 0x501F 0x1A3
+				//frontsprite
+				setvar 0x5026 0x88
+				//backsprite
+				setvar 0x5006 0x1
 				warp 0x4 0x0 0xFF 0x8 0x3 
 				end
 
@@ -66,6 +68,55 @@ EventScript_Borgo_Ponente_4_0_Armadio:
 
 			Set_OW_canceled:
 				end
+
+	EventScript_Borgo_Ponente_4_0_Armadio_Verde:
+		msgbox Borgo_Ponente_4_0_Armadio_Arancione_text1 MSG_NORMAL
+
+		preparemsg armadio_msg
+		waitmsg
+		
+		multichoice 0x0 0x0 0x16 0x0
+		compare 0x800D 0x7F 
+		if 0x1 _goto Set_OW_canceled
+		compare 0x800D 0x0
+		if 0x1 _goto Set_blue_OW
+		compare 0x800D 0x1
+		if 0x1 _goto Set_green_OW
+		end
+
+			Set_green_OW:
+				compare 0x501F 0x1A4 
+				if 0x1 _goto Already_Green_OW
+				//OW
+				setvar 0x501F 0x1A4
+				//frontsprite
+				setvar 0x5026 0x85
+				//backsprite 133
+				setvar 0x5006 0x2
+				warp 0x4 0x0 0xFF 0x8 0x3 
+				end
+
+				Already_Green_OW:
+					msgbox Borgo_Ponente_4_0_Armadio_already_green_text1 MSG_NORMAL
+					end
+
+	EventScript_Borgo_Ponente_4_0_Armadio_Arancione_Verde:
+		msgbox Borgo_Ponente_4_0_Armadio_Arancione_text1 MSG_NORMAL
+
+		preparemsg armadio_msg
+		waitmsg
+		
+		multichoice 0x0 0x0 0x17 0x0
+		compare 0x800D 0x7F 
+		if 0x1 _goto Set_OW_canceled
+		compare 0x800D 0x0
+		if 0x1 _goto Set_blue_OW
+		compare 0x800D 0x1
+		if 0x1 _goto Set_orange_OW
+		compare 0x800D 0x2
+		if 0x1 _goto Set_green_OW
+		end
+
 
 .global EventScript_Borgo_Ponente_4_0_tileA
 EventScript_Borgo_Ponente_4_0_tileA:
@@ -316,7 +367,12 @@ EventScript_Borgo_Ponente_4_0_mom:
 		special 0x15A
 		pause 0x1E
 		textcolor 0x00
-		showpokepic 0x3b6 0x15 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text5 MSG_NORMAL
 		special 0x15A
 		pause 0x1E		
@@ -368,3 +424,15 @@ EventScript_Borgo_Ponente_4_0_mom:
 			.byte 0x1B
 			.byte 0x1B
 			.byte 0xFE
+
+		Player_Blue:
+			showpokepic 0x3b6 0x15 0x6
+			return
+
+		Player_Orange:
+			showpokepic 0x3bE 0x15 0x6
+			return
+
+		Player_Green:
+			showpokepic 0x3bF 0x15 0x6
+			return

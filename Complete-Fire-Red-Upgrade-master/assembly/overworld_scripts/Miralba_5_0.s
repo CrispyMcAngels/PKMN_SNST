@@ -3,12 +3,22 @@
 
 .include "../xse_commands.s"
 .include "../xse_defines.s"
-	
 
-//.global EventScript_Borgo_Ponente_4_2_Sign0
-//EventScript_Borgo_Ponente_4_2_Sign0:
-//	msgbox Borgo_Ponente_4_2_Sign0_text1 0x7
-//	end
+.global gMapScripts_Miralba_5_0
+gMapScripts_Miralba_5_0:
+	mapscript MAP_SCRIPT_ON_LOAD Miralba_5_0_MapScriptOnLoad
+    .byte MAP_SCRIPT_TERMIN
+
+		Miralba_5_0_MapScriptOnLoad:
+			checkflag 0x960
+			if 0x1 _call Miralba_5_0_MapScriptOnLoad_move_Signore
+			end
+
+		Miralba_5_0_MapScriptOnLoad_move_Signore:
+			movesprite2 0x3 0x19 0x5
+			spritebehave 0x3 0x9
+			return
+
 
 .global EventScript_Miralba_5_0_NPC0
 EventScript_Miralba_5_0_NPC0:

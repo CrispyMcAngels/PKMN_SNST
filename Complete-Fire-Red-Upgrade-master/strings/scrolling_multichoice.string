@@ -3,10 +3,13 @@
 #ifdef SCROLLING_MULTICHOICE
 
 #org @sBlueOwText_1
-Blu
+BLU
 
 #org @sOrangeOwText_1
-Arancioni
+ARANCIONI
+
+#org @sGreenOwText_1
+VERDI
 
 #org @sExampleText_3
 Example 3

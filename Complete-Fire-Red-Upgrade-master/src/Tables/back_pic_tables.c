@@ -16,8 +16,8 @@ tables to edit:
 
 #define gTrainerBackPicPalette_Red (const u8*) 0x8E76EBC
 #define gTrainerBackPicPalette_Leaf (const u8*) 0x8E76EE4
-//#define gTrainerPalette_Brendan (const u8*) 0x8E550A4
-//#define gTrainerPalette_May (const u8*) 0x8E553CC
+#define gTrainerPalette_Brendan (const u8*) 0x8E550A4
+#define gTrainerPalette_May (const u8*) 0x8E553CC
 #define gTrainerPalette_PokeDude (const u8*) 0x8E76F0C
 #define gTrainerPalette_OldMan (const u8*) 0x8E76F34
 
@@ -73,8 +73,9 @@ const struct CompressedSpritePalette gTrainerBackPicPaletteTable[] =
 };
 
 #define gTrainerBackAnims_Red (const union AnimCmd* const*) 0x8239F44
-#define gTrainerBackAnims_Leaf (const union AnimCmd* const*) 0x8239F4C
-#define gTrainerBackAnims_Brendan (const union AnimCmd* const*) 0x8239F54
+//old #define gTrainerBackAnims_Leaf (const union AnimCmd* const*) 0x8239F4C
+#define gTrainerBackAnims_Leaf (const union AnimCmd* const*) 0x8239F44
+#define gTrainerBackAnims_Brendan (const union AnimCmd* const*) 0x8239F44
 #define gTrainerBackAnims_May (const union AnimCmd* const*) 0x8239F54
 #define gTrainerBackAnims_PokeDude (const union AnimCmd* const*) 0x8239F54
 #define gTrainerBackAnims_OldMan (const union AnimCmd* const*) 0x8239F5C
@@ -144,8 +145,8 @@ const struct MonCoords gTrainerBackPicCoords[] =
 
 #define gTrainerBackPicTable_Red (void*) 0x8234718
 #define gTrainerBackPicTable_Leaf (void*) 0x8234740
-//#define gTrainerBackPicTable_Brendan (void*) 0x82347A8
-//#define gTrainerBackPicTable_May (void*) 0x82347C8
+#define gTrainerBackPicTable_Brendan (void*) 0x82347A8
+#define gTrainerBackPicTable_May (void*) 0x82347C8
 #define gTrainerBackPicTable_PokeDude (void*) 0x8234768
 #define gTrainerBackPicTable_OldMan (void*) 0x8234788
 
@@ -163,12 +164,14 @@ extern const u8 gTrainerBackPic_MahinaTiles[];
 extern const u8 gTrainerBackPic_AlfordTiles[];
 extern const u8 gTrainerBackPic_TessyTiles[];
 
+//PLAYER_GREEN
 static const struct SpriteFrameImage sTrainerBackPicTable_Brendan[] =
 {
 	{gTrainerBackPic_BrendanTiles, 			0x800, 0},
 	{gTrainerBackPic_BrendanTiles + 0x0800, 0x800, 0},
 	{gTrainerBackPic_BrendanTiles + 0x1000, 0x800, 0},
 	{gTrainerBackPic_BrendanTiles + 0x1800, 0x800, 0},
+	{gTrainerBackPic_BrendanTiles + 0x2000, 0x800, 0},
 };
 
 static const struct SpriteFrameImage sTrainerBackPicTable_May[] =

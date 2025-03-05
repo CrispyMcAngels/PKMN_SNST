@@ -33,7 +33,7 @@ gMapScripts_Rovine_Ancestrali_1_33:
 				setflag 0x908
 				//setvar VAR_PARTNER_BACKSPRITE 0x2
 				setvar 0x5011 0x00D
-				setvar 0x5012 0x2
+				setvar 0x5012 0x3
 				setvar 0x8000 0x1 
 				setvar 0x8001 0x1 
 				special 0xD1
@@ -56,6 +56,7 @@ EventScript_Rovine_Ancestrali_1_33_tile0:
 		waitmovement 0x1
 		pause 0x1E
 		showpokepic 0x3B5 0x0 0x6
+		textcolor 0x1
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile0_text5 MSG_NORMAL
 		special 0x15A		
 		setvar 0x8000 0x1 
@@ -80,6 +81,7 @@ EventScript_Rovine_Ancestrali_1_33_tile0:
 		lockall
 		spriteface 0xFF 0x2
 		showpokepic 0x3B5 0x0 0x6
+		textcolor 0x1
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile0_text4 MSG_NORMAL
 		special 0x15A
 		applymovement 0xFF EventScript_Rovine_Ancestrali_1_33_tile0_P2_mov1
@@ -103,6 +105,7 @@ EventScript_Rovine_Ancestrali_1_33_tile0:
 		spriteface 0xFF 0x1
 		pause 0x1E
 		showpokepic 0x3B5 0x0 0x6
+		textcolor 0x1
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile0_text1 MSG_NORMAL
 		special 0x15A
 		fadescreen 0x1 
@@ -110,9 +113,11 @@ EventScript_Rovine_Ancestrali_1_33_tile0:
 		waitfanfare
 		special 0x0
 		fadescreen 0x0
+		textcolor 0x2
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile0_text2 MSG_NORMAL
 		pause 0x1E
 		showpokepic 0x3B5 0x0 0x6
+		textcolor 0x1
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile0_text3 MSG_NORMAL
 		special 0x15A
 		setvar 0x8000 0x1 
@@ -160,12 +165,14 @@ EventScript_Rovine_Ancestrali_1_33_tile1:
 		playsong 0x112 0x0
 		applymovement 0x2 EventScript_Rovine_Ancestrali_1_33_tile1_mov1
 		waitmovement 0x2
+		textcolor 0x0
 		showpokepic 0x3BB 0x0 0x6
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile1_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		applymovement 0x3 EventScript_Rovine_Ancestrali_1_33_tile1_mov2
 		waitmovement 0x3
+		textcolor 0x0
 		showpokepic 0x3BB 0x15 0x6
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile1_text2 MSG_NORMAL
 		special 0x15A
@@ -209,12 +216,14 @@ EventScript_Rovine_Ancestrali_1_33_tile2:
 		playsong 0x112 0x0
 		applymovement 0x2 EventScript_Rovine_Ancestrali_1_33_tile2_mov1
 		waitmovement 0x2
+		textcolor 0x0
 		showpokepic 0x3BB 0x0 0x6
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile1_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		applymovement 0x3 EventScript_Rovine_Ancestrali_1_33_tile2_mov2
 		waitmovement 0x3
+		textcolor 0x0
 		showpokepic 0x3BB 0x15 0x6
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile1_text2 MSG_NORMAL
 		special 0x15A
@@ -260,12 +269,14 @@ EventScript_Rovine_Ancestrali_1_33_tile3:
 		playsong 0x112 0x0
 		applymovement 0x2 EventScript_Rovine_Ancestrali_1_33_tile3_mov1
 		waitmovement 0x2
+		textcolor 0x0
 		showpokepic 0x3BB 0x0 0x6
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile1_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		applymovement 0x3 EventScript_Rovine_Ancestrali_1_33_tile3_mov2
 		waitmovement 0x3
+		textcolor 0x0
 		showpokepic 0x3BB 0x15 0x6
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile1_text2 MSG_NORMAL
 		special 0x15A
@@ -309,12 +320,14 @@ EventScript_Rovine_Ancestrali_1_33_tile4:
 		playsong 0x112 0x0
 		applymovement 0x4 EventScript_Rovine_Ancestrali_1_33_tile4_mov1
 		waitmovement 0x4
+		textcolor 0x1
 		showpokepic 0x3BC 0x0 0x6
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile4_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		applymovement 0x5 EventScript_Rovine_Ancestrali_1_33_tile4_mov2
 		waitmovement 0x5
+		textcolor 0x0
 		showpokepic 0x3BB 0x15 0x6
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile4_text2 MSG_NORMAL
 		special 0x15A
@@ -366,12 +379,14 @@ EventScript_Rovine_Ancestrali_1_33_tile5:
 		playsong 0x112 0x0
 		applymovement 0x6 EventScript_Rovine_Ancestrali_1_33_tile5_mov1
 		waitmovement 0x0
+		textcolor 0x0
 		showpokepic 0x3BB 0x0 0x6
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile5_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		applymovement 0x7 EventScript_Rovine_Ancestrali_1_33_tile5_mov2
 		waitmovement 0x0
+		textcolor 0x1
 		showpokepic 0x3BC 0x15 0x6
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile5_text2 MSG_NORMAL
 		special 0x15A
@@ -419,12 +434,14 @@ EventScript_Rovine_Ancestrali_1_33_tile6:
 		playsong 0x112 0x0
 		applymovement 0x6 EventScript_Rovine_Ancestrali_1_33_tile6_mov1
 		waitmovement 0x0
+		textcolor 0x0
 		showpokepic 0x3BB 0x0 0x6
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile5_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		applymovement 0x7 EventScript_Rovine_Ancestrali_1_33_tile6_mov2
 		waitmovement 0x0
+		textcolor 0x1
 		showpokepic 0x3BC 0x15 0x6
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile5_text2 MSG_NORMAL
 		special 0x15A
@@ -453,6 +470,7 @@ EventScript_Rovine_Ancestrali_1_33_tile6:
 EventScript_Rovine_Ancestrali_1_33_NPC1:
 	lock
 	faceplayer
+	textcolor 0x0
 	showpokepic 0x3BB 0x0 0x6
 	msgbox EventScript_Rovine_Ancestrali_1_33_NPC1_text1 MSG_NORMAL
 	special 0x15A	
@@ -463,6 +481,7 @@ EventScript_Rovine_Ancestrali_1_33_NPC1:
 EventScript_Rovine_Ancestrali_1_33_NPC2:
 	lock
 	faceplayer
+	textcolor 0x0
 	showpokepic 0x3BB 0x0 0x6
 	msgbox EventScript_Rovine_Ancestrali_1_33_NPC2_text1 MSG_NORMAL
 	special 0x15A	
@@ -473,6 +492,7 @@ EventScript_Rovine_Ancestrali_1_33_NPC2:
 EventScript_Rovine_Ancestrali_1_33_NPC3:
 	lock
 	faceplayer
+	textcolor 0x1
 	showpokepic 0x3BC 0x0 0x6
 	msgbox EventScript_Rovine_Ancestrali_1_33_NPC3_text1 MSG_NORMAL
 	special 0x15A	
@@ -483,6 +503,7 @@ EventScript_Rovine_Ancestrali_1_33_NPC3:
 EventScript_Rovine_Ancestrali_1_33_NPC4:
 	lock
 	faceplayer
+	textcolor 0x0
 	showpokepic 0x3BB 0x0 0x6
 	msgbox EventScript_Rovine_Ancestrali_1_33_NPC4_text1 MSG_NORMAL
 	special 0x15A	
@@ -493,7 +514,8 @@ EventScript_Rovine_Ancestrali_1_33_NPC4:
 EventScript_Rovine_Ancestrali_1_33_NPC5:
 	lock
 	faceplayer
-	showpokepic 0x3BC 0x0 0x6
+	textcolor 0x0
+	showpokepic 0x3BB 0x0 0x6
 	msgbox EventScript_Rovine_Ancestrali_1_33_NPC5_text1 MSG_NORMAL
 	special 0x15A	
 	release
@@ -503,7 +525,8 @@ EventScript_Rovine_Ancestrali_1_33_NPC5:
 EventScript_Rovine_Ancestrali_1_33_NPC6:
 	lock
 	faceplayer
-	showpokepic 0x3BB 0x0 0x6
+	textcolor 0x1
+	showpokepic 0x3BC 0x0 0x6
 	msgbox EventScript_Rovine_Ancestrali_1_33_NPC6_text1 MSG_NORMAL
 	special 0x15A	
 	release

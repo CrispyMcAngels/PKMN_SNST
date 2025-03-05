@@ -55,7 +55,12 @@ EventScript_Percorso_11_Brandon:
 		waitmovement 0x0
 		//vai axew...
 		textcolor 0x00
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox Percorso_11_Brandon_text4 MSG_NORMAL
 		special 0x15A
 		movesprite 0x7 0x0F 0x0A
@@ -94,7 +99,12 @@ EventScript_Percorso_11_Brandon:
 		pause 0x1E
 		//ottimo lavoro axew...
 		textcolor 0x00
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox Percorso_11_Brandon_text8 MSG_NORMAL
 		special 0x15A
 		cry 0x297 0x0
@@ -170,7 +180,12 @@ EventScript_Percorso_11_Brandon:
 		waitmovement 0xFF
 		//player: ...
 		textcolor 0x00
-		showpokepic 0x3B6 0x0 0x6
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
 		msgbox Percorso_11_Brandon_text14b MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -339,3 +354,15 @@ EventScript_Percorso_11_3_25_NPC1:
 	msgbox Percorso_11_3_25_NPC1_text1 MSG_NORMAL
 	release
 	end
+
+Player_Blue:
+	showpokepic 0x3b6 0x15 0x6
+	return
+
+Player_Orange:
+	showpokepic 0x3bE 0x15 0x6
+	return
+
+Player_Green:
+	showpokepic 0x3bF 0x15 0x6
+	return
