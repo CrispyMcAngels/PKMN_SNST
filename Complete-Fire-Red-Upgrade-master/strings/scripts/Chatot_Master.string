@@ -10,6 +10,25 @@ Aiuta la ragazza a trovare il suo\nfratellino!\pChatot - Chatot!
 #org @EventScript_Chatot_Master_text2
 Raggiungi Filiberto ad Ardesiopoli\nper analizzare le incisioni!\pChatot - Chatot!
 
+#org @EventScript_Chatot_Master_text3
+Esplora ardesiopoli!\pChatot - Chatot!
+
+#org @EventScript_Chatot_Master_text4
+Aiuta la ragazza a trovare Shinx!\pChatot - Chatot!
+
+#org @EventScript_Chatot_Master_text5
+Parla con Filiberto al Museo\nArcheologico!\pChatot - Chatot!
+
+#org @EventScript_Chatot_Master_text6
+Sfida la Palestra Poke'mon di\nFiliberto!\pChatot - Chatot!
+
+#org @EventScript_Chatot_Master_text7
+Esplora il Percorso 3 e il Percorso 4!\pChatot - Chatot!
+
+
+
+//MISSIONI_________________________
+
 #org @Mission_Received_text1
 Nuova missione secondaria\ndisponibile!\pVisualizza le missioni secondarie\ndisponibili tramite la voce Quests\lnel Menu.
 

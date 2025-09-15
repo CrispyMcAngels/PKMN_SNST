@@ -1,0 +1,62 @@
+//_/////////////////////////////////
+#org @Ardesiopoli_6_7_sign7_text1
+Treno in partenza per Stellavia,\nvuoi salire?
+
+
+#org @Ardesiopoli_6_7_NPC0_text1
+Treno in partenza per Ardesiopoli\nNord, vuoi salire?
+
+#org @Ardesiopoli_6_7_NPC0_text2
+Senza biglietto non e' possibile\nsalire a bordo!
+
+#org @Ardesiopoli_6_7_NPC0_text2a
+Biglietto convalidato, buon viaggio!
+
+#org @Ardesiopoli_6_7_NPC0_text3
+Si parteee!
+
+#org @Ardesiopoli_6_7_Sign0_text1
+Questo poster e' rovinato
+
+#org @Ardesiopoli_6_7_Sign0_text2
+Questo poster e' rovinato, sembra\nche un angolo si stia per staccare.\pVuoi guardare cosa c'e' dietro?
+
+#org @Ardesiopoli_6_7_Sign0_text3
+[PLAYER] sposta il Poster e scopre\nun passaggio segreto.
+
+#org @Ardesiopoli_6_7_NPC1_text1
+La linea per Stellavia?\pInaugurazione rimandata... di nuovo.\pMa dicono che quando sara' pronta,\nci portera' fin nel cuore della\lcitta' piu' ricca di tutta Eyros.
+
+#org @Ardesiopoli_6_7_NPC2_text1
+Ho preso la metro sbagliata e sono\nfinito di nuovo a Nord...\pMaledetta mia distrazione...\pStellavia sembra un sogno ormai.
+
+#org @Ardesiopoli_6_7_NPC3_text1
+...Si, sono ancora bloccato ad\nArdesiopoli.\pLa linea e' chiusa, il progetto e'\nin ritardo...\pSi', riferisci al Consiglio... ciao.
+
+#org @Ardesiopoli_6_7_NPC4_text1
+Lo sapevi che questa stazione ha\nbinari posati su una formazione\lrocciosa millenaria?\pCerte cose succedono solo qui ad\nEyros!
+
+#org @Ardesiopoli_6_7_NPC5_text1
+Adoro guardare i treni passare...\pE' come se ogni viaggio fosse\nun'avventura diversa.\pIl prossimo, magari, mi portera'\nfino a Stellavia!
+
+#org @Ardesiopoli_6_7_NPC6_text1
+Sto aspettando l'autorizzazione per\naprire il mio chiosco nella nuova\llinea...\pTi piacerebbe un Panino Fossile?\pSono famosi ad Ardesiopoli!
+
+#org @Ardesiopoli_6_7_NPC7_text1
+Stiamo lavorando giorno e notte\nper completare il tunnel verso\lStellavia...\pMa tra scavi e strane interferenze,\nnon e' facile come sembra!
+
+#org @Ardesiopoli_6_7_NPC8_text1
+Studio archeologia e sogno di lavorare\ncon Filiberto un giorno...\pChissa' se ha bisogno di un'altra\nassistente!
+
+#org @Ardesiopoli_6_7_Sign1_text1
+//_/////////////////////////////////
+Linea Metro 1:\nArdesiopoli Sud - Stellavia
+
+#org @Ardesiopoli_6_7_Sign23_text1
+Ardesiopoli Sud, punti di interesse:\nCentro Poke'mon, Poke'mon Market,\lPalestra Pokemon, Piazza Centrale.
+
+#org @Ardesiopoli_6_7_Sign4_text1
+Linea Metro 2:\nArdesiopoli Sud - Ardesiopoli Nord
+
+#org @Ardesiopoli_6_7_NPC0_text0a
+Questo treno sta per partire!

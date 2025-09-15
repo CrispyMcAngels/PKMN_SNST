@@ -1,0 +1,58 @@
+#org @Radiantia_3_4_Sign0_text1
+Oltre il gran burrone di Radiantia\nsi estende il Percorso 12,\lpercorribile tramite la MN Zenit.
+
+#org @Radiantia_3_4_Sign1_text1
+Casa di Elonora, Capopalestra di\nRadiantia.
+
+#org @Radiantia_3_4_Sign2_text1
+Osservatorio di Radiantia,\ncon la testa fra le nuvole!
+
+#org @Radiantia_3_4_Sign3_text1
+La citta' di Radiantia e' famosa\nper i suoi venti molto forti.\pInfatti Radiantia si affaccia\nsulla grande costiera a ovest di\lEyros, cosi' alta da stare in\lmezzo alle nuvole.
+
+#org @Radiantia_3_4_Sign4_5_text1
+Radiantia,\nLa citta' piu' a ovest della parte\lcontinentale della regione di Eyros.
+
+#org @Radiantia_3_4_Sign6_text1
+Palestra Poke'mon di Radiantia.
+
+#org @Radiantia_3_4_NPC0_text1
+Dicono che se lanci un desiderio\ngiu' dal burrone, il vento lo\lportera' tra le nuvole...
+
+#org @Radiantia_3_4_NPC1_text1
+Mantenere le pale eoliche stabili\ncon tutto questo vento e' un lavoro\lda equilibristi!
+
+#org @Radiantia_3_4_NPC2_text1
+Qui le piante crescono piegate...\nma anche piu' forti,\lcome la gente di Radiantia.
+
+#org @Radiantia_3_4_NPC3_text1
+Ho visto un Poke'mon volare sopra\nle nubi!\pO era una nuvola molto strana?
+
+#org @Radiantia_3_4_NPC4_text1
+Dal faro si vedono le stelle piu'\nchiare di tutta la regione...\pE a volte, anche i Poke'mon che le\nsfiorano.
+
+#org @Radiantia_3_4_NPC5_text1
+//_/////////////////////////////////
+Sono originario di Corallia e sto\nviaggiando Eyros per conquistare\ltutte le medaglie.\pLa palestra di questa citta' e'\nspecializzata in Poke'mon di tipo\lvolante...\pD'altronde cosa c'era da aspettarsi\nin una citta' sul ciglio di un\lburrone?
+
+#org @Radiantia_3_4_MapScriptOnFrame_text1
+[PLAYER]: Quei Murkrow sembrano\nveramente arrabbiati, meglio stargli\lalla larga!!!
+
+#org @Radiantia_3_4_MapScriptOnFrame_text2
+Crispy: Ehi, [PLAYER]!\nProprio te cercavo.\pMi hanno detto che hai gia' ottenuto\nla Medaglia Amonite da Filiberto...\pNiente male per uno alle prime\narmi, eh?
+
+#org @Radiantia_3_4_MapScriptOnFrame_text3
+Crispy: ...Come dici?\pHai battuto anche Eleonora?!\pWow, non stai solo facendo\nprogressi...\pstai proprio spiccando il volo!\nSono davvero fiero di te,\lfratellino.
+
+#org @Radiantia_3_4_MapScriptOnFrame_text4
+Ma veniamo a noi.\pVolevo aggiornarti sui risultati\ndelle analisi che Filiberto ha\lportato al laboratorio.\pCrispy: Secondo le sue analisi, il\nprossimo obiettivo del Team Dusk\lpotrebbe essere il Passo Tuono.\pQuel posto ha sempre avuto un'aura\nstrana...\p...E ora capisco il perche'.
+
+#org @Radiantia_3_4_MapScriptOnFrame_text5
+Crispy: Ho gia' allertato la Polizia\nPoke'mon ma... credo che sia meglio\lse ci vado anche io.\pNon mi fido di lasciarli agire da\nsoli.
+
+#org @Radiantia_3_4_MapScriptOnFrame_text6
+Crispy: Ah, quasi dimenticavo!\pHai sentito che hanno inaugurato la\nnuova linea della metropolitana?\pDa oggi puoi raggiungere Stellavia\ndirettamente da Ardesiopoli.\pComodo, no?
+
+#org @Radiantia_3_4_MapScriptOnFrame_text7
+Bene, non ho tempo da perdere.\nCi vediamo al Passo Tuono, [PLAYER].\pE tieni gli occhi aperti...\nQualcosa mi dice che questo e' solo\ll'inizio.
+

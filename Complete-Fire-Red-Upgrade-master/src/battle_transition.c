@@ -733,11 +733,15 @@ const TaskFunc sBT_Phase2Tasks[] =
 extern const u8 TeamDuskBattleLogoTiles[];
 extern const u16 TeamDuskBattleLogoPal[];
 extern const u8 TeamDuskBattleLogoMap[];
+extern const u8 ErisBattleLogoTiles[];
+extern const u16 ErisBattleLogoPal[];
+extern const u8 ErisBattleLogoMap[];
 
 const struct BattleTransitionLogo gBattleTransitionLogos[] =
 {
 	#ifndef UNBOUND //Modify this section
 	{CLASS_TEAM_ROCKET, TeamDuskBattleLogoTiles, TeamDuskBattleLogoPal, TeamDuskBattleLogoMap},
+	{CLASS_AROMA_LADY_RS, ErisBattleLogoTiles, ErisBattleLogoPal, ErisBattleLogoMap},
 	#else //For Pokemon Unbound
 	{CLASS_SHADOW, ShadowBattleLogoTiles, ShadowBattleLogoPal, ShadowBattleLogoMap},
 	{CLASS_LOR, LORBattleLogoTiles, LORBattleLogoPal, LORBattleLogoMap},

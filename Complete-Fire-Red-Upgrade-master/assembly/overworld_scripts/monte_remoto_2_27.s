@@ -365,7 +365,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part2:
     pause 0x1E
     textcolor 0x00
     showpokepic 0x3AB 0x0 0x6
-    //Ma che?\pNon è possibile...
+    //Ma che?\pNon e' possibile...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text18 MSG_NORMAL
     special 0x15A
     pause 0x1E

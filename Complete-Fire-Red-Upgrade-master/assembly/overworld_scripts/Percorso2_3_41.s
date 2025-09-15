@@ -520,6 +520,7 @@ EventScript_Percorso2_3_41_tile2:
 	setflag 0x95C
 	hidesprite 0x9
 	setvar 0x4051 0x2F
+	setvar 0x4053 0x3
 	fadedefault
 	releaseall
 	end
@@ -530,10 +531,11 @@ EventScript_Percorso2_3_41_tile2:
 		.byte 0x62
 		.byte 0x13
 		.byte 0x11
-		.byte 0x3 
+		.byte 0x13 
 		.byte 0xFE
 
 	EventScript_Percorso2_3_41_tile2_mov2:
+		.byte 0x12
 		.byte 0x10
 		.byte 0x12
 		.byte 0x10
@@ -571,22 +573,13 @@ EventScript_Percorso2_3_41_tile3:
 		.byte 0x13
 		.byte 0xFE
 
-
-.global EventScript_Percorso_2_3_41_NPC1_ALPHA
-EventScript_Percorso_2_3_41_NPC1_ALPHA:
-	lock
-	faceplayer
-	msgbox Percorso_2_3_41_NPC1_ALPHA MSG_NORMAL
-	release
-	end
-
-.global EventScript_Percorso_2_3_41_NPC12
-EventScript_Percorso_2_3_41_NPC12:
+.global EventScript_Percorso_2_3_41_NPC10
+EventScript_Percorso_2_3_41_NPC10:
 	giveitem 0xD 0x1 MSG_FIND
 	end
 	
-.global EventScript_Percorso_2_3_41_NPC13
-EventScript_Percorso_2_3_41_NPC13:
+.global EventScript_Percorso_2_3_41_NPC11
+EventScript_Percorso_2_3_41_NPC11:
 	giveitem 0x40 0x1 MSG_FIND
 	end
 
