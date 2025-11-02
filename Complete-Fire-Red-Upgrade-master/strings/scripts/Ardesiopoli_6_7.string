@@ -27,11 +27,18 @@ Questo poster e' rovinato, sembra\nche un angolo si stia per staccare.\pVuoi gua
 #org @Ardesiopoli_6_7_NPC1_text1
 La linea per Stellavia?\pInaugurazione rimandata... di nuovo.\pMa dicono che quando sara' pronta,\nci portera' fin nel cuore della\lcitta' piu' ricca di tutta Eyros.
 
+#org @Ardesiopoli_6_7_NPC1_text2
+Era da anni che aspettavo l'apertura\ndella linea che porta a Stellavia!\pDicono che i tunnel siano stati\nscavati grazie a una squadra di\lRhyperior e Steelix
+
+
 #org @Ardesiopoli_6_7_NPC2_text1
 Ho preso la metro sbagliata e sono\nfinito di nuovo a Nord...\pMaledetta mia distrazione...\pStellavia sembra un sogno ormai.
 
 #org @Ardesiopoli_6_7_NPC3_text1
 ...Si, sono ancora bloccato ad\nArdesiopoli.\pLa linea e' chiusa, il progetto e'\nin ritardo...\pSi', riferisci al Consiglio... ciao.
+
+#org @Ardesiopoli_6_7_NPC3_text2
+Lavoro nel dipartimento di Merging &\nAcquisition della Banca di Stellavia.\pPer i pendolari come me, questa\nmetropolitana e' una manna dal cielo!
 
 #org @Ardesiopoli_6_7_NPC4_text1
 Lo sapevi che questa stazione ha\nbinari posati su una formazione\lrocciosa millenaria?\pCerte cose succedono solo qui ad\nEyros!
@@ -45,11 +52,13 @@ Sto aspettando l'autorizzazione per\naprire il mio chiosco nella nuova\llinea...
 #org @Ardesiopoli_6_7_NPC7_text1
 Stiamo lavorando giorno e notte\nper completare il tunnel verso\lStellavia...\pMa tra scavi e strane interferenze,\nnon e' facile come sembra!
 
+#org @Ardesiopoli_6_7_NPC7_text2
+Dopo quasi due anni i lavori per la\nnuova linea sono finalmente\lterminati!\pIn particolare ci sono stati dei\nrallentamenti all'incirca sotto il\lPasso Tuono...\pDelle strane interferenze\nelettromagnetiche bloccavano\li nostri strumenti...\pInfatti senza il mio Rhyperior\nnulla di tutto cio' sarebbe stato\lpossibile!
+
 #org @Ardesiopoli_6_7_NPC8_text1
 Studio archeologia e sogno di lavorare\ncon Filiberto un giorno...\pChissa' se ha bisogno di un'altra\nassistente!
 
 #org @Ardesiopoli_6_7_Sign1_text1
-//_/////////////////////////////////
 Linea Metro 1:\nArdesiopoli Sud - Stellavia
 
 #org @Ardesiopoli_6_7_Sign23_text1

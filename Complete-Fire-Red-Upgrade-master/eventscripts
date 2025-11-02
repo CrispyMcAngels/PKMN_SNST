@@ -3,8 +3,60 @@ sign 10 19 1 EventScript_Stellavia_10_19_Sign0
 
 map 1 1 gMapScripts_Passo_Tuono_1_1
 
+sign 1 1 0 EventScript_Passo_Tuono_1_1_Sign0
+sign 1 1 1 EventScript_Passo_Tuono_1_1_Sign1
+sign 1 1 2 EventScript_Passo_Tuono_1_1_Sign2
+sign 1 1 3 EventScript_Passo_Tuono_1_1_Sign3
+sign 1 1 4 EventScript_Passo_Tuono_1_1_Sign4
+sign 1 1 5 EventScript_Passo_Tuono_1_1_Sign5
+sign 1 1 6 EventScript_Passo_Tuono_1_1_Sign6
+sign 1 1 7 EventScript_Passo_Tuono_1_1_Sign7
+sign 1 1 8 EventScript_Passo_Tuono_1_1_Sign8
+sign 1 1 9 EventScript_Passo_Tuono_1_1_Sign9
+sign 1 1 10 EventScript_Passo_Tuono_1_1_Sign10
+sign 1 1 11 EventScript_Passo_Tuono_1_1_Sign11
+
+npc 1 1 2 EventScript_Passo_Tuono_1_1_NPC2
+npc 1 1 3 EventScript_Passo_Tuono_1_1_NPC3
+npc 1 1 4 EventScript_Passo_Tuono_1_1_NPC4
+npc 1 1 5 EventScript_Passo_Tuono_1_1_NPC5
+npc 1 1 6 EventScript_Passo_Tuono_1_1_NPC6
+npc 1 1 13 EventScript_Passo_Tuono_1_1_NPC13
+npc 1 1 14 EventScript_Passo_Tuono_1_1_NPC14
+npc 1 1 15 EventScript_Passo_Tuono_1_1_NPC15
+npc 1 1 16 EventScript_Passo_Tuono_1_1_NPC16
+
+
+
 map 1 2 gMapScripts_Passo_Tuono_1_2
+tile 1 2 0 EventScript_Passo_Tuono_1_2_tile0
+
+tile 1 3 0 EventScript_Passo_Tuono_1_3_tile0
+npc 1 3 0 EventScript_Passo_Tuono_1_3_NPC0
+npc 1 3 1 EventScript_Passo_Tuono_1_3_NPC1
+npc 1 3 2 EventScript_Passo_Tuono_1_3_NPC2
+npc 1 3 3 EventScript_Passo_Tuono_1_3_NPC3
+npc 1 3 4 EventScript_Passo_Tuono_1_3_NPC4
+npc 1 3 5 EventScript_Passo_Tuono_1_3_NPC5
+npc 1 3 6 EventScript_Passo_Tuono_1_3_NPC6
+npc 1 3 11 EventScript_Passo_Tuono_1_3_NPC11
+sign 1 3 2 EventScript_Passo_Tuono_1_3_Sign2
+sign 1 3 3 EventScript_Passo_Tuono_1_3_Sign3
+
 map 1 124 gMapScripts_Passo_Tuono_1_124
+
+map 1 131 gMapScripts_Passo_Tuono_1_131
+
+npc 0 8 0 EventScript_Passo_Tuono_1_127_NPC0
+npc 0 8 1 EventScript_Passo_Tuono_1_127_NPC1
+npc 0 8 2 EventScript_Passo_Tuono_1_127_NPC2
+npc 0 8 3 EventScript_Passo_Tuono_1_127_NPC3
+npc 0 8 4 EventScript_Passo_Tuono_1_127_NPC4
+
+npc 0 9 0 EventScript_Passo_Tuono_1_128_NPC0
+npc 0 9 1 EventScript_Passo_Tuono_1_128_NPC1
+
+map 0 12 gMapScripts_Passo_Tuono_1_131
 
 map 6 20 gMapScripts_Ardesiopoli_6_20
 
@@ -113,6 +165,9 @@ sign 3 22 1 EventScript_Percorso_4_3_22_Sign1_5
 sign 3 22 5 EventScript_Percorso_4_3_22_Sign1_5
 sign 3 22 6 EventScript_Percorso_4_3_22_Sign6
 sign 3 22 7 EventScript_Percorso_4_3_22_Sign7
+sign 3 22 8 EventScript_Percorso_4_3_22_Sign8
+sign 3 22 9 EventScript_Percorso_4_3_22_Sign9
+
 npc 3 22 0 EventScript_Percorso_4_3_22_NPC0
 npc 3 22 1 EventScript_Percorso_4_3_22_NPC1
 npc 3 22 3 EventScript_Percorso_4_3_22_NPC3
@@ -244,7 +299,9 @@ npc 6 7 5 EventScript_Ardesiopoli_6_7_NPC5
 npc 6 7 6 EventScript_Ardesiopoli_6_7_NPC6
 npc 6 7 7 EventScript_Ardesiopoli_6_7_NPC7
 npc 6 7 8 EventScript_Ardesiopoli_6_7_NPC8
+npc 6 7 9 EventScript_Ardesiopoli_6_7_NPC0
 npc 6 7 10 EventScript_Ardesiopoli_6_7_NPC0
+npc 6 7 11 EventScript_Ardesiopoli_6_7_NPC0
 tile 6 7 0 EventScript_Ardesiopoli_6_7_tile0a
 tile 6 7 1 EventScript_Ardesiopoli_6_7_tile0
 tile 6 7 2 EventScript_Ardesiopoli_6_7_tile0

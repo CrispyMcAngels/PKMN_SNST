@@ -23,6 +23,10 @@ gMapScripts_Ardesiopoli_6_7:
 			setmaptile 0x05 0x0C 0x28F 0x0
 			setmaptile 0x06 0x0C 0x28F 0x0
 			setmaptile 0x07 0x0C 0x28F 0x0
+			setmaptile 0x05 0x0A 0x307 0x0
+			setmaptile 0x06 0x0A 0x30F 0x0
+			setmaptile 0x07 0x0A 0x317 0x0
+			movesprite2 0x2 0x03 0x05
 			return
 
 
@@ -395,14 +399,21 @@ EventScript_Ardesiopoli_6_7_NPC0:
 	release
 	end
 
-//to be enhanced dopo radiantia
 .global EventScript_Ardesiopoli_6_7_NPC1
 EventScript_Ardesiopoli_6_7_NPC1:
 	lock
 	faceplayer
+	checkflag 0x821
+	if 0x1 _goto EventScript_Ardesiopoli_6_7_NPC1_P2
 	msgbox Ardesiopoli_6_7_NPC1_text1 MSG_NORMAL
 	release
 	end
+
+	EventScript_Ardesiopoli_6_7_NPC1_P2:
+		msgbox Ardesiopoli_6_7_NPC1_text2 MSG_NORMAL
+		release
+		end
+
 
 .global EventScript_Ardesiopoli_6_7_NPC2
 EventScript_Ardesiopoli_6_7_NPC2:
@@ -412,14 +423,20 @@ EventScript_Ardesiopoli_6_7_NPC2:
 	release
 	end
 
-//to be enhanced dopo radiantia
 .global EventScript_Ardesiopoli_6_7_NPC3
 EventScript_Ardesiopoli_6_7_NPC3:
 	lock
 	faceplayer
+	checkflag 0x821
+	if 0x1 _goto EventScript_Ardesiopoli_6_7_NPC3_P2
 	msgbox Ardesiopoli_6_7_NPC3_text1 MSG_NORMAL
 	release
 	end
+
+	EventScript_Ardesiopoli_6_7_NPC3_P2:
+		msgbox Ardesiopoli_6_7_NPC3_text2 MSG_NORMAL
+		release
+		end
 
 .global EventScript_Ardesiopoli_6_7_NPC4
 EventScript_Ardesiopoli_6_7_NPC4:
@@ -444,14 +461,21 @@ EventScript_Ardesiopoli_6_7_NPC6:
 	msgbox Ardesiopoli_6_7_NPC6_text1 MSG_NORMAL
 	release
 	end
-
+	
 .global EventScript_Ardesiopoli_6_7_NPC7
 EventScript_Ardesiopoli_6_7_NPC7:
 	lock
 	faceplayer
+	checkflag 0x821
+	if 0x1 _goto EventScript_Ardesiopoli_6_7_NPC7_P2
 	msgbox Ardesiopoli_6_7_NPC7_text1 MSG_NORMAL
 	release
 	end
+
+	EventScript_Ardesiopoli_6_7_NPC7_P2:
+		msgbox Ardesiopoli_6_7_NPC7_text2 MSG_NORMAL
+		release
+		end
 
 .global EventScript_Ardesiopoli_6_7_NPC8
 EventScript_Ardesiopoli_6_7_NPC8:

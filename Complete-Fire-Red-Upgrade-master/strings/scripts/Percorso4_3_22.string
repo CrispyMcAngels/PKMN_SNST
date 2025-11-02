@@ -109,3 +109,15 @@ Hei tu! Mi stavi spiando per caso?\pDopo mesi di duro allenamento sono\nriuscito
 
 #org @Percorso_4_3_22_tile0_text6
 Facciamo cosi', se riuscirai a\nbattermi ti regalero' la MN01\lTaglio.\pTi aspetto qui!
+
+#org @Percorso_4_3_22_Sign8_UP
+UP
+
+#org @Percorso_4_3_22_Sign8_DOWN
+DOWN
+
+#org @Percorso_4_3_22_Sign8_RIGHT
+RIGHT
+
+#org @Percorso_4_3_22_Sign8_LEFT
+LEFT

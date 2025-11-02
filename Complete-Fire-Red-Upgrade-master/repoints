@@ -528,9 +528,17 @@ gEventsObjectPic_NPC75Pal 08F16070
 gEventObjectGraphicsInfo_NPC76 08EB1130
 gEventsObjectPic_NPC76Pal 08F16078
 
+#NPC77
+gEventObjectGraphicsInfo_NPC77 08EB1134
+gEventsObjectPic_NPC77Pal 08F16080
+
 #NPC78
 gEventObjectGraphicsInfo_NPC78 08EB1138
 gEventsObjectPic_NPC78Pal 08F16088
+
+#NPC79
+gEventObjectGraphicsInfo_NPC79 08EB113C
+gEventsObjectPic_NPC79Pal 08F16090
 
 #NPC80
 gEventObjectGraphicsInfo_NPC80 08EB1140
@@ -539,6 +547,14 @@ gEventsObjectPic_NPC80Pal 08F16098
 #NPC81
 gEventObjectGraphicsInfo_NPC81 08EB1144
 gEventsObjectPic_NPC81Pal 08F160A0
+
+#NPC82
+gEventObjectGraphicsInfo_NPC82 08EB1148
+gEventsObjectPic_NPC82Pal 08F160A8
+
+#NPC83
+gEventObjectGraphicsInfo_NPC83 08EB114C
+gEventsObjectPic_NPC83Pal 08F160B0
 
 #NPC86
 gEventObjectGraphicsInfo_NPC86 08EB1158
@@ -567,6 +583,10 @@ gEventsObjectPic_NPC91Pal 08F160F0
 #NPC92
 gEventObjectGraphicsInfo_NPC92 08EB1170
 gEventsObjectPic_NPC92Pal 08F160F8
+
+#NPC93
+gEventObjectGraphicsInfo_NPC93 08EB1174
+gEventsObjectPic_NPC93Pal 08F16100
 
 #NPC95
 gEventObjectGraphicsInfo_NPC95 08EB117C
@@ -684,6 +704,18 @@ gEventsObjectPic_NPC122Pal 08F161E8
 gEventObjectGraphicsInfo_NPC123 08EB11EC
 gEventsObjectPic_NPC123Pal 08F161F0
 
+#NPC124
+gEventObjectGraphicsInfo_NPC124 08EB11F0
+gEventsObjectPic_NPC124Pal 08F161F8
+
+#NPC125
+gEventObjectGraphicsInfo_NPC125 08EB11F4
+gEventsObjectPic_NPC125Pal 08F16200
+
+#NPC126
+gEventObjectGraphicsInfo_NPC126 08EB11F8
+gEventsObjectPic_NPC126Pal 08F16208
+
 #NPC127
 gEventObjectGraphicsInfo_NPC127 08EB11FC
 gEventsObjectPic_NPC127Pal 08F16210
@@ -703,6 +735,10 @@ gEventsObjectPic_NPC130Pal 08F16170
 #NPC131
 gEventObjectGraphicsInfo_NPC131 08EB120C
 gEventsObjectPic_NPC131Pal 08F16230
+
+#NPC132
+gEventObjectGraphicsInfo_NPC132 08EB1210
+gEventsObjectPic_NPC132Pal 08F16238
 
 #NPC133
 gEventObjectGraphicsInfo_NPC133 08EB1214

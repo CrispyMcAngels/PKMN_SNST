@@ -36,6 +36,81 @@ gMapScripts_Percorso4_3_22:
 		msgbox Percorso_4_3_22_Sign7 0x7
 		end
 
+	.global EventScript_Percorso_4_3_22_Sign8
+	EventScript_Percorso_4_3_22_Sign8:
+		lockall
+		special2 0x800D 0x2C
+					
+		//check if UP is pressed
+		compare 0x800D 0x1
+		if 0x1 _call EventScript_Percorso_4_3_22_Sign8_UP
+		
+		//check if DOWN is pressed
+		compare 0x800D 0x3
+		if 0x1 _call EventScript_Percorso_4_3_22_Sign8_DOWN
+		
+		//check if RIGHT is pressed
+		compare 0x800D 0x4
+		if 0x1 _call EventScript_Percorso_4_3_22_Sign8_RIGHT	
+		
+		//check if LEFT is pressed
+		compare 0x800D 0x2
+		if 0x1 _call EventScript_Percorso_4_3_22_Sign8_LEFT		
+
+		setvar 0x800D 0x0
+		compare 0x800D 0x0
+		if 0x1 _goto EventScript_Percorso_4_3_22_Sign8
+		releaseall
+		end
+
+	.global EventScript_Percorso_4_3_22_Sign9
+	EventScript_Percorso_4_3_22_Sign9:
+		lockall
+		
+		special 0x2F		
+
+		//check if UP is pressed
+
+		compare 0x800D 0x40
+		if 0x1 _call EventScript_Percorso_4_3_22_Sign8_UP
+		//check if DOWN is pressed
+
+		compare 0x800D 0x80
+		if 0x1 _call EventScript_Percorso_4_3_22_Sign8_DOWN
+		//check if RIGHT is pressed
+
+		compare 0x800D 0x10
+		if 0x1 _call EventScript_Percorso_4_3_22_Sign8_RIGHT	
+		//check if LEFT is pressed
+
+		compare 0x800D 0x20
+		if 0x1 _call EventScript_Percorso_4_3_22_Sign8_LEFT		
+		
+		setvar 0x800D 0x0
+		compare 0x800D 0x0
+		if 0x1 _goto EventScript_Percorso_4_3_22_Sign9
+		releaseall
+		end
+
+	EventScript_Percorso_4_3_22_Sign8_UP:
+		msgbox Percorso_4_3_22_Sign8_UP 0x7
+		return
+
+	EventScript_Percorso_4_3_22_Sign8_DOWN:
+		msgbox Percorso_4_3_22_Sign8_DOWN 0x7
+		return
+
+	EventScript_Percorso_4_3_22_Sign8_RIGHT:
+		msgbox Percorso_4_3_22_Sign8_RIGHT 0x7
+		return
+
+	EventScript_Percorso_4_3_22_Sign8_LEFT:
+		msgbox Percorso_4_3_22_Sign8_LEFT 0x7
+		return
+
+
+
+
 
 //___NPCs___
 

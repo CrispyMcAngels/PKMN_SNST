@@ -31,6 +31,12 @@ gMapScripts_Passo_Tuono_1_124:
 		if 0x1 _call Passo_Tuono_1_124_MapScriptOnLoad_P2
 		compare 0x4051 0x3F
 		if 0x1 _call Passo_Tuono_1_124_MapScriptOnLoad_P3
+		compare 0x4051 0x43
+		if 0x1 _call Passo_Tuono_1_124_MapScriptOnLoad_P2
+		compare 0x4051 0x43
+		if 0x1 _call Passo_Tuono_1_124_MapScriptOnLoad_P3
+		compare 0x4051 0x43
+		if 0x1 _call Passo_Tuono_1_124_MapScriptOnLoad_P4
 		end
 
 		Passo_Tuono_1_124_MapScriptOnLoad_P2:
@@ -87,6 +93,13 @@ gMapScripts_Passo_Tuono_1_124:
 			setmaptile 0x07 0x08 0x2DA 0x0
 			setmaptile 0x06 0x09 0x2E1 0x0
 
+		Passo_Tuono_1_124_MapScriptOnLoad_P4:
+			setmaptile 0x05 0x06 0x2E8 0x0
+			setmaptile 0x06 0x06 0x2EA 0x0
+			setmaptile 0x07 0x06 0x2EC 0x0
+			setmaptile 0x04 0x07 0x2F0 0x0
+			setmaptile 0x05 0x07 0x2F2 0x0
+			setmaptile 0x06 0x07 0x2F4 0x0			
 			return
 
 	Passo_Tuono_1_124_MapScriptOnWarpIntoMapTable:
@@ -104,6 +117,10 @@ gMapScripts_Passo_Tuono_1_124:
 		Passo_Tuono_1_124_MapScriptOnFrameBegin:
 			compare 0x4051 0x3D
 			if 0x1 _goto Passo_Tuono_1_124_MapScriptOnFrameBegin_P1
+			compare 0x4051 0x42
+			if 0x1 _goto Passo_Tuono_1_124_MapScriptOnFrameBegin_P2
+			compare 0x4051 0x44
+			if 0x1 _goto Passo_Tuono_1_124_MapScriptOnFrameBegin_P3
 			releaseall
 			end
 
@@ -427,3 +444,622 @@ gMapScripts_Passo_Tuono_1_124:
 					.byte 0x65
 					.byte 0x1C
 					.byte 0xFE
+
+			Passo_Tuono_1_124_MapScriptOnFrameBegin_P2:
+				pause 0x1E
+				applymovement 0xFF Passo_Tuono_1_124_mov9
+				waitmovement 0xFF
+				compare 0x5026 0x0
+				if 0x1 _call Player_Blue
+				compare 0x5026 0x88
+				if 0x1 _call Player_Orange
+				compare 0x5026 0x85
+				if 0x1 _call Player_Green	
+				textcolor 0x0
+				msgbox Passo_Tuono_1_124_text11 MSG_NORMAL	
+				special 0x15A	
+				pause 0x1E
+				applymovement 0xFF Passo_Tuono_1_124_mov10
+				waitmovement 0xFF
+				pause 0x1E
+				compare 0x5026 0x0
+				if 0x1 _call Player_Blue
+				compare 0x5026 0x88
+				if 0x1 _call Player_Orange
+				compare 0x5026 0x85
+				if 0x1 _call Player_Green	
+				msgbox Passo_Tuono_1_124_text12 MSG_NORMAL	
+				special 0x15A	
+				pause 0x1E
+				applymovement 0xFF Passo_Tuono_1_124_mov11
+				waitmovement 0xFF
+				pause 0x1E
+				compare 0x5026 0x0
+				if 0x1 _call Player_Blue
+				compare 0x5026 0x88
+				if 0x1 _call Player_Orange
+				compare 0x5026 0x85
+				if 0x1 _call Player_Green					
+				msgbox Passo_Tuono_1_124_text13 MSG_NORMAL	
+				special 0x15A	
+				pause 0x1E
+				applymovement 0xFF Passo_Tuono_1_124_mov12
+				waitmovement 0xFF				
+				pause 0x1E
+				compare 0x5026 0x0
+				if 0x1 _call Player_Blue
+				compare 0x5026 0x88
+				if 0x1 _call Player_Orange
+				compare 0x5026 0x85
+				if 0x1 _call Player_Green					
+				msgbox Passo_Tuono_1_124_text14 MSG_NORMAL	
+				special 0x15A	
+				pause 0x1E
+				applymovement 0xFF Passo_Tuono_1_124_mov13
+				waitmovement 0xFF		
+				msgbox Passo_Tuono_1_124_text15 MSG_NORMAL
+				setvar 0x4051 0x43
+				//invisible player
+				//setvar 0x501F 0x12E
+				//call puzzle
+				//warpmuted 0x0 0xC 0xFF 0x7 0x5
+				compare 0x4051 0x43
+				if 0x1 _goto Passo_Tuono_1_124_MapScriptOnFrameBegin_P3
+
+				releaseall
+				end
+
+
+
+				
+
+			Passo_Tuono_1_124_MapScriptOnFrameBegin_P3:
+				pause 0x1E
+				applymovement 0xFF Passo_Tuono_1_124_mov14
+				waitmovement 0xFF
+				compare 0x5026 0x0
+				if 0x1 _call Player_Blue
+				compare 0x5026 0x88
+				if 0x1 _call Player_Orange
+				compare 0x5026 0x85
+				if 0x1 _call Player_Green					
+				msgbox Passo_Tuono_1_124_text16 MSG_NORMAL	
+				special 0x15A	
+				pause 0x1E				
+				applymovement 0xFF Passo_Tuono_1_124_mov15
+				waitmovement 0xFF
+				pause 0x1E
+				special 0x113
+				applymovement 0x7F Passo_Tuono_1_124_mov16
+				waitmovement 0x7F			
+				pause 0x1E
+				//bigger flame
+				setmaptile 0x05 0x05 0x2F8 0x0
+				setmaptile 0x06 0x05 0x2FA 0x0
+				setmaptile 0x07 0x05 0x2FD 0x0
+				setmaptile 0x05 0x06 0x300 0x0
+				setmaptile 0x06 0x06 0x302 0x0
+				setmaptile 0x07 0x06 0x304 0x0
+				setmaptile 0x05 0x07 0x308 0x0
+				setmaptile 0x06 0x07 0x30A 0x0
+				setmaptile 0x07 0x07 0x30C 0x0						
+				special 0x8E
+				//bigger flame sound
+
+				//to be enhanced
+
+				sound 0xC
+				pause 0x2E
+				applymovement 0x7F Passo_Tuono_1_124_mov17
+				waitmovement 0x7F					
+				special 0x114
+				pause 0x25
+				applymovement 0xFF Passo_Tuono_1_124_mov18
+				waitmovement 0xFF				
+				pause 0x1E
+				compare 0x5026 0x0
+				if 0x1 _call Player_Blue
+				compare 0x5026 0x88
+				if 0x1 _call Player_Orange
+				compare 0x5026 0x85
+				if 0x1 _call Player_Green					
+				msgbox Passo_Tuono_1_124_text17 MSG_NORMAL	
+				special 0x15A	
+				pause 0x1E
+				movesprite 0x5 0x06 0x07
+				pause 0x2E	
+				showpokepic 0x3C2 0x15 0x6
+				msgbox Passo_Tuono_1_124_text18 MSG_NORMAL	
+				special 0x15A	
+				pause 0x2E					
+				showpokepic 0x3C2 0x15 0x6
+				msgbox Passo_Tuono_1_124_text19 MSG_NORMAL	
+				special 0x15A	
+				pause 0x2E
+				applymovement 0xFF Passo_Tuono_1_124_mov14
+				waitmovement 0xFF
+				pause 0x1E
+				compare 0x5026 0x0
+				if 0x1 _call Player_Blue
+				compare 0x5026 0x88
+				if 0x1 _call Player_Orange
+				compare 0x5026 0x85
+				if 0x1 _call Player_Green					
+				msgbox Passo_Tuono_1_124_text20 MSG_NORMAL	
+				special 0x15A	
+				pause 0x2E	
+				showpokepic 0x3C2 0x15 0x6
+				msgbox Passo_Tuono_1_124_text21 MSG_NORMAL	
+				special 0x15A	
+				pause 0x2E
+				movesprite 0x6 0x06 0x07
+				movesprite 0x5 0x0D 0x09
+				applymovement 0x6 Passo_Tuono_1_124_mov19
+				applymovement 0xFF Passo_Tuono_1_124_mov20
+				waitmovement 0x6
+				pause 0x25
+				showpokepic 0x3BA 0x15 0x6
+				msgbox Passo_Tuono_1_124_text22 MSG_NORMAL	
+				special 0x15A	
+				pause 0x1E				
+				applymovement 0xFF Passo_Tuono_1_124_mov14
+				waitmovement 0xFF
+				pause 0x1E
+				compare 0x5026 0x0
+				if 0x1 _call Player_Blue
+				compare 0x5026 0x88
+				if 0x1 _call Player_Orange
+				compare 0x5026 0x85
+				if 0x1 _call Player_Green					
+				msgbox Passo_Tuono_1_124_text23 MSG_NORMAL	
+				special 0x15A	
+				pause 0x2E	
+				showpokepic 0x3BA 0x15 0x6
+				msgbox Passo_Tuono_1_124_text24 MSG_NORMAL	
+				special 0x15A	
+				pause 0x1E			
+				//Arriva Team Dusk
+				playsong 0x112 0x0
+				spriteface 0xFF 0x1
+				//movecamera down
+				pause 0x1E
+				special 0x113
+				applymovement 0x7F Passo_Tuono_1_124_mov16
+				waitmovement 0x7F	
+				sound 0x9
+				movesprite 0x7 0x6 0xE
+				pause 0x1E
+				applymovement 0x7 Passo_Tuono_1_124_mov21
+				waitmovement 0x7
+				pause 0x1E
+				showpokepic 0x3AD 0x15 0x6
+				msgbox Passo_Tuono_1_124_text25 MSG_NORMAL	
+				special 0x15A	
+				pause 0x24
+				movesprite 0x8 0x6 0xE
+				sound 0x9
+				pause 0x1E
+				applymovement 0x8 Passo_Tuono_1_124_mov22
+				waitmovement 0x8			
+				pause 0x1E
+				movesprite 0x9 0x6 0xE
+				sound 0x9
+				pause 0x1E
+				applymovement 0x9 Passo_Tuono_1_124_mov23
+				waitmovement 0x9	
+				pause 0x1E
+				movesprite 0xA 0x6 0xE
+				sound 0x9
+				pause 0x1E
+				applymovement 0xA Passo_Tuono_1_124_mov24
+				waitmovement 0xA	
+				pause 0x1E
+				showpokepic 0x3BB 0x15 0x6
+				msgbox Passo_Tuono_1_124_text26 MSG_NORMAL	
+				special 0x15A 	
+				pause 0x2E
+				showpokepic 0x3AD 0x15 0x6
+				msgbox Passo_Tuono_1_124_text27 MSG_NORMAL	
+				special 0x15A				
+				pause 0x25
+				applymovement 0x7F Passo_Tuono_1_124_mov17
+				applymovement 0x7 Passo_Tuono_1_124_mov13
+				waitmovement 0x7F
+				special 0x114
+				pause 0x22
+				showpokepic 0x3AD 0x15 0x6
+				msgbox Passo_Tuono_1_124_text28 MSG_NORMAL	
+				special 0x15A					
+				pause 0x1E
+				compare 0x5026 0x0
+				if 0x1 _call Player_Blue
+				compare 0x5026 0x88
+				if 0x1 _call Player_Orange
+				compare 0x5026 0x85
+				if 0x1 _call Player_Green					
+				msgbox Passo_Tuono_1_124_text29 MSG_NORMAL	
+				special 0x15A	
+				pause 0x2E	
+				showpokepic 0x3AD 0x15 0x6
+				msgbox Passo_Tuono_1_124_text30 MSG_NORMAL	
+				special 0x15A	
+				pause 0x2E
+				applymovement 0x7 Passo_Tuono_1_124_mov25
+				waitmovement 0x7
+				pause 0x1E
+				applymovement 0x8 Passo_Tuono_1_124_mov26
+				applymovement 0x9 Passo_Tuono_1_124_mov27
+				applymovement 0xA Passo_Tuono_1_124_mov28
+				waitmovement 0x8
+				pause 0x1E
+				spriteface 0xFF 0x3
+				pause 0x1E
+				setvar 0x4051 0x45
+				compare 0x4051 0x45
+				if 0x1 _goto Passo_Tuono_1_124_MapScriptOnFrameBegin_P4
+				releaseall
+				end
+
+			Passo_Tuono_1_124_MapScriptOnFrameBegin_P4:	 
+				trainerbattle0 0x0 0x42 0x0 Passo_Tuono_1_124_text31 Passo_Tuono_1_124_text32
+				pause 0x1E
+				
+
+
+				spriteface 0xFF 0x1
+				pause 0x1E
+				setvar 0x4051 0x46
+				compare 0x4051 0x46
+				if 0x1 _goto Passo_Tuono_1_124_MapScriptOnFrameBegin_P5
+				releaseall
+				end
+
+			Passo_Tuono_1_124_MapScriptOnFrameBegin_P5:	 
+				trainerbattle0 0x0 0x43 0x0 Passo_Tuono_1_124_text34 Passo_Tuono_1_124_text35
+				pause 0x23
+
+
+
+				spriteface 0xFF 0x4
+				pause 0x1E
+				setvar 0x4051 0x47
+				compare 0x4051 0x47
+				if 0x1 _goto Passo_Tuono_1_124_MapScriptOnFrameBegin_P6
+				releaseall
+				end
+
+			Passo_Tuono_1_124_MapScriptOnFrameBegin_P6:	 
+				trainerbattle0 0x0 0x44 0x0 Passo_Tuono_1_124_text36 Passo_Tuono_1_124_text37
+				pause 0x23				
+				
+				//turn towards raito
+				spriteface 0xFF 0x2
+				
+				pause 0x1E
+				showpokepic 0x3BA 0x15 0x6
+				msgbox Passo_Tuono_1_124_text33 MSG_NORMAL	
+				special 0x15A					
+				//heal party
+				pause 0x1E
+				fadescreen 0x1
+				fanfare 0x0100
+				waitfanfare
+				special 0x0 
+				fadescreen 0x0
+				pause 0x22
+				showpokepic 0x3BA 0x15 0x6
+				msgbox Passo_Tuono_1_124_text38 MSG_NORMAL	
+				special 0x15A	
+				pause 0x23
+				spriteface 0xFF 0x1
+				pause 0x1E
+				//move reclute & vesper up 
+				//still to be done 
+
+				setvar 0x4051 0x48
+				compare 0x4051 0x48
+				if 0x1 _goto Passo_Tuono_1_124_MapScriptOnFrameBegin_P7
+				releaseall
+				end
+
+			Passo_Tuono_1_124_MapScriptOnFrameBegin_P7:
+
+				//discorsi Vesper
+				pause 0x1E
+				showpokepic 0x3AD 0x15 0x6
+				msgbox Passo_Tuono_1_124_text39 MSG_NORMAL	
+				special 0x15A	
+				pause 0x1E
+				trainerbattle0 0x0 0x45 0x0 Passo_Tuono_1_124_text40 Passo_Tuono_1_124_text41
+				movesprite 0x8 0x4 0x7
+				spriteface 0x8 0x4
+				movesprite 0xA 0x8 0x7
+				spriteface 0x8 0x3
+				pause 0x23	
+				showpokepic 0x3AD 0x15 0x6
+				msgbox Passo_Tuono_1_124_text42 MSG_NORMAL	
+				special 0x15A	
+				pause 0x1E
+				applymovement 0xA Passo_Tuono_1_124_mov29
+				waitmovement 0xA
+				spriteface 0x7 0x4
+				pause 0x1E
+				movesprite 0x3 0x7 0xA
+				pause 0x1E
+				spriteface 0x7 0x2
+				spriteface 0xA 0x2
+				spriteface 0x8 0x1
+				pause 0x25
+				applymovement 0xFF Passo_Tuono_1_124_mov14
+				applymovement 0x5 Passo_Tuono_1_124_mov14
+				waitmovement 0xFF
+				pause 0x1E
+				showpokepic 0x3BA 0x0 0x6
+				msgbox Passo_Tuono_1_124_text43 MSG_NORMAL	
+				special 0x15A	
+				pause 0x1E				
+				showpokepic 0x3AD 0x15 0x6
+				msgbox Passo_Tuono_1_124_text44 MSG_NORMAL	
+				special 0x15A					
+				pause 0x1E
+				spriteface 0x7 0x1
+				pause 0x1E				
+				showpokepic 0x3AD 0x15 0x6
+				msgbox Passo_Tuono_1_124_text45 MSG_NORMAL	
+				special 0x15A		
+				pause 0x1E
+				fadescreen 0x1
+				hidesprite 0x7
+				hidesprite 0x8
+				hidesprite 0x9
+				hidesprite 0xA
+				sound 0x9
+				fadedefault
+				fadescreen 0x0
+				pause 0x1E
+				applymovement 0x5 Passo_Tuono_1_124_mov30
+				waitmovement 0x5
+				spriteface 0xFF 0x3
+				playsong 0x189
+				pause 0x1E
+				showpokepic 0x3BA 0x15 0x6
+				msgbox Passo_Tuono_1_124_text46 MSG_NORMAL	
+				special 0x15A		
+				pause 0x1E				
+
+				//arrived till here
+
+
+
+
+
+				//(Arrivano Crispy e un agente di polizia.)
+
+				//CRISPY:
+				//PLAYER! Ehi! Come sei arrivato qui così in fretta?!
+				//Aspetta… non dirmi che hai risolto tu l’enigma!
+
+				//AGENTE:
+				//Il luogo sembra sicuro, ma… qualcuno mi spiega cosa diavolo è successo qui dentro?
+
+				//RAITO:
+				//Non molto tempo fa il Team Dusk ha fatto irruzione nel tempio.
+				//Sono riusciti a rubare la Fiamma Gialla, una reliquia antica di Eyros.
+
+//				AGENTE:
+//				Il Team Dusk, eh…
+//				Non sentivo quel nome da anni.
+//				Sembravano scomparsi, e ora spuntano dal nulla come un temporale!
+//
+//				CRISPY:
+//				Una Fiamma Gialla, dici? Perché mai rubare una cosa del genere?
+
+//				RAITO:
+//				Perché non è una semplice fiamma.
+//				È uno dei tre frammenti del potere che un tempo risvegliò il leggendario guardiano di Eyros… Ho-oh.
+
+//				CRISPY:
+//				Aspetta, quindi le incisioni di Filiberto avevano ragione…
+//				E tu, Raito, come puoi sapere tutto questo?
+
+//				RAITO:
+//				Perché… io sono il guardiano di questo tempio.
+
+//				CRISPY:
+//				Il guardiano…? Ma allora chi sei davvero?
+
+//				RAITO:
+//				Le spiegazioni dovranno attendere.
+//				Questo luogo non è più sicuro.
+//				Raggiungetemi a Roccavento: lì vi racconterò tutto.
+
+//				RAITO:
+//				Conto su di voi. Proteggere il tempo, ora, è nelle vostre mani.
+
+//				(Raito svanisce tra una luce gialla e scosse elettriche leggere.)
+
+//				CRISPY:
+//				Che tipo strano…
+//				E poi quella storia del “prescelto”…
+
+//				(Guarda il protagonista e sorride.)
+
+//				CRISPY:
+//				Beh, l’unico modo per capirci qualcosa è andare a Roccavento, no?
+//				Preparati: ci andremo in volo con il mio Flygon, dal terrazzo panoramico di Radiantia!
+
+//				CRISPY:
+//				Quando sei pronto, raggiungimi lì.
+//				Da adesso in poi… tutto si farà più serio.
+
+				Passo_Tuono_1_124_mov9:
+					.byte 0x11
+					.byte 0x11
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov10:
+					.byte 0x11
+					.byte 0x11
+					.byte 0x11
+					.byte 0x11
+					.byte 0x11
+					.byte 0x11
+					.byte 0x1C
+					.byte 0x2 
+					.byte 0x1A
+					.byte 0x62
+					.byte 0x1C
+					.byte 0x3 
+					.byte 0x1B
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov11:
+					.byte 0x0 
+					.byte 0x1C
+					.byte 0x62
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov12:
+					.byte 0x1
+					.byte 0x1C
+					.byte 0x62
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov13:
+					.byte 0x11
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov14:
+					.byte 0x62
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov15:
+					.byte 0x1C
+					.byte 0x2 
+					.byte 0x1C
+					.byte 0x1A
+					.byte 0x3 
+					.byte 0x1C
+					.byte 0x1A
+					.byte 0x0 
+					.byte 0x1C
+					.byte 0x63
+					.byte 0x1C
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov16:
+					.byte 0x10
+					.byte 0x10
+					.byte 0x10
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov17:
+					.byte 0x11
+					.byte 0x11
+					.byte 0x11
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov18:
+					.byte 0x10
+					.byte 0x12
+					.byte 0x12
+					.byte 0x10
+					.byte 0x10
+					.byte 0x10
+					.byte 0x13
+					.byte 0x13
+					.byte 0x1 
+					.byte 0x1C
+					.byte 0x63
+					.byte 0x1A
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov19:
+					.byte 0x4E
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov20:
+					.byte 0x1D
+					.byte 0x1 
+					.byte 0x62
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov21:
+					.byte 0x11
+					.byte 0x11
+					.byte 0x11
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov22:
+					.byte 0x11
+					.byte 0x11
+					.byte 0x12
+					.byte 0x1 
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov23:
+					.byte 0x11
+					.byte 0x11
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov24:
+					.byte 0x11
+					.byte 0x13
+					.byte 0x11
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov25:
+					.byte 0xC 
+					.byte 0x1 
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov26:
+					.byte 0x1E
+					.byte 0x1E
+					.byte 0x20
+					.byte 0x1 
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov27:
+					.byte 0x1F
+					.byte 0x1E
+					.byte 0x1E
+					.byte 0x1E
+					.byte 0x3 
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov28:
+					.byte 0x1E
+					.byte 0x1E
+					.byte 0x1E
+					.byte 0x2 
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov29:
+					.byte 0x10
+					.byte 0x10
+					.byte 0x10
+					.byte 0x2 
+					.byte 0x1C
+					.byte 0xFE
+
+				Passo_Tuono_1_124_mov30:
+					.byte 0x12
+					.byte 0x10
+					.byte 0x3 
+					.byte 0xFE
+
+
+
+
+		Player_Blue:
+			showpokepic 0x3b6 0x0 0x6
+			return
+
+		Player_Orange:
+			showpokepic 0x3bE 0x0 0x6
+			return
+
+		Player_Green:
+			showpokepic 0x3bF 0x0 0x6
+			return
