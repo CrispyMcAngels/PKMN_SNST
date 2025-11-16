@@ -10,7 +10,6 @@
 //V3 = 4057
 //V4 = 4058
 
-
 //___LEVEL___
 
 .global gMapScripts_Passo_Tuono_1_131
@@ -19,7 +18,7 @@ gMapScripts_Passo_Tuono_1_131:
     .byte MAP_SCRIPT_TERMIN
 
 	Passo_Tuono_1_131_MapScriptOnFrame:
-		levelscript 0x4052, 6, Passo_Tuono_1_131_MapScriptOnFrameBegin
+		levelscript 0x4052, 7, Passo_Tuono_1_131_MapScriptOnFrameBegin
 		.hword MAP_SCRIPT_TERMIN
 
 		Passo_Tuono_1_131_MapScriptOnFrameBegin:
@@ -29,6 +28,16 @@ gMapScripts_Passo_Tuono_1_131:
 			end
 
 			Passo_Tuono_1_131_MapScriptOnFrameBegin_P1:
+				movesprite 0x3 0x4 0xF
+				movesprite 0x5 0x6 0xF	
+				movesprite 0x7 0x8 0xF	
+				movesprite 0x9 0xA 0xF		
+
+
+
+				special 0x113
+				applymovement 0xFF Passo_Tuono_1_131_mov0
+				waitmovement 0xFF
 				pause 0x1E
 				compare 0x5026 0x0
 				if 0x1 _call Player_Blue
@@ -42,519 +51,778 @@ gMapScripts_Passo_Tuono_1_131:
 				//H
 				setvar 0x4054 0x0
 				//V1
-				setvar 0x4055 0x1
+				setvar 0x4055 0x0
 				//V2
-				setvar 0x4056 0x1
+				setvar 0x4056 0x0
 				//V3
-				setvar 0x4057 0x1
+				setvar 0x4057 0x0
 				//V4
-				setvar 0x4058 0x1
-
-				compare 0x4051 0x43
-				if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_H0
+				setvar 0x4058 0x0
+				//block level
+				setvar 0x4052 0x8
 				releaseall
 				end
 
-				Passo_Tuono_1_131_MapScriptOnFrameBegin_STOP:
-					//TROVARE SUONO
-					sound 0xD
-					compare 0x4054 0x0
-					if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_H0
-					compare 0x4054 0x1
-					if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_H1
-					compare 0x4054 0x2
-					if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_H2
-					compare 0x4054 0x3
-					if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_H3
-					releaseall
-					end
+				Passo_Tuono_1_131_mov0:
+					.byte 0x20
+					.byte 0x20
+					.byte 0x20
+					.byte 0x20
+					.byte 0x20
+					.byte 0x20
+					.byte 0x20
+					.byte 0x20
+					.byte 0x20
+					.byte 0xFE
 
-//____SOL_____
+//_____TILE_0____
 
-Passo_Tuono_1_131_SOL_1:
-	compare 0x4056 0x0
-	if 0x1 _call Passo_Tuono_1_131_SOL_2
-	return
+.global EventScript_Passo_Tuono_1_131_tile0_00
+EventScript_Passo_Tuono_1_131_tile0_00:
+	lockall
+	//check orizzontale se cambio colonna (se si, variabile verticale non cambia, la posizione viene aggiustata per essere riportati sulla rispettiva V)
+	compare 0x4054 0x0
+	if 0x1 _goto Passo_Tuono_1_131_tile0_move00
 
-	Passo_Tuono_1_131_SOL_2:
-		compare 0x4057 0x4
-		if 0x1 _call Passo_Tuono_1_131_SOL_3
-		return
-
-		Passo_Tuono_1_131_SOL_3:
-			compare 0x4058 0x1
-			if 0x1 _call Passo_Tuono_1_131_SOLVED
-			return
-
-Passo_Tuono_1_131_SOLVED:
-	pause 0x2E
-	compare 0x5026 0x0
-	if 0x1 _call Player_Blue
-	compare 0x5026 0x88
-	if 0x1 _call Player_Orange
-	compare 0x5026 0x85
-	if 0x1 _call Player_Green					
-	msgbox Passo_Tuono_1_131_text2 MSG_NORMAL	
-	special 0x15A
-	setvar 0x4051 0x44
-	pause 0x1E
-	fadescreen 0x3
-	//put correct OW sprite
-	compare 0x5026 0x0
-	if 0x1 _goto OW_Player_Blue
-	compare 0x5026 0x88
-	if 0x1 _goto OW_Player_Orange
-	compare 0x5026 0x85
-	if 0x1 _goto OW_Player_Green	
-	warpmuted 0x1 0x7C 0xFF 0x6 0x4
+	movesprite 0x1 0x4 0x9
+	
+	//check per capire dove posizionarsi verticalmente (il valore V1/V2/V3/V4)
+	setvar 0x4054 0x0
+	compare 0x4055 0x0
+	if 0x1 _call Passo_Tuono_1_131_M0
+	compare 0x4055 0x1
+	if 0x1 _call Passo_Tuono_1_131_U1
+	compare 0x4055 0x2
+	if 0x1 _call Passo_Tuono_1_131_U2
+	compare 0x4055 0x3
+	if 0x1 _call Passo_Tuono_1_131_U3
 	releaseall
 	end
 
+	Passo_Tuono_1_131_M0:
+		return
+
+	Passo_Tuono_1_131_U1:
+		applymovement 0xFF Passo_Tuono_1_131_U1_mov
+		waitmovement 0x0
+		return
+
+		Passo_Tuono_1_131_U1_mov:
+			.byte 0x1E
+			.byte 0xFE
+
+	Passo_Tuono_1_131_U2:
+		applymovement 0xFF Passo_Tuono_1_131_U2_mov
+		waitmovement 0x0
+		return
+
+		Passo_Tuono_1_131_U2_mov:
+			.byte 0x1E
+			.byte 0x1E
+			.byte 0xFE
+
+	Passo_Tuono_1_131_U3:
+		applymovement 0xFF Passo_Tuono_1_131_U3_mov
+		waitmovement 0x0
+		return
+
+		Passo_Tuono_1_131_U3_mov:
+			.byte 0x1E
+			.byte 0x1E
+			.byte 0x1E
+			.byte 0xFE
+
+	Passo_Tuono_1_131_D1:
+		applymovement 0xFF Passo_Tuono_1_131_D1_mov
+		waitmovement 0x0
+		return
+
+		Passo_Tuono_1_131_D1_mov:
+			.byte 0x1D
+			.byte 0xFE
+
+	Passo_Tuono_1_131_D2:
+		applymovement 0xFF Passo_Tuono_1_131_D2_mov
+		waitmovement 0x0
+		return
+
+		Passo_Tuono_1_131_D2_mov:
+			.byte 0x1D
+			.byte 0x1D
+			.byte 0xFE
+
+	Passo_Tuono_1_131_D3:
+		applymovement 0xFF Passo_Tuono_1_131_D3_mov
+		waitmovement 0x0
+		return
+
+		Passo_Tuono_1_131_D3_mov:
+			.byte 0x1D
+			.byte 0x1D
+			.byte 0x1D
+			.byte 0xFE
+
+	Passo_Tuono_1_131_tile0_move00:
+		compare 0x4055 0x1
+		if 0x1 _call Passo_Tuono_1_131_tile0_move_D
+		setvar 0x4055 0x0
+		compare 0x4055 0x2
+		if 0x1 _goto Passo_Tuono_1_131_SOL_1
+		releaseall
+		end
+
+		Passo_Tuono_1_131_tile0_move_D:
+			applymovement 0x2 Passo_Tuono_1_131_movD
+			applymovement 0x3 Passo_Tuono_1_131_movD
+			waitmovement 0x2
+			sound 0xC
+			return
+
+			Passo_Tuono_1_131_movD:
+				.byte 0x10
+				.byte 0x10
+				.byte 0xFE
+
+		Passo_Tuono_1_131_tile0_move_U:
+			applymovement 0x2 Passo_Tuono_1_131_movU
+			applymovement 0x3 Passo_Tuono_1_131_movU
+			waitmovement 0x2
+			sound 0xC
+			return
+
+			Passo_Tuono_1_131_movU:
+				.byte 0x11
+				.byte 0x11
+				.byte 0xFE
 
 
-//________________________H0_____________________________
+		Passo_Tuono_1_131_tile1_move_D:
+			applymovement 0x4 Passo_Tuono_1_131_movD
+			applymovement 0x5 Passo_Tuono_1_131_movD
+			waitmovement 0x4
+			sound 0xC
+			return
 
-				Passo_Tuono_1_131_MapScriptOnFrameBegin_H0:
-					movesprite 0x14 0x4 0x5
-					setvar 0x4054 0x0
-					msgbox Passo_Tuono_1_131_textH0 MSG_NORMAL	
-					//special2 0x800D 0x2C
-					
-					special 0x2F		
-					//check if UP is pressed
-					//compare 0x800D 0x1
-					compare 0x800D 0x40
-					if 0x1 _call Passo_Tuono_1_131_MapScriptOnFrameBegin_H0_UP
-					//check if DOWN is pressed
-					//compare 0x800D 0x3
-					compare 0x800D 0x80
-					if 0x1 _call Passo_Tuono_1_131_MapScriptOnFrameBegin_H0_DOWN
-					//check if RIGHT is pressed
-					//compare 0x800D 0x4
-					compare 0x800D 0x10
-					if 0x1 _call Passo_Tuono_1_131_MapScriptOnFrameBegin_H1	
-					//check if LEFT is pressed
-					//compare 0x800D 0x2
-					compare 0x800D 0x20
-					if 0x1 _call Passo_Tuono_1_131_MapScriptOnFrameBegin_STOP
-					
-
-					//calling the solution check
-					compare 0x4055 0x3
-					if 0x1 _call Passo_Tuono_1_131_SOL_1
-					//loopback
-					setvar 0x800D 0x0
-					compare 0x4054 0x0
-					if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_H0
-					releaseall
-					end
-
-					Passo_Tuono_1_131_MapScriptOnFrameBegin_H0_UP:
-						compare 0x4055 0x4
-						if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_STOP
-						addvar 0x4055 0x1
-						//sound strenght 
-						sound 0xC
-						msgbox Passo_Tuono_1_131_textH0_UP MSG_NORMAL	
-						compare 0x4055 0x0
-						if 0x1 _call Passo_Tuono_1_131_V1_0
-						compare 0x4055 0x1
-						if 0x1 _call Passo_Tuono_1_131_V1_1
-						compare 0x4055 0x2
-						if 0x1 _call Passo_Tuono_1_131_V1_2
-						compare 0x4055 0x3
-						if 0x1 _call Passo_Tuono_1_131_V1_3
-						compare 0x4055 0x4
-						if 0x1 _call Passo_Tuono_1_131_V1_4
-						return
-
-					Passo_Tuono_1_131_MapScriptOnFrameBegin_H0_DOWN:
-						compare 0x4055 0x0
-						if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_STOP
-						subvar 0x4055 0x1
-						//sound strenght 
-						sound 0xC
-						msgbox Passo_Tuono_1_131_textH0_DOWN MSG_NORMAL	
-						compare 0x4055 0x0
-						if 0x1 _call Passo_Tuono_1_131_V1_0
-						compare 0x4055 0x1
-						if 0x1 _call Passo_Tuono_1_131_V1_1
-						compare 0x4055 0x2
-						if 0x1 _call Passo_Tuono_1_131_V1_2
-						compare 0x4055 0x3
-						if 0x1 _call Passo_Tuono_1_131_V1_3
-						compare 0x4055 0x4
-						if 0x1 _call Passo_Tuono_1_131_V1_4
-						return
+		Passo_Tuono_1_131_tile1_move_U:
+			applymovement 0x4 Passo_Tuono_1_131_movU
+			applymovement 0x5 Passo_Tuono_1_131_movU
+			waitmovement 0x4
+			sound 0xC
+			return
 
 
-						Passo_Tuono_1_131_V1_0:
-							movesprite 0x0 0x4 0x5
-							movesprite 0x1 0x4 0x3
-							movesprite 0x2 0x4 0x3
-							movesprite 0x3 0x4 0x3
-							movesprite 0x4 0x4 0x3
-							return
+		Passo_Tuono_1_131_tile2_move_D:
+			applymovement 0x6 Passo_Tuono_1_131_movD
+			applymovement 0x7 Passo_Tuono_1_131_movD
+			waitmovement 0x6
+			sound 0xC
+			return
 
-						Passo_Tuono_1_131_V1_1:
-							movesprite 0x0 0x4 0x3
-							movesprite 0x1 0x4 0x5
-							movesprite 0x2 0x4 0x3
-							movesprite 0x3 0x4 0x3
-							movesprite 0x4 0x4 0x3
-							return
-
-						Passo_Tuono_1_131_V1_2:
-							movesprite 0x0 0x4 0x3
-							movesprite 0x1 0x4 0x3
-							movesprite 0x2 0x4 0x5
-							movesprite 0x3 0x4 0x3
-							movesprite 0x4 0x4 0x3
-							return
-
-						Passo_Tuono_1_131_V1_3:
-							movesprite 0x0 0x4 0x3
-							movesprite 0x1 0x4 0x3
-							movesprite 0x2 0x4 0x3
-							movesprite 0x3 0x4 0x5
-							movesprite 0x4 0x4 0x3
-							return
-
-						Passo_Tuono_1_131_V1_4:
-							movesprite 0x0 0x4 0x3
-							movesprite 0x1 0x4 0x3
-							movesprite 0x2 0x4 0x3
-							movesprite 0x3 0x4 0x3
-							movesprite 0x4 0x4 0x5
-							return
-
-//________________________H1______________________________
-
-				Passo_Tuono_1_131_MapScriptOnFrameBegin_H1:
-					movesprite 0x14 0x6 0x5
-					setvar 0x4054 0x1
-					special2 0x800D 0x2C
-					msgbox Passo_Tuono_1_131_textH1 MSG_NORMAL	
-					
-					//check if UP is pressed
-					compare 0x800D 0x1
-					if 0x1 _call Passo_Tuono_1_131_MapScriptOnFrameBegin_H1_UP
-					//check if DOWN is pressed
-					compare 0x800D 0x3
-					if 0x1 _call Passo_Tuono_1_131_MapScriptOnFrameBegin_H1_DOWN
-					//check if RIGHT is pressed
-					compare 0x800D 0x4
-					if 0x1 _call Passo_Tuono_1_131_MapScriptOnFrameBegin_H2	
-					//check if LEFT is pressed
-					compare 0x800D 0x2
-					if 0x1 _call Passo_Tuono_1_131_MapScriptOnFrameBegin_H0
-					//calling the solution check
-					compare 0x4055 0x3
-					if 0x1 _call Passo_Tuono_1_131_SOL_1
-					//loopback
-					setvar 0x800D 0x0
-					compare 0x4054 0x1
-					if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_H1
-					releaseall
-					end
-
-					Passo_Tuono_1_131_MapScriptOnFrameBegin_H1_UP:
-						compare 0x4056 0x4
-						if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_STOP
-						addvar 0x4056 0x1
-						//sound strenght 
-						sound 0xC
-						msgbox Passo_Tuono_1_131_textH1_UP MSG_NORMAL	
-						compare 0x4056 0x0
-						if 0x1 _call Passo_Tuono_1_131_V2_0
-						compare 0x4056 0x1
-						if 0x1 _call Passo_Tuono_1_131_V2_1
-						compare 0x4056 0x2
-						if 0x1 _call Passo_Tuono_1_131_V2_2
-						compare 0x4056 0x3
-						if 0x1 _call Passo_Tuono_1_131_V2_3
-						compare 0x4056 0x4
-						if 0x1 _call Passo_Tuono_1_131_V2_4
-						return
-
-					Passo_Tuono_1_131_MapScriptOnFrameBegin_H1_DOWN:
-						compare 0x4056 0x0
-						if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_STOP
-						subvar 0x4056 0x1
-						//sound strenght 
-						sound 0xC
-						msgbox Passo_Tuono_1_131_textH1_DOWN MSG_NORMAL	
-						compare 0x4056 0x0
-						if 0x1 _call Passo_Tuono_1_131_V2_0
-						compare 0x4056 0x1
-						if 0x1 _call Passo_Tuono_1_131_V2_1
-						compare 0x4056 0x2
-						if 0x1 _call Passo_Tuono_1_131_V2_2
-						compare 0x4056 0x3
-						if 0x1 _call Passo_Tuono_1_131_V2_3
-						compare 0x4056 0x4
-						if 0x1 _call Passo_Tuono_1_131_V2_4
-						return
+		Passo_Tuono_1_131_tile2_move_U:
+			applymovement 0x6 Passo_Tuono_1_131_movU
+			applymovement 0x7 Passo_Tuono_1_131_movU
+			waitmovement 0x6
+			sound 0xC
+			return
 
 
-						Passo_Tuono_1_131_V2_0:
-							movesprite 0x5 0x6 0x5
-							movesprite 0x6 0x6 0x3
-							movesprite 0x7 0x6 0x3
-							movesprite 0x8 0x6 0x3
-							movesprite 0x9 0x6 0x3
-							return
+		Passo_Tuono_1_131_tile3_move_D:
+			applymovement 0x8 Passo_Tuono_1_131_movD
+			applymovement 0x9 Passo_Tuono_1_131_movD
+			waitmovement 0x8
+			sound 0xC
+			return
 
-						Passo_Tuono_1_131_V2_1:
-							movesprite 0x5 0x6 0x3
-							movesprite 0x6 0x6 0x5
-							movesprite 0x7 0x6 0x3
-							movesprite 0x8 0x6 0x3
-							movesprite 0x9 0x6 0x3
-							return
-
-						Passo_Tuono_1_131_V2_2:
-							movesprite 0x5 0x6 0x3
-							movesprite 0x6 0x6 0x3
-							movesprite 0x7 0x6 0x5
-							movesprite 0x8 0x6 0x3
-							movesprite 0x9 0x6 0x3
-							return
-
-						Passo_Tuono_1_131_V2_3:
-							movesprite 0x5 0x6 0x3
-							movesprite 0x6 0x6 0x3
-							movesprite 0x7 0x6 0x3
-							movesprite 0x8 0x6 0x5
-							movesprite 0x9 0x6 0x3
-							return
-
-						Passo_Tuono_1_131_V2_4:
-							movesprite 0x5 0x6 0x3
-							movesprite 0x6 0x6 0x3
-							movesprite 0x7 0x6 0x3
-							movesprite 0x8 0x6 0x3
-							movesprite 0x9 0x6 0x5
-							return
-
-//________________________H2______________________________
-
-				Passo_Tuono_1_131_MapScriptOnFrameBegin_H2:
-					movesprite 0x14 0x8 0x5
-					setvar 0x4054 0x2
-					msgbox Passo_Tuono_1_131_textH2 MSG_NORMAL	
-					special2 0x800D 0x2C
-					
-					//check if UP is pressed
-					compare 0x800D 0x1
-					if 0x1 _call Passo_Tuono_1_131_MapScriptOnFrameBegin_H2_UP
-					//check if DOWN is pressed
-					compare 0x800D 0x3
-					if 0x1 _call Passo_Tuono_1_131_MapScriptOnFrameBegin_H2_DOWN
-					//check if RIGHT is pressed
-					compare 0x800D 0x4
-					if 0x1 _call Passo_Tuono_1_131_MapScriptOnFrameBegin_H3	
-					//check if LEFT is pressed
-					compare 0x800D 0x2
-					if 0x1 _call Passo_Tuono_1_131_MapScriptOnFrameBegin_H1
-					//calling the solution check
-					compare 0x4055 0x3
-					if 0x1 _call Passo_Tuono_1_131_SOL_1
-					//loopback
-					setvar 0x800D 0x0
-					compare 0x4054 0x1
-					if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_H2
-					releaseall
-					end
-
-					Passo_Tuono_1_131_MapScriptOnFrameBegin_H2_UP:
-						compare 0x4057 0x4
-						if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_STOP
-						addvar 0x4057 0x1
-						//sound strenght 
-						sound 0xC
-						msgbox Passo_Tuono_1_131_textH2_UP MSG_NORMAL	
-						compare 0x4057 0x0
-						if 0x1 _call Passo_Tuono_1_131_V3_0
-						compare 0x4057 0x1
-						if 0x1 _call Passo_Tuono_1_131_V3_1
-						compare 0x4057 0x2
-						if 0x1 _call Passo_Tuono_1_131_V3_2
-						compare 0x4057 0x3
-						if 0x1 _call Passo_Tuono_1_131_V3_3
-						compare 0x4057 0x4
-						if 0x1 _call Passo_Tuono_1_131_V3_4
-						return
-
-					Passo_Tuono_1_131_MapScriptOnFrameBegin_H2_DOWN:
-						compare 0x4057 0x0
-						if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_STOP
-						subvar 0x4057 0x1
-						//sound strenght 
-						sound 0xC
-						msgbox Passo_Tuono_1_131_textH2_DOWN MSG_NORMAL	
-						compare 0x4057 0x0
-						if 0x1 _call Passo_Tuono_1_131_V3_0
-						compare 0x4057 0x1
-						if 0x1 _call Passo_Tuono_1_131_V3_1
-						compare 0x4057 0x2
-						if 0x1 _call Passo_Tuono_1_131_V3_2
-						compare 0x4057 0x3
-						if 0x1 _call Passo_Tuono_1_131_V3_3
-						compare 0x4057 0x4
-						if 0x1 _call Passo_Tuono_1_131_V3_4
-						return
+		Passo_Tuono_1_131_tile3_move_U:
+			applymovement 0x8 Passo_Tuono_1_131_movU
+			applymovement 0x9 Passo_Tuono_1_131_movU
+			waitmovement 0x8
+			sound 0xC
+			return
 
 
-						Passo_Tuono_1_131_V3_0:
-							movesprite 0xA 0x8 0x5
-							movesprite 0xB 0x8 0x3
-							movesprite 0xC 0x8 0x3
-							movesprite 0xD 0x8 0x3
-							movesprite 0xE 0x8 0x3
-							return
+//_____TILE_1____
 
-						Passo_Tuono_1_131_V3_1:
-							movesprite 0xA 0x8 0x3
-							movesprite 0xB 0x8 0x5
-							movesprite 0xC 0x8 0x3
-							movesprite 0xD 0x8 0x3
-							movesprite 0xE 0x8 0x3
-							return
+.global EventScript_Passo_Tuono_1_131_tile0_01
+EventScript_Passo_Tuono_1_131_tile0_01:
+	lockall
+	//check orizzontale se cambio colonna (se si, variabile verticale non cambia, la posizione viene aggiustata per essere riportati sulla rispettiva V)
+	compare 0x4054 0x0
+	if 0x1 _goto Passo_Tuono_1_131_tile0_move01
 
-						Passo_Tuono_1_131_V3_2:
-							movesprite 0xA 0x8 0x3
-							movesprite 0xB 0x8 0x3
-							movesprite 0xC 0x8 0x5
-							movesprite 0xD 0x8 0x3
-							movesprite 0xE 0x8 0x3
-							return
+	movesprite 0x1 0x4 0x9
+	
+	//check per capire dove posizionarsi verticalmente (il valore V1/V2/V3/V4)
+	setvar 0x4054 0x0
+	compare 0x4055 0x1
+	if 0x1 _call Passo_Tuono_1_131_D1
+	compare 0x4055 0x1
+	if 0x1 _call Passo_Tuono_1_131_M0
+	compare 0x4055 0x2
+	if 0x1 _call Passo_Tuono_1_131_U1
+	compare 0x4055 0x3
+	if 0x1 _call Passo_Tuono_1_131_U2
+	releaseall
+	end
 
-						Passo_Tuono_1_131_V3_3:
-							movesprite 0xA 0x8 0x3
-							movesprite 0xB 0x8 0x3
-							movesprite 0xC 0x8 0x3
-							movesprite 0xD 0x8 0x5
-							movesprite 0xE 0x8 0x3
-							return
-
-						Passo_Tuono_1_131_V3_4:
-							movesprite 0xA 0x8 0x3
-							movesprite 0xB 0x8 0x3
-							movesprite 0xC 0x8 0x3
-							movesprite 0xD 0x8 0x3
-							movesprite 0xE 0x8 0x5
-							return				
-		
-//________________________H3______________________________
-
-				Passo_Tuono_1_131_MapScriptOnFrameBegin_H3:
-					movesprite 0x14 0xA 0x5
-					setvar 0x4054 0x3
-					msgbox Passo_Tuono_1_131_textH3 MSG_NORMAL	
-					
-					special2 0x800D 0x2C
-					//check if UP is pressed
-					compare 0x800D 0x1
-					if 0x1 _call Passo_Tuono_1_131_MapScriptOnFrameBegin_H3_UP
-					//check if DOWN is pressed
-					compare 0x800D 0x3
-					if 0x1 _call Passo_Tuono_1_131_MapScriptOnFrameBegin_H3_DOWN
-					//check if RIGHT is pressed
-					compare 0x800D 0x4
-					if 0x1 _call Passo_Tuono_1_131_MapScriptOnFrameBegin_STOP	
-					//check if LEFT is pressed
-					compare 0x800D 0x2
-					if 0x1 _call Passo_Tuono_1_131_MapScriptOnFrameBegin_H2
-					//calling the solution check
-					compare 0x4055 0x3
-					if 0x1 _call Passo_Tuono_1_131_SOL_1
-					//loopback
-					setvar 0x800D 0x0
-					compare 0x4054 0x3
-					if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_H3
-					releaseall
-					end
-
-					Passo_Tuono_1_131_MapScriptOnFrameBegin_H3_UP:
-						compare 0x4058 0x4
-						if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_STOP
-						addvar 0x4058 0x1
-						//sound strenght 
-						sound 0xC
-						msgbox Passo_Tuono_1_131_textH3_UP MSG_NORMAL	
-						compare 0x4058 0x0
-						if 0x1 _call Passo_Tuono_1_131_V4_0
-						compare 0x4058 0x1
-						if 0x1 _call Passo_Tuono_1_131_V4_1
-						compare 0x4058 0x2
-						if 0x1 _call Passo_Tuono_1_131_V4_2
-						compare 0x4058 0x3
-						if 0x1 _call Passo_Tuono_1_131_V4_3
-						compare 0x4058 0x4
-						if 0x1 _call Passo_Tuono_1_131_V4_4
-						return
-
-					Passo_Tuono_1_131_MapScriptOnFrameBegin_H3_DOWN:
-						compare 0x4058 0x0
-						if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_STOP
-						subvar 0x4058 0x1
-						//sound strenght 
-						sound 0xC
-						msgbox Passo_Tuono_1_131_textH3_DOWN MSG_NORMAL	
-						compare 0x4058 0x0
-						if 0x1 _call Passo_Tuono_1_131_V4_0
-						compare 0x4058 0x1
-						if 0x1 _call Passo_Tuono_1_131_V4_1
-						compare 0x4058 0x2
-						if 0x1 _call Passo_Tuono_1_131_V4_2
-						compare 0x4058 0x3
-						if 0x1 _call Passo_Tuono_1_131_V4_3
-						compare 0x4058 0x4
-						if 0x1 _call Passo_Tuono_1_131_V4_4
-						return
+	Passo_Tuono_1_131_tile0_move01:
+		compare 0x4055 0x2
+		if 0x1 _call Passo_Tuono_1_131_tile0_move_D
+		compare 0x4055 0x0
+		if 0x1 _call Passo_Tuono_1_131_tile0_move_U
+		setvar 0x4055 0x1
+		compare 0x4055 0x2
+		if 0x1 _goto Passo_Tuono_1_131_SOL_1
+		releaseall
+		end
 
 
-						Passo_Tuono_1_131_V4_0:
-							movesprite 0xF 0xA 0x5
-							movesprite 0x10 0xA 0x3
-							movesprite 0x11 0xA 0x3
-							movesprite 0x12 0xA 0x3
-							movesprite 0x13 0xA 0x3
-							return
+//_____TILE_2____
 
-						Passo_Tuono_1_131_V4_1:
-							movesprite 0xF 0xA 0x3
-							movesprite 0x10 0xA 0x5
-							movesprite 0x11 0xA 0x3
-							movesprite 0x12 0xA 0x3
-							movesprite 0x13 0xA 0x3
-							return
+.global EventScript_Passo_Tuono_1_131_tile0_02
+EventScript_Passo_Tuono_1_131_tile0_02:
+	lockall
+	//check orizzontale se cambio colonna (se si, variabile verticale non cambia, la posizione viene aggiustata per essere riportati sulla rispettiva V)
+	compare 0x4054 0x0
+	if 0x1 _goto Passo_Tuono_1_131_tile0_move02
 
-						Passo_Tuono_1_131_V4_2:
-							movesprite 0xF 0xA 0x3
-							movesprite 0x10 0xA 0x3
-							movesprite 0x11 0xA 0x5
-							movesprite 0x12 0xA 0x3
-							movesprite 0x13 0xA 0x3
-							return
+	movesprite 0x1 0x4 0x9
+	
+	//check per capire dove posizionarsi verticalmente (il valore V1/V2/V3/V4)
+	setvar 0x4054 0x0
+	compare 0x4055 0x0
+	if 0x1 _call Passo_Tuono_1_131_D2
+	compare 0x4055 0x1
+	if 0x1 _call Passo_Tuono_1_131_D1
+	compare 0x4055 0x2
+	if 0x1 _call Passo_Tuono_1_131_M0
+	compare 0x4055 0x3
+	if 0x1 _call Passo_Tuono_1_131_U1
+	releaseall
+	end
 
-						Passo_Tuono_1_131_V4_3:
-							movesprite 0xF 0xA 0x3
-							movesprite 0x10 0xA 0x3
-							movesprite 0x11 0xA 0x3
-							movesprite 0x12 0xA 0x5
-							movesprite 0x13 0xA 0x3
-							return
+	Passo_Tuono_1_131_tile0_move02:
+		compare 0x4055 0x3
+		if 0x1 _call Passo_Tuono_1_131_tile0_move_D
+		compare 0x4055 0x1
+		if 0x1 _call Passo_Tuono_1_131_tile0_move_U
+		setvar 0x4055 0x2
+		compare 0x4055 0x2
+		if 0x1 _goto Passo_Tuono_1_131_SOL_1
+		releaseall
+		end
 
-						Passo_Tuono_1_131_V4_4:
-							movesprite 0xF 0xA 0x3
-							movesprite 0x10 0xA 0x3
-							movesprite 0x11 0xA 0x3
-							movesprite 0x12 0xA 0x3
-							movesprite 0x13 0xA 0x5
-							return					
 
+//_____TILE_3____
+
+.global EventScript_Passo_Tuono_1_131_tile0_03
+EventScript_Passo_Tuono_1_131_tile0_03:
+	lockall
+	//check orizzontale se cambio colonna (se si, variabile verticale non cambia, la posizione viene aggiustata per essere riportati sulla rispettiva V)
+	compare 0x4054 0x0
+	if 0x1 _goto Passo_Tuono_1_131_tile0_move03
+
+	movesprite 0x1 0x4 0x9
+	
+	//check per capire dove posizionarsi verticalmente (il valore V1/V2/V3/V4)
+	setvar 0x4054 0x0
+	compare 0x4055 0x1
+	if 0x1 _call Passo_Tuono_1_131_D3
+	compare 0x4055 0x1
+	if 0x1 _call Passo_Tuono_1_131_D2
+	compare 0x4055 0x2
+	if 0x1 _call Passo_Tuono_1_131_D1
+	compare 0x4055 0x3
+	if 0x1 _call Passo_Tuono_1_131_M0
+	releaseall
+	end
+
+	Passo_Tuono_1_131_tile0_move03:
+		compare 0x4055 0x4
+		if 0x1 _call Passo_Tuono_1_131_tile0_move_D
+		compare 0x4055 0x2
+		if 0x1 _call Passo_Tuono_1_131_tile0_move_U
+		setvar 0x4055 0x3
+		compare 0x4055 0x2
+		if 0x1 _goto Passo_Tuono_1_131_SOL_1
+		releaseall
+		end
+
+
+//_____TILE_4____
+
+.global EventScript_Passo_Tuono_1_131_tile1_10
+EventScript_Passo_Tuono_1_131_tile1_10:
+	lockall
+	//check orizzontale se cambio colonna (se si, variabile verticale non cambia, la posizione viene aggiustata per essere riportati sulla rispettiva V)
+	compare 0x4054 0x1
+	if 0x1 _goto Passo_Tuono_1_131_tile1_move10
+
+	movesprite 0x1 0x6 0x9
+	
+	//check per capire dove posizionarsi verticalmente (il valore V1/V2/V3/V4)
+	setvar 0x4054 0x1
+	compare 0x4056 0x0
+	if 0x1 _call Passo_Tuono_1_131_M0
+	compare 0x4056 0x1
+	if 0x1 _call Passo_Tuono_1_131_U1
+	compare 0x4056 0x2
+	if 0x1 _call Passo_Tuono_1_131_U2
+	compare 0x4056 0x3
+	if 0x1 _call Passo_Tuono_1_131_U3
+	releaseall
+	end
+
+	Passo_Tuono_1_131_tile1_move10:
+		compare 0x4056 0x1
+		if 0x1 _call Passo_Tuono_1_131_tile1_move_D
+		setvar 0x4056 0x0
+		compare 0x4055 0x2
+		if 0x1 _goto Passo_Tuono_1_131_SOL_1
+		releaseall
+		end
+
+//_____TILE_5____
+
+.global EventScript_Passo_Tuono_1_131_tile1_11
+EventScript_Passo_Tuono_1_131_tile1_11:
+	lockall
+	//check orizzontale se cambio colonna (se si, variabile verticale non cambia, la posizione viene aggiustata per essere riportati sulla rispettiva V)
+	compare 0x4054 0x1
+	if 0x1 _goto Passo_Tuono_1_131_tile1_move11
+
+	movesprite 0x1 0x6 0x9
+	
+	//check per capire dove posizionarsi verticalmente (il valore V1/V2/V3/V4)
+	setvar 0x4054 0x1
+	compare 0x4056 0x0
+	if 0x1 _call Passo_Tuono_1_131_D1
+	compare 0x4056 0x1
+	if 0x1 _call Passo_Tuono_1_131_M0
+	compare 0x4056 0x2
+	if 0x1 _call Passo_Tuono_1_131_U1
+	compare 0x4056 0x3
+	if 0x1 _call Passo_Tuono_1_131_U2
+	releaseall
+	end
+
+	Passo_Tuono_1_131_tile1_move11:
+		compare 0x4056 0x2
+		if 0x1 _call Passo_Tuono_1_131_tile1_move_D
+		compare 0x4056 0x0
+		if 0x1 _call Passo_Tuono_1_131_tile1_move_U
+		setvar 0x4056 0x1
+		compare 0x4055 0x2
+		if 0x1 _goto Passo_Tuono_1_131_SOL_1
+		releaseall
+		end
+
+//_____TILE_6____
+
+.global EventScript_Passo_Tuono_1_131_tile1_12
+EventScript_Passo_Tuono_1_131_tile1_12:
+	lockall
+	//check orizzontale se cambio colonna (se si, variabile verticale non cambia, la posizione viene aggiustata per essere riportati sulla rispettiva V)
+	compare 0x4054 0x1
+	if 0x1 _goto Passo_Tuono_1_131_tile1_move12
+
+	movesprite 0x1 0x6 0x9
+	
+	//check per capire dove posizionarsi verticalmente (il valore V1/V2/V3/V4)
+	setvar 0x4054 0x1
+	compare 0x4056 0x0
+	if 0x1 _call Passo_Tuono_1_131_D2
+	compare 0x4056 0x1
+	if 0x1 _call Passo_Tuono_1_131_D1
+	compare 0x4056 0x2
+	if 0x1 _call Passo_Tuono_1_131_M0
+	compare 0x4056 0x3
+	if 0x1 _call Passo_Tuono_1_131_U1
+	releaseall
+	end
+
+	Passo_Tuono_1_131_tile1_move12:
+		compare 0x4056 0x3
+		if 0x1 _call Passo_Tuono_1_131_tile1_move_D
+		compare 0x4056 0x1
+		if 0x1 _call Passo_Tuono_1_131_tile1_move_U
+		setvar 0x4056 0x2
+		compare 0x4055 0x2
+		if 0x1 _goto Passo_Tuono_1_131_SOL_1
+		releaseall
+		end
+
+//_____TILE_7____
+
+.global EventScript_Passo_Tuono_1_131_tile1_13
+EventScript_Passo_Tuono_1_131_tile1_13:
+	lockall
+	//check orizzontale se cambio colonna (se si, variabile verticale non cambia, la posizione viene aggiustata per essere riportati sulla rispettiva V)
+	compare 0x4054 0x1
+	if 0x1 _goto Passo_Tuono_1_131_tile1_move13
+
+	movesprite 0x1 0x6 0x9
+	
+	//check per capire dove posizionarsi verticalmente (il valore V1/V2/V3/V4)
+	setvar 0x4054 0x1
+	compare 0x4056 0x0
+	if 0x1 _call Passo_Tuono_1_131_D3
+	compare 0x4056 0x1
+	if 0x1 _call Passo_Tuono_1_131_D2
+	compare 0x4056 0x2
+	if 0x1 _call Passo_Tuono_1_131_D1
+	compare 0x4056 0x3
+	if 0x1 _call Passo_Tuono_1_131_M0
+	releaseall
+	end
+
+	Passo_Tuono_1_131_tile1_move13:
+		compare 0x4056 0x4
+		if 0x1 _call Passo_Tuono_1_131_tile1_move_D
+		compare 0x4056 0x2
+		if 0x1 _call Passo_Tuono_1_131_tile1_move_U
+		setvar 0x4056 0x3
+		compare 0x4055 0x2
+		if 0x1 _goto Passo_Tuono_1_131_SOL_1
+		releaseall
+		end
+
+
+//_____TILE_8____
+
+.global EventScript_Passo_Tuono_1_131_tile2_20
+EventScript_Passo_Tuono_1_131_tile2_20:
+	lockall
+	//check orizzontale se cambio colonna (se si, variabile verticale non cambia, la posizione viene aggiustata per essere riportati sulla rispettiva V)
+	compare 0x4054 0x2
+	if 0x1 _goto Passo_Tuono_1_131_tile2_move20
+
+	movesprite 0x1 0x8 0x9
+	
+	//check per capire dove posizionarsi verticalmente (il valore V1/V2/V3/V4)
+	setvar 0x4054 0x2
+	compare 0x4057 0x0
+	if 0x1 _call Passo_Tuono_1_131_M0
+	compare 0x4057 0x1
+	if 0x1 _call Passo_Tuono_1_131_U1
+	compare 0x4057 0x2
+	if 0x1 _call Passo_Tuono_1_131_U2
+	compare 0x4057 0x3
+	if 0x1 _call Passo_Tuono_1_131_U3
+	releaseall
+	end
+
+	Passo_Tuono_1_131_tile2_move20:
+		compare 0x4057 0x1
+		if 0x1 _call Passo_Tuono_1_131_tile2_move_D
+		setvar 0x4057 0x0
+		compare 0x4055 0x2
+		if 0x1 _goto Passo_Tuono_1_131_SOL_1
+		releaseall
+		end
+
+//_____TILE_9____
+
+.global EventScript_Passo_Tuono_1_131_tile2_21
+EventScript_Passo_Tuono_1_131_tile2_21:
+	lockall
+	//check orizzontale se cambio colonna (se si, variabile verticale non cambia, la posizione viene aggiustata per essere riportati sulla rispettiva V)
+	compare 0x4054 0x2
+	if 0x1 _goto Passo_Tuono_1_131_tile2_move21
+
+	movesprite 0x1 0x8 0x9
+	
+	//check per capire dove posizionarsi verticalmente (il valore V1/V2/V3/V4)
+	setvar 0x4054 0x2
+	compare 0x4057 0x0
+	if 0x1 _call Passo_Tuono_1_131_D1
+	compare 0x4057 0x1
+	if 0x1 _call Passo_Tuono_1_131_M0
+	compare 0x4057 0x2
+	if 0x1 _call Passo_Tuono_1_131_U1
+	compare 0x4057 0x3
+	if 0x1 _call Passo_Tuono_1_131_U2
+	releaseall
+	end
+
+	Passo_Tuono_1_131_tile2_move21:
+		compare 0x4057 0x2
+		if 0x1 _call Passo_Tuono_1_131_tile2_move_D
+		compare 0x4057 0x0
+		if 0x1 _call Passo_Tuono_1_131_tile2_move_U
+		setvar 0x4057 0x1
+		compare 0x4055 0x2
+		if 0x1 _goto Passo_Tuono_1_131_SOL_1
+		releaseall
+		end
+
+//_____TILE_10____
+
+.global EventScript_Passo_Tuono_1_131_tile2_22
+EventScript_Passo_Tuono_1_131_tile2_22:
+	lockall
+	//check orizzontale se cambio colonna (se si, variabile verticale non cambia, la posizione viene aggiustata per essere riportati sulla rispettiva V)
+	compare 0x4054 0x2
+	if 0x1 _goto Passo_Tuono_1_131_tile2_move22
+
+	movesprite 0x1 0x8 0x9
+	
+	//check per capire dove posizionarsi verticalmente (il valore V1/V2/V3/V4)
+	setvar 0x4054 0x2
+	compare 0x4057 0x0
+	if 0x1 _call Passo_Tuono_1_131_D2
+	compare 0x4057 0x1
+	if 0x1 _call Passo_Tuono_1_131_D1
+	compare 0x4057 0x2
+	if 0x1 _call Passo_Tuono_1_131_M0
+	compare 0x4057 0x3
+	if 0x1 _call Passo_Tuono_1_131_U1
+	releaseall
+	end
+
+	Passo_Tuono_1_131_tile2_move22:
+		compare 0x4057 0x3
+		if 0x1 _call Passo_Tuono_1_131_tile2_move_D
+		compare 0x4057 0x1
+		if 0x1 _call Passo_Tuono_1_131_tile2_move_U
+		setvar 0x4057 0x2
+		compare 0x4055 0x2
+		if 0x1 _goto Passo_Tuono_1_131_SOL_1
+		releaseall
+		end
+
+//_____TILE_11____
+
+.global EventScript_Passo_Tuono_1_131_tile2_23
+EventScript_Passo_Tuono_1_131_tile2_23:
+	lockall
+	//check orizzontale se cambio colonna (se si, variabile verticale non cambia, la posizione viene aggiustata per essere riportati sulla rispettiva V)
+	compare 0x4054 0x2
+	if 0x1 _goto Passo_Tuono_1_131_tile2_move23
+
+	movesprite 0x1 0x8 0x9
+	
+	//check per capire dove posizionarsi verticalmente (il valore V1/V2/V3/V4)
+	setvar 0x4054 0x2
+	compare 0x4057 0x0
+	if 0x1 _call Passo_Tuono_1_131_D3
+	compare 0x4057 0x1
+	if 0x1 _call Passo_Tuono_1_131_D2
+	compare 0x4057 0x2
+	if 0x1 _call Passo_Tuono_1_131_D1
+	compare 0x4057 0x3
+	if 0x1 _call Passo_Tuono_1_131_M0
+	releaseall
+	end
+
+	Passo_Tuono_1_131_tile2_move23:
+		compare 0x4057 0x4
+		if 0x1 _call Passo_Tuono_1_131_tile2_move_D
+		compare 0x4057 0x2
+		if 0x1 _call Passo_Tuono_1_131_tile2_move_U
+		setvar 0x4057 0x3
+		compare 0x4055 0x2
+		if 0x1 _goto Passo_Tuono_1_131_SOL_1
+		releaseall
+		end
+
+
+
+//_____TILE_12____
+
+.global EventScript_Passo_Tuono_1_131_tile3_30
+EventScript_Passo_Tuono_1_131_tile3_30:
+	lockall
+	//check orizzontale se cambio colonna (se si, variabile verticale non cambia, la posizione viene aggiustata per essere riportati sulla rispettiva V)
+	compare 0x4054 0x3
+	if 0x1 _goto Passo_Tuono_1_131_tile3_move30
+
+	movesprite 0x1 0xA 0x9
+	
+	//check per capire dove posizionarsi verticalmente (il valore V1/V2/V3/V4)
+	setvar 0x4054 0x3
+	compare 0x4058 0x0
+	if 0x1 _call Passo_Tuono_1_131_M0
+	compare 0x4058 0x1
+	if 0x1 _call Passo_Tuono_1_131_U1
+	compare 0x4058 0x2
+	if 0x1 _call Passo_Tuono_1_131_U2
+	compare 0x4058 0x3
+	if 0x1 _call Passo_Tuono_1_131_U3
+	releaseall
+	end
+
+	Passo_Tuono_1_131_tile3_move30:
+		compare 0x4058 0x1
+		if 0x1 _call Passo_Tuono_1_131_tile3_move_D
+		setvar 0x4058 0x0
+		compare 0x4055 0x2
+		if 0x1 _goto Passo_Tuono_1_131_SOL_1
+		releaseall
+		end
+
+//_____TILE_13____
+
+.global EventScript_Passo_Tuono_1_131_tile3_31
+EventScript_Passo_Tuono_1_131_tile3_31:
+	lockall
+	//check orizzontale se cambio colonna (se si, variabile verticale non cambia, la posizione viene aggiustata per essere riportati sulla rispettiva V)
+	compare 0x4054 0x3
+	if 0x1 _goto Passo_Tuono_1_131_tile3_move31
+
+	movesprite 0x1 0xA 0x9
+	
+	//check per capire dove posizionarsi verticalmente (il valore V1/V2/V3/V4)
+	setvar 0x4054 0x3
+	compare 0x4058 0x0
+	if 0x1 _call Passo_Tuono_1_131_D1
+	compare 0x4058 0x1
+	if 0x1 _call Passo_Tuono_1_131_M0
+	compare 0x4058 0x2
+	if 0x1 _call Passo_Tuono_1_131_U1
+	compare 0x4058 0x3
+	if 0x1 _call Passo_Tuono_1_131_U2
+	releaseall
+	end
+
+	Passo_Tuono_1_131_tile3_move31:
+		compare 0x4058 0x2
+		if 0x1 _call Passo_Tuono_1_131_tile3_move_D
+		compare 0x4058 0x0
+		if 0x1 _call Passo_Tuono_1_131_tile3_move_U
+		setvar 0x4058 0x1
+		compare 0x4055 0x2
+		if 0x1 _goto Passo_Tuono_1_131_SOL_1
+		releaseall
+		end
+
+//_____TILE_14____
+
+.global EventScript_Passo_Tuono_1_131_tile3_32
+EventScript_Passo_Tuono_1_131_tile3_32:
+	lockall
+	//check orizzontale se cambio colonna (se si, variabile verticale non cambia, la posizione viene aggiustata per essere riportati sulla rispettiva V)
+	compare 0x4054 0x3
+	if 0x1 _goto Passo_Tuono_1_131_tile3_move32
+
+	movesprite 0x1 0xA 0x9
+	
+	//check per capire dove posizionarsi verticalmente (il valore V1/V2/V3/V4)
+	setvar 0x4054 0x3
+	compare 0x4058 0x0
+	if 0x1 _call Passo_Tuono_1_131_D2
+	compare 0x4058 0x1
+	if 0x1 _call Passo_Tuono_1_131_D1
+	compare 0x4058 0x2
+	if 0x1 _call Passo_Tuono_1_131_M0
+	compare 0x4058 0x3
+	if 0x1 _call Passo_Tuono_1_131_U1
+	releaseall
+	end
+
+	Passo_Tuono_1_131_tile3_move32:
+		compare 0x4058 0x3
+		if 0x1 _call Passo_Tuono_1_131_tile3_move_D
+		compare 0x4058 0x1
+		if 0x1 _call Passo_Tuono_1_131_tile3_move_U
+		setvar 0x4058 0x2
+		compare 0x4055 0x2
+		if 0x1 _goto Passo_Tuono_1_131_SOL_1
+		releaseall
+		end
+
+//_____TILE_15____
+
+.global EventScript_Passo_Tuono_1_131_tile3_33
+EventScript_Passo_Tuono_1_131_tile3_33:
+	lockall
+	//check orizzontale se cambio colonna (se si, variabile verticale non cambia, la posizione viene aggiustata per essere riportati sulla rispettiva V)
+	compare 0x4054 0x3
+	if 0x1 _goto Passo_Tuono_1_131_tile3_move33
+
+	movesprite 0x1 0xA 0x9
+	
+	//check per capire dove posizionarsi verticalmente (il valore V1/V2/V3/V4)
+	setvar 0x4054 0x3
+	compare 0x4058 0x0
+	if 0x1 _call Passo_Tuono_1_131_D3
+	compare 0x4058 0x1
+	if 0x1 _call Passo_Tuono_1_131_D2
+	compare 0x4058 0x2
+	if 0x1 _call Passo_Tuono_1_131_D1
+	compare 0x4058 0x3
+	if 0x1 _call Passo_Tuono_1_131_M0
+	releaseall
+	end
+
+	Passo_Tuono_1_131_tile3_move33:
+		compare 0x4058 0x4
+		if 0x1 _call Passo_Tuono_1_131_tile3_move_D
+		compare 0x4058 0x2
+		if 0x1 _call Passo_Tuono_1_131_tile3_move_U
+		setvar 0x4058 0x3
+		compare 0x4055 0x2
+		if 0x1 _goto Passo_Tuono_1_131_SOL_1
+		releaseall
+		end
+
+
+
+//____SOL_____
+
+	Passo_Tuono_1_131_SOL_1:
+		compare 0x4056 0x0
+		if 0x1 _goto Passo_Tuono_1_131_SOL_2
+		releaseall
+		end
+
+		Passo_Tuono_1_131_SOL_2:
+			compare 0x4057 0x3
+			if 0x1 _goto Passo_Tuono_1_131_SOL_3
+			releaseall
+			end
+
+			Passo_Tuono_1_131_SOL_3:
+				compare 0x4058 0x1
+				if 0x1 _goto Passo_Tuono_1_131_SOLVED
+				releaseall
+				end
+
+	Passo_Tuono_1_131_SOLVED:
+		pause 0x1E
+		spritebehave 0x2 0x43
+		spritebehave 0x3 0x43
+		spritebehave 0x4 0x43
+		spritebehave 0x5 0x43
+		spritebehave 0x6 0x43
+		spritebehave 0x7 0x43
+		spritebehave 0x8 0x43
+		spritebehave 0x9 0x43
+		pause 0x2E
+		compare 0x5026 0x0
+		if 0x1 _call Player_Blue
+		compare 0x5026 0x88
+		if 0x1 _call Player_Orange
+		compare 0x5026 0x85
+		if 0x1 _call Player_Green					
+		msgbox Passo_Tuono_1_131_text2 MSG_NORMAL	
+		special 0x15A
+		setvar 0x4051 0x44
+		pause 0x1E
+		//reactivate level script var 
+		setvar 0x4052 0x7
+		fadescreen 0x3
+		//put correct OW sprite
+		compare 0x5026 0x0
+		if 0x1 _call OW_Player_Blue
+		compare 0x5026 0x88
+		if 0x1 _call OW_Player_Orange
+		compare 0x5026 0x85
+		if 0x1 _call OW_Player_Green	
+		fadescreen 0x2
+		warpmuted 0x1 0x7C 0xFF 0x6 0x4
+		releaseall
+		end
 
 		Player_Blue:
 			showpokepic 0x3b6 0x0 0x6

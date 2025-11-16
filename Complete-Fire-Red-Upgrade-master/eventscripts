@@ -45,7 +45,6 @@ sign 1 3 3 EventScript_Passo_Tuono_1_3_Sign3
 
 map 1 124 gMapScripts_Passo_Tuono_1_124
 
-map 1 131 gMapScripts_Passo_Tuono_1_131
 
 npc 0 8 0 EventScript_Passo_Tuono_1_127_NPC0
 npc 0 8 1 EventScript_Passo_Tuono_1_127_NPC1
@@ -57,6 +56,22 @@ npc 0 9 0 EventScript_Passo_Tuono_1_128_NPC0
 npc 0 9 1 EventScript_Passo_Tuono_1_128_NPC1
 
 map 0 12 gMapScripts_Passo_Tuono_1_131
+tile 0 12 0 EventScript_Passo_Tuono_1_131_tile0_00
+tile 0 12 1 EventScript_Passo_Tuono_1_131_tile0_01
+tile 0 12 2 EventScript_Passo_Tuono_1_131_tile0_02
+tile 0 12 3 EventScript_Passo_Tuono_1_131_tile0_03
+tile 0 12 4 EventScript_Passo_Tuono_1_131_tile1_10
+tile 0 12 5 EventScript_Passo_Tuono_1_131_tile1_11
+tile 0 12 6 EventScript_Passo_Tuono_1_131_tile1_12
+tile 0 12 7 EventScript_Passo_Tuono_1_131_tile1_13
+tile 0 12 8 EventScript_Passo_Tuono_1_131_tile2_20
+tile 0 12 9 EventScript_Passo_Tuono_1_131_tile2_21
+tile 0 12 10 EventScript_Passo_Tuono_1_131_tile2_22
+tile 0 12 11 EventScript_Passo_Tuono_1_131_tile2_23
+tile 0 12 12 EventScript_Passo_Tuono_1_131_tile3_30
+tile 0 12 13 EventScript_Passo_Tuono_1_131_tile3_31
+tile 0 12 14 EventScript_Passo_Tuono_1_131_tile3_32
+tile 0 12 15 EventScript_Passo_Tuono_1_131_tile3_33
 
 map 6 20 gMapScripts_Ardesiopoli_6_20
 

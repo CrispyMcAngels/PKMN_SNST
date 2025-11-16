@@ -18,6 +18,22 @@ gMapScripts_Passo_Tuono_1_1:
 		if 0x1 _call Passo_Tuono_1_1_MapScriptOnLoad_CUTSCENE
 		compare 0x4051 0x40
 		if 0x1 _call Passo_Tuono_1_1_MapScriptOnLoad_Dusk
+		compare 0x4051 0x41
+		if 0x1 _call Passo_Tuono_1_1_MapScriptOnLoad_Dusk
+		compare 0x4051 0x42
+		if 0x1 _call Passo_Tuono_1_1_MapScriptOnLoad_Dusk
+		compare 0x4051 0x43
+		if 0x1 _call Passo_Tuono_1_1_MapScriptOnLoad_Dusk
+		compare 0x4051 0x44
+		if 0x1 _call Passo_Tuono_1_1_MapScriptOnLoad_Dusk
+		compare 0x4051 0x45
+		if 0x1 _call Passo_Tuono_1_1_MapScriptOnLoad_Dusk
+		compare 0x4051 0x46
+		if 0x1 _call Passo_Tuono_1_1_MapScriptOnLoad_Dusk
+		compare 0x4051 0x47
+		if 0x1 _call Passo_Tuono_1_1_MapScriptOnLoad_Dusk
+		compare 0x4051 0x48
+		if 0x1 _call Passo_Tuono_1_1_MapScriptOnLoad_Dusk
 		checkflag 0x35
 		if 0x1 _call Passo_Tuono_1_1_MapScriptOnLoad_35
 		checkflag 0x36
@@ -302,11 +318,19 @@ EventScript_Passo_Tuono_1_1_Sign11:
 	end
 
 //ROCKS_SIGNS
+
+EventScript_Passo_Tuono_1_1_SignR:
+	msgbox Passo_Tuono_1_1_SignR_text1 MSG_NORMAL
+	end
+
 .global EventScript_Passo_Tuono_1_1_Sign4
 EventScript_Passo_Tuono_1_1_Sign4:
+	checkflag 0x35
+	if 0x1 _goto EventScript_Passo_Tuono_1_1_SignR
 	msgbox Passo_Tuono_1_1_Sign4_text1 MSG_YESNO
 	compare 0x800D 0x1
 	if 0x1 _goto EventScript_Passo_Tuono_1_1_Sign4_P1
+	closeonkeypress
 	end
 
 	EventScript_Passo_Tuono_1_1_Sign4_P1:
@@ -322,9 +346,12 @@ EventScript_Passo_Tuono_1_1_Sign4:
 
 .global EventScript_Passo_Tuono_1_1_Sign5
 EventScript_Passo_Tuono_1_1_Sign5:
+	checkflag 0x36
+	if 0x1 _goto EventScript_Passo_Tuono_1_1_SignR
 	msgbox Passo_Tuono_1_1_Sign4_text1 MSG_YESNO
 	compare 0x800D 0x1
 	if 0x1 _goto EventScript_Passo_Tuono_1_1_Sign5_P1
+	closeonkeypress
 	end
 
 	EventScript_Passo_Tuono_1_1_Sign5_P1:
@@ -340,9 +367,12 @@ EventScript_Passo_Tuono_1_1_Sign5:
 
 .global EventScript_Passo_Tuono_1_1_Sign6
 EventScript_Passo_Tuono_1_1_Sign6:
+	checkflag 0x37
+	if 0x1 _goto EventScript_Passo_Tuono_1_1_SignR
 	msgbox Passo_Tuono_1_1_Sign4_text1 MSG_YESNO
 	compare 0x800D 0x1
 	if 0x1 _goto EventScript_Passo_Tuono_1_1_Sign6_P1
+	closeonkeypress
 	end
 
 	EventScript_Passo_Tuono_1_1_Sign6_P1:
@@ -357,9 +387,12 @@ EventScript_Passo_Tuono_1_1_Sign6:
 
 .global EventScript_Passo_Tuono_1_1_Sign7
 EventScript_Passo_Tuono_1_1_Sign7:
+	checkflag 0x38
+	if 0x1 _goto EventScript_Passo_Tuono_1_1_SignR
 	msgbox Passo_Tuono_1_1_Sign4_text1 MSG_YESNO
 	compare 0x800D 0x1
 	if 0x1 _goto EventScript_Passo_Tuono_1_1_Sign7_P1
+	closeonkeypress
 	end
 
 	EventScript_Passo_Tuono_1_1_Sign7_P1:
@@ -375,9 +408,12 @@ EventScript_Passo_Tuono_1_1_Sign7:
 
 .global EventScript_Passo_Tuono_1_1_Sign8
 EventScript_Passo_Tuono_1_1_Sign8:
+	checkflag 0x39
+	if 0x1 _goto EventScript_Passo_Tuono_1_1_SignR
 	msgbox Passo_Tuono_1_1_Sign4_text1 MSG_YESNO
 	compare 0x800D 0x1
 	if 0x1 _goto EventScript_Passo_Tuono_1_1_Sign8_P1
+	closeonkeypress
 	end
 
 	EventScript_Passo_Tuono_1_1_Sign8_P1:
@@ -393,9 +429,12 @@ EventScript_Passo_Tuono_1_1_Sign8:
 
 .global EventScript_Passo_Tuono_1_1_Sign9
 EventScript_Passo_Tuono_1_1_Sign9:
+	checkflag 0x3A
+	if 0x1 _goto EventScript_Passo_Tuono_1_1_SignR
 	msgbox Passo_Tuono_1_1_Sign4_text1 MSG_YESNO
 	compare 0x800D 0x1
 	if 0x1 _goto EventScript_Passo_Tuono_1_1_Sign9_P1
+	closeonkeypress
 	end
 
 	EventScript_Passo_Tuono_1_1_Sign9_P1:
@@ -411,9 +450,12 @@ EventScript_Passo_Tuono_1_1_Sign9:
 
 .global EventScript_Passo_Tuono_1_1_Sign10
 EventScript_Passo_Tuono_1_1_Sign10:
+	checkflag 0x3B
+	if 0x1 _goto EventScript_Passo_Tuono_1_1_SignR
 	msgbox Passo_Tuono_1_1_Sign4_text1 MSG_YESNO
 	compare 0x800D 0x1
 	if 0x1 _goto EventScript_Passo_Tuono_1_1_Sign10_P1
+	closeonkeypress
 	end
 
 	EventScript_Passo_Tuono_1_1_Sign10_P1:

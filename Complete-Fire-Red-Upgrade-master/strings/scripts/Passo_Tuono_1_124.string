@@ -128,16 +128,61 @@ Chi sei veramente?
 Vesper: Tsk... Sei piu' forte di\nquanto pensassi.\pMa, ahime', troppo lento...
 
 #org @Passo_Tuono_1_124_text43
-//_/////////////////////////////////
 Raito: Non e' possibile!\nLa Fiamma Gialla...\p...Come siete riusciti a prenderla?
 
 #org @Passo_Tuono_1_124_text44
-//_/////////////////////////////////
 Vesper: E' molto semplice...\pMentre mi tenevate occupato ed\neravate distratti dalla sfida,\li miei uomini si sono presi cio\lche volevano!\pLa Fiamma Gialla ora e' nostra!
 
 #org @Passo_Tuono_1_124_text45
 Vesper: Ragazzi, ritirata immediata!\pPrima che arrivino i rinforzi!
 
 #org @Passo_Tuono_1_124_text46
-//_/////////////////////////////////
 Dannazione... Sono stato incauto!\pNon avrei mai dovuto permetterlo.\pProteggere questo focolare era il\nmio dovere...\pE l'ho fallito.
+
+#org @Passo_Tuono_1_124_text47
+Crispy: [PLAYER]!\nEhi! Come sei arrivato qui cosi' in\lfretta?\pAspetta... Non dirmi che hai\nrisolto tu l'enigma!
+
+#org @Passo_Tuono_1_124_text48
+Agente: Il luogo sembra sicuro,\nma...\pQualcuno mi spiega cosa diavolo e'\nsuccesso qui dentro?
+
+#org @Passo_Tuono_1_124_text49
+Raito: Non molto tempo fa il Team\nDusk ha fatto irruzione nel tempio.\pSono riusciti a rubare la Fiamma\nGialla, una reliquia antica di\lEyros.
+
+#org @Passo_Tuono_1_124_text50
+Agente: Il Team Dusk, eh...\nNon sentivo quel nome da anni.\pSembravano scomparsi, e ora spuntano\ndal nulla come un temporale!
+
+#org @Passo_Tuono_1_124_text51
+Crispy: Una Fiamma Gialla, dici?\pPerche' mai rubare una cosa del\ngenere?
+
+#org @Passo_Tuono_1_124_text52
+Raito: Perche' non e' una semplice\nfiamma.\pE' uno dei tre frammenti del potere\nche un tempo risveglio' il\lleggendario guardiano di Eyros...\p Ho-oh.
+
+#org @Passo_Tuono_1_124_text53
+Crispy: Aspetta, quindi le analisi\ndi Filiberto sulle incisioni\lerano corrette...\pE tu, Raito, come puoi sapere tutto\nquesto?
+
+#org @Passo_Tuono_1_124_text54
+Raito: E' molto semplice...\p...Perche' io sono il guardiano di\nquesto Tempio...
+
+#org @Passo_Tuono_1_124_text55
+Crispy: Il guardiano...?\p...Ma allora chi sei davvero?
+
+#org @Passo_Tuono_1_124_text56
+Raito: Le spiegazioni dovranno\nattendere...\pMa hai tutto il diritto di\npretenderle, sei il fratello del\lprescelto d'altronde...\pMa questo luogo non e' piu' sicuro.\pRaggiungetemi a Roccavento: li' vi\nraccontero' tutto.
+
+#org @Passo_Tuono_1_124_text57
+Raito: Conto su di voi.\pProteggere il tempo, ora, e' nelle\nvostre mani.
+
+#org @Passo_Tuono_1_124_text58
+Crispy: Ma che!\pDa dove e' arrivato questo fulmine?
+
+#org @Passo_Tuono_1_124_text59
+Crispy: Che tipo strano...\nE poi quella storia del prescelto...
+
+#org @Passo_Tuono_1_124_text60
+[PLAYER]: ...
+
+#org @Passo_Tuono_1_124_text61
+Crispy: Beh, l'unico modo per\ncapirci qualcosa e' andare a\lRoccavento, no?\pPreparati: ci andremo in volo con il\nmio Flygon.\pVoleremo dal punto panoramico di\nRadiantia!
+
+#org @Passo_Tuono_1_124_text62
+Crispy: [PLAYER],\nquando sei pronto raggiungimi li'.\pHo il presentimento che da adesso\nin poi...\pTutto si fara' piu' serio.

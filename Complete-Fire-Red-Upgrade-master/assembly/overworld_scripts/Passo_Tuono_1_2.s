@@ -74,6 +74,7 @@ gMapScripts_Passo_Tuono_1_2:
 			pause 0x1E
 			applymovement 0xFF Passo_Tuono_1_2_mov2
 			waitmovement 0xFF
+			setvar 0x4052 0x7
 			warp 0x1 0x7C 0xFF 0x06 0x0E
 			releaseall
 			end
@@ -184,6 +185,7 @@ gMapScripts_Passo_Tuono_1_2:
 				applymovement 0xFF Passo_Tuono_1_2_mov7
 				waitmovement 0xFF				
 				pause 0x1E
+				setvar 0x4052 0x7
 				warpmuted 0x1 0x7C 0xFF 0x06 0x0D
 				releaseall
 				end
