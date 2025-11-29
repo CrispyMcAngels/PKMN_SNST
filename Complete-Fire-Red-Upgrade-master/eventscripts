@@ -20,7 +20,8 @@ npc 3 6 18 EventScript_Stellavia_3_6_NPC18
 npc 3 6 19 EventScript_Stellavia_3_6_NPC19
 npc 3 6 20 EventScript_Stellavia_3_6_NPC20
 npc 3 6 21 EventScript_Stellavia_3_6_NPC16
-
+npc 3 6 22 EventScript_Stellavia_3_6_NPC22
+npc 3 6 23 EventScript_Stellavia_3_6_NPC23
 
 sign 10 19 0 EventScript_Stellavia_10_19_Sign0
 sign 10 19 1 EventScript_Stellavia_10_19_Sign0

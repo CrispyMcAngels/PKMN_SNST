@@ -169,7 +169,6 @@ EventScript_Stellavia_3_6_NPC3:
 			.byte 0x0 
 			.byte 0xFE
 
-
 .global EventScript_Stellavia_3_6_NPC4
 EventScript_Stellavia_3_6_NPC4:
 	lock
