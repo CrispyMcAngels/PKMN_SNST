@@ -1,3 +1,27 @@
+npc 3 6 0 EventScript_Stellavia_3_6_NPC0
+npc 3 6 1 EventScript_Stellavia_3_6_NPC1
+npc 3 6 2 EventScript_Stellavia_3_6_NPC2
+npc 3 6 3 EventScript_Stellavia_3_6_NPC3
+npc 3 6 4 EventScript_Stellavia_3_6_NPC4
+npc 3 6 5 EventScript_Stellavia_3_6_NPC5
+npc 3 6 6 EventScript_Stellavia_3_6_NPC6
+npc 3 6 7 EventScript_Stellavia_3_6_NPC7
+npc 3 6 8 EventScript_Stellavia_3_6_NPC8
+npc 3 6 9 EventScript_Stellavia_3_6_NPC9
+npc 3 6 10 EventScript_Stellavia_3_6_NPC8
+npc 3 6 11 EventScript_Stellavia_3_6_NPC11
+npc 3 6 12 EventScript_Stellavia_3_6_NPC12
+npc 3 6 13 EventScript_Chatot_Master
+npc 3 6 14 EventScript_Stellavia_3_6_NPC14
+npc 3 6 15 EventScript_Stellavia_3_6_NPC15
+npc 3 6 16 EventScript_Stellavia_3_6_NPC16
+npc 3 6 17 EventScript_Stellavia_3_6_NPC17
+npc 3 6 18 EventScript_Stellavia_3_6_NPC18
+npc 3 6 19 EventScript_Stellavia_3_6_NPC19
+npc 3 6 20 EventScript_Stellavia_3_6_NPC20
+npc 3 6 21 EventScript_Stellavia_3_6_NPC16
+
+
 sign 10 19 0 EventScript_Stellavia_10_19_Sign0
 sign 10 19 1 EventScript_Stellavia_10_19_Sign0
 
@@ -25,8 +49,6 @@ npc 1 1 13 EventScript_Passo_Tuono_1_1_NPC13
 npc 1 1 14 EventScript_Passo_Tuono_1_1_NPC14
 npc 1 1 15 EventScript_Passo_Tuono_1_1_NPC15
 npc 1 1 16 EventScript_Passo_Tuono_1_1_NPC16
-
-
 
 map 1 2 gMapScripts_Passo_Tuono_1_2
 tile 1 2 0 EventScript_Passo_Tuono_1_2_tile0
@@ -126,7 +148,6 @@ sign 8 9 1 EventScript_Radiantia_8_9_Sign1
 npc 8 9 0 EventScript_Radiantia_8_9_NPC0
 npc 8 9 1 EventScript_Radiantia_8_9_NPC1
 
-
 map 8 8 gMapScripts_Radiantia_8_8
 sign 8 8 0 EventScript_Radiantia_8_8_Sign0
 sign 8 8 1 EventScript_Radiantia_8_8_Sign0
@@ -180,8 +201,6 @@ sign 3 22 1 EventScript_Percorso_4_3_22_Sign1_5
 sign 3 22 5 EventScript_Percorso_4_3_22_Sign1_5
 sign 3 22 6 EventScript_Percorso_4_3_22_Sign6
 sign 3 22 7 EventScript_Percorso_4_3_22_Sign7
-sign 3 22 8 EventScript_Percorso_4_3_22_Sign8
-sign 3 22 9 EventScript_Percorso_4_3_22_Sign9
 
 npc 3 22 0 EventScript_Percorso_4_3_22_NPC0
 npc 3 22 1 EventScript_Percorso_4_3_22_NPC1
@@ -195,10 +214,12 @@ npc 3 22 9 EventScript_Percorso_4_3_22_NPC9
 npc 3 22 10 EventScript_Percorso_4_3_22_NPC10
 npc 3 22 11 EventScript_Percorso_4_3_22_NPC11
 npc 3 22 14 EventScript_Percorso_4_3_22_NPC14
+
 tile 3 22 0 EventScript_Percorso4_3_22_tile0
 
 npc 16 2 0 EventScript_Percorso_4_16_2_NPC0
 npc 16 2 1 EventScript_Percorso_4_16_2_NPC1
+
 
 
 sign 3 2 0 EventScript_Ardesiopoli_3_2_Sign0_4

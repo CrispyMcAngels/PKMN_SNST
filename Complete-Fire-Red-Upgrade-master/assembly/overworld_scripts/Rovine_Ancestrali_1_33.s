@@ -144,6 +144,13 @@ EventScript_Rovine_Ancestrali_1_33_NPC0:
 	showpokepic 0x3B5 0x0 0x6
     msgbox Rovine_Ancestrali_1_33_NPC0_text1 MSG_NORMAL
     special 0x15A
+	fadescreen 0x1 
+	fanfare 0x0100
+	waitfanfare
+	special 0x0
+	fadescreen 0x0
+	textcolor 0x2
+	msgbox EventScript_Rovine_Ancestrali_1_33_tile0_text2 MSG_NORMAL
 	release
 	end
 
@@ -177,7 +184,7 @@ EventScript_Rovine_Ancestrali_1_33_tile1:
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile1_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
-		trainerbattle10 0xA 0x0E 0x0F 0x0D 0x2 0x0 EventScript_Rovine_Ancestrali_1_33_tile1_text3 EventScript_Rovine_Ancestrali_1_33_tile1_text4
+		trainerbattle10 0xA 0x0E 0x0F 0x0D 0x3 0x0 EventScript_Rovine_Ancestrali_1_33_tile1_text3 EventScript_Rovine_Ancestrali_1_33_tile1_text4
 		fadedefault
 		setflag 0x956		
 		releaseall
@@ -228,7 +235,7 @@ EventScript_Rovine_Ancestrali_1_33_tile2:
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile1_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
-		trainerbattle10 0xA 0x0E 0x0F 0x0D 0x2 0x0 EventScript_Rovine_Ancestrali_1_33_tile1_text3 EventScript_Rovine_Ancestrali_1_33_tile1_text4
+		trainerbattle10 0xA 0x0E 0x0F 0x0D 0x3 0x0 EventScript_Rovine_Ancestrali_1_33_tile1_text3 EventScript_Rovine_Ancestrali_1_33_tile1_text4
 		fadedefault
 		setflag 0x956
 		releaseall
@@ -281,7 +288,7 @@ EventScript_Rovine_Ancestrali_1_33_tile3:
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile1_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
-		trainerbattle10 0xA 0x0E 0x0F 0x0D 0x2 0x0 EventScript_Rovine_Ancestrali_1_33_tile1_text3 EventScript_Rovine_Ancestrali_1_33_tile1_text4
+		trainerbattle10 0xA 0x0E 0x0F 0x0D 0x3 0x0 EventScript_Rovine_Ancestrali_1_33_tile1_text3 EventScript_Rovine_Ancestrali_1_33_tile1_text4
 		fadedefault
 		setflag 0x956
 		releaseall
@@ -332,7 +339,7 @@ EventScript_Rovine_Ancestrali_1_33_tile4:
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile4_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
-		trainerbattle10 0xA 0x10 0x11 0x0D 0x2 0x0 EventScript_Rovine_Ancestrali_1_33_tile4_text3 EventScript_Rovine_Ancestrali_1_33_tile4_text4
+		trainerbattle10 0xA 0x10 0x11 0x0D 0x3 0x0 EventScript_Rovine_Ancestrali_1_33_tile4_text3 EventScript_Rovine_Ancestrali_1_33_tile4_text4
 		fadedefault
 		setflag 0x957
 		applymovement 0x4 EventScript_Rovine_Ancestrali_1_33_tile4_mov3
@@ -391,7 +398,7 @@ EventScript_Rovine_Ancestrali_1_33_tile5:
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile5_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
-		trainerbattle10 0xA 0x12 0x13 0x0D 0x2 0x0 EventScript_Rovine_Ancestrali_1_33_tile5_text3 EventScript_Rovine_Ancestrali_1_33_tile5_text4
+		trainerbattle10 0xA 0x12 0x13 0x0D 0x3 0x0 EventScript_Rovine_Ancestrali_1_33_tile5_text3 EventScript_Rovine_Ancestrali_1_33_tile5_text4
 		fadedefault
 		applymovement 0x6 EventScript_Rovine_Ancestrali_1_33_tile5_mov3
 		waitmovement 0x0
@@ -446,7 +453,7 @@ EventScript_Rovine_Ancestrali_1_33_tile6:
 		msgbox EventScript_Rovine_Ancestrali_1_33_tile5_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
-		trainerbattle10 0xA 0x12 0x13 0x0D 0x2 0x0 EventScript_Rovine_Ancestrali_1_33_tile5_text3 EventScript_Rovine_Ancestrali_1_33_tile5_text4
+		trainerbattle10 0xA 0x12 0x13 0x0D 0x3 0x0 EventScript_Rovine_Ancestrali_1_33_tile5_text3 EventScript_Rovine_Ancestrali_1_33_tile5_text4
 		fadedefault
 		setflag 0x958
 		releaseall

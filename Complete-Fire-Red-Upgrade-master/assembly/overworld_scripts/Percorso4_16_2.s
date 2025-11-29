@@ -45,3 +45,11 @@ EventScript_Percorso_4_16_2_NPC1:
 	msgbox Percorso_4_16_2_NPC1_text3 MSG_NORMAL
 	release
 	end
+
+.global EventScript_Percorso_4_16_2_NPC3
+EventScript_Percorso_4_16_2_NPC3:
+	lock
+	faceplayer
+	msgbox Percorso_4_16_2_NPC3_text1 MSG_NORMAL
+	release
+	end

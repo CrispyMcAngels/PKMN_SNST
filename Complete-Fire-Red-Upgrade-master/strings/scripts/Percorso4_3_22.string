@@ -67,7 +67,6 @@ Il vento qui porta con se' mille\nprofumi...\pE qualche piccolo shock statico!
 Mi dispiace ma questo ingresso del\nPasso Tuono e' chiuso.\pStiamo conducendo delle\ninvestigazioni e nessuno puo'\lpassare per motivi di sicurezza.
 
 #org @Percorso_4_3_22_NPC11_text1
-//_/////////////////////////////////
 Ti sei deciso? Vediamo che sai fare!
 
 #org @Percorso_4_3_22_NPC11_text2
@@ -104,20 +103,68 @@ Treecko-Treee!
 Bravissimo Treecko, adesso rientra!
 
 #org @Percorso_4_3_22_tile0_text5
-//_/////////////////////////////////
 Hei tu! Mi stavi spiando per caso?\pDopo mesi di duro allenamento sono\nriuscito ad insegnare al mio Treecko\lquesta mossa segreta...
 
 #org @Percorso_4_3_22_tile0_text6
 Facciamo cosi', se riuscirai a\nbattermi ti regalero' la MN01\lTaglio.\pTi aspetto qui!
 
-#org @Percorso_4_3_22_Sign8_UP
-UP
+#org @Percorso_4_3_22_NPC16_text1
+Vuoi andare in cima al Passo Tuono?\pPeccato che prima dovrai vedertela\ncon me!
 
-#org @Percorso_4_3_22_Sign8_DOWN
-DOWN
+#org @Percorso_4_3_22_NPC16_text2
+Forse quello che non ci ha visto\nsono io.
 
-#org @Percorso_4_3_22_Sign8_RIGHT
-RIGHT
+#org @Percorso_4_3_22_NPC16_text3
+Perche' le foglie qui non sono\nverdi?\pI miei amici dicono che sia colpa\ndei fulmini...\pSara' vero?
 
-#org @Percorso_4_3_22_Sign8_LEFT
-LEFT
+#org @Percorso_4_3_22_NPC17_text1
+Se vinco io mi devi offrire una\ngassosa del 7 Eevee!
+
+#org @Percorso_4_3_22_NPC17_text2
+Mi sa che restero' a bocca asciutta!
+
+#org @Percorso_4_3_22_NPC17_text3
+Sei gia' stato al 7 Eevee di\nStellavia?\pHanno una selezione di bevande che\nnon si trova da nessun'altra parte!
+
+#org @Percorso_4_3_22_NPC18_text1
+Sono pronto a colpirti di botto,\ncome un tuono!
+
+#org @Percorso_4_3_22_NPC18_text2
+Evidentemente avevi il parafulmine!
+
+#org @Percorso_4_3_22_NPC18_text3
+Dicono che in cima al Passo Tuono\npiova sempre...\pDifficile da credere, guardando\nquesto cielo limpido!
+
+#org @Percorso_4_3_22_NPC19_text1
+Sto dipingendo questo paesaggio\nsecco.\pLa gamma dei gialli e' incredibile.\pScommetto che qui anche i Pokemon\ncambiano colore!
+
+#org @Percorso_4_3_22_NPC19_text2
+Questo Percorso e' ancora molto\nlungo.\pPrendi questa, dara' la giusta\nenergia a te e i tuoi Poke'mon!
+
+#org @Percorso_4_3_22_NPC20_text1
+Ci sono pochi percorsi come questo.\pSembra che qualcosa lo tenga fermo\nnel tempo.
+
+#org @Percorso_4_3_22_NPC20_text2
+La storia sull'origine di questo\nposto e' molto curiosa, vuoi che\lte la racconto?
+
+#org @Percorso_4_3_22_NPC20_text3
+Bene, inziamo!
+
+#org @Percorso_4_3_22_NPC20_text4
+//_/////////////////////////////////
+Dicono che il Passo Tuono non sia\nnato con la montagna...\pMa con il cielo.\pUn giorno, un fulmine cosi' potente\ncolpi' la roccia rompendola in due,\lcreando quel sentiero innaturale.\pDa allora, in quel luogo il vento\nnon soffia... corre.\pE quando passa, sembra quasi di\nsentire il ruggito dell'antico tuono\lche l'ha generato.\pNon e' un passaggio.\nE' una ferita del cielo.
+
+#org @Percorso_4_3_22_NPC20_text5
+Ehi, si e' fatto tardi!\pMi sono davvero fatto prendere\ndalla storia!
+
+#org @Percorso_4_3_22_NPC20_text6
+Ti ringrazio per avermi ascoltato,\ntramandare queste antiche storie\lalle nuove generazioni mi rende\lorgoglioso.\pTieni questo come segno di\nriconoscenza, e ricorda di\ltramandare questa leggenda pure te\lun giorno!
+
+#org @Percorso_4_3_22_NPC21_text1
+a
+
+#org @Percorso_4_3_22_NPC21_text2
+b
+
+#org @Percorso_4_3_22_NPC21_text3
+c

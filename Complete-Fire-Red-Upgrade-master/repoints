@@ -276,6 +276,10 @@ gText_TextSpeedInstant 083cc338
 gEventObjectGraphicsInfo_NPC0 08EB1000
 gEventsObjectPic_NPC0Pal 08F15EB0
 
+#NPC3
+gEventObjectGraphicsInfo_NPC3 08EB100C
+gEventsObjectPic_NPC3Pal 08F15EB0
+
 #NPC14
 gEventObjectGraphicsInfo_NPC14 08EB1038
 gEventsObjectPic_NPC14Pal 08F15E70
@@ -702,7 +706,7 @@ gEventsObjectPic_NPC122Pal 08F161E8
 
 #NPC123
 gEventObjectGraphicsInfo_NPC123 08EB11EC
-gEventsObjectPic_NPC123Pal 08F161F0
+gEventsObjectPic_NPC123Pal 08F15EB0
 
 #NPC124
 gEventObjectGraphicsInfo_NPC124 08EB11F0

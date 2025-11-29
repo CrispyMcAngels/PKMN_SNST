@@ -36,79 +36,6 @@ gMapScripts_Percorso4_3_22:
 		msgbox Percorso_4_3_22_Sign7 0x7
 		end
 
-	.global EventScript_Percorso_4_3_22_Sign8
-	EventScript_Percorso_4_3_22_Sign8:
-		lockall
-		special2 0x800D 0x2C
-					
-		//check if UP is pressed
-		compare 0x800D 0x1
-		if 0x1 _call EventScript_Percorso_4_3_22_Sign8_UP
-		
-		//check if DOWN is pressed
-		compare 0x800D 0x3
-		if 0x1 _call EventScript_Percorso_4_3_22_Sign8_DOWN
-		
-		//check if RIGHT is pressed
-		compare 0x800D 0x4
-		if 0x1 _call EventScript_Percorso_4_3_22_Sign8_RIGHT	
-		
-		//check if LEFT is pressed
-		compare 0x800D 0x2
-		if 0x1 _call EventScript_Percorso_4_3_22_Sign8_LEFT		
-
-		setvar 0x800D 0x0
-		compare 0x800D 0x0
-		if 0x1 _goto EventScript_Percorso_4_3_22_Sign8
-		releaseall
-		end
-
-	.global EventScript_Percorso_4_3_22_Sign9
-	EventScript_Percorso_4_3_22_Sign9:
-		lockall
-		
-		special 0x2F		
-
-		//check if UP is pressed
-
-		compare 0x800D 0x40
-		if 0x1 _call EventScript_Percorso_4_3_22_Sign8_UP
-		//check if DOWN is pressed
-
-		compare 0x800D 0x80
-		if 0x1 _call EventScript_Percorso_4_3_22_Sign8_DOWN
-		//check if RIGHT is pressed
-
-		compare 0x800D 0x10
-		if 0x1 _call EventScript_Percorso_4_3_22_Sign8_RIGHT	
-		//check if LEFT is pressed
-
-		compare 0x800D 0x20
-		if 0x1 _call EventScript_Percorso_4_3_22_Sign8_LEFT		
-		
-		setvar 0x800D 0x0
-		compare 0x800D 0x0
-		if 0x1 _goto EventScript_Percorso_4_3_22_Sign9
-		releaseall
-		end
-
-	EventScript_Percorso_4_3_22_Sign8_UP:
-		msgbox Percorso_4_3_22_Sign8_UP 0x7
-		return
-
-	EventScript_Percorso_4_3_22_Sign8_DOWN:
-		msgbox Percorso_4_3_22_Sign8_DOWN 0x7
-		return
-
-	EventScript_Percorso_4_3_22_Sign8_RIGHT:
-		msgbox Percorso_4_3_22_Sign8_RIGHT 0x7
-		return
-
-	EventScript_Percorso_4_3_22_Sign8_LEFT:
-		msgbox Percorso_4_3_22_Sign8_LEFT 0x7
-		return
-
-
 
 
 
@@ -211,7 +138,7 @@ EventScript_Percorso_4_3_22_NPC11:
 	giveitem 0x153 0x1 MSG_OBTAIN
 	pause 0x1E
 	msgbox Percorso_4_3_22_NPC11_text4 MSG_NORMAL
-	warpmuted 0x3 0x16 0xFF 0xB 0x28
+	warpmuted 0x3 0x16 0xFF 0x1B 0x28
 	release
 	end
 
@@ -225,11 +152,119 @@ EventScript_Percorso_4_3_22_NPC14:
 	giveitem 0x44 0x1 MSG_FIND
 	end
 
+.global EventScript_Percorso_4_3_22_NPC16
+EventScript_Percorso_4_3_22_NPC16:
+	//Pigliamosche
+	trainerbattle0 0x0 0x47 0x0 Percorso_4_3_22_NPC16_text1 Percorso_4_3_22_NPC16_text2
+	msgbox Percorso_4_3_22_NPC16_text3 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Percorso_4_3_22_NPC17
+EventScript_Percorso_4_3_22_NPC17:
+	//Pupa
+	trainerbattle0 0x0 0x48 0x0 Percorso_4_3_22_NPC17_text1 Percorso_4_3_22_NPC17_text2
+	msgbox Percorso_4_3_22_NPC17_text3 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Percorso_4_3_22_NPC18
+EventScript_Percorso_4_3_22_NPC18:
+	//Ranger
+	trainerbattle0 0x0 0x49 0x0 Percorso_4_3_22_NPC18_text1 Percorso_4_3_22_NPC18_text2
+	msgbox Percorso_4_3_22_NPC18_text3 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Percorso_4_3_22_NPC19
+EventScript_Percorso_4_3_22_NPC19:
+	lock
+	faceplayer
+	msgbox Percorso_4_3_22_NPC19_text1 MSG_NORMAL
+	checkflag 0x97B
+	if 0x0 _goto EventScript_Percorso_4_3_22_NPC19_P1
+	release
+	end
+
+	EventScript_Percorso_4_3_22_NPC19_P1:
+		pause 0x1E
+		msgbox Percorso_4_3_22_NPC19_text2 MSG_NORMAL
+		giveitem 0x1E 0x1 MSG_OBTAIN
+		setflag 0x97B
+		release
+		end
+
+.global EventScript_Percorso_4_3_22_NPC20
+EventScript_Percorso_4_3_22_NPC20:
+	lock
+	faceplayer
+	msgbox Percorso_4_3_22_NPC20_text1 MSG_NORMAL
+	pause 0x1E
+	applymovement 0x14 Percorso_4_3_22_NPC20_mov1
+	waitmovement 0x14
+	pause 0x1E
+	msgbox Percorso_4_3_22_NPC20_text2 MSG_YESNO
+	compare 0x800D 0x1
+	if 0x1 _goto EventScript_Percorso_4_3_22_NPC20_P1
+	closeonkeypress
+	release
+	end
+
+	Percorso_4_3_22_NPC20_mov1:
+		.byte 0x62
+		.byte 0xFE
+
+	Percorso_4_3_22_NPC20_mov2:
+		.byte 0x21
+		.byte 0x21
+		.byte 0xFE
+
+
+	EventScript_Percorso_4_3_22_NPC20_P1:
+		pause 0x1E
+		applymovement 0x14 Percorso_4_3_22_NPC20_mov2
+		waitmovement 0x14	
+		msgbox Percorso_4_3_22_NPC20_text3 MSG_NORMAL
+		pause 0x1E
+		playsong 0x18B 0x0
+		msgbox Percorso_4_3_22_NPC20_text4 MSG_NORMAL
+		fadedefault
+		pause 0x1E
+		msgbox Percorso_4_3_22_NPC20_text5 MSG_NORMAL
+		checkflag 0x97C
+		if 0x0 _goto EventScript_Percorso_4_3_22_NPC20_P2
+		release
+		end
+
+		EventScript_Percorso_4_3_22_NPC20_P2:
+			msgbox Percorso_4_3_22_NPC20_text6 MSG_NORMAL
+			giveitem 0x21 0x1 MSG_OBTAIN
+			setflag 0x97C
+			release
+			end
+
+
+.global EventScript_Percorso_4_3_22_NPC21
+EventScript_Percorso_4_3_22_NPC21:
+	//Ranger
+	trainerbattle0 0x0 0x4A 0x0 Percorso_4_3_22_NPC21_text1 Percorso_4_3_22_NPC21_text2
+	msgbox Percorso_4_3_22_NPC21_text3 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Percorso_4_3_22_NPC22
+EventScript_Percorso_4_3_22_NPC22:
+	giveitem 0x22 0x1 MSG_FIND
+	end
+
+.global EventScript_Percorso_4_3_22_NPC23
+EventScript_Percorso_4_3_22_NPC23:
+	giveitem 0x44 0x1 MSG_FIND
+	end
 
 
 
 //___TILESCRIPTs___
-
 
 .global EventScript_Percorso4_3_22_tile0
 EventScript_Percorso4_3_22_tile0:

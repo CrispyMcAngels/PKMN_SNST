@@ -58,7 +58,7 @@ gMapScripts_Ardesiopoli_6_7:
 				msgbox Ardesiopoli_6_7_Sign0_text3 MSG_NORMAL
 				applymovement 0xFF Ardesiopoli_6_7_Sign0_mov1
 				waitmovement 0x0
-				warp 0x6 0x8 0xFF 0x3 0x7
+				warp 0x6 0x8 0xFF 0x3 0x9
 				release
 				end
 

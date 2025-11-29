@@ -15,6 +15,7 @@ gMapScripts_Radiantia_8_8:
 
 	Radiantia_8_8_MapScriptOnLoad:
 		setvar 0x5007 0x6
+		setvar 0x5025 0x17B
 		checkflag 0x972
 		if 0x1 _call Radiantia_8_8_MapScriptOnLoad_move_ele
 		end

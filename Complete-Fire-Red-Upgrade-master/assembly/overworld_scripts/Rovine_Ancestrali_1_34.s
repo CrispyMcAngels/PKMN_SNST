@@ -274,7 +274,7 @@ EventScript_Rovine_Ancestrali_1_34_tile0_P1:
 	textcolor 0x0
 	msgbox Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text7 MSG_NORMAL
 	special 0x15A
-	trainerbattle10 0xA 0x14 0x15 0x0D 0x2 0x0 Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text8 Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text9
+	trainerbattle10 0xA 0x14 0x15 0x0D 0x3 0x0 Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text8 Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text9
 	fadedefault
 	pause 0x1E
 	spriteface 0x1 0x3
@@ -319,7 +319,7 @@ EventScript_Rovine_Ancestrali_1_34_tile1_P1:
 	textcolor 0x0	
 	msgbox Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text7 MSG_NORMAL
 	special 0x15A
-	trainerbattle10 0xA 0x14 0x15 0x0D 0x2 0x0 Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text8 Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text9
+	trainerbattle10 0xA 0x14 0x15 0x0D 0x3 0x0 Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text8 Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text9
 	fadedefault
 	pause 0x1E
 	spriteface 0x1 0x3
@@ -530,7 +530,7 @@ gMapScripts_Rovine_Ancestrali_1_34:
 			msgbox Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text7 MSG_NORMAL
 			special 0x15A
 
-			trainerbattle10 0xA 0x14 0x15 0x0D 0x2 0x0 Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text8 Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text9
+			trainerbattle10 0xA 0x14 0x15 0x0D 0x3 0x0 Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text8 Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text9
 			fadedefault
 			pause 0x1E
 			spriteface 0x1 0x3

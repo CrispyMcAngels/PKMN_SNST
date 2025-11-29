@@ -187,7 +187,7 @@ EventScript_Radiantia_3_4_Sign6:
 EventScript_Radiantia_3_4_NPC0:
 	lock
 	faceplayer
-	setvar 0x5025 0x17B
+	//setvar 0x5025 0x17B
 	msgbox Radiantia_3_4_NPC0_text1 MSG_NORMAL
 	release
 	end
