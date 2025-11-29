@@ -188,6 +188,7 @@ EventScript_Percorso_4_3_22_NPC19:
 
 	EventScript_Percorso_4_3_22_NPC19_P1:
 		pause 0x1E
+		faceplayer
 		msgbox Percorso_4_3_22_NPC19_text2 MSG_NORMAL
 		giveitem 0x1E 0x1 MSG_OBTAIN
 		setflag 0x97B
@@ -202,6 +203,7 @@ EventScript_Percorso_4_3_22_NPC20:
 	pause 0x1E
 	applymovement 0x14 Percorso_4_3_22_NPC20_mov1
 	waitmovement 0x14
+	faceplayer
 	pause 0x1E
 	msgbox Percorso_4_3_22_NPC20_text2 MSG_YESNO
 	compare 0x800D 0x1
@@ -221,15 +223,19 @@ EventScript_Percorso_4_3_22_NPC20:
 
 
 	EventScript_Percorso_4_3_22_NPC20_P1:
+		faceplayer
 		pause 0x1E
 		applymovement 0x14 Percorso_4_3_22_NPC20_mov2
-		waitmovement 0x14	
+		waitmovement 0x14
+		faceplayer	
 		msgbox Percorso_4_3_22_NPC20_text3 MSG_NORMAL
 		pause 0x1E
 		playsong 0x18B 0x0
+		faceplayer
 		msgbox Percorso_4_3_22_NPC20_text4 MSG_NORMAL
 		fadedefault
 		pause 0x1E
+		faceplayer
 		msgbox Percorso_4_3_22_NPC20_text5 MSG_NORMAL
 		checkflag 0x97C
 		if 0x0 _goto EventScript_Percorso_4_3_22_NPC20_P2
@@ -237,6 +243,7 @@ EventScript_Percorso_4_3_22_NPC20:
 		end
 
 		EventScript_Percorso_4_3_22_NPC20_P2:
+			faceplayer
 			msgbox Percorso_4_3_22_NPC20_text6 MSG_NORMAL
 			giveitem 0x21 0x1 MSG_OBTAIN
 			setflag 0x97C

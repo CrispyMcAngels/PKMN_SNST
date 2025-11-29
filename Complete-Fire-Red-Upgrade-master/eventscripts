@@ -228,7 +228,7 @@ tile 3 22 0 EventScript_Percorso4_3_22_tile0
 
 npc 16 2 0 EventScript_Percorso_4_16_2_NPC0
 npc 16 2 1 EventScript_Percorso_4_16_2_NPC1
-
+npc 16 2 3 EventScript_Percorso_4_16_2_NPC3
 
 
 sign 3 2 0 EventScript_Ardesiopoli_3_2_Sign0_4

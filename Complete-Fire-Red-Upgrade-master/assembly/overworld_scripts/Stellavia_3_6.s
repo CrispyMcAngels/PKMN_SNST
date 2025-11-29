@@ -71,11 +71,14 @@ EventScript_Stellavia_3_6_NPC3:
 		if 0x1 _call EventScript_Stellavia_3_6_NPC3_17_17
 		compare 0x4001 0x19
 		if 0x1 _call EventScript_Stellavia_3_6_NPC3_19_17
-		compare 0x4001 0x16
+		compare 0x4002 0x16
 		if 0x1 _call EventScript_Stellavia_3_6_NPC3_18_16
-		compare 0x4001 0x18
+		compare 0x4002 0x18
 		if 0x1 _call EventScript_Stellavia_3_6_NPC3_18_18
 		pause 0x1E
+		spriteface 0x4 0x1
+		spriteface 0x5 0x1
+		spriteface 0x6 0x2
 		cry 0x129 0x0
 		textcolor 0x2
 		msgbox Stellavia_3_6_NPC3_text1 MSG_NORMAL
@@ -196,6 +199,8 @@ EventScript_Stellavia_3_6_NPC5:
 		end
 
 		EventScript_Stellavia_3_6_NPC5_P2:
+			msgbox Stellavia_3_6_NPC5_text2 MSG_NORMAL
+			pause 0x1E
 			giveitem 0x158 0x1 MSG_OBTAIN
 			setflag 0x97D
 			return
@@ -377,6 +382,27 @@ EventScript_Stellavia_3_6_NPC23:
 	EventScript_Stellavia_3_6_NPC23_P1:
 		msgbox Stellavia_3_6_NPC23_text4 MSG_NORMAL
 		setvar 0x8003 0x0
+		setvar 0x8004 0x0
+		special2 0x800D 0x18
+		compare 0x800D 0x306
+		If 0x1 _goto EventScript_Stellavia_3_6_NPC23_P2
+		setvar 0x8004 0x1
+		special2 0x800D 0x18
+		compare 0x800D 0x306
+		If 0x1 _goto EventScript_Stellavia_3_6_NPC23_P2
+		setvar 0x8004 0x2
+		special2 0x800D 0x18
+		compare 0x800D 0x306
+		If 0x1 _goto EventScript_Stellavia_3_6_NPC23_P2
+		setvar 0x8004 0x3
+		special2 0x800D 0x18
+		compare 0x800D 0x306
+		If 0x1 _goto EventScript_Stellavia_3_6_NPC23_P2
+		setvar 0x8004 0x4
+		special2 0x800D 0x18
+		compare 0x800D 0x306
+		If 0x1 _goto EventScript_Stellavia_3_6_NPC23_P2
+		setvar 0x8004 0x5
 		special2 0x800D 0x18
 		compare 0x800D 0x306
 		If 0x1 _goto EventScript_Stellavia_3_6_NPC23_P2
