@@ -103,6 +103,7 @@ gMapScripts_Ardesiopoli_3_2:
 		Ardesiopoli_3_2_MapScriptOnLoad_move_oldman:
 			movesprite2 0x1D 0x17 0x3E
 			spritebehave 0x1D 0x2
+			movesprite2 0x1E 0x17 0x3D
 			return
 
 		Ardesiopoli_3_2_MapScriptOnLoad_move_girl:

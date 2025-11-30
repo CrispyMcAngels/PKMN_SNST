@@ -448,6 +448,7 @@ EventScript_Stellavia_3_6_NPC23:
 			pause 0x1E
 			msgbox Stellavia_3_6_NPC23_text9 MSG_NORMAL
 			setflag 0x981
+			hidesprite 0x19
 			fanfare 0x0103
 			textcolor 0x2
 			msgbox Mission_Completed_text1 MSG_NORMAL		

@@ -74,6 +74,7 @@ EventScript_Miralba_5_0_NPC2:
 		giveitem 0x18E 0x1 MSG_OBTAIN
 		setflag 0x960
 		pause 0x1E
+		hidesprite 0x4
 		fanfare 0x0103
 		textcolor 0x2
 		msgbox Mission_Completed_text1 MSG_NORMAL

@@ -24,6 +24,14 @@ EventScript_Ardesiopoli_6_9_NPC2:
 	release
 	end
 
+.global EventScript_Ardesiopoli_6_9_NPC4
+EventScript_Ardesiopoli_6_9_NPC4:
+	lock
+	faceplayer
+	msgbox Ardesiopoli_6_9_NPC4_text1 MSG_NORMAL
+	release
+	end
+
 //SIGNS___________________
 
 	.global EventScript_Ardesiopoli_6_9_Sign0

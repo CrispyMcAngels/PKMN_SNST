@@ -27,6 +27,7 @@ gMapScripts_Ardesiopoli_6_11:
 			spritebehave 0x1 0x8
 			movesprite2 0x2 0x09 0x06
 			spritebehave 0x2 0x2
+			hidesprite 0x4
 			return
 
 	Ardesiopoli_6_11_MapScriptOnWarpIntoMapTable:
@@ -99,6 +100,7 @@ EventScript_Ardesiopoli_6_11_NPC0:
 	checkflag 0x969
 	if 0x1 _goto EventScript_Ardesiopoli_6_11_NPC0_P1
 	msgbox Ardesiopoli_6_11_NPC0_text1 MSG_NORMAL
+	faceplayer
 	setvar 0x405F 0x1 
 	setvar 0x4053 0x4
 	setflag 0x969
@@ -110,11 +112,13 @@ EventScript_Ardesiopoli_6_11_NPC0:
 	end
 
 	EventScript_Ardesiopoli_6_11_NPC0_P1:
+		faceplayer
 		msgbox Ardesiopoli_6_11_NPC0_text2 MSG_NORMAL
 		release
 		end
 
 	EventScript_Ardesiopoli_6_11_NPC0_P2:
+		faceplayer
 		msgbox Ardesiopoli_6_11_NPC0_text3 MSG_NORMAL
 		release
 		end

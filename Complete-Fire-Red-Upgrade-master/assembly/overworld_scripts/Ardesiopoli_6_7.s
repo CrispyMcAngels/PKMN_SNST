@@ -210,9 +210,9 @@ gMapScripts_Ardesiopoli_6_7:
 		msgbox Ardesiopoli_6_7_NPC0_text3 0x7
 		pause 0x1E
 		sound 0x42
-		applymovement 0x1 Ardesiopoli_6_9_sign7_mov2
-		applymovement 0x4 Ardesiopoli_6_9_sign7_mov2
-		waitmovement 0x0
+		applymovement 0xA Ardesiopoli_6_9_sign7_mov2
+		applymovement 0xC Ardesiopoli_6_9_sign7_mov2
+		waitmovement 0xC
 		//dichiarare var che stiamo andando ad Ardesiopoli Sud
 		setvar 0x4063 0x2
 		setvar 0x405F 0x9
@@ -394,7 +394,6 @@ EventScript_Ardesiopoli_6_7_tile0:
 .global EventScript_Ardesiopoli_6_7_NPC0
 EventScript_Ardesiopoli_6_7_NPC0:
 	lock
-	faceplayer
 	msgbox Ardesiopoli_6_7_NPC0_text0a MSG_NORMAL
 	release
 	end

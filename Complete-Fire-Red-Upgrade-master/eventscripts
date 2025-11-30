@@ -25,6 +25,8 @@ npc 3 6 23 EventScript_Stellavia_3_6_NPC23
 
 sign 10 19 0 EventScript_Stellavia_10_19_Sign0
 sign 10 19 1 EventScript_Stellavia_10_19_Sign0
+npc 10 19 0 EventScript_Ardesiopoli_6_7_NPC0
+npc 10 19 1 EventScript_Ardesiopoli_6_7_NPC0
 
 map 1 1 gMapScripts_Passo_Tuono_1_1
 
@@ -371,6 +373,7 @@ npc 6 9 0 EventScript_Ardesiopoli_6_7_NPC0
 npc 6 9 1 EventScript_Ardesiopoli_6_9_NPC1
 npc 6 9 2 EventScript_Ardesiopoli_6_9_NPC2
 npc 6 9 3 EventScript_Ardesiopoli_6_7_NPC0
+npc 6 9 4 EventScript_Ardesiopoli_6_9_NPC4
 sign 6 9 0 EventScript_Ardesiopoli_6_9_Sign3
 sign 6 9 1 EventScript_Ardesiopoli_6_9_Sign12
 sign 6 9 2 EventScript_Ardesiopoli_6_9_Sign12

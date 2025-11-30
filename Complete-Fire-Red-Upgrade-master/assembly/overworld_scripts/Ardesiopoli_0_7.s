@@ -45,6 +45,7 @@ EventScript_Ardesiopoli_0_7_NPC1:
 	EventScript_Ardesiopoli_0_7_NPC1_P2:
 		msgbox Ardesiopoli_0_7_NPC1_text3 MSG_NORMAL
 		pause 0x1E
+		hidesprite 0x9
 		fanfare 0x0103
 		textcolor 0x2
 		msgbox Mission_Completed_text1 MSG_NORMAL

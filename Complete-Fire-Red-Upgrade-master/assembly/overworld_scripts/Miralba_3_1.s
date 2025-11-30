@@ -88,6 +88,7 @@ EventScript_Miralba_3_1_NPC5:
 		waitmovement 0x0
 		pause 0x1E
 		msgbox Miralba_3_1_Tile0_text1 MSG_NORMAL
+		hidesprite 0xB
 		applymovement 0x6 Miralba_3_1_NPC5_mov2
 		applymovement 0xFF Miralba_3_1_NPC5_mov3
 		waitmovement 0x0
@@ -95,6 +96,7 @@ EventScript_Miralba_3_1_NPC5:
 		msgbox Miralba_3_1_Tile0_text2 MSG_NORMAL
 		applymovement 0x6 Miralba_3_1_NPC5_mov4
 		waitmovement 0x0
+		showsprite 0xB
 		clearflag 0x952
 		setflag 0x961
 		fanfare 0x0102
@@ -147,6 +149,7 @@ EventScript_Miralba_3_1_NPC5:
 		pause 0x1E
 		textcolor 0x1
 		msgbox Miralba_3_1_Tile0_text3 MSG_NORMAL
+		hidesprite 0xB
 		applymovement 0x6 Miralba_3_1_NPC5_mov2
 		applymovement 0xFF Miralba_3_1_NPC5_mov3
 		waitmovement 0x0
@@ -154,6 +157,7 @@ EventScript_Miralba_3_1_NPC5:
 		msgbox Miralba_3_1_Tile0_text4 MSG_NORMAL
 		applymovement 0x6 Miralba_3_1_NPC5_mov4
 		waitmovement 0x0
+		showsprite 0xB
 		release
 		end
 
@@ -173,6 +177,7 @@ EventScript_Miralba_3_1_Tile0:
 		spriteface 0xFF 0x2
 		textcolor 0x1
 		msgbox Miralba_3_1_Tile0_text1 MSG_NORMAL
+		hidesprite 0xB
 		applymovement 0x6 Miralba_3_1_Tile0_mov2
 		applymovement 0xFF Miralba_3_1_Tile0_mov3
 		waitmovement 0x0
@@ -180,6 +185,7 @@ EventScript_Miralba_3_1_Tile0:
 		msgbox Miralba_3_1_Tile0_text2 MSG_NORMAL
 		applymovement 0x6 Miralba_3_1_Tile0_mov4
 		waitmovement 0x0
+		showsprite 0xB
 		clearflag 0x952
 		setflag 0x961
 		fanfare 0x0102
@@ -234,6 +240,7 @@ EventScript_Miralba_3_1_Tile0:
 		spriteface 0xFF 0x2
 		textcolor 0x1
 		msgbox Miralba_3_1_Tile0_text3 MSG_NORMAL
+		hidesprite 0xB
 		applymovement 0x6 Miralba_3_1_Tile0_mov2
 		applymovement 0xFF Miralba_3_1_Tile0_mov3
 		waitmovement 0x0
@@ -241,6 +248,7 @@ EventScript_Miralba_3_1_Tile0:
 		msgbox Miralba_3_1_Tile0_text4 MSG_NORMAL
 		applymovement 0x6 Miralba_3_1_Tile0_mov4
 		waitmovement 0x0
+		showsprite 0xB
 		releaseall
 		end
 
