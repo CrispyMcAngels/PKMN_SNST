@@ -71,7 +71,7 @@ EventScript_Miralba_5_0_NPC2:
 		msgbox EventScript_Miralba_5_0_NPC2_text4 MSG_NORMAL
 		applymovement 0x3 Miralba_5_0_NPC2_mov1
 		waitmovement 0x0
-		giveitem 0x18E 0x1 MSG_OBTAIN
+		giveitem 0x17 0x1 MSG_OBTAIN
 		setflag 0x960
 		pause 0x1E
 		hidesprite 0x4

@@ -14,6 +14,7 @@ gMapScripts_Passo_Tuono_1_1:
     .byte MAP_SCRIPT_TERMIN
 
 	Passo_Tuono_1_1_MapScriptOnLoad:
+		setvar 0x5007 0x8
 		compare 0x4066 0x0
 		if 0x1 _call Passo_Tuono_1_1_MapScriptOnLoad_CUTSCENE
 		compare 0x4051 0x40

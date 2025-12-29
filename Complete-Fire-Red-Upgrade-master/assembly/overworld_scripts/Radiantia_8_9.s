@@ -17,7 +17,7 @@ gMapScripts_Radiantia_8_9:
 			end
 
 		Radiantia_8_9_MapScriptOnLoad_1:
-			movesprite2 0x2 0x05 0x6
+			movesprite2 0x2 0x05 0x7
 			spritebehave 0x2 0x1
 			return
 
@@ -44,7 +44,9 @@ EventScript_Radiantia_8_9_NPC0:
 	cry 0xC6 0x0
 	msgbox Radiantia_8_5_NPC0_text1 MSG_NORMAL	
 	getplayerpos 0x4001 0x4002
-	compare 0x4001 0x05
+	compare 0x4002 0x05
+	if 0x1 _call EventScript_Radiantia_8_9_NPC0_U
+	compare 0x4002 0x07
 	if 0x1 _call EventScript_Radiantia_8_9_NPC0_R
 	applymovement 0x1 Radiantia_8_9_NPC0_mov1a
 	waitmovement 0x0
@@ -99,6 +101,50 @@ EventScript_Radiantia_8_9_NPC0:
 		.byte 0x12
 		.byte 0x1 
 		.byte 0xFE
+
+	EventScript_Radiantia_8_9_NPC0_U:
+		applymovement 0x1 Radiantia_8_9_NPC0_mov1b
+		waitmovement 0x0
+		movesprite 0x1 0x0 0x0
+		movesprite2 0x1 0x0 0x0
+		sound 0x9
+		pause 0x1E
+		pause 0x1E
+		compare 0x501F 0x100
+		if 0x1 _call Player_Blue
+		compare 0x501F 0x1A3
+		if 0x1 _call Player_Orange
+		compare 0x501F 0x1A4
+		if 0x1 _call Player_Green
+		msgbox Radiantia_8_9_NPC0_text1 MSG_NORMAL
+		special 0x15A
+		pause 0x22
+		sound 0x1E
+		movesprite 0x2 0x07 0x06
+		applymovement 0x2 Radiantia_8_9_NPC0_mov3b
+		waitmovement 0x2
+		spriteface 0xFF 0x1
+		pause 0x1E
+		msgbox Radiantia_8_9_NPC0_text2 MSG_NORMAL
+		pause 0x1E
+		msgbox Radiantia_8_9_NPC0_text3 MSG_NORMAL
+		pause 0x1E
+		fanfare 0x0103
+		textcolor 0x2
+		msgbox Mission_Completed_text1 MSG_NORMAL
+		setflag 0x971
+		textcolor 0x0
+		msgbox Radiantia_8_9_NPC0_text4 MSG_NORMAL	
+		giveitem 0x44 0x1 MSG_OBTAIN
+		release
+		end		
+
+		Radiantia_8_9_NPC0_mov3b:
+			.byte 0x12
+			.byte 0x12
+			.byte 0x1 
+			.byte 0xFE
+
 
 	EventScript_Radiantia_8_9_NPC0_R:
 		applymovement 0x1 Radiantia_8_9_NPC0_mov1b

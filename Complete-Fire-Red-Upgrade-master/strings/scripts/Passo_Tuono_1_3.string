@@ -47,11 +47,3 @@ Centrale Elettrica [ARROW_UP]
 #org @Passo_Tuono_1_3_Sign3_text1
 Zona mineraria:\nState attenti a dove mettete i\lpiedi, potreste calpestare un tesoro!
 
-#org @Passo_Tuono_1_3_Sign2_text_3E
-VAR is 3E
-
-#org @Passo_Tuono_1_3_Sign2_text_3F
-VAR is 3F
-
-#org @Passo_Tuono_1_3_Sign2_text_40
-VAR is 40

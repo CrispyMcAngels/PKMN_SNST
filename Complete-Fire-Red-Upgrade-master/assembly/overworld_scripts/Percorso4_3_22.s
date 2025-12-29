@@ -57,6 +57,11 @@ EventScript_Percorso_4_3_22_NPC1:
 	release
 	end
 
+.global EventScript_Percorso_4_3_22_NPC2
+EventScript_Percorso_4_3_22_NPC2:
+	giveitem 0x53 0x1 MSG_FIND
+	end
+
 .global EventScript_Percorso_4_3_22_NPC3
 EventScript_Percorso_4_3_22_NPC3:
 	//tipo 1
@@ -138,6 +143,7 @@ EventScript_Percorso_4_3_22_NPC11:
 	giveitem 0x153 0x1 MSG_OBTAIN
 	pause 0x1E
 	msgbox Percorso_4_3_22_NPC11_text4 MSG_NORMAL
+	setvar 0x4053 0x8
 	warpmuted 0x3 0x16 0xFF 0x1B 0x28
 	release
 	end

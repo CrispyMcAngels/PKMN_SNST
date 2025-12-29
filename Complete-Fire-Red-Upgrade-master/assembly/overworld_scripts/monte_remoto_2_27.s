@@ -1007,6 +1007,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part5:
     setvar 0x501F 0x0100
     sethealingplace 0x01
     writebytetooffset 0x0 0x4000012
+    clearflag 0x96E
     warpmuted 0x4 0x1 0xFF 0x1 0x3
     fadescreen 0x0
     releaseall

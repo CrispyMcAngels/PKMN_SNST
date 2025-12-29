@@ -201,7 +201,7 @@ EventScript_Stellavia_3_6_NPC5:
 		EventScript_Stellavia_3_6_NPC5_P2:
 			msgbox Stellavia_3_6_NPC5_text2 MSG_NORMAL
 			pause 0x1E
-			giveitem 0x158 0x1 MSG_OBTAIN
+			giveitem 0x44 0x1 MSG_OBTAIN
 			setflag 0x97D
 			return
 
@@ -349,8 +349,8 @@ EventScript_Stellavia_3_6_NPC22:
 		EventScript_Stellavia_3_6_NPC22_P2:
 			closeonkeypress
 			msgbox Stellavia_3_6_NPC22_text4 MSG_NORMAL
-			//setvar 
-			//warp
+			setvar 0x4060 0x8
+			warp 0xA 0x2 0xFF 0x06 0xA
 			release
 			end
 

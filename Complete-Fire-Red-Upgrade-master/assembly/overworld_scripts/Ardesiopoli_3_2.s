@@ -101,9 +101,9 @@ gMapScripts_Ardesiopoli_3_2:
 		end		
 
 		Ardesiopoli_3_2_MapScriptOnLoad_move_oldman:
-			movesprite2 0x1D 0x17 0x3E
+			movesprite2 0x1D 0x18 0x41
 			spritebehave 0x1D 0x2
-			movesprite2 0x1E 0x17 0x3D
+			movesprite2 0x1E 0x18 0x40
 			return
 
 		Ardesiopoli_3_2_MapScriptOnLoad_move_girl:
@@ -155,16 +155,24 @@ EventScript_Ardesiopoli_3_2_tile6:
 	textcolor 0x1
 	msgbox Ardesiopoli_3_2_tile6_text1 MSG_NORMAL
 	getplayerpos 0x4001 0x4002
-	compare 0x4001 0x16
+
+	compare 0x4001 0x15
 	if 0x1 _call EventScript_Ardesiopoli_3_2_tile6_16a
-	compare 0x4001 0x17
+	
+	compare 0x4001 0x16
 	if 0x1 _call EventScript_Ardesiopoli_3_2_tile6_17a
-	compare 0x4001 0x18
+	
+	compare 0x4001 0x17
 	if 0x1 _call EventScript_Ardesiopoli_3_2_tile6_18a
-	applymovement 0xFF Ardesiopoli_3_2_tile6_mov2
-	applymovement 0x1C Ardesiopoli_3_2_tile6_mov3
-	waitmovement 0x0	
-	sound 0x9
+	
+	getplayerpos 0x4001 0x4002 
+	compare 0x4001 0x15
+	if 0x1 _call EventScript_Ardesiopoli_3_2_tile6_mid15
+	compare 0x4001 0x16
+	if 0x1 _call EventScript_Ardesiopoli_3_2_tile6_mid16
+	compare 0x4001 0x17
+	if 0x1 _call EventScript_Ardesiopoli_3_2_tile6_mid16
+	hidesprite 0x1C
 	pause 0x1E
 	applymovement 0xFF Ardesiopoli_3_2_tile6_mov4
 	waitmovement 0xFF
@@ -188,38 +196,50 @@ EventScript_Ardesiopoli_3_2_tile6:
 	releaseall
 	end
 
+	EventScript_Ardesiopoli_3_2_tile6_mid15:
+		applymovement 0xFF Ardesiopoli_3_2_tile6_mov2
+		applymovement 0x1C Ardesiopoli_3_2_tile6_mov3a
+		waitmovement 0x0	
+		return
+
+	EventScript_Ardesiopoli_3_2_tile6_mid16:
+		applymovement 0xFF Ardesiopoli_3_2_tile6_mov2
+		applymovement 0x1C Ardesiopoli_3_2_tile6_mov3
+		waitmovement 0x0	
+		return
+
 	EventScript_Ardesiopoli_3_2_tile6_16a:
-		movesprite 0x1C 0x16 0x41
+		movesprite 0x1C 0x15 0x4C
 		applymovement 0x1C Ardesiopoli_3_2_tile6_mov1
-		waitmovement 0x0
+		waitmovement 0x1C
 		return
 
 	EventScript_Ardesiopoli_3_2_tile6_17a:
-		movesprite 0x1C 0x17 0x41
+		movesprite 0x1C 0x16 0x4C
 		applymovement 0x1C Ardesiopoli_3_2_tile6_mov1
-		waitmovement 0x0
+		waitmovement 0x1C
 		return
 
 	EventScript_Ardesiopoli_3_2_tile6_18a:
-		movesprite 0x1C 0x17 0x41
+		movesprite 0x1C 0x16 0x4C
 		applymovement 0x1C Ardesiopoli_3_2_tile6_mov1a
 		waitmovement 0x0
 		return
 
 	EventScript_Ardesiopoli_3_2_tile6_16b:
-		movesprite 0x1D 0x16 0x41
+		movesprite 0x1D 0x15 0x4C
 		applymovement 0x1D Ardesiopoli_3_2_tile6_mov5
 		waitmovement 0x0
 		return
 
 	EventScript_Ardesiopoli_3_2_tile6_17b:
-		movesprite 0x1D 0x17 0x41
+		movesprite 0x1D 0x16 0x4C
 		applymovement 0x1D Ardesiopoli_3_2_tile6_mov5
 		waitmovement 0x0
 		return
 
 	EventScript_Ardesiopoli_3_2_tile6_18b:
-		movesprite 0x1D 0x17 0x41
+		movesprite 0x1D 0x16 0x4C
 		applymovement 0x1D Ardesiopoli_3_2_tile6_mov5a
 		waitmovement 0x0
 		return
@@ -248,10 +268,25 @@ EventScript_Ardesiopoli_3_2_tile6:
 		.byte 0x3 
 		.byte 0xFE
 
+	Ardesiopoli_3_2_tile6_mov3a:		
+		.byte 0x1E
+		.byte 0x20	
+		.byte 0x1E
+		.byte 0x1E
+		.byte 0x1E
+		.byte 0x1E
+		.byte 0x1E
+		.byte 0x1E
+		.byte 0x1E
+		.byte 0xFE
+
 	Ardesiopoli_3_2_tile6_mov3:		
 		.byte 0x1E
 		.byte 0x1E
-		.byte 0x60
+		.byte 0x1E
+		.byte 0x1E
+		.byte 0x1E
+		.byte 0x1E
 		.byte 0x1E
 		.byte 0x1E
 		.byte 0xFE
@@ -276,8 +311,8 @@ EventScript_Ardesiopoli_3_2_tile6:
 		.byte 0x1E
 		.byte 0x1E
 		.byte 0x1E
-		.byte 0x13
 		.byte 0x1E
+		.byte 0x13
 		.byte 0x1E
 		.byte 0x62
 		.byte 0xFE

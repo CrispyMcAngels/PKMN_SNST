@@ -704,10 +704,6 @@ gEventsObjectPic_NPC121Pal 08F161E0
 gEventObjectGraphicsInfo_NPC122 08EB11E8
 gEventsObjectPic_NPC122Pal 08F161E8
 
-#NPC123
-gEventObjectGraphicsInfo_NPC123 08EB11EC
-gEventsObjectPic_NPC123Pal 08F15EB0
-
 #NPC124
 gEventObjectGraphicsInfo_NPC124 08EB11F0
 gEventsObjectPic_NPC124Pal 08F161F8

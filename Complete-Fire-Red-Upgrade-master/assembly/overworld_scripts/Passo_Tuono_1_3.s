@@ -291,32 +291,7 @@ EventScript_Passo_Tuono_1_3_NPC11:
 
 .global EventScript_Passo_Tuono_1_3_Sign2
 EventScript_Passo_Tuono_1_3_Sign2:
-	lockall
-	compare 0x4051 0x3E
-	if 0x1 _goto EventScript_Passo_Tuono_1_3_Sign2_3E
-	compare 0x4051 0x3F
-	if 0x1 _goto EventScript_Passo_Tuono_1_3_Sign2_3F
-	compare 0x4051 0x40
-	if 0x1 _goto EventScript_Passo_Tuono_1_3_Sign2_40
-	compare 0x4051 0x40
-	if 0x1 _goto EventScript_Passo_Tuono_1_3_Sign2_40
 	msgbox Passo_Tuono_1_3_Sign2_text1 0x7
-	releaseall
-	end
-
-EventScript_Passo_Tuono_1_3_Sign2_3E:
-	msgbox Passo_Tuono_1_3_Sign2_text_3E 0x7
-	releaseall
-	end
-
-EventScript_Passo_Tuono_1_3_Sign2_3F:
-	msgbox Passo_Tuono_1_3_Sign2_text_3F 0x7
-	releaseall
-	end
-
-EventScript_Passo_Tuono_1_3_Sign2_40:
-	msgbox Passo_Tuono_1_3_Sign2_text_40 0x7
-	releaseall
 	end
 
 

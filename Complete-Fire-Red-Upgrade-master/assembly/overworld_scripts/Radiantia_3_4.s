@@ -111,6 +111,7 @@ gMapScripts_Radiantia_3_4:
 			movesprite2 0xB 0x0 0x0
 			setvar 0x4051 0x36
 			setvar 0x4060 0x7
+			setvar 0x4053 0x9
 			fadedefault
 			releaseall
 			end

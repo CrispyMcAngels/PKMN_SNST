@@ -2,40 +2,40 @@
 ...
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text2
-???: Il Monte Remoto...\pIl posto dove il tempo non scorre,\nrimane fermo, dove il sole\lnon tramonta mai...
+???: Il Monte Remoto...\pQui il tempo tace.\nQui il sole non cala mai...\pCome se questo luogo fosse rimasto\nsospeso nell'attimo che ho perduto...
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text3
-???: ...Il tramonto d'altronde e'\nlo stesso di allora...
+???: Il tramonto... identico a\nquello di allora...
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text4
-???: ...Incantevole...
+???: Il giorno in cui le fiamme\ndella guerra hanno consumato tutto\lcio' che amavo.
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text5
-???: Chi l'avrebbe mai detto che\ndopo mezzo millenio ci avrei fatto\lritorno...\pQuesta volta pero' i tre cani\nguardiani non potranno fare nulla\lper ostacolarmi e potro' finalmente\lrisvegliare il Poke'mon leggendario\lguardiano del tempo, grazie al\lquale portero' a termine la mia\lmissione...
+???: Chi l'avrebbe mai detto...\pDopo mezzo secolo, eccomi di nuovo\nqui.\pMa questa volta... Nulla potra'\nfermarmi.\pNe' l'Ordine del Vento, ne' quelle\ntre Bestie Guardiane che osarono\lprivarmi della vittoria.
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text6
-???: ...Fermare il tempo...
+???: Con il potere di Ho-oh, il\nguardiano del tempo, risvegliero'\lcio' che mi e' stato strappato.\pIl mondo intero teme l'avanzata del\ntempo... io la spezzero'.
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text7
-???: Il tempo e' il tiranno che\ngoverna il mondo: guerra, carestie\le sofferenze...\pTutto cio' e' causato dalla sua\nimplacabile avanzata...\pFermare il tempo e' l'unico modo\nper porre fine a questi mali.
+???: Il tempo e' il vero carnefice.\pE' lui che ruba, distrugge,\ncorrompe. Io lo incatenero'.\pE quando tutto sara' immobile,\nnessuna guerra, nessuna morte...\pNessuna perdita potra' piu' toccarmi.
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text8
-???: Io, Crono, ho il coraggio e la\nvolonta' di farlo, anche se\lsignificherebbe sacrificare tutto.\pIl tempo dovra' piegarsi alla mia\nvolonta e, l'universo trovera' la\lpace che tanto merita.\pIl mio nome sara' ricordato come\ncolui che ha sconfitto il tempo e\lha portato l'era della perfezione...\pHo fondato e addestrato il Team\nDusk solo a questo scopo, questa\lvolta nulla andra' storto...
+???: Saro' ricordato come colui che\nha ridato eternita' a Eyros...\pE riavuto indietro cio' che il tempo\nmi ha tolto.
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text9
-Crono: ...Da allora nulla sembra\nessere cambiato...\p...Ricordo ancora quel giorno come\nse fosse ieri...
+Crono: Da allora nulla sembra\nessere cambiato.\pEppure dentro di me... quel giorno\nnon e' mai finito.
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text10
 Monte Remoto...\p...500 anni fa...
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text11
-Crono: La fine del mio viaggio e'\nvicina...\pIl Monte Remoto, dimora di Ho-oh,\nil guardiano del tempo...\pOra che le tre Bestie Leggendarie\nsono state sconfitte nessuno puo'\lfermarmi nel mio intento!
+Crono: La fine del mio viaggio...\nFinalmente!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text12
-Crono: Grazie alla Fiamma Tramonto\npresto questo potere...\pSara' mio!
+Crono: Grazie alla Fiamma Tramonto\nquesto potere...\pSara' mio!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text13
-Crono: Oh guardiano del tempo,\nvieni a me!!!
+Crono: Ho-oh guardiano del tempo...\pQuesta volta non mi sfuggirai,\nvieni a me, portatore dell'eternita'!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text15
 Ho-oh: Gyooooohhhhhh!!!
@@ -44,7 +44,7 @@ Ho-oh: Gyooooohhhhhh!!!
 Crono: Ed ora...\n...diventa mio!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text17
-Crono: Attraverso il potere di Ho-oh\nriscrivero' il destino dell'universo\lstesso.\pUtilizzero' la sua forza divina per\nsospendere il tempo e preservare\ltutto cio' che e' esistito e che\lesistera'.\pMa sappiate che questo sacrificio\nsara' inevitabile, molti dovranno\lpagarne il prezzo, poiche' la vita e\ll'individualita' saranno congelate\lnell'eternita'.\pPur salvando l'universo dalla sua\ninevitabile rovina, l'umanita'\lperdera' cio' che la rende unica e\lpreziosa.\pE' una scelta difficile, ma\nnecessaria per garantire la\lsopravvivenza dell'intero cosmo...
+Crono: Con il tuo potere sospendero'\nil tempo stesso!\pCosi' rivedro' la mia famiglia, cosi'\nEyros non conoscera' mai piu' dolore.\pMolti lo chiameranno un\nsacrificio...\pIo lo chiamo redenzione.\pSe l'umanita' deve rinunciare al suo\ndomani, lo fara'.\pMeglio un presente eterno che un\nfuturo di cenere!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text18
 Crono: Ma che?\pNon e' possibile...
@@ -59,7 +59,7 @@ Crono: Sta arrivando qualcuno...\p...qualcuno di molto forte!
 ???: Rilascio!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text22
-Crono: Dannazione, i 3 cani\nguardiani Entei, Raikou e Suicune\lsono venuti per fermare i miei\lpiani!
+Crono: Dannazione... voi di nuovo...\nEntei, Raikou, Suicune!\pSiete pronti a sacrificare Eyros\npur di difendere un dio che lascia\lmorire i suoi figli?
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text23
 Crono: Ho-oh sconfiggili!
@@ -83,10 +83,10 @@ Crono: HO-OH, RITIRATA!!!
 Crono: .............
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text29
-Crono: Non e' possibile, i cani\nguardiani si sono uniti per fermare\lil Poke'mon leggendario...\pTutto il lavoro fatto finora per\narrivare a questo punto e' stato\linvano...\pNon c'e' piu' motivo di stare qui...\pEppure...\pDev'esserci un modo per risvegliare\nHo-oh anche in queste condizioni...
+Crono: No! Non puo' essere...\pDopo tutto cio' che ho fatto...\nancora una volta, derubato!\pNon mi arrendero'. Non posso.\nCi dev'essere un modo...\pUn altro potere nascosto da qualche\nparte ad Eyros...
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text30
-Crono: Non ho altra scelta...\nGirero' la regione di Eyros in lungo\le in largo per trovare rimedio...\pTornero', e' una promessa!
+Crono: Si... lo trovero'.\pE se ci vorranno secoli attendero'.\nIl tempo non potra' nulla contro di\lme.\pIo lo divorero' dall'interno!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text31
 Monte Remoto...\p...Presente
@@ -107,7 +107,7 @@ Crono: Eccellente!\pUmbra, Vesper, fate in modo che\ntutto vada secondo i piani!
 Umbra: Sissignore!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text36
-Crono: A presto,\pmio vecchio amico...
+Crono: A presto,\pmia famiglia perduta...
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text37
 Crispy presenta...

@@ -151,7 +151,6 @@ La storia sull'origine di questo\nposto e' molto curiosa, vuoi che\lte la raccon
 Bene, inziamo!
 
 #org @Percorso_4_3_22_NPC20_text4
-//_/////////////////////////////////
 Dicono che il Passo Tuono non sia\nnato con la montagna...\pMa con il cielo.\pUn giorno, un fulmine cosi' potente\ncolpi' la roccia rompendola in due,\lcreando quel sentiero innaturale.\pDa allora, in quel luogo il vento\nnon soffia... corre.\pE quando passa, sembra quasi di\nsentire il ruggito dell'antico tuono\lche l'ha generato.\pNon e' un passaggio.\nE' una ferita del cielo.
 
 #org @Percorso_4_3_22_NPC20_text5
@@ -161,10 +160,11 @@ Ehi, si e' fatto tardi!\pMi sono davvero fatto prendere\ndalla storia!
 Ti ringrazio per avermi ascoltato,\ntramandare queste antiche storie\lalle nuove generazioni mi rende\lorgoglioso.\pTieni questo come segno di\nriconoscenza, e ricorda di\ltramandare questa leggenda pure te\lun giorno!
 
 #org @Percorso_4_3_22_NPC21_text1
-a
+//_/////////////////////////////////
+Una battaglia elettrizzante dici?
 
 #org @Percorso_4_3_22_NPC21_text2
-b
+I miei Pokemon non sono riusciti a\nprendere il volo!
 
 #org @Percorso_4_3_22_NPC21_text3
-c
+Pokemon di tipo volante come i miei\nfanno fatica a combattere in posti\lpieni di Pokemon elettro come\lquesto...\pE' proprio per questo motivo che\nsono venuto qui per allenarmi!

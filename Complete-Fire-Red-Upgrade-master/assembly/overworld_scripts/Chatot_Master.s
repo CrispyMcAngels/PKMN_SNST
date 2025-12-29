@@ -38,6 +38,12 @@ EventScript_Chatot_Master:
 	if 0x1 _call EventScript_Chatot_Master_6
 	compare 0x4053 0x7
 	if 0x1 _call EventScript_Chatot_Master_7
+	compare 0x4053 0x8
+	if 0x1 _call EventScript_Chatot_Master_8
+	compare 0x4053 0x9
+	if 0x1 _call EventScript_Chatot_Master_9
+	compare 0x4053 0xA
+	if 0x1 _call EventScript_Chatot_Master_10
 	end
 
 	EventScript_Chatot_Master_0:
@@ -84,6 +90,24 @@ EventScript_Chatot_Master:
 
 	EventScript_Chatot_Master_7:
 		msgbox EventScript_Chatot_Master_text7 MSG_NORMAL
+		cry 0x1EE 0x0
+		release
+		end
+
+	EventScript_Chatot_Master_8:
+		msgbox EventScript_Chatot_Master_text8 MSG_NORMAL
+		cry 0x1EE 0x0
+		release
+		end
+
+	EventScript_Chatot_Master_9:
+		msgbox EventScript_Chatot_Master_text9 MSG_NORMAL
+		cry 0x1EE 0x0
+		release
+		end
+
+	EventScript_Chatot_Master_10:
+		msgbox EventScript_Chatot_Master_text10 MSG_NORMAL
 		cry 0x1EE 0x0
 		release
 		end

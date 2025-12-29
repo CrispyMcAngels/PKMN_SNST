@@ -16,11 +16,13 @@ gMapScripts_GrtVentiSuss_1_38:
 
 	GrtVentiSuss_1_38_MapScriptOnLoad:
 		compare 0x4051 0x3B
-		if 0x1 _goto GrtVentiSuss_1_38_MapScriptOnLoad_1
+		if 0x1 _call GrtVentiSuss_1_38_MapScriptOnLoad_1
 		compare 0x4051 0x3C
-		if 0x1 _goto GrtVentiSuss_1_38_MapScriptOnLoad_1
+		if 0x1 _call GrtVentiSuss_1_38_MapScriptOnLoad_1
 		compare 0x4051 0x3E
-		if 0x1 _goto GrtVentiSuss_1_38_MapScriptOnLoad_2
+		if 0x1 _call GrtVentiSuss_1_38_MapScriptOnLoad_2
+		compare 0x4051 0x3F
+		if 0x4 _call GrtVentiSuss_1_38_MapScriptOnLoad_3
 		end
 
 		GrtVentiSuss_1_38_MapScriptOnLoad_1:
@@ -35,6 +37,11 @@ gMapScripts_GrtVentiSuss_1_38:
 			movesprite2 0xA 0x07 0x04
 			movesprite2 0xC 0x09 0x0A
 			movesprite2 0x3 0x07 0x04
+			return
+
+		GrtVentiSuss_1_38_MapScriptOnLoad_3:
+			movesprite2 0xB 0x0 0x10
+			movesprite2 0xA 0x0 0x10
 			return
 
 	GrtVentiSuss_1_38_MapScriptOnWarpIntoMapTable:

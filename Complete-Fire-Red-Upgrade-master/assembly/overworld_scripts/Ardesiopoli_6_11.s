@@ -27,7 +27,7 @@ gMapScripts_Ardesiopoli_6_11:
 			spritebehave 0x1 0x8
 			movesprite2 0x2 0x09 0x06
 			spritebehave 0x2 0x2
-			hidesprite 0x4
+			movesprite2 0x4 0x0 0x0
 			return
 
 	Ardesiopoli_6_11_MapScriptOnWarpIntoMapTable:

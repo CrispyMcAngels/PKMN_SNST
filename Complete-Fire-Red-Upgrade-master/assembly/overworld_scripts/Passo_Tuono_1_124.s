@@ -37,6 +37,7 @@ gMapScripts_Passo_Tuono_1_124:
 			return
 
 	Passo_Tuono_1_124_MapScriptOnLoad:
+		setvar 0x5007 0x2
 		compare 0x4051 0x3E
 		if 0x1 _call Passo_Tuono_1_124_MapScriptOnLoad_P2
 		compare 0x4051 0x3F
@@ -826,7 +827,7 @@ gMapScripts_Passo_Tuono_1_124:
 				showpokepic 0x3BB 0x0 0x6
 				msgbox Passo_Tuono_1_124_text31 MSG_NORMAL	
 				special 0x15A	
-				trainerbattle3 0x3 0x47 0x0 Passo_Tuono_1_124_text32
+				trainerbattle3 0x3 0x4b 0x0 Passo_Tuono_1_124_text32
 				pause 0x1E
 				setvar 0x4051 0x46
 				compare 0x4051 0x46
@@ -840,7 +841,7 @@ gMapScripts_Passo_Tuono_1_124:
 				showpokepic 0x3BC 0x0 0x6
 				msgbox Passo_Tuono_1_124_text34 MSG_NORMAL	
 				special 0x15A	
-				trainerbattle3 0x3 0x48 0x0 Passo_Tuono_1_124_text35
+				trainerbattle3 0x3 0x4c 0x0 Passo_Tuono_1_124_text35
 				pause 0x23
 				setvar 0x4051 0x47
 				compare 0x4051 0x47
@@ -854,7 +855,7 @@ gMapScripts_Passo_Tuono_1_124:
 				showpokepic 0x3BB 0x0 0x6
 				msgbox Passo_Tuono_1_124_text36 MSG_NORMAL	
 				special 0x15A	
-				trainerbattle3 0x3 0x49 0x0 Passo_Tuono_1_124_text37
+				trainerbattle3 0x3 0x4d 0x0 Passo_Tuono_1_124_text37
 				pause 0x23				
 				
 				//turn towards raito
@@ -898,7 +899,7 @@ gMapScripts_Passo_Tuono_1_124:
 				msgbox Passo_Tuono_1_124_text39 MSG_NORMAL	
 				special 0x15A	
 				pause 0x1E
-				trainerbattle3  0x3 0x4A 0x0 Passo_Tuono_1_124_text41
+				trainerbattle3 0x3 0x4e 0x0 Passo_Tuono_1_124_text41
 				movesprite 0x8 0x4 0x7
 				spriteface 0x8 0x4
 				movesprite 0xA 0x8 0x7
@@ -1083,6 +1084,7 @@ gMapScripts_Passo_Tuono_1_124:
 				hidesprite 0xB
 				setvar 0x4051 0x49
 				setvar 0x4052 0x8
+				setvar 0x4053 0xA
 				setflag 0x97A
 				fadedefault
 				releaseall
