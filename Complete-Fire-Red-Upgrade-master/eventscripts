@@ -114,11 +114,61 @@ sign 10 7 3 EventScript_Stellavia_10_5_Sign0
 sign 10 7 4 EventScript_Stellavia_10_5_Sign0
 sign 10 7 5 EventScript_Stellavia_10_5_Sign0
 
+npc 10 8 0 EventScript_Stellavia_10_8_NPC0
+npc 10 8 1 EventScript_Stellavia_10_8_NPC1
+npc 10 8 2 EventScript_Stellavia_10_8_NPC2
+npc 10 8 3 EventScript_Stellavia_10_8_NPC3
+npc 10 8 4 EventScript_Stellavia_10_8_NPC4
+npc 10 8 5 EventScript_Stellavia_10_8_NPC5
+npc 10 8 6 EventScript_Stellavia_10_8_NPC6
+npc 10 8 7 EventScript_Stellavia_10_8_NPC7
+npc 10 8 8 EventScript_Stellavia_10_8_NPC8
+npc 10 8 9 EventScript_Stellavia_10_8_NPC9
+npc 10 8 10 EventScript_Stellavia_10_8_NPC10
+
+sign 10 8 0 EventScript_Stellavia_10_8_Sign0
+sign 10 8 1 EventScript_Stellavia_10_8_Sign0
+sign 10 8 2 EventScript_Stellavia_10_8_Sign0
+sign 10 8 3 EventScript_Stellavia_10_8_Sign3
+sign 10 8 4 EventScript_Stellavia_10_8_Sign3
+sign 10 8 5 EventScript_Stellavia_10_8_Sign3
+sign 10 8 6 EventScript_Stellavia_10_8_Sign3
+sign 10 8 7 EventScript_Stellavia_10_8_Sign3
+sign 10 8 8 EventScript_Stellavia_10_8_Sign8
+sign 10 8 9 EventScript_Stellavia_10_8_Sign9
+sign 10 8 10 EventScript_Stellavia_10_8_Sign9
+
 npc 10 9 0 EventScript_Stellavia_10_9_NPC0
 npc 10 9 2 EventScript_Stellavia_10_9_NPC2
 npc 10 9 3 EventScript_Stellavia_10_9_NPC3
 npc 10 9 4 EventScript_Stellavia_10_9_NPC4
 npc 10 9 5 EventScript_Stellavia_10_9_NPC5
+
+sign 10 10 0 EventScript_Stellavia_10_10_Sign0
+sign 10 10 1 EventScript_Stellavia_10_10_Sign1
+npc 10 10 0 EventScript_Stellavia_10_10_NPC0
+npc 10 10 1 EventScript_Stellavia_10_10_NPC1
+npc 10 10 2 EventScript_Stellavia_10_10_NPC2
+
+npc 10 11 0 EventScript_Stellavia_10_11_NPC0
+npc 10 11 1 EventScript_Stellavia_10_11_NPC1
+sign 10 11 0 EventScript_Stellavia_10_10_Sign1
+sign 10 11 1 EventScript_Stellavia_10_11_Sign1
+
+npc 10 12 1 EventScript_Stellavia_10_12_NPC1
+npc 10 12 2 EventScript_Stellavia_10_12_NPC2
+npc 10 12 3 EventScript_Stellavia_10_12_NPC3
+npc 10 12 4 EventScript_Stellavia_10_12_NPC4
+npc 10 12 5 EventScript_Stellavia_3_6_NPC8
+
+npc 10 14 0 EventScript_Stellavia_10_14_NPC0
+npc 10 14 1 EventScript_Stellavia_10_14_NPC1
+npc 10 14 2 EventScript_Stellavia_10_14_NPC2
+npc 10 14 3 EventScript_Stellavia_10_14_NPC3
+npc 10 14 4 EventScript_Stellavia_10_14_NPC4
+npc 10 14 5 EventScript_Stellavia_10_14_NPC5
+npc 10 14 6 EventScript_Stellavia_10_14_NPC6
+npc 10 14 7 EventScript_Ardesiopoli_3_2_NPC11
 
 sign 10 19 0 EventScript_Stellavia_10_19_Sign0
 sign 10 19 1 EventScript_Stellavia_10_19_Sign0

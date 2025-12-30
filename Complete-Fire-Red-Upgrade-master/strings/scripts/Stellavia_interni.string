@@ -153,7 +153,7 @@ SSSSHHhh, Silenzio!\pAnche il tuo Pokemon.\nSoprattutto il tuo Pokemon.
 Non sei tu a scegliere l'argomento\ndella tesi.\pE' lui che sceglie te!
 
 #org @Stellavia_10_4_NPC5_text2
-Vuoi sapere una curiosita'?Crispy, il creatore di Pokemon\nSunset, ha scritto la sua tesi di\llaurea in ottimizzazione della\llogistica nei magazzini, presso lo\lstabilimento BMW di Monaco di\lBaviera. 
+Vuoi sapere una curiosita'?\pCrispy, il creatore di Pokemon\nSunset, ha scritto la sua tesi di\llaurea in ottimizzazione della\llogistica nei magazzini, presso lo\lstabilimento BMW di Monaco di\lBaviera. 
 
 #org @Stellavia_10_4_NPC6_text1
 Sto studiando. Giuro.
@@ -250,9 +250,136 @@ Ho quasi hackerato il PokeDex!\p...Forse non dovevo dirlo.
 Tieni questo, ma non fare la spia!
 
 #org @Stellavia_10_7_NPC3_text3
-//_/////////////////////////////////
 Ho perso il file... il FILEEEE...
 
+//____10_8_______
+
+#org @Stellavia_10_8_NPC0_text1
+Benvenuto alla Stellavia\nPokeExchange.\pAl primo piano puoi trovare gli\nuffici degli analisti, mentre al\lsecondo piano troverai l'ufficio\ldel direttore.
+
+#org @Stellavia_10_8_NPC1_text1
+Sono qui per un colloquio come\ntirocinante.\pMi tremano le gambe dall'ansia!
+
+#org @Stellavia_10_8_NPC2_text1
+Dovevo incontrate il mio broker\nun'ora fa, ovviamente e' in ritardo.\pQuesti Fincance Bros sono\ninaffidabili, tutto cio' di cui gli\limporta e' avere un gilet Patagonia\le i capelli sempre in ordine... 
+
+#org @Stellavia_10_8_NPC3_text1
+Oggi le azioni di PokeMart sono\ncrollate!\pTutti comprano al 7 Eevee!
+
+#org @Stellavia_10_8_NPC4_text1
+Un giorno saro' ricca.\pO in Terapia.
+
+#org @Stellavia_10_8_NPC5_text1
+Devo finire quest'analisi per una\nnuova acquisizione entro stasera.\pLavorero' fino a tarda notte.
+
+#org @Stellavia_10_8_NPC6_text1
+Lavorare in finanza fa bene al\nportafoglio.\pMa a cosa servono tutti questi\nsoldi se poi non si ha nemmeno il\ltempo per spenderli?
+
+#org @Stellavia_10_8_NPC7_text1
+Il denaro e' come un Persian:\nelegante, silenzioso, e ti graffia\lappena ti distrai.
+
+#org @Stellavia_10_8_NPC8_text1
+Se i numeri sono in ordine...\nLo e' anche la mente.
+
+#org @Stellavia_10_8_NPC9_text1
+Multitasking: mangio, lavoro,\npanico.
+
+#org @Stellavia_10_8_NPC10_text1
+Benvenuto giovanotto, sono il Sig.\nDallors, il direttore della Poke-\lExhange.
+
+#org @Stellavia_10_8_NPC10_text2
+Offriamo piani di investimento con\nun pacchetto a partire da 5000 Poke,\lsei interessato?
+
+#org @Stellavia_10_8_NPC10_text3
+Niente di personale, ma ricorda che\nla vera ricchezza si costruisce nel\ltempo...
+
+#org @Stellavia_10_8_NPC10_text4
+Mi dispiace, non hai abbastanza\nsoldi...
+
+#org @Stellavia_10_8_NPC10_text5
+Fantastico!\pBenvenuto nella famiglia di Poke-\nExchange.\pTorna quando vuoi per scoprire\nl'interesse maturato sul tuo\linvestimento
+
+#org @Stellavia_10_8_NPC10_text6
+E' stato un piacere fare affari con\nte, torna quando vuoi!
+
+#org @Stellavia_10_8_NPC10_text7
+Torna quando vorrai prelevare i\ntuoi soldi!
+
+#org @Stellavia_10_8_NPC10_text_b50
+Mmmh, il tuo investimento ha perso\nil 50%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_b45
+Mmmh, il tuo investimento ha perso\nil 45%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_b40
+Mmmh, il tuo investimento ha perso\nil 40%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_b35
+Mmmh, il tuo investimento ha perso\nil 35%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_b30
+Mmmh, il tuo investimento ha perso\nil 30%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_b25
+Mmmh, il tuo investimento ha perso\nil 25%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_b20
+Mmmh, il tuo investimento ha perso\nil 20%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_b15
+Mmmh, il tuo investimento ha perso\nil 15%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_b10
+Mmmh, il tuo investimento ha perso\nil 10%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_b5
+Mmmh, il tuo investimento ha perso\nil 5%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_0
+Mmmh, il tuo investimento e' in\npari. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_5
+Buone notizie!\pIl tuo investimento ha guadagnato\nil 5%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_10
+Buone notizie!\pIl tuo investimento ha guadagnato\nil 10%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_15
+Buone notizie!\pIl tuo investimento ha guadagnato\nil 15%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_20
+Buone notizie!\pIl tuo investimento ha guadagnato\nil 20%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_25
+Buone notizie!\pIl tuo investimento ha guadagnato\nil 25%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_30
+Buone notizie!\pIl tuo investimento ha guadagnato\nil 30%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_35
+Buone notizie!\pIl tuo investimento ha guadagnato\nil 35%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_40
+Ottime notizie!\pIl tuo investimento ha guadagnato\nil 40%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_45
+Ottime notizie!\pIl tuo investimento ha guadagnato\nil 45%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_NPC10_text_50
+Ottime notizie!\pIl tuo investimento ha guadagnato\nil 50%. Vuoi ritirare i soldi?
+
+#org @Stellavia_10_8_SIGN0
+Tauros e' il simbolo della\nPokeExchange,\lrappresenta il mercato rialzista.
+
+#org @Stellavia_10_8_SIGN3
+Ci sono tanti numeri e grafici\nincomprensibili...\pMeglio non toccare nulla!
+
+#org @Stellavia_10_8_SIGN8
+Prima regola della finanza:\nCompra quando il prezzo e' basso,\lvendi quando il prezzo e' alto.
+
+#org @Stellavia_10_8_SIGN9
+//_/////////////////////////////////
+Sono informazioni altamente\nriservate, meglio non guardare!
 
 
 //____10_9_______
@@ -273,8 +400,78 @@ Stiamo testando nuovi prodotti,\nprendi questo.
 Da 7Eevee l'attenzione verso il\ncliente e' la cosa piu' importante.
 
 #org @Stellavia_10_9_NPC5_text1
-//_/////////////////////////////////
 Sono qui per comprare il caffe.\pQuesto e' il mio carburante.\nLetteralmente.
+
+//____10_10_______
+
+#org @Stellavia_10_10_SIGN0
+Questo libro racconta dell'era\nprimordiale di Eyros...\pPare fosse abitata da strane specie\ndi Pokemon, ormai estinte nel tempo.
+
+#org @Stellavia_10_10_SIGN1
+Alla radio stanno passando un\nalbum dei Coldplay, questa si che\le' musica!
+
+#org @Stellavia_10_10_NPC0_text1
+Daje, sto a prepara' degli spaghi\nCacio e Pepe pe fa colpo su na\lpischella.\pSe ennamorera' de certo, credime.
+
+#org @Stellavia_10_10_NPC0_text2
+Che stai a di? Voi la ricetta?\pCarcora che e' allo stesso tempo\nmolto facile e difficile AO...\pPecche ce stanno solo du\ningredienti si, pero' te basta un\lsolo errore pe fa na miseria e\lrovinare l'equilibrio der piatto!
+
+#org @Stellavia_10_10_NPC0_text3
+Dosi pe du persone:\n120 gr. de pecorino,\lAO! Quello de Roma, me raccomando!\pPoi, tanto pepe, se deve senti AO!\pPraticamente, mentre a pasta coce,\nfai tostare er pepe in una padella\lantiaderente, poi quando serti\ler profumo der pepe en tutta a\lstanza, ce versi dentro un po de\lacqua de cottura...\pQuando a pasta sta ar dente ce la\nbutti nella padella cor pepe e\lun po de acqua de cottura e cuoci\lancora un minuto AO.\pDopodiche, spegni er fuoco e piano\npiano aggiungi er pecorino e\lmantechi.\pDeve fare splish splash AO, the\nsound of love.\pCarcora che e' tutto un gioco de\nequilibri, se ce sta troppa acqua,\lce butti dentro un poco de pecorino.\pSe ce stanno en po de grumi, ce\nbutti en poco de acqua de cottura.\pNon me deludere a fenomeno!
+
+#org @Stellavia_10_10_NPC1_text1
+La partita sta pe iniziare, sento\ngia' er core che me batte a crepa-\lpelle.\pEddajje maggica!!!
+
+#org @Stellavia_10_10_NPC2_text1
+Non chiedermi che cosa ci faccia\nqui:\lAvevo accettato di studiare insieme\la questo ragazzo...\pPenso lui abbia frainteso e pensi\nche questo sia un appuntamento... 
+
+//______10_11_______
+
+#org @Stellavia_10_11_NPC0_text1
+Vivere in una metropoli come\nStellavia e' molto stressante!\pIl miglior modo per mantenere lo\nstress sotto controllo e' allenarsi\lquasi tutti i giorni...\pOggi allenero' schiena e tricipti!
+
+#org @Stellavia_10_11_SIGN1
+Sono appunti su una tabella di\nallenamento basata su piu'\ldiscipline...\pForse una Hyrox?
+
+//______10_12_______
+
+#org @Stellavia_10_12_NPC1_text1
+Se la citta' corre, tu... respira.
+
+#org @Stellavia_10_12_NPC2_text1
+Il mio Pokemon sta bene.\nIo... non so.
+
+#org @Stellavia_10_12_NPC3_text1
+Prima di affrontare Ross, bevi un\nbicchiere d'acqua.\pCi sara' da ballare, fidati.
+
+#org @Stellavia_10_12_NPC4_text1
+E' qui per dei controlli.\nHa urlato troppo alla festa di ieri.
+
+//______10_14_______
+
+#org @Stellavia_10_14_NPC0_text1
+Lui imita ogni rumore, ANCHE le mie\nlamentele.
+
+#org @Stellavia_10_14_NPC1_text1
+Lavoro come sviluppatore.\pSe trovi un bug nel mio software e'\nvoluto. E' ARTE.
+
+#org @Stellavia_10_14_NPC2_text1
+Un grande magnate delle vendite un\ngiorno disse:\pPrima stringi amicizie, poi fai\nvendite e poi fai l'amore.\lIn nessun ordine particolare...
+
+#org @Stellavia_10_14_NPC2_text2
+Mi chiedo se davvero funzioni...\pMi sembri simpatico, tieni questi\ncampioni della nuova linea di\lPokeball.
+
+#org @Stellavia_10_14_NPC3_text1
+Il turno di notte non perdona.\pOra mi merito una bella pennichella\nqui sul divano...
+
+#org @Stellavia_10_14_NPC4_text1
+Sto girando un video:\pCome arredare il tuo attico minimal.\nNon guardare il caos dietro di me.
+
+#org @Stellavia_10_14_NPC5_text1
+LAMENTELEEE - LAMENTELEEE
+
+#org @Stellavia_10_14_NPC6_text1
+Non credere che vivere in alto\nsignifichi stare lontano dai\lproblemi.\pI problemi... prendono l'ascensore.
 
 
 //______10_19_______

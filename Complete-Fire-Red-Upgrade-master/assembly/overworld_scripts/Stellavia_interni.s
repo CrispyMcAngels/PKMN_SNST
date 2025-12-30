@@ -706,6 +706,425 @@ EventScript_Stellavia_10_7_NPC3:
 		release
 		end
 
+//____10_8______
+
+.global EventScript_Stellavia_10_8_NPC0
+EventScript_Stellavia_10_8_NPC0:
+	lock
+	faceplayer
+	msgbox Stellavia_10_8_NPC0_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_8_NPC1
+EventScript_Stellavia_10_8_NPC1:
+	lock
+	faceplayer
+	msgbox Stellavia_10_8_NPC1_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_8_NPC2
+EventScript_Stellavia_10_8_NPC2:
+	lock
+	faceplayer
+	msgbox Stellavia_10_8_NPC2_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_8_NPC3
+EventScript_Stellavia_10_8_NPC3:
+	lock
+	faceplayer
+	msgbox Stellavia_10_8_NPC3_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_8_NPC4
+EventScript_Stellavia_10_8_NPC4:
+	lock
+	faceplayer
+	msgbox Stellavia_10_8_NPC4_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_8_NPC5
+EventScript_Stellavia_10_8_NPC5:
+	lock
+	faceplayer
+	msgbox Stellavia_10_8_NPC5_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_8_NPC6
+EventScript_Stellavia_10_8_NPC6:
+	lock
+	faceplayer
+	msgbox Stellavia_10_8_NPC6_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_8_NPC7
+EventScript_Stellavia_10_8_NPC7:
+	lock
+	faceplayer
+	msgbox Stellavia_10_8_NPC7_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_8_NPC8
+EventScript_Stellavia_10_8_NPC8:
+	lock
+	faceplayer
+	msgbox Stellavia_10_8_NPC8_text1 MSG_NORMAL
+	release
+	end
+
+
+.global EventScript_Stellavia_10_8_NPC9
+EventScript_Stellavia_10_8_NPC9:
+	lock
+	faceplayer
+	msgbox Stellavia_10_8_NPC9_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_8_NPC10
+EventScript_Stellavia_10_8_NPC10:
+	lock
+	faceplayer
+	checkflag 0x98B
+	if 0x1 _goto EventScript_Stellavia_10_8_NPC10_P3
+	msgbox Stellavia_10_8_NPC10_text1 MSG_NORMAL
+	pause 0x1E
+	msgbox Stellavia_10_8_NPC10_text2 MSG_YESNO
+	compare 0x800D 0x1
+	if 0x1 _goto EventScript_Stellavia_10_8_NPC10_P1
+	msgbox Stellavia_10_8_NPC10_text3 MSG_NORMAL
+	release
+	end
+
+	EventScript_Stellavia_10_8_NPC10_P1:
+		checkmoney 0x1388 0x0
+		compare 0x800D 0x1
+		if 0x4 _goto EventScript_Stellavia_10_8_NPC10_P2
+		msgbox Stellavia_10_8_NPC10_text4 MSG_NORMAL
+		release 
+		end
+
+		EventScript_Stellavia_10_8_NPC10_P2:
+			sound 0x19
+			removemoney 0x1388 0x0
+			setflag 0x98B
+			fanfare 0x10C
+			waitfanfare
+			msgbox Stellavia_10_8_NPC10_text5 MSG_NORMAL
+			release 
+			end
+
+	EventScript_Stellavia_10_8_NPC10_P3:
+		random 0x14
+		compare 0x800D 0x0
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b50
+		compare 0x800D 0x1
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b45
+		compare 0x800D 0x2
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b40
+		compare 0x800D 0x3
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b35
+		compare 0x800D 0x4
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b30
+		compare 0x800D 0x5
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b25
+		compare 0x800D 0x6
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b20
+		compare 0x800D 0x7
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b15
+		compare 0x800D 0x8
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b10
+		compare 0x800D 0x9
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b5
+		compare 0x800D 0xA
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_0
+		compare 0x800D 0xB
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_5
+		compare 0x800D 0xC
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_10
+		compare 0x800D 0xD
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_15
+		compare 0x800D 0xE
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_20
+		compare 0x800D 0xF
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_25
+		compare 0x800D 0x10
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_30
+		compare 0x800D 0x11
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_35
+		compare 0x800D 0x12
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_40
+		compare 0x800D 0x13
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_45
+		compare 0x800D 0x14
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_50
+		release
+		end
+
+		EventScript_Stellavia_10_8_NPC10_END:
+			msgbox Stellavia_10_8_NPC10_text7 MSG_NORMAL
+			release 
+			end
+
+		EventScript_Stellavia_10_8_NPC10_b50:
+			msgbox Stellavia_10_8_NPC10_text_b50 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0x9C4 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_b45:
+			msgbox Stellavia_10_8_NPC10_text_b45 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0xABE 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_b40:
+			msgbox Stellavia_10_8_NPC10_text_b40 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0xBB8 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_b35:
+			msgbox Stellavia_10_8_NPC10_text_b35 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0xCB2 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_b30:
+			msgbox Stellavia_10_8_NPC10_text_b30 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0xDAC 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_b25:
+			msgbox Stellavia_10_8_NPC10_text_b25 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0xEA6 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_b20:
+			msgbox Stellavia_10_8_NPC10_text_b20 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0xFA0 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_b15:
+			msgbox Stellavia_10_8_NPC10_text_b15 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0x109A 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_b10:
+			msgbox Stellavia_10_8_NPC10_text_b10 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0x1194 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_b5:
+			msgbox Stellavia_10_8_NPC10_text_b5 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0x128E 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_0:
+			msgbox Stellavia_10_8_NPC10_text_0 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0x1388 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_5:
+			msgbox Stellavia_10_8_NPC10_text_5 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0x1482 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_10:
+			msgbox Stellavia_10_8_NPC10_text_10 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0x157C 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_15:
+			msgbox Stellavia_10_8_NPC10_text_15 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0x1676 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_20:
+			msgbox Stellavia_10_8_NPC10_text_20 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0x1770 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_25:
+			msgbox Stellavia_10_8_NPC10_text_25 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0x186A 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_30:
+			msgbox Stellavia_10_8_NPC10_text_30 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0x1964 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_35:
+			msgbox Stellavia_10_8_NPC10_text_35 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0x1A5E 0x0
+			fanfare 0x10C
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_40:
+			msgbox Stellavia_10_8_NPC10_text_40 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0x1B58 0x0
+			fanfare 0x10D
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_45:
+			msgbox Stellavia_10_8_NPC10_text_45 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0x1C52 0x0
+			fanfare 0x10D
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+		EventScript_Stellavia_10_8_NPC10_50:
+			msgbox Stellavia_10_8_NPC10_text_50 MSG_YESNO
+			compare 0x800D 0x1
+			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
+			addmoney 0x1D4C 0x0
+			fanfare 0x10D
+			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+			clearflag 0x98B
+			release
+			end
+
+
+.global EventScript_Stellavia_10_8_Sign0
+EventScript_Stellavia_10_8_Sign0:
+	msgbox Stellavia_10_8_SIGN0 0x7
+	end
+
+.global EventScript_Stellavia_10_8_Sign3
+EventScript_Stellavia_10_8_Sign3:
+	msgbox Stellavia_10_8_SIGN3 0x7
+	end
+
+.global EventScript_Stellavia_10_8_Sign8
+EventScript_Stellavia_10_8_Sign8:
+	msgbox Stellavia_10_8_SIGN8 0x7
+	end
+
+.global EventScript_Stellavia_10_8_Sign9
+EventScript_Stellavia_10_8_Sign9:
+	msgbox Stellavia_10_8_SIGN9 0x7
+	end
 
 //____10_9______
 
@@ -757,6 +1176,171 @@ EventScript_Stellavia_10_9_NPC5:
 	lock
 	faceplayer
 	msgbox Stellavia_10_9_NPC5_text1 MSG_NORMAL
+	release
+	end
+
+//____10_10______
+
+.global EventScript_Stellavia_10_10_Sign0
+EventScript_Stellavia_10_10_Sign0:
+	msgbox Stellavia_10_10_SIGN0 0x7
+	end
+
+.global EventScript_Stellavia_10_10_Sign1
+EventScript_Stellavia_10_10_Sign1:
+	msgbox Stellavia_10_10_SIGN1 0x7
+	end
+
+.global EventScript_Stellavia_10_10_NPC0
+EventScript_Stellavia_10_10_NPC0:
+	lock
+	faceplayer
+	msgbox Stellavia_10_10_NPC0_text1 MSG_NORMAL
+	pause 0x1E
+	applymovement 0x1 Stellavia_10_5_NPC3_mov5
+	waitmovement 0x1
+	pause 0x1E
+	msgbox Stellavia_10_10_NPC0_text2 MSG_NORMAL
+	pause 0x1E
+	msgbox Stellavia_10_10_NPC0_text3 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_10_NPC1
+EventScript_Stellavia_10_10_NPC1:
+	lock
+	faceplayer
+	msgbox Stellavia_10_10_NPC1_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_10_NPC2
+EventScript_Stellavia_10_10_NPC2:
+	lock
+	faceplayer
+	msgbox Stellavia_10_10_NPC2_text1 MSG_NORMAL
+	release
+	end
+
+//____10_11______
+
+.global EventScript_Stellavia_10_11_NPC0
+EventScript_Stellavia_10_11_NPC0:
+	lock
+	faceplayer
+	msgbox Stellavia_10_11_NPC0_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_11_Sign1
+EventScript_Stellavia_10_11_Sign1:
+	msgbox Stellavia_10_11_SIGN1 0x7
+	end
+
+.global EventScript_Stellavia_10_11_NPC1
+EventScript_Stellavia_10_11_NPC1:
+	giveitem 0x40 0x1 MSG_FIND
+	end
+
+//____10_12______
+
+.global EventScript_Stellavia_10_12_NPC1
+EventScript_Stellavia_10_12_NPC1:
+	lock
+	faceplayer
+	msgbox Stellavia_10_12_NPC1_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_12_NPC2
+EventScript_Stellavia_10_12_NPC2:
+	lock
+	faceplayer
+	msgbox Stellavia_10_12_NPC2_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_12_NPC3
+EventScript_Stellavia_10_12_NPC3:
+	lock
+	faceplayer
+	msgbox Stellavia_10_12_NPC3_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_12_NPC4
+EventScript_Stellavia_10_12_NPC4:
+	lock
+	faceplayer
+	msgbox Stellavia_10_12_NPC4_text1 MSG_NORMAL
+	release
+	end
+
+//____10_14______
+
+.global EventScript_Stellavia_10_14_NPC0
+EventScript_Stellavia_10_14_NPC0:
+	lock
+	faceplayer
+	msgbox Stellavia_10_14_NPC0_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_14_NPC1
+EventScript_Stellavia_10_14_NPC1:
+	lock
+	faceplayer
+	msgbox Stellavia_10_14_NPC1_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_14_NPC2
+EventScript_Stellavia_10_14_NPC2:
+	lock
+	faceplayer
+	msgbox Stellavia_10_14_NPC2_text1 MSG_NORMAL
+	checkflag 0x98A
+	if 0x1 _goto EventScript_Stellavia_10_14_NPC2_P1
+	msgbox Stellavia_10_14_NPC2_text2 MSG_NORMAL
+	giveitem 0x2 0x5 MSG_OBTAIN
+	setflag 0x98A
+	release
+	end
+
+	EventScript_Stellavia_10_14_NPC2_P1:
+		release
+		end
+
+.global EventScript_Stellavia_10_14_NPC3
+EventScript_Stellavia_10_14_NPC3:
+	lock
+	faceplayer
+	msgbox Stellavia_10_14_NPC3_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_14_NPC4
+EventScript_Stellavia_10_14_NPC4:
+	lock
+	faceplayer
+	msgbox Stellavia_10_14_NPC4_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_14_NPC5
+EventScript_Stellavia_10_14_NPC5:
+	lock
+	faceplayer
+	cry 0x1EE 0x0
+	msgbox Stellavia_10_14_NPC5_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Stellavia_10_14_NPC6
+EventScript_Stellavia_10_14_NPC6:
+	lock
+	faceplayer
+	msgbox Stellavia_10_14_NPC6_text1 MSG_NORMAL
 	release
 	end
 
