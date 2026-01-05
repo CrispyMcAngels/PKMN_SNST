@@ -90,6 +90,20 @@ Consigli per allenatori:\nNei percorsi e' possibile trovare\lstrumenti nascosti 
 #org @Percorso_4_3_22_Sign7
 Passo Tuono - Ingresso Nord
 
+#org @Percorso_4_3_22_Sign8
+Passo Tuono - Ingresso Sud
+
+#org @Percorso_4_3_22_Sign9
+Recenti temporali hanno danneggiato\nla flora del Percorso 4, perfino\lsradicando alcuni alberi.\pA causa di cio', si e' scoperta\nnel sottosuolo una rete di cunicoli\laccessibili tramite le radici degli\lalberi caduti.\pSi raccomanda ad allenatori e\nvisitatori la massima prudenza. 
+
+#org @Percorso_4_3_22_Sign11
+//_/////////////////////////////////
+
+
+#org @Percorso_4_3_22_Sign12
+//_/////////////////////////////////
+Percorso 4:\n[ARROW_DOWN] - Stellavia\l[ARROW_UP] - Percorso 3
+
 #org @Percorso_4_3_22_tile0_text1
 Vai Treecko, riproviamo un'ultima\nvolta!
 
@@ -160,7 +174,6 @@ Ehi, si e' fatto tardi!\pMi sono davvero fatto prendere\ndalla storia!
 Ti ringrazio per avermi ascoltato,\ntramandare queste antiche storie\lalle nuove generazioni mi rende\lorgoglioso.\pTieni questo come segno di\nriconoscenza, e ricorda di\ltramandare questa leggenda pure te\lun giorno!
 
 #org @Percorso_4_3_22_NPC21_text1
-//_/////////////////////////////////
 Una battaglia elettrizzante dici?
 
 #org @Percorso_4_3_22_NPC21_text2

@@ -107,13 +107,72 @@ Non ancora eh? Peccato...\nTi aspettero' qui!
 Incredibile! Sei proprio riuscito a\ntrovare un esemplare di Vivillon!
 
 #org @Stellavia_3_6_NPC23_text7
-//_/////////////////////////////////
 Perfetto, mettiti bene in posa!
 
 #org @Stellavia_3_6_NPC23_text8
-//_/////////////////////////////////
 Ti ringrazio di cuore, ora ho\ncompletato la mia collezione di\lfotografie di Pokemon Coleottero!\pTieni questa, con tutta la fatica\nche hai fatto per portarmi questo\lPokemon, te la meriti proprio!
 
 #org @Stellavia_3_6_NPC23_text9
 //_/////////////////////////////////
 Nella fotografia, cosi' come nelle\nlotte Pokemon e nella vita, e'\lsempre importante mettere a fuoco\lprima di agire!
+
+#org @Stellavia_3_6_SIGN0
+Stazione Metropolitana di Stellavia.
+
+#org @Stellavia_3_6_SIGN1
+[ARROW_UP] Percorso 4.
+
+#org @Stellavia_3_6_SIGN2
+Stellavia: tra grattacieli vivaci e\nun'atmosfera metropolitana.
+
+#org @Stellavia_3_6_SIGN4
+Nonostante le sue dimensioni e il\ngran numero di vicoli,\lStellavia e' una citta' sicura a\ltutte le ore del giorno.
+
+#org @Stellavia_3_6_SIGN5
+Collina Evolia, uno dei polmoni\nverdi di Stellavia.
+
+#org @Stellavia_3_6_SIGN7
+Centro Pokemon:\nQui curiamo Pokemon e a volte\lallenatori.
+
+#org @Stellavia_3_6_SIGN8
+7 Eevee: Dove i prezzi evolvono\nogni giorno.
+
+#org @Stellavia_3_6_SIGN9
+RoofTop Bar Loud & Cloud:\nAlza il volume e abbassa i pensieri.
+
+#org @Stellavia_3_6_SIGN10
+Palestra Pokemon di Ardesiopoli.\nCapopalestra: Ross.
+
+#org @Stellavia_3_6_SIGN11
+Distretto Finaziario:\nUffici PokeExchange.
+
+#org @Stellavia_3_6_SIGN12
+Stellavia: Dove il futuro prende\nforma.\pCitta' piu' brillante, e capitale,\nnella costellazione di Eyros. 
+
+#org @Stellavia_3_6_SIGN13
+Banca Centrale Pokemon di Stellavia:\nInvesti nel futuro, deposita le tue\lvittorie qui!
+
+#org @Stellavia_3_6_SIGN15
+[ARROW_LEFT] Universita' di\nStellavia: Studia oggi, costruisci\lil domani.\p[ARROW_RIGHT] Confraternita degli\nstudenti di Stellavia.
+
+#org @Stellavia_3_6_SIGN16
+Torre Metagross: Progetto di\nespansione del distretto finaziario\ldi Stellavia.\pTermine lavori: indefinito.
+
+#org @Stellavia_3_6_SIGN17
+[ARROW_DOWN] Percorso 5.
+
+#org @Stellavia_3_6_SIGN18
+//_/////////////////////////////////
+Stellavia e' considerata una citta'\nall'avanguardia sotto tutti gli\laspetti urbanistici.\pNon solo grazie a grattacieli che\nsfiorano le nuvole, ma anche alla\lpresenza di moltissimi parchi\lurbani.\pPolmone verde della citta' e zona\ndi svago per gli abitanti.
+
+#org @Stellavia_3_6_SIGN19_text1
+//_/////////////////////////////////
+[PLAYER] guarda nel bidone...
+
+#org @Stellavia_3_6_SIGN19_text2
+//_/////////////////////////////////
+E' vuoto...
+
+#org @Stellavia_3_6_SIGN19_text3
+//_/////////////////////////////////
+Hei, c'e' qualcosa!

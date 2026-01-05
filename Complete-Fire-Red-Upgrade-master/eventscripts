@@ -22,6 +22,37 @@ npc 3 6 20 EventScript_Stellavia_3_6_NPC20
 npc 3 6 21 EventScript_Stellavia_3_6_NPC16
 npc 3 6 22 EventScript_Stellavia_3_6_NPC22
 npc 3 6 23 EventScript_Stellavia_3_6_NPC23
+npc 3 6 25 EventScript_Stellavia_3_6_NPC25
+npc 3 6 26 EventScript_Stellavia_3_6_NPC26
+npc 3 6 27 EventScript_Stellavia_3_6_NPC27
+
+sign 3 6 0 EventScript_Stellavia_3_6_Sign0
+sign 3 6 1 EventScript_Stellavia_3_6_Sign1
+sign 3 6 2 EventScript_Stellavia_3_6_Sign2
+sign 3 6 3 EventScript_Stellavia_3_6_Sign2
+sign 3 6 4 EventScript_Stellavia_3_6_Sign4
+sign 3 6 5 EventScript_Stellavia_3_6_Sign5
+sign 3 6 6 EventScript_Stellavia_3_6_Sign5
+sign 3 6 7 EventScript_Stellavia_3_6_Sign7
+sign 3 6 8 EventScript_Stellavia_3_6_Sign8
+sign 3 6 9 EventScript_Stellavia_3_6_Sign9
+sign 3 6 10 EventScript_Stellavia_3_6_Sign10
+sign 3 6 11 EventScript_Stellavia_3_6_Sign11
+sign 3 6 12 EventScript_Stellavia_3_6_Sign12
+sign 3 6 13 EventScript_Stellavia_3_6_Sign13
+sign 3 6 14 EventScript_Stellavia_3_6_Sign13
+sign 3 6 15 EventScript_Stellavia_3_6_Sign15
+sign 3 6 16 EventScript_Stellavia_3_6_Sign16
+sign 3 6 17 EventScript_Stellavia_3_6_Sign17
+sign 3 6 18 EventScript_Stellavia_3_6_Sign18
+sign 3 6 19 EventScript_Stellavia_3_6_Sign19
+sign 3 6 20 EventScript_Stellavia_3_6_Sign19
+sign 3 6 21 EventScript_Stellavia_3_6_Sign19
+sign 3 6 22 EventScript_Stellavia_3_6_Sign19
+sign 3 6 23 EventScript_Stellavia_3_6_Sign19
+sign 3 6 24 EventScript_Stellavia_3_6_Sign24
+sign 3 6 25 EventScript_Stellavia_3_6_Sign25
+sign 3 6 26 EventScript_Stellavia_3_6_Sign26
 
 map 10 0 gMapScripts_Stellavia_10_0
 npc 10 0 0 EventScript_Stellavia_10_0_NPC0
@@ -335,6 +366,7 @@ tile 3 21 2 EventScript_Percorso3_3_21_tile2
 tile 3 21 3 EventScript_Percorso3_3_21_tile3
 npc 3 21 0 EventScript_Percorso_3_3_21_NPC0
 npc 3 21 1 EventScript_Percorso_3_3_21_NPC1
+npc 3 21 2 EventScript_Common_Cut
 npc 3 21 3 EventScript_Percorso_3_3_21_NPC3
 npc 3 21 4 EventScript_Percorso_3_3_21_NPC4
 npc 3 21 5 EventScript_Percorso_3_3_21_NPC5
@@ -361,6 +393,11 @@ sign 3 22 1 EventScript_Percorso_4_3_22_Sign1_5
 sign 3 22 5 EventScript_Percorso_4_3_22_Sign1_5
 sign 3 22 6 EventScript_Percorso_4_3_22_Sign6
 sign 3 22 7 EventScript_Percorso_4_3_22_Sign7
+sign 3 22 8 EventScript_Percorso_4_3_22_Sign8
+sign 3 22 9 EventScript_Percorso_4_3_22_Sign9
+sign 3 22 10 EventScript_Percorso_4_3_22_Sign9
+sign 3 22 11 EventScript_Ardesiopoli_6_18_Sign0
+sign 3 22 12 EventScript_Percorso_4_3_22_Sign12
 
 npc 3 22 0 EventScript_Percorso_4_3_22_NPC0
 npc 3 22 1 EventScript_Percorso_4_3_22_NPC1

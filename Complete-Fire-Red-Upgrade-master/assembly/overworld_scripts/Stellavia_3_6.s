@@ -486,3 +486,162 @@ EventScript_Stellavia_3_6_NPC23:
 			msgbox Stellavia_3_6_NPC23_text9 MSG_NORMAL
 			release
 			end
+
+
+.global EventScript_Stellavia_3_6_NPC25
+EventScript_Stellavia_3_6_NPC25:
+	giveitem 0x22 0x1 MSG_FIND
+	end
+
+.global EventScript_Stellavia_3_6_NPC26
+EventScript_Stellavia_3_6_NPC26:
+	giveitem 0x49 0x1 MSG_FIND
+	end
+
+.global EventScript_Stellavia_3_6_NPC27
+EventScript_Stellavia_3_6_NPC27:
+	giveitem 0x34 0x1 MSG_FIND
+	end
+
+//____SIGNS____
+
+.global EventScript_Stellavia_3_6_Sign0
+EventScript_Stellavia_3_6_Sign0:
+	msgbox Stellavia_3_6_SIGN0 0x7
+	end
+	
+.global EventScript_Stellavia_3_6_Sign1
+EventScript_Stellavia_3_6_Sign1:
+	msgbox Stellavia_3_6_SIGN1 0x7
+	end
+	
+.global EventScript_Stellavia_3_6_Sign2
+EventScript_Stellavia_3_6_Sign2:
+	msgbox Stellavia_3_6_SIGN2 0x7
+	end
+	
+.global EventScript_Stellavia_3_6_Sign4
+EventScript_Stellavia_3_6_Sign4:
+	msgbox Stellavia_3_6_SIGN4 0x7
+	end
+
+.global EventScript_Stellavia_3_6_Sign5
+EventScript_Stellavia_3_6_Sign5:
+	msgbox Stellavia_3_6_SIGN5 0x7
+	end
+
+.global EventScript_Stellavia_3_6_Sign7
+EventScript_Stellavia_3_6_Sign7:
+	msgbox Stellavia_3_6_SIGN7 0x7
+	end
+
+.global EventScript_Stellavia_3_6_Sign8
+EventScript_Stellavia_3_6_Sign8:
+	msgbox Stellavia_3_6_SIGN8 0x7
+	end
+
+.global EventScript_Stellavia_3_6_Sign9
+EventScript_Stellavia_3_6_Sign9:
+	msgbox Stellavia_3_6_SIGN9 0x7
+	end
+
+.global EventScript_Stellavia_3_6_Sign10
+EventScript_Stellavia_3_6_Sign10:
+	msgbox Stellavia_3_6_SIGN10 0x7
+	end
+
+.global EventScript_Stellavia_3_6_Sign11
+EventScript_Stellavia_3_6_Sign11:
+	msgbox Stellavia_3_6_SIGN11 0x7
+	end
+
+.global EventScript_Stellavia_3_6_Sign12
+EventScript_Stellavia_3_6_Sign12:
+	msgbox Stellavia_3_6_SIGN12 0x7
+	end
+
+.global EventScript_Stellavia_3_6_Sign13
+EventScript_Stellavia_3_6_Sign13:
+	msgbox Stellavia_3_6_SIGN13 0x7
+	end
+
+.global EventScript_Stellavia_3_6_Sign15
+EventScript_Stellavia_3_6_Sign15:
+	msgbox Stellavia_3_6_SIGN15 0x7
+	end
+
+.global EventScript_Stellavia_3_6_Sign16
+EventScript_Stellavia_3_6_Sign16:
+	msgbox Stellavia_3_6_SIGN16 0x7
+	end
+
+.global EventScript_Stellavia_3_6_Sign17
+EventScript_Stellavia_3_6_Sign17:
+	msgbox Stellavia_3_6_SIGN17 0x7
+	end
+
+.global EventScript_Stellavia_3_6_Sign18
+EventScript_Stellavia_3_6_Sign18:
+	msgbox Stellavia_3_6_SIGN18 0x7
+	end
+	
+.global EventScript_Stellavia_3_6_Sign19
+EventScript_Stellavia_3_6_Sign19:
+	msgbox Stellavia_3_6_SIGN19_text1 0x7
+	pause 0x1E
+	msgbox Stellavia_3_6_SIGN19_text2 0x7
+	end
+
+.global EventScript_Stellavia_3_6_Sign24
+EventScript_Stellavia_3_6_Sign24:
+	msgbox Stellavia_3_6_SIGN19_text1 0x7
+	pause 0x1E
+	checkflag 0x98C
+	if 0x0 _goto EventScript_Stellavia_3_6_Sign24_P1
+	msgbox Stellavia_3_6_SIGN19_text2 0x7
+	end
+
+	EventScript_Stellavia_3_6_Sign24_P1:
+		applymovement 0xFF Stellavia_3_6_NPC22_mov1
+		waitmovement 0xFF
+		msgbox Stellavia_3_6_SIGN19_text3 0x7
+		pause 0x1E
+		giveitem 0x4B 0x1 MSG_FIND
+		setflag 0x98C
+		end
+
+.global EventScript_Stellavia_3_6_Sign25
+EventScript_Stellavia_3_6_Sign25:
+	msgbox Stellavia_3_6_SIGN19_text1 0x7
+	pause 0x1E
+	checkflag 0x98D
+	if 0x0 _goto EventScript_Stellavia_3_6_Sign25_P1
+	msgbox Stellavia_3_6_SIGN19_text2 0x7
+	end
+
+	EventScript_Stellavia_3_6_Sign25_P1:
+		applymovement 0xFF Stellavia_3_6_NPC22_mov1
+		waitmovement 0xFF
+		msgbox Stellavia_3_6_SIGN19_text3 0x7
+		pause 0x1E
+		giveitem 0x4C 0x1 MSG_FIND
+		setflag 0x98D
+		end
+
+.global EventScript_Stellavia_3_6_Sign26
+EventScript_Stellavia_3_6_Sign26:
+	msgbox Stellavia_3_6_SIGN19_text1 0x7
+	pause 0x1E
+	checkflag 0x98E
+	if 0x0 _goto EventScript_Stellavia_3_6_Sign26_P1
+	msgbox Stellavia_3_6_SIGN19_text2 0x7
+	end
+
+	EventScript_Stellavia_3_6_Sign26_P1:
+		applymovement 0xFF Stellavia_3_6_NPC22_mov1
+		waitmovement 0xFF
+		msgbox Stellavia_3_6_SIGN19_text3 0x7
+		pause 0x1E
+		giveitem 0x4D 0x1 MSG_FIND
+		setflag 0x98E
+		end

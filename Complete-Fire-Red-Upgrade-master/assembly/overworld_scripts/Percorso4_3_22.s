@@ -36,7 +36,25 @@ gMapScripts_Percorso4_3_22:
 		msgbox Percorso_4_3_22_Sign7 0x7
 		end
 
+	.global EventScript_Percorso_4_3_22_Sign8
+	EventScript_Percorso_4_3_22_Sign8:
+		msgbox Percorso_4_3_22_Sign8 0x7
+		end
 
+	.global EventScript_Percorso_4_3_22_Sign9
+	EventScript_Percorso_4_3_22_Sign9:
+		msgbox Percorso_4_3_22_Sign9 0x7
+		end
+
+	.global EventScript_Percorso_4_3_22_Sign11
+	EventScript_Percorso_4_3_22_Sign11:
+		msgbox Percorso_4_3_22_Sign11 0x7
+		end
+
+	.global EventScript_Percorso_4_3_22_Sign12
+	EventScript_Percorso_4_3_22_Sign12:
+		msgbox Percorso_4_3_22_Sign12 0x7
+		end
 
 
 //___NPCs___
