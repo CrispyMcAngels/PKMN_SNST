@@ -20,13 +20,6 @@ gMapScripts_Radiantia_5_2:
 			spritebehave 0x2 0x2
 			return
 
-
-
-.global EventScript_Miralba_5_2_Sign1
-EventScript_Miralba_5_2_Sign1:
-	msgbox EventScript_Miralba_5_2_Sign1_text1 0x7
-	end
-
 .global EventScript_Miralba_5_2_NPC0
 EventScript_Miralba_5_2_NPC0:
 	lock

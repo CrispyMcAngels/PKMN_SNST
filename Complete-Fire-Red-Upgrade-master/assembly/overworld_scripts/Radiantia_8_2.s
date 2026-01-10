@@ -11,11 +11,6 @@ EventScript_Radiantia_8_2_Sign0:
 	msgbox Radiantia_8_2_Sign0_text1 0x7
 	end
 
-.global EventScript_Radiantia_8_2_Sign1
-EventScript_Radiantia_8_2_Sign1:
-	msgbox Radiantia_8_2_Sign1_text1 0x7
-	end
-
 //___NPCs___
 
 .global EventScript_Radiantia_8_2_NPC0

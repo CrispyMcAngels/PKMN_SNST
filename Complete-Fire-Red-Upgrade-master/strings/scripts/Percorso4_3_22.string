@@ -63,7 +63,6 @@ Ah... il profumo della sconfitta e'\namaro come il basilico selvatico.
 Il vento qui porta con se' mille\nprofumi...\pE qualche piccolo shock statico!
 
 #org @Percorso_4_3_22_NPC10_text1
-//_/////////////////////////////////
 Mi dispiace ma questo ingresso del\nPasso Tuono e' chiuso.\pStiamo conducendo delle\ninvestigazioni e nessuno puo'\lpassare per motivi di sicurezza.
 
 #org @Percorso_4_3_22_NPC11_text1
@@ -76,7 +75,7 @@ Patti chiari amicizia lunga,\nti daro' questa MN.
 Non pensavo sarebbe finita cosi',\nma te la sei meritata!
 
 #org @Percorso_4_3_22_NPC11_text4
-Grazie alla MN01 TAGLIO puoi\ntagliare gli alberi che ostacolano\lil tuo percorso!
+Grazie alla MN01 TAGLIO puoi\ntagliare gli alberi che ostacolano\lil tuo percorso!\pTieni a mente che in Pokemon\nSunset non e' necessario insegnare\lle MN ad un Pokemon per usarle.\pIl gioco riconoscera' in automatico\nche un Pokemon nella tua squadra\le' in grado di imparare la MN in\lquestione e gli permettera' di\lusarla senza averla imparata!
 
 #org @Percorso_4_3_22_Sign0
 Percorso 4:\n[ARROW_UP] Percorso 3\l[ARROW_DOWN] Passo Tuono.
@@ -95,10 +94,6 @@ Passo Tuono - Ingresso Sud
 
 #org @Percorso_4_3_22_Sign9
 Recenti temporali hanno danneggiato\nla flora del Percorso 4, perfino\lsradicando alcuni alberi.\pA causa di cio', si e' scoperta\nnel sottosuolo una rete di cunicoli\laccessibili tramite le radici degli\lalberi caduti.\pSi raccomanda ad allenatori e\nvisitatori la massima prudenza. 
-
-#org @Percorso_4_3_22_Sign11
-//_/////////////////////////////////
-
 
 #org @Percorso_4_3_22_Sign12
 //_/////////////////////////////////
@@ -181,3 +176,13 @@ I miei Pokemon non sono riusciti a\nprendere il volo!
 
 #org @Percorso_4_3_22_NPC21_text3
 Pokemon di tipo volante come i miei\nfanno fatica a combattere in posti\lpieni di Pokemon elettro come\lquesto...\pE' proprio per questo motivo che\nsono venuto qui per allenarmi!
+
+#org @Percorso_4_3_22_NPC24_text1
+Tu e la tua squadra sembrate\nmolto stanchi.
+
+#org @Percorso_4_3_22_NPC24_text2
+Vuoi che rimetta in sesto la tua\nsquadra?
+
+#org @Percorso_4_3_22_NPC24_text3
+//_/////////////////////////////////
+Buona fortuna!

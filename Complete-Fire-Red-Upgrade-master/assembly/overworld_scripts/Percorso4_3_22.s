@@ -46,11 +46,6 @@ gMapScripts_Percorso4_3_22:
 		msgbox Percorso_4_3_22_Sign9 0x7
 		end
 
-	.global EventScript_Percorso_4_3_22_Sign11
-	EventScript_Percorso_4_3_22_Sign11:
-		msgbox Percorso_4_3_22_Sign11 0x7
-		end
-
 	.global EventScript_Percorso_4_3_22_Sign12
 	EventScript_Percorso_4_3_22_Sign12:
 		msgbox Percorso_4_3_22_Sign12 0x7
@@ -293,7 +288,27 @@ EventScript_Percorso_4_3_22_NPC23:
 	giveitem 0x44 0x1 MSG_FIND
 	end
 
+.global EventScript_Percorso_4_3_22_NPC24
+EventScript_Percorso_4_3_22_NPC24:
+	lock
+	faceplayer
+	msgbox Percorso_4_3_22_NPC24_text1 MSG_NORMAL
+	msgbox Percorso_4_3_22_NPC24_text2 MSG_YESNO
+	compare 0x800D 0x1
+	if 0x1 _goto EventScript_Percorso_4_3_22_NPC24_P1
+	closeonkeypress
+	release
+	end
 
+	EventScript_Percorso_4_3_22_NPC24_P1:
+		fadescreen 0x1
+		fanfare 0x100
+		waitfanfare
+		fadescreen 0x0
+		pause 0x1E
+		msgbox Percorso_4_3_22_NPC24_text3 MSG_NORMAL
+		release
+		end
 
 //___TILESCRIPTs___
 

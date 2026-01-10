@@ -56,7 +56,20 @@ Sto guardando i combattimenti tra\nPokemon.\pIo ovviamente tifo per quello piu'\
 #org @Stellavia_10_1_NPC3_text1
 Non riesco a far funzionare questo\nlevel script su Advance Map...\pFortuna che su Pokehacking e' pieno\ndi tutorial, li' trovero'\lsicuramente una soluzione!
 
+#org @Stellavia_10_1_SIGN0
+E' l'albero generalogico della\nfamiglia che abita in questa casa.
+
+#org @Stellavia_10_1_SIGN1
+La radio e' spenta.
+
+#org @Stellavia_10_1_SIGN2
+E' una rivista di interior design:\ngli arredi Mid Century Modern sono\ltornati di moda!
+
 //______10_2_______
+
+#org @Stellavia_10_2_SIGN2
+//_/////////////////////////////////
+Alla radio stanno passando i\nmigliori pezzi anni 90.\pQuella si che era musica!
 
 #org @Stellavia_10_2_NPC0_text1
 Mio marito e' uscito questa mattina\na fare la spesa e non e' ancora\lrientrato!\pSto iniziando a preoccuparmi...\pSai, per persone anziane come noi\nstare a passo coi tempi di una\lcitta' moderna non e' affatto\lfacile!
@@ -166,6 +179,34 @@ Dormo cosi' poco che il mio Abra mi\nteletrasporta direttamente a\llezione mentr
 
 #org @Stellavia_10_4_SIGN0
 Questa statua rappresenta Alakazam,\nil simbolo dell'Universita'.\pAlakazam e' infatti ritenuto il\nPokemon piu' intelligente di tutti!
+
+#org @Stellavia_10_4_SIGN24
+Qualcuno ha perso questi\nappunti.
+
+#org @Stellavia_10_4_SIGN28
+Toilette.\nSiete pregati di chiudere a\lchiave.
+
+#org @Stellavia_10_4_SIGN29
+Manuale di termodinamica.\nNon aprite questo libro!
+
+#org @Stellavia_10_4_SIGN31
+Quest'enciclopedia contiene\nmoltissimi libri, dev'essere un\llavoraccio studiarli tutti!
+
+#org @Stellavia_10_4_SIGN34
+Appunti di Storia di Eyros.\pNell'antichita', Eyros era divisa\nin tre regni: Fulmine, Acqua e\lFuoco.\pE' ritenuto che Stellavia fosse la\nroccaforte piu' meridionale del\lregno del Fulmine.\pQuesta vicinanza strategica agli\naltri regni l'ha resa il polo\lcommerciale ed economico che e'\ltuttora.
+
+#org @Stellavia_10_4_SIGN35
+Biologia: Seppur non\nscientificamente provato, e'\lritenuto che nell'antichita' i\lPokemon di Eyros avessero forme\lparticolari e uniche, diverse da\lquelle a cui siamo abituati\loggigiorno. 
+
+#org @Stellavia_10_4_SIGN36
+Questi appunti sono vuoti...
+
+#org @Stellavia_10_4_SIGN38
+Appunti di matematica:\nIpotenusa, Cateto...\pE anche oggi il teorema di Pitagora\nnon mi e' servito a niente.
+
+#org @Stellavia_10_4_SIGN39
+//_/////////////////////////////////
+E' un libro di storia.\pQualcuno ha disegnato dei baffetti\nsul viso del primo monarca di Eyros. 
 
 //____10_5_______
 
@@ -279,7 +320,28 @@ Lavorare in finanza fa bene al\nportafoglio.\pMa a cosa servono tutti questi\nso
 Il denaro e' come un Persian:\nelegante, silenzioso, e ti graffia\lappena ti distrai.
 
 #org @Stellavia_10_8_NPC8_text1
-Se i numeri sono in ordine...\nLo e' anche la mente.
+Non ci credo, sono davvero un\ndisastro...\pOggi e' il mio primo giorno di\nlavoro e gia' non ricordo cosa mi\lhanno spiegato i miei colleghi su\lcome usare il software SAP.
+
+#org @Stellavia_10_8_NPC8_text2
+Per caso conosci la transazione per\ncreare un ordine di vendita su SAP?
+
+#org @Stellavia_10_8_NPC8_text3
+Mmmh non penso proprio.\pMM01 serve a creare l'anagrafica di\nun nuovo materiale! 
+
+#org @Stellavia_10_8_NPC8_text4
+No, non ci siamo.\pQuesto serve per creare un ordine\ndi produzione.
+
+#org @Stellavia_10_8_NPC8_text5
+Esatto! E' proprio questo, grazie\nmille!
+
+#org @Stellavia_10_8_NPC8_text6
+Pensa che in VA01, VA sta per\nVerkaufs Auftrag, che significa\lordine di vendita in tedesco.\nLa lingua madre di SAP.
+
+#org @Stellavia_10_8_NPC8_text7
+Tieni questa in cambio!
+
+#org @Stellavia_10_8_NPC8_text8
+Se i numeri sono in ordine, lo e'\nanche la mente!
 
 #org @Stellavia_10_8_NPC9_text1
 Multitasking: mangio, lavoro,\npanico.
@@ -288,7 +350,7 @@ Multitasking: mangio, lavoro,\npanico.
 Benvenuto giovanotto, sono il Sig.\nDallors, il direttore della Poke-\lExhange.
 
 #org @Stellavia_10_8_NPC10_text2
-Offriamo piani di investimento con\nun pacchetto a partire da 5000 Poke,\lsei interessato?
+Offriamo piani di investimento con\nun pacchetto a partire da 5000\lPoke, sei interessato?
 
 #org @Stellavia_10_8_NPC10_text3
 Niente di personale, ma ricorda che\nla vera ricchezza si costruisce nel\ltempo...
@@ -378,7 +440,6 @@ Ci sono tanti numeri e grafici\nincomprensibili...\pMeglio non toccare nulla!
 Prima regola della finanza:\nCompra quando il prezzo e' basso,\lvendi quando il prezzo e' alto.
 
 #org @Stellavia_10_8_SIGN9
-//_/////////////////////////////////
 Sono informazioni altamente\nriservate, meglio non guardare!
 
 
@@ -401,6 +462,16 @@ Da 7Eevee l'attenzione verso il\ncliente e' la cosa piu' importante.
 
 #org @Stellavia_10_9_NPC5_text1
 Sono qui per comprare il caffe.\pQuesto e' il mio carburante.\nLetteralmente.
+
+#org @Stellavia_10_9_SIGN0
+In questi scatoloni ci sono prodotti\nesclusivi 7 Eevee.
+
+#org @Stellavia_10_9_SIGN2
+Charmander sta cucinando del Bacon.\nChe profumino...
+
+#org @Stellavia_10_9_SIGN4
+Questo scaffale contiene molti\nprodotti freschi.
+
 
 //____10_10_______
 
@@ -473,6 +544,33 @@ LAMENTELEEE - LAMENTELEEE
 #org @Stellavia_10_14_NPC6_text1
 Non credere che vivere in alto\nsignifichi stare lontano dai\lproblemi.\pI problemi... prendono l'ascensore.
 
+#org @Stellavia_10_14_SIGN4
+E' un bellissimo album di foto,\nChatot sembra proprio felice!
+
+#org @Stellavia_10_14_SIGN5
+Pianifica la tua vacanza da sogno,\nvisita Corallia!
+
+#org @Stellavia_10_14_SIGN6
+Sta suonando Horse with no name,\ndegli America.
+
+#org @Stellavia_10_14_SIGN7
+E' la rassegna stampa di RadioPoke!
+
+#org @Stellavia_10_14_SIGN8
+//_/////////////////////////////////
+Questo album raccoglie le carte\ndella collezione Crepuscolo\lMascherato.\pManca solo Greninja Ex!
+
+
+//______10_17_______
+
+#org @Stellavia_10_17_NPC0_text1
+Guardo Stellavia dall'alto da\nvent'anni.\pNon ho ancora capito se cresce...\nO si perde.
+
+#org @Stellavia_10_17_NPC1_text1
+Soffri di vertiggini?\nNon tutti sopportano l'altezza di\lquesti terrazzi.\pIl vento poi soffia veramente forte,\ni panni asciugheranno subito!
+
+#org @Stellavia_10_17_SIGN0
+[PLAYER] guarda dal cannocchiale:\nSi vede la skyline di Stellavia!
 
 //______10_19_______
 

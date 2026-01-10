@@ -139,9 +139,3 @@ EventScript_Ardesiopoli_6_11_NPC2:
 	msgbox Ardesiopoli_6_11_NPC2_text1 MSG_NORMAL
 	release
 	end
-
-
-.global EventScript_Ardesiopoli_6_11_Sign0
-EventScript_Ardesiopoli_6_11_Sign0:
-	msgbox Ardesiopoli_6_11_Sign0_text1 0x7
-	end

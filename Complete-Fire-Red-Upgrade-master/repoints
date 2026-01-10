@@ -772,46 +772,6 @@ gEventsObjectPic_NPC146Pal 08F162A8
 gEventObjectGraphicsInfo_NPC147 08EB124C
 gEventsObjectPic_NPC147Pal 08F162B0
 
-#NPC152
-gEventObjectGraphicsInfo_NPC152 08EB1260
-gEventsObjectPic_NPC152Pal 08F162D8
-
-#NPC153
-gEventObjectGraphicsInfo_NPC153 08EB1264
-gEventsObjectPic_NPC153Pal 08F162E0
-
-#NPC154
-gEventObjectGraphicsInfo_NPC154 08EB1268
-gEventsObjectPic_NPC154Pal 08F162E0
-
-#NPC155
-gEventObjectGraphicsInfo_NPC155 08EB126C
-gEventsObjectPic_NPC155Pal 08F162E0
-
-#NPC156
-gEventObjectGraphicsInfo_NPC156 08EB1270
-gEventsObjectPic_NPC156Pal 08F162E0
-
-#NPC157
-gEventObjectGraphicsInfo_NPC157 08EB1274
-gEventsObjectPic_NPC157Pal 08F162E0
-
-#NPC158
-gEventObjectGraphicsInfo_NPC158 08EB1278
-gEventsObjectPic_NPC158Pal 08F162E0
-
-#NPC159
-gEventObjectGraphicsInfo_NPC159 08EB127C
-gEventsObjectPic_NPC159Pal 08F162E0
-
-#NPC160
-gEventObjectGraphicsInfo_NPC160 08EB1280
-gEventsObjectPic_NPC160Pal 08F162E0
-
-#NPC161
-gEventObjectGraphicsInfo_NPC161 08EB1284
-gEventsObjectPic_NPC161Pal 08F162E0
-
 #NPC162
 gEventObjectGraphicsInfo_NPC162 08EB1288
 gEventsObjectPic_NPC162Pal 08F162E8

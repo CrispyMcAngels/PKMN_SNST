@@ -4,11 +4,6 @@
 .include "../xse_commands.s"
 .include "../xse_defines.s"
 
-.global EventScript_Borgo_Ponente_4_0_Sign0
-EventScript_Borgo_Ponente_4_0_Sign0:
-	msgbox Borgo_Ponente_4_0_Sign0_text1 0x7
-	end
-
 .global EventScript_Borgo_Ponente_4_0_Armadio
 EventScript_Borgo_Ponente_4_0_Armadio:
 	checkflag 0x964

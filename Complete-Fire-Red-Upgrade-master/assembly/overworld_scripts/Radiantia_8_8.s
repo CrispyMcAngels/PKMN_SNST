@@ -127,6 +127,7 @@ EventScript_Radiantia_8_8_NPC6:
 	end
 
 	EventScript_Radiantia_8_8_NPC6_P0:
+		faceplayer
 		msgbox Radiantia_8_8_NPC6_text3 MSG_YESNO
 		compare 0x800D 0x1
 		if 0x1 _goto EventScript_Radiantia_8_8_NPC6_P2
@@ -176,6 +177,7 @@ EventScript_Radiantia_8_8_NPC6:
 		end
 
 	EventScript_Radiantia_8_8_NPC6_P3:
+		faceplayer
 		showpokepic 0x3C0 0x0 0x6
 		msgbox Radiantia_8_8_NPC6_text9 MSG_NORMAL
 		special 0x15A

@@ -240,7 +240,8 @@ gMapScripts_GrtVentiSuss_1_38:
 				msgbox GrtVentiSuss_1_38_MapScript_text14 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
-
+				spriteface 0xFF 0x2
+				pause 0x1E
 				textcolor 0x1
 				showpokepic 0x3C1 0x0 0x6
 				msgbox GrtVentiSuss_1_38_MapScript_text15 MSG_NORMAL
@@ -718,8 +719,6 @@ gMapScripts_GrtVentiSuss_1_38:
 					.byte 0x62
 					.byte 0x1C
 					.byte 0x1C
-					.byte 0x1C			
-					.byte 0x1 
 					.byte 0xFE
 
 				GrtVentiSuss_1_38_MapScript_mov7a:

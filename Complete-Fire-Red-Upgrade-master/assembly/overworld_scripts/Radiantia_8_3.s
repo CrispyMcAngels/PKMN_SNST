@@ -4,13 +4,6 @@
 .include "../xse_commands.s"
 .include "../xse_defines.s"
 
-//___SIGNs___
-
-.global EventScript_Radiantia_8_3_Sign0
-EventScript_Radiantia_8_3_Sign0:
-	msgbox Radiantia_8_3_Sign0_text1 0x7
-	end
-
 //___NPCs___
 
 .global EventScript_Radiantia_8_3_NPC0

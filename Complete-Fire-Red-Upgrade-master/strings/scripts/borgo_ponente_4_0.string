@@ -10,9 +10,6 @@ Mamma: Ciao [PLAYER], tu e i tuoi\nPoke'mon sembrate molto stanchi,\lperche' non
 #org @EventScript_Borgo_Ponente_4_0_mom_text3
 Mamma: Adesso si che avete un'aria\nriposata e pronta all'avventura...\pFate buon viaggio!
 
-#org @Borgo_Ponente_4_0_Sign0_text1
-In TV c'e' un documentario sui\nPoke'mon di tipo drago.
-
 #org @EventScript_Borgo_Ponente_4_0_mom_text4
 Mamma: Ciao [PLAYER], come sta\nandando la tua avventura?
 
