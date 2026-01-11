@@ -9,8 +9,6 @@
 .global gMapScripts_Radiantia_8_8
 gMapScripts_Radiantia_8_8:
 	mapscript MAP_SCRIPT_ON_LOAD Radiantia_8_8_MapScriptOnLoad
-	mapscript MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE Radiantia_8_8_MapScriptOnWarpIntoMapTable
-    mapscript MAP_SCRIPT_ON_FRAME_TABLE Radiantia_8_8_MapScriptOnFrame
     .byte MAP_SCRIPT_TERMIN
 
 	Radiantia_8_8_MapScriptOnLoad:
@@ -23,29 +21,6 @@ gMapScripts_Radiantia_8_8:
 		Radiantia_8_8_MapScriptOnLoad_move_ele:
 			spritebehave 0x7 0x8
 			return
-
-	Radiantia_8_8_MapScriptOnWarpIntoMapTable:
-	levelscript 0x4061, 0, Radiantia_8_8_MapScriptOnWarpIntoMapTableBegin
-	.hword MAP_SCRIPT_TERMIN
-
-
-	Radiantia_8_8_MapScriptOnWarpIntoMapTableBegin:
-		spriteface 0xFF 0x2
-		end
-
-	Radiantia_8_8_MapScriptOnFrame:
-		levelscript 0x4061, 0, Radiantia_8_8_MapScriptOnFrameBegin
-		.hword MAP_SCRIPT_TERMIN
-
-		Radiantia_8_8_MapScriptOnFrameBegin:
-			lockall
-			pause 0x1E
-			showpokepic 0x3C0 0x0 0x6
-			msgbox Radiantia_8_8_NPC6_text10 MSG_NORMAL
-			special 0x15A
-			setvar 0x4061 0x2
-			releaseall
-			end		
 
 
 //___SIGNs___
@@ -172,9 +147,15 @@ EventScript_Radiantia_8_8_NPC6:
 		setvar 0x4061 0x0
 		setvar 0x4051 0x35
 		giveitem 0x148 0x1 MSG_OBTAIN
-		warpmuted 0x8 0x8 0xFF 0x0C 0x0F
+
+		pause 0x1E
+		showpokepic 0x3C0 0x0 0x6
+		msgbox Radiantia_8_8_NPC6_text10 MSG_NORMAL
+		special 0x15A
+		setvar 0x4061 0x2
 		release
-		end
+		end	
+
 
 	EventScript_Radiantia_8_8_NPC6_P3:
 		faceplayer

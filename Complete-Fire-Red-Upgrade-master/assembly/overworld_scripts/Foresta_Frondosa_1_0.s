@@ -677,9 +677,8 @@ EventScript_Foresta_Frondosa_1_0_NPC21:
 			if 0x1 _call Player_Green
 			msgbox Foresta_Frondosa_1_0_NPC21_text6 MSG_NORMAL
 			special 0x15A
-			giveitem 0x112 0x1 MSG_OBTAIN
+			giveitem 0x112 0x1 MSG_FIND
 			setflag 0x95F
-			warpmuted 0x1 0x0 0xFF 0xA 0x19
 			release
 			end
 
@@ -729,8 +728,7 @@ EventScript_Foresta_Frondosa_1_0_NPC21:
 			special 0x15A			
 			hidesprite 0x16
 			setflag 0x95F
-			giveitem 0x112 0x1 MSG_OBTAIN
-			warpmuted 0x1 0x0 0xFF 0xA 0x19
+			giveitem 0x112 0x1 MSG_FIND
 			release
 			end
 

@@ -9,7 +9,6 @@
 .global gMapScripts_Ardesiopoli_6_2
 gMapScripts_Ardesiopoli_6_2:
 	mapscript MAP_SCRIPT_ON_LOAD Ardesiopoli_6_2_MapScriptOnLoad
-	mapscript MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE Ardesiopoli_6_2_MapScriptOnWarpIntoMapTable
     mapscript MAP_SCRIPT_ON_FRAME_TABLE Ardesiopoli_6_2_MapScriptOnFrame
     .byte MAP_SCRIPT_TERMIN
 
@@ -23,23 +22,12 @@ gMapScripts_Ardesiopoli_6_2:
 			movesprite2 0x3 0x0C 0x16
 			return
 
-	Ardesiopoli_6_2_MapScriptOnWarpIntoMapTable:
-	levelscript 0x4061, 0, Ardesiopoli_6_2_MapScriptOnWarpIntoMapTableBegin
-	.hword MAP_SCRIPT_TERMIN
-
-
-	Ardesiopoli_6_2_MapScriptOnWarpIntoMapTableBegin:
-		spriteface 0xFF 0x2
-		end
-
 	Ardesiopoli_6_2_MapScriptOnFrame:
 		levelscript 0x4061, 0, Ardesiopoli_6_2_MapScriptOnFrameBegin
 		.hword MAP_SCRIPT_TERMIN
 
 		Ardesiopoli_6_2_MapScriptOnFrameBegin:
 			lockall
-			compare 0x4051 0x32
-			if 0x1 _goto Ardesiopoli_6_2_MapScriptOnFrameBegin_P1
 			pause 0x1E
 			applymovement 0x3 Ardesiopoli_6_2_MapScriptOnFrame_mov1
 			waitmovement 0x3	
@@ -62,24 +50,6 @@ gMapScripts_Ardesiopoli_6_2:
 			Ardesiopoli_6_2_MapScriptOnFrame_mov2:
 				.byte 0x10
 				.byte 0xFE
-
-		Ardesiopoli_6_2_MapScriptOnFrameBegin_P1:
-			pause 0x1E
-			textcolor 0x0
-			showpokepic 0x3B8 0x0 0x6
-			msgbox Ardesiopoli_6_2_NPC0_text6 MSG_NORMAL
-			special 0x15A
-			pause 0x1E
-			showpokepic 0x3B8 0x0 0x6
-			msgbox Ardesiopoli_6_2_NPC0_text7 MSG_NORMAL
-			special 0x15A
-			setvar 0x4050 0x9
-			setvar 0x4051 0x32
-			setvar 0x4061 0x1
-			setflag 0x4B0
-			warp 0x6 0x1 0xFF 0x7 0x7
-			release
-			end
 
 
 //NPCS____________________
@@ -119,9 +89,19 @@ EventScript_Ardesiopoli_6_2_NPC0:
 	pause 0x1E	
 	setvar 0x8008 0x1
 	giveitem 0x18A 0x1 MSG_OBTAIN
+	textcolor 0x0
+	showpokepic 0x3B8 0x0 0x6
+	msgbox Ardesiopoli_6_2_NPC0_text6 MSG_NORMAL
+	special 0x15A
+	pause 0x1E
+	showpokepic 0x3B8 0x0 0x6
+	msgbox Ardesiopoli_6_2_NPC0_text7 MSG_NORMAL
+	special 0x15A
+	setvar 0x4050 0x9
 	setvar 0x4051 0x32
-	setvar 0x4061 0x0
-	warpmuted 0x6 0x2 0xFF 0x25 0x07
+	setvar 0x4061 0x1
+	setflag 0x4B0
+	warp 0x6 0x1 0xFF 0x7 0x7
 	release
 	end
 

@@ -157,7 +157,6 @@ EventScript_Percorso_4_3_22_NPC11:
 	pause 0x1E
 	msgbox Percorso_4_3_22_NPC11_text4 MSG_NORMAL
 	setvar 0x4053 0x8
-	warpmuted 0x3 0x16 0xFF 0x1B 0x28
 	release
 	end
 

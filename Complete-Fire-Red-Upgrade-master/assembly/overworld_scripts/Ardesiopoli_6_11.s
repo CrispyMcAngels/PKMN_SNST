@@ -46,8 +46,6 @@ gMapScripts_Ardesiopoli_6_11:
 			lockall
 			compare 0x405F 0x7
 			if 0x1 _call Ardesiopoli_6_11_MapScriptOnFrame_Part1
-			compare 0x405F 0x8
-			if 0x1 _call Ardesiopoli_6_11_MapScriptOnFrame_Part2
 			releaseall
 			end
 
@@ -63,13 +61,6 @@ gMapScripts_Ardesiopoli_6_11:
 			spritebehave 0x1 0x0 
 			spritebehave 0x2 0x0 
 			giveitem 0x10D 0x1 MSG_OBTAIN
-			setvar 0x405F 0x8
-			warpmuted 0x6 0xB 0xFF 0x08 0x07
-			releaseall
-			end
-
-
-		Ardesiopoli_6_11_MapScriptOnFrame_Part2:
 			spritebehave 0x1 0x0 
 			spritebehave 0x2 0x0 
 			pause 0x1E

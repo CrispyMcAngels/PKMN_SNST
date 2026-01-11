@@ -30,8 +30,6 @@ gMapScripts_Percorso2_3_41:
 		Percorso2_3_41_MapScriptOnFrameBegin:
 			compare 0x4051 0x22
 			if 0x1 _goto Percorso2_3_41_MapScriptOnFrame_P1
-			compare 0x4051 0x23
-			if 0x1 _goto Percorso2_3_41_MapScriptOnFrame_P1b
 			compare 0x4051 0x24
 			if 0x1 _goto Percorso2_3_41_MapScriptOnFrame_P2
 			compare 0x4051 0x25
@@ -52,12 +50,6 @@ gMapScripts_Percorso2_3_41:
 			giveitem 0x169 0x1 MSG_OBTAIN
 			pause 0x1E
 			setvar 0x4051 0x23
-			warpmuted 0x3 0x29 0xFF 0x1C 0x04
-			releaseall
-			end			
-
-		Percorso2_3_41_MapScriptOnFrame_P1b:
-			lockall
 			pause 0x1E
 			showpokepic 0x3B4 0x15 0x6
 			special 0x15A

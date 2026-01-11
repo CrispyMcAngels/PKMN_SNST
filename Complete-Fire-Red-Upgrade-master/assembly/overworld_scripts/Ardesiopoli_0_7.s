@@ -53,8 +53,6 @@ EventScript_Ardesiopoli_0_7_NPC1:
 		pause 0x1E
 		msgbox Ardesiopoli_0_7_NPC1_text4 MSG_NORMAL
 		giveitem 0x60 0x1 MSG_OBTAIN
-		pause 0x1E
-		warpmuted 0x0 0x7 0xFF 0x0B 0x07
 		release
 		end
 
