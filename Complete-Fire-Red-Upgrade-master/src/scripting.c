@@ -2659,6 +2659,7 @@ static void ShowObtainedItemDescription(unusedArg u16 itemId)
 static void ShowItemSpriteOnFind(unusedArg u16 itemId, unusedArg u8* spriteId)
 {
 	#ifdef ITEM_PICTURE_ACQUIRE
+	sHeaderBoxWindowId = 0xFF; //ADDED HERE NICOLO - MANUAL FIX
 	static const union AffineAnimCmd sSpriteAffineAnim_KeyItemTM[] =
 	{
 		AFFINEANIMCMD_FRAME(0, 0, 128, 1), //Start rotated left
