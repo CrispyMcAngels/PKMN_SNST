@@ -8,7 +8,7 @@ Casa di Naomi.
 [ARROW_RIGHT] Laboratorio del Prof. Kraemer.
 
 #org @Borgo_Ponente_Sign3
-Laboratorio del Prof Kraemer\nIl miglior esperto di Poke'mon\ldella regione di Eyros.
+Laboratorio del Prof Kraemer\nIl miglior esperto di Pok\emon\ldella regione di Eyros.
 
 #org @Borgo_Ponente_Sign4
 [ARROW_RIGHT] Percorso 11.
@@ -20,22 +20,22 @@ Borgo Ponente:\pDove la brezza montana non\nsmette mai di soffiare.
 Borgo Ponente:\n[ARROW_UP] Percorso 1\l[ARROW_RIGHT] Percorso 11\l[ARROW_DOWN] Sentiero Cascabruma
 
 #org @Borgo_Ponente_3_0_crispy1_text1
-Crispy: Ciao [PLAYER], da quanto tempo!\pOrmai sei diventato grande e quindi\nanche pronto ad iniziare la tua\lavventura nel mondo dei pokemon.\pPerche' non vai a chiamare la\nnostra vicina di casa Naomi?\pVoglio far vedere una cosa a\nentrambi.
+Crispy: Ciao [PLAYER], da quanto tempo!\pOrmai sei diventato grande e quindi\nanche pronto ad iniziare la tua\lavventura nel mondo dei pokemon.\pPerch[1A] non vai a chiamare la\nnostra vicina di casa Naomi?\pVoglio far vedere una cosa a\nentrambi.
 
 #org @Borgo_Ponente_Brandon_text1
-Naomi: Eccoti qui [PLAYER], non sto\npiu' nella pelle!
+Naomi: Eccoti qui [PLAYER], non sto\npi[26] nella pelle!
 
 #org @Borgo_Ponente_Crispy_text1
-Crispy: Sei andato a chiamare\nNaomi?\pMi sembra abiti in una delle case\npiu' a Nord di Borgo Ponente.
+Crispy: Sei andato a chiamare\nNaomi?\pMi sembra abiti in una delle case\npi[26] a Nord di Borgo Ponente.
 
 #org @Borgo_Ponente_Crispy_text2
-Crispy: Eccoti [PLAYER], finalmente sei\narrivato anche te, Naomi non sta\lpiu' nella pelle!\pOrmai avete entrambi 16 anni,\ndunque e' giunta l'ora anche per\lvoi di iniziare il vostro viaggio\lnella regione di Eyros...
+Crispy: Eccoti [PLAYER], finalmente sei\narrivato anche te, Naomi non sta\lpi[26] nella pelle!\pOrmai avete entrambi 16 anni,\ndunque [1A] giunta l'ora anche per\lvoi di iniziare il vostro viaggio\lnella regione di Eyros[.]
 
 #org @Borgo_Ponente_Crispy_text3
-Naomi: Non ci credo, davvero stai\nper regalarci un Poke'mon?!?
+Naomi: Non ci credo, davvero stai\nper regalarci un Pok\emon?!?
 
 #org @Borgo_Ponente_Crispy_text4
-Crispy: Eehm, purtroppo no, non\navrei nessun Poke'mon da darvi\le in piu' non spetta a me...\pPero' sono qui per mostrarvi come\ncatturarne uno.
+Crispy: Eehm, purtroppo no, non\navrei nessun Pok\emon da darvi\le in pi[26] non spetta a me[.]\pPer[22] sono qui per mostrarvi come\ncatturarne uno.
 
 #org @Borgo_Ponente_Crispy_text5
 Naomi: Evviva!
@@ -44,19 +44,19 @@ Naomi: Evviva!
 Crispy: Bene, allora andiamo!
 
 #org @Borgo_Ponente_Crispy_text7
-Crispy: Eccoci, di solito i Poke'mon\nsi nascondono nell'erba alta,\lcome quella in cui sono ora.\pNon ci resta che aspett...
+Crispy: Eccoci, di solito i Pok\emon\nsi nascondono nell'erba alta,\lcome quella in cui sono ora.\pNon ci resta che aspett[.]
 
 #org @EventScript_Borgo_Ponente_3_0_tile0_P1_text1
-[PLAYER]: Non posso addentrarmi in un\nPercorso senza Poke'mon!\pMeglio andare a cercare Naomi.
+[PLAYER]: Non posso addentrarmi in un\nPercorso senza Pok\emon!\pMeglio andare a cercare Naomi.
 
 #org @EventScript_Borgo_Ponente_3_0_tile0_P1_text2
 [PLAYER]: Non posso andare qui,\ndevo andare nel Percorso 11 a\lsfidare Naomi!
 
 #org @Borgo_Ponente_NPC1_text1
-Vorrei andare nel Laboratorio del\nProf. Kraemer per chiedergli un\lPoke'mon, ma non ce la faccio...\p...Sono troppo timido e il suo\naccento tedesco mi spaventa...
+Vorrei andare nel Laboratorio del\nProf. Kraemer per chiedergli un\lPok\emon, ma non ce la faccio[.]\p[.]Sono troppo timido e il suo\naccento tedesco mi spaventa[.]
 
 #org @Borgo_Ponente_NPC0_text1
-Non c'e' nulla di piu' rilassante che\npassare le giornate all'aperto.\pAbitare a Borgo Ponente e' un sogno.
+Non c'[1A] nulla di pi[26] rilassante che\npassare le giornate all'aperto.\pAbitare a Borgo Ponente [1A] un sogno.
 
 #org @Borgo_Ponente_OakDoot_text1
-La porta e' chiusa...
+La porta [1A] chiusa[.]

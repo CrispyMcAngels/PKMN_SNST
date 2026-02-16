@@ -153,7 +153,7 @@ gMapScripts_Borgo_Ponente_4_3:
 					pause 0x1E
 					textcolor 0x00
 					showpokepic 0x3b7 0x0 0x6
-    				//e' proprio cosi...
+    				//[1A] proprio cosi...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text11 MSG_NORMAL
 					special 0x15A
 					pause 0x1E

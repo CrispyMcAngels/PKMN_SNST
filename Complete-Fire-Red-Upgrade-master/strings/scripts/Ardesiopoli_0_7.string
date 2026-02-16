@@ -3,22 +3,22 @@
 Sono nei guai!\pPrima volevo farmi uno spuntino e\nho deciso di mangiare qualche fungo\ldalla dispensa.\pErano deliziosi e morso dopo morso\nsono finiti tutti!\pRiusciresti a raccoglierne un po'\nnei percorsi qui vicino e\lportarmeli?\pTe ne sarei molto grato, i miei\nclienti saranno furiosi se i piatti\lsaranno senza funghi!
 
 #org @Ardesiopoli_0_7_NPC1_text2
-Pss Pssss, sei riuscito a trovare\nquei funghi?\pStanno iniziando ad arrivare parecchie\ncomande dove servono...
+Psss[.] sei riuscito[.] a trovare\nquei funghi?\pStanno iniziando ad arrivare parecchie\nordinazioni dove servono[.]
 
 #org @Ardesiopoli_0_7_NPC1_text3
-Incredibile, questi sono funghi di\nottima qualita'!
+Incredibile, questi sono funghi di\nottima qualit[16]!
 
 #org @Ardesiopoli_0_7_NPC1_text4
 Accetta questo come ricompensa!
 
 #org @Ardesiopoli_0_7_NPC1_text5
-Grazie ai funghi che mi hai portato\nil risotto ai funghi scottati alla\lCharmaleon sta andando a ruba!
+Grazie ai funghi che mi hai portato\nil risotto ai funghi scottati alla\lCharmeleon sta andando a ruba!
 
 #org @Ardesiopoli_0_7_NPC2_text1
 Benvenuto alla Tavola di Pietra!\pTi consiglio il nostro piatto forte\ndi oggi: Stufato di Tauros con\lcontorno di patate croccanti.
 
 #org @Ardesiopoli_0_7_NPC3_text1
-Ho sentito che questo ristorante era\nfamoso...\pMa non immaginavo anche cosi'\nsuggestivo!\pPerfetto dopo una visita al museo\ndi Ardesiopoli.
+Ho sentito che questo ristorante era\nfamoso[.]\pMa non immaginavo anche cos[1E]\nsuggestivo!\pPerfetto dopo una visita al museo\ndi Ardesiopoli.
 
 #org @Ardesiopoli_0_7_NPC4_text1
 Ai miei tempi non c'erano tutte queste\nspezie, ma devo dire che qui sanno\lusare bene anche il sale del deserto.
@@ -27,7 +27,7 @@ Ai miei tempi non c'erano tutte queste\nspezie, ma devo dire che qui sanno\lusar
 Filiberto viene qui spesso, lo\nsapevi?\pDice che il carpaccio di Kabuto\ngli ricorda le sue prime scoperte.
 
 #org @Ardesiopoli_0_7_NPC6_text1
-Sto cercando di studiare e mangiare\nallo stesso tempo.\pNon e' facile quando il profumo ti\ndistrae!
+Sto cercando di studiare e mangiare\nallo stesso tempo.\pNon [1A] facile quando il profumo ti\ndistrae!
 
 #org @Ardesiopoli_0_7_NPC7_text1
-Dicono che mangiare qui prima di\nuna sfida aumenti le probabilita'\ldi vittoria...\pSara' vero?
+Dicono che mangiare qui prima di\nuna sfida aumenti le probabilit[16]\ldi vittoria[.]\pSar[16] vero?

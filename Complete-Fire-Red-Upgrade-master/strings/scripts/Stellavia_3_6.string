@@ -1,11 +1,11 @@
 #org @Stellavia_3_6_NPC0_text1
-Stellavia e' una citta' che pulula\ndi giovani allenatori.\pIo e il mio Electrike non potevamo\nchiedere di meglio per allenarci!
+Stellavia [1A] una citt[16] che pulula\ndi giovani allenatori.\pIo e il mio Electrike non potevamo\nchiedere di meglio per allenarci!
 
 #org @Stellavia_3_6_NPC1_text1
 Electrikeeeee
 
 #org @Stellavia_3_6_NPC2_text1
-In questa citta' tutto corre: taxi,\nbici, Poke'mon, sogni.\pMeno le persone. Quelle si fermano\nspesso troppo presto.
+In questa citt[16] tutto corre: taxi,\nbici, Pok\emon, sogni.\pMeno le persone. Quelle si fermano\nspesso troppo presto.
 
 #org @Stellavia_3_6_NPC3_text1
 Ludi-Ludi\n-Coloo
@@ -17,7 +17,7 @@ Ludicolo vuole danzare in cambio di\nun offerta di 500 Pokedollari.\pVuoi dare l
 Non hai abbastanza soldi!
 
 #org @Stellavia_3_6_NPC3_text4
-Ludicolo sembra molto stanco...\pSi merita un po' di riposo dopo\naver ballato tutto il giorno!
+Ludicolo sembra molto stanco[.]\pSi merita un po' di riposo dopo\naver ballato tutto il giorno!
 
 #org @Stellavia_3_6_NPC4_text1
 Questo Ludicolo ha un'energia\ninesauribile: danza dal sorgere del\lsole fino al tramonto.\pPer tenermi in forma danzo assieme\na lui di tanto in tanto.
@@ -33,55 +33,55 @@ Era da molto tempo che volevo veder\nLudicolo danzare in prima persona,\lgrazie 
 Ludicolo quando danza spacca forte.\nForse dovrei iniziare a danzare pure\lio?
 
 #org @Stellavia_3_6_NPC6_text1
-Com'e' la vita in una metropoli\ncome Stellavia?\pChe dire, per un'influencer come me\nnon esiste davvero posto migliore!\pLe possibilita' di shopping sono\ninfinite, e quando ho voglia di\ldivertirmi vado a sentire DJ Ross\lal Loud&Cloud rooftop!
+Com'[1A] la vita in una metropoli\ncome Stellavia?\pChe dire, per un'influencer come me\nnon esiste davvero posto migliore!\pLe possibilit[16] di shopping sono\ninfinite, e quando ho voglia di\ldivertirmi vado a sentire DJ Ross\lal Loud&Cloud rooftop!
 
 #org @Stellavia_3_6_NPC7_text1
-Volevo andare al concerto di DJ Ross\ncon i miei amici, ma purtroppo e'\ltutto esaurito...
+Volevo andare al concerto di DJ Ross\ncon i miei amici, ma purtroppo [1A]\ltutto esaurito[.]
 
 #org @Stellavia_3_6_NPC8_text1
 LOOouudred - LOoouudred!
 
 #org @Stellavia_3_6_NPC9_text1
-Mi dispiace ragazzo, ma per ora i\nbiglietti per il concerto di DJ Ross\lsono finiti.\pProva a tornare piu' tardi, magari\nsi libera qualche posto...
+Mi dispiace ragazzo, ma per ora i\nbiglietti per il concerto di DJ Ross\lsono finiti.\pProva a tornare pi[26] tardi, magari\nsi libera qualche posto[.]
 
 #org @Stellavia_3_6_NPC11_text1
-La palestra e' chiusa, non hai\nsentito?\pRoss, il capopalestra, si esibira'\ncome DJ al RoofTop bar Loud and\lCloud.\pSe proprio vuoi sfidarlo, prova a\ncercarlo la.
+La palestra [1A] chiusa, non hai\nsentito?\pRoss, il capopalestra, si esibir[16]\ncome DJ al RoofTop bar Loud and\lCloud.\pSe proprio vuoi sfidarlo, prova a\ncercarlo la.
 
 #org @Stellavia_3_6_NPC12_text1
-Vedi il 7 Eevee laggiu'?\pE' aperto 24 ore su 24.\nUn po' come la speranza, direi.
+Vedi il 7 Eevee laggi[26]?\p[05] aperto 24 ore su 24.\nUn po' come la speranza, direi.
 
 #org @Stellavia_3_6_NPC14_text1
-Stai attento quando entri dal\ncapopalestra Ross.\pLi' non si combatte con le mosse,\nma con il ritmo.
+Stai attento quando entri dal\ncapopalestra Ross.\pL[1E] non si combatte con le mosse,\nma con il ritmo.
 
 #org @Stellavia_3_6_NPC15_text1
-Sapete cos'e' il vero potere?\nNo, non sono i soldi.\pSono le scelte.\pE voi allenatori ne fate una ogni\nvolta che lanciate una PokeBall.
+Sapete cos'[1A] il vero potere?\nNo, non sono i soldi.\pSono le scelte.\pE voi allenatori ne fate una ogni\nvolta che lanciate una PokeBall.
 
 #org @Stellavia_3_6_NPC16_text1
 Zigza - ZigzaGOON
 
 #org @Stellavia_3_6_NPC17_text1
-Sono di guardia alla Banca Centrale\nPokemon tutti i giorni tutto il\lgiorno.\pSoprattutto ora che le attivita'\ncriminali stanno aumentando...\pAl mio occhio di falco non sfugge\nnulla!
+Sono di guardia alla Banca Centrale\nPokemon tutti i giorni tutto il\lgiorno.\pSoprattutto ora che le attivit[16]\ncriminali stanno aumentando[.]\pAl mio occhio di falco non sfugge\nnulla!
 
 #org @Stellavia_3_6_NPC18_text1
-Lavorano tutti per crescere.\pMa tu... Cresci davvero, o alleni\nsolo Pokemon?
+Lavorano tutti per crescere.\pMa tu[.] Cresci davvero, o alleni\nsolo Pokemon?
 
 #org @Stellavia_3_6_NPC19_text1
-La crescita economica degli ultimi\ntempi sta portando moltissime\laziende e persone a spostarsi in\lcitta'.\pCerto, per noi carpentieri c'e'\nmoltissimo lavoro.\pOgni tanto pero' mi manca la vita\ntranquilla di paese...
+La crescita economica degli ultimi\ntempi sta portando moltissime\laziende e persone a spostarsi in\lcitt[16].\pCerto, per noi carpentieri c'[1A]\nmoltissimo lavoro.\pOgni tanto per[22] mi manca la vita\ntranquilla di paese[.]
 
 #org @Stellavia_3_6_NPC20_text1
 Machamp - Machaaamp!
 
 #org @Stellavia_3_6_NPC20_text2
-Grazie alla sua forza e manualita',\nMachamp e' un ottimo aiutante per i\lcarpentieri
+Grazie alla sua forza e manualit[16],\nMachamp [1A] un ottimo aiutante per i\lcarpentieri
 
 #org @Stellavia_3_6_NPC22_text1
-La citta' e' cresciuta molto piu'\nin fretta di quanto potessi\laccorgermene...\pSono uscito di casa per fare la\nspesa e mi sono perso...\pCon tutti questi grattacieli non\ncapisco piu' dove andare.\pMa almeno qui su questa panchina si\nsta al fresco!
+La citt[16] [1A] cresciuta molto pi[26]\nin fretta di quanto potessi\laccorgermene[.]\pSono uscito di casa per fare la\nspesa e mi sono perso[.]\pCon tutti questi grattacieli non\ncapisco pi[26] dove andare.\pMa almeno qui su questa panchina si\nsta al fresco!
 
 #org @Stellavia_3_6_NPC22_text2
-Come dici? la mia famiglia e'\npreoccupata per me?\pEcco, lo sapevo che mi sarei\ncacciato nei guai...
+Come dici? la mia famiglia [1A]\npreoccupata per me?\pEcco, lo sapevo che mi sarei\ncacciato nei guai[.]
 
 #org @Stellavia_3_6_NPC22_text3
-Saresti cosi' gentile da\naccompagnarmi a casa?\pAlla mia eta' e' facile perdersi...
+Saresti cos[1E] gentile da\naccompagnarmi a casa?\pAlla mia et[16] [1A] facile perdersi[.]
 
 #org @Stellavia_3_6_NPC22_text4
 Lo sapevo che eri un bravo\ngiovanotto!
@@ -90,19 +90,19 @@ Lo sapevo che eri un bravo\ngiovanotto!
 Non vuoi aiutare un povero\nvecchietto?
 
 #org @Stellavia_3_6_NPC23_text1
-Io non alleno Poke'mon.\nIo li fotografo, sono i soli a non\lmentire mai.\pUna volta ho fotografato questo\nPokemon bellissimo, vorrei tanto\lrivederlo...
+Io non alleno Pok\emon.\nIo li fotografo, sono i soli a non\lmentire mai.\pUna volta ho fotografato questo\nPokemon bellissimo, vorrei tanto\lrivederlo[.]
 
 #org @Stellavia_3_6_NPC23_text2
 Ecco, guarda questa sua foto!
 
 #org @Stellavia_3_6_NPC23_text3
-Tu che sei un allenatore,\nriusciresti a portarmene uno?\pVorrei fargli delle altre foto...
+Tu che sei un allenatore,\nriusciresti a portarmene uno?\pVorrei fargli delle altre foto[.]
 
 #org @Stellavia_3_6_NPC23_text4
 Hei, eccoti!\pHai per caso trovato quel\nbellissimo Pokemon farfalla che\lvolevo tanto fotografare?
 
 #org @Stellavia_3_6_NPC23_text5
-Non ancora eh? Peccato...\nTi aspettero' qui!
+Non ancora eh? Peccato[.]\nTi aspetter[22] qui!
 
 #org @Stellavia_3_6_NPC23_text6
 Incredibile! Sei proprio riuscito a\ntrovare un esemplare di Vivillon!
@@ -114,7 +114,7 @@ Perfetto, mettiti bene in posa!
 Ti ringrazio di cuore, ora ho\ncompletato la mia collezione di\lfotografie di Pokemon Coleottero!\pTieni questa, con tutta la fatica\nche hai fatto per portarmi questo\lPokemon, te la meriti proprio!
 
 #org @Stellavia_3_6_NPC23_text9
-Nella fotografia, cosi' come nelle\nlotte Pokemon e nella vita, e'\lsempre importante mettere a fuoco\lprima di agire!
+Nella fotografia, cos[1E] come nelle\nlotte Pokemon e nella vita, [1A]\lsempre importante mettere a fuoco\lprima di agire!
 
 #org @Stellavia_3_6_SIGN0
 Stazione Metropolitana di Stellavia.
@@ -126,7 +126,7 @@ Stazione Metropolitana di Stellavia.
 Stellavia: tra grattacieli vivaci e\nun'atmosfera metropolitana.
 
 #org @Stellavia_3_6_SIGN4
-Nonostante le sue dimensioni e il\ngran numero di vicoli,\lStellavia e' una citta' sicura a\ltutte le ore del giorno.
+Nonostante le sue dimensioni e il\ngran numero di vicoli,\lStellavia [1A] una citt[16] sicura a\ltutte le ore del giorno.
 
 #org @Stellavia_3_6_SIGN5
 Collina Evolia, uno dei polmoni\nverdi di Stellavia.
@@ -147,13 +147,13 @@ Palestra Pokemon di Ardesiopoli.\nCapopalestra: Ross.
 Distretto Finaziario:\nUffici PokeExchange.
 
 #org @Stellavia_3_6_SIGN12
-Stellavia: Dove il futuro prende\nforma.\pCitta' piu' brillante, e capitale,\nnella costellazione di Eyros. 
+Stellavia: Dove il futuro prende\nforma.\pCitt[16] pi[26] brillante, e capitale,\nnella costellazione di Eyros. 
 
 #org @Stellavia_3_6_SIGN13
 Banca Centrale Pokemon di Stellavia:\nInvesti nel futuro, deposita le tue\lvittorie qui!
 
 #org @Stellavia_3_6_SIGN15
-[ARROW_LEFT] Universita' di\nStellavia: Studia oggi, costruisci\lil domani.\p[ARROW_RIGHT] Confraternita degli\nstudenti di Stellavia.
+[ARROW_LEFT] Universit[16] di\nStellavia: Studia oggi, costruisci\lil domani.\p[ARROW_RIGHT] Confraternita degli\nstudenti di Stellavia.
 
 #org @Stellavia_3_6_SIGN16
 Torre Metagross: Progetto di\nespansione del distretto finaziario\ldi Stellavia.\pTermine lavori: indefinito.
@@ -163,16 +163,19 @@ Torre Metagross: Progetto di\nespansione del distretto finaziario\ldi Stellavia.
 
 #org @Stellavia_3_6_SIGN18
 //_/////////////////////////////////
-Stellavia e' considerata una citta'\nall'avanguardia sotto tutti gli\laspetti urbanistici.\pNon solo grazie a grattacieli che\nsfiorano le nuvole, ma anche alla\lpresenza di moltissimi parchi\lurbani.\pPolmone verde della citta' e zona\ndi svago per gli abitanti.
+Stellavia [1A] considerata una citt[16]\nall'avanguardia sotto tutti gli\laspetti urbanistici.\pNon solo grazie a grattacieli che\nsfiorano le nuvole, ma anche alla\lpresenza di moltissimi parchi\lurbani.\pPolmone verde della citt[16] e zona\ndi svago per gli abitanti.
 
 #org @Stellavia_3_6_SIGN19_text1
 //_/////////////////////////////////
-[PLAYER] guarda nel bidone...
+[PLAYER] guarda nel bidone[.]
 
 #org @Stellavia_3_6_SIGN19_text2
 //_/////////////////////////////////
-E' vuoto...
+[05] vuoto[.]
 
 #org @Stellavia_3_6_SIGN19_text3
 //_/////////////////////////////////
-Hei, c'e' qualcosa!
+Hei, c'[1A] qualcosa!
+
+#org @Stellavia_3_6_SIGN19_text27
+[GREEN]Casa[MAIN_COLOUR] del Ricordamosse [22][1B]

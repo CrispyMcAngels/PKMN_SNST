@@ -37,6 +37,23 @@ EventScript_Passo_Tuono_1_127_NPC3:
 EventScript_Passo_Tuono_1_127_NPC4:
 	lock
 	faceplayer
+	checkflag 0x097A
+	if 0x1 _goto EventScript_Passo_Tuono_1_127_NPC4_P1
 	msgbox Passo_Tuono_1_127_NPC4_text1 MSG_NORMAL
 	release
+	end
+
+	EventScript_Passo_Tuono_1_127_NPC4_P1:
+		msgbox Passo_Tuono_1_127_NPC4_text2 MSG_NORMAL
+		release
+		end
+
+.global EventScript_Passo_Tuono_1_127_Sign4
+EventScript_Passo_Tuono_1_127_Sign4:
+	msgbox Passo_Tuono_1_127_Sign4_text1 0x7
+	end
+
+.global EventScript_Passo_Tuono_0_14_Sign0
+EventScript_Passo_Tuono_0_14_Sign0:
+	msgbox Passo_Tuono_0_14_Sign0_text1 0x7
 	end

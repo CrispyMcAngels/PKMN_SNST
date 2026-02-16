@@ -645,3 +645,10 @@ EventScript_Stellavia_3_6_Sign26:
 		giveitem 0x4D 0x1 MSG_FIND
 		setflag 0x98E
 		end
+
+
+.global EventScript_Stellavia_3_6_Sign27
+EventScript_Stellavia_3_6_Sign27:
+	msgbox Stellavia_3_6_SIGN19_text27 0x7
+	end
+		

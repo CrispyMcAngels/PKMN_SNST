@@ -1,64 +1,64 @@
 //_/////////////////////////////////
 #org @Ardesiopoli_6_1_NPC0_text1
-Filiberto: Ciao [PLAYER], vedo che\nhai seguito il mio consiglio e sei\lvenuto fin qui!\pSeguimi, voglio mostrarti lo stato\ndelle ricerche sulle rovine della\lForesta Frondosa...
+Filiberto: Ciao [PLAYER], vedo che\nhai seguito il mio consiglio e sei\lvenuto fin qui!\pSeguimi, voglio mostrarti lo stato\ndelle ricerche sulle rovine della\lForesta Frondosa[.]
 
 #org @Ardesiopoli_6_1_NPC0_text2
-Filiberto: Io e i miei assistenti\nstiamo lavorando giorno e notte per\lriuscire a decifrare le incisioni\ldelle Rovine Ancestrali...\pHo rovistato tutta la biblioteca e\nsolo poco fa ho trovato un\lmanoscritto che potrebbe tornare\lutile, il mio assistente migliore\lse ne sta occupando proprio ora!
+Filiberto: Io e i miei assistenti\nstiamo lavorando giorno e notte per\lriuscire a decifrare le incisioni\ldelle Rovine Ancestrali[.]\pHo rovistato tutta la biblioteca e\nsolo poco fa ho trovato un\lmanoscritto che potrebbe tornare\lutile, il mio assistente migliore\lse ne sta occupando proprio ora!
 
 #org @Ardesiopoli_6_1_NPC0_text3
-[PLAYER]: ...
+[PLAYER]: [.]
 
 #org @Ardesiopoli_6_1_NPC0_text4
-Filiberto: Come darti torto,\ndal fratello di un allenatore come\pCrispy non c'era che d'aspettarselo!\nIl modo migliore per affrontare\lquest'attesa e' sicuramente una\lbella lotta Poke'mon...\pTi aspetto nella mia Palestra!
+Filiberto: Come darti torto,\ndal fratello di un allenatore come\pCrispy non c'era che d'aspettarselo!\nIl modo migliore per affrontare\lquest'attesa [1A] sicuramente una\lbella lotta Pok\emon[.]\pTi aspetto nella mia Palestra!
 
 #org @Ardesiopoli_6_1_NPC0_text5
-Filiberto: Il Passo Tuono si trova\nnel bel mezzo del Percorso 4,\lproprio tra Ardesiopoli e Stellavia,\lhai gia' provato a raggiungerlo?
+Filiberto: Il Passo Tuono si trova\nnel bel mezzo del Percorso 4,\lproprio tra Ardesiopoli e Stellavia,\lhai gi[16] provato a raggiungerlo?
 
 #org @Ardesiopoli_6_1_MapScriptOnFrame_text1
-Filiberto: Ne ero certo, il mio team\ne' riuscito a portare a termine la\lricerca...
+Filiberto: Ne ero certo, il mio team\n[1A] riuscito a portare a termine la\lricerca[.]
 
 #org @Ardesiopoli_6_1_MapScriptOnFrame_text2
 Filiberto: Ottimo lavoro Peter,\nil migliore come al solito!
 
 #org @Ardesiopoli_6_1_MapScriptOnFrame_text3
-Peter: Non c'e' di che Filiberto,\nqueste ricerche sono anche la mia\lpassione...\pOra pero' devo salutarvi, non ho\nancora catalogato tutti i risultati!
+Peter: Non c'[1A] di che Filiberto,\nqueste ricerche sono anche la mia\lpassione[.]\pOra per[22] devo salutarvi, non ho\nancora catalogato tutti i risultati!
 
 #org @Ardesiopoli_6_1_MapScriptOnFrame_text4
 Filiberto: Bene, vediamo questi\nrisultati!
 
 #org @Ardesiopoli_6_1_MapScriptOnFrame_text5
-Filiberto: Non ci credo...\nOra ha tutto cosi' senso!
+Filiberto: Non ci credo[.]\nOra ha tutto senso!
 
 #org @Ardesiopoli_6_1_MapScriptOnFrame_text6
-Filiberto: Le incisioni sembrano\nessere risalenti all'antico periodo\lin cui la Regione di Eyros era\lgovernata dal Poke'mon leggendario\lHo-Oh e dalle tre bestie guardiane,\lcustodi di particolari aree mistiche\ldella regione e uniche in grado di\lcontrastare la potenza di Ho-Oh...
+Filiberto: Le incisioni sembrano\nessere risalenti all'antico periodo\lin cui la Regione di Eyros era\lgovernata dal Pok\emon leggendario\lHo-Oh e dalle tre bestie guardiane,\lcustodi di particolari aree mistiche\ldella regione e uniche in grado di\lcontrastare la potenza di Ho-Oh[.]
 
 #org @Ardesiopoli_6_1_MapScriptOnFrame_text7
-Filiberto: Non si narra di queste\nvicende da secoli, secondo i piu' si\ltrattano infatti solamente di\lleggende...\pMa come si sa, in tutte le leggende\nc'e' un fondo di verita'...\pLe incisioni sembrano riportare i\nluoghi in cui i tre guardiani Raikou,\lEntei e Suicune riposino...
+Filiberto: Non si narra di queste\nvicende da secoli, secondo i pi[26] si\ltratta infatti solamente di\lleggende[.]\pMa come si sa, in tutte le leggende\nc'[1A] un fondo di verit[16][.]\pLe incisioni sembrano riportare i\nluoghi in cui i tre guardiani Raikou,\lEntei e Suicune riposino[.]
 
 #org @Ardesiopoli_6_1_MapScriptOnFrame_text8
-Filiberto: Ma certo! Il Team Dusk\nsta sicuramente pianificando di\limpossessarsi di questi Poke'mon!\pPer questo motivo era nella Foresta\nFrondosa alla ricerca di queste\lincisioni...
+Filiberto: Ma certo! Il Team Dusk\nsta sicuramente pianificando di\limpossessarsi di questi Pok\emon!\pPer questo motivo era nella Foresta\nFrondosa alla ricerca di queste\lincisioni[.]
 
 #org @Ardesiopoli_6_1_MapScriptOnFrame_text9
-Filiberto: I luoghi sembrano essere\nil Passo Tuono, la Scogliera\lSerenaria e i Campi Infuocati...\pChe il Team Dusk stia gia' mettendo\na ferro e fuoco questi posti?\pIl Passo Tuono non si trova molto\ndistante da qui, all'altezza del\lPercorso 4, perche' non vai a darci\nun'occhiata tu stesso?\pDopotutto hai gia' sconfitto il\nTeam Dusk una volta, non dovresti\lavere paura di loro!
+Filiberto: I luoghi sembrano essere\nil Passo Tuono, la Scogliera\lSerenaria e i Campi Infuocati[.]\pChe il Team Dusk stia gi[16] mettendo\na ferro e fuoco questi posti?\pIl Passo Tuono non si trova molto\ndistante da qui, all'altezza del\lPercorso 4, perch[1A] non vai a darci\nun'occhiata tu stesso?\pDopotutto hai gi[16] sconfitto il\nTeam Dusk una volta, non dovresti\lavere paura di loro!
 
 #org @Ardesiopoli_6_1_MapScriptOnFrame_text10
-Non preoccuparti, avvisero' io tuo\nfratello Crispy, anche lui sara'\lsicuramente interessato alle\lricerche.
+Non preoccuparti, avviser[22] io tuo\nfratello Crispy, anche lui sar[16]\lsicuramente interessato alle\lricerche.
 
 //_/////////////////////////////////
 #org @Ardesiopoli_6_1_NPC1_text1
-Abbiamo recentemente trovato un\nframmento di mandibola che non\lcorrisponde a nessun Poke'mon noto...\pPotrebbe essere una nuova scoperta!
+Abbiamo recentemente trovato un\nframmento di mandibola che non\lcorrisponde a nessun Pok\emon noto[.]\pPotrebbe essere una nuova scoperta!
 
 #org @Ardesiopoli_6_1_NPC2_text1
-I testi antichi di Eyrois parlano\ndi Poke'mon scomparsi ben prima\ldell'era moderna.\pAlcuni li chiamano... i Dormienti.
+I testi antichi di Eyros parlano\ndi Pok\emon scomparsi ben prima\ldell'era moderna.\pAlcuni li chiamano[.] i Dormienti.
 
 #org @Ardesiopoli_6_1_NPC3_text1
-Stiamo confrontando le sequenze\nfossili per trovare affinita'\lgenetiche.\pChissa' quanti segreti nasconde il\nDNA di un Relicanth...
+Stiamo confrontando le sequenze\nfossili per trovare affinit[16]\lgenetiche.\pChiss[16] quanti segreti nasconde il\nDNA di un Relicanth[.]
 
 #org @Ardesiopoli_6_1_NPC4_text1
-Ogni giorno un fossile, ogni notte\nun enigma.\pFiliberto ha una mente brillante...\nma ci tiene svegli fino a tardi!
+Ogni giorno un fossile, ogni notte\nun enigma.\pFiliberto ha una mente brillante[.]\nma ci tiene svegli fino a tardi!
 
 #org @Ardesiopoli_6_1_Sign0_text1
-Questo fossile apparteneva ad un\nantico Poke'mon di tipo volante
+Questo fossile apparteneva ad un\nantico Pok\emon di tipo volante
 
 #org @Ardesiopoli_6_1_Sign1_text1
 Questi libri raccolgono insieme le\nantiche leggende di Eyros.

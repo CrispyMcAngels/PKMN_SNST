@@ -2,17 +2,17 @@
 Palestra Pokemon di Radiantia
 
 #org @Radiantia_8_8_NPC0_text1
-Questa non e' una palestra per chi\nha i piedi troppo saldi a terra...\pSe vuoi raggiungere il Capopalestra,\ndovrai fidarti del vento.\pSalta sulle nuvole... e non temere i\nvortici: solo alcuni ti porteranno\lin alto...
+Questa non [1A] una palestra per chi\nha i piedi troppo saldi a terra[.]\pSe vuoi raggiungere il Capopalestra,\ndovrai fidarti del vento.\pSalta sulle nuvole[.] e non temere i\nvortici: solo alcuni ti porteranno\lin alto[.]
 
 #org @Radiantia_8_8_NPC0_text2
-Hai affrontato i cicloni e sei\natterrato in gloria.\pLa Medaglia Nuvola non e' solo\nun simbolo...\pE' la prova che sai volare con\nla testa.
+Hai affrontato i cicloni e sei\natterrato in gloria.\pLa Medaglia Nuvola non [1A] solo\nun simbolo[.]\p[05] la prova che sai volare con\nla testa.
 
 //Aviatrice Lya
 #org @Radiantia_8_8_NPC1_text1
-Volare e' liberta'...\pma oggi ti dimostrero' che serve\nanche controllo!
+Volare [1A] libert[16][.]\pma oggi ti dimostrer[22] che serve\nanche controllo!
 
 #org @Radiantia_8_8_NPC1_text2
-Hai mantenuto l'equilibrio...\nSei davvero solido.
+Hai mantenuto l'equilibrio[.]\nSei davvero solido.
 
 #org @Radiantia_8_8_NPC1_text3
 Sei come una corrente ascensionale:\ninaspettata e travolgente!
@@ -20,7 +20,7 @@ Sei come una corrente ascensionale:\ninaspettata e travolgente!
 
 //Acrobata Milo
 #org @Radiantia_8_8_NPC2_text1
-Un passo falso... e precipiti!\nSei pronto a rischiare?
+Un passo falso[.] e precipiti!\nSei pronto a rischiare?
 
 #org @Radiantia_8_8_NPC2_text2
 Beh, sei atterrato con stile!
@@ -34,10 +34,10 @@ Hai un senso dell'equilibrio\ninvidiabile, complimenti!
 La mia danza imita il volo dei\nPidgeotto tra le nuvole.
 
 #org @Radiantia_8_8_NPC3_text2
-Le mie piume...\nSono cadute piano piano.
+Le mie piume[.]\nSono cadute piano piano.
 
 #org @Radiantia_8_8_NPC3_text3
-Una danza non e' nulla senza chi la\nguarda.\pHai onorato la mia esibizione.
+Una danza non [1A] nulla senza chi la\nguarda.\pHai onorato la mia esibizione.
 
 
 //Allenatore Impulsivo Greg
@@ -45,56 +45,49 @@ Una danza non e' nulla senza chi la\nguarda.\pHai onorato la mia esibizione.
 Mi tuffo nei cicloni come se\nfossero onde! E tu?
 
 #org @Radiantia_8_8_NPC4_text2
-Wow... stavolta sono io ad essere\nstato spazzato via.
+Wow[.] stavolta sono io ad essere\nstato spazzato via.
 
 #org @Radiantia_8_8_NPC4_text3
-Avrei dovuto ascoltare i venti...\ne non buttarmi a testa bassa!
+Avrei dovuto ascoltare i venti[.]\ne non buttarmi a testa bassa!
 
 
 //Ornitologa Rina
 #org @Radiantia_8_8_NPC5_text1
-Studio le rotte migratorie...\ne le strategie vincenti!
+Studio le rotte migratorie[.]\ne le strategie vincenti!
 
 #org @Radiantia_8_8_NPC5_text2
-La tua tattica... ha superato la\nmia previsione.
+La tua tattica[.] ha superato la\nmia previsione.
 
 #org @Radiantia_8_8_NPC5_text3
 Sai? Mi ricordi un Altaria in\ntempesta: elegante ma inarrestabile.
 
-
-//Pilota anziano Torel
-//Pre-sfida: "Quando hai sfidato i venti di Radiantia, puoi affrontare qualsiasi tempesta."
-//Sconfitta: "Eh, anche i vecchi piloti si fanno superare…"
-//Post-interazione: "Hai una buona presa sul timone, ragazzo. Continua a volare alto.
-
-
 #org @Radiantia_8_8_NPC6_text1
-Silenzio... Ascolta...
+Silenzio[.] Ascolta[.]
 
 #org @Radiantia_8_8_NPC6_text2
-Eleonora: Il vento racconta tutto\ncio' che e' stato...\l...e tutto cio' che sara'.\pIo sono Eleonora, custode delle\ncorrenti di Radiantia.\pColoro che arrivano fin qui sono\nstati sospinti da qualcosa di piu'\ldel caso...
+Eleonora: Il vento racconta tutto\nci[22] che [1A] stato[.]\l[.]e tutto ci[22] che sar[16].\pIo sono Eleonora, custode delle\ncorrenti di Radiantia.\pColoro che arrivano fin qui sono\nstati sospinti da qualcosa di pi[26]\ldel caso[.]
 
 #org @Radiantia_8_8_NPC6_text3
 Vuoi dimostrarmi che anche tu sai\nvolare alto, senza temere la caduta?
 
 #org @Radiantia_8_8_NPC6_text4
-Eleonora: Allora lascia che i tuoi\npensieri si sollevino...\pE che le tue azioni prendano il volo.\nMostrami la leggerezza del tuo spirito!
+Eleonora: Allora lascia che i tuoi\npensieri si sollevino[.]\pE che le tue azioni prendano il volo.\nMostrami la leggerezza del tuo spirito!
 
 #org @Radiantia_8_8_NPC6_text5
-Come le correnti si stringono prima\ndella tempesta, anche io non cedero'\lcon facilita'!
+Come le correnti si stringono prima\ndella tempesta, anche io non ceder[22]\lcon facilit[16]!
 
 #org @Radiantia_8_8_NPC6_text6
-Eleonora: ...Hai danzato tra le\nnuvole e hai sfidato i cicloni.\pIl tuo spirito e' saldo, ma libero.\pHai guadagnato il diritto di solcare\ni cieli piu' alti.
+Eleonora: [.]Hai danzato tra le\nnuvole e hai sfidato i cicloni.\pIl tuo spirito [1A] saldo, ma libero.\pHai guadagnato il diritto di solcare\ni cieli pi[26] alti.
 
 #org @Radiantia_8_8_NPC6_text7
-Accetta la Medaglia delle Correnti.\pCon essa, i Poke'mon fino al livello\n40 ti ubbidiranno.\pInoltre, ti affido questa MT:\nAeroassalto, non fallisce mai!\pCome chi ha imparato a leggere il\nvento.
+Accetta la Medaglia delle Correnti.\pCon essa, i Pok\emon fino al livello\n40 ti ubbidiranno.\pInoltre, ti affido questa MT:\nAeroassalto, non fallisce mai!\pCome chi ha imparato a leggere il\nvento.
 
 #org @Radiantia_8_8_NPC6_text8
 Eleonora: Torna quando sarai di\nbuon vento!
 
 #org @Radiantia_8_8_NPC6_text9
 //_/////////////////////////////////
-Eleonora: E' proprio vero che buon\nsangue non mente...\pSai, conosco molto bene tuo fratello\nCrispy.\pSei sulla giusta strada per\ndiventare un allenatore forte quanto\llui! 
+Eleonora: [05] proprio vero che buon\nsangue non mente[.]\pSai, conosco molto bene tuo fratello\nCrispy.\pSei sulla giusta strada per\ndiventare un allenatore forte quanto\llui! 
 
 #org @Radiantia_8_8_NPC6_text10
 Eleonora: Usala per spazzare via i\ntuoi avversari in un batter d'ali!

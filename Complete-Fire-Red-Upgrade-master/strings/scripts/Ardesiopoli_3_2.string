@@ -5,26 +5,26 @@ Benvenuti ad Ardesiopoli:\n[ARROW_RIGHT] Percorso 2\l[ARROW_DOWN] Percorso 3
 Stazione metropolitana di\nArdesiopoli Sud
 
 #org @Ardesiopoli_3_2_Sign15
-[PLAYER] controlla la cassetta\npostale:\pE' vuota!
+[PLAYER] controlla la cassetta\npostale:\p[05] vuota!
  
 #org @Ardesiopoli_3_2_Sign2_3
-Si narra che Ardesiopoli, e le sue\ngrandi mura, siano state costruite\lin epoca medievale:\pNon solo per difendersi, ma anche\nper rendere abitabile la zona.\pArdesiopoli giacie infatti su un\nletto di ardesia durissima,\lquasi industruttibile.\pNel corso degli anni la citta' si e'\ningrandita, non potendo scavare il\lsottosuolo si e' andata a creare\lquella che oggi viene chiamata\lArdesiopoli Nord.\pRaggiungibile solamente tramite\nla metropolitana.
+Si narra che Ardesiopoli, e le sue\ngrandi mura, siano state costruite\lin epoca medievale:\pNon solo per difendersi, ma anche\nper rendere abitabile la zona.\pArdesiopoli giace infatti su un\nletto di ardesia durissima,\lquasi indistruttibile.\pNel corso degli anni la citt[16] si [1A]\ningrandita, non potendo scavare il\lsottosuolo si [1A] andata a creare\lquella che oggi viene chiamata\lArdesiopoli Nord.\pRaggiungibile solamente tramite\nla metropolitana.
 
 #org @Ardesiopoli_3_2_Sign6_7
 Arena d'allenamento di Ardesiopoli:\pNon ci sono regole.
 
 #org @Ardesiopoli_3_2_Sign1
-Palestra Poke'mon di Ardesiopoli.
+Palestra Pok\emon di Ardesiopoli.
 
 #org @Ardesiopoli_3_2_Sign8
-Centro di sviluppo di Poke'mon\nSunset
+Centro di sviluppo di Pok\emon\nSunset
 
 #org @Ardesiopoli_3_2_Sign9
-Bistrot Diamante,\nPer i palati piu' raffinati.
+Bistrot Diamante,\nPer i palati pi[26] raffinati.
 
 #org @Ardesiopoli_3_2_Sign10
 Collina Ardesia:
-Prenditi una pausa dalla citta'\nrilassandoti nella natura.
+Prenditi una pausa dalla citt[16]\nrilassandoti nella natura.
 
 #org @Ardesiopoli_3_2_Sign11_14
 Piazza centrale di Ardesiopoli\nNord
@@ -36,79 +36,79 @@ Museo archeologico
 Collina Ardesia - Ingresso Nord
 
 #org @Ardesiopoli_3_2_MapScriptOnFrame_text1
-Grazie per aver riportato Shinx!\nDove si era cacciato?\pPrendi, questo e' il minimo che\npossa fare per sdebitarmi,\la me non serve!
+Grazie per aver riportato Shinx!\nDove si era cacciato?\pPrendi, questo [1A] il minimo che\npossa fare per sdebitarmi,\la me non serve!
 
 #org @Ardesiopoli_3_2_MapScriptOnFrame_text2
 D'ora in poi potrai usare il\nPass Metro per spostarti da\lArdesiopoli Sud ad Ardesiopoli Nord.
 
 #org @Ardesiopoli_3_2_NPC0_text1
-Adoro venire in questa piazza...\nE' sempre cosi' piena di vita!
+Adoro venire in questa piazza[.]\n[05] sempre cos[1E] piena di vita!
 
 #org @Ardesiopoli_3_2_NPC2_text1
-Gnam Gnam\pMangiare un gelato guardando tutto\nquello che succede qui sotto da\lquesta panchina e' il mio\lpassatempo preferito!
+Gnam Gnam\pMangiare un gelato guardando tutto\nquello che succede qui sotto da\lquesta panchina [1A] il mio\lpassatempo preferito!
 
 #org @Ardesiopoli_3_2_NPC3_text1
-Il mio nonno mi porta sempre qui in\nquesta piazza a passeggiare,\lmi piace tanto passare del tempo\lcon lui...\pConosce qualsiasi cosa!
+Mio nonno mi porta sempre qui in\nquesta piazza a passeggiare,\lmi piace tanto passare del tempo\lcon lui[.]\pConosce qualsiasi cosa!
 
 #org @Ardesiopoli_3_2_NPC4_text1
 Ai miei tempi non c'era la\nmetropolitana!\pSi passava ore a scalare le rocce\ntra Nord e Sud!
 
 #org @Ardesiopoli_3_2_NPC6_text1
-Sei un allenatore giusto?\nHai gia' sfidato Filiberto?\pLa palestra si trova sulla Collina\nArdesia.
+Sei un allenatore giusto?\nHai gi[16] sfidato Filiberto?\pLa palestra si trova sulla Collina\nArdesia.
 
 #org @Ardesiopoli_3_2_NPC6_text2
-Wow, e' la Medaglia Amonite!\nDevi essere sicuramente un\lallenatore in gamba!
+Wow, [1A] la Medaglia Amonite!\nDevi essere sicuramente un\lallenatore in gamba!
 
 #org @Ardesiopoli_3_2_NPC7_text1
-Mi chiedo cosa ci sia davvero sotto\nqueste rocce...\pForse antichi segreti dimenticati.
+Mi chiedo cosa ci sia davvero sotto\nqueste rocce[.]\pForse antichi segreti dimenticati.
 
 #org @Ardesiopoli_3_2_NPC8_text1
-Ho perso il mio Poke'mon sulla\nCollina Ardesia, per fortuna un\lgentile Archeologo l'ha ritrovato!
+Ho perso il mio Pok\emon sulla\nCollina Ardesia, per fortuna un\lgentile Archeologo l'ha ritrovato!
 
 #org @Ardesiopoli_3_2_NPC9_text1
-Sono in citta' per visitare il\nmuseo!\pHo un compito da fare...\nma mi sono perso leggendo tutte le\ltarghette!
+Sono in citt[16] per visitare il\nmuseo!\pHo un compito da fare[.]\nma mi sono perso leggendo tutte le\ltarghette!
 
 #org @Ardesiopoli_3_2_NPC10_text1
-Una volta ho sfidato Filiberto...\nHo perso malamente, ma ho imparato\lqualcosa quel giorno:\pIo e il mio Togepi non siamo fatte\nper combattere!
+Una volta ho sfidato Filiberto[.]\nHo perso malamente, ma ho imparato\lqualcosa quel giorno:\pIo e Togepi non siamo fatte per\ncombattere!
 
 #org @Ardesiopoli_3_2_NPC11_text1
 Toge-Togepiii!
 
 #org @Ardesiopoli_3_2_NPC14_text1
-Questo e' uno dei punti piu' a\nNord della regione di Eyros...\pMolto spesso quando devo pensare\nvengo qui e guardo l'orizzonte\lper ore...\pChi sa che cosa si trova oltre\nl'orizzonte!
+Questo [1A] uno dei punti pi[26] a\nNord della regione di Eyros[.]\pMolto spesso quando devo pensare\nvengo qui e guardo l'orizzonte\lper ore[.]\pChiss[16] che cosa si trova oltre\nl'orizzonte!
 
 #org @Ardesiopoli_3_2_NPC15_text0
-Quei bambini stanno giocando con\ni loro Poke'mon, ora vado a\lvedere se lasciano giocare pure me!
+Quei bambini stanno giocando con\ni loro Pok\emon, ora vado a\lvedere se lasciano giocare anche me!
 
 #org @Ardesiopoli_3_2_NPC15_text1
-Sigh... Sigh...\pEro venuta qui per vedere dei\nPoke'mon sfidarsi, ma quei due\lbulletti mi hanno cacciato...
+Sigh[.] Sigh[.]\pEro venuta qui per vedere dei\nPok\emon sfidarsi, ma quei due\lbulletti mi hanno cacciato[.]
 
 #org @Ardesiopoli_3_2_NPC15_text2
-Questi due ragazzi hanno imparato\nla lezione.\pOra mi lasciano giocare\ncon i loro Poke'mon.
+Questi due ragazzi hanno imparato\nla lezione.\pOra mi lasciano giocare\ncon i loro Pok\emon.
 
 #org @Ardesiopoli_3_2_NPC16_text1
-Questa mini arena e' il modo\nmigliore per allenare il mio\lPoke'mon e fare amicizia con i\lbambini di Ardesiopoli.
+Questa mini arena [1A] il modo\nmigliore per allenare il mio\lPok\emon e fare amicizia con i\lbambini di Ardesiopoli.
 
 #org @Ardesiopoli_3_2_NPC17_text1
-Allenarsi qui sta diventando\nnoioso...\lGli altri bambini sono troppo\ldeboli per me...
+Allenarsi qui sta diventando\nnoioso[.]\lGli altri bambini sono troppo\ldeboli per me[.]
 
 //_/////////////////////////////////
 #org @Ardesiopoli_3_2_NPC18_text1
-Dicono che i Poke'mon fossile\npossano tornare in vita...\pIo voglio un Cranidos come compagno!
+Dicono che i Pok\emon fossile\npossano tornare in vita[.]\pIo voglio un Cranidos come compagno!
 
 #org @Ardesiopoli_3_2_NPC21_text1
-Dannazione, ho provato a sfidare\nil capopalestra di Ardesiopoli,\li miei Poke'mon di tipo volante\lsono stati spazzati via dai suoi\lPoke'mon fossile...\pForse dovrei tornare nel Percorso 2\nad allenarmi...
+Dannazione, ho provato a sfidare\nil capopalestra di Ardesiopoli,\li miei Pok\emon di tipo volante\lsono stati spazzati via dai suoi\lPok\emon fossile[.]\pForse dovrei tornare nel Percorso 2\nad allenarmi[.]
 
 #org @Ardesiopoli_3_2_NPC22_text1
-Sono di pattuglia ad Ardesiopoli,\nalcune persone hanno riportato\ldelle attivita' sospette!
+Sono di pattuglia ad Ardesiopoli,\nalcune persone hanno riportato\ldelle attivit[16] sospette!
 
 
 
 #org @Ardesiopoli_3_2_NPC20_text1
-Sto per aprire un'azienda a\nStellavia.\pAbitando ad Ardesiopoli fare avanti\ne indietro ogni giorno e' molto \lcomplicato, ma quando i lavori per\lla nuova linea della metropolitana\lsaranno ultimati, spostarsi fino a\lStellavia sara' un gioco da ragazzi!
+Sto per aprire un'azienda a\nStellavia.\pAbitando ad Ardesiopoli fare avanti\ne indietro ogni giorno [1A] molto\lcomplicato, ma quando i lavori per\lla nuova linea della metropolitana\lsaranno ultimati, spostarsi fino a\lStellavia sar[16] un gioco da ragazzi!
 
 #org @Ardesiopoli_3_2_NPC19_text1
-[PLAYER]: Eccoti Shinx, ti piace\nproprio correre, non e' vero?\pBene, torniamo dalla tua\nallenatrice!
+[PLAYER]: Eccoti Shinx, ti piace\nproprio correre, non [1A] vero?\pBene, torniamo dalla tua\nallenatrice!
 
 #org @Ardesiopoli_3_2_NPC19_text2
 Shiiinx!
@@ -117,7 +117,7 @@ Shiiinx!
 Torna quando sarai pronto!
 
 #org @Ardesiopoli_3_2_tile5_text1
-Hei, tu non sei di queste parti,\nche ci fai qui!?\pQuesta e' la mini arena di\nArdesiopoli, se vuoi andare avanti\ldevi sfidare sia me che il mio\lamico.
+Ehi, tu non sei di queste parti,\nche ci fai qui!?\pQuesta [1A] la mini arena di\nArdesiopoli, se vuoi andare avanti\ldevi sfidare sia me che il mio\lamico.
 
 #org @Ardesiopoli_3_2_tile5_text2
 Che fai, accetti la sfida?
@@ -126,10 +126,10 @@ Che fai, accetti la sfida?
 Ora vedrai di che pasta sono\nfatti i ragazzi di Ardesiopoli!
 
 #org @Ardesiopoli_3_2_tile5_text4
-Non e' andata come pensavo...
+Non [1A] andata come pensavo[.]
 
 #org @Ardesiopoli_3_2_tile5_text5
-Quello di poco fa e' stato solo un\nriscaldamento, vediamo come te la\lcavi ora!
+Quello di poco fa [1A] stato solo un\nriscaldamento, vediamo come te la\lcavi ora!
 
 #org @Ardesiopoli_3_2_tile5_text6
 Ouch, sei in gamba, devo ammetterlo!
@@ -138,38 +138,38 @@ Ouch, sei in gamba, devo ammetterlo!
 [PLAYER]: Bene, ora che vi\nho battuto dovete smetterla di\lfare i bulletti e lasciar giocare\lquella bambina con voi!
 
 #org @Ardesiopoli_3_2_tile5_text9
-Aaah, va bene!\pMa che ti aspettavi?\nSiamo solo dei bambini d'altronde...
+Aaah, va bene!\pMa che ti aspettavi?\nSiamo solo dei bambini d'altronde[.]
 
 #org @Ardesiopoli_3_2_tile5_text8
-Finalmente sei deciso a tornare...
+Finalmente sei deciso a tornare[.]
 
 #org @Ardesiopoli_3_2_tile0_text1
-Naomi: Ciao [PLAYER], anche tu da\nqueste parti?\pDopotutto non mi sorprende vederti\nqui, nella Foresta Frondosa ce la\lsiamo cavata bene insieme...\pScommetto che pure tu sei qui per\lsfidare Filiberto!\pFacciamo un gioco, ti lasciero' andare\nverso la palestra Poke'mon solo se\lriuscirai a battermi!
+Naomi: Ciao [PLAYER], anche tu da\nqueste parti?\pDopotutto non mi sorprende vederti\nqui, nella Foresta Frondosa ce la\lsiamo cavata bene insieme[.]\pScommetto che pure tu sei qui per\lsfidare Filiberto!\pFacciamo un gioco, ti lascier[22] andare\nverso la palestra Pok\emon solo se\lriuscirai a battermi!
 
 #org @Ardesiopoli_3_2_tile0_text2
 Non ci credo, un'altra volta!
 
 #org @Ardesiopoli_3_2_tile0_text3
-Naomi: [PLAYER] sono impressionata!\pNelle Rovine Ancestrali pensavo di\naver raggiunto un ottimo livello di\lallenamento e sintonia con i miei\lPoke'mon...\pTu sei pero' sempre un passo avanti...
+Naomi: [PLAYER] sono impressionata!\pNelle Rovine Ancestrali pensavo di\naver raggiunto un ottimo livello di\lallenamento e sintonia con i miei\lPok\emon[.]\pTu sei per[22] sempre un passo avanti[.]
 
 #org @Ardesiopoli_3_2_tile0_text4a
-Naomi: Non lo dico per gelosia,\npero' oggi ne tu ne io potremo\lsfidare Filiberto.\pLa palestra e' chiusa!\pChe quel tipo sia ancora nel suo\nlaboratorio?
+Naomi: Non lo dico per gelosia,\nper[22] oggi n[1B] tu n[1B] io potremo\lsfidare Filiberto.\pLa palestra [1A] chiusa!\pChe quel tipo sia ancora nel suo\nlaboratorio?
 
 #org @Ardesiopoli_3_2_tile0_text4b
-Naomi: Non mi sento ancora pronta per\nsfidare Filiberto, forse e' meglio\lche mi alleni ancora un po'!
+Naomi: Non mi sento ancora pronta per\nsfidare Filiberto, forse [1A] meglio\lche mi alleni ancora un po'!
 
 #org @Ardesiopoli_3_2_tile0_text5a
-Naomi: Non voglio pensarci ora!\nForse e' meglio se vado a fare un\lgiro ad Ardesiopoli Nord...\pCiao Ciao [PLAYER], fammi sapere\nse trovi Filiberto!
+Naomi: Non voglio pensarci ora!\nForse [1A] meglio se vado a fare un\lgiro ad Ardesiopoli Nord[.]\pCiao Ciao [PLAYER], fammi sapere\nse trovi Filiberto!
 
 #org @Ardesiopoli_3_2_tile0_text5b
-Naomi: Ma certo, quale posto\nmigliore del Percorso 2?\pCatturero tantissimi Poke'mon\nselvatici e la prossima volta non\lavrai scampo!
+Naomi: Ma certo, quale posto\nmigliore del Percorso 2?\pCatturer[22] tantissimi Pok\emon\nselvatici e la prossima volta non\lavrai scampo!
 
 #org @Ardesiopoli_3_2_tile6_text1
-FERMATIIIIII!\pLADRO DI POKE'MOOOOON!!!
+FERMATIIIIII!\pLADRO DI POK[06]MOOOOON!!!
 
 #org @Ardesiopoli_3_2_tile6_text2
-AIUTOOO! Quel mascalzone ha rubato\nil mio Darumaka!\pTi prego aiutami, ora non ho nessun\nPoke'mon per inseguirlo!\pSembra sia scappato verso il centro\ndi Ardesiopoli...
+AIUTOOO! Quel mascalzone ha rubato\nil mio Darumaka!\pTi prego aiutami, ora non ho nessun\nPok\emon per inseguirlo!\pSembra sia scappato verso il centro\ndi Ardesiopoli[.]
 
 #org @Ardesiopoli_3_2_NPC28_text1
 //_/////////////////////////////////
-Il ladro e' scappato verso il\ncentro di Ardesiopoli.\pHai gia' dato un'occhiata li dentro?
+Il ladro [1A] scappato verso il\ncentro di Ardesiopoli.\pHai gi[16] dato un'occhiata l[1E] dentro?

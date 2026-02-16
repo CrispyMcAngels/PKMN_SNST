@@ -2,25 +2,25 @@
 Naomi: Ciao [PLAYER]!\pChe piacere vederti, cosa\nti porta da queste parti?
 
 #org @EventScript_Borgo_Ponente_4_2_text2
-[PLAYER]: ...
+[PLAYER]: [.]
 
 #org @EventScript_Borgo_Ponente_4_2_text3
-Naomi: Sul serio!?!\pTuo fratello vuole farci vedere\nqualcosa nel Percorso 1?\pNon sto piu' nella pelle, parto\nsubito!!!
+Naomi: Sul serio!?!\pTuo fratello vuole farci vedere\nqualcosa nel Percorso 1?\pNon sto pi[26] nella pelle, parto\nsubito!!!
 
 #org @EventScript_Borgo_Ponente_4_2_NPC0_text1
-La vita qui e' cosi' tranquilla...\pSpero Naomi si stia divertendo.
+La vita qui [1A] cos[1E] tranquilla[.]\pSpero Naomi si stia divertendo.
 
 #org @EventScript_Borgo_Ponente_4_2_NPC0_text2
-Stai cercando Naomi?\nDovrebbe essere di sopra in\lcamera sua.
+Stai cercando Naomi?\nDovrebbe essere al piano di sopra,\lin camera sua.
 
 #org @EventScript_Borgo_Ponente_4_2_NPC1_text1
-Non vedo l'ora di diventare grande\ncome la mia sorellona e iniziare\lil mio viaggio nel mondo dei Poke'mon!
+Non vedo l'ora di diventare grande\ncome la mia sorellona e iniziare\lil mio viaggio nel mondo dei Pok\emon!
 
 #org @EventScript_Borgo_Ponente_4_2_NPC3_text1
-Un Percorso attraversabile\nsolamente sul dorso di un Poke'mon\lin grado di volare?\pMa certo, per attraversare il\nPercorso 11, cosi' come molti altri\lpercorsi nella Regione di Eyros,\lhai bisogno di un Poke'mon in grado\ldi usare la MN Zenit.
+Un percorso attraversabile\nsolamente sul dorso di un Pok\emon\lin grado di volare?\pMa certo, per attraversare il\nPercorso 11, cos[1E] come molti altri\lpercorsi nella Regione di Eyros,\lhai bisogno di un Pok\emon in grado\ldi usare la MN Zenit.
 
 #org @Borgo_Ponente_4_2_Sign0_text1
-E' il PC di Naomi, meglio\nnon cliccare niente...
+[05] il PC di Naomi, meglio\nnon cliccare niente[.]
 
 #org @EventScript_Borgo_Ponente_4_2_Sign3
-Questo e' il letto di Naomi.\nForse e' meglio lasciarlo in\lordine.
+Questo [1A] il letto di Naomi.\nForse [1A] meglio lasciarlo in\lordine.

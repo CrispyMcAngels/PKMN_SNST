@@ -1,15 +1,15 @@
 //_/////////////////////////////////
 #org @Ardesiopoli_6_8_NPC0_text1
-Recluta Dusk: Eheheh il capo sara'\nmolto contento quando vedra' questo\lPoke'mon raro!
+Recluta Dusk: Eheheh il capo sar[16]\nmolto contento quando vedr[16] questo\lPok\emon raro!
 
 #org @Ardesiopoli_6_8_NPC0_text2
-Recluta Dusk: Hei tu, come hai\nfatto a trovarmi?\pQuesto e' il mio nascondiglio\nsegreto!
+Recluta Dusk: Ehi tu, come hai\nfatto a trovarmi?\pQuesto [1A] il mio nascondiglio\nsegreto!
 
 #org @Ardesiopoli_6_8_NPC0_text3
 Dannazione, che figura ci faccio\nadesso?
 
 #org @Ardesiopoli_6_8_NPC0_text4
-Recluta Dusk: E chi lo spiega al\ncapo ora?\pE va bene...\n...Quella vecchietta non se ne fa\lniente, ma vabbe...\pRiprenditi sto Poke'mon!
+Recluta Dusk: E chi lo spiega al\ncapo ora?\pE va bene[.]\n[.]Quella vecchietta non se ne fa\lniente, ma vabb[1A][.]\pRiprenditi questo Pok\emon!
 
 #org @Ardesiopoli_6_8_NPC0_text5
 [PLAYER] prende Darumaka!
@@ -21,19 +21,19 @@ Recluta Dusk: Eheheh ora meglio\nlevare le tende!
 Grazie per aver salvato il mio\nDarumaka, te ne sono molto grata!
 
 #org @Ardesiopoli_6_8_MapScriptOnFrameBegin_text2
-Tieni, questo e' il minimo che\npossa fare per ringraziarti!
+Tieni, questo [1A] il minimo che\npossa fare per ringraziarti!
 
 #org @Ardesiopoli_6_8_MapScriptOnFrameBegin_text3
-Oh? Hai troppi Poke'mon nella tua\nsquadra, deposita un Poke'mon nel\lBox per lasciar spazio a questo\luovo.
+Oh? Hai troppi Pok\emon nella tua\nsquadra, deposita un Pok\emon nel\lBox per lasciar spazio a questo\luovo.
 
 #org @Ardesiopoli_6_8_MapScriptOnFrameBegin_text4
 [PLAYER] riceve l'Uovo!
 
 #org @Ardesiopoli_6_8_MapScriptOnFrameBegin_text5
-E' un uovo Poke'mon, per farlo\nschiudere devi portarlo con te\ldurante la tua avventura!
+[05] un uovo Pok\emon, per farlo\nschiudere devi portarlo con te\ldurante la tua avventura!
 
 #org @Ardesiopoli_6_8_MapScriptOnFrameBegin_text6
 Arrivederci!
 
 #org @Ardesiopoli_6_8_MapScriptOnFrameBegin_text7
-Hei, rieccoti!\pTieni, questo e' il minimo che\npossa fare per ringraziarti!
+Hei, rieccoti!\pTieni, questo [1A] il minimo che\npossa fare per ringraziarti!

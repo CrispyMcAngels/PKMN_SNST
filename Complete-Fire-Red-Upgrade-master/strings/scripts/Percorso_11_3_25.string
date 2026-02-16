@@ -2,10 +2,10 @@
 Naomi: [PLAYER] te parti pure,\nio voglio restare un po' qui a\lguardare l'orizzonte.
 
 #org @Percorso_11_Brandon_text2
-Naomi: Mmmh dannazione, sembra che\nnon si possa proseguire da questa\lparte senza un Poke'mon in grado di\lvolare...
+Naomi: Mmmh dannazione, sembra che\nnon si possa proseguire da questa\lparte senza un Pok\emon in grado di\lvolare[.]
 
 #org @Percorso_11_Brandon_text3
-Naomi: Hei [PLAYER], finalmente ti\nsei deciso a venire a sfidarmi...\pIo e Dieno ti daremo molto filo\nda torcere...\pFatti sotto!
+Naomi: Hei [PLAYER], finalmente ti\nsei deciso a venire a sfidarmi[.]\pIo e Dieno ti daremo molto filo\nda torcere[.]\pFatti sotto!
 
 #org @Percorso_11_Brandon_text4
 [PLAYER]: Vai, Axew!
@@ -23,61 +23,61 @@ Deino: Deino-De!
 Impossibile!
 
 #org @Percorso_11_Brandon_text7
-Naomi: Wow [PLAYER], sono sbalordita,\nil tuo legame con Axew e' gia'\lmolto forte!\pSono curiosa di vedere quanto\nforti diventerete.\pPer quanto mi riguarda invece devo\nancora allenarmi molto con Deino,\lma sono sicura faremo presto dei\lprogressi!\pPer ora basta cosi' piccolino,\nrientra.
+Naomi: Wow [PLAYER], sono sbalordita,\nil tuo legame con Axew [1A] gi[16]\lmolto forte!\pSono curiosa di vedere quanto\nforti diventerete.\pPer quanto mi riguarda invece devo\nancora allenarmi molto con Deino,\lma sono sicura faremo presto dei\lprogressi!\pPer ora basta cos[1E] piccolino,\nrientra.
 
 #org @Percorso_11_Brandon_text8
 [PLAYER]: Ottimo lavoro Axew,\nrientra pure te!
 
 #org @Percorso_11_Brandon_text9
-Prof. Kraemer: Hallo Jungs, sono\narrivato giusto in tempo per\lvedere vostra sfida da lontano...\pDavvero un bello spettacolo, sehr\nschon, sono soddisfatto von euch!\pOrmai, ihr seid schon allenatori\nPoke'mon, qvindi, avrete bisogno\ldi qvesto...
+Prof. Kraemer: Hallo Jungs, sono\narrivato giusto in tempo per\lvedere vostra sfida da lontano[.]\pDavvero un bello spettacolo, sehr\nschon, sono soddisfatto von euch!\pOrmai, ihr seid schon allenatori\nPok\emon, qvindi, avrete bisogno\ldi qvesto[.]
 
 #org @Percorso_11_Brandon_text10
-[PLAYER] riceve Poke'dex!
+[PLAYER] riceve Pok\edex!
 
 #org @Percorso_11_Brandon_text11
 Prof. Kraemer: Tieni Naomi, uno\nanche fur dich!
 
 #org @Percorso_11_Brandon_text12
-Naomi riceve Poke'dex!
+Naomi riceve Pok\edex!
 
 #org @Percorso_11_Brandon_text13
-Prof. Kraemer: Pokedex essere\ncome enciclopedia Poke'mon:\lse voi vedere nuovo Poke'mon,\lPokedex registrera'.
+Prof. Kraemer: Pokedex essere\ncome enciclopedia Pok\emon:\lse voi vedere nuovo Pok\emon,\lPokedex registrer[16].
 
 #org @Percorso_11_Brandon_text13a
-Naomi: La ringrazio Prof. Kraemer...\pMa perche' [PLAYER] ed io dovremmo\ncompletare questo Pokedex?
+Naomi: La ringrazio Prof. Kraemer[.]\pMa perch[1A] [PLAYER] ed io dovremmo\ncompletare questo Pokedex?
 
 #org @Percorso_11_Brandon_text13b
-Prof. Kraemer: Raccogliere\nInformationen uber tutti i tipi von\lPoke'mon e' lo scopo di mia ricerca\lqui in Eyros, dove sono tanti\lPoke'mon di regioni lontane...
+Prof. Kraemer: Raccogliere\nInformationen uber tutti i tipi von\lPok\emon [1A] lo scopo di mia ricerca\lqui in Eyros, dove sono tanti\lPok\emon di regioni lontane[.]
 
 #org @Percorso_11_Brandon_text14
-Naomi: Sono sicura che grazie al\nPoke'dex riusciro' a registrare\ltutti i Poke'mon della regione di\lEyros...
+Naomi: Sono sicura che grazie al\nPok\edex riuscir[22] a registrare\ltutti i Pok\emon della regione di\lEyros[.]
 
 #org @Percorso_11_Brandon_text14a
 Naomi: Non trovi [PLAYER]?
 
 #org @Percorso_11_Brandon_text14b
-[PLAYER]: ...
+[PLAYER]: [.]
 
 #org @Percorso_11_Brandon_text15
-Prof. Kraemer: Genau!\nAber ricordatevi di venire in mio\llaboratorio per vedere progressi\ldi Poke'dex, geil?
+Prof. Kraemer: Genau!\nAber ricordatevi di venire in mio\llaboratorio per vedere progressi\ldi Pok\edex, geil?
 
 #org @Percorso_11_Brandon_text15a
-Naomi: Certamente, passero' di\nsicuro a farle vedere i miei\lprogressi!\pll mio Deino pero' non puo'\nvolare, come faccio ad\lattraversare questo burrone?
+Naomi: Certamente, passer[22] di\nsicuro a farle vedere i miei\lprogressi!\pll mio Deino per[22] non pu[22]\nvolare, come faccio ad\lattraversare questo burrone?
 
 #org @Percorso_11_Brandon_text15b
-Qvesto Percorso porta nach Borgo\nLevante.\pPercorso 11 puo' essere\nattraversato solo se vostro\lPoke'mon kann MN Zenit...\pPer iniziare euere Abenteuer vi\nconsiglio di andare a Percorso 1,\lverso citta' Miralba...
+Qvesto Percorso porta nach Borgo\nLevante.\pPercorso 11 pu[22] essere\nattraversato solo se vostro\lPok\emon kann MN Zenit[.]\pPer iniziare euere Abenteuer vi\nconsiglio di andare a Percorso 1,\lverso citt[16] Miralba[.]
 
 #org @Percorso_11_Brandon_text16
-Naomi: hai sentito [PLAYER]?\pSono sicura che nel Percorso 1\nriusciro' ad allenare molto bene\lil mio Deino...\pPer la nostra prossima sfida non\nmi faro' trovare impreparata!
+Naomi: hai sentito [PLAYER]?\pSono sicura che nel Percorso 1\nriuscir[22] ad allenare molto bene\lil mio Deino[.]\pPer la nostra prossima sfida non\nmi far[22] trovare impreparata!
 
 #org @Percorso_11_Brandon_text17
-Prof. Kraemer: Alles gut!\pIch bin sicher che qvesta\nrivalita' vi fara' crescere viel!\pJetzt devo tornare zuruck in meinem\nlaboratorio...\pFate buono viaggio verso Miralba!
+Prof. Kraemer: Alles gut!\pIch bin sicher che qvesta\nrivalit[16] vi far[16] crescere viel!\pJetzt devo tornare zuruck in meinem\nlaboratorio[.]\pFate buono viaggio verso Miralba!
 
 #org @Percorso_11_3_25_Sign0_text1
 Percorso 11:\n[ARROW_LEFT] Borgo Ponente\p[ARROW_RIGHT] Borgo Levante
 
 #org @Percorso_11_3_25_Sign1_text1
-Il Percorso 11 e' caratterizzato\nda un gigantesco burrone,\lattraversabile solamente grazie\lalla MN Zenit.\pAll'estremo Ovest del burrone\nsorge la citta' di Borgo Ponente,\lmentre a Est la citta' di Borgo\lLevante.
+Il Percorso 11 [1A] caratterizzato\nda un gigantesco burrone,\lattraversabile solamente grazie\lalla MN Zenit.\pAll'estremo Ovest del burrone\nsorge la citt[16] di Borgo Ponente,\lmentre a Est la citt[16] di Borgo\lLevante.
 
 #org @Percorso_11_3_25_NPC3_text1
 La mia famiglia abita a Borgo\nLevante.\pVorrei tanto andare a trovarli ma\nil mio Starly purtroppo non\lconosce la MN Zenit.

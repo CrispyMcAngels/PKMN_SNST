@@ -6,14 +6,14 @@ Treno in partenza per Ardesiopoli\nSud, vuoi salire?
 Si parteee!
 
 #org @Ardesiopoli_6_9_NPC1_text1
-Un tempo si diceva che nessuno\npotesse attraversare il cuore di\lArdesiopoli...\pOra ci bastano pochi minuti\nsottoterra.\pIl progresso e' un Poke'mon che non\nsmette mai di evolversi.
+Un tempo si diceva che nessuno\npotesse attraversare il cuore di\lArdesiopoli[.]\pOra ci bastano pochi minuti\nsottoterra.\pIl progresso [1A] un Pok\emon che non\nsmette mai di evolversi.
 
 #org @Ardesiopoli_6_9_NPC2_text1
-Lavoro al museo nella zona nord.\nOgni giorno prendo la metro all'alba.\pCerto e' comoda, ma quando si ferma\nnel mezzo... brrr...\pQuei tunnel sono troppo silenziosi.
+Lavoro al museo nella zona nord.\nOgni giorno prendo la metro all'alba.\pCerto [1A] comoda, ma quando si ferma\nnel mezzo[.] brrr[.]\pQuei tunnel sono troppo silenziosi.
 
 #org @Ardesiopoli_6_9_NPC4_text1
 //_/////////////////////////////////
-Buongiorno viaggiatore, hai gia' il\nPass Metro?\pTutti i viaggiatori provvisti di\nPass Metro possono spostarsi\lliberamente attraverso l'intera\lrete metropolitana di Eyros:\lArdesiopoli, Stellavia...\pE magari in un futuro chi lo sa,\naddirittura Portoceleste e\lAurorapoli!
+Buongiorno viaggiatore, hai gi[16] il\nPass Metro?\pTutti i viaggiatori provvisti di\nPass Metro possono spostarsi\lliberamente attraverso l'intera\lrete metropolitana di Eyros:\lArdesiopoli, Stellavia[.]\pE magari in un futuro chi lo sa,\naddirittura Portoceleste e\lAurorapoli!
 
 #org @Ardesiopoli_6_9_Sign0_text1
 Linea Metro 2:\nArdesiopoli Nord - Ardesiopoli Sud

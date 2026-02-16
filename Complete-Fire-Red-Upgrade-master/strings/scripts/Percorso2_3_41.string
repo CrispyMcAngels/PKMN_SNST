@@ -1,20 +1,20 @@
 #org @Percorso_2_3_41_NPC1_2_text1
-Recluta Dusk: Hei moccioso,\nfila via!\pLa strada oggi e' chiusa hehe!
+Recluta Dusk: Hei moccioso,\nfila via!\pLa strada oggi [1A] chiusa hehe!
 
 #org @Percorso_2_3_41_NPC7_text1
-Dopo questo Percorso si trova la\nprima Palestra Poke'mon della\lregione di Eyros, pensi di essere\lpronto?\pVediamo come te la cavi contro di\nme!
+Dopo questo Percorso si trova la\nprima Palestra Pok\emon della\lregione di Eyros, pensi di essere\lpronto?\pVediamo come te la cavi contro di\nme!
 
 #org @Percorso_2_3_41_NPC7_text2
-Ah... Che rovina!
+Ah[.] Che rovina!
 
 #org @Percorso_2_3_41_NPC7_text3
-Uff... Forse dovrei allenarmi di\npiu', ma non significa che tu sia\lmigliore di me!
+Uff[.] Forse dovrei allenarmi di\npi[26], ma non significa che tu sia\lmigliore di me!
 
 #org @Percorso_2_3_41_NPC3_text1
-I miei Poke'mon Coleottero sono\npiccoli, ma incredibilmente\lforti! Vedrai!
+I miei Pok\emon Coleottero sono\npiccoli, ma incredibilmente\lforti! Vedrai!
 
 #org @Percorso_2_3_41_NPC3_text2
-Forse devo dare loro piu' tempo\nper evolversi...
+Forse devo dare loro pi[26] tempo\nper evolversi[.]
 
 #org @Percorso_2_3_41_NPC3_text3
 Sei stato bravo, ma i miei\nColeottero non si arrenderanno\lmai!
@@ -26,68 +26,68 @@ Percorso 2\p[ARROW_LEFT] Ardesiopoli
 [ARROW_UP] Foresta Frondosa
 
 #org @Percorso_2_3_41_Sign2_text1
-Consigli utili: se fatti tenere\nai Poke'mon, alcuni strumenti ne\lmigliorano le caratteristiche.
+Consigli utili: se fatti tenere\nai Pok\emon, alcuni strumenti ne\lmigliorano le caratteristiche.
 
 #org @EventScript_Percorso2_3_41_tile0_text1
-???: ...
+???: [.]
 
 #org @EventScript_Percorso2_3_41_tile0_text2
 [PLAYER]: Chi era quell'uomo?
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text1
-Crispy: Sarebbe bello se anche te\nindagassi sui malanni del Team\lDusk, perche' non vai ad\lArdesiopoli a vedere a che punto\le' l'esperimento di Filiberto?\pLa citta' non e' molto lontana, ma\ntieni questo, cosi' non ti perderai!
+Crispy: Sarebbe bello se anche te\nindagassi sui malanni del Team\lDusk, perch[1A] non vai ad\lArdesiopoli a vedere a che punto\l[1A] l'esperimento di Filiberto?\pLa citt[16] non [1A] molto lontana, ma\ntieni questo, cos[1E] non ti perderai!
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text2
-Crispy: Questa mappa ti permette di\nvisualizzare la mappa della\lregione di Eyros in qualsiasi\listante, cosi' non perderai mai la\ltua strada!\pAh anzi, hai avvisato la Mamma che\nstarai lontano da casa per un po'?\pForse e' meglio se vai a salutarla...
+Crispy: Questa mappa ti permette di\nvisualizzare la mappa della\lregione di Eyros in qualsiasi\listante, cos[1E] non perderai mai la\ltua strada!\pAh anzi, hai avvisato la Mamma che\nstarai lontano da casa per un po'?\pForse [1A] meglio se vai a salutarla[.]
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text3
-[PLAYER]: ...
+[PLAYER]: [.]
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text4
-[PLAYER]: Crispy, devo dirti una\ncosa...\pPoche ore fa, prima di entrare\nnella Foresta Frondosa, mi sono\lscontrato con un uomo incappuciato\lproprio qui...
+[PLAYER]: Crispy, devo dirti una\ncosa[.]\pPoche ore fa, prima di entrare\nnella Foresta Frondosa, mi sono\lscontrato con un uomo incappuciato\lproprio qui[.]
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text5
-Crispy: Non capisco...\pSei riuscito a vederlo in faccia?
+Crispy: Non capisco[.]\pSei riuscito a vederlo in faccia?
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text6
-[PLAYER]: Purtroppo no, il volto\nera completamente coperto dal\lmantello.\pAveva, pero'...\nUn'aria familiare...
+[PLAYER]: Purtroppo no, il volto\nera completamente coperto dal\lmantello.\pAveva, per[22][.]\nUn'aria familiare[.]
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text7
-Crispy: Ma certo!\pSe non sbaglio Steven aveva\nmenzionato di essere stato\lsconfitto da un uomo misterioso\lsubito prima che arrivassimo\lnoi...
+Crispy: Ma certo!\pSe non sbaglio Steven aveva\nmenzionato di essere stato\lsconfitto da un uomo misterioso\lsubito prima che arrivassimo\lnoi[.]
 
 //cutscene backthere
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text8
-Crispy: ... Che si riferisse alla\nstessa persona?\pSperiamo dunque che per qualsiasi\nmotivo questo uomo misterioso sia\ldalla nostra parte!
+Crispy: [.] Che si riferisse alla\nstessa persona?\pSperiamo dunque che per qualsiasi\nmotivo questo uomo misterioso sia\ldalla nostra parte!
 
 //again at Percorso_2_3_41_NPC3_text3
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text9
-Crispy: [PLAYER], io ora devo\nandare.\pRicordati di andare nel\nlaboratorio di Filiberto ad\lArdesiopoli dopo essere passato a\lsalutare la mamma...
+Crispy: [PLAYER], io ora devo\nandare.\pRicordati di andare nel\nlaboratorio di Filiberto ad\lArdesiopoli dopo essere passato a\lsalutare la mamma[.]
 
 #org @Percorso_2_3_41_NPC6_text1
-Hai visto quanti Poke'mon\nselvatici ci sono?\pAlla scuola Poke'mon di\nArdesiopoli ho studiato che Eyros\le' ricca di biodiversita' grazie\lalla sua magnifica natura!\pSi racconta che tutto sia iniziato\ndopo la grande guerra che\ldistrusse i tre regni della\lregione 5 secoli fa...\pDa li' in poi si decisa di\nricostrutire Eyros mantenedo un\lforte contatto con la natura!
+Hai visto quanti Pok\emon\nselvatici ci sono?\pAlla scuola Pok\emon di\nArdesiopoli ho studiato che Eyros\l[1A] ricca di biodiversit[16] grazie\lalla sua magnifica natura!\pSi racconta che tutto sia iniziato\ndopo la grande guerra che\ldistrusse i tre regni della\lregione 5 secoli fa[.]\pDa l[1E] in poi si decisa di\nricostrutire Eyros mantenedo un\lforte contatto con la natura!
 
 #org @Percorso_2_3_41_NPC4_text1
 Sei allenatore da poco tempo? 
 
 #org @Percorso_2_3_41_NPC4_text2
-Ho richiamato la tua attenzione perche'\npensavo di vincere
+Ho richiamato la tua attenzione perch[1A]\npensavo di vincere
 
 #org @Percorso_2_3_41_NPC4_text3
 Non ho mai vinto fino ad ora.\nSpero di riuscirci prima o poi[.]
 
 #org @Percorso_2_3_41_NPC9_text1
-I miei Poke'mon sono belli e\nforti!\pVediamo se puoi dire lo stesso dei\ntuoi!
+I miei Pok\emon sono belli e\nforti!\pVediamo se puoi dire lo stesso dei\ntuoi!
 
 #org @Percorso_2_3_41_NPC9_text2
-Ugh, i miei Poke'mon sono\nfantastici, e' solo che oggi non e'\lil loro giorno...
+Ugh, i miei Pok\emon sono\nfantastici, [1A] solo che oggi non [1A]\lil loro giorno[.]
 
 #org @Percorso_2_3_41_NPC9_text3
-La prossima volta saro' ancora piu'\nfavolosa e ti battero' con grazia!
+La prossima volta sar[22] ancora pi[26]\nfavolosa e ti batter[22] con grazia!
 
 #org @Percorso2_3_41_tile2_text1
-???: Se non sbaglio tu sei\nl'allenatore che prima ha portato\lle bacche ai Treecko, giusto?\pPiacere di conoscerti, il mio\nnome e' Raito.\pTi ho osservato molto bene prima e\nnon ho potuto fare a meno di\lnotare qualcosa di speciale in te...\p...Che sia il legame con i tuoi\nPoke'mon?\pRaito: Non e' ancora ora di\nscoprirlo, ma sono sicuro che ci\lrivedremo presto...\p...[PLAYER]...
+???: Se non sbaglio tu sei\nl'allenatore che prima ha portato\lle bacche ai Treecko, giusto?\pPiacere di conoscerti, il mio\nnome [1A] Raito.\pTi ho osservato molto bene prima e\nnon ho potuto fare a meno di\lnotare qualcosa di speciale in te[.]\p[.]Che sia il legame con i tuoi\nPok\emon?\pRaito: Non [1A] ancora ora di\nscoprirlo, ma sono sicuro che ci\lrivedremo presto[.]\p[.][PLAYER][.]
 
 #org @Percorso2_3_41_tile3_text1
 [PLAYER]: Meglio che vada a salutare\nla Mamma prima di continuare!

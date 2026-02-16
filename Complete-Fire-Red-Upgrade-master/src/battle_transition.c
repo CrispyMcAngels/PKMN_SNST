@@ -741,6 +741,7 @@ const struct BattleTransitionLogo gBattleTransitionLogos[] =
 {
 	#ifndef UNBOUND //Modify this section
 	{CLASS_TEAM_ROCKET, TeamDuskBattleLogoTiles, TeamDuskBattleLogoPal, TeamDuskBattleLogoMap},
+	{CLASS_AQUA_ADMIN, TeamDuskBattleLogoTiles, TeamDuskBattleLogoPal, TeamDuskBattleLogoMap},
 	{CLASS_AROMA_LADY_RS, ErisBattleLogoTiles, ErisBattleLogoPal, ErisBattleLogoMap},
 	#else //For Pokemon Unbound
 	{CLASS_SHADOW, ShadowBattleLogoTiles, ShadowBattleLogoPal, ShadowBattleLogoMap},

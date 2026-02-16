@@ -2,22 +2,22 @@
 Prof. Kraemer: Wilkommen ragazzi,\na cosa devo qvesta visita?
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text2
-Naomi: Salve Prof. Kramer, siamo\nvenuti qui per farle vedere il\lPoke'mon che [PLAYER] ha catturato nel\lPercorso 1.
+Naomi: Salve Prof. Kramer, siamo\nvenuti qui per farle vedere il\lPok\emon che [PLAYER] ha catturato nel\lPercorso 1.
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text3
-Prof. Kraemer: Natuerlich, vediamo\nqsubito di che Poke'mon si tratta...
+Prof. Kraemer: Natuerlich, vediamo\nqsubito di che Pok\emon si tratta[.]
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text4
-Prof. Kraemer: Wunderbar, ein\nAxew!\pHai avuto davvero molta fortuna,\nesemplari di Axew essere rarissimi,\lio non pensare che ce ne essere\lnel Pevcovso 1...\pJedenfalls, qvesto esemplare molto in\nsalute e gia' affezionato a te, [PLAYER]!\pSara' auf jeden Fall un ottimo\lcompagno per tua avventura.
+Prof. Kraemer: Wunderbar, ein\nAxew!\pHai avuto davvero molta fortuna,\nesemplari di Axew essere rarissimi,\lio non pensare che ce ne essere\lnel Pevcovso 1[.]\pJedenfalls, qvesto esemplare molto in\nsalute e gi[16] affezionato a te, [PLAYER]!\pSar[16] auf jeden Fall un ottimo\lcompagno per tua avventura.
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text5
-Prof. Kraemer: Immagino dass\nadesso che [PLAYER] ha un Poke'mon\lanche tu ne vui uno Naomi, oder?
+Prof. Kraemer: Immagino dass\nadesso che [PLAYER] ha un Pok\emon\lanche tu ne vui uno Naomi, oder?
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text6
-Naomi: Si esatto!!!\nNon sto piu' nella pelle!
+Naomi: Si esatto!!!\nNon sto pi[26] nella pelle!
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text7
-Prof. Kraemer: Kein Problem!\pIo avere Poke'mon giusto per te...
+Prof. Kraemer: Kein Problem!\pIo avere Pok\emon giusto per te[.]
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text8
 Prof. Kraemer: Ecco Naomi, fuer\ndich!
@@ -26,37 +26,37 @@ Prof. Kraemer: Ecco Naomi, fuer\ndich!
 Naomi riceve Deino!
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text10
-Naomi: Wooow questo Poke'mon\nsembra fortissimo!\pGrazie mille Prof Kraemer.
+Naomi: Wooow questo Pok\emon\nsembra fortissimo!\pGrazie mille Prof Kraemer.
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text11
 Prof. Kraemer: Esatto Naomi, ich\nbin sicher dass tu e Deino sarete\lottimi amici e buoni rivali per\l[PLAYER] e Axew!
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text12
-[PLAYER]: ...
+[PLAYER]: [.]
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text13
-Prof. Kraemer: Warum non fare\nsfida?\pSono sicher che una bella\nsfida vi aiutare per entrare in\lsintonia con eure Poke'mon...
+Prof. Kraemer: Warum non fare\nsfida?\pSono sicher che una bella\nsfida vi aiutare per entrare in\lsintonia con eure Pok\emon[.]
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text14
-Naomi: Ma certo!\nAspettavo questo momento da\ltantissimo tempo [PLAYER]!\pNon c'e' tempo da perdere,\nvado subito ad allenarmi con\lil mio Deino nel Percorso 11.\p[PLAYER], ti aspetto li'!
+Naomi: Ma certo!\nAspettavo questo momento da\ltantissimo tempo [PLAYER]!\pNon c'[1A] tempo da perdere,\nvado subito ad allenarmi con\lil mio Deino nel Percorso 11.\p[PLAYER], ti aspetto l[1E]!
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text15
-Prof. Kraemer: Qvella Naomi\ndavvero testa calda, oder?\pTrotzdem, sono sicuro che voi\ndiventare grandi amici.\pPerche' non vai a fare sfida con\nlei in Pevcovso 11?\pIo dovere finire un Experiment in\nlaboratorio e poi venire anche io\lli' in Percorso 11...
+Prof. Kraemer: Qvella Naomi\ndavvero testa calda, oder?\pTrotzdem, sono sicuro che voi\ndiventare grandi amici.\pPerch[1A] non vai a fare sfida con\nlei in Pevcovso 11?\pIo dovere finire un Experiment in\nlaboratorio e poi venire anche io\ll[1E] in Percorso 11[.]
 
 #org @EventScript_Borgo_Ponente_4_3_NPC1_text1
 Prof. Kraemer: Hallo [PLAYER],\ncome procedere tuo Pokedex?
 
 #org @EventScript_Borgo_Ponente_4_3_NPC0_text1
-Sono l'assistente del Prof.\nKraemer da molti anni ormai.\pE' arrivato ad Eyros circa 20 anni\nfa e non ha smesso di lavorare\lnemmeno per un giorno.\pCome avrai notato, non ha ancora\nimparato perfettamente la nostra\llingua, infatti spesso lo aiuto\lanche con le traduzioni.\pQuesto lavoro e' un sogno per me!
+Sono l'assistente del Prof.\nKraemer da molti anni ormai.\p[05] arrivato ad Eyros circa 20 anni\nfa e non ha smesso di lavorare\lnemmeno per un giorno.\pCome avrai notato, non ha ancora\nimparato perfettamente la nostra\llingua, infatti spesso lo aiuto\lanche con le traduzioni.\pQuesto lavoro [1A] un sogno per me!
 
 #org @Borgo_Ponente_4_3_Sign0_text1
-Questi scaffali contengono\nmoltissimi libri sui Poke'mon.
+Questi scaffali contengono\nmoltissimi libri sui Pok\emon.
 
 #org @Borgo_Ponente_4_3_Sign1_text1
-Sembrano dei macchinari molto\navanzati per allevare i Poke'mon!
+Sembrano dei macchinari molto\navanzati per allevare i Pok\emon!
 
 #org @Borgo_Ponente_4_3_Sign2_text1
 Questi devono essere gli\nappunti personali del Prof. Kraemer.
 
 #org @Borgo_Ponente_4_3_Sign3_text1
-Questo macchinario ha molte\nlucine, meglio non toccare\lniente...
+Questo macchinario ha molte\nlucine, meglio non toccare\lniente[.]

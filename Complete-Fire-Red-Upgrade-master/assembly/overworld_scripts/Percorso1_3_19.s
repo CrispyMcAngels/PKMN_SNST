@@ -106,7 +106,7 @@ gMapScripts_Percorso1_3_19:
 			waitmovement 0x4
 			textcolor 0x01
 			showpokepic 0x3B5 0x15 0x6
-			//Naomi: Hey Crispy, non avresti\nuna Poke'ball anche per me?
+			//Naomi: Hey Crispy, non avresti\nuna Pok\eball anche per me?
 			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text10a MSG_NORMAL
 			special 0x15A
 			pause 0x1E

@@ -28,6 +28,7 @@
 #define EventScript_EggHatch (const u8*) 0x81BF546
 #define EventScript_BagItemCanBeRegistered (const u8*) 0x81A77A0
 
+extern const u8 EventScript_Common_TV[];
 extern const u8 EventScript_SetUpNPCSpotting[];
 extern const u8 Script_TrainerSpottedMulti[];
 extern const u8 EventScript_DoTwoOpponentBattle[];

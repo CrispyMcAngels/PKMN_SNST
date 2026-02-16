@@ -1,44 +1,44 @@
 #org @Percorso_3_3_21_NPC0_text1
-Questa zona mi ricorda la mia\ninfanzia...\pVento, roccia e battaglie!
+Questa zona mi ricorda la mia\ninfanzia[.]\pVento, roccia e battaglie!
 
 #org @Percorso_3_3_21_NPC0_text2
 Ah! Il vento ha cambiato direzione!
 
 #org @Percorso_3_3_21_NPC0_text3
-Ogni allenatore che incontro e'\nuna nuova pagina nel mio diario.
+Ogni allenatore che incontro [1A]\nuna nuova pagina nel mio diario.
 
 #org @Percorso_3_3_21_NPC1_text1
 Da questo preciso punto puoi\nproseguire in due direzioni:\lverso Sud, attraverso il Percorso 4,\lpuoi raggiungere il Passo Tuono e\lStellavia.\pMentre verso Ovest, attraverso il\nPercorso 3 puoi raggiungere\lRadiantia.\pStai molto attento alle raffiche di\nvento se vuoi andare da questa\lparte!
 
 #org @Percorso_3_3_21_NPC3_text1
-Non importa quanto soffia il vento:\ni miei Poke'mon restano saldi come\lrocce!
+Non importa quanto soffia il vento:\ni miei Pok\emon restano saldi come\lrocce!
 
 #org @Percorso_3_3_21_NPC3_text2
-Accidenti...\nMi hai fatto volare via!
+Accidenti[.]\nMi hai fatto volare via!
 
 #org @Percorso_3_3_21_NPC3_text3
-Guarda laggiu'! Vedi quel riflesso?\pE' Radiantia... e il burrone.\nImpressionante, vero?
+Guarda laggi[26]! Vedi quel riflesso?\p[05] Radiantia[.] e il burrone.\nImpressionante, vero?
 
 #org @Percorso_3_3_21_NPC4_text1
-Questo vento non mi smuove!\pLa mia forza e' radicata nella\nterra!
+Questo vento non mi smuove!\pLa mia forza [1A] radicata nella\nterra!
 
 #org @Percorso_3_3_21_NPC4_text2
-Come una foglia...\nSono stato spazzato via!
+Come una foglia[.]\nSono stato spazzato via!
 
 #org @Percorso_3_3_21_NPC4_text3
 I veri maestri non temono la caduta.\nSi rialzano sempre.
 
 #org @Percorso_3_3_21_NPC5_text1
-Il vento qui attira Poke'mon volanti\nrari... ma anche allenatori!
+Il vento qui attira Pok\emon volanti\nrari[.] ma anche allenatori!
 
 #org @Percorso_3_3_21_NPC5_text2
-Volato troppo in alto... \ne tu mi hai riportato a terra.
+Volato troppo in alto[.] \ne tu mi hai riportato a terra.
 
 #org @Percorso_3_3_21_NPC5_text3
-A volte osservare e' meglio che\ncombattere.\pMa oggi ho imparato molto.
+A volte osservare [1A] meglio che\ncombattere.\pMa oggi ho imparato molto.
 
 #org @Percorso_3_3_21_NPC6_text1
-Il vento porta sempre nuovi\lsfidanti, non e' un caso!
+Il vento porta sempre nuovi\lsfidanti, non [1A] un caso!
 
 #org @Percorso_3_3_21_NPC6_text2
 Oggi era il tuo giorno, non il mio.
@@ -47,25 +47,25 @@ Oggi era il tuo giorno, non il mio.
 Non tutti sono in grado di affrontare\nil vento con fermezza, tu si.
 
 #org @Percorso_3_3_21_NPC7_text1
-Questi venti mi caricano!\pSento che sara' una lotta\nfantastica!
+Questi venti mi caricano!\pSento che sar[16] una lotta\nfantastica!
 
 #org @Percorso_3_3_21_NPC7_text2
-Beh...\nMi sono fatta trasportare troppo!
+Beh[.]\nMi sono fatta trasportare troppo!
 
 #org @Percorso_3_3_21_NPC7_text3
 Che energia che hai!\pSei proprio una ventata d'aria\nfresca!
 
 #org @Percorso_3_3_21_NPC8_text1
-Sto facendo un progetto scolastico\nsul vento!\pVuoi aiutarmi... con una lotta?
+Sto facendo un progetto scolastico\nsul vento!\pVuoi aiutarmi[.] con una lotta?
 
 #org @Percorso_3_3_21_NPC8_text2
-Oh no... ho perso...\nDevo riscrivere tutto!
+Oh no[.] ho perso[.]\nDevo riscrivere tutto!
 
 #org @Percorso_3_3_21_NPC8_text3
 Forse posso studiare il tuo stile\ndi lotta per migliorare il mio\lprogetto!
 
 #org @Percorso_3_3_21_NPC9_text1
-Ti conviene tenere il cappello...\nIl vento qui non perdona!
+Ti conviene tenere il cappello[.]\nIl vento qui non perdona!
 
 #org @Percorso_3_3_21_NPC9_text2
 Mi hai travolto come un uragano!
@@ -74,10 +74,10 @@ Mi hai travolto come un uragano!
 Ogni folata di vento mi costringe a\nfermarmi.\pMa non mollo, Radiantia mi aspetta!
 
 #org @Percorso_3_3_21_NPC10_text1
-I sentieri si fanno stretti qui...\pSe non stai attento, scivoli giu' in\nun attimo.\pEcco, prendi queste!
+I sentieri si fanno stretti qui[.]\pSe non stai attento, scivoli gi[26] in\nun attimo.\pEcco, prendi queste!
 
 #org @Percorso_3_3_21_NPC10_text2
-Guarda laggiu'! Vedi quel riflesso?\pE' Radiantia... e il burrone...\nImpressionante, vero?
+Guarda laggi[26]! Vedi quel riflesso?\p[05] Radiantia[.] e il burrone[.]\nImpressionante, vero?
 
 #org @Percorso_3_3_21_NPC11_text1
 Vivo da queste parti da moltissimi\nanni, ma ad essere onesta non ho mai\lavuto il coraggio di attraversare\lquel ponte, sembra molto pericoloso!\pVorrei tanto sapere cosa si cela\ndopo di esso!
@@ -87,29 +87,29 @@ Percorso 3:\n[ARROW_UP] Ardesiopoli\l[ARROW_DOWN] Radiantia\l[ARROW_DOWN] Percor
 
 #org @Percorso_3_3_21_Sign2
 //_/////////////////////////////////
-Consigli utili: in Pokemon Sunset\nnon e' necessario insegnare le MN\lad un Pokemon per usarle.\pIl gioco riconoscera' in automatico\nche un Pokemon nella tua squadra\le' in grado di imparare la MN in\lquestione e gli permetter'a di\lusarla senza averla imparata!
+Consigli utili: in Pokemon Sunset\nnon [1A] necessario insegnare le MN\lad un Pokemon per usarle.\pIl gioco riconoscer[16] in automatico\nche un Pokemon nella tua squadra\l[1A] in grado di imparare la MN in\lquestione e gli permetter'a di\lusarla senza averla imparata!
 
 #org @Percorso_3_3_21_Sign3
-Il Percorso 3 e' famoso per il suo\lburrone e per le improvvise raffiche\ldi vento.\pSi consiglia dunque di iniziare ad\nesplorarlo solo quando preparati\la dovere.
+Il Percorso 3 [1A] famoso per il suo\lburrone e per le improvvise raffiche\ldi vento.\pSi consiglia dunque di iniziare ad\nesplorarlo solo quando preparati\la dovere.
 
 #org @Percorso_3_3_21_Sign4
-Unico nel suo genere dal punto di\nvista paesaggistico, la particolare\lconformazione rocciosa del Percorso 3\le' frutto di miglioni di anni di\lerosione.\pGli studi dicono che nella preistoria\na queste altitudini ci fosse il mare. 
+Unico nel suo genere dal punto di\nvista paesaggistico, la particolare\lconformazione rocciosa del Percorso 3\l[1A] frutto di miglioni di anni di\lerosione.\pGli studi dicono che nella preistoria\na queste altitudini ci fosse il mare. 
 
 #org @Percorso_3_3_21_Sign5
 //_/////////////////////////////////
-A causa dei suoi fortissimi venti,\nil Percorso 3 non e' ospitale a\lmolti tipi di Poke'mon.\pInfatti e' casa prevalentemente a\nPoke'mon capaci di navigare il vento,\lcome i Poke'mon di tipo Volante,\le Poke'mon abbastanza massicci da\lnon essere trasportati via da esso.
+A causa dei suoi fortissimi venti,\nil Percorso 3 non [1A] ospitale a\lmolti tipi di Pok\emon.\pInfatti [1A] casa prevalentemente a\nPok\emon capaci di navigare il vento,\lcome i Pok\emon di tipo Volante,\le Pok\emon abbastanza massicci da\lnon essere trasportati via da esso.
 
 #org @Percorso3_3_21_tile0_text1
 Xaatuuu!
 
 #org @Percorso3_3_21_tile0_text2
-[PLAYER]: Wow Che razza di Pokemon\nera quello?\pSono sicuro che non si trova in\nquesto percorso...\pMeglio inseguirlo!
+[PLAYER]: Wow Che razza di Pokemon\nera quello?\pSono sicuro che non si trova in\nquesto percorso[.]\pMeglio inseguirlo!
 
 #org @Percorso3_3_21_tile1_text1
-[PLAYER]: Quel Pokemon strano e'\nandato nell'altra direzione,\lmeglio proseguire da quella parte!
+[PLAYER]: Quel Pokemon strano [1A]\nandato nell'altra direzione,\lmeglio proseguire da quella parte!
 
 #org @Percorso3_3_21_tile2_text1
 [PLAYER]: Dev'essere entrato in \nquella grotta, non ha via di scampo\lora!
 
 #org @Percorso3_3_21_tile3_text1
-...In questo momento...\p...Altrove...
+[.]In questo momento[.]\p[.]Altrove[.]

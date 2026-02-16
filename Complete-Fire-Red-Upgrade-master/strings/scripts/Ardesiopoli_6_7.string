@@ -2,12 +2,11 @@
 #org @Ardesiopoli_6_7_sign7_text1
 Treno in partenza per Stellavia,\nvuoi salire?
 
-
 #org @Ardesiopoli_6_7_NPC0_text1
 Treno in partenza per Ardesiopoli\nNord, vuoi salire?
 
 #org @Ardesiopoli_6_7_NPC0_text2
-Senza biglietto non e' possibile\nsalire a bordo!
+Senza biglietto non [1A] possibile\nsalire a bordo!
 
 #org @Ardesiopoli_6_7_NPC0_text2a
 Biglietto convalidato, buon viaggio!
@@ -16,53 +15,53 @@ Biglietto convalidato, buon viaggio!
 Si parteee!
 
 #org @Ardesiopoli_6_7_Sign0_text1
-Questo poster e' rovinato
+Questo poster [1A] rovinato
 
 #org @Ardesiopoli_6_7_Sign0_text2
-Questo poster e' rovinato, sembra\nche un angolo si stia per staccare.\pVuoi guardare cosa c'e' dietro?
+Questo poster [1A] rovinato, sembra\nche un angolo si stia per staccare.\pVuoi guardare cosa c'[1A] dietro?
 
 #org @Ardesiopoli_6_7_Sign0_text3
 [PLAYER] sposta il Poster e scopre\nun passaggio segreto.
 
 #org @Ardesiopoli_6_7_NPC1_text1
-La linea per Stellavia?\pInaugurazione rimandata... di nuovo.\pMa dicono che quando sara' pronta,\nci portera' fin nel cuore della\lcitta' piu' ricca di tutta Eyros.
+La linea per Stellavia?\pInaugurazione rimandata[.] di nuovo.\pMa dicono che quando sar[16] pronta,\nci porter[16] fin nel cuore della\lcitt[16] pi[26] ricca di tutta Eyros.
 
 #org @Ardesiopoli_6_7_NPC1_text2
-Era da anni che aspettavo l'apertura\ndella linea che porta a Stellavia!\pDicono che i tunnel siano stati\nscavati grazie a una squadra di\lRhyperior e Steelix
+Era da anni che aspettavo l'apertura\ndella linea che porta a Stellavia!\pDicono che i tunnel siano stati\nscavati grazie a una squadra di\lRhyperior e Steelix.
 
 
 #org @Ardesiopoli_6_7_NPC2_text1
-Ho preso la metro sbagliata e sono\nfinito di nuovo a Nord...\pMaledetta mia distrazione...\pStellavia sembra un sogno ormai.
+Ho preso la metro sbagliata e sono\nfinito di nuovo a Nord[.]\pMaledetta mia distrazione[.]\pStellavia sembra un sogno ormai.
 
 #org @Ardesiopoli_6_7_NPC3_text1
-...Si, sono ancora bloccato ad\nArdesiopoli.\pLa linea e' chiusa, il progetto e'\nin ritardo...\pSi', riferisci al Consiglio... ciao.
+[.]S[1E], sono ancora bloccato ad\nArdesiopoli.\pLa linea [1A] chiusa, il progetto [1A]\nin ritardo[.]pSE, riferisci al Consiglio[.] Ciao.
 
 #org @Ardesiopoli_6_7_NPC3_text2
-Lavoro nel dipartimento di Merging &\nAcquisition della Banca di Stellavia.\pPer i pendolari come me, questa\nmetropolitana e' una manna dal cielo!
+Lavoro nel dipartimento di Mergers &\nAcquisitions della Banca di Stellavia.\pPer i pendolari come me, questa\nmetropolitana [1A] una manna dal cielo!
 
 #org @Ardesiopoli_6_7_NPC4_text1
 Lo sapevi che questa stazione ha\nbinari posati su una formazione\lrocciosa millenaria?\pCerte cose succedono solo qui ad\nEyros!
 
 #org @Ardesiopoli_6_7_NPC5_text1
-Adoro guardare i treni passare...\pE' come se ogni viaggio fosse\nun'avventura diversa.\pIl prossimo, magari, mi portera'\nfino a Stellavia!
+Adoro guardare i treni passare[.]\p[05] come se ogni viaggio fosse\nun'avventura diversa.\pIl prossimo, magari, mi porter[16]\nfino a Stellavia!
 
 #org @Ardesiopoli_6_7_NPC6_text1
-Sto aspettando l'autorizzazione per\naprire il mio chiosco nella nuova\llinea...\pTi piacerebbe un Panino Fossile?\pSono famosi ad Ardesiopoli!
+Sto aspettando l'autorizzazione per\naprire il mio chiosco nella nuova\llinea[.]\pTi piacerebbe un Panino Fossile?\pSono famosi ad Ardesiopoli!
 
 #org @Ardesiopoli_6_7_NPC7_text1
-Stiamo lavorando giorno e notte\nper completare il tunnel verso\lStellavia...\pMa tra scavi e strane interferenze,\nnon e' facile come sembra!
+Stiamo lavorando giorno e notte\nper completare il tunnel verso\lStellavia[.]\pMa tra scavi e strane interferenze,\nnon [1A] facile come sembra!
 
 #org @Ardesiopoli_6_7_NPC7_text2
-Dopo quasi due anni i lavori per la\nnuova linea sono finalmente\lterminati!\pIn particolare ci sono stati dei\nrallentamenti all'incirca sotto il\lPasso Tuono...\pDelle strane interferenze\nelettromagnetiche bloccavano\li nostri strumenti...\pInfatti senza il mio Rhyperior\nnulla di tutto cio' sarebbe stato\lpossibile!
+Dopo quasi due anni i lavori per la\nnuova linea sono finalmente\lterminati!\pIn particolare ci sono stati dei\nrallentamenti all'incirca sotto il\lPasso Tuono[.]\pDelle strane interferenze\nelettromagnetiche bloccavano\li nostri strumenti[.]\pInfatti senza il mio Rhyperior\nnulla di tutto ci[22] sarebbe stato\lpossibile!
 
 #org @Ardesiopoli_6_7_NPC8_text1
-Studio archeologia e sogno di lavorare\ncon Filiberto un giorno...\pChissa' se ha bisogno di un'altra\nassistente!
+Studio archeologia e sogno di lavorare\ncon Filiberto un giorno[.]\pChiss[16] se ha bisogno di un'altra\nassistente!
 
 #org @Ardesiopoli_6_7_Sign1_text1
 Linea Metro 1:\nArdesiopoli Sud - Stellavia
 
 #org @Ardesiopoli_6_7_Sign23_text1
-Ardesiopoli Sud, punti di interesse:\nCentro Poke'mon, Poke'mon Market,\lPalestra Pokemon, Piazza Centrale.
+Ardesiopoli Sud, punti di interesse:\nCentro Pok\emon, Pok\emon Market,\lPalestra Pokemon, Piazza Centrale.
 
 #org @Ardesiopoli_6_7_Sign4_text1
 Linea Metro 2:\nArdesiopoli Sud - Ardesiopoli Nord

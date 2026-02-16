@@ -1,29 +1,29 @@
 #org @Passo_Tuono_1_1_text1
-Crono: ...Non c'e' traccia dell'\ningresso.\pLa fiamma gialla resta nascosta...\n...Ancora...
+Crono: [.]Non c'[1A] traccia dell'\ningresso.\pLa fiamma gialla resta nascosta[.]\n[.]Ancora[.]
 
 #org @Passo_Tuono_1_1_text2
-Vesper: Beh... forse e' sotto un sasso gigante?
+Vesper: Beh[.] forse [1A] sotto un sasso gigante?
 
 #org @Passo_Tuono_1_1_text3
-Vesper: ...O dietro quella roccia\nlaggiu'?\pAhah... ehm.
+Vesper: [.]O dietro quella roccia\nlaggi[26]?\pAhah[.] ehm.
 
 #org @Passo_Tuono_1_1_text4
-Crono: Sei un disastro, Vesper.\nMa... anche un buon braccio destro.\pLasciali venire...\nIl loro passo... ci guidera'.
+Crono: Sei un disastro, Vesper.\nMa[.] anche un buon braccio destro.\pLasciali venire[.]\nIl loro passo[.] ci guider[16].
 
 #org @Passo_Tuono_1_1_text5
-Vesper: Oooh! Un piano-trappola!\pAspetto in agguato, come un...\nun Rattata!\pTranquillo, boss, non battero'\nciglio!\pO... forse uno lo batto...\nma piano!
+Vesper: Oooh! Un piano-trappola!\pAspetto in agguato, come un[.]\nun Rattata!\pTranquillo, boss, non batter[22]\nciglio!\pO[.] forse uno lo batto[.]\nma piano!
 
 #org @Passo_Tuono_1_1_text6
 Crono: Non serve che tu capisca!\nServe che tu veda.
 
 #org @Passo_Tuono_1_1_text7
-Vesper: Uuuh... che tipi tosti i\ncapi malvagi...\pCrono e' proprio l'ombra piu'\nelegante che abbia mai visto.\pSilenzioso. Freddo. Cosi'...\n..minaccioso!
+Vesper: Uuuh[.] che tipi tosti i\ncapi malvagi[.]\pCrono [1A] proprio l'ombra pi[26]\nelegante che abbia mai visto.\pSilenzioso[.] Freddo[.] Cos[1E][.]\n[.]minaccioso!
 
 #org @Passo_Tuono_1_1_text8
-Vesper: Un giorno anche io saro'\ncome lui!\p...Forse con un mantello piu' lungo.\pE magari meno silenzi imbarazzanti...
+Vesper: Un giorno anche io sar[22]\ncome lui!\p[.]Forse con un mantello pi[26] lungo.\pE magari meno silenzi imbarazzanti[.]
 
 #org @Passo_Tuono_1_1_text9
-Vesper: Ok Vesper... modalita'\nninja silenzioso attivata!
+Vesper: Ok Vesper[.] modalit[16]\nninja silenzioso attivata!
 
 #org @Passo_Tuono_1_1_Sign4_text1
 Sembra esserci un pulsante su\nquesta statuina, vuoi premerlo?
@@ -32,7 +32,7 @@ Sembra esserci un pulsante su\nquesta statuina, vuoi premerlo?
 [PLAYER] preme il pulsante!
 
 #org @Passo_Tuono_1_1_Sign4_text3
-Qualcosa si e' mosso poco lontano\nda qui...
+Qualcosa si [1A] mosso poco lontano\nda qui[.]
 
 #org @Passo_Tuono_1_1_Sign0_text1
 Passo Tuono - Vetta, ingresso Nord:\n[ARROW_UP] Percorso 3 - Ardesiopoli
@@ -41,17 +41,17 @@ Passo Tuono - Vetta, ingresso Nord:\n[ARROW_UP] Percorso 3 - Ardesiopoli
 Le numerose antenne sul Passo Tuono\nfanno del Progetto Fulmen.\pQueste torri raccolgono l'energia\ndelle tempeste per alimentare\lStellavia.\pVietato toccare o scalare le\nstrutture:\lrischio di folgorazione immediata.
 
 #org @Passo_Tuono_1_1_Sign2_text1
-Davanti a te si apre la Valle dei\nTuoni, dove il cielo non dorme mai.\pDi notte, si dice che le scariche\ndisegnino la sagoma di un'antica\lbestia...
+Davanti a te si apre la Valle dei\nTuoni, dove il cielo non dorme mai.\pDi notte, si dice che le scariche\ndisegnino la sagoma di un'antica\lbestia[.]
 
 #org @Passo_Tuono_1_1_Sign3_text1
 Passo Tuono - Vetta, ingresso Sud:\n[ARROW_DOWN] Percorso 3 - Stellavia
 
 #org @Passo_Tuono_1_1_Sign11_text1
-L'aria qui vibra...\pCome se il cielo trattenesse il\nrespiro.\p'La calma precede il vento...'\n...resto della frase cancellato dal\ltempo.
+L'aria qui vibra[.]\pCome se il cielo trattenesse il\nrespiro.\p'La calma precede il vento[.]'\n[.]resto della frase cancellato dal\ltempo.
 
 //Recluta 1 - NPC3
 #org @Passo_Tuono_1_1_NPC3_text1
-Ugh... questo posto mi fa rizzare i\ncapelli!\p
+Ugh[.] questo posto mi fa rizzare i\ncapelli!\p
 
 #org @Passo_Tuono_1_1_NPC3_text2
 Forse non serve un ingresso se ci\nfulmina prima il cielo!
@@ -61,60 +61,60 @@ Dovrebbe esserci un ingresso da\nqualche parte, ma ogni bussola\limpazzisce qui!
 
 //Recluta 2 - NPC2
 #org @Passo_Tuono_1_1_NPC2_text1
-Pensi che se tocco quell'antenna\ndivento piu' potente?
+Pensi che se tocco quell'antenna\ndivento pi[26] potente?
 
 #org @Passo_Tuono_1_1_NPC2_text2
 Non era un'ipotesi scientifica.\nEra stupida. Ora lo so.
 
 #org @Passo_Tuono_1_1_NPC2_text3
-Queste antenne mi mettono i\nbrividi...\pStandoci vicino ho sempre paura che\nun lampo mi colpisca dritto in testa
+Queste antenne mi mettono i\nbrividi[.]\pStandoci vicino ho sempre paura che\nun lampo mi colpisca dritto in testa
 
 
 //Recluta 3 - NPC4 
 #org @Passo_Tuono_1_1_NPC4_text1
-Ho sentito parlare i lampi e il\nvento, mi hanno detto che vincero'\lquesta sfida!
+Ho sentito parlare i lampi e il\nvento, mi hanno detto che vincer[22]\lquesta sfida!
 
 #org @Passo_Tuono_1_1_NPC4_text2
 Forse il vento parlava, ma non in\nuna lingua che capisco.
 
 #org @Passo_Tuono_1_1_NPC4_text3
-Il Maestro Crono ci ha detto di\n"seguire la voce del vento".\pMa io sento solo...\nBOOM! CRACK! AHI LE ORECCHIE!
+Il Maestro Crono ci ha detto di\n"seguire la voce del vento".\pMa io sento solo[.]\nBOOM! CRACK! AHI LE ORECCHIE!
 
 
 //Recluta 4 - NPC6
 #org @Passo_Tuono_1_1_NPC6_text1
-Le rocce incanalano l'energia dei\nfulmini, io la usero' per batterti!
+Le rocce incanalano l'energia dei\nfulmini, io la user[22] per batterti!
 
 #org @Passo_Tuono_1_1_NPC6_text2
-Forse mi sarebbe servita piu'\nenergia!
+Forse mi sarebbe servita pi[26]\nenergia!
 
 #org @Passo_Tuono_1_1_NPC6_text3
-Queste rocce si illuminano quando\nfulmina... Affascinante, no?\pChissa' se posso prenderne un pezzo\ncome souvenir...
+Queste rocce si illuminano quando\nfulmina[.] Affascinante, no?\pChiss[16] se posso prenderne un pezzo\ncome souvenir[.]
 
 
 //Recluta 5 - NPC5
 #org @Passo_Tuono_1_1_NPC5_text1
-Sai per caso dove e' nascosta la\nFiamma Gialla?\pSe ti batto me lo devi dire!
+Sai per caso dove [1A] nascosta la\nFiamma Gialla?\pSe ti batto me lo devi dire!
 
 #org @Passo_Tuono_1_1_NPC5_text2
 Tieniti pure i tuoi segreti!
 
 #org @Passo_Tuono_1_1_NPC5_text3
-Dicono che qui sia sepolta la\nFiamma Gialla...\pMa se e' sotto terra, perche' tuona\nsopra?!
+Dicono che qui sia sepolta la\nFiamma Gialla[.]\pMa se [1A] sotto terra, perch[1A] tuona\nsopra?!
 
 
 //_/////////////////////////////////
 #org @Passo_Tuono_1_1_SignR_text1
-Questa statuina sembra brillare di\nluce propria...\pChe sia l'energia dei fulmini?
+Questa statuina sembra brillare di\nluce propria[.]\pChe sia l'energia dei fulmini?
 
 #org @Passo_Tuono_1_1_NPC13_text1
-Ho scalato mezza Eyros, ma questo\nposto... Questo posto e' diverso.\pSenti? \nE' come se l'aria fosse viva,\lcome se ci osservasse.
+Ho scalato mezza Eyros, ma questo\nposto[.] Questo posto [1A] diverso.\pSenti? \n[05] come se l'aria fosse viva,\lcome se ci osservasse.
 
 #org @Passo_Tuono_1_1_NPC14_text1
 Sto studiando la flora locale.\pLe piante qui hanno sviluppato una\nresistenza unica ai fulmini.\pAlcune addirittura "assorbono"\npiccole scariche per sopravvivere.
 
 #org @Passo_Tuono_1_1_NPC15_text1
-Il cielo del Passo Tuono e'\nimprevedibile!\pA volte calma piatta, e un secondo\ndopo... fulmini ovunque!\pE' come se il meteo avesse un'anima\ncapricciosa!
+Il cielo del Passo Tuono [1A]\nimprevedibile!\pA volte calma piatta, e un secondo\ndopo[.] fulmini ovunque!\p[05] come se il meteo avesse un'anima\ncapricciosa!
 
 #org @Passo_Tuono_1_1_NPC16_text1
-Papa' dice che Raikou vive lassu'\ntra le nuvole!\pIo non lo vedo... ma ogni volta che\ntuona, mi sembra che mi stia\lsalutando
+Pap[16] dice che Raikou vive lass[26]\ntra le nuvole!\pIo non lo vedo[.] ma ogni volta che\ntuona, mi sembra che mi stia\lsalutando
