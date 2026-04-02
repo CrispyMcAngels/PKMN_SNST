@@ -17,7 +17,7 @@ Mamma: Ciao [PLAYER], come sta\nandando la tua avventura?
 [PLAYER]: [.]
 
 #org @EventScript_Borgo_Ponente_4_0_mom_text6
-Mamma: Wow, incredibile!\pHai davvero affrontato il Team\nRocket assieme a tuo fratello?\pOrmai non sei pi[26] il piccolo\nbambino di una volta[.]\pCome mamma devo riconoscerlo e non\nimpedirti di proseguire il tuo\lpercorso[.]\pPrendi queste!
+Mamma: Wow, incredibile!\pHai davvero affrontato il Team\nDusk assieme a tuo fratello?\pOrmai non sei pi[26] il piccolo\nbambino di una volta[.]\pCome mamma devo riconoscerlo e non\nimpedirti di proseguire il tuo\lpercorso[.]\pPrendi queste!
 
 #org @EventScript_Borgo_Ponente_4_0_mom_text7
 [PLAYER] riceve le Scarpe da Corsa!

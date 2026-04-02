@@ -5,7 +5,7 @@ I fulmini della vetta sono vicini[.]\pL[1E] sento vibrare nella pietra!\pNon las
 Dannazione[.] Forse non ero degno\ndi ricevere la collera dei fulmini!
 
 #org @Passo_Tuono_1_127_NPC0_text3
-Ogni tempesta inzia da una\nscintilla[.]\pTu oggi non riuscirai a spegnerla!
+Ogni tempesta inizia da una\nscintilla[.]\pTu oggi non riuscirai a spegnerla!
 
 #org @Passo_Tuono_1_127_NPC1_text1
 Ti sei spinto troppo in l[16]\nragazzino!\pTi far[22] assaggiare la potenza del\nTeam Dusk[.]
@@ -14,13 +14,13 @@ Ti sei spinto troppo in l[16]\nragazzino!\pTi far[22] assaggiare la potenza del\
 Ehm[.] Ok, forse avevo un po'\nsopravvalutato la mia strategia!
 
 #org @Passo_Tuono_1_127_NPC1_text3
-Dai, non guardarmi cosi[.]\pAnche i grandi strateghi hanno\ngiornate no, giusto?
+Dai, non guardarmi cos[1E][.]\pAnche i grandi strateghi hanno\ngiornate no, giusto?
 
 #org @Passo_Tuono_1_127_NPC2_text1
 Il fulmine non distrugge, purifica.\pPresto Eyros conoscer[16] la sua\nverit[16].
 
 #org @Passo_Tuono_1_127_NPC2_text2
-Forse la verit[16] non [1A] ancora\n\npronta per essere svelata[.]
+Forse la verit[16] non [1A] ancora\npronta per essere svelata[.]
 
 #org @Passo_Tuono_1_127_NPC2_text3
 Le antiche leggende non mentono.\pAnche se tu non ci credi, lo\nsentirai presto nel vento.

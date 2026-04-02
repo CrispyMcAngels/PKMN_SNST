@@ -45,7 +45,7 @@ LOOouudred - LOoouudred!
 Mi dispiace ragazzo, ma per ora i\nbiglietti per il concerto di DJ Ross\lsono finiti.\pProva a tornare pi[26] tardi, magari\nsi libera qualche posto[.]
 
 #org @Stellavia_3_6_NPC11_text1
-La palestra [1A] chiusa, non hai\nsentito?\pRoss, il capopalestra, si esibir[16]\ncome DJ al RoofTop bar Loud and\lCloud.\pSe proprio vuoi sfidarlo, prova a\ncercarlo la.
+La palestra [1A] chiusa, non hai\nsentito?\pRoss, il capopalestra, si esibir[16]\ncome DJ al RoofTop bar Loud and\lCloud.\pSe proprio vuoi sfidarlo, prova a\ncercarlo l[16].
 
 #org @Stellavia_3_6_NPC12_text1
 Vedi il 7 Eevee laggi[26]?\p[05] aperto 24 ore su 24.\nUn po' come la speranza, direi.
@@ -144,7 +144,7 @@ RoofTop Bar Loud & Cloud:\nAlza il volume e abbassa i pensieri.
 Palestra Pokemon di Ardesiopoli.\nCapopalestra: Ross.
 
 #org @Stellavia_3_6_SIGN11
-Distretto Finaziario:\nUffici PokeExchange.
+Distretto Finanziario:\nUffici PokeExchange.
 
 #org @Stellavia_3_6_SIGN12
 Stellavia: Dove il futuro prende\nforma.\pCitt[16] pi[26] brillante, e capitale,\nnella costellazione di Eyros. 
@@ -156,7 +156,7 @@ Banca Centrale Pokemon di Stellavia:\nInvesti nel futuro, deposita le tue\lvitto
 [ARROW_LEFT] Universit[16] di\nStellavia: Studia oggi, costruisci\lil domani.\p[ARROW_RIGHT] Confraternita degli\nstudenti di Stellavia.
 
 #org @Stellavia_3_6_SIGN16
-Torre Metagross: Progetto di\nespansione del distretto finaziario\ldi Stellavia.\pTermine lavori: indefinito.
+Torre Metagross: Progetto di\nespansione del distretto finanziario\ldi Stellavia.\pTermine lavori: indefinito.
 
 #org @Stellavia_3_6_SIGN17
 [ARROW_DOWN] Percorso 5.

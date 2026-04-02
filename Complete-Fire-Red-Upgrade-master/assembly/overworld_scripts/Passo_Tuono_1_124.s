@@ -1048,7 +1048,8 @@ gMapScripts_Passo_Tuono_1_124:
 				fadescreen 0x2
 				pause 0x12
 				movesprite 0xD 0x06 0x08
-				// sound 0x -> trovare sound tuono
+				//sound tuono
+				sound 0xD6
 				applymovement 0xD Passo_Tuono_1_124_mov37
 				waitmovement 0xD
 				hidesprite 0xD

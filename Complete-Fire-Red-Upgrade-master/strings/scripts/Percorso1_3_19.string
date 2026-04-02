@@ -5,7 +5,7 @@ Crispy: Wow! Non avevo ancora\ncatturato questo Pok\emon!\pNatu sar[16] sicurame
 Crispy: Ah [PLAYER], prendi questa,\nti sar[16] utile.
 
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text10
-Crispy: Grazie alle sue ottime\ncondizioni climatiche, la regione\ldi Eyors [1A] casa di molti Pok\emon\lprovienti da Regioni lontane.\pIn particolare questo percorso,\nil Percorso 1, offre una vastissima\lbiodiversit[16], con ben oltre 10\lspecie di Pok\emon diversi.\pCrispy: Ti consiglio dunque di usare\nquella Pok\eball per il Pok\emon\lgiusto, quando se ne presenter[16]\ll'occasione[.]
+Crispy: Grazie alle sue ottime\ncondizioni climatiche, la regione\ldi Eyros [1A] casa di molti Pok\emon\lprovienti da Regioni lontane.\pIn particolare questo percorso,\nil Percorso 1, offre una vastissima\lbiodiversit[16], con ben oltre 10\lspecie di Pok\emon diversi.\pCrispy: Ti consiglio dunque di usare\nquella Pok\eball per il Pok\emon\lgiusto, quando se ne presenter[16]\ll'occasione[.]
 
 //nuovi
 
@@ -35,7 +35,7 @@ Crispy: Oh! Si [1A] fatto tardi[.]\pScusatemi ma ora devo andare a\nMiralba per 
 
 //crispy move up and face right
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text10g
-Crispy: Naomi, [PLAYER], perch[1A] non\nvi dirigete pure voi verso Miralaba\lnon appena il Prof. Kraemer vi\lavr[16] dato un Pok\emon?\pVi aspetto l[1E]!
+Crispy: Naomi, [PLAYER], perch[1A] non\nvi dirigete pure voi verso Miralba\lnon appena il Prof. Kraemer vi\lavr[16] dato un Pok\emon?\pVi aspetto l[1E]!
 
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text11
 Brandom: Tuo fratello [1A] davvero\nin gamba, spero di poter\ldiventare un allenatore forte\lcome lui un giorno.
@@ -77,7 +77,7 @@ Naomi: [PLAYER], sembra proprio\nche questo Axew voglia\ldiventare un tuo Pok\em
 Hai catturato Axew!
 
 #org @EventScript_Percorso1_3_19_tile1_text10
-Naomi: Wow [PLAYER] complimenti!\pHai catturato il tuo primo\nPok\emon, sono sicuro che tu e\lAxew diventerete un'ottima\lsquadra.\p[.]\pNaomi: Vieni,\nandiamo a far vedere il tuo Pok\emon\lal Professor Kraemer[.]\p[05] un tipo un po' strano,\nproveniente da una regione lontana,\lmagari mi dar[16] un Pok\emon!
+Naomi: Wow [PLAYER] complimenti!\pHai catturato il tuo primo\nPok\emon, sono sicura che tu e\lAxew diventerete un'ottima\lsquadra.\p[.]\pNaomi: Vieni,\nandiamo a far vedere il tuo Pok\emon\lal Professor Kraemer[.]\p[05] un tipo un po' strano,\nproveniente da una regione lontana,\lmagari mi dar[16] un Pok\emon!
 
 #org @EventScript_Percorso1_3_19_tile1_text11
 Naomi: [PLAYER] sei sicuro?\nAxew mi sembra un ottimo\lPok\emon per iniziare la tua\lavventura[.]
@@ -95,7 +95,7 @@ Grazie alle sue uniche condizioni\nclimatiche, causate dal costante\lsoffiare de
 Consigli utili:\nPorta sempre con te un Pok\emon\lquando ti addentri nell'erba alta.
 
 #org @Percorso_1_3_19_NPC0_text1
-L'ho visto proprio l[1E], nell'erba\nalta, un Pok\emon uccello di\lcolore rosso.\pNon so che Pok\emon sia, [1A] la\nprima volta che lo vedo!\pDev'essere uno quei tanti Pok\emon\narrivati ad Eyros da regioni\llontane, probabilmente Kalos o\lUnima.
+L'ho visto proprio l[1E], nell'erba\nalta, un Pok\emon uccello di\lcolore rosso.\pNon so che Pok\emon sia, [1A] la\nprima volta che lo vedo!\pDev'essere uno di quei tanti Pok\emon\narrivati ad Eyros da regioni\llontane, probabilmente Kalos o\lUnima.
 
 #org @Percorso_1_3_19_NPC1_text1
 Hey, pensi di passare senza sfidarmi?

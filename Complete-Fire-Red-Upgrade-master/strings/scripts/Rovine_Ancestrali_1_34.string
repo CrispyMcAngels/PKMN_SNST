@@ -77,7 +77,7 @@ Vesper: Sei un tipo sveglio,\nd'altronde da uno scienziato come\lte ce lo si pot
 Crispy: [PLAYER], Naomi!\nEro sicuro che ci avreste\lraggiunto anche voi, grazie per\laverci aiutato!\pQuei furfanti sono riusciti a\nsvignarsela con quello che volevano[.]\pSe solo fossimo arrivati un attimo\nprima[.]
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_text2
-Filiberto: Non sentierti cos[1E] in\ncolpa Crispy, non potevamo\lesserne al corrente[.]\pPiuttosto, guardiamo anche noi cosa\ncontengono queste Rovine[.]
+Filiberto: Non sentirti cos[1E] in\ncolpa Crispy, non potevamo\lesserne al corrente[.]\pPiuttosto, guardiamo anche noi cosa\ncontengono queste Rovine[.]
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_text3
 Filiberto: Non capisco, sembrano\nincisioni antiche[.]\pVogliono sicuramente comunicare\nqualcosa, ma non riesco a\ldecifrarle[.]\p[PLAYER] perch[1A] non provi a dare un\nocchiata pure te?
@@ -92,13 +92,13 @@ Crispy: Poteva andare meglio, ma\nora l'unica cosa che possiamo\lfare [1A] decif
 Naomi: Non trovi sia emozionante\ncombattere i cattivi assieme ad\lallenatori forti come tuo\lfratello e Filiberto?
 
 #org @Rovine_Ancestrali_1_34_tile8_text1
-[PLAYER]: non posso andermene via\nproprio ora.\pFiliberto ha bisogno del mio aiuto!
+[PLAYER]: non posso andarmene via\nproprio ora.\pFiliberto ha bisogno del mio aiuto!
 
 #org @Rovine_Ancestrali_1_34_Sign0_text1
 [PLAYER] da un'occhiata alle incisioni\nsulla parete.
 
 #org @Rovine_Ancestrali_1_34_Sign0_text2
-Queste incisioni raffigurano gli\nantichi Pok\emon leggendari della\lregione di Eyors.
+Queste incisioni raffigurano gli\nantichi Pok\emon leggendari della\lregione di Eyros.
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text1
 Filiberto: [05] incredibile [PLAYER]!\nSei riuscito a risolvere l'enigma.\p[05] proprio vero che buon sangue\nnon mente!
@@ -107,7 +107,7 @@ Filiberto: [05] incredibile [PLAYER]!\nSei riuscito a risolvere l'enigma.\p[05] 
 Crispy: Davvero impressionante!\pCosa ti sembrano queste incisioni,\nFiliberto?
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text3
-Filiberto: A prima vista, queste\nincisioni sembrano combaciare con\lle informazioni fornite dal Team\lDusk[.]\pTuttavia, per esserne certi,\nvorrei prelevarne un frammento e\lportarlo nel mio laboratorio ad\lArdesiopoli.\pL[1E] potr[22] analizzarlo con maggiore\nattenzione e confermare con\lprecisione le sue vere origini.\pSe le nostre ipotesi sono\ncorrette, potremmo essere di fronte\la una scoperta fondamentale!\pNon c'[1A] tempo da perdere!\nDevo tornare subito al mio\llaboratorio e mettermi al lavoro\lper analizzare questo frammento[.]\pCripy, [PLAYER], vi aspetter[22]\nproprio l[1E] per mostrarvi i\lrisultati delle analisi.
+Filiberto: A prima vista, queste\nincisioni sembrano combaciare con\lle informazioni fornite dal Team\lDusk[.]\pTuttavia, per esserne certi,\nvorrei prelevarne un frammento e\lportarlo nel mio laboratorio ad\lArdesiopoli.\pL[1E] potr[22] analizzarlo con maggiore\nattenzione e confermare con\lprecisione le sue vere origini.\pSe le nostre ipotesi sono\ncorrette, potremmo essere di fronte\la una scoperta fondamentale!\pNon c'[1A] tempo da perdere!\nDevo tornare subito al mio\llaboratorio e mettermi al lavoro\lper analizzare questo frammento[.]\pCrispy, [PLAYER], vi aspetter[22]\nproprio l[1E] per mostrarvi i\lrisultati delle analisi.
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text4
 Crispy: Complimenti [PLAYER]!\n[05] chiaro che come allenatore sei\lgi[16] maturato molto!\pMa parliamone fuori di qui[.]

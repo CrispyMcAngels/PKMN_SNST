@@ -87,13 +87,13 @@ Percorso 3:\n[ARROW_UP] Ardesiopoli\l[ARROW_DOWN] Radiantia\l[ARROW_DOWN] Percor
 
 #org @Percorso_3_3_21_Sign2
 //_/////////////////////////////////
-Consigli utili: in Pokemon Sunset\nnon [1A] necessario insegnare le MN\lad un Pokemon per usarle.\pIl gioco riconoscer[16] in automatico\nche un Pokemon nella tua squadra\l[1A] in grado di imparare la MN in\lquestione e gli permetter'a di\lusarla senza averla imparata!
+Consigli utili: in Pokemon Sunset\nnon [1A] necessario insegnare le MN\lad un Pokemon per usarle.\pIl gioco riconoscer[16] in automatico\nche un Pokemon nella tua squadra\l[1A] in grado di imparare la MN in\lquestione e gli permetter[16] di\lusarla senza averla imparata!
 
 #org @Percorso_3_3_21_Sign3
 Il Percorso 3 [1A] famoso per il suo\lburrone e per le improvvise raffiche\ldi vento.\pSi consiglia dunque di iniziare ad\nesplorarlo solo quando preparati\la dovere.
 
 #org @Percorso_3_3_21_Sign4
-Unico nel suo genere dal punto di\nvista paesaggistico, la particolare\lconformazione rocciosa del Percorso 3\l[1A] frutto di miglioni di anni di\lerosione.\pGli studi dicono che nella preistoria\na queste altitudini ci fosse il mare. 
+Unico nel suo genere dal punto di\nvista paesaggistico, la particolare\lconformazione rocciosa del Percorso 3\l[1A] frutto di milioni di anni di\lerosione.\pGli studi dicono che nella preistoria\na queste altitudini ci fosse il mare. 
 
 #org @Percorso_3_3_21_Sign5
 //_/////////////////////////////////
@@ -103,7 +103,7 @@ A causa dei suoi fortissimi venti,\nil Percorso 3 non [1A] ospitale a\lmolti tip
 Xaatuuu!
 
 #org @Percorso3_3_21_tile0_text2
-[PLAYER]: Wow Che razza di Pokemon\nera quello?\pSono sicuro che non si trova in\nquesto percorso[.]\pMeglio inseguirlo!
+[PLAYER]: Wow! Che razza di Pokemon\nera quello?\pSono sicuro che non si trova in\nquesto percorso[.]\pMeglio inseguirlo!
 
 #org @Percorso3_3_21_tile1_text1
 [PLAYER]: Quel Pokemon strano [1A]\nandato nell'altra direzione,\lmeglio proseguire da quella parte!
