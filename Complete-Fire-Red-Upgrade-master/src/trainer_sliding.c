@@ -1,6 +1,7 @@
 #include "defines.h"
 #include "defines_battle.h"
 
+#include "../include/constants/songs.h"
 #include "../include/new/battle_util.h"
 #include "../include/new/multi.h"
 #include "../include/new/trainer_sliding.h"
@@ -16,6 +17,7 @@ struct TrainerSlide
 	const u8* msgFirstDown;
 	const u8* msgLastSwitchIn;
 	const u8* msgLastLowHp;
+	u16 songId; // BGM to play on LAST_SWITCHIN or LAST_LOW_HP (0 = no change)
 };
 
 struct DynamaxTrainerSlide
@@ -26,12 +28,12 @@ struct DynamaxTrainerSlide
 
 static const struct TrainerSlide sTrainerSlides[] =
 {
-	{0x146, NULL, NULL, sText_Naomi1LowHP},
-	{0xD, NULL, sText_Naomi2Last, NULL},
-	{0x1E, NULL, sText_FilibertoLast, NULL},
-	{0x36, NULL, sText_EleonoraLast, NULL},
-	{0x37, NULL, NULL, sText_ErisLowHP},
-	{0x4E, NULL, sText_VesperLast, NULL},
+	{0x146, NULL, NULL, sText_Naomi1LowHP, BGM_BATTLE_LOWHP},
+	{0xD, NULL, sText_Naomi2Last, NULL, BGM_BATTLE_LASTGYMLEADERMON},
+	{0x1E, NULL, sText_FilibertoLast, NULL, BGM_BATTLE_LASTGYMLEADERMON},
+	{0x36, NULL, sText_EleonoraLast, NULL, BGM_BATTLE_LASTGYMLEADERMON},
+	{0x37, NULL, NULL, sText_ErisLowHP, BGM_BATTLE_LOWHP},
+	{0x4E, NULL, sText_VesperLast, NULL, BGM_BATTLE_LASTGYMLEADERMON},
 
 };
 
@@ -147,6 +149,8 @@ bool8 ShouldDoTrainerSlide(u8 bank, u16 trainerId, u8 caseId)
 					if (sTrainerSlides[i].msgLastSwitchIn != NULL && GetEnemyMonCount(TRUE) == 1)
 					{
 						gBattleStringLoader = sTrainerSlides[i].msgLastSwitchIn;
+						if (sTrainerSlides[i].songId != 0)
+							PlayBGM(sTrainerSlides[i].songId);
 						return TRUE;
 					}
 					break;
@@ -159,6 +163,8 @@ bool8 ShouldDoTrainerSlide(u8 bank, u16 trainerId, u8 caseId)
 					{
 						gNewBS->trainerSlideLowHpMsgDone = TRUE;
 						gBattleStringLoader = sTrainerSlides[i].msgLastLowHp;
+						if (sTrainerSlides[i].songId != 0)
+							PlayBGM(sTrainerSlides[i].songId);
 						return TRUE;
 					}
 					break;
