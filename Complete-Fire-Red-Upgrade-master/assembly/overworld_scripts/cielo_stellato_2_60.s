@@ -8,9 +8,23 @@
 gMapScripts_CieloStellato_2_60:
     mapscript MAP_SCRIPT_ON_LOAD CieloStellato_2_60_MapScriptOnLoad
     mapscript MAP_SCRIPT_ON_FRAME_TABLE CieloStellato_2_60_MapScriptOnFrame
+    mapscript MAP_SCRIPT_ON_RESUME CieloStellato_2_60_MapScriptOnResume
     .byte MAP_SCRIPT_TERMIN
 
+		CieloStellato_2_60_MapScriptOnResume:
+			compare 0x4051 0x3
+		    if 0x4 _call CieloStellato_2_60_MapScriptOnResume_P1
+			end	
+
+			CieloStellato_2_60_MapScriptOnResume_P1:
+				playsong2 0x0
+				return
+
+
 CieloStellato_2_60_MapScriptOnLoad:
+    setvar 0x501F 0x12E
+    compare 0x4051 0x0
+    if 0x0 _call CieloStellato_2_60_MapScriptOnLoad_set_parallax
     compare 0x4051 0x3
     if 0x1 _call CieloStellato_2_60_MapScriptOnLoad_Raikou_eyes
     compare 0x4051 0x4
@@ -24,6 +38,10 @@ CieloStellato_2_60_MapScriptOnLoad:
     compare 0x4051 0x8
     if 0x1 _call CieloStellato_2_60_MapScriptOnLoad_Entei_full       
     end
+
+CieloStellato_2_60_MapScriptOnLoad_set_parallax:
+    setvar 0x400A 0x3
+    return
 
 CieloStellato_2_60_MapScriptOnLoad_Raikou_eyes:
     setmaptile 0x0 0x0 0x281 0x0
@@ -752,7 +770,9 @@ CieloStellato_2_60_MapScriptOnFrame:
 CieloStellato_2_60_MapScriptOnFrameBegin:
     lockall
     compare 0x4051 0x0
-    if 0x1 _call Part1
+    if 0x1 _call CieloStellato_2_60_Part1a
+    compare 0x4051 0x1
+    if 0x1 _call CieloStellato_2_60_Part2
     compare 0x4051 0x2
     if 0x1 _call InitialBlack
     compare 0x4051 0x3
@@ -771,25 +791,238 @@ CieloStellato_2_60_MapScriptOnFrameBegin:
     releaseall
     end
 
-Part1:
-    playsong 0x188 0x0
-    writebytetooffset 0x30 0x4000012
-    //writebytetooffset 0x2 0x20204B6
-    //writebytetooffset 0xE 0x20204B8
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text1 0x7 
+CieloStellato_2_60_Part1a:
+    pause 0x3E
+    applymovement 0xFF CieloStelato_intro_mov1
+    waitmovement 0xFF
+    pause 0x3E
+    //textcolor
+    showpokepic 0x3C3 0x0 0x6
+	msgbox CieloStellato_2_60_Part1_text1 MSG_NORMAL
+	special 0x15A
+    pause 0x1F
+
+    showpokepic 0x3C3 0x0 0x6
+	msgbox CieloStellato_2_60_Part1_text2 MSG_NORMAL
+	special 0x15A
+    pause 0x1F
+
+    showpokepic 0x3C3 0x0 0x6
+	msgbox CieloStellato_2_60_Part1_text3 MSG_NORMAL
+	special 0x15A
+    pause 0x2E
+
+    showpokepic 0x3C3 0x0 0x6
+	msgbox CieloStellato_2_60_Part1_text4 MSG_NORMAL
+	special 0x15A
     pause 0x1E
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text2 0x7 
+
+    fadescreen 0x1
+    
     pause 0x1E
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text3 0x7 
+    showpokepic 0x3C4 0xA 0x5
+    pause 0xF
+    showpokepic 0x3C3 0x0 0x6
+    msgbox CieloStellato_2_60_Part1_text5 MSG_NORMAL
+	special 0x15A
+    special 0x15A
+    pause 0x25
+
+    showpokepic 0x3C5 0xA 0x5
+    pause 0xF
+    showpokepic 0x3C3 0x0 0x6
+    msgbox CieloStellato_2_60_Part1_text6 MSG_NORMAL
+	special 0x15A
+    special 0x15A
+    pause 0x25
+
+    showpokepic 0x3C6 0xA 0x5
+    pause 0xF
+    showpokepic 0x3C3 0x0 0x6
+    msgbox CieloStellato_2_60_Part1_text7 MSG_NORMAL
+	special 0x15A
+    special 0x15A
     pause 0x1E
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text4 0x7 
+    fadescreen 0x0  
+
     pause 0x1E
-    msgbox CieloStellato_2_60_MapScriptOnFrame_text5 0x7 
-    writebytetooffset 0x0 0x4000012
-    //writebytetooffset 0xF 0x20204B6
-    //writebytetooffset 0x4 0x20204B8
-    fadedefault
+    showpokepic 0x3C3 0x0 0x6
+	msgbox CieloStellato_2_60_Part1_text8 MSG_NORMAL
+	special 0x15A
+    pause 0x1E   
+
+    showpokepic 0x3C3 0x0 0x6
+	msgbox CieloStellato_2_60_Part1_text9 MSG_NORMAL
+	special 0x15A
+    pause 0x1E   
+
+    //warp a passato tuono 3 46
+    warpmuted 0x3 0x2E 0xFF 0x7 0x6
+    releaseall
+    end
+
+    CieloStelato_intro_mov1:
+        .byte 0xC 
+        .byte 0xC 
+        .byte 0xC 
+        .byte 0xC 
+        .byte 0xC 
+        .byte 0xC 
+        .byte 0xC 
+        .byte 0xC 
+        .byte 0xC 
+        .byte 0xC 
+        .byte 0xC 
+        .byte 0xC 
+        .byte 0xC 
+        .byte 0xC 
+        .byte 0xC 
+        .byte 0xC 
+        .byte 0xC 
+        .byte 0xFE
+
+
+.global gMapScripts_PassatoTuono_3_46
+gMapScripts_PassatoTuono_3_46:
+    mapscript MAP_SCRIPT_ON_FRAME_TABLE PassatoTuono_3_46_MapScriptOnFrame
+    .byte MAP_SCRIPT_TERMIN
+
+PassatoTuono_3_46_MapScriptOnFrame:
+    levelscript 0x4050, 0, PassatoTuono_3_46_MapScriptOnFrameBegin
+    .hword MAP_SCRIPT_TERMIN
+
+    PassatoTuono_3_46_MapScriptOnFrameBegin:
+        lockall
+        compare 0x4051 0x0
+        if 0x1 _call PassatoTuono_3_46_MapScriptOnFramePart1
+        releaseall
+        end
+
+    PassatoTuono_3_46_MapScriptOnFramePart1:
+        lockall
+        pause 0x2E
+        showpokepic 0x3C3 0x0 0x6
+        msgbox CieloStellato_2_60_Part1_text10 MSG_NORMAL
+        special 0x15A
+        pause 0x2E   
+        warpmuted 0x3 0x43 0xFF 0x9 0x6 
+        releaseall
+        end
+
+.global gMapScripts_PassatoAcqua_3_67
+gMapScripts_PassatoAcqua_3_67:
+    mapscript MAP_SCRIPT_ON_FRAME_TABLE PassatoAcqua_3_67_MapScriptOnFrame
+    .byte MAP_SCRIPT_TERMIN
+
+PassatoAcqua_3_67_MapScriptOnFrame:
+    levelscript 0x4050, 0, PassatoAcqua_3_67_MapScriptOnFrameBegin
+    .hword MAP_SCRIPT_TERMIN
+
+    PassatoAcqua_3_67_MapScriptOnFrameBegin:
+        lockall
+        compare 0x4051 0x0
+        if 0x1 _call PassatoAcqua_3_67_MapScriptOnFramePart1
+        releaseall
+        end
+
+        PassatoAcqua_3_67_MapScriptOnFramePart1:
+            lockall
+            pause 0x2E
+            showpokepic 0x3C3 0x0 0x6
+            msgbox CieloStellato_2_60_Part1_text11 MSG_NORMAL
+            special 0x15A
+            pause 0x2E   
+            warpmuted 0x3 0x44 0xFF 0x8 0x7 
+            releaseall
+            end
+
+.global gMapScripts_PassatoFuoco_3_68
+gMapScripts_PassatoFuoco_3_68:
+    mapscript MAP_SCRIPT_ON_FRAME_TABLE PassatoFuoco_3_68_MapScriptOnFrame
+    .byte MAP_SCRIPT_TERMIN
+
+PassatoFuoco_3_68_MapScriptOnFrame:
+    levelscript 0x4050, 0, PassatoFuoco_3_68_MapScriptOnFrameBegin
+    .hword MAP_SCRIPT_TERMIN
+
+    PassatoFuoco_3_68_MapScriptOnFrameBegin:
+        lockall
+        compare 0x4051 0x0
+        if 0x1 _call PassatoFuoco_3_68_MapScriptOnFramePart1
+        releaseall
+        end
+
+
+        PassatoFuoco_3_68_MapScriptOnFramePart1:
+            lockall
+            pause 0x2E
+            showpokepic 0x3C3 0x0 0x6
+            msgbox CieloStellato_2_60_Part1_text12 MSG_NORMAL
+            special 0x15A
+            pause 0x2E   
+            setvar 0x4051 0x1
+            warpmuted 0x2 0x3C 0xFF 0x7 0x28 
+            releaseall
+            end
+    
+CieloStellato_2_60_Part2:
+    pause 0x22
+    //textcolor
+    showpokepic 0x3C3 0x0 0x6
+	msgbox CieloStellato_2_60_Part1_text13 MSG_NORMAL
+	special 0x15A
+    pause 0x1F
+
+    showpokepic 0x3C3 0x0 0x6
+	msgbox CieloStellato_2_60_Part1_text14 MSG_NORMAL
+	special 0x15A
+    pause 0x1F
+
+    showpokepic 0x3C3 0x0 0x6
+	msgbox CieloStellato_2_60_Part1_text15 MSG_NORMAL
+	special 0x15A
+    pause 0x1F
+
+    //inserire immagine
+
+    setvar 0x8002 0x1
+    loadpointer 0x0 VoidText
+    loadpointer 0x1 VoidText
+    loadpointer 0x2 VoidText
+    special 0x108
+    waitstate
+
     pause 0x1E
+    showpokepic 0x3C3 0x0 0x6
+	msgbox CieloStellato_2_60_Part1_text16 MSG_NORMAL
+	special 0x15A
+    pause 0x1F
+
+    showpokepic 0x3C3 0x0 0x6
+	msgbox CieloStellato_2_60_Part1_text17 MSG_NORMAL
+	special 0x15A
+    pause 0x1F
+
+    showpokepic 0x3C3 0x0 0x6
+	msgbox CieloStellato_2_60_Part1_text18 MSG_NORMAL
+	special 0x15A
+    pause 0x1F
+
+    showpokepic 0x3C3 0x0 0x6
+	msgbox CieloStellato_2_60_Part1_text19 MSG_NORMAL
+	special 0x15A
+    pause 0x1F
+
+    spriteface 0x1 0x2
+    sound 0x15
+    pause 0x10
+    applymovement 0xFF CieloStellato_2_60_mov1
+    waitmovement 0xFF
+    showpokepic 0x3C3 0x0 0x6
+	msgbox CieloStellato_2_60_Part1_text20 MSG_NORMAL
+	special 0x15A
+    pause 0x1F
+
     fadescreen 0x1
     pause 0x1E
     writebytetooffset 0x30 0x4000012
@@ -799,11 +1032,65 @@ Part1:
     //setflag 0x900
     setflag 0x967
     setvar 0x4050 0x1
-    setvar 0x4051 0x1
     setvar 0x501F 0x0157
     warpmuted 0x2 0x1B 0xFF 0x05 0x26
     fadescreen 0x0
-    return
+    return   
+
+    CieloStellato_2_60_mov1:
+        .byte 0xD 
+        .byte 0xD 
+        .byte 0xD 
+        .byte 0xD 
+        .byte 0xD 
+        .byte 0xD 
+        .byte 0xD 
+        .byte 0xD 
+        .byte 0xD 
+        .byte 0xD 
+        .byte 0xD 
+        .byte 0xD 
+        .byte 0xD 
+        .byte 0xD 
+        .byte 0xD 
+        .byte 0xFE
+
+
+
+//CieloStellato_2_60_Part1:
+//    playsong 0x188 0x0
+//    writebytetooffset 0x30 0x4000012
+//    //writebytetooffset 0x2 0x20204B6
+//    //writebytetooffset 0xE 0x20204B8
+//    msgbox CieloStellato_2_60_MapScriptOnFrame_text1 0x7 
+//    pause 0x1E
+//    msgbox CieloStellato_2_60_MapScriptOnFrame_text2 0x7 
+//    pause 0x1E
+//    msgbox CieloStellato_2_60_MapScriptOnFrame_text3 0x7 
+//    pause 0x1E
+//    msgbox CieloStellato_2_60_MapScriptOnFrame_text4 0x7 
+//    pause 0x1E
+//    msgbox CieloStellato_2_60_MapScriptOnFrame_text5 0x7 
+//    writebytetooffset 0x0 0x4000012
+//    //writebytetooffset 0xF 0x20204B6
+//    //writebytetooffset 0x4 0x20204B8
+//    fadedefault
+//    pause 0x1E
+//    fadescreen 0x1
+//    pause 0x1E
+//    writebytetooffset 0x30 0x4000012
+//    msgbox CieloStellato_2_60_MapScriptOnFrame_text6 0x7
+//    writebytetooffset 0x0 0x4000012
+//    pause 0x1E
+//    //setflag 0x900
+//    setflag 0x967
+//    setvar 0x4050 0x1
+//    setvar 0x4051 0x1
+//    setvar 0x501F 0x0157
+//    warpmuted 0x2 0x1B 0xFF 0x05 0x26
+//    fadescreen 0x0
+//    return
+
 
 InitialBlack:
     pause 0x1E

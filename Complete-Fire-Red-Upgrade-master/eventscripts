@@ -1,3 +1,15 @@
+map 1 61 gMapScripts_Santuario_del_Vento_1_61
+tile 1 61 0 EventScript_SDV_1_61_TileScript_up_down
+tile 1 61 1 EventScript_SDV_1_61_TileScript_up_down
+tile 1 61 2 EventScript_SDV_1_61_TileScript_up_down
+tile 1 61 3 EventScript_SDV_1_61_TileScript_up_down
+tile 1 61 4 EventScript_SDV_1_61_TileScript_up_down
+tile 1 61 5 EventScript_SDV_1_61_TileScript_up_down
+tile 1 61 6 EventScript_SDV_1_61_TileScript_up_down
+tile 1 61 7 EventScript_SDV_1_61_TileScript_up_down
+tile 1 61 8 EventScript_SDV_1_61_TileScript_up_down
+tile 1 61 9 EventScript_SDV_1_61_TileScript_up_down
+
 sign 0 13 0 EventScript_Centrale_Elettrica_0_13_Sign0
 sign 0 14 1 EventScript_Passo_Tuono_0_14_Sign0
 sign 1 95 0 EventScript_Centrale_Elettrica_1_95_Sign0
@@ -246,6 +258,7 @@ npc 10 11 1 EventScript_Stellavia_10_11_NPC1
 sign 10 11 0 EventScript_Stellavia_10_10_Sign1
 sign 10 11 1 EventScript_Stellavia_10_11_Sign1
 
+npc 10 12 0 EventScript_common_healing_pkmn_center
 npc 10 12 1 EventScript_Stellavia_10_12_NPC1
 npc 10 12 2 EventScript_Stellavia_10_12_NPC2
 npc 10 12 3 EventScript_Stellavia_10_12_NPC3
@@ -374,6 +387,7 @@ npc 3 4 5 EventScript_Radiantia_3_4_NPC5
 npc 3 4 7 EventScript_Chatot_Master
 map 3 4 gMapScripts_Radiantia_3_4
 
+npc 8 0 0 EventScript_common_healing_pkmn_center
 npc 8 0 1 EventScript_Radiantia_8_0_NPC1
 npc 8 0 2 EventScript_Radiantia_8_0_NPC2
 npc 8 0 3 EventScript_Radiantia_8_0_NPC3
@@ -595,6 +609,7 @@ npc 6 3 1 EventScript_Ardesiopoli_6_3_NPC1
 
 npc 6 5 0 EventScript_Ardesiopoli_6_5_NPC0
 npc 6 5 1 EventScript_Ardesiopoli_6_5_NPC1
+npc 6 5 2 EventScript_common_healing_pkmn_center
 npc 6 5 3 EventScript_Ardesiopoli_6_5_NPC3
 npc 6 5 4 EventScript_Ardesiopoli_6_5_NPC4
 npc 6 5 5 EventScript_Ardesiopoli_6_5_NPC5
@@ -671,12 +686,11 @@ npc 6 13 7 EventScript_Ardesiopoli_6_13_NPC7
 sign 6 13 0 EventScript_Ardesiopoli_6_13_Sign0
 sign 6 13 1 EventScript_Ardesiopoli_6_13_Sign1
 
-npc 6 14 0 EventScript_Ardesiopoli_6_14_NPC0
-npc 6 14 1 EventScript_Ardesiopoli_6_14_NPC1
-npc 6 14 2 EventScript_Ardesiopoli_6_14_NPC2
-
 npc 6 15 0 EventScript_Ardesiopoli_6_15_NPC0
 npc 6 15 1 EventScript_Ardesiopoli_6_15_NPC1
+npc 6 15 2 EventScript_Ardesiopoli_6_14_NPC0
+npc 6 15 3 EventScript_Ardesiopoli_6_14_NPC1
+npc 6 15 4 EventScript_Ardesiopoli_6_14_NPC2
 sign 6 15 0 EventScript_Ardesiopoli_6_15_Sign0
 
 npc 6 16 0 EventScript_Ardesiopoli_6_16_NPC0
@@ -837,6 +851,11 @@ npc 28 0 1 EventScript_Percorso_2_28_0_NPC1
 npc 28 0 0 EventScript_Percorso_2_28_0_NPC0
 
 map 2 60 gMapScripts_CieloStellato_2_60
+
+map 3 46 gMapScripts_PassatoTuono_3_46
+map 3 67 gMapScripts_PassatoAcqua_3_67
+map 3 68 gMapScripts_PassatoFuoco_3_68
+
 map 2 27 gMapScripts_Monte_Remoto_2_27
 
 tile 4 0 0 EventScript_Borgo_Ponente_4_0_tileA
@@ -949,6 +968,7 @@ sign 5 3 3 EventScript_Miralba_5_3_Sign0
 sign 5 3 4 EventScript_Miralba_5_3_Sign0
 
 map 5 4 gMapScripts_Miralba_5_4
+npc 5 4 0 EventScript_common_healing_pkmn_center
 npc 5 4 1 EventScript_Miralba_5_4_NPC1
 npc 5 4 2 EventScript_Miralba_5_4_NPC2
 npc 5 4 3 EventScript_Miralba_5_4_NPC3

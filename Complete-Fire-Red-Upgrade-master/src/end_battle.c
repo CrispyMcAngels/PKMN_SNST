@@ -135,7 +135,13 @@ void HandleEndTurn_BattleWon(void)
 			case CLASS_LEADER:
 			case CLASS_ELITE_4:
 			case CLASS_CHAMPION:
+			case CLASS_AROMA_LADY_RS:
 				PlayBGM(BGM_VICTORY_SPECIAL);
+				specialMus = TRUE;
+				break;
+			case CLASS_TEAM_ROCKET:
+			case CLASS_AQUA_ADMIN:
+				PlayBGM(BGM_VICTORY_DUSK);
 				specialMus = TRUE;
 				break;
 			default:

@@ -1,3 +1,6 @@
+#org @VoidText
+$
+
 #org @gText_Common_CuttableTree
 Quest'albero pu[22] essere tagliato\nda un Pok\emon.
 //It looks like this tree can be cut\ndown by a Pok\emon.
@@ -8,3 +11,18 @@ Quest'albero pu[22] essere tagliato\nda un Pok\emon.
 
 #org @gText_Common_PC_text1
 [05] il PC di qualcuno,\nmeglio non toccare niente[.]
+
+#org @healing_pkmn_center_text1
+Benvenuto!
+
+#org @healing_pkmn_center_text2
+Sei in un CENTRO POK\eMON.\pRimettiamo in sesto i POK\eMON\nstanchi.\pVuoi far riposare la tua squadra?
+
+#org @healing_pkmn_center_text3
+Torna a farci visita.
+
+#org @healing_pkmn_center_text4
+Ok, mi prendo la tua squadra di\nPOK\eMON per qualche secondo.
+
+#org @healing_pkmn_center_text5
+Grazie per l'attesa.\pOra la tua squadra di POK\eMON [1A] in\nperfetta forma.

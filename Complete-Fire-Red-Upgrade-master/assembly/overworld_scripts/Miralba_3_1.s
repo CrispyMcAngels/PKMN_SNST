@@ -98,6 +98,7 @@ EventScript_Miralba_3_1_NPC5:
 		waitmovement 0x0
 		showsprite 0xB
 		clearflag 0x952
+		clearflag 0x962
 		setflag 0x961
 		fanfare 0x0102
 		textcolor 0x2
@@ -187,6 +188,7 @@ EventScript_Miralba_3_1_Tile0:
 		waitmovement 0x0
 		showsprite 0xB
 		clearflag 0x952
+		clearflag 0x962
 		setflag 0x961
 		fanfare 0x0102
 		textcolor 0x2

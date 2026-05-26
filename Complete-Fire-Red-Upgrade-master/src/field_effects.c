@@ -31,11 +31,12 @@ extern const struct CompressedSpritePalette gThinRingSpritePalette;
 
 //This file's functions
 static void GetSpriteTemplateAndPaletteForGrassFieldEffect(const struct SpriteTemplate** spriteTemplate, const struct SpritePalette** spritePalette, u8 fieldEffectTemplateArg);
-static void FldEff_TallGrass(void);
+void FldEff_TallGrass(void);
 static void FldEff_ShakingTallGrass(void);
-static void FldEff_JumpTallGrassLoadPalette(void);
 static void FldEff_LongGrass(void);
 static void FldEff_JumpLongGrassLoadPalette(void);
+void FldEff_CfruTallGrass(void);
+void FldEff_CfruJumpTallGrass(void);
 static void FldEff_ShakingLongGrass(void);
 static void FldEff_CaveDust(void);
 static void FldEff_Sparkles(void);
@@ -210,7 +211,7 @@ static void GetSpriteTemplateAndPaletteForGrassFieldEffect(const struct SpriteTe
 	}
 }
 
-static void FldEff_TallGrass(void)
+void FldEff_TallGrass(void)
 {
 	s32 x, y;
 	u8 spriteId;
@@ -274,18 +275,6 @@ static void FldEff_ShakingTallGrass(void)
 
 	if (IsFanfareTaskInactive()) //Sound interrupts fanfare
 		PlaySE(SE_LEAVES);
-}
-
-static void FldEff_JumpTallGrassLoadPalette(void)
-{
-	const struct SpriteTemplate* spriteTemplate;
-	const struct SpritePalette* spritePalette; const struct SpritePalette** palettePointer; const struct SpritePalette*** palette2Pointer;
-	palettePointer = &spritePalette;
-	palette2Pointer = &palettePointer; //This way we fool the function into thinking it's a script.
-
-	GetSpriteTemplateAndPaletteForGrassFieldEffect(&spriteTemplate, &spritePalette, 4);
-	FieldEffectScript_LoadFadedPalette((u8**) palette2Pointer);
-	FldEff_JumpTallGrass();
 }
 
 static void FldEff_LongGrass(void)
@@ -589,13 +578,13 @@ static void FldEff_MiningScanRing(void)
 
 const struct FieldEffectScript gFieldEffectScript_TallGrass =
 {
-	FLDEFF_CALLASM, FldEff_TallGrass,
+	FLDEFF_CALLASM, FldEff_CfruTallGrass,
 	FLDEFF_END,
 };
 
 const struct FieldEffectScript gFieldEffectScript_JumpTallGrass =
 {
-	FLDEFF_CALLASM, FldEff_JumpTallGrassLoadPalette,
+	FLDEFF_CALLASM, FldEff_CfruJumpTallGrass,
 	FLDEFF_END,
 };
 

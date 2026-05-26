@@ -14,8 +14,7 @@ gMapScripts_Capp_temporale_0_6:
 		.hword MAP_SCRIPT_TERMIN		
 
 	Capp_temporale_0_6_MapScriptOnFrameBegin:
-		pause 0x1E
-		pause 0x1E
+		pause 0x3E
 		fadescreen 0x3
 		movesprite 0x1 0x0C 0x17
 		sound 0x9

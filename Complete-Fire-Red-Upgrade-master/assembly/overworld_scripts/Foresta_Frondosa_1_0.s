@@ -348,6 +348,7 @@ EventScript_Foresta_Frondosa_1_0_NPC7:
 		end
 
 	EventScript_Foresta_Frondosa_1_0_NPC7_P1:
+		playsong 0x361 0x0
 		applymovement 0xB Foresta_Frondosa_1_0_NPC7_mov3
 		waitmovement 0xB	
 		spriteface 0xFF 0x4
@@ -368,6 +369,7 @@ EventScript_Foresta_Frondosa_1_0_NPC7:
 		applymovement 0xFF Foresta_Frondosa_1_0_NPC7_mov5
 		waitmovement 0xFF		
 		setvar 0x4051 0x19
+		fadedefault
 		release
 		end
 
@@ -443,6 +445,7 @@ EventScript_Foresta_Frondosa_1_0_NPC8:
 		end
 
 	EventScript_Foresta_Frondosa_1_0_NPC8_P1:
+		playsong 0x361 0x0
 		applymovement 0xB Foresta_Frondosa_1_0_NPC8_mov3
 		waitmovement 0xB	
 		spriteface 0xFF 0x4
@@ -463,6 +466,7 @@ EventScript_Foresta_Frondosa_1_0_NPC8:
 		applymovement 0xFF Foresta_Frondosa_1_0_NPC7_mov5
 		waitmovement 0xFF		
 		setvar 0x4051 0x19
+		fadedefault
 		release
 		end
 

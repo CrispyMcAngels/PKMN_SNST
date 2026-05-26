@@ -177,11 +177,11 @@ EventScript_Ardesiopoli_3_2_tile6:
 	applymovement 0xFF Ardesiopoli_3_2_tile6_mov4
 	waitmovement 0xFF
 	pause 0x1E
-	compare 0x4001 0x16
+	compare 0x4001 0x15
 	if 0x1 _call EventScript_Ardesiopoli_3_2_tile6_16b
-	compare 0x4001 0x17
+	compare 0x4001 0x16
 	if 0x1 _call EventScript_Ardesiopoli_3_2_tile6_17b
-	compare 0x4001 0x18
+	compare 0x4001 0x17
 	if 0x1 _call EventScript_Ardesiopoli_3_2_tile6_18b
 	spriteface 0xFF 0x1
 	fadedefault

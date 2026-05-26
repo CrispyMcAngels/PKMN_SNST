@@ -282,7 +282,14 @@ gMapScripts_Passo_Tuono_1_124:
 				pause 0x1E
 				//compare la fiamma Gialla
 				movesprite 0x4 0x07 0x0A
-				//Cutscene???
+				//cutscene
+				setvar 0x8002 0x3
+				loadpointer 0x0 VoidText
+				loadpointer 0x1 VoidText
+				loadpointer 0x2 VoidText
+				special 0x108
+				waitstate
+
 				pause 0x1E
 				showpokepic 0x3AC 0x0 0x6
 				textcolor 0x0
@@ -449,6 +456,15 @@ gMapScripts_Passo_Tuono_1_124:
 
 				movesprite 0x1 0x0E 0x07
 				movesprite 0x2 0x0E 0x07
+				
+				//cutscene raikou evocato
+				setvar 0x8002 0x4
+				loadpointer 0x0 VoidText
+				loadpointer 0x1 VoidText
+				loadpointer 0x2 VoidText
+				special 0x108
+				waitstate
+
 				fadescreen 0x2
 				pause 0xB4
 				textcolor 0x2

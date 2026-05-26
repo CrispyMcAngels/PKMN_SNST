@@ -151,6 +151,7 @@ Overworld_IsBikingAllowed 8055C9C 0
 apply_map_tileset_palette 80599C8 3
 MetatileBehavior_IsDiveable 8059FB0 1
 MetatileBehavior_IsUnableToEmerge 8059FCC 1
+CfruMetatileBehavior_IsTallGrass 8059F34 1
 #MetatileBehavior_IsCrackedFloor 805A1D8 1 Space isn't big enough for hooks
 #MetatileBehavior_IsBumpySlope 805A20C 1
 #MetatileBehavior_IsIsolatedVerticalRail 805A210 1

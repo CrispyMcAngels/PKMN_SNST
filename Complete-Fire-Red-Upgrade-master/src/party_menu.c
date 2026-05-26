@@ -877,7 +877,7 @@ const u16 gFieldMoves[FIELD_MOVE_COUNT] =
 const u8 gFieldMoveBadgeRequirements[FIELD_MOVE_COUNT] =
 {
 	[FIELD_MOVE_FLASH] = 1,
-	[FIELD_MOVE_CUT] = 2,
+	[FIELD_MOVE_CUT] = 1,
 	[FIELD_MOVE_FLY] = 3,
 	[FIELD_MOVE_STRENGTH] = 4,
 	[FIELD_MOVE_SURF] = 5,

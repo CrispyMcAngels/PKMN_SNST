@@ -301,6 +301,7 @@ EventScript_Percorso_4_3_22_NPC24:
 
 	EventScript_Percorso_4_3_22_NPC24_P1:
 		fadescreen 0x1
+		special 0x0
 		fanfare 0x100
 		waitfanfare
 		fadescreen 0x0

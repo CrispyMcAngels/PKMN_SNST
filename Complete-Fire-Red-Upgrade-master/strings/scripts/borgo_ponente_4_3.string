@@ -8,10 +8,10 @@ Naomi: Salve Prof. Kraemer, siamo\nvenuti qui per farle vedere il\lPok\emon che 
 Prof. Kraemer: Natuerlich, vediamo\nsubito di che Pok\emon si tratta[.]
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text4
-Prof. Kraemer: Wunderbar, ein\nAxew!\pHai avuto davvero molta fortuna,\nesemplari di Axew essere rarissimi,\lio non pensare che ce ne essere\lnel Pevcovso 1[.]\pJedenfalls, qvesto esemplare molto in\nsalute e gi[16] affezionato a te, [PLAYER]!\pSar[16] auf jeden Fall un ottimo\lcompagno per tua avventura.
+Prof. Kraemer: Wunderbar, ein\nAxew!\pHai avuto davvero molta fortuna,\nio non pensare che ce ne essere\lnel Pevcovso 1[.]\pJedenfalls, qvesto esemplare molto in\nsalute e gi[16] affezionato a te, [PLAYER]!\pSar[16] sicuvamente ottimo\lcompagno per tua avventura.
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text5
-Prof. Kraemer: Immagino dass\nadesso che [PLAYER] ha un Pok\emon\lanche tu ne vui uno Naomi, oder?
+Prof. Kraemer: Immagino dass\nadesso che [PLAYER] ha un Pok\emon\lanche tu ne vuoi uno Naomi, oder?
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text6
 Naomi: Si esatto!!!\nNon sto pi[26] nella pelle!
@@ -20,7 +20,7 @@ Naomi: Si esatto!!!\nNon sto pi[26] nella pelle!
 Prof. Kraemer: Kein Problem!\pIo avere Pok\emon giusto per te[.]
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text8
-Prof. Kraemer: Ecco Naomi, fuer\ndich!
+Prof. Kraemer: Ecco Naomi, pev\nte!
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text9
 Naomi riceve Deino!
@@ -29,19 +29,19 @@ Naomi riceve Deino!
 Naomi: Wooow questo Pok\emon\nsembra fortissimo!\pGrazie mille Prof Kraemer.
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text11
-Prof. Kraemer: Esatto Naomi, ich\nbin sicher dass tu e Deino sarete\lottimi amici e buoni rivali per\l[PLAYER] e Axew!
+Prof. Kraemer: Esatto Naomi, io\nsono sicher che tu e Deino sarete\lottimi amici e buoni rivali per\l[PLAYER] e Axew!
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text12
 [PLAYER]: [.]
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text13
-Prof. Kraemer: Warum non fare\nsfida?\pSono sicher che una bella\nsfida vi aiutare per entrare in\lsintonia con eure Pok\emon[.]
+Prof. Kraemer: Perch[1A] non fare\nsfida?\pSono sicher che una bella\nsfida vi aiutare per entrare in\lsintonia con vostri Pok\emon[.]
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text14
 Naomi: Ma certo!\nAspettavo questo momento da\ltantissimo tempo [PLAYER]!\pNon c'[1A] tempo da perdere,\nvado subito ad allenarmi con\lil mio Deino nel Percorso 11.\p[PLAYER], ti aspetto l[1E]!
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text15
-Prof. Kraemer: Qvella Naomi\ndavvero testa calda, oder?\pTrotzdem, sono sicuro che voi\ndiventare grandi amici.\pPerch[1A] non vai a fare sfida con\nlei in Pevcovso 11?\pIo dovere finire un Experiment in\nlaboratorio e poi venire anche io\ll[1E] in Percorso 11[.]
+Prof. Kraemer: Qvella Naomi\ndavvero testa calda, oder?\pComunque, io sicuro che voi\ndiventare grandi amici.\pPerch[1A] non vai a fare sfida con\nlei in Pevcovso 11?\pIo dovere finire un Experiment in\nlaboratorio e poi venire anche io\ll[1E] in Percorso 11[.]
 
 #org @EventScript_Borgo_Ponente_4_3_NPC1_text1
 Prof. Kraemer: Hallo [PLAYER],\ncome procedere tuo Pokedex?

@@ -29,13 +29,13 @@ Naomi: Wow [PLAYER], sono sbalordita,\nil tuo legame con Axew [1A] gi[16]\lmolto
 [PLAYER]: Ottimo lavoro Axew,\nrientra pure te!
 
 #org @Percorso_11_Brandon_text9
-Prof. Kraemer: Hallo Jungs, sono\narrivato giusto in tempo per\lvedere vostra sfida da lontano[.]\pDavvero un bello spettacolo, sehr\nschon, sono soddisfatto von euch!\pOrmai, ihr seid schon allenatori\nPok\emon, qvindi, avrete bisogno\ldi qvesto[.]
+Prof. Kraemer: Hallo Jungs, sono\narrivato giusto in tempo per\lvedere vostra sfida da lontano[.]\pDavvero un bello spettacolo, sehr\nschon, sono soddisfatto di voi!\pOrmai, voi essere gi[16] allenatori\nPok\emon, qvindi, avrete bisogno\ldi qvesto[.]
 
 #org @Percorso_11_Brandon_text10
 [PLAYER] riceve Pok\edex!
 
 #org @Percorso_11_Brandon_text11
-Prof. Kraemer: Tieni Naomi, uno\nanche fur dich!
+Prof. Kraemer: Tieni Naomi, uno\nanche pev te!
 
 #org @Percorso_11_Brandon_text12
 Naomi riceve Pok\edex!
@@ -47,7 +47,7 @@ Prof. Kraemer: Pokedex essere\ncome enciclopedia Pok\emon:\lse voi vedere nuovo 
 Naomi: La ringrazio Prof. Kraemer[.]\pMa perch[1A] [PLAYER] ed io dovremmo\ncompletare questo Pokedex?
 
 #org @Percorso_11_Brandon_text13b
-Prof. Kraemer: Raccogliere\nInformationen uber tutti i tipi von\lPok\emon [1A] lo scopo di mia ricerca\lqui in Eyros, dove sono tanti\lPok\emon di regioni lontane[.]
+Prof. Kraemer: Raccogliere\nInformationen su tutti i tipi di\lPok\emon [1A] lo scopo di mia ricerca\lqui in Eyros, dove sono tanti\lPok\emon di regioni lontane[.]
 
 #org @Percorso_11_Brandon_text14
 Naomi: Sono sicura che grazie al\nPok\edex riuscir[22] a registrare\ltutti i Pok\emon della regione di\lEyros[.]
@@ -59,19 +59,19 @@ Naomi: Non trovi [PLAYER]?
 [PLAYER]: [.]
 
 #org @Percorso_11_Brandon_text15
-Prof. Kraemer: Genau!\nAber ricordatevi di venire in mio\llaboratorio per vedere progressi\ldi Pok\edex, geil?
+Prof. Kraemer: Genau!\nMa ricordatevi di venire in mio\llaboratorio per vedere progressi\ldi Pok\edex, verstanden?
 
 #org @Percorso_11_Brandon_text15a
 Naomi: Certamente, passer[22] di\nsicuro a farle vedere i miei\lprogressi!\pIl mio Deino per[22] non pu[22]\nvolare, come faccio ad\lattraversare questo burrone?
 
 #org @Percorso_11_Brandon_text15b
-Qvesto Percorso porta nach Borgo\nLevante.\pPercorso 11 pu[22] essere\nattraversato solo se vostro\lPok\emon kann MN Zenit[.]\pPer iniziare euere Abenteuer vi\nconsiglio di andare a Percorso 1,\lverso citt[16] Miralba[.]
+Prof. Kraemer: Qvesto Percorso\nporta nach Borgo Levante.\pPercorso 11 pu[22] essere\nattraversato solo se vostro\lPok\emon pu[22] MN Zenit[.]\pPer iniziare vostva Abenteuer vi\nconsiglio di andare a Percorso 1,\lverso citt[16] Miralba[.]
 
 #org @Percorso_11_Brandon_text16
 Naomi: hai sentito [PLAYER]?\pSono sicura che nel Percorso 1\nriuscir[22] ad allenare molto bene\lil mio Deino[.]\pPer la nostra prossima sfida non\nmi far[22] trovare impreparata!
 
 #org @Percorso_11_Brandon_text17
-Prof. Kraemer: Alles gut!\pIch bin sicher che qvesta\nrivalit[16] vi far[16] crescere viel!\pJetzt devo tornare zuruck in meinem\nlaboratorio[.]\pFate buon viaggio verso Miralba!
+Prof. Kraemer: Alles gut!\pIo esseve sicuvo che qvesta\nrivalit[16] vi far[16] crescere viel!\pJetzt devo tornare indietro in mio\nlaboratorio[.]\pFate buon viaggio verso Miralba!
 
 #org @Percorso_11_3_25_Sign0_text1
 Percorso 11:\n[ARROW_LEFT] Borgo Ponente\p[ARROW_RIGHT] Borgo Levante

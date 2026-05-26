@@ -12,12 +12,13 @@ gMapScripts_Radiantia_8_9:
     .byte MAP_SCRIPT_TERMIN
 
 		Radiantia_8_9_MapScriptOnLoad:
+			setvar 0x400A 0x1
 			checkflag 0x971
 			if 0x1 _call Radiantia_8_9_MapScriptOnLoad_1
 			end
 
 		Radiantia_8_9_MapScriptOnLoad_1:
-			movesprite2 0x2 0x05 0x7
+			movesprite2 0x2 0x05 0x5
 			spritebehave 0x2 0x1
 			return
 
