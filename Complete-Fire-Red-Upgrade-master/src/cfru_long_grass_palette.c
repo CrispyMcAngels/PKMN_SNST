@@ -4,6 +4,7 @@
 #include "../include/field_effect.h"
 #include "../include/field_effect_helpers.h"
 #include "../include/fieldmap.h"
+#include "../include/sprite.h"
 
 /*
  * CFRU Tall Grass palette variant
@@ -35,13 +36,10 @@
 #define CFRU_TALL_GRASS_BEHAVIOR_RED   MB_09
 #define FLDEFF_PAL_TAG_GENERAL_1 0x1005
 
-
-
-
 extern void FldEff_TallGrass(void);
 
 /*
- * Yellow palette for CFRU_TALL_GRASS_BEHAVIOR_BROWN (MB_01).
+ * Brown palette for CFRU_TALL_GRASS_BEHAVIOR_BROWN (MB_01).
  * Edit colors as needed; index 0 is transparent.
  */
 static const u16 sCfruBrownGrassPalette[] =
@@ -65,7 +63,7 @@ static const u16 sCfruBrownGrassPalette[] =
 };
 
 /*
- * Yellow palette for CFRU_TALL_GRASS_BEHAVIOR_RICEFIELD (MB_04).
+ * Ricefield palette for CFRU_TALL_GRASS_BEHAVIOR_RICEFIELD (MB_04).
  * Edit colors as needed; index 0 is transparent.
  */
 static const u16 sCfruRicefieldGrassPalette[] =
@@ -87,7 +85,6 @@ static const u16 sCfruRicefieldGrassPalette[] =
     RGB(14, 21, 21), //used
     RGB(19, 26, 26), //used
 };
-
 
 /*
  * Red palette for CFRU_TALL_GRASS_BEHAVIOR_RED (MB_09).
@@ -142,6 +139,9 @@ static void LoadCfruTallGrassPalette(u8 metatileBehavior)
     }
 
     paletteNum = IndexOfSpritePaletteTag(FLDEFF_PAL_TAG_GENERAL_1);
+    if (paletteNum == 0xFF)
+        paletteNum = AllocSpritePalette(FLDEFF_PAL_TAG_GENERAL_1);
+
     if (paletteNum != 0xFF)
         LoadPalette(palette, 0x100 + paletteNum * 16, 16 * sizeof(u16));
 }
