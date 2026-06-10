@@ -35,6 +35,7 @@
 #define CFRU_TALL_GRASS_BEHAVIOR_RICEFIELD MB_04
 #define CFRU_TALL_GRASS_BEHAVIOR_RED   MB_09
 #define FLDEFF_PAL_TAG_GENERAL_1 0x1005
+#define gFieldEffectObjectPaletteInfo1 ((const struct SpritePalette*) 0x83A5348)
 
 extern void FldEff_TallGrass(void);
 
@@ -125,6 +126,9 @@ static void LoadCfruTallGrassPalette(u8 metatileBehavior)
 
     switch (metatileBehavior)
     {
+    case MB_TALL_GRASS:
+        palette = gFieldEffectObjectPaletteInfo1->data;
+        break;
     case CFRU_TALL_GRASS_BEHAVIOR_BROWN:
         palette = sCfruBrownGrassPalette;
         break;
@@ -135,7 +139,7 @@ static void LoadCfruTallGrassPalette(u8 metatileBehavior)
         palette = sCfruRedGrassPalette;
         break;
     default:
-        return; /* normal tall grass — leave palette untouched */
+        return;
     }
 
     paletteNum = IndexOfSpritePaletteTag(FLDEFF_PAL_TAG_GENERAL_1);
@@ -143,14 +147,17 @@ static void LoadCfruTallGrassPalette(u8 metatileBehavior)
         paletteNum = AllocSpritePalette(FLDEFF_PAL_TAG_GENERAL_1);
 
     if (paletteNum != 0xFF)
+    {
         LoadPalette(palette, 0x100 + paletteNum * 16, 16 * sizeof(u16));
+        DoLoadSpritePalette(palette, paletteNum * 16);
+    }
 }
 
 void FldEff_CfruTallGrass(void)
 {
     u8 behavior = MapGridGetMetatileBehaviorAt(gFieldEffectArguments[0], gFieldEffectArguments[1]);
-    LoadCfruTallGrassPalette(behavior);
     FldEff_TallGrass();
+    LoadCfruTallGrassPalette(behavior);
 }
 
 void FldEff_CfruJumpTallGrass(void)

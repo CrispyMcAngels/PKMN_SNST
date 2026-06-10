@@ -19,6 +19,23 @@ EventScript_Borgo_Ponente_4_1_Sign3:
 	msgbox Borgo_Ponente_4_1_Sign3_text1 0x7
 	end
 
+.global EventScript_Borgo_Ponente_4_1_tile1
+EventScript_Borgo_Ponente_4_1_tile1:
+	lockall
+	checkflag 0x91B
+	if 0x0 _goto Borgo_Ponente_4_1_tile1_P1
+	releaseall
+	end
+
+	Borgo_Ponente_4_1_tile1_P1:
+		lockall
+		setflag 0x91B
+		msgbox Borgo_Ponente_4_1_tile1_P1_text1 MSG_NORMAL
+		callasm 0x809FC91
+		releaseall
+		end
+
+
 .global gMapScripts_Borgo_Ponente_4_1
 gMapScripts_Borgo_Ponente_4_1:
     mapscript MAP_SCRIPT_ON_LOAD Borgo_Ponente_4_1_MapScriptOnLoad

@@ -1,3 +1,6 @@
+map 3 12 gMapScripts_Dark_Future_3_12
+map 32 3 gMapScripts_Dark_Future_32_3
+
 map 1 61 gMapScripts_Santuario_del_Vento_1_61
 tile 1 61 0 EventScript_SDV_1_61_TileScript_up_down
 tile 1 61 1 EventScript_SDV_1_61_TileScript_up_down
@@ -853,8 +856,8 @@ npc 28 0 0 EventScript_Percorso_2_28_0_NPC0
 map 2 60 gMapScripts_CieloStellato_2_60
 
 map 3 46 gMapScripts_PassatoTuono_3_46
-map 3 67 gMapScripts_PassatoAcqua_3_67
-map 3 68 gMapScripts_PassatoFuoco_3_68
+map 0 15 gMapScripts_PassatoAcqua_3_67
+map 0 16 gMapScripts_PassatoFuoco_3_68
 
 map 2 27 gMapScripts_Monte_Remoto_2_27
 
@@ -867,6 +870,8 @@ sign 4 1 0 EventScript_Borgo_Ponente_4_1_Sign0
 sign 4 1 2 EventScript_Borgo_Ponente_4_1_Sign0
 sign 4 1 3 EventScript_Borgo_Ponente_4_1_Sign1
 map 4 1 gMapScripts_Borgo_Ponente_4_1
+tile 4 1 0 EventScript_Borgo_Ponente_4_1_tile1
+tile 4 1 1 EventScript_Borgo_Ponente_4_1_tile1
 
 sign 4 2 0 EventScript_Borgo_Ponente_4_2_Sign0
 sign 4 2 1 EventScript_Borgo_Ponente_4_2_Sign3

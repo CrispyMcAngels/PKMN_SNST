@@ -613,13 +613,6 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part3:
     cry 0xFA 0x0
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text15 MSG_NORMAL
 
-    setvar 0x8002 0x2
-    loadpointer 0x0 VoidText
-    loadpointer 0x1 VoidText
-    loadpointer 0x2 VoidText
-    special 0x108
-    waitstate
-
     //Crono speech
 
     pause 0x1E
@@ -631,6 +624,12 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part3:
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text27 MSG_NORMAL
     special 0x15A
 
+    setvar 0x8002 0x2
+    loadpointer 0x0 VoidText
+    loadpointer 0x1 VoidText
+    loadpointer 0x2 VoidText
+    special 0x108
+    waitstate
 
     //terremoto
 

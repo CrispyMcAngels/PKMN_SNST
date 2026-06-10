@@ -193,8 +193,8 @@ sItemMenuActions 08109C20
 sItemMenuActions 08109C48
 
 ##Grass Field Effects and Footstep Noises
-gFieldEffectScript_TallGrass 081D96BC
-gFieldEffectScript_JumpTallGrass 081D96DC
+//gFieldEffectScript_TallGrass 081D96BC
+//gFieldEffectScript_JumpTallGrass 081D96DC
 gFieldEffectScript_LongGrass 081D96F0
 gFieldEffectScript_JumpLongGrass 081D96F4
 gFieldEffectScript_ShakingTallGrass 081D96F8
