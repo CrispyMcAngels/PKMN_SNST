@@ -1,19 +1,18 @@
-
 #org @Ardesiopoli_6_9_NPC0_text1
-Treno in partenza per Ardesiopoli\nSud, vuoi salire?
+[BLACK]Treno in partenza per [GREEN]Ardesiopoli\nSud[BLACK], vuoi salire?
 
 #org @Ardesiopoli_6_9_NPC0_text3
-Si parteee!
+[BLACK]Si parteee!
 
 #org @Ardesiopoli_6_9_NPC1_text1
-Un tempo si diceva che nessuno\npotesse attraversare il cuore di\lArdesiopoli[.]\pOra ci bastano pochi minuti\nsottoterra.\pIl progresso [1A] un Pok\emon che non\nsmette mai di evolversi.
+[BLACK]Un tempo si diceva che nessuno\npotesse attraversare il cuore di\l[GREEN]Ardesiopoli[BLACK][.]\pOra ci bastano pochi minuti\nsottoterra.\pIl progresso [1A] un Pok\emon che non\nsmette mai di evolversi.
 
 #org @Ardesiopoli_6_9_NPC2_text1
-Lavoro al museo nella zona nord.\nOgni giorno prendo la metro all'alba.\pCerto [1A] comoda, ma quando si ferma\nnel mezzo[.] brrr[.]\pQuei tunnel sono troppo silenziosi.
+[BLACK]Lavoro al museo nella zona nord.\nOgni giorno prendo la metro all'alba.\pCerto [1A] comoda, ma quando si ferma\nnel mezzo[.] brrr[.]\pQuei tunnel sono troppo silenziosi.
 
 #org @Ardesiopoli_6_9_NPC4_text1
 //_/////////////////////////////////
-Buongiorno viaggiatore, hai gi[16] il\nPass Metro?\pTutti i viaggiatori provvisti di\nPass Metro possono spostarsi\lliberamente attraverso l'intera\lrete metropolitana di Eyros:\lArdesiopoli, Stellavia[.]\pE magari in un futuro chi lo sa,\naddirittura Portoceleste e\lAurorapoli!
+[BLACK]Buongiorno viaggiatore, hai gi[16] il\n[GREEN]Pass Metro[BLACK]?\pTutti i viaggiatori provvisti di\n[GREEN]Pass Metro[BLACK] possono spostarsi\lliberamente attraverso l'intera\lrete metropolitana di [GREEN]Eyros[BLACK]:\l[GREEN]Ardesiopoli[BLACK], [GREEN]Stellavia[BLACK][.]\pE magari in un futuro chi lo sa,\naddirittura [GREEN]Portoceleste[BLACK] e\l[GREEN]Aurorapoli[BLACK]!
 
 #org @Ardesiopoli_6_9_Sign0_text1
 Linea Metro 2:\nArdesiopoli Nord - Ardesiopoli Sud

@@ -798,7 +798,6 @@ CieloStellato_2_60_Part1a:
     applymovement 0xFF CieloStelato_intro_mov1
     waitmovement 0xFF
     pause 0x3E
-    //textcolor
     showpokepic 0x3C8 0x0 0x6
 	msgbox CieloStellato_2_60_Part1_text1 MSG_NORMAL
 	special 0x15A
@@ -969,7 +968,6 @@ PassatoFuoco_3_68_MapScriptOnFrame:
     
 CieloStellato_2_60_Part2:
     pause 0x22
-    //textcolor
     showpokepic 0x3C8 0x0 0x6
 	msgbox CieloStellato_2_60_Part1_text13 MSG_NORMAL
 	special 0x15A
@@ -1026,6 +1024,7 @@ CieloStellato_2_60_Part2:
     pause 0x1F
     fadescreen 0x1
     pause 0x1E
+    playsong 0x0 0x0
     writebytetooffset 0x30 0x4000012
     msgbox CieloStellato_2_60_Part1_text21 0x7
     writebytetooffset 0x0 0x4000012
@@ -1052,42 +1051,6 @@ CieloStellato_2_60_Part2:
         .byte 0xD 
         .byte 0xD 
         .byte 0xFE
-
-
-
-//CieloStellato_2_60_Part1:
-//    playsong 0x188 0x0
-//    writebytetooffset 0x30 0x4000012
-//    //writebytetooffset 0x2 0x20204B6
-//    //writebytetooffset 0xE 0x20204B8
-//    msgbox CieloStellato_2_60_MapScriptOnFrame_text1 0x7 
-//    pause 0x1E
-//    msgbox CieloStellato_2_60_MapScriptOnFrame_text2 0x7 
-//    pause 0x1E
-//    msgbox CieloStellato_2_60_MapScriptOnFrame_text3 0x7 
-//    pause 0x1E
-//    msgbox CieloStellato_2_60_MapScriptOnFrame_text4 0x7 
-//    pause 0x1E
-//    msgbox CieloStellato_2_60_MapScriptOnFrame_text5 0x7 
-//    writebytetooffset 0x0 0x4000012
-//    //writebytetooffset 0xF 0x20204B6
-//    //writebytetooffset 0x4 0x20204B8
-//    fadedefault
-//    pause 0x1E
-//    fadescreen 0x1
-//    pause 0x1E
-//    writebytetooffset 0x30 0x4000012
-//    msgbox CieloStellato_2_60_MapScriptOnFrame_text6 0x7
-//    writebytetooffset 0x0 0x4000012
-//    pause 0x1E
-//    //setflag 0x900
-//    setflag 0x967
-//    setvar 0x4050 0x1
-//    setvar 0x4051 0x1
-//    setvar 0x501F 0x0157
-//    warpmuted 0x2 0x1B 0xFF 0x05 0x26
-//    fadescreen 0x0
-//    return
 
 
 InitialBlack:
@@ -1143,5 +1106,4 @@ EnteiFull:
     setvar 0x4050 0x1
     writebytetooffset 0x2 0x2036E28
     warpmuted 0x2 0x1B 0xFF 0x0C 0x10
-
     return

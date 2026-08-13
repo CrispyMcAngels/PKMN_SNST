@@ -219,3 +219,9 @@
 .equ MAP_SCRIPT_ON_DIVE_WARP, 6
 .equ MAP_SCRIPT_ON_RETURN_TO_FIELD, 7
 .equ LEVEL_SCRIPT_TERMIN, 0
+
+mov_exclamation: .byte exclaim, end_m
+
+mov_question: .byte say_question, end_m
+
+mov_step_right: .byte walk_right, end_m

@@ -1,80 +1,80 @@
 #org @EventScript_Borgo_Ponente_4_0_tileA_text1
-Mamma: Ciao [PLAYER],\pfinalmente ti sei svegliato,\nspero tu abbia dormito bene.\pTuo fratello Crispy ti stava\ncercando, mi ha detto qualcosa\lriguardo il percorso 1.
+[RED]Mamma[BLACK]: Ciao [LIGHT_BLUE][PLAYER][BLACK],\pfinalmente ti sei svegliato,\nspero tu abbia dormito bene.\pTuo fratello [BLUE]Crispy[BLACK] ti stava\ncercando, mi ha detto qualcosa\lriguardo il [GREEN]Percorso 1[BLACK].
 
 #org @EventScript_Borgo_Ponente_4_0_mom_text1
-Mamma: Ciao [PLAYER], sei andato a\nparlare con Crispy?
+[RED]Mamma[BLACK]: Ciao [LIGHT_BLUE][PLAYER][BLACK], sei andato a\nparlare con [BLUE]Crispy[BLACK]?
 
 #org @EventScript_Borgo_Ponente_4_0_mom_text2
-Mamma: Ciao [PLAYER], tu e i tuoi\nPok\emon sembrate molto stanchi,\lperch[1A] non riposate un po'?
+[RED]Mamma[BLACK]: Ciao [LIGHT_BLUE][PLAYER][BLACK], tu e i tuoi\nPok\emon sembrate molto stanchi,\lperch[1A] non riposate un po'?
 
 #org @EventScript_Borgo_Ponente_4_0_mom_text3
-Mamma: Adesso si che avete un'aria\nriposata e pronta all'avventura[.]\pFate buon viaggio!
+[RED]Mamma[BLACK]: Adesso si che avete un'aria\nriposata e pronta all'avventura[.]\pFate buon viaggio!
 
 #org @EventScript_Borgo_Ponente_4_0_mom_text4
-Mamma: Ciao [PLAYER], come sta\nandando la tua avventura?
+[RED]Mamma[BLACK]: Ciao [LIGHT_BLUE][PLAYER][BLACK], come sta\nandando la tua avventura?
 
 #org @EventScript_Borgo_Ponente_4_0_mom_text5
-[PLAYER]: [.]
+[LIGHT_BLUE][PLAYER][BLACK]: [.]
 
 #org @EventScript_Borgo_Ponente_4_0_mom_text6
-Mamma: Wow, incredibile!\pHai davvero affrontato il Team\nDusk assieme a tuo fratello?\pOrmai non sei pi[26] il piccolo\nbambino di una volta[.]\pCome mamma devo riconoscerlo e non\nimpedirti di proseguire il tuo\lpercorso[.]\pPrendi queste!
+[RED]Mamma[BLACK]: Wow, incredibile!\pHai davvero affrontato il [DUSK]Team\nDusk[BLACK] assieme a tuo fratello?\pOrmai non sei pi[26] il piccolo\nbambino di una volta[.]\pCome mamma devo riconoscerlo e non\nimpedirti di proseguire il tuo\lpercorso[.]\pPrendi queste!
 
 #org @EventScript_Borgo_Ponente_4_0_mom_text7
-[PLAYER] riceve le Scarpe da Corsa!
+[LIGHT_BLUE][PLAYER][BLACK] riceve le [GREEN]Scarpe da Corsa[BLACK]!
 
 #org @EventScript_Borgo_Ponente_4_0_mom_text8
-Mamma: D'ora in poi puoi premere B\nper correre pi[26] veloce!\pInoltre, premendo il tasto R (S\nsulla tastiera), entrerai in\lmodalit[16] AUTORUN.
+[RED]Mamma[BLACK]: D'ora in poi puoi premere B\nper correre pi[26] veloce!\pInoltre, premendo il tasto R (S\nsulla tastiera), entrerai in\lmodalit[16] [GREEN]AUTORUN[BLACK].
 
 #org @EventScript_Borgo_Ponente_4_0_mom_text9
-Mamma: [PLAYER] devi essere\nesausto dopo tutto quello che [1A]\lsuccesso, perch[1A] non vai in\lcamera tua a farti una bella\ldormita?
+[RED]Mamma[BLACK]: [LIGHT_BLUE][PLAYER][BLACK] devi essere\nesausto dopo tutto quello che [1A]\lsuccesso, perch[1A] non vai in\lcamera tua a farti una bella\ldormita?
 
 #org @EventScript_Borgo_Ponente_4_0_mom_text10
-Dopo una lunga giornata di\navventure, [PLAYER] riesce\lfinalmente a riposarsi[.]
+[BLACK]Dopo una lunga giornata di\navventure, [LIGHT_BLUE][PLAYER][BLACK] riesce\lfinalmente a riposarsi[.]
 
 #org @EventScript_Borgo_Ponente_4_0_mom_P1a_text1
-Mamma: Eccoti [PLAYER], che cosa\nvoleva tuo fratello?
+[RED]Mamma[BLACK]: Eccoti [LIGHT_BLUE][PLAYER][BLACK], che cosa\nvoleva tuo fratello?
 
 #org @EventScript_Borgo_Ponente_4_0_mom_P1a_text2
-Mamma: Che cosa?\nHai catturato un Pok\emon?\pMa [1A] fantastico, di che Pok\emon\nsi tratta?
+[RED]Mamma[BLACK]: Che cosa?\nHai catturato un Pok\emon?\pMa [1A] fantastico, di che Pok\emon\nsi tratta?
 
 #org @EventScript_Borgo_Ponente_4_0_mom_P1a_text3
-[PLAYER] mostra Axew alla Mamma[.]
+[LIGHT_BLUE][PLAYER][BLACK] mostra [GREEN]Axew[BLACK] alla [RED]Mamma[BLACK][.]
 
 #org @EventScript_Borgo_Ponente_4_0_mom_P1a_text4
-Mamma: Wow, un Axew! sei stato\ndavvero fortunato!\pCome hai fatto a catturarlo?
+[RED]Mamma[BLACK]: Wow, un [GREEN]Axew[BLACK]! sei stato\ndavvero fortunato!\pCome hai fatto a catturarlo?
 
 #org @EventScript_Borgo_Ponente_4_0_mom_P1a_text5
-Mamma: Uno Skuntank ha attaccato\nte e Naomi e Axew [1A] arrivato a\lproteggervi?\pA questo punto sembra proprio che\nAxew fosse destinato ad essere il\ltuo Pok\emon[.]
+[RED]Mamma[BLACK]: Uno [RED]Skuntank[BLACK] ha attaccato\nte e [RED]Naomi[BLACK] e [GREEN]Axew[BLACK] [1A] arrivato a\lproteggervi?\pA questo punto sembra proprio che\n[GREEN]Axew[BLACK] fosse destinato ad essere il\ltuo Pok\emon[.]
 
 #org @EventScript_Borgo_Ponente_4_0_mom_P1a_text6
-Mamma: Questo spiegherebbe anche\nperch[1A] i tuoi vestiti sono tutti\lsporchi!\pTieni, prendi questi vestiti\npuliti!
+[RED]Mamma[BLACK]: Questo spiegherebbe anche\nperch[1A] i tuoi vestiti sono tutti\lsporchi!\pTieni, prendi questi vestiti\npuliti!
 
 #org @EventScript_Borgo_Ponente_4_0_mom_P1a_text7
-[PLAYER] riceve Vestiti Arancioni! 
+[LIGHT_BLUE][PLAYER][BLACK] riceve [ORANGE]Vestiti Arancioni[BLACK]! 
 
 #org @EventScript_Borgo_Ponente_4_0_mom_P1a_text8
-Mamma: Per cambiarti i vestiti,\ninteragisci con l'armadio in fondo\lalle scale.
+[RED]Mamma[BLACK]: Per cambiarti i vestiti,\ninteragisci con l'armadio in fondo\lalle scale.
 
 #org @Borgo_Ponente_4_0_Armadio_text1
-[PLAYER]: Questo armadio [1A] vuoto[.]
+[LIGHT_BLUE][PLAYER][BLACK]: Questo armadio [1A] vuoto[.]
 
 #org @Borgo_Ponente_4_0_Armadio_Arancione_text1
-[PLAYER] interagisce con l'armadio:
+[LIGHT_BLUE][PLAYER][BLACK] interagisce con l'armadio:
 
 #org @blu_ow_text
-Blu
+[BLUE]Blu
 
 #org @orange_ow_text
-Arancioni
+[ORANGE]Arancioni
 
 #org @armadio_msg
 Quali vestiti vuoi indossare?
 
 #org @Borgo_Ponente_4_0_Armadio_already_blue_text1
-Stai gi[16] indossando i vestiti\nblu!
+Stai gi[16] indossando i vestiti\n[BLUE]blu[BLACK]!
 
 #org @Borgo_Ponente_4_0_Armadio_already_orange_text1
-Stai gi[16] indossando i vestiti\narancioni!
+Stai gi[16] indossando i vestiti\n[ORANGE]arancioni[BLACK]!
 
 #org @Borgo_Ponente_4_0_Armadio_already_green_text1
-Stai gi[16] indossando i vestiti\nverdi!
+Stai gi[16] indossando i vestiti\n[GREEN]verdi[BLACK]!

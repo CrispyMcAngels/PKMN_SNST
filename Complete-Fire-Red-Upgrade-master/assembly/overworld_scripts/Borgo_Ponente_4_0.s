@@ -124,8 +124,9 @@ EventScript_Borgo_Ponente_4_0_tileA:
 EventScript_Borgo_Ponente_4_0_tileA_P1:
 	applymovement 0x1 Borgo_Ponente_4_0_tileA_mov1
 	waitmovement 0x0
-	
-	textcolor 0x01
+	sound 0x15
+	applymovement 0x1 Borgo_Ponente_4_0_tileA_mov1_a
+	waitmovement 0x0
     showpokepic 0x3B3 0x0 0x6
     msgbox EventScript_Borgo_Ponente_4_0_tileA_text1 MSG_NORMAL
     special 0x15A
@@ -139,6 +140,9 @@ EventScript_Borgo_Ponente_4_0_tileA_P1:
 Borgo_Ponente_4_0_tileA_mov1:
 	.byte 0x1A
 	.byte 0x3 
+	.byte 0xFE
+
+Borgo_Ponente_4_0_tileA_mov1_a:
 	.byte 0x62
 	.byte 0x1A
 	.byte 0x13
@@ -172,7 +176,9 @@ EventScript_Borgo_Ponente_4_0_tileB_P1:
 	pause 0x1E
 	applymovement 0x1 Borgo_Ponente_4_0_tileB_mov1
 	waitmovement 0x0
-	textcolor 0x01
+	sound 0x15
+	applymovement 0x1 Borgo_Ponente_4_0_tileB_mov1_a
+	waitmovement 0x0
     showpokepic 0x3b3 0x0 0x6
     msgbox EventScript_Borgo_Ponente_4_0_tileA_text1 MSG_NORMAL
     special 0x15A
@@ -185,6 +191,9 @@ EventScript_Borgo_Ponente_4_0_tileB_P1:
 Borgo_Ponente_4_0_tileB_mov1:
 	.byte 0x1A
 	.byte 0x3 
+	.byte 0xFE
+
+Borgo_Ponente_4_0_tileB_mov1_a:
 	.byte 0x62
 	.byte 0x1A
 	.byte 0x13
@@ -222,7 +231,7 @@ EventScript_Borgo_Ponente_4_0_mom:
 	if 0x1 _call EventScript_Borgo_Ponente_4_0_mom_P1a
 	checkflag 0x95B
 	if 0x1 _call EventScript_Borgo_Ponente_4_0_mom_P2
-	textcolor 0x01
+	
 	showpokepic 0x3b3 0x0 0x6
 	msgbox EventScript_Borgo_Ponente_4_0_mom_text2 MSG_NORMAL
 	special 0x15A
@@ -231,7 +240,7 @@ EventScript_Borgo_Ponente_4_0_mom:
 	waitfanfare
 	special 0x0
 	fadescreen 0x0
-	textcolor 0x01
+	
 	showpokepic 0x3b3 0x0 0x6
 	msgbox EventScript_Borgo_Ponente_4_0_mom_text3 MSG_NORMAL
 	special 0x15A
@@ -240,7 +249,7 @@ EventScript_Borgo_Ponente_4_0_mom:
 
 
 	EventScript_Borgo_Ponente_4_0_mom_P1:
-		textcolor 0x01
+		
 		showpokepic 0x3b3 0x0 0x6
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text1 MSG_NORMAL
 		special 0x15A
@@ -248,19 +257,19 @@ EventScript_Borgo_Ponente_4_0_mom:
 		end
 
 	EventScript_Borgo_Ponente_4_0_mom_P1a:
-		textcolor 0x01
+		
 		showpokepic 0x3b3 0x0 0x6
 		msgbox EventScript_Borgo_Ponente_4_0_mom_P1a_text1 MSG_NORMAL
 		special 0x15A
-		applymovement 0x1 Borgo_Ponente_4_0_mom_mov1
+		applymovement 0x1 mov_exclamation
 		waitmovement 0x1
 		pause 0x1E
-		textcolor 0x01
+		
 		showpokepic 0x3b3 0x0 0x6
 		msgbox EventScript_Borgo_Ponente_4_0_mom_P1a_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
-		textcolor 0x02
+		
 		msgbox EventScript_Borgo_Ponente_4_0_mom_P1a_text3 MSG_NORMAL
 		pause 0x1E
 		showpokepic 0x297 0xA 0x5
@@ -268,7 +277,7 @@ EventScript_Borgo_Ponente_4_0_mom:
 		pause 0x1E
 		special 0x15A
 		pause 0x1E
-		textcolor 0x01
+		
 		showpokepic 0x3b3 0x0 0x6
 		msgbox EventScript_Borgo_Ponente_4_0_mom_P1a_text4 MSG_NORMAL
 		special 0x15A
@@ -280,24 +289,25 @@ EventScript_Borgo_Ponente_4_0_mom:
 		compare 0x4002 0x7
 		if 0x1 _call Borgo_Ponente_4_0_mom_P1a_down
 		pause 0x1e
-		textcolor 0x01
+		
 		showpokepic 0x3b3 0x0 0x6
 		msgbox EventScript_Borgo_Ponente_4_0_mom_P1a_text5 MSG_NORMAL
 		special 0x15A
 		pause 0x1e
-		applymovement 0x1 Borgo_Ponente_4_0_mom_mov1
+		sound 0x15
+		applymovement 0x1 mov_exclamation
 		waitmovement 0x1
 		pause 0x1e
-		textcolor 0x01
+		
 		showpokepic 0x3b3 0x0 0x6
 		msgbox EventScript_Borgo_Ponente_4_0_mom_P1a_text6 MSG_NORMAL
 		special 0x15A
 		//vestiti arancioni
 		fanfare 0x0101
-		textcolor 0x02
+		
 		msgbox EventScript_Borgo_Ponente_4_0_mom_P1a_text7 MSG_NORMAL
 		pause 0x1E
-		textcolor 0x01
+		
 		showpokepic 0x3b3 0x0 0x6
 		msgbox EventScript_Borgo_Ponente_4_0_mom_P1a_text8 MSG_NORMAL
 		special 0x15A
@@ -307,11 +317,6 @@ EventScript_Borgo_Ponente_4_0_mom:
 		if 0x1 _call EventScript_Borgo_Ponente_4_0_mom_P2
 		release
 		end
-
-		Borgo_Ponente_4_0_mom_mov1:
-			.byte 0x62
-			.byte 0xFE
-
 
 		Borgo_Ponente_4_0_mom_P1a_up:
 			applymovement 0xFF Borgo_Ponente_4_0_mom_P1_mov2
@@ -356,12 +361,11 @@ EventScript_Borgo_Ponente_4_0_mom:
 		return
 
 	EventScript_Borgo_Ponente_4_0_mom_P3:
-		textcolor 0x01
+		
 		showpokepic 0x3b3 0x0 0x6
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text4 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
-		textcolor 0x00
 		compare 0x501F 0x100
 		if 0x1 _call Player_Blue
 		compare 0x501F 0x1A3
@@ -370,21 +374,22 @@ EventScript_Borgo_Ponente_4_0_mom:
 		if 0x1 _call Player_Green
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text5 MSG_NORMAL
 		special 0x15A
-		pause 0x1E		
-		applymovement 0x1 Borgo_Ponente_4_0_mom_P3_mov1
+		pause 0x1E	
+		sound 0x15	
+		applymovement 0x1 mov_exclamation
 		waitmovement 0x0
-		textcolor 0x01
+		
 		showpokepic 0x3b3 0x0 0x6
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text6 MSG_NORMAL
 		special 0x15A		
 		pause 0x1E
 		fanfare 0x0101
-		textcolor 0x02
+		
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text7 MSG_NORMAL
 		waitfanfare
 		setflag 0x82F
 		pause 0x1E
-		textcolor 0x01
+		
 		showpokepic 0x3b3 0x0 0x6
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text8 MSG_NORMAL
 		special 0x15A
@@ -392,7 +397,7 @@ EventScript_Borgo_Ponente_4_0_mom:
 		applymovement 0x1 Borgo_Ponente_4_0_mom_P3_mov2
 		waitmovement 0x0
 		faceplayer
-		textcolor 0x01
+		
 		showpokepic 0x3b3 0x0 0x6
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text9 MSG_NORMAL
 		special 0x15A
@@ -402,17 +407,13 @@ EventScript_Borgo_Ponente_4_0_mom:
 		setvar 0x4051 0x29
 		setvar 0x4050 0x6
 		playsong 0x0 0x0
-		textcolor 0x02
+		
 		writebytetooffset 0x30 0x4000012
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text10 0x7
 		writebytetooffset 0x0 0x4000012
 		warpmuted 0x04 0x01 0xFF 0x02 0x05
 		release
 		end			
-
-		Borgo_Ponente_4_0_mom_P3_mov1:
-			.byte 0x62
-			.byte 0xFE
 
 		Borgo_Ponente_4_0_mom_P3_mov2:
 			.byte 0x2 
@@ -421,13 +422,13 @@ EventScript_Borgo_Ponente_4_0_mom:
 			.byte 0xFE
 
 		Player_Blue:
-			showpokepic 0x3b6 0x15 0x6
+			showpokepic 0x3b6 0x0 0x6
 			return
 
 		Player_Orange:
-			showpokepic 0x3bE 0x15 0x6
+			showpokepic 0x3bE 0x0 0x6
 			return
 
 		Player_Green:
-			showpokepic 0x3bF 0x15 0x6
+			showpokepic 0x3bF 0x0 0x6
 			return

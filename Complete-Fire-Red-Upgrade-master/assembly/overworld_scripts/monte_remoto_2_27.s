@@ -102,7 +102,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part1:
     special 0x113
     applymovement 0x7F MonteRemoto_2_27_MapScriptOnFrame_mov1a
     waitmovement 0x0
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text2 MSG_NORMAL
     special 0x15A
@@ -110,7 +110,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part1:
     //Crono si guarda attorno
     applymovement 0xFF MonteRemoto_2_27_MapScriptOnFrame_mov2
     waitmovement 0x0
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //Il tramonto d'altronde...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text3 MSG_NORMAL
@@ -119,7 +119,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part1:
     //camera move up a far vedere il tramonto
     applymovement 0x7F MonteRemoto_2_27_MapScriptOnFrame_mov3
     waitmovement 0x0 
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //...Incantevole...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text4 MSG_NORMAL
@@ -128,21 +128,21 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part1:
     //camera move down di nuovo alla statua
     applymovement 0x7F MonteRemoto_2_27_MapScriptOnFrame_mov4
     waitmovement 0x0 
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //Chi l'avrebbe mai detto...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text5 MSG_NORMAL
     special 0x15A
 
     pause 0x1E
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //Fermare il tempo...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text6 MSG_NORMAL
     special 0x15A
     
     pause 0x1E
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //Il tempo e' il tiranno...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text7 MSG_NORMAL
@@ -151,7 +151,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part1:
     //crono pausa e look down
     applymovement 0xFF MonteRemoto_2_27_MapScriptOnFrame_mov5
     waitmovement 0x0 
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //Io, Crono...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text8 MSG_NORMAL
@@ -163,7 +163,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part1:
     waitmovement 0x0
 
     pause 0x1E
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //Da allora...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text9 MSG_NORMAL
@@ -297,7 +297,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part2:
     applymovement 0xFF MonteRemoto_2_27_MapScriptOnFrame_mov11
     applymovement 0x10 MonteRemoto_2_27_MapScriptOnFrame_mov11
     waitmovement 0x0
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //La fine del mio viaggio e' vicina...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text11 MSG_NORMAL
@@ -317,13 +317,13 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part2:
     movesprite 0x8 0x0D 0x10
     applymovement 0x10 MonteRemoto_2_27_MapScriptOnFrame_mov16
     waitmovement 0x0
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //Grazie alla fiamma...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text12 MSG_NORMAL
     special 0x15A   
     pause 0x1E
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //Oh guardiano del tempo
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text13 MSG_NORMAL
@@ -336,13 +336,13 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part2:
 
     cry 0xFA 0x0
     movesprite 0x1 0x0C 0x0E
-    textcolor 0x2
+    
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text15 MSG_NORMAL
     pause 0x1E
 
     showpokepic 0x3AB 0x0 0x6
     //Ed ora diventa mio!
-    textcolor 0x00
+    
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text16 MSG_NORMAL
     special 0x15A   
     pause 0x1E
@@ -350,7 +350,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part2:
     applymovement 0x1 MonteRemoto_2_27_MapScriptOnFrame_mov17
     waitmovement 0x0
     pause 0x1E
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //Attraverso il potere...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text17 MSG_NORMAL
@@ -363,13 +363,13 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part2:
     applymovement 0x10 MonteRemoto_2_27_MapScriptOnFrame_mov18
     waitmovement 0x0
     pause 0x1E
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //Ma che?\pNon e' possibile...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text18 MSG_NORMAL
     special 0x15A
     pause 0x1E
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //Sta arrivando qualcuno...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text19 MSG_NORMAL
@@ -386,7 +386,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part2:
     movesprite 0x2 0x0C 0x21
     pause 0x1E
     pause 0x1E
-    textcolor 0x00
+    
     showpokepic 0x3ac 0x0 0x6
     //...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text20 MSG_NORMAL
@@ -397,7 +397,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part2:
     createsprite 0x5C 0x8 0x0B 0x21 0x7 0x0
     createsprite 0x5C 0x9 0x0C 0x1F 0x7 0x0
     createsprite 0x5C 0xA 0x0D 0x21 0x7 0x0
-    textcolor 0x00
+    
     showpokepic 0x3ac 0x0 0x6
     //Rilascio
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text21 MSG_NORMAL
@@ -528,7 +528,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part3:
     pause 0x1E
     applymovement 0x10 MonteRemoto_2_27_MapScriptOnFrame_mov21
     waitmovement 0x0
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     special 0x15A 
     showpokepic 0x3AB 0x0 0x6
@@ -537,7 +537,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part3:
     special 0x15A
     pause 0x1E
     pause 0x1E
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //Sconfiggili
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text23 MSG_NORMAL
@@ -555,7 +555,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part3:
     pause 0x1E
     spriteface 0x3 0x4
     cry 0xF3 0x0
-    textcolor 0x2
+    
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text24 MSG_NORMAL
     movesprite 0xB 0x0C 0x15
     applymovement 0xB MonteRemoto_2_27_MapScriptOnFrame_mov20b
@@ -567,7 +567,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part3:
     pause 0x1E
     spriteface 0x4 0x3
     cry 0xF5 0x0
-    textcolor 0x2
+    
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text25 MSG_NORMAL
     movesprite 0xD 0x0C 0x14
     applymovement 0xD MonteRemoto_2_27_MapScriptOnFrame_mov20b
@@ -578,7 +578,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part3:
     pause 0x1E
     pause 0x1E
     cry 0xF4 0x0
-    textcolor 0x2
+    
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text26 MSG_NORMAL
     movesprite 0xC 0x0C 0x15
     applymovement 0xC MonteRemoto_2_27_MapScriptOnFrame_mov20b
@@ -616,7 +616,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part3:
     //Crono speech
 
     pause 0x1E
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     special 0x15A 
     showpokepic 0x3AB 0x0 0x6
@@ -639,7 +639,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part3:
     setvar 0x8007 0xF
     special 0x136
     sound 0xC
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     special 0x15A 
     showpokepic 0x3AB 0x0 0x6
@@ -738,7 +738,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part4:
     waitmovement 0xFF
     pause 0x1E
     pause 0x1E
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     special 0x15A 
     showpokepic 0x3AB 0x0 0x6
@@ -756,11 +756,12 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part4:
     fadescreen 0x2
     pause 0x1E
     pause 0x1E
+    sound 0x15
     applymovement 0x10 MonteRemoto_2_27_MapScriptOnFrame_mov27
     applymovement 0xFF MonteRemoto_2_27_MapScriptOnFrame_mov28a
     waitmovement 0x10
     pause 0x1E
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     special 0x15A 
     showpokepic 0x3AB 0x0 0x6
@@ -771,7 +772,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part4:
     applymovement 0x10 MonteRemoto_2_27_MapScriptOnFrame_mov28
     waitmovement 0x0
     pause 0x1E
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     special 0x15A 
     showpokepic 0x3AB 0x0 0x6
@@ -805,7 +806,6 @@ MonteRemoto_2_27_MapScriptOnFrame_mov27a:
 
 
 MonteRemoto_2_27_MapScriptOnFrame_mov27:
-    .byte 0x19
     .byte 0x63
     .byte 0x19
     .byte 0x62
@@ -871,7 +871,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part5:
     fadescreen 0x0
     applymovement 0xFF MonteRemoto_2_27_MapScriptOnFrame_mov30
     waitmovement 0x0
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //Ebbene si...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text32 MSG_NORMAL
@@ -899,14 +899,14 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part5:
 
     pause 0x1E
     pause 0x1E
-    textcolor 0x00
-    showpokepic 0x3ad 0x15 0x6
+    
+    showpokepic 0x3ad 0x0 0x6
     //Vesper...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text33 MSG_NORMAL
     special 0x15A
     pause 0x1E
-    textcolor 0x01
-    showpokepic 0x3bd 0x15 0x6
+    
+    showpokepic 0x3bd 0x0 0x6
     //Umbra...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text33a MSG_NORMAL
     special 0x15A
@@ -916,15 +916,15 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part5:
     waitmovement 0x0
 
     pause 0x1E
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //Eccellente steven...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text34 MSG_NORMAL
     special 0x15A
 
     pause 0x1E
-    textcolor 0x01
-    showpokepic 0x3bd 0x15 0x6
+    
+    showpokepic 0x3bd 0x0 0x6
     //Sissignore
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text35 MSG_NORMAL
     special 0x15A
@@ -959,7 +959,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part5:
     waitmovement 0x0
 
     pause 0x1E
-    textcolor 0x00
+    
     showpokepic 0x3AB 0x0 0x6
     //A presto...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text36 MSG_NORMAL
@@ -984,7 +984,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part5:
     special 0x113
     applymovement 0x7F MonteRemoto_2_27_MapScriptOnFrame_mov35
     waitmovement 0x0   
-    textcolor 0x00
+    
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text37 MSG_NORMAL
     pause 0x1E
     applymovement 0x7F MonteRemoto_2_27_MapScriptOnFrame_mov36

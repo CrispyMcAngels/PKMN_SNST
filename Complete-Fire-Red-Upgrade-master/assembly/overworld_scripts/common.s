@@ -32,8 +32,8 @@ EventScript_common_healing_pkmn_center:
         end
         
         EventScript_common_healing_pkmn_center_PK1:
-            applymovement 0x1 m_FaceLeft
-            waitmovement 0x1
+            applymovement LASTTALKED m_FaceLeft
+            waitmovement LASTTALKED
             pause 0x9
             sound 0x17
             setmaptile 0x6 0x3 0x2CD 0x1
@@ -46,14 +46,14 @@ EventScript_common_healing_pkmn_center:
             setmaptile 0x6 0x4 0x29D 0x1
             special 0x8e
             pause 0x9        
-            applymovement 0x1 m_FaceDown
-            waitmovement 0x1
+            applymovement LASTTALKED m_FaceDown
+            waitmovement LASTTALKED
             goto EventScript_common_healing_pkmn_center_P2
             end
 
         EventScript_common_healing_pkmn_center_PK2:
-            applymovement 0x1 m_FaceLeft
-            waitmovement 0x1
+            applymovement LASTTALKED m_FaceLeft
+            waitmovement LASTTALKED
             pause 0x9
             sound 0x17
             setmaptile 0x6 0x3 0x2CD 0x1
@@ -79,14 +79,14 @@ EventScript_common_healing_pkmn_center:
             setmaptile 0x6 0x4 0x29D 0x1
             special 0x8e
             pause 0x9                     
-            applymovement 0x1 m_FaceDown
-            waitmovement 0x1
+            applymovement LASTTALKED m_FaceDown
+            waitmovement LASTTALKED
             goto EventScript_common_healing_pkmn_center_P2
             end
 
         EventScript_common_healing_pkmn_center_PK3:
-            applymovement 0x1 m_FaceLeft
-            waitmovement 0x1
+            applymovement LASTTALKED m_FaceLeft
+            waitmovement LASTTALKED
             pause 0x9
             sound 0x17
             setmaptile 0x6 0x3 0x2CD 0x1
@@ -119,14 +119,14 @@ EventScript_common_healing_pkmn_center:
             setmaptile 0x6 0x4 0x29D 0x1
             special 0x8e
             pause 0x9                     
-            applymovement 0x1 m_FaceDown
-            waitmovement 0x1
+            applymovement LASTTALKED m_FaceDown
+            waitmovement LASTTALKED
             goto EventScript_common_healing_pkmn_center_P2
             end
 
         EventScript_common_healing_pkmn_center_PK4:
-            applymovement 0x1 m_FaceLeft
-            waitmovement 0x1
+            applymovement LASTTALKED m_FaceLeft
+            waitmovement LASTTALKED
             pause 0x9
             sound 0x17
             setmaptile 0x6 0x3 0x2CD 0x1
@@ -144,8 +144,8 @@ EventScript_common_healing_pkmn_center:
             setmaptile 0x5 0x3 0x2D4 0x1
             special 0x8e
             pause 0x1E
-            applymovement 0x1 m_FaceRight
-            waitmovement 0x1
+            applymovement LASTTALKED m_FaceRight
+            waitmovement LASTTALKED
             pause 0x9
             sound 0x17
             setmaptile 0x8 0x3 0x2DE 0x1
@@ -158,8 +158,8 @@ EventScript_common_healing_pkmn_center:
             setmaptile 0x8 0x4 0x2A7 0x1           
             special 0x8E
             pause 0x9
-            applymovement 0x1 m_FaceLeft
-            waitmovement 0x1           
+            applymovement LASTTALKED m_FaceLeft
+            waitmovement LASTTALKED       
             pause 0x9
             setmaptile 0x5 0x3 0x2CE 0x1
             special 0x8e
@@ -174,14 +174,14 @@ EventScript_common_healing_pkmn_center:
             setmaptile 0x6 0x4 0x29D 0x1
             special 0x8e
             pause 0x9                     
-            applymovement 0x1 m_FaceDown
-            waitmovement 0x1
+            applymovement LASTTALKED m_FaceDown
+            waitmovement LASTTALKED
             goto EventScript_common_healing_pkmn_center_P2
             end
 
         EventScript_common_healing_pkmn_center_PK5:
-            applymovement 0x1 m_FaceLeft
-            waitmovement 0x1
+            applymovement LASTTALKED m_FaceLeft
+            waitmovement LASTTALKED
             pause 0x9
             sound 0x17
             setmaptile 0x6 0x3 0x2CD 0x1
@@ -199,8 +199,8 @@ EventScript_common_healing_pkmn_center:
             setmaptile 0x5 0x3 0x2D4 0x1
             special 0x8e
             pause 0x1E
-            applymovement 0x1 m_FaceRight
-            waitmovement 0x1
+            applymovement LASTTALKED m_FaceRight
+            waitmovement LASTTALKED
             pause 0x9
             sound 0x17
             setmaptile 0x8 0x3 0x2DE 0x1
@@ -226,8 +226,8 @@ EventScript_common_healing_pkmn_center:
             setmaptile 0x8 0x4 0x2A7 0x1           
             special 0x8E
             pause 0x9
-            applymovement 0x1 m_FaceLeft
-            waitmovement 0x1           
+            applymovement LASTTALKED m_FaceLeft
+            waitmovement LASTTALKED        
             pause 0x9
             setmaptile 0x5 0x3 0x2CE 0x1
             special 0x8e
@@ -242,14 +242,14 @@ EventScript_common_healing_pkmn_center:
             setmaptile 0x6 0x4 0x29D 0x1
             special 0x8e
             pause 0x9                     
-            applymovement 0x1 m_FaceDown
-            waitmovement 0x1
+            applymovement LASTTALKED m_FaceDown
+            waitmovement LASTTALKED
             goto EventScript_common_healing_pkmn_center_P2
             end
 
         EventScript_common_healing_pkmn_center_PK6:
-            applymovement 0x1 m_FaceLeft
-            waitmovement 0x1
+            applymovement LASTTALKED m_FaceLeft
+            waitmovement LASTTALKED
             pause 0x9
             sound 0x17
             setmaptile 0x6 0x3 0x2CD 0x1
@@ -267,8 +267,8 @@ EventScript_common_healing_pkmn_center:
             setmaptile 0x5 0x3 0x2D4 0x1
             special 0x8e
             pause 0x1E
-            applymovement 0x1 m_FaceRight
-            waitmovement 0x1
+            applymovement LASTTALKED m_FaceRight
+            waitmovement LASTTALKED
             pause 0x9
             sound 0x17
             setmaptile 0x8 0x3 0x2DE 0x1
@@ -301,8 +301,8 @@ EventScript_common_healing_pkmn_center:
             setmaptile 0x8 0x4 0x2A7 0x1           
             special 0x8E
             pause 0x9
-            applymovement 0x1 m_FaceLeft
-            waitmovement 0x1           
+            applymovement LASTTALKED m_FaceLeft
+            waitmovement LASTTALKED        
             pause 0x9
             setmaptile 0x5 0x3 0x2CE 0x1
             special 0x8e
@@ -317,8 +317,8 @@ EventScript_common_healing_pkmn_center:
             setmaptile 0x6 0x4 0x29D 0x1
             special 0x8e
             pause 0x9                     
-            applymovement 0x1 m_FaceDown
-            waitmovement 0x1
+            applymovement LASTTALKED m_FaceDown
+            waitmovement LASTTALKED
             goto EventScript_common_healing_pkmn_center_P2
             end
 
@@ -430,3 +430,4 @@ EventScript_Common_CutFillerText:
 	end
 
 m_CutTree: .byte cut_tree, end_m
+

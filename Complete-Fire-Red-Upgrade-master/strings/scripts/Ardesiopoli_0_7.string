@@ -1,33 +1,33 @@
 //_/////////////////////////////////
 #org @Ardesiopoli_0_7_NPC1_text1
-Sono nei guai!\pPrima volevo farmi uno spuntino e\nho deciso di mangiare qualche fungo\ldalla dispensa.\pErano deliziosi e morso dopo morso\nsono finiti tutti!\pRiusciresti a raccoglierne un po'\nnei percorsi qui vicino e\lportarmeli?\pTe ne sarei molto grato, i miei\nclienti saranno furiosi se i piatti\lsaranno senza funghi!
+[BLACK]Sono nei guai!\pPrima volevo farmi uno spuntino e\nho deciso di mangiare qualche [GREEN]fungo[BLACK]\ldalla dispensa.\pErano deliziosi e morso dopo morso\nsono finiti tutti!\pRiusciresti a raccoglierne un po'\nnei percorsi qui vicino e\lportarmeli?\pTe ne sarei molto grato, i miei\nclienti saranno furiosi se i piatti\lsaranno senza [GREEN]funghi[BLACK]!
 
 #org @Ardesiopoli_0_7_NPC1_text2
-Psss[.] sei riuscito[.] a trovare\nquei funghi?\pStanno iniziando ad arrivare parecchie\nordinazioni dove servono[.]
+[BLACK]Psss[.] sei riuscito[.] a trovare\nquei [GREEN]funghi[BLACK]?\pStanno iniziando ad arrivare parecchie\nordinazioni dove servono[.]
 
 #org @Ardesiopoli_0_7_NPC1_text3
-Incredibile, questi sono funghi di\nottima qualit[16]!
+[BLACK]Incredibile, questi sono [GREEN]funghi[BLACK] di\nottima qualit[16]!
 
 #org @Ardesiopoli_0_7_NPC1_text4
-Accetta questo come ricompensa!
+[BLACK]Accetta questo come ricompensa!
 
 #org @Ardesiopoli_0_7_NPC1_text5
-Grazie ai funghi che mi hai portato\nil risotto ai funghi scottati alla\lCharmeleon sta andando a ruba!
+[BLACK]Grazie ai [GREEN]funghi[BLACK] che mi hai portato\nil risotto ai funghi scottati alla\lCharmeleon sta andando a ruba!
 
 #org @Ardesiopoli_0_7_NPC2_text1
-Benvenuto alla Tavola di Pietra!\pTi consiglio il nostro piatto forte\ndi oggi: Stufato di Tauros con\lcontorno di patate croccanti.
+[BLACK]Benvenuto alla [GREEN]Tavola di Pietra[BLACK]!\pTi consiglio il nostro piatto forte\ndi oggi: Stufato di Tauros con\lcontorno di patate croccanti.
 
 #org @Ardesiopoli_0_7_NPC3_text1
-Ho sentito che questo ristorante era\nfamoso[.]\pMa non immaginavo anche cos[1E]\nsuggestivo!\pPerfetto dopo una visita al museo\ndi Ardesiopoli.
+[BLACK]Ho sentito che questo ristorante era\nfamoso[.]\pMa non immaginavo anche cos[1E]\nsuggestivo!\pPerfetto dopo una visita al [GREEN]Museo\ndi Ardesiopoli[BLACK].
 
 #org @Ardesiopoli_0_7_NPC4_text1
-Ai miei tempi non c'erano tutte queste\nspezie, ma devo dire che qui sanno\lusare bene anche il sale del deserto.
+[BLACK]Ai miei tempi non c'erano tutte queste\nspezie, ma devo dire che qui sanno\lusare bene anche il sale del deserto.
 
 #org @Ardesiopoli_0_7_NPC5_text1
-Filiberto viene qui spesso, lo\nsapevi?\pDice che il carpaccio di Kabuto\ngli ricorda le sue prime scoperte.
+[ORANGE]Filiberto[BLACK] viene qui spesso, lo\nsapevi?\pDice che il carpaccio di Kabuto\ngli ricorda le sue prime scoperte.
 
 #org @Ardesiopoli_0_7_NPC6_text1
-Sto cercando di studiare e mangiare\nallo stesso tempo.\pNon [1A] facile quando il profumo ti\ndistrae!
+[BLACK]Sto cercando di studiare e mangiare\nallo stesso tempo.\pNon [1A] facile quando il profumo ti\ndistrae!
 
 #org @Ardesiopoli_0_7_NPC7_text1
-Dicono che mangiare qui prima di\nuna sfida aumenti le probabilit[16]\ldi vittoria[.]\pSar[16] vero?
+[BLACK]Dicono che mangiare qui prima di\nuna sfida aumenti le probabilit[16]\ldi vittoria[.]\pSar[16] vero?

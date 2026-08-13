@@ -1,23 +1,23 @@
 #org @EventScript_Capp_temporale_3_47_text1
-???: Ci siamo quasi[.]\pFinalmente la mia missione [1A]\nconclusa[.]
+[DARK_GRAY]???[BLACK]: Ci siamo quasi[.]\pFinalmente la mia missione [1A]\nconclusa[.]
 
 #org @EventScript_Capp_temporale_3_47_text2
-???: L'ingranaggio del tempo di\nquesta linea temporale [1A] al suo\lposto[.]\p[.]Ora l'intero spazio-tempo\ntorner[16] in equilibrio[.]
+[DARK_GRAY]???[BLACK]: L'[GREEN]Ingranaggio del Tempo[BLACK] di\nquesta linea temporale [1A] al suo\lposto[.]\p[.]Ora l'intero spazio-tempo\ntorner[16] in equilibrio[.]
 
 #org @EventScript_Capp_temporale_3_47_text3
-???: Non temere, amico mio[.]\n[.]Esci pure allo scoperto,\lso che sei qui[.]
+[DARK_GRAY]???[BLACK]: Non temere, amica mia[.]\n[.]Esci pure allo scoperto,\lso che sei qui[.]
 
 #org @EventScript_Capp_temporale_3_47_text4
-Celebi: Biiii!
+[DARK_GREEN]Celebi[BLACK]: Biiii!
 
 #org @EventScript_Capp_temporale_3_47_text5
-???: [05] ora di tornare a casa,\nmia vecchia amica[.]\pSai cosa fare[.]
+[DARK_GRAY]???[BLACK]: [05] ora di tornare a casa,\nmia vecchia amica[.]\pSai cosa fare[.]
 
 #org @EventScript_Capp_temporale_3_47_text6
-???: Ho portato a termine la mia\nmissione[.]\pOra tutto dipende da te[.]\p[.][PLAYER][.]
+[DARK_GRAY]???[BLACK]: Ho portato a termine la mia\nmissione[.]\pOra tutto dipende da te[.]\p[.][LIGHT_BLUE][PLAYER][BLACK][.]
 
 #org @EventScript_Capp_temporale_3_47_text7
-[.]
+[BLACK][.]
 
 #org @EventScript_Capp_temporale_3_47_text8
 Atto II:\pIl risveglio della\nLeggenda[.]

@@ -70,7 +70,6 @@ gMapScripts_Capp_temporale_3_47:
 		applymovement 0x4 Capp_temporale_3_47_mov1
 		waitmovement 0x0
 		showpokepic 0x3B9 0x0 0x6
-		textcolor 0x0
     	msgbox EventScript_Capp_temporale_3_47_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1e
@@ -78,7 +77,6 @@ gMapScripts_Capp_temporale_3_47:
 		sound 0xC
 		pause 0x1e
 		showpokepic 0x3B9 0x0 0x6
-		textcolor 0x0
     	msgbox EventScript_Capp_temporale_3_47_text2 MSG_NORMAL
 		special 0x15A		
 		pause 0x1e
@@ -87,7 +85,6 @@ gMapScripts_Capp_temporale_3_47:
 		waitmovement 0x4
 		pause 0x1e
 		showpokepic 0x3B9 0x0 0x6
-		textcolor 0x0
     	msgbox EventScript_Capp_temporale_3_47_text3 MSG_NORMAL
 		special 0x15A		
 		pause 0x1e	
@@ -98,19 +95,16 @@ gMapScripts_Capp_temporale_3_47:
 		movesprite 0x2 0x06 0x09
 		pause 0x1E
 		cry 0xFB 0x0
-		textcolor 0x1
 		msgbox EventScript_Capp_temporale_3_47_text4 MSG_NORMAL
 		applymovement 0x2 Capp_temporale_3_47_mov4
 		waitmovement 0x0
 		spritebehave 0x2 0x43
 		spriteface 0x4 0x3
 		showpokepic 0x3B9 0x0 0x6
-		textcolor 0x0
     	msgbox EventScript_Capp_temporale_3_47_text5 MSG_NORMAL
 		special 0x15A		
 		pause 0x1e
 		cry 0xFB 0x0
-		textcolor 0x1
 		msgbox EventScript_Capp_temporale_3_47_text4 MSG_NORMAL
 
 		applymovement 0x2 Capp_temporale_3_47_mov5
@@ -190,7 +184,7 @@ gMapScripts_Capp_temporale_3_47:
 	Capp_temporale_3_47_MapScriptOnFrameBegin_P2:
 		pause 0x1E
 		cry 0xFB 0x0
-		textcolor 0x2
+		
 		msgbox EventScript_Capp_temporale_3_47_text4 MSG_NORMAL
 		applymovement 0x2 Capp_temporale_3_47_mov6
 		waitmovement 0x2
@@ -200,7 +194,6 @@ gMapScripts_Capp_temporale_3_47:
 		waitmovement 0x4
 		pause 0x1E
 		showpokepic 0x3B9 0x0 0x6
-		textcolor 0x0
     	msgbox EventScript_Capp_temporale_3_47_text6 MSG_NORMAL
 		special 0x15A
 		pause 0x1e

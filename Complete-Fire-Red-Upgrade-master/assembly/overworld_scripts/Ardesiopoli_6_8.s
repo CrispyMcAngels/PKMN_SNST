@@ -53,16 +53,16 @@ gMapScripts_Ardesiopoli_6_8:
 			waitmovement 0x2
 			spriteface 0xFF 0x1
 			pause 0x1E
-			textcolor 0x1
+			
 			msgbox Ardesiopoli_6_8_MapScriptOnFrameBegin_text1 MSG_NORMAL
 			pause 0x1E
 			fanfare 0x0103
-			textcolor 0x2
+			
 			msgbox Mission_Completed_text1 MSG_NORMAL
 			pause 0x1E
 			//close mission
 			setflag 0x96C
-			textcolor 0x1
+			
 			msgbox Ardesiopoli_6_8_MapScriptOnFrameBegin_text2 MSG_NORMAL
 			//variable to decouple later on
 			setvar 0x4060 0x4
@@ -72,10 +72,10 @@ gMapScripts_Ardesiopoli_6_8:
 			if 0x1 _goto Ardesiopoli_6_8_MapScriptOnFrameBegin_Full
 			fanfare 0x013E
 			giveegg 0x25F
-			textcolor 0x2
+			
 			msgbox Ardesiopoli_6_8_MapScriptOnFrameBegin_text4 MSG_NORMAL
 			pause 0x1E
-			textcolor 0x1
+			
 			msgbox Ardesiopoli_6_8_MapScriptOnFrameBegin_text5 MSG_NORMAL
 			spriteface 0x2 0x3
 			pause 0x1E
@@ -90,7 +90,7 @@ gMapScripts_Ardesiopoli_6_8:
 			end
 
 			Ardesiopoli_6_8_MapScriptOnFrameBegin_Full:
-				textcolor 0x1
+				
 				msgbox Ardesiopoli_6_8_MapScriptOnFrameBegin_text3 MSG_NORMAL
 				releaseall
 				end
@@ -118,10 +118,10 @@ EventScript_Ardesiopoli_6_8_NPC1:
 	if 0x1 _goto Ardesiopoli_6_8_MapScriptOnFrameBegin_Full
 	fanfare 0x013E
 	giveegg 0x25F
-	textcolor 0x2
+	
 	msgbox Ardesiopoli_6_8_MapScriptOnFrameBegin_text4 MSG_NORMAL
 	pause 0x1E
-	textcolor 0x1
+	
 	msgbox Ardesiopoli_6_8_MapScriptOnFrameBegin_text5 MSG_NORMAL
 	spriteface 0x2 0x3
 	pause 0x1E
@@ -148,7 +148,7 @@ EventScript_Ardesiopoli_6_8_NPC0:
 	pause 0x1E
 	faceplayer
 	playsong 0x112 0x0
-	applymovement 0x1 Ardesiopoli_6_8_NPC0_mov1
+	applymovement 0x1 mov_exclamation
 	waitmovement 0x0
 	pause 0x1E
 	trainerbattle1 0x1 0x1A 0x0 Ardesiopoli_6_8_NPC0_text2 Ardesiopoli_6_8_NPC0_text3 EventScript_Ardesiopoli_6_8_NPC0_P2
@@ -158,7 +158,8 @@ EventScript_Ardesiopoli_6_8_NPC0:
 	EventScript_Ardesiopoli_6_8_NPC0_P2:
 		fadedefault
 		pause 0x1E
-		applymovement 0x1 Ardesiopoli_6_8_NPC0_mov1
+		sound 0x15
+		applymovement 0x1 mov_exclamation
 		waitmovement 0x0
 		showpokepic 0x3BB 0x0 0x6
 		msgbox Ardesiopoli_6_8_NPC0_text4 MSG_NORMAL
@@ -177,10 +178,6 @@ EventScript_Ardesiopoli_6_8_NPC0:
 		warp 0x6 0x8 0xFF 0x03 0x06
 		release
 		end
-
-	Ardesiopoli_6_8_NPC0_mov1:
-		.byte 0x62
-		.byte 0xFE
 
 	Ardesiopoli_6_8_NPC0_mov2:
 		.byte 0x1C

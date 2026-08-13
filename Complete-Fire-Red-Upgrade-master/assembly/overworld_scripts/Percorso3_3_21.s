@@ -32,6 +32,9 @@ EventScript_Percorso3_3_21_tile0:
 	pause 0x1E
 	applymovement 0x12 Percorso3_3_21_tile0_mov0
 	waitmovement 0x12
+	sound 0x15
+	applymovement 0x12 mov_exclamation
+	waitmovement 0x12
 	cry 0xB2 0x0
 	msgbox Percorso3_3_21_tile0_text1 MSG_NORMAL
 	pause 0x1E
@@ -41,7 +44,8 @@ EventScript_Percorso3_3_21_tile0:
 	movesprite2 0x12 0x1B 0x07	
 	movesprite 0x12 0x1B 0x07
 	pause 0x1E
-	applymovement 0xFF Percorso3_3_21_tile0_mov2
+	sound 0x15
+	applymovement 0xFF mov_question
 	waitmovement 0xFF	
 	pause 0x1E
 	compare 0x501F 0x100
@@ -50,7 +54,7 @@ EventScript_Percorso3_3_21_tile0:
 	if 0x1 _call Player_Orange
 	compare 0x501F 0x1A4
 	if 0x1 _call Player_Green
-	textcolor 0x0
+	
     msgbox Percorso3_3_21_tile0_text2 MSG_NORMAL
     special 0x15A
 	setvar 0x4051 0x37
@@ -61,7 +65,6 @@ EventScript_Percorso3_3_21_tile0:
 	Percorso3_3_21_tile0_mov0:
 		.byte 0x2
 		.byte 0x1C
-		.byte 0x62
 		.byte 0xFE
 
 	Percorso3_3_21_tile0_mov1:
@@ -78,10 +81,6 @@ EventScript_Percorso3_3_21_tile0:
 		.byte 0x20
 		.byte 0xFE
 
-	Percorso3_3_21_tile0_mov2:
-		.byte 0x63
-		.byte 0xFE
-
 .global EventScript_Percorso3_3_21_tile1
 EventScript_Percorso3_3_21_tile1:
 	lockall
@@ -91,7 +90,7 @@ EventScript_Percorso3_3_21_tile1:
 	if 0x1 _call Player_Orange
 	compare 0x501F 0x1A4
 	if 0x1 _call Player_Green
-	textcolor 0x0
+	
     msgbox Percorso3_3_21_tile1_text1 MSG_NORMAL
     special 0x15A
 	applymovement 0xFF Percorso3_3_21_tile1_mov0
@@ -120,7 +119,7 @@ EventScript_Percorso3_3_21_tile2:
 	movesprite2 0x12 0x0 0x0	
 	movesprite 0x12 0x0 0x0
 	pause 0x1E
-	applymovement 0xFF Percorso3_3_21_tile2_mov2
+	applymovement 0xFF mov_exclamation
 	waitmovement 0xFF
 	compare 0x501F 0x100
 	if 0x1 _call Player_Blue
@@ -128,7 +127,7 @@ EventScript_Percorso3_3_21_tile2:
 	if 0x1 _call Player_Orange
 	compare 0x501F 0x1A4
 	if 0x1 _call Player_Green
-	textcolor 0x0
+	
     msgbox Percorso3_3_21_tile2_text1 MSG_NORMAL
     special 0x15A
 	setvar 0x4051 0x38
@@ -145,21 +144,17 @@ EventScript_Percorso3_3_21_tile2:
 		.byte 0x1E
 		.byte 0xFE
 
-	Percorso3_3_21_tile2_mov2:
-		.byte 0x62
-		.byte 0xFE
-
 
 		Player_Blue:
-			showpokepic 0x3b6 0x15 0x6
+			showpokepic 0x3b6 0x0 0x6
 			return
 
 		Player_Orange:
-			showpokepic 0x3bE 0x15 0x6
+			showpokepic 0x3bE 0x0 0x6
 			return
 
 		Player_Green:
-			showpokepic 0x3bF 0x15 0x6
+			showpokepic 0x3bF 0x0 0x6
 			return
 
 

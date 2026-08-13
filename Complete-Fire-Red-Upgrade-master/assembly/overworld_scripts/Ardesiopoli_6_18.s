@@ -42,6 +42,9 @@ EventScript_Ardesiopoli_6_18_NPC0:
 	if 0x1 _goto EventScript_Ardesiopoli_6_18_NPC0_P1
 	applymovement 0x1 Ardesiopoli_6_18_mov1
 	waitmovement 0x1
+	sound 0x15
+	applymovement 0x1 Ardesiopoli_6_18_mov1_a
+	waitmovement 0x1
 	movesprite 0x1 0x09 0x08
 	movesprite2 0x1 0x09 0x08
 	spritebehave 0x1 0x0
@@ -52,6 +55,9 @@ EventScript_Ardesiopoli_6_18_NPC0:
 	Ardesiopoli_6_18_mov1:
 		.byte 0x52
 		.byte 0x52
+		.byte 0xFE
+
+	Ardesiopoli_6_18_mov1_a:		
 		.byte 0x62
 		.byte 0x1E
 		.byte 0x20
@@ -64,6 +70,7 @@ EventScript_Ardesiopoli_6_18_NPC0:
 		.byte 0xFE
 
 	EventScript_Ardesiopoli_6_18_NPC0_P1:
+		sound 0x15
 		applymovement 0x1 Ardesiopoli_6_18_mov2
 		waitmovement 0x1
 		movesprite 0x1 0x0E 0x0C

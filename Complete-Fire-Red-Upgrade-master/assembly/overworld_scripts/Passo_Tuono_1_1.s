@@ -64,6 +64,7 @@ gMapScripts_Passo_Tuono_1_1:
 			movesprite2 0xF 0x24 0x0
 			movesprite2 0x10 0x24 0x0
 			movesprite2 0x11 0x24 0x0
+			movesprite2 0x12 0x24 0x0
 			return
 
 		Passo_Tuono_1_1_MapScriptOnLoad_Dusk:
@@ -139,15 +140,18 @@ gMapScripts_Passo_Tuono_1_1:
 			waitmovement 0x7F
 			pause 0x1E
 			showpokepic 0x3AB 0x0 0x6
-			textcolor 0x0
+			
 			msgbox Passo_Tuono_1_1_text1 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
 			applymovement 0x2 Passo_Tuono_1_1_mov2
 			waitmovement 0x2
+			sound 0x15
+			applymovement 0x2 Passo_Tuono_1_1_mov2_a
+			waitmovement 0x2
 			spriteface 0x1 0x2
 			pause 0x1E
-			showpokepic 0x3AD 0x15 0x6
+			showpokepic 0x3AD 0x0 0x6
 			msgbox Passo_Tuono_1_1_text2 MSG_NORMAL
 			special 0x15A						
 			pause 0x1E
@@ -155,7 +159,7 @@ gMapScripts_Passo_Tuono_1_1:
 			waitmovement 0x2	
 			spriteface 0x1 0x4	
 			pause 0x1E
-			showpokepic 0x3AD 0x15 0x6
+			showpokepic 0x3AD 0x0 0x6
 			msgbox Passo_Tuono_1_1_text3 MSG_NORMAL
 			special 0x15A	
 			pause 0x1E
@@ -165,7 +169,7 @@ gMapScripts_Passo_Tuono_1_1:
 			msgbox Passo_Tuono_1_1_text4 MSG_NORMAL
 			special 0x15A
 			pause 0x2E
-			showpokepic 0x3AD 0x15 0x6
+			showpokepic 0x3AD 0x0 0x6
 			msgbox Passo_Tuono_1_1_text5 MSG_NORMAL
 			special 0x15A	
 			pause 0x2E
@@ -182,6 +186,7 @@ gMapScripts_Passo_Tuono_1_1:
 			sound 0x9
 			fadescreen 0x2
 			pause 0x2E
+			sound 0x15
 			applymovement 0x2 Passo_Tuono_1_1_mov5
 			waitmovement 0x2
 			pause 0x1E
@@ -251,6 +256,9 @@ gMapScripts_Passo_Tuono_1_1:
 			Passo_Tuono_1_1_mov2:
 				.byte 0x1 
 				.byte 0x1A
+				.byte 0xFE
+
+			Passo_Tuono_1_1_mov2_a:
 				.byte 0x62
 				.byte 0x1C
 				.byte 0x11
@@ -515,7 +523,8 @@ EventScript_Passo_Tuono_1_1_Sign_SOL:
 		special 0x136
 		sound 0xC
 		waitstate
-		applymovement 0xFF Passo_Tuono_1_1_Sign_SOL_3B_mov1
+		sound 0x15
+		applymovement 0xFF mov_exclamation
 		waitmovement 0xFF
 		pause 0x1E
 		msgbox Passo_Tuono_1_1_Sign4_text3 MSG_NORMAL
@@ -531,11 +540,6 @@ EventScript_Passo_Tuono_1_1_Sign_SOL:
 		setmaptile 0x17 0x14 0x224 0x0
 		special 0x8E
 		end
-
-
-		Passo_Tuono_1_1_Sign_SOL_3B_mov1:
-			.byte 0x62
-			.byte 0xFE
 
 //DUSK_NPCS
 

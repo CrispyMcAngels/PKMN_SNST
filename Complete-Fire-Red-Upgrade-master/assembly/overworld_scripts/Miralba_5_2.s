@@ -40,7 +40,7 @@ EventScript_Miralba_5_2_NPC1:
 	pause 0x1E
 	lock
 	fanfare 0x0102
-	textcolor 0x2
+	
 	msgbox Mission_Received_text1 MSG_NORMAL
 	setflag 0x965
 	release
@@ -141,18 +141,18 @@ EventScript_Miralba_5_2_NPC1:
 			EventScript_Miralba_5_2_NPC1_P4:
 				lock
 				faceplayer
-				textcolor 0x2
+				
 				msgbox EventScript_Miralba_5_2_NPC1_text5 MSG_NORMAL
 				pause 0x1E
 				fanfare 0x0103
 				lock
 				hidesprite 0x3
-				textcolor 0x2
+				
 				msgbox Mission_Completed_text1 MSG_NORMAL
-				textcolor 0x1
+				
 				msgbox EventScript_Miralba_5_2_NPC1_text6 MSG_NORMAL
 				pause 0x1E
-				textcolor 0x2
+				
 				fanfare 0x0101
 				msgbox EventScript_Miralba_5_2_NPC1_text7 MSG_NORMAL
 				pause 0x1E

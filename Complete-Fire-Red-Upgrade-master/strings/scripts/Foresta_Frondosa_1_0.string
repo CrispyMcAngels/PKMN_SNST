@@ -8,151 +8,151 @@ La Foresta Frondosa [1A] famosa in\ntutta la regione per i suoi alberi\ldi dimen
 [ARROW_UP] Belvedere
 
 #org @Foresta_Frondosa_1_0_NPC0_text1
-Recluta Dusk: Hei moccioso!\nChe ci fai qui?
+[DUSK]Recluta Dusk[BLACK]: Hei moccioso!\nChe ci fai qui?
 
 #org @Foresta_Frondosa_1_0_NPC0_text2
 Hai avuto fortuna[.]
 
 #org @Foresta_Frondosa_1_0_NPC0_text3
-Recluta Dusk: Vuoi sapere\nperch[1A] siamo qui?\pBeh, bella domanda[.]
+[DUSK]Recluta Dusk[BLACK]: Vuoi sapere\nperch[1A] siamo qui?\pBeh, bella domanda[.]
 
 #org @Foresta_Frondosa_1_0_NPC1_text1
-Recluta Dusk: Non puoi stare qui[.]
+[DUSK]Recluta Dusk[BLACK]: Non puoi stare qui[.]
 
 #org @Foresta_Frondosa_1_0_NPC1_text2
 Non ci voleva[.]
 
 #org @Foresta_Frondosa_1_0_NPC1_text3
-Recluta Dusk: Abbiamo tagliato\ntutti gli alberi, spero il capo\labbia trovato quello che cercava.
+[DUSK]Recluta Dusk[BLACK]: Abbiamo tagliato\ntutti gli alberi, spero il capo\labbia trovato quello che cercava.
 
 #org @Foresta_Frondosa_1_0_NPC2_text1
-Recluta Dusk: Allarme intrusi!
+[DUSK]Recluta Dusk[BLACK]: Allarme intrusi!
 
 #org @Foresta_Frondosa_1_0_NPC2_text2
 Incredibile
 
 #org @Foresta_Frondosa_1_0_NPC2_text3
-Recluta Dusk: non riuscirai a\nfermare i piani del Team Dusk[.]
+[DUSK]Recluta Dusk[BLACK]: non riuscirai a\nfermare i piani del Team Dusk[.]
 
 #org @Foresta_Frondosa_1_0_NPC3_text1
-Recluta Dusk: Non puoi stare qui!
+[DUSK]Recluta Dusk[BLACK]: Non puoi stare qui!
 
 #org @Foresta_Frondosa_1_0_NPC3_text2
 Chi lo dice al capo adesso?
 
 #org @Foresta_Frondosa_1_0_NPC3_text3
-Recluta Dusk: Dicono che in questa\nforesta ci siano tracce di Pok\emon\lleggendari[.]
+[DUSK]Recluta Dusk[BLACK]: Dicono che in questa\nforesta ci siano tracce di Pok\emon\lleggendari[.]
 
 #org @Foresta_Frondosa_1_0_NPC4_text1
-Recluta Dusk: Altol[16]!
+[DUSK]Recluta Dusk[BLACK]: Altol[16]!
 
 #org @Foresta_Frondosa_1_0_NPC4_text2
 Per bacco!
 
 #org @Foresta_Frondosa_1_0_NPC4_text3
-Recluta Dusk: Mi hanno messo di\nguardia qui, ma non ho idea dove\lporti questa strada.
+[DUSK]Recluta Dusk[BLACK]: Mi hanno messo di\nguardia qui, ma non ho idea dove\lporti questa strada.
 
 #org @Foresta_Frondosa_1_0_NPC5_text1
-Recluta Dusk: Non passerai da\nquesta parte!
+[DUSK]Recluta Dusk[BLACK]: Non passerai da\nquesta parte!
 
 #org @Foresta_Frondosa_1_0_NPC5_text2
 Non ci voleva
 
 #org @Foresta_Frondosa_1_0_NPC5_text3
-Recluta Dusk: Il capo [1A] pi[26]\navanti, ci penser[16] lui a\lsconfiggerti!
+[DUSK]Recluta Dusk[BLACK]: Il capo [1A] pi[26]\navanti, ci penser[16] lui a\lsconfiggerti!
 
 #org @Foresta_Frondosa_1_0_NPC6_text1
-Recluta Dusk: Sono stufo di\ntagliare alberi, una bella sfida\l[1A] pi[26] invitante!
+[DUSK]Recluta Dusk[BLACK]: Sono stufo di\ntagliare alberi, una bella sfida\l[1A] pi[26] invitante!
 
 #org @Foresta_Frondosa_1_0_NPC6_text2
 E ora che faccio?
 
 #org @Foresta_Frondosa_1_0_NPC6_text3
-Recluta Dusk: Questo [1A] solo un\nalbero, nulla di interessante!
+[DUSK]Recluta Dusk[BLACK]: Questo [1A] solo un\nalbero, nulla di interessante!
 
 #org @Foresta_Frondosa_1_0_NPC7_text1
 Treecko Treecko!!!
 
 #org @Foresta_Frondosa_1_0_NPC7_text2
-[PLAYER]: Questi Pok\emon sembrano\nmolto arrabbiati, meglio starne\lalla larga!
+[LIGHT_BLUE][PLAYER][BLACK]: Questi Pok\emon sembrano\nmolto arrabbiati, meglio starne\lalla larga!
 
 #org @Foresta_Frondosa_1_0_NPC7_text3
-???: C'[1A] un motivo se questi\nTreecko sono cos[1E] spaventati.\pIl Team Dusk, una banda di\ncriminali, ha sradicato tutti gli\lalberi secolari della foresta.\pLa loro casa, per chiss[16] quale\lmotivo[.]\pForse mangiando una Bacca\npotrebbero calmarsi[.]
+[ORANGE]???[BLACK]: C'[1A] un motivo se questi\nTreecko sono cos[1E] spaventati.\pIl [DUSK]Team Dusk[BLACK], una banda di\ncriminali, ha sradicato tutti gli\lalberi secolari della foresta.\pLa loro casa, per chiss[16] quale\lmotivo[.]\pForse mangiando una Bacca\npotrebbero calmarsi[.]
 
 #org @Foresta_Frondosa_1_0_NPC7_text4
-???: Se non erro dovrebbero\nesserci delle bacche gustose poco\lpi[26] Nord della Foresta Frondosa[.]\pPerch[1A] non provi a trovarne una\ne metterla in quella mangiatoia?
+[ORANGE]???[BLACK]: Se non erro dovrebbero\nesserci delle bacche gustose poco\lpi[26] Nord della [GREEN]Foresta Frondosa[BLACK][.]\pPerch[1A] non provi a trovarne una\ne metterla in quella mangiatoia?
 
 #org @Foresta_Frondosa_1_0_NPC9_text1
-Treecko-Tree!
+[BLACK]Treecko-Tree!
 
 #org @Foresta_Frondosa_1_0_NPC10_text1
-???: Hai visto quei Treecko?\nSembrano molto spaventati[.]
+[ORANGE]???[BLACK]: Hai visto quei [GREEN]Treecko[BLACK]?\nSembrano molto spaventati[.]
 
 #org @Foresta_Frondosa_1_0_NPC10_text2
-???: Se non erro dovrebbero\nesserci delle bacche gustose poco\lpi[26] Nord della Foresta Frondosa[.]\pPerch[1A] non provi a trovarne una\ne metterla in quella mangiatoia?
+[ORANGE]???[BLACK]: Se non erro dovrebbero\nesserci delle bacche gustose poco\lpi[26] Nord della [GREEN]Foresta Frondosa[BLACK][.]\pPerch[1A] non provi a trovarne una\ne metterla in quella mangiatoia?
 
 #org @Foresta_Frondosa_1_0_NPC12_text1
-Penso che i Pok\emon coleottero\nsiano molto fighi!
+[BLACK]Penso che i Pok\emon coleottero\nsiano molto fighi!
 
 #org @Foresta_Frondosa_1_0_NPC12_text2
 I fighi non perdono!
 
 #org @Foresta_Frondosa_1_0_NPC12_text3
-Se hai un Pok\emon coleottero,\nla gente ti rispetta.
+[BLACK]Se hai un Pok\emon coleottero,\nla gente ti rispetta.
 
 #org @Foresta_Frondosa_1_0_NPC11_text1
-Ho catturato un sacco di Pok\emon!\pForza! Fatevi valere Pok\emon\ncoleottero!
+[BLACK]Ho catturato un sacco di Pok\emon!\pForza! Fatevi valere Pok\emon\ncoleottero!
 
 #org @Foresta_Frondosa_1_0_NPC11_text2
 Anche con tutti questi Pok\emon,\nnon ho vinto[.]
 
 #org @Foresta_Frondosa_1_0_NPC11_text3
-Forse dovrei allenarmi ancora[.]
+[BLACK]Forse dovrei allenarmi ancora[.]
 
 #org @Foresta_Frondosa_1_0_NPC13_text1
-Una banda di brutti ceffi ha\ntagliato gli alberi secolari,\ll'ho visto con i miei occhi!
+[BLACK]Una banda di brutti ceffi ha\ntagliato gli alberi secolari,\ll'ho visto con i miei occhi!
 
 #org @Foresta_Frondosa_1_0_NPC14_text1
-Esiste un tipo di bacca speciale\nche cresce solo poco a Nord della\lForesta Frondosa.\pMa purtroppo non l'ho ancora\ntrovata.
+[BLACK]Esiste un tipo di bacca speciale\nche cresce solo poco a Nord della\l[GREEN]Foresta Frondosa[BLACK].\pMa purtroppo non l'ho ancora\ntrovata.
 
 #org @Foresta_Frondosa_1_0_NPC15_text1
-Vengo qui da quando sono piccola.\pNon posso credere che ora gli\nalberi secolari non ci siano pi[26].
+[BLACK]Vengo qui da quando sono piccola.\pNon posso credere che ora gli\nalberi secolari non ci siano pi[26].
 
 #org @Foresta_Frondosa_1_0_Sign5_text1
-[05] una mangiatoia per Pok\emon, vuoi\nmetterci dentro una Bacca?
+[BLACK][05] una mangiatoia per Pok\emon, vuoi\nmetterci dentro una [GREEN]Bacca[BLACK]?
 
 #org @Foresta_Frondosa_1_0_Sign5_text2
-[05] una mangiatoia, quale sar[16]\nil cibo preferito dei Pok\emon?
+[BLACK][05] una mangiatoia, quale sar[16]\nil cibo preferito dei Pok\emon?
 
 #org @Foresta_Frondosa_1_0_Sign5_text3
-Non hai nessuna Bacca!
+[BLACK]Non hai nessuna Bacca!
 
 #org @Foresta_Frondosa_1_0_Sign5_text4
-[PLAYER] mette una Baccananas nella\nmangiatoia!
+[LIGHT_BLUE][PLAYER][BLACK] mette una Baccananas nella\nmangiatoia!
 
 #org @Foresta_Frondosa_1_0_Sign5_text5
-???: Guarda come i Treecko si\nsono calmati, ora che hanno\lqualcosa che li rassicura.\pQuesta [1A] la spensieratezza della\nvita che dobbiamo proteggere.\pImmagina un mondo in cui il male\nprende il sopravvento.\pLa bellezza della natura e la\ngioia della vita verrebbero\lsoffocate.\pEcco perch[1A] dobbiamo lottare, per\npreservare questa armonia.
+[ORANGE]???[BLACK]: Guarda come i [GREEN]Treecko[BLACK] si\nsono calmati, ora che hanno\lqualcosa che li rassicura.\pQuesta [1A] la spensieratezza della\nvita che dobbiamo proteggere.\pImmagina un mondo in cui il male\nprende il sopravvento.\pLa bellezza della natura e la\ngioia della vita verrebbero\lsoffocate.\pEcco perch[1A] dobbiamo lottare, per\npreservare questa armonia.
 
 #org @Foresta_Frondosa_1_0_Sign5_text6
-[PLAYER]: ???
+[LIGHT_BLUE][PLAYER][BLACK]: ???
 
 #org @Foresta_Frondosa_1_0_NPC21_text1
-[PLAYER]: Sembra un'antica\npergamena[.]\p[.]Meglio lasciarla dov'[1A][.]
+[LIGHT_BLUE][PLAYER][BLACK]: Sembra un'[GREEN]Antica\nPergamena[BLACK][.]\p[.]Meglio lasciarla dov'[1A][.]
 
 #org @Foresta_Frondosa_1_0_NPC21_text2
-[PLAYER]: Hei, questa dev'essere\nl'antica pergamena del signore di\lMiralba[.]\pVediamo cosa c'[1A] scritto!
+[LIGHT_BLUE][PLAYER][BLACK]: Hei, questa dev'essere\nl'antica pergamena del signore di\l[GREEN]Miralba[BLACK][.]\pVediamo cosa c'[1A] scritto!
 
 #org @Foresta_Frondosa_1_0_NPC21_text3
-Si dice che questa zona sia\navvolta da un'antica leggenda[.]\pMolti anni fa, la Foresta\nFrondosa era dimora di un\lPok\emon leggendario, capace di\lviaggiare attraverso il tempo.\pRintracciarlo [1A] quasi\nimpossibile, poich[1A] si dice che\lcontinui a spostarsi senza sosta\ltra diverse linee temporali,\llasciandosi dietro solo un velo\ldi mistero[.]
+[BLACK]Si dice che questa zona sia\navvolta da un'antica leggenda[.]\pMolti anni fa, la [GREEN]Foresta\nFrondosa[BLACK] era dimora di un\lPok\emon leggendario, capace di\lviaggiare attraverso il tempo.\pRintracciarlo [1A] quasi\nimpossibile, poich[1A] si dice che\lcontinui a spostarsi senza sosta\ltra diverse linee temporali,\llasciandosi dietro solo un velo\ldi mistero[.]
 
 #org @Foresta_Frondosa_1_0_NPC21_text4
-[PLAYER]: [05] davvero una storia\ninteressante, ma come ci [1A] finita\lquesta pergamena qui?
+[LIGHT_BLUE][PLAYER][BLACK]: [05] davvero una storia\ninteressante, ma come ci [1A] finita\lquesta pergamena qui?
 
 #org @Foresta_Frondosa_1_0_NPC21_text4a
-[PLAYER]: Oh no! Sono entrato nel\nterritorio di questo Staravia!
+[LIGHT_BLUE][PLAYER][BLACK]: Oh no! Sono entrato nel\nterritorio di questo [GREEN]Staravia[BLACK]!
 
 #org @Foresta_Frondosa_1_0_NPC21_text5
-STARAVIAAAA!!!
+[BLACK]STARAVIAAAA!!!
 
 #org @Foresta_Frondosa_1_0_NPC21_text6
-[PLAYER]: Probabilmente Staravia\naveva preso la pergamena per\lcostruire il suo nido[.]\pOra non resta che riportarla al\nsuo proprietario[.]
+[LIGHT_BLUE][PLAYER][BLACK]: Probabilmente Staravia\naveva preso la pergamena per\lcostruire il suo nido[.]\pOra non resta che riportarla al\nsuo proprietario[.]

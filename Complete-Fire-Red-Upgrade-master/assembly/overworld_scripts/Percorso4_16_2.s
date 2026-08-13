@@ -10,7 +10,7 @@ gMapScripts_Percorso4_16_2:
     .byte MAP_SCRIPT_TERMIN
 
 		Percorso4_16_2_MapScriptOnLoad:
-			setvar 0x5007 0x7
+			setvar 0x5007 0x14
 			end
 
 

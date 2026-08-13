@@ -1,26 +1,26 @@
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text0
-[PLAYER]: Non [1A] il momento di\nandarsene[.]
+[LIGHT_BLUE][PLAYER][BLACK]: Non [1A] il momento di\nandarsene[.]
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text1
-Naomi: [PLAYER], non credo ai miei\nocchi!\pGuarda dove siamo finiti[.]
+[RED]Naomi[BLACK]: [LIGHT_BLUE][PLAYER][BLACK], non credo ai miei\nocchi!\pGuarda dove siamo finiti[.]
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text2
-Naomi: Quest'antica sala si\ntrova nascosta nei meandri della\lForesta Frondosa da chiss[16]\lquanto tempo ed [1A] stata scoperta\lsolo ora[.]\p[05] incredibile!
+[RED]Naomi[BLACK]: Quest'antica sala si\ntrova nascosta nei meandri della\l[GREEN]Foresta Frondosa[BLACK] da chiss[16]\lquanto tempo ed [1A] stata scoperta\lsolo ora[.]\p[05] incredibile!
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text3
-Naomi: Facciamoci coraggio\n[PLAYER], non possiamo tirarci indietro\lproprio ora!\pFacciamo vedere a queste ultime\nreclute di che pasta siamo fatti.
+[RED]Naomi[BLACK]: Facciamoci coraggio\n[LIGHT_BLUE][PLAYER][BLACK], non possiamo tirarci indietro\lproprio ora!\pFacciamo vedere a queste ultime\nreclute di che pasta siamo fatti.
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text4
-Naomi: Lascia che rimetta in sesto\nla tua squadra.
+[RED]Naomi[BLACK]: Lascia che rimetta in sesto\nla tua squadra.
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text5
-Naomi: Bene, ora non abbiamo\npi[26] scuse.\pDiamoci da fare!
+[RED]Naomi[BLACK]: Bene, ora non abbiamo\npi[26] scuse.\pDiamoci da fare!
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text6
-Recluta Dusk: Allarme intrusi!\nCome avete fatto ad arrivare fin\lqui?!?
+[DUSK]Recluta Dusk[BLACK]: Allarme intrusi!\nCome avete fatto ad arrivare fin\lqui?!?
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text7
-Recluta Dusk: Tra poco vi\nscorter[22] personalmente all'uscita!
+[DUSK]Recluta Dusk[BLACK]: Tra poco vi\nscorter[22] personalmente all'uscita!
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text8
 Fate come volete, ormai [1A] gi[16]\ntroppo tardi[.]
@@ -29,85 +29,85 @@ Fate come volete, ormai [1A] gi[16]\ntroppo tardi[.]
 Ci mancavano solo dei ficcanaso\ncome voi[.]
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text10
-Naomi: Sembra ci siano due reclute\nprima di arrivare al piano superiore,\lio mi occupo della recluta a destra,\ltu procedi a sinistra!
+[RED]Naomi[BLACK]: Sembra ci siano due reclute\nprima di arrivare al piano superiore,\lio mi occupo della recluta a destra,\ltu procedi a sinistra!
 
 #org @Rovine_Ancestrali_1_34_NPC0_text1
-Naomi: Da questa parte ho la\nsituazione sotto controllo.\pTu pensa alla recluta a sinistra.
+[RED]Naomi[BLACK]: Da questa parte ho la\nsituazione sotto controllo.\pTu pensa alla recluta a sinistra.
 
 #org @Rovine_Ancestrali_1_34_NPC1_text1
-Recluta Dusk: Ancora non riesco\na crederci che due marmocchi come\lvoi ci stiano mettendo i bastoni\ltra le ruote.
+[DUSK]Recluta Dusk[BLACK]: Ancora non riesco\na crederci che due marmocchi come\lvoi ci stiano mettendo i bastoni\ltra le ruote.
 
 #org @Rovine_Ancestrali_1_34_NPC2_text1
-Recluta Dusk: Questa [1A] solo\nl'ascesa del Team Dusk, forse\loggi siete riusciti a fermarci!\pMa non intralcerete il nostro\ngrande piano!
+[DUSK]Recluta Dusk[BLACK]: Questa [1A] solo\nl'ascesa del [DUSK]Team Dusk[BLACK], forse\loggi siete riusciti a fermarci!\pMa non intralcerete il nostro\ngrande piano!
 
 #org @Rovine_Ancestrali_1_34_NPC4_text1
-Recluta Dusk: Larvitar usa morso!
+[DUSK]Recluta Dusk[BLACK]: [GREEN]Larvitar[BLACK] usa morso!
 
 #org @Rovine_Ancestrali_1_34_NPC3_text1
-Recluta Dusk: Con le buone o con\nle cattive, ti butter[22] fuori di\lqui!
+[DUSK]Recluta Dusk[BLACK]: Con le buone o con\nle cattive, ti butter[22] fuori di\lqui!
 
 #org @Rovine_Ancestrali_1_34_NPC3_text2
-Recluta Dusk: Non [1A] andata come\npensavo[.]
+Non [1A] andata come pensavo[.]
 
 #org @Rovine_Ancestrali_1_34_NPC3_text3
-Recluta Dusk: Cosa ci facciamo\nqui?\pScoprilo tu stesso, il nostro capo\l[1A] proprio qui sopra!
+[DUSK]Recluta Dusk[BLACK]: Cosa ci facciamo\nqui?\pScoprilo tu stesso, il nostro capo\l[1A] proprio qui sopra!
 
 #org @Rovine_Ancestrali_1_34_tile6_text1
-Crispy: Non te lo chieder[22] una\nseconda volta!\lDimmi chi siete e che cosa ci fate\lqui!
+[GREEN]Crispy[BLACK]: Non te lo chieder[22] una\nseconda volta!\lDimmi chi siete e che cosa ci fate\lqui!
 
 #org @Rovine_Ancestrali_1_34_tile6_text2
-Vesper: Dannazione, se quel tizio\nmascherato non mi avesse sconfitto\lpoco fa, potrei sbarazzarmi di\lquesto arrogante in un batter\ld'occhio!
+[DUSK]Vesper[BLACK]: Dannazione, se quel tizio\nmascherato non mi avesse sconfitto\lpoco fa, potrei sbarazzarmi di\lquesto arrogante in un batter\ld'occhio!
 
 #org @Rovine_Ancestrali_1_34_tile6_text3
-Crispy: Non mi lasci altra scelta!\nSceptile, usa fendifoglia!
+[BLUE]Crispy[BLACK]: Non mi lasci altra scelta!\n[GREEN]Sceptile[BLACK], usa [GREEN]Fendifoglia[BLACK]!
 
 #org @Rovine_Ancestrali_1_34_tile6_text4
 Scep-Sceptile!
 
 #org @Rovine_Ancestrali_1_34_tile6_text5
-Vesper: Fermati!\pD'altronde non mi lasci altra scelta[.]\pLascia che mi presenti:\nIl mio nome [1A] Vesper, e sono il\lcomandante del Team Dusk, un\lgruppo di criminali che ha\ll'obbiettivo di[.]\p[.]Di risvegliare i Pok\emon\nleggendari della regione di Eyros\lper[.]\p[.]Prenderne il sopravvento[.]
+[DUSK]Vesper[BLACK]: Fermati!\pD'altronde non mi lasci altra\lscelta[.]\pLascia che mi presenti:\nIl mio nome [1A] [DUSK]Vesper[BLACK], e sono il\lcomandante del [DUSK]Team Dusk[BLACK], un\lgruppo di criminali che ha\ll'obbiettivo di[.]\p[.]Di risvegliare i Pok\emon\nleggendari della regione di [GREEN]Eyros[BLACK]\lper[.]\p[.]Prenderne il sopravvento[.]
 
 #org @Rovine_Ancestrali_1_34_tile6_text6
-Filiberto: Come dici?\nI Pok\emon leggendari?!?\pPensavo quelle fossero solo antiche\nstorie che si raccontano ai bambini[.]\pNon mi dire[.]\nNon mi dire che queste Rovine sono\lin qualche modo collegate con gli\lantichi Pok\emon di Eyros?
+[ORANGE]Filiberto[BLACK]: Come dici?\nI Pok\emon leggendari?!?\pPensavo quelle fossero solo antiche\nstorie che si raccontano ai bambini[.]\pNon mi dire[.]\nNon mi dire che queste Rovine sono\lin qualche modo collegate con gli\lantichi Pok\emon di [GREEN]Eyros[BLACK]?
 
 #org @Rovine_Ancestrali_1_34_tile6_text7
-Vesper: Sei un tipo sveglio,\nd'altronde da uno scienziato come\lte ce lo si poteva aspettare[.]\pCome si suol dire, in ogni leggenda\nc'[1A] un filo di verit[16], e il Team\lDusk ha ormai scoperto tutto\lquello che c'era da scoprire sugli\lantichi Pok\emon leggendari[.]\pForza ragazzi, leviamo le tende!
+[DUSK]Vesper[BLACK]: Sei un tipo sveglio,\nd'altronde da uno scienziato come\lte ce lo si poteva aspettare[.]\pCome si suol dire, in ogni leggenda\nc'[1A] un filo di verit[16], e il [DUSK]Team\lDusk[BLACK] ha ormai scoperto tutto\lquello che c'era da scoprire sugli\lantichi Pok\emon leggendari[.]\pForza ragazzi, leviamo le tende!
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_text1
-Crispy: [PLAYER], Naomi!\nEro sicuro che ci avreste\lraggiunto anche voi, grazie per\laverci aiutato!\pQuei furfanti sono riusciti a\nsvignarsela con quello che volevano[.]\pSe solo fossimo arrivati un attimo\nprima[.]
+[GREEN]Crispy[BLACK]: [LIGHT_BLUE][PLAYER][BLACK], [RED]Naomi[BLACK]!\nEro sicuro che ci avreste\lraggiunto anche voi, grazie per\laverci aiutato!\pQuei furfanti sono riusciti a\nsvignarsela con quello che\lvolevano[.]\pSe solo fossimo arrivati un attimo\nprima[.]
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_text2
-Filiberto: Non sentirti cos[1E] in\ncolpa Crispy, non potevamo\lesserne al corrente[.]\pPiuttosto, guardiamo anche noi cosa\ncontengono queste Rovine[.]
+[ORANGE]Filiberto[BLACK]: Non sentirti cos[1E] in\ncolpa [GREEN]Crispy[BLACK], non potevamo\lesserne al corrente[.]\pPiuttosto, guardiamo anche noi cosa\ncontengono queste Rovine[.]
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_text3
-Filiberto: Non capisco, sembrano\nincisioni antiche[.]\pVogliono sicuramente comunicare\nqualcosa, ma non riesco a\ldecifrarle[.]\p[PLAYER] perch[1A] non provi a dare un\nocchiata pure te?
+[ORANGE]Filiberto[BLACK]: Non capisco, sembrano\nincisioni antiche[.]\pVogliono sicuramente comunicare\nqualcosa, ma non riesco a\ldecifrarle[.]\p[LIGHT_BLUE][PLAYER][BLACK] perch[1A] non provi a dare un\nocchiata pure te?
 
 #org @Rovine_Ancestrali_1_34_NPC7_text1
-Filiberto: sei riuscito a\ndecifrare le incisioni [PLAYER]?
+[ORANGE]Filiberto[BLACK]: sei riuscito a\ndecifrare le incisioni [LIGHT_BLUE][PLAYER][BLACK]?
 
 #org @Rovine_Ancestrali_1_34_NPC8_text1
-Crispy: Poteva andare meglio, ma\nora l'unica cosa che possiamo\lfare [1A] decifrare queste incisioni.
+[GREEN]Crispy[BLACK]: Poteva andare meglio, ma\nora l'unica cosa che possiamo\lfare [1A] decifrare queste incisioni.
 
 #org @Rovine_Ancestrali_1_34_NPC0_text2
-Naomi: Non trovi sia emozionante\ncombattere i cattivi assieme ad\lallenatori forti come tuo\lfratello e Filiberto?
+[RED]Naomi[BLACK]: Non trovi sia emozionante\ncombattere i cattivi assieme ad\lallenatori forti come tuo\lfratello e [ORANGE]Filiberto[BLACK]?
 
 #org @Rovine_Ancestrali_1_34_tile8_text1
-[PLAYER]: non posso andarmene via\nproprio ora.\pFiliberto ha bisogno del mio aiuto!
+[LIGHT_BLUE][PLAYER][BLACK]: non posso andarmene via\nproprio ora.\p[ORANGE]Filiberto[BLACK] ha bisogno del mio aiuto!
 
 #org @Rovine_Ancestrali_1_34_Sign0_text1
-[PLAYER] da un'occhiata alle incisioni\nsulla parete.
+[LIGHT_BLUE][PLAYER][BLACK] da un'occhiata alle incisioni\nsulla parete.
 
 #org @Rovine_Ancestrali_1_34_Sign0_text2
-Queste incisioni raffigurano gli\nantichi Pok\emon leggendari della\lregione di Eyros.
+Queste incisioni raffigurano gli\nantichi Pok\emon leggendari della\lregione di [GREEN]Eyros[BLACK].
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text1
-Filiberto: [05] incredibile [PLAYER]!\nSei riuscito a risolvere l'enigma.\p[05] proprio vero che buon sangue\nnon mente!
+[ORANGE]Filiberto[BLACK]: [05] incredibile [LIGHT_BLUE][PLAYER][BLACK]!\nSei riuscito a risolvere l'enigma.\p[05] proprio vero che buon sangue\nnon mente!
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text2
-Crispy: Davvero impressionante!\pCosa ti sembrano queste incisioni,\nFiliberto?
+[GREEN]Crispy[BLACK]: Davvero impressionante!\pCosa ti sembrano queste incisioni,\n[ORANGE]Filiberto[BLACK]?
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text3
-Filiberto: A prima vista, queste\nincisioni sembrano combaciare con\lle informazioni fornite dal Team\lDusk[.]\pTuttavia, per esserne certi,\nvorrei prelevarne un frammento e\lportarlo nel mio laboratorio ad\lArdesiopoli.\pL[1E] potr[22] analizzarlo con maggiore\nattenzione e confermare con\lprecisione le sue vere origini.\pSe le nostre ipotesi sono\ncorrette, potremmo essere di fronte\la una scoperta fondamentale!\pNon c'[1A] tempo da perdere!\nDevo tornare subito al mio\llaboratorio e mettermi al lavoro\lper analizzare questo frammento[.]\pCrispy, [PLAYER], vi aspetter[22]\nproprio l[1E] per mostrarvi i\lrisultati delle analisi.
+[ORANGE]Filiberto[BLACK]: A prima vista, queste\nincisioni sembrano combaciare con\lle informazioni fornite dal [DUSK]Team\lDusk[BLACK][.]\pTuttavia, per esserne certi,\nvorrei prelevarne un frammento e\lportarlo nel mio laboratorio ad\lArdesiopoli.\pL[1E] potr[22] analizzarlo con maggiore\nattenzione e confermare con\lprecisione le sue vere origini.\pSe le nostre ipotesi sono\ncorrette, potremmo essere di fronte\la una scoperta fondamentale!\pNon c'[1A] tempo da perdere!\nDevo tornare subito al mio\llaboratorio e mettermi al lavoro\lper analizzare questo frammento[.]\p[GREEN]Crispy[BLACK], [LIGHT_BLUE][PLAYER][BLACK], vi aspetter[22]\nproprio l[1E] per mostrarvi i\lrisultati delle analisi.
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text4
-Crispy: Complimenti [PLAYER]!\n[05] chiaro che come allenatore sei\lgi[16] maturato molto!\pMa parliamone fuori di qui[.]
+[GREEN]Crispy[BLACK]: Complimenti [LIGHT_BLUE][PLAYER][BLACK]!\n[05] chiaro che come allenatore sei\lgi[16] maturato molto!\pMa parliamone fuori di qui[.]

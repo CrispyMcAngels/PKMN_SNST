@@ -22,6 +22,7 @@ gMapScripts_Passo_Tuono_1_131:
 		.hword MAP_SCRIPT_TERMIN
 
 		Passo_Tuono_1_131_MapScriptOnFrameBegin:
+			lockall
 			compare 0x4051 0x43
 			if 0x1 _goto Passo_Tuono_1_131_MapScriptOnFrameBegin_P1
 			releaseall
@@ -32,8 +33,6 @@ gMapScripts_Passo_Tuono_1_131:
 				movesprite 0x5 0x6 0xF	
 				movesprite 0x7 0x8 0xF	
 				movesprite 0x9 0xA 0xF		
-
-
 
 				special 0x113
 				applymovement 0xFF Passo_Tuono_1_131_mov0
@@ -820,7 +819,7 @@ EventScript_Passo_Tuono_1_131_tile3_33:
 		compare 0x5026 0x85
 		if 0x1 _call OW_Player_Green	
 		fadescreen 0x2
-		warpmuted 0x1 0x7C 0xFF 0x6 0x4
+		warpmuted 0x0 0x19 0xFF 0x6 0x4
 		releaseall
 		end
 

@@ -35,9 +35,17 @@ SpecialBuffers = {
     "RED": ["FC", "01", "04"],
     "ORANGE": ["FC", "01", "05"],
     "GREEN": ["FC", "01", "06"],
-    "LIGHT_GREEN": ["FC", "01", "07"],
+    "DARK_GREEN": ["FC", "01", "07"],
     "BLUE": ["FC", "01", "08"],
     "LIGHT_BLUE": ["FC", "01", "09"],
+    "CRONO": ["FC", "01", "0A"],
+    "DUSK": ["FC", "01", "0B"],
+    "DARK_GRAY": ["FC", "01", "0C"],
+    "UNUSED2": ["FC", "01", "0D"],
+    "UNUSED3": ["FC", "01", "0E"],
+    "UNUSED4": ["FC", "01", "0F"],
+
+
     "MAIN_COLOUR": ["FC", "01"],
     "SHADOW_COLOUR": ["FC", "03"],
 

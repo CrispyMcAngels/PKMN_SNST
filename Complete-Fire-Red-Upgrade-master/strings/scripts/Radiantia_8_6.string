@@ -1,12 +1,12 @@
 #org @Radiantia_8_6_Sign0_text1
-Questo dispositivo serve ad\nimmagazzinare tutte le informazioni\lregistrate dagli osservatori. 
+[BLACK]Questo dispositivo serve ad\nimmagazzinare tutte le informazioni\lregistrate dagli osservatori. 
 
 #org @Radiantia_8_5_NPC0_text1
-Murkrow: Krow-Krooow!
+[GREEN]Murkrow[BLACK]: Krow-Krooow!
 
 #org @Radiantia_8_5_NPC0_text2
-[PLAYER]: Questi devono essere i\nMurkrow di cui parlava il\lresponsabile del faro.\pForza, fatevi sotto!
+[LIGHT_BLUE][PLAYER][BLACK]: Questi devono essere i\n[GREEN]Murkrow[BLACK] di cui parlava il\lresponsabile del faro.\pForza, fatevi sotto!
 
 #org @Radiantia_8_5_NPC0_text3
 //_/////////////////////////////////
-[PLAYER]: Fiuuu che faticaccia!\pQuello era l'ultimo, ora non resta\nche dare un'occhiata al piano\lsuperiore[.]
+[LIGHT_BLUE][PLAYER][BLACK]: Fiuuu che faticaccia!\pQuello era l'ultimo, ora non resta\nche dare un'occhiata al piano\lsuperiore[.]

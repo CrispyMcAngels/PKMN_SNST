@@ -1,47 +1,47 @@
 #org @Miralba_3_1_NPC0_text1
-Crispy: [.]Mmh dunque mi stai\ndicendo che sono state scoperte\ldelle rovine vicino al Percorso 2?
+[BLUE]Crispy[BLACK]: [.]Mmh dunque mi stai\ndicendo che sono state scoperte\ldelle rovine vicino al [GREEN]Percorso 2[BLACK]?
 
 #org @Miralba_3_1_NPC0_text2
-Filiberto: Esatto, mi [1A] stato\nriferito che un gruppo di\lallenatori si [1A] accorto di un'\linsenatura nella Fores[.]
+[ORANGE]Filiberto[BLACK]: Esatto, mi [1A] stato\nriferito che un gruppo di\lallenatori si [1A] accorto di un'\linsenatura nella Fores[.]
 
 #org @Miralba_3_1_NPC0_text3
-Crispy: Hei [PLAYER], ce l'hai fatta\nad arrivare!\pTi presento Filiberto, un mio\namico di vecchia data, nonch[1A]\lesperto archeologo e Capopalestra\ldi Ardesiopoli.
+[BLUE]Crispy[BLACK]: Hei [LIGHT_BLUE][PLAYER][BLACK], ce l'hai fatta\nad arrivare!\pTi presento [ORANGE]Filiberto[BLACK], un mio\namico di vecchia data, nonch[1A]\lesperto archeologo e Capopalestra\ldi [GREEN]Ardesiopoli[BLACK].
 
 #org @Miralba_3_1_NPC0_text4
-Filiberto: Piacere di conoscerti\n[PLAYER], se buon sangue non mente\lpure te diventerai un allenatore\lmolto in gamba.\pStavo giusto dicendo a tuo\nfratello che una nuova scoperta\larcheologica [1A] stata fatta poco\llontano da qui[.]
+[ORANGE]Filiberto[BLACK]: Piacere di conoscerti\n[LIGHT_BLUE][PLAYER][BLACK], se buon sangue non mente\lpure te diventerai un allenatore\lmolto in gamba.\pStavo giusto dicendo a tuo\nfratello che una nuova scoperta\larcheologica [1A] stata fatta poco\llontano da qui[.]
 
 #org @Miralba_3_1_NPC0_text5
-Filiberto: Infatti il mio dovere di\ncapo archeologo mi chiama[.]\pTi aspetto l[1E] Crispy.
+[ORANGE]Filiberto[BLACK]: Infatti il mio dovere di\ncapo archeologo mi chiama[.]\pTi aspetto l[1E] [BLUE]Crispy[BLACK].
 
 #org @Miralba_3_1_NPC0_text6
-Crispy: Certamente, sono molto\ncurioso pure io di vedere cos'[1A]\lstato scoperto!\pMostro la citt[16] di Miralba a\n[PLAYER] e ti raggiungo.
+[BLUE]Crispy[BLACK]: Certamente, sono molto\ncurioso pure io di vedere cos'[1A]\lstato scoperto!\pMostro la citt[16] di [GREEN]Miralba[BLACK] a\n[LIGHT_BLUE][PLAYER][BLACK] e ti raggiungo.
 
 #org @Miralba_3_1_NPC0_text7
-Filiberto: A dopo!
+[ORANGE]Filiberto[BLACK]: A dopo!
 
 #org @Miralba_3_1_NPC0_text8
-Crispy: Adesso seguimi, ti mostro\ncome orientarti in questa citt[16].
+[BLUE]Crispy[BLACK]: Adesso seguimi, ti mostro\ncome orientarti in questa citt[16].
 
 #org @Miralba_3_1_NPC0_text9
-Crispy: Questo qui [1A] un Centro\nPok\emon, puoi portarci i tuoi\lPok\emon esausti per farli riposare,\lricordatelo bene durante le tue\lavventure!\pLo puoi riconoscere in ogni citt[16]\ngrazie al suo caratteristico tetto\lrosso!\pBene, proseguiamo.
+[BLUE]Crispy[BLACK]: Questo qui [1A] un Centro\nPok\emon, puoi portarci i tuoi\lPok\emon esausti per farli riposare,\lricordatelo bene durante le tue\lavventure!\pLo puoi riconoscere in ogni citt[16]\ngrazie al suo caratteristico tetto\lrosso!\pBene, proseguiamo.
 
 #org @Miralba_3_1_NPC0_text10
-Crispy: Gli edifici col tetto blu\ninvece si chiamano Pok\emon Market,\lal loro interno puoi comprare\lstrumenti utili, come Pok\eball e\lPozioni.
+[BLUE]Crispy[BLACK]: Gli edifici col tetto blu\ninvece si chiamano Pok\emon Market,\lal loro interno puoi comprare\lstrumenti utili, come [GREEN]Pok\eball[BLACK] e\l[GREEN]Pozioni[BLACK].
 
 #org @Miralba_3_1_NPC0_text11
-Crispy: A proposito di Pok\eball,\nho saputo che con la Pok\eball che\lti ho regalato nel Percorso 1 hai\lcatturato un Axew,\lcomplimenti, [1A] un Pok\emon davvero\lforte!\pSpero che un giorno potremmo\nsfidarci!\pCrispy: Tieni, visto che una l'hai\nusata nel migliore dei modi voglio\lregalartene un altro po'!
+[BLUE]Crispy[BLACK]: A proposito di [GREEN]Pok\eball[BLACK],\nho saputo che con la [GREEN]Pok\eball[BLACK] che\lti ho regalato nel Percorso 1 hai\lcatturato un [GREEN]Axew[BLACK],\lcomplimenti, [1A] un Pok\emon davvero\lforte!\pSpero che un giorno potremmo\nsfidarci!\p[BLUE]Crispy[BLACK]: Tieni, visto che una l'hai\nusata nel migliore dei modi voglio\lregalartene un altro po'!
 
 #org @Miralba_3_1_NPC0_text12
 Chatot-Chatot
 
 #org @Miralba_3_1_NPC0_text13
-Crispy: Questo qui invece [1A] Chatot.\pNe troverai uno in ogni citt[16],\ninteragisci con lui quando non saprai\lcome continuare la tua avventura,\lavr[16] sicuramente qualche\lconsiglio per te!
+[BLUE]Crispy[BLACK]: Questo qui invece [1A] [GREEN]Chatot[BLACK].\pNe troverai uno in ogni citt[16],\ninteragisci con lui quando non saprai\lcome continuare la tua avventura,\lavr[16] sicuramente qualche\lconsiglio per te!
 
 #org @Miralba_3_1_NPC0_text14
-Crispy: Come hai sentito prima,\nora devo raggiungere Filiberto,\lmi pare che il posto si chiami\lForesta Frondosa[.]\pPerch[1A] non vieni pure te?\pCos[1E] vedrai come si comportano dei\lveri allenatori di Pok\emon!
+[BLUE]Crispy[BLACK]: Come hai sentito prima,\nora devo raggiungere [ORANGE]Filiberto[BLACK],\lmi pare che il posto si chiami\l[GREEN]Foresta Frondosa[BLACK][.]\pPerch[1A] non vieni pure te?\pCos[1E] vedrai come si comportano dei\lveri allenatori di Pok\emon!
 
 #org @Miralba_3_1_NPC0_text15
-[PLAYER]: [.]
+[LIGHT_BLUE][PLAYER][BLACK]: [.]
 
 #org @Miralba_Sign0_text1
 Miralba: La solare cittadina dove\nil sole nascente splende sempre.
@@ -65,46 +65,46 @@ Questo pozzo sembra molto profondo\pSul fondo per[22] si vede\nuno spiraglio di 
 ???: [.]
 
 #org @Miralba_3_1_Tile0_text1
-Hei tu, sei un allenatore giusto?\nTi prego ho bisogno del tuo aiuto.\pSeguimi!
+[BLACK]Hei tu, sei un allenatore giusto?\nTi prego ho bisogno del tuo aiuto.\pSeguimi!
 
 #org @Miralba_3_1_Tile0_text2
-Sono venuta qui in questa piazza a\ngiocare assieme al mio fratellino,\lmi sono distratta un momento per\lguardare dei fiori e lui [1A] sparito!\pTi prego, dammi una mano a\ncercarlo, non vorrei si fosse\lcacciato nei guai da qualche parte[.]\pConto sul tuo aiuto ;)
+[BLACK]Sono venuta qui in questa piazza a\ngiocare assieme al mio [GREEN]fratellino[BLACK],\lmi sono distratta un momento per\lguardare dei fiori e lui [1A] sparito!\pTi prego, dammi una mano a\ncercarlo, non vorrei si fosse\lcacciato nei guai da qualche parte[.]\pConto sul tuo aiuto ;)
 
 #org @Miralba_3_1_Tile0_text3
-Hei! Sei riuscito a trovare il mio\nfratellino?
+[BLACK]Hei! Sei riuscito a trovare il mio\n[GREEN]fratellino[BLACK]?
 
 #org @Miralba_3_1_Tile0_text4
-L'ultima volta che l'ho visto stava\ngiocando in questa direzione.
+[BLACK]L'ultima volta che l'ho visto stava\ngiocando in questa direzione.
 
 #org @Miralba_3_1_NPC5_text1
-Grazie ancora per il tuo aiuto, ora\nil mio fratellino [1A] al sicuro.
+[BLACK]Grazie ancora per il tuo aiuto, ora\nil mio [GREEN]fratellino[BLACK] [1A] al sicuro.
 
 #org @Miralba_3_1_MapScriptOnFrame_text1
-Grazie mille per aver aiutato il\nmio fratellino, adesso avr[16]\limparato a giocare in posti pi[26]\lsicuri, ti siamo riconoscenti.\pEcco tieni!
+[BLACK]Grazie mille per aver aiutato il\nmio [GREEN]fratellino[BLACK], adesso avr[16]\limparato a giocare in posti pi[26]\lsicuri, ti siamo riconoscenti.\pEcco tieni!
 
 #org @Miralba_3_1_MapScriptOnFrame_text2
-E anche questo!
+[BLACK]E anche questo!
 
 #org @Miralba_3_1_MapScriptOnFrame_text3
-Ti auguro buona fortuna per il\ntuo viaggio!
+[BLACK]Ti auguro buona fortuna per il\ntuo viaggio!
 
 #org @Miralba_3_1_NPC4_text1
-D'ora in poi star[22] sempre attento\nquando giocher[22] da solo!
+[BLACK]D'ora in poi star[22] sempre attento\nquando giocher[22] da solo!
 
 #org @Miralba_3_1_NPC3_text1
-Ah, giovane, vedo che osservi\nquesto vecchio pozzo.\pVuoi che ti racconti la sua storia?
+[BLACK]Ah, giovane, vedo che osservi\nquesto vecchio pozzo.\pVuoi che ti racconti la sua storia?
 
 #org @Miralba_3_1_NPC3_text2
-Sai, non [1A] solo un ammasso di\npietre consumate dal tempo[.]\pQuesto pozzo era speciale, un\ntempo.\pLo chiamavano il Pozzo dei\nDesideri.\pSi diceva che, se lanciavi una\nmoneta d'argento e pronunciavi un\ldesiderio con cuore puro, il pozzo\lavrebbe risposto.\pNon era magia, bada bene[.]\nMa qualcosa di pi[26] misterioso.\pGli anziani dicevano che in fondo\ndimorasse un Pok\emon.\pUno spirito benevolo, capace di\nascoltare i desideri sinceri di chi\laveva intenzioni pure, senza avidit[16]\lo cattiveria.\pUna volta, un bambino chiese di\nsalvare il suo Torchic malato,\le il giorno dopo il Pok\emon si riprese.\pMa quando un mercante arrogante\nlanci[22] delle monete per chiedere oro\le successo, non accadde nulla.\pIl pozzo rimase muto.\pUn giorno, per[22], lo spirito del pozzo\nscomparve.\pNessuno sa perch[1A], ma forse le\npersone chiedevano troppo.\pForse lo spirito decise che il mondo\nnon aveva pi[26] bisogno di lui.\pDa allora, [1A] solo[.]\n[.]un vecchio pozzo.\pMa io credo che, se qualcuno con un\ncuore davvero puro facesse un\ldesiderio sincero[.]\lforse lo spirito tornerebbe[.]
+[BLACK]Sai, non [1A] solo un ammasso di\npietre consumate dal tempo[.]\pQuesto pozzo era speciale, un\ntempo.\pLo chiamavano il Pozzo dei\nDesideri.\pSi diceva che, se lanciavi una\nmoneta d'argento e pronunciavi un\ldesiderio con cuore puro, il pozzo\lavrebbe risposto.\pNon era magia, bada bene[.]\nMa qualcosa di pi[26] misterioso.\pGli anziani dicevano che in fondo\ndimorasse un Pok\emon.\pUno spirito benevolo, capace di\nascoltare i desideri sinceri di chi\laveva intenzioni pure, senza avidit[16]\lo cattiveria.\pUna volta, un bambino chiese di\nsalvare il suo [GREEN]Torchic[BLACK] malato,\le il giorno dopo il Pok\emon si riprese.\pMa quando un mercante arrogante\nlanci[22] delle monete per chiedere oro\le successo, non accadde nulla.\pIl pozzo rimase muto.\pUn giorno, per[22], lo spirito del pozzo\nscomparve.\pNessuno sa perch[1A], ma forse le\npersone chiedevano troppo.\pForse lo spirito decise che il mondo\nnon aveva pi[26] bisogno di lui.\pDa allora, [1A] solo[.]\n[.]un vecchio pozzo.\pMa io credo che, se qualcuno con un\ncuore davvero puro facesse un\ldesiderio sincero[.]\lforse lo spirito tornerebbe[.]
 
 #org @Miralba_3_1_NPC3_text3
-[05] una bella storia,\nnon trovi?
+[BLACK][05] una bella storia,\nnon trovi?
 
 #org @Miralba_3_1_NPC3_text4
-Wow, raccontandoti questa storia ho\ndavvero perso il filo del\ltempo.\pPrendi questo come ricompensa\nper avermi ascoltato!
+[BLACK]Wow, raccontandoti questa storia ho\ndavvero perso il filo del\ltempo.\pPrendi questo come ricompensa\nper avermi ascoltato!
 
 #org @Miralba_3_1_NPC3_text5
-Torna quando vorrai ascoltarla.
+[BLACK]Torna quando vorrai ascoltarla.
 
 #org @Miralba_3_1_NPC7_text1
-Sto facendo un lungo viaggio,\ni miei Pok\emon erano esausti,\lper fortuna ho trovato questo\lCentro Pok\emon.
+[BLACK]Sto facendo un lungo viaggio,\ni miei Pok\emon erano esausti,\lper fortuna ho trovato questo\lCentro Pok\emon.

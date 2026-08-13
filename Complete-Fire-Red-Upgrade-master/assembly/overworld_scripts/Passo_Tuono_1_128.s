@@ -16,3 +16,13 @@ EventScript_Passo_Tuono_1_128_NPC1:
 	trainerbattle0 0x0 0x41 0x0 Passo_Tuono_1_128_NPC1_text1 Passo_Tuono_1_128_NPC1_text2
 	msgbox Passo_Tuono_1_128_NPC1_text3 MSG_NORMAL
 	end
+
+.global EventScript_Passo_Tuono_0_19_Sign0
+EventScript_Passo_Tuono_0_19_Sign0:
+	msgbox Passo_Tuono_0_19_Sign0_text1 0x7
+	end
+
+.global EventScript_Passo_Tuono_0_21_Sign1
+EventScript_Passo_Tuono_0_21_Sign1:
+	msgbox Passo_Tuono_0_21_Sign1_text1 0x7
+	end

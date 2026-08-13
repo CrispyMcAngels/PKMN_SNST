@@ -39,7 +39,7 @@ EventScript_Stellavia_3_6_NPC3:
 	checkflag 0x1
 	if 0x1 _goto EventScript_Stellavia_3_6_NPC3_P3
 	cry 0x129 0x0
-	textcolor 0x2
+	
 	msgbox Stellavia_3_6_NPC3_text1 MSG_NORMAL
 	pause 0x1E
 	showmoney 0x0 0x0 0x0
@@ -80,7 +80,7 @@ EventScript_Stellavia_3_6_NPC3:
 		spriteface 0x5 0x1
 		spriteface 0x6 0x2
 		cry 0x129 0x0
-		textcolor 0x2
+		
 		msgbox Stellavia_3_6_NPC3_text1 MSG_NORMAL
 		pause 0x1E
 		playsong 0x14A 0x0
@@ -308,10 +308,9 @@ EventScript_Stellavia_3_6_NPC20:
 	lock
 	faceplayer
 	cry 0x44 0x0
-	textcolor 0x2
+	
 	msgbox Stellavia_3_6_NPC20_text1 MSG_NORMAL
 	pause 0x1E
-	textcolor 0x0
 	msgbox Stellavia_3_6_NPC20_text2 MSG_NORMAL
 	release
 	end
@@ -335,16 +334,11 @@ EventScript_Stellavia_3_6_NPC22:
 		if 0x1 _goto EventScript_Stellavia_3_6_NPC22_P2
 		closeonkeypress
 		pause 0x1E
-		applymovement 0x17 Stellavia_3_6_NPC22_mov1
+		applymovement 0x17 mov_exclamation
 		waitmovement 0x17
 		msgbox Stellavia_3_6_NPC22_text5 MSG_NORMAL		
 		release
 		end
-
-		Stellavia_3_6_NPC22_mov1:
-			.byte 0x62
-			.byte 0xFE
-
 
 		EventScript_Stellavia_3_6_NPC22_P2:
 			closeonkeypress
@@ -373,7 +367,7 @@ EventScript_Stellavia_3_6_NPC23:
 	msgbox Stellavia_3_6_NPC23_text3 MSG_NORMAL
 	pause 0x1E
 	fanfare 0x0102
-	textcolor 0x2
+	
 	msgbox Mission_Received_text1 MSG_NORMAL
 	setflag 0x980
 	release
@@ -424,7 +418,7 @@ EventScript_Stellavia_3_6_NPC23:
 			createsprite 0x86 0x19 0x33 0x14 0x41 0x2
 			cry 0x306 0x0
 			pause 0x1E
-			applymovement 0x18 Stellavia_3_6_NPC22_mov1
+			applymovement 0x18 mov_exclamation
 			waitmovement 0x18
 			msgbox Stellavia_3_6_NPC23_text6 MSG_NORMAL			
 			pause 0x1E
@@ -450,7 +444,7 @@ EventScript_Stellavia_3_6_NPC23:
 			setflag 0x981
 			hidesprite 0x19
 			fanfare 0x0103
-			textcolor 0x2
+			
 			msgbox Mission_Completed_text1 MSG_NORMAL		
 			release
 			end
@@ -602,7 +596,7 @@ EventScript_Stellavia_3_6_Sign24:
 	end
 
 	EventScript_Stellavia_3_6_Sign24_P1:
-		applymovement 0xFF Stellavia_3_6_NPC22_mov1
+		applymovement 0xFF mov_exclamation
 		waitmovement 0xFF
 		msgbox Stellavia_3_6_SIGN19_text3 0x7
 		pause 0x1E
@@ -620,7 +614,7 @@ EventScript_Stellavia_3_6_Sign25:
 	end
 
 	EventScript_Stellavia_3_6_Sign25_P1:
-		applymovement 0xFF Stellavia_3_6_NPC22_mov1
+		applymovement 0xFF mov_exclamation
 		waitmovement 0xFF
 		msgbox Stellavia_3_6_SIGN19_text3 0x7
 		pause 0x1E
@@ -638,7 +632,7 @@ EventScript_Stellavia_3_6_Sign26:
 	end
 
 	EventScript_Stellavia_3_6_Sign26_P1:
-		applymovement 0xFF Stellavia_3_6_NPC22_mov1
+		applymovement 0xFF mov_exclamation
 		waitmovement 0xFF
 		msgbox Stellavia_3_6_SIGN19_text3 0x7
 		pause 0x1E

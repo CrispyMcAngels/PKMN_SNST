@@ -17,19 +17,20 @@ EventScript_Ardesiopoli_0_7_NPC1:
 	if 0x1 _goto EventScript_Ardesiopoli_0_7_NPC1_P3
 	checkflag 0x96D
 	if 0x1 _goto EventScript_Ardesiopoli_0_7_NPC1_P1
+	pause 0x1E
+	sound 0x15
 	applymovement 0x2 EventScript_Ardesiopoli_0_7_NPC1_mov1
 	waitmovement 0x0 
 	msgbox Ardesiopoli_0_7_NPC1_text1 MSG_NORMAL
 	pause 0x1E
 	fanfare 0x0102
-	textcolor 0x2
+	
 	msgbox Mission_Received_text1 MSG_NORMAL
 	setflag 0x96D
 	release
 	end
 
 	EventScript_Ardesiopoli_0_7_NPC1_mov1:
-		.byte 0x1C
 		.byte 0x62
 		.byte 0x1B
 		.byte 0xFE
@@ -47,7 +48,7 @@ EventScript_Ardesiopoli_0_7_NPC1:
 		pause 0x1E
 		hidesprite 0x9
 		fanfare 0x0103
-		textcolor 0x2
+		
 		msgbox Mission_Completed_text1 MSG_NORMAL
 		setflag 0x96E
 		pause 0x1E

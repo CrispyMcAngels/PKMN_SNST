@@ -4,6 +4,15 @@
 .include "../xse_commands.s"
 .include "../xse_defines.s"
 
+.global gMapScripts_Centrale_Elettrica_1_95
+gMapScripts_Centrale_Elettrica_1_95:
+	mapscript MAP_SCRIPT_ON_LOAD Centrale_Elettrica_1_95_MapScriptOnLoad
+    .byte MAP_SCRIPT_TERMIN
+
+	Centrale_Elettrica_1_95_MapScriptOnLoad:
+		setvar 0x5007 0x17
+		end
+
 .global EventScript_Centrale_Elettrica_1_95_Sign0
 EventScript_Centrale_Elettrica_1_95_Sign0:
 	msgbox Centrale_Elettrica_1_95_Sign0_Text1 0x7

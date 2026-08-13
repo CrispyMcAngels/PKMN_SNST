@@ -1,23 +1,23 @@
 #org @EventScript_Rovine_Ancestrali_1_33_tile0_text1
-Naomi: Eccoti [PLAYER], finalmente\nsono riuscita a raggiungerti!\pWow, hai visto cosa hanno\ncombinato questi farabutti del\lTeam Dusk?\pChissa cosa stanno cercando qui\nsotto[.]\pI tuoi Pok\emon sono stanchi?\pLascia che li rimetta in sesto[.]
+[RED]Naomi[BLACK]: Eccoti [LIGHT_BLUE][PLAYER][BLACK], finalmente\nsono riuscita a raggiungerti!\pWow, hai visto cosa hanno\ncombinato questi farabutti del\l[DUSK]Team Dusk[BLACK]?\pChissa cosa stanno cercando qui\nsotto[.]\pI tuoi Pok\emon sono stanchi?\pLascia che li rimetta in sesto[.]
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile0_text2
-Naomi ha rimesso in sesto i\nPok\emon di [PLAYER].
+[RED]Naomi[BLACK] ha rimesso in sesto i\nPok\emon di [LIGHT_BLUE][PLAYER][BLACK].
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile0_text3
-Naomi: Queste reclute del Team\nDusk sembrano essere molto forti[.]\pPerch[1A] non continuiamo insieme?\pSono sicura che unendo le nostre\nforze li sconfiggeremo!
+[RED]Naomi[BLACK]: Queste reclute del [DUSK]Team\nDusk[BLACK] sembrano essere molto forti[.]\pPerch[1A] non continuiamo insieme?\pSono sicura che unendo le nostre\nforze li sconfiggeremo!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile0_text4
-Naomi: [PLAYER], non possiamo\nandarcene ora.\lDobbiamo sconfiggere il Team\lDusk!
+[RED]Naomi[BLACK]: [LIGHT_BLUE][PLAYER][BLACK], non possiamo\nandarcene ora.\lDobbiamo sconfiggere il [DUSK]Team\lDusk[BLACK]!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile0_text5
-Naomi: Eccoti [PLAYER], non\npossiamo mollare proprio ora.\pSconfiggeremo il Team Dusk\ninsieme!
+[RED]Naomi[BLACK]: Eccoti [LIGHT_BLUE][PLAYER][BLACK], non\npossiamo mollare proprio ora.\pSconfiggeremo il [DUSK]Team Dusk[BLACK]\ninsieme!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile1_text1
-Recluta Dusk: Cosa ci fate voi qui?
+[DUSK]Recluta Dusk[BLACK]: Cosa ci fate voi qui?
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile1_text2
-Recluta Dusk: Troverete pane per i\nvostri denti!
+[DUSK]Recluta Dusk[BLACK]: Troverete pane per i\nvostri denti!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile1_text3
 Umiliati da dei marmocchi[.]
@@ -26,52 +26,52 @@ Umiliati da dei marmocchi[.]
 [05] stata solo fortuna!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile4_text1
-Recluta Dusk: Preparatevi ad\nandare a piangere dalla mammina!
+[DUSK]Recluta Dusk[BLACK]: Preparatevi ad\nandare a piangere dalla mammina!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile4_text2
-Recluta Dusk: Come osate mettere\ni bastoni tra le ruote al Team\lDusk?
+[DUSK]Recluta Dusk[BLACK]: Come osate mettere\ni bastoni tra le ruote al [DUSK]Team\lDusk[BLACK]?
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile4_text3
-Recluta Dusk: Che figura, alla\nfine piango io!
+Che figura, alla fine piango io!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile4_text4
-Recluta Dusk: Avete coraggio,\nquesto lo rispetto!
+Avete coraggio, questo lo rispetto!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile5_text1
-Recluta Dusk: Non vi lascier[22]\npassare!
+[DUSK]Recluta Dusk[BLACK]: Non vi lascier[22]\npassare!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile5_text2
-Recluta Dusk: Siete al\ncapolinea!
+[DUSK]Recluta Dusk[BLACK]: Siete al\ncapolinea!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile5_text3
-Recluta Dusk: Non esultate in\nanticipo, il capo vi ridurr[16] in\lpolvere!
+Non esultate in anticipo, il capo\nvi ridurr[16] in polvere!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile5_text4
-Recluta Dusk: Sconfitta da voi\ndue[.]\pNon merito di far parte del Team\nDusk forse[.]
+Sconfitta da voi due[.]\nNon merito di far parte del Team\lDusk forse[.]
 
 #org @Rovine_Ancestrali_1_33_NPC0_text1
-Naomi: Tieni duro [PLAYER], ci\nsiamo quasi!
+[RED]Naomi[BLACK]: Tieni duro [LIGHT_BLUE][PLAYER][BLACK], ci\nsiamo quasi!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile7_text1
-Naomi: Wow, riesco a crederci a\nstento che siamo arrivati fino a\lquesto punto!\pOra non resta che vedere cosa si\ncela dentro quel tronco!
+[RED]Naomi[BLACK]: Wow, riesco a crederci a\nstento che siamo arrivati fino a\lquesto punto!\pOra non resta che vedere cosa si\ncela dentro quel tronco!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile7_text2
-Naomi: Coraggio [PLAYER], andiamo!
+[RED]Naomi[BLACK]: Coraggio [LIGHT_BLUE][PLAYER][BLACK], andiamo!
 
 #org @EventScript_Rovine_Ancestrali_1_33_NPC1_text1
-Recluta Dusk: Sembra che in\nqueste rovine sia custodito\lqualcosa di molto prezioso[.]
+[DUSK]Recluta Dusk[BLACK]: Sembra che in\nqueste rovine sia custodito\lqualcosa di molto prezioso[.]
 
 #org @EventScript_Rovine_Ancestrali_1_33_NPC2_text1
-Recluta Dusk: Sarebbe stato meglio\nattaccare una spiaggia o un posto\lcaldo, non una foresta dimenticata[.]
+[DUSK]Recluta Dusk[BLACK]: Sarebbe stato meglio\nattaccare una spiaggia o un posto\lcaldo, non una foresta dimenticata[.]
 
 #org @EventScript_Rovine_Ancestrali_1_33_NPC3_text1
-Recluta Dusk: In questo posto c'[1A]\nuna puzza di chiuso allucinante,\lnon ne posso pi[26]!
+[DUSK]Recluta Dusk[BLACK]: In questo posto c'[1A]\nuna puzza di chiuso allucinante,\lnon ne posso pi[26]!
 
 #org @EventScript_Rovine_Ancestrali_1_33_NPC4_text1
-Recluta Dusk: Come dici?\pNon hai mai sentito parlare\ndel Team Dusk?\lCambierai presto opinione!
+[DUSK]Recluta Dusk[BLACK]: Come dici?\pNon hai mai sentito parlare\ndel [DUSK]Team Dusk[BLACK]?\lCambierai presto opinione!
 
 #org @EventScript_Rovine_Ancestrali_1_33_NPC5_text1
-Recluta Dusk: Questa [1A] la mia\nprima missione[.]\pVesper non sar[16] molto contento[.]
+[DUSK]Recluta Dusk[BLACK]: Questa [1A] la mia\nprima missione[.]\p[DUSK]Vesper[BLACK] non sar[16] molto contento[.]
 
 #org @EventScript_Rovine_Ancestrali_1_33_NPC6_text1
-Recluta Dusk: Il mio obbiettivo [1A]\ndiventare una comandante forte\le rispettata come Umbra.
+[DUSK]Recluta Dusk[BLACK]: Il mio obbiettivo [1A]\ndiventare una comandante forte\le rispettata come [DUSK]Umbra[BLACK].

@@ -40,8 +40,8 @@ EventScript_Rovine_Ancestrali_1_34_tile6:
     msgbox Rovine_Ancestrali_1_34_tile6_text1 MSG_NORMAL
     special 0x15A
 	pause 0x1E
-	textcolor 0x0
-	showpokepic 0x3AD 0x15 0x6
+	
+	showpokepic 0x3AD 0x0 0x6
 	//Dannazione
     msgbox Rovine_Ancestrali_1_34_tile6_text2 MSG_NORMAL
     special 0x15A	
@@ -55,37 +55,48 @@ EventScript_Rovine_Ancestrali_1_34_tile6:
 	msgbox Rovine_Ancestrali_1_34_tile6_text4 MSG_NORMAL
 	applymovement 0xA Rovine_Ancestrali_1_34_tile6_mov2
 	waitmovement 0x0
-	applymovement 0x6 Rovine_Ancestrali_1_34_tile6_mov3
+	applymovement 0x6 mov_exclamation
 	waitmovement 0x0
-	textcolor 0x0
-	showpokepic 0x3AD 0x15 0x6
+	
+	showpokepic 0x3AD 0x0 0x6
 	//Fermati!
     msgbox Rovine_Ancestrali_1_34_tile6_text5 MSG_NORMAL
     special 0x15A
-	applymovement 0x8 Rovine_Ancestrali_1_34_tile6_mov3
+	pause 0x1E
+	sound 0x15
+	applymovement 0x8 mov_exclamation
 	waitmovement 0x0	
 	showpokepic 0x3B8 0x0 0x6
 	//come dici???
     msgbox Rovine_Ancestrali_1_34_tile6_text6 MSG_NORMAL
     special 0x15A
 	pause 0x1E
-	textcolor 0x0
-	showpokepic 0x3AD 0x15 0x6
+	
+	showpokepic 0x3AD 0x0 0x6
 	//Sei un tipo sveglio
     msgbox Rovine_Ancestrali_1_34_tile6_text7 MSG_NORMAL
     special 0x15A
 	playsong 0x112 0x0
-	applymovement 0x6 Rovine_Ancestrali_1_34_tile6_mov5
+	setmaptile 0x6 0x5 0x308 0x1
+	special 0x8e
+	applymovement 0x7 mov_step_right
+	applymovement 0x6 mov_step_right
+	waitmovement 0x0
+	spriteface 0x7 0x3
+	applymovement 0x6 Rovine_Ancestrali_1_34_tile6_mov4
 	waitmovement 0x0
 	sound 0x9
-	applymovement 0x7 Rovine_Ancestrali_1_34_tile6_mov5
+	setmaptile 0x7 0x5 0x309 0x1
+	setmaptile 0x7 0x8 0x310 0x1
+	special 0x8e
+	applymovement 0x7 Rovine_Ancestrali_1_34_tile6_mov4
 	waitmovement 0x0
 	sound 0x9
 	setflag 0x95A
 	setvar 0x4050 0x4
 	setvar 0x4051 0x20
 	setvar 0x4052 0x3
-	warpmuted 0x1 0x22 0xFF 0x0B 0x08
+	warpmuted 0x1 0x22 0xFF 0x05 0x05
 	releaseall
 	end
 
@@ -101,34 +112,17 @@ EventScript_Rovine_Ancestrali_1_34_tile6:
 		.byte 0x28
 		.byte 0xFE
 
-	Rovine_Ancestrali_1_34_tile6_mov3:
-		.byte 0x1A
-		.byte 0x62
-		.byte 0xFE
-
 	Rovine_Ancestrali_1_34_tile6_mov4:
-		.byte 0x20
+		.byte 0x1D
 		.byte 0x14
 		.byte 0x14
-		.byte 0x20
-		.byte 0x20
-		.byte 0x20
-		.byte 0x20
-		.byte 0x20
-		.byte 0x20
-		.byte 0x20
-		.byte 0xFE
-
-	Rovine_Ancestrali_1_34_tile6_mov5:
-		.byte 0x14
-		.byte 0x20
-		.byte 0x20
-		.byte 0x20
-		.byte 0x20
-		.byte 0x20
-		.byte 0x20
-		.byte 0x20
-		.byte 0x20
+		.byte 0x1D
+		.byte 0x1D
+		.byte 0x1D
+		.byte 0x1D
+		.byte 0x1D
+		.byte 0x1D
+		.byte 0x1D
 		.byte 0xFE
 
 .global EventScript_Rovine_Ancestrali_1_34_tile8
@@ -144,7 +138,7 @@ EventScript_Rovine_Ancestrali_1_34_tile8:
     special 0x15A
 	pause 0x1E
 	getplayerpos 0x4001 0x4002
-	compare 0x4002 0x8
+	compare 0x4002 0x5
 	if 0x1 _goto EventScript_Rovine_Ancestrali_1_34_tile8_P1
 	applymovement 0xFF Rovine_Ancestrali_1_34_tile8_mov1
 	waitmovement 0x0
@@ -272,13 +266,13 @@ Rovine_Ancestrali_1_34_tile0_mov0:
 EventScript_Rovine_Ancestrali_1_34_tile0_P1:	
 	applymovement 0xFF Rovine_Ancestrali_1_34_tile0_mov1
 	waitmovement 0x0
-	textcolor 0x1
+	
 	showpokepic 0x3BC 0x0 0x6
 	msgbox Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text6 MSG_NORMAL
 	special 0x15A
 	pause 0x1E	
-	showpokepic 0x3BB 0x15 0x6
-	textcolor 0x0
+	showpokepic 0x3BB 0x0 0x6
+	
 	msgbox Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text7 MSG_NORMAL
 	special 0x15A
 	trainerbattle10 0xA 0x14 0x15 0x0D 0x3 0x0 Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text8 Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text9
@@ -288,7 +282,7 @@ EventScript_Rovine_Ancestrali_1_34_tile0_P1:
 	spriteface 0xFF 0x4
 	showpokepic 0x3B5 0x0 0x6
 	//Sembra ci siano due scale...
-	textcolor 0x1
+	
 	msgbox Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text10 MSG_NORMAL
 	special 0x15A
 	applymovement 0x1 Rovine_Ancestrali_1_34_MapScriptOnFrame_mov7
@@ -332,6 +326,8 @@ gMapScripts_Rovine_Ancestrali_1_34:
 		
 			Rovine_Ancestrali_1_34_MapScriptOnLoad_P2:
 				movesprite2 0x1 0x06 0x09
+				movesprite2 0x3 0x05 0x0B
+				movesprite2 0x2 0x06 0x0B
 				spritebehave 0x1 0x45
 				spritebehave 0x5 0x44
 				end
@@ -341,7 +337,7 @@ gMapScripts_Rovine_Ancestrali_1_34:
 				spritebehave 0x1 0x7
 				movesprite2 0x9 0x06 0x04
 				spritebehave 0x9 0x8
-				movesprite2 0x8 0x05 0x074
+				movesprite2 0x8 0x05 0x04
 				spritebehave 0x8 0x8
 				end
 
@@ -459,10 +455,11 @@ gMapScripts_Rovine_Ancestrali_1_34:
 
 		Rovine_Ancestrali_1_34_MapScriptOnFrame_P1:
 			lockall
-			textcolor 0x1
+			
 			movesprite2 0x1 0x06 0x0E
 			setvar 0x4050 0x2
-			applymovement 0x1 Rovine_Ancestrali_1_34_MapScriptOnFrame_mov1
+			sound 0x15
+			applymovement 0x1 mov_question
 			waitmovement 0x0
 			showpokepic 0x3B5 0x0 0x6
 			//Wow player, non credo ai miei occhi...
@@ -509,16 +506,18 @@ gMapScripts_Rovine_Ancestrali_1_34:
 			waitmovement 0x0
 			pause 0x1E
 			playsong 0x112 0x0
+			sound 0x15
 			applymovement 0x2 Rovine_Ancestrali_1_34_MapScriptOnFrame_mov5
 			waitmovement 0x0
-			textcolor 0x1
+			
 			showpokepic 0x3BC 0x0 0x6
 			msgbox Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text6 MSG_NORMAL
 			special 0x15A
+			sound 0x15
 			applymovement 0x3 Rovine_Ancestrali_1_34_MapScriptOnFrame_mov6
 			waitmovement 0x0			
-			showpokepic 0x3BB 0x15 0x6
-			textcolor 0x0
+			showpokepic 0x3BB 0x0 0x6
+			
 			msgbox Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text7 MSG_NORMAL
 			special 0x15A
 
@@ -540,12 +539,6 @@ gMapScripts_Rovine_Ancestrali_1_34:
 			spritebehave 0x5 0x44
 			releaseall
 			end			
-
-
-			Rovine_Ancestrali_1_34_MapScriptOnFrame_mov1:
-				.byte 0x63
-				.byte 0x63
-				.byte 0xFE
 
 			Rovine_Ancestrali_1_34_MapScriptOnFrame_mov2:
 				.byte 0x11
@@ -604,25 +597,25 @@ gMapScripts_Rovine_Ancestrali_1_34:
 	
 		Rovine_Ancestrali_1_34_MapScriptOnFrame_P2:
 			lockall
-			textcolor 0x0
+			
 			pause 0x1E
 			showpokepic 0x3B4 0x0 0x6
 			//Ero sicuro che...
   			msgbox Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_text1 MSG_NORMAL
     		special 0x15A
 			pause 0x1E
-			showpokepic 0x3B8 0x15 0x6
+			showpokepic 0x3B8 0x0 0x6
 			//Non sentirti cosi' in colpa...
   			msgbox Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_text2 MSG_NORMAL
     		special 0x15A
 			pause 0x1E
 			spriteface 0x8 0x2
-			applymovement 0x9 Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_mov1
-			waitmovement 0x0
-			applymovement 0x8 Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_mov2
-			waitmovement 0x0
+			spriteface 0x9 0x2
+			sound 0x15
+			applymovement 0x8 Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_mov2_a
+			waitmovement 0x8
 			pause 0x1E
-			showpokepic 0x3B8 0x15 0x6
+			showpokepic 0x3B8 0x0 0x6
 			//Non capisco...
   			msgbox Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_text3 MSG_NORMAL
     		special 0x15A
@@ -632,29 +625,16 @@ gMapScripts_Rovine_Ancestrali_1_34:
 			releaseall
 			end
 
-
-			Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_mov1:
-				.byte 0x13
-				.byte 0x1 
-				.byte 0xFE
-
-			Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_mov2:
-				.byte 0x1 
-				.byte 0x63
-				.byte 0x1A
-				.byte 0x12
-				.byte 0x12
-				.byte 0x1 
-				.byte 0x63
-				.byte 0x1C
-				.byte 0x13
-				.byte 0x13
-				.byte 0x13
-				.byte 0x1 
+			Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_mov2_a:				
 				.byte 0x63
 				.byte 0x1C
 				.byte 0x12
-				.byte 0x0 
+				.byte 0x1 
+				.byte 0x1C
+				.byte 0x13
+				.byte 0x1 
+				.byte 0x1C
+				.byte 0x0
 				.byte 0xFE
 
 			Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_mov3:
@@ -664,7 +644,7 @@ gMapScripts_Rovine_Ancestrali_1_34:
 
 		Rovine_Ancestrali_1_34_MapScriptOnFrame_P3:
 			lockall
-			textcolor 0x0
+			
 			pause 0x1E
 			setvar 0x8004 0xF  
     		setvar 0x8005 0xF  
@@ -675,13 +655,16 @@ gMapScripts_Rovine_Ancestrali_1_34:
 
 			applymovement 0x8 Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_mov1
 			spriteface 0xFF 0x3
-			showpokepic 0x3B8 0x15 0x6
+			showpokepic 0x3B8 0x0 0x6
 			//Incredibile...
   			msgbox Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text1 MSG_NORMAL
     		special 0x15A
 			applymovement 0x1 Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_mov2
 			applymovement 0x9 Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_mov3
 			waitmovement 0x0
+			sound 0x15 
+			applymovement 0x9 mov_question
+			waitmovement 0x9
 			pause 0x1E
 			showpokepic 0x3B4 0x0 0x6
 			//cosa ti sembra...
@@ -689,7 +672,7 @@ gMapScripts_Rovine_Ancestrali_1_34:
     		special 0x15A
 			spriteface 0x8 0x1
 			pause 0x1E
-			showpokepic 0x3B8 0x15 0x6
+			showpokepic 0x3B8 0x0 0x6
 			//a prima vista...
   			msgbox Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text3 MSG_NORMAL
     		special 0x15A
@@ -730,10 +713,8 @@ gMapScripts_Rovine_Ancestrali_1_34:
 				.byte 0x12
 				.byte 0x10
 				.byte 0x12
-				.byte 0x12
 				.byte 0x01
 				.byte 0x1A
-				.byte 0x63
 				.byte 0xFE
 
 			Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_mov3a:
@@ -743,18 +724,18 @@ gMapScripts_Rovine_Ancestrali_1_34:
 
 		Rovine_Ancestrali_1_34_MapScriptOnFrame_P4:
 			lockall
-			textcolor 0x0
+			
 			playsong 0x189 0x0
 			pause 0x1E
-			applymovement 0x9 Rovine_Ancestrali_1_34_MapScriptOnFrame_P4_mov1
+			applymovement 0x9 mov_exclamation
 			waitmovement 0x0
 			pause 0x1E
 			showpokepic 0x3B4 0x0 0x6
 			msgbox Rovine_Ancestrali_1_34_tile6_text1 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
-			textcolor 0x0
-			showpokepic 0x3AD 0x15 0x6
+			
+			showpokepic 0x3AD 0x0 0x6
 			msgbox Rovine_Ancestrali_1_34_tile6_text2 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
@@ -777,21 +758,17 @@ gMapScripts_Rovine_Ancestrali_1_34:
 			warpmuted 0x3 0x29 0xFF 0x1C 0x04
 			releaseall
 			end
-			
-			Rovine_Ancestrali_1_34_MapScriptOnFrame_P4_mov1:
-				.byte 0x62
-				.byte 0xFE
 	
 Player_Blue:
-	showpokepic 0x3b6 0x15 0x6
+	showpokepic 0x3b6 0x0 0x6
 	return
 
 Player_Orange:
-	showpokepic 0x3bE 0x15 0x6
+	showpokepic 0x3bE 0x0 0x6
 	return
 
 Player_Green:
-	showpokepic 0x3bF 0x15 0x6
+	showpokepic 0x3bF 0x0 0x6
 	return
 
 OW_Player_Blue:

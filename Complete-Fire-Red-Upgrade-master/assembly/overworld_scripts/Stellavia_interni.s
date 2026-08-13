@@ -186,7 +186,6 @@ EventScript_Stellavia_10_2_NPC0:
 	msgbox Stellavia_10_2_NPC0_text2 MSG_NORMAL
 	pause 0x1E
 	fanfare 0x0102
-	textcolor 0x2
 	msgbox Mission_Received_text1 MSG_NORMAL
 	setflag 0x97E
 	release
@@ -265,15 +264,20 @@ gMapScripts_Stellavia_10_2:
 			if 0x1 _goto Stellavia_10_2_MapScriptOnFrameBegin_P1
 			applymovement 0x1 Stellavia_10_2mov1
 			waitmovement 0x1
-			textcolor 0x1 
+			sound 0x15
+			applymovement 0x1 mov_exclamation
+			waitmovement 0x1
+
+			
 			msgbox Stellavia_10_2_level_text1 MSG_NORMAL
 			pause 0x1E
 			applymovement 0x2 Stellavia_10_2mov2
 			waitmovement 0x2
-			textcolor 0x1 
+			
 			msgbox Stellavia_10_2_level_text2 MSG_NORMAL
 			pause 0x1E
-			applymovement 0x2 Stellavia_10_2mov3
+			spriteface 0x2 0x1
+			applymovement 0x2 mov_exclamation
 			waitmovement 0x2
 			pause 0x1E
 			msgbox Stellavia_10_2_level_text3 MSG_NORMAL
@@ -285,7 +289,7 @@ gMapScripts_Stellavia_10_2:
 
 			Stellavia_10_2_MapScriptOnFrameBegin_P1:
 				fanfare 0x0103
-				textcolor 0x2
+		
 				msgbox Mission_Completed_text1 MSG_NORMAL
 				setvar 0x4060 0x9
 				releaseall
@@ -295,18 +299,12 @@ gMapScripts_Stellavia_10_2:
 			Stellavia_10_2mov1:
 				.byte 0x23
 				.byte 0x23
-				.byte 0x62
 				.byte 0xFE
 
 			Stellavia_10_2mov2:
 				.byte 0x24
 				.byte 0x24
 				.byte 0x24
-				.byte 0xFE
-
-			Stellavia_10_2mov3:
-				.byte 0x0 
-				.byte 0x62
 				.byte 0xFE
 
 //____10_3______
@@ -592,7 +590,6 @@ EventScript_Stellavia_10_5_NPC3:
 		applymovement 0x7F Stellavia_10_5_NPC3_mov2
 		waitmovement 0x7F
 		pause 0x1E
-		textcolor 0x0 
 		msgbox Stellavia_10_5_NPC3_text4 MSG_NORMAL
 		pause 0x1E
 		preparemsg Stellavia_10_5_NPC3_text5
@@ -678,7 +675,7 @@ EventScript_Stellavia_10_5_NPC3:
 		EventScript_Stellavia_10_5_NPC3_P3:
 			msgbox Stellavia_10_5_NPC3_text9 MSG_NORMAL
 			pause 0x1E
-			applymovement 0x3 Stellavia_10_5_NPC3_mov5
+			applymovement 0x3 mov_exclamation
 			waitmovement 0x3 
 			msgbox Stellavia_10_5_NPC3_text10 MSG_NORMAL
 			pause 0x1E
@@ -688,16 +685,12 @@ EventScript_Stellavia_10_5_NPC3:
 			compare 0x4001 0x4
 			if 0x1 _call EventScript_Stellavia_10_5_NPC3_P1_04b
 			special 0x114
-			textcolor 0x1
 			msgbox Stellavia_10_5_NPC3_text11 MSG_NORMAL
 			giveitem 0x19 0x1 MSG_OBTAIN
 			setflag 0x987
 			release
 			end
 
-			Stellavia_10_5_NPC3_mov5:
-				.byte 0x62
-				.byte 0xFE
 
 		EventScript_Stellavia_10_5_NPC3_P4:
 			msgbox Stellavia_10_5_NPC3_text12 MSG_NORMAL
@@ -1317,7 +1310,7 @@ EventScript_Stellavia_10_10_NPC0:
 	faceplayer
 	msgbox Stellavia_10_10_NPC0_text1 MSG_NORMAL
 	pause 0x1E
-	applymovement 0x1 Stellavia_10_5_NPC3_mov5
+	applymovement 0x1 mov_exclamation
 	waitmovement 0x1
 	pause 0x1E
 	msgbox Stellavia_10_10_NPC0_text2 MSG_NORMAL
@@ -1562,37 +1555,37 @@ EventScript_Stellavia_10_19_Sign0:
 
 			M6_20_P_H_SX:
 				setvar 0x4064 0x0
-				warp 0x6 0x14 0xFF 0x5 0x4
+				warp 0x6 0x18 0xFF 0x5 0x4
 				release
 				end
 
 			M6_20_P_H_DX:
 				setvar 0x4064 0x1
-				warp 0x6 0x14 0xFF 0x7 0x4
+				warp 0x6 0x18 0xFF 0x7 0x4
 				release
 				end
 
 			M6_20_P_M_SX:
 				setvar 0x4064 0x2
-				warp 0x6 0x14 0xFF 0x5 0x5
+				warp 0x6 0x18 0xFF 0x5 0x5
 				release
 				end
 
 			M6_20_P_M_DX:
 				setvar 0x4064 0x3
-				warp 0x6 0x14 0xFF 0x7 0x5
+				warp 0x6 0x18 0xFF 0x7 0x5
 				release
 				end
 
 			M6_20_P_L_SX:
 				setvar 0x4064 0x4
-				warp 0x6 0x14 0xFF 0x5 0x7
+				warp 0x6 0x18 0xFF 0x5 0x7
 				release
 				end
 
 			M6_20_P_L_DX:
 				setvar 0x4064 0x5
-				warp 0x6 0x14 0xFF 0x7 0x7
+				warp 0x6 0x18 0xFF 0x7 0x7
 				release
 				end
 

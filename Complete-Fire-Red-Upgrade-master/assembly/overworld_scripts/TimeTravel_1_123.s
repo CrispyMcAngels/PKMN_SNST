@@ -34,7 +34,6 @@ gMapScripts_TimeTravel_1_123:
 				if 0x1 _call Player_Orange
 				compare 0x5026 0x85
 				if 0x1 _call Player_Green	
-				textcolor 0x0
 				msgbox TimeTravel_1_123_text1 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
@@ -44,7 +43,6 @@ gMapScripts_TimeTravel_1_123:
 				if 0x1 _call Player_Orange
 				compare 0x5026 0x85
 				if 0x1 _call Player_Green	
-				textcolor 0x0
 				msgbox TimeTravel_1_123_text1a MSG_NORMAL
 				special 0x15A
 				pause 0x1E
@@ -54,7 +52,7 @@ gMapScripts_TimeTravel_1_123:
 				if 0x1 _call Player_Orange
 				compare 0x5026 0x85
 				if 0x1 _call Player_Green	
-				textcolor 0x0
+				
 				msgbox TimeTravel_1_123_text1b MSG_NORMAL
 				special 0x15A
 				pause 0x1E
@@ -64,7 +62,7 @@ gMapScripts_TimeTravel_1_123:
 				if 0x1 _call Player_Orange
 				compare 0x5026 0x85
 				if 0x1 _call Player_Green	
-				textcolor 0x0
+				
 				msgbox TimeTravel_1_123_text1c MSG_NORMAL
 				special 0x15A
 				pause 0x1E
@@ -74,7 +72,7 @@ gMapScripts_TimeTravel_1_123:
 				if 0x1 _call Player_Orange
 				compare 0x5026 0x85
 				if 0x1 _call Player_Green	
-				textcolor 0x0
+				
 				msgbox TimeTravel_1_123_text1d MSG_NORMAL
 				special 0x15A	
 				pause 0x1E
@@ -86,7 +84,7 @@ gMapScripts_TimeTravel_1_123:
 				if 0x1 _call Player_Orange
 				compare 0x5026 0x85
 				if 0x1 _call Player_Green	
-				textcolor 0x0
+				
 				msgbox TimeTravel_1_123_text2 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
@@ -100,7 +98,7 @@ gMapScripts_TimeTravel_1_123:
 				if 0x1 _call Player_Orange
 				compare 0x5026 0x85
 				if 0x1 _call Player_Green	
-				textcolor 0x0
+				
 				msgbox TimeTravel_1_123_text3 MSG_NORMAL
 				special 0x15A
 				setvar 0x501F 0x149
@@ -119,7 +117,7 @@ gMapScripts_TimeTravel_1_123:
 				if 0x1 _call Player_Orange
 				compare 0x5026 0x85
 				if 0x1 _call Player_Green	
-				textcolor 0x0
+				
 				msgbox TimeTravel_1_123_text4 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
@@ -131,7 +129,7 @@ gMapScripts_TimeTravel_1_123:
 				if 0x1 _call Player_Orange
 				compare 0x5026 0x85
 				if 0x1 _call Player_Green	
-				textcolor 0x0
+				
 				msgbox TimeTravel_1_123_text5 MSG_NORMAL
 				special 0x15A
 				pause 0x78
@@ -141,7 +139,7 @@ gMapScripts_TimeTravel_1_123:
 				if 0x1 _call Player_Orange
 				compare 0x5026 0x85
 				if 0x1 _call Player_Green	
-				textcolor 0x0
+				
 				msgbox TimeTravel_1_123_text6 MSG_NORMAL
 				special 0x15A
 				pause 0x28
@@ -153,7 +151,7 @@ gMapScripts_TimeTravel_1_123:
 				if 0x1 _call Player_Orange
 				compare 0x5026 0x85
 				if 0x1 _call Player_Green	
-				textcolor 0x0
+				
 				msgbox TimeTravel_1_123_text7 MSG_NORMAL
 				special 0x15A
 

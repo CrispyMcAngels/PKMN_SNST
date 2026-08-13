@@ -29,9 +29,10 @@ gMapScripts_Ardesiopoli_6_2:
 		Ardesiopoli_6_2_MapScriptOnFrameBegin:
 			lockall
 			pause 0x1E
+			sound 0x15
 			applymovement 0x3 Ardesiopoli_6_2_MapScriptOnFrame_mov1
 			waitmovement 0x3	
-			textcolor 0x0
+			
 			msgbox Ardesiopoli_6_2_MapScriptOnFrame_text1 MSG_NORMAL
 			pause 0x1E
 			applymovement 0x3 Ardesiopoli_6_2_MapScriptOnFrame_mov2
@@ -89,7 +90,7 @@ EventScript_Ardesiopoli_6_2_NPC0:
 	pause 0x1E	
 	setvar 0x8008 0x1
 	giveitem 0x18A 0x1 MSG_OBTAIN
-	textcolor 0x0
+	
 	showpokepic 0x3B8 0x0 0x6
 	msgbox Ardesiopoli_6_2_NPC0_text6 MSG_NORMAL
 	special 0x15A

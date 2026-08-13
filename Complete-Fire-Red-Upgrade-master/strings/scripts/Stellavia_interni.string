@@ -1,60 +1,60 @@
 //______10_0_______
 
 #org @Stellavia_10_0_NPC0_text1
-Nel frigo ho 6 curry diversi.\nNon chiedermi perch[1A].
+[BLACK]Nel frigo ho 6 curry diversi.\nNon chiedermi perch[1A].
 
 #org @Stellavia_10_0_NPC1_text1
-Hai visto per caso un Joltik giallo\nminuscolo?\pMi ha spento il modem[.]
+[BLACK]Hai visto per caso un [GREEN]Joltik[BLACK] giallo\nminuscolo?\pMi ha spento il modem[.]
 
 #org @Stellavia_10_0_NPC2_text1
-Oggi niente ufficio[.]\pNon ce la faccio pi[26] a lavorare in\nfinanza, ho bisogno di una vacanza!
+[BLACK]Oggi niente ufficio[.]\pNon ce la faccio pi[26] a lavorare in\nfinanza, ho bisogno di una vacanza!
 
 #org @Stellavia_10_0_NPC3_text1
-Sono il maggiore dei fratelli\nTripletti: Flare.\pPreparati ad una bella scottatura!
+[BLACK]Sono il maggiore dei fratelli\nTripletti: Flare.\pPreparati ad una bella scottatura!
 
 #org @Stellavia_10_0_NPC3_text2
 Tch[.] incredibile[.]\nIl mio fuoco[.] domato cos[1E][.]
 
 #org @Stellavia_10_0_NPC3_text3
-I miei fratellini diventeranno\nfortissimi.\pNel tempo libero ci alleniamo\ninsieme: con un allenatore come me\l[1A] impossibile non migliorare!
+[BLACK]I miei fratellini diventeranno\nfortissimi.\pNel tempo libero ci alleniamo\ninsieme: con un allenatore come me\l[1A] impossibile non migliorare!
 
 #org @Stellavia_10_0_NPC4_text1
-I miei fratelli sono rumorosi[.]\nIo preferisco agire lentamente e in\lsilenzio, come gocce d'acqua che\llentamente scolpiscono intere\lvallate!
+[BLACK]I miei fratelli sono rumorosi[.]\nIo preferisco agire lentamente e in\lsilenzio, come gocce d'acqua che\llentamente scolpiscono intere\lvallate!
 
 #org @Stellavia_10_0_NPC4_text2
 L'acqua non ha fretta.\nEppure[.] arriva sempre.
 
 #org @Stellavia_10_0_NPC4_text3
-Essere la sorella mediana [1A] un\ncompito arduo[.]\pSoprattutto quando i miei fratelli\nsi alleano contro di me!
+[BLACK]Essere la sorella mediana [1A] un\ncompito arduo[.]\pSoprattutto quando i miei fratelli\nsi alleano contro di me!
 
 #org @Stellavia_10_0_NPC5_text1
-Il mio nome [1A] Bush e sono il pi[26]\npiccolo dei fratelli Tripletti.\pI miei Pokemon crescono forti di\ngiorno in giorno come cespugli nel\lbosco!
+[BLACK]Il mio nome [1A] Bush e sono il pi[26]\npiccolo dei fratelli Tripletti.\pI miei Pokemon crescono forti di\ngiorno in giorno come cespugli nel\lbosco!
 
 #org @Stellavia_10_0_NPC5_text2
 Spezzato come un ramoscello secco!
 
 #org @Stellavia_10_0_NPC5_text3
-Sar[22] anche il pi[26] piccolo,\nma combatto alla pari sia di mia\lsorella che di mio fratello[.]
+[BLACK]Sar[22] anche il pi[26] piccolo,\nma combatto alla pari sia di mia\lsorella che di mio fratello[.]
 
 #org @Stellavia_10_0_NPC345_text1
-Wow, sei riuscito a vincere contro\ntutti e tre i fratelli Tripletti!
+[BLACK]Wow, sei riuscito a vincere contro\ntutti e tre i fratelli Tripletti!
 
 #org @Stellavia_10_0_NPC345_text2
-Scegli uno di questi strumenti come\npremio!
+[BLACK]Scegli uno di questi strumenti come\npremio!
 
 //______10_1_______
 
 #org @Stellavia_10_1_NPC0_text1
-Ah, i mattoni rossi.\pUn po' come noi: resistenti[.]\nO testardi.
+[BLACK]Ah, i mattoni rossi.\pUn po' come noi: resistenti[.]\nO testardi.
 
 #org @Stellavia_10_1_NPC1_text1
-Cucinare per tutta la mia famiglia\nmi da una gioia immensa, vuol dire\lprendersi veramente cura delle\lpersone vicine a te!\pPensa che questo curry sta\ncuocendo da 8 ore[.]
+[BLACK]Cucinare per tutta la mia famiglia\nmi da una gioia immensa, vuol dire\lprendersi veramente cura delle\lpersone vicine a te!\pPensa che questo curry sta\ncuocendo da 8 ore[.]
 
 #org @Stellavia_10_1_NPC2_text1
-Sto guardando i combattimenti tra\nPokemon.\pIo ovviamente tifo per quello pi[26]\npiccolo!
+[BLACK]Sto guardando i combattimenti tra\nPokemon.\pIo ovviamente tifo per quello pi[26]\npiccolo!
 
 #org @Stellavia_10_1_NPC3_text1
-Non riesco a far funzionare questo\nlevel script su Advance Map[.]\pFortuna che su Pokehacking [1A] pieno\ndi tutorial, l[1E] trover[22]\lsicuramente una soluzione!
+[BLACK]Non riesco a far funzionare questo\nlevel script su Advance Map[.]\pFortuna che su Pokehacking [1A] pieno\ndi tutorial, l[1E] trover[22]\lsicuramente una soluzione!
 
 #org @Stellavia_10_1_SIGN0
 [05] l'albero generalogico della\nfamiglia che abita in questa casa.
@@ -72,48 +72,48 @@ La radio [1A] spenta.
 Alla radio stanno passando i\nmigliori pezzi anni 90.\pQuella si che era musica!
 
 #org @Stellavia_10_2_NPC0_text1
-Mio marito [1A] uscito questa mattina\na fare la spesa e non [1A] ancora\lrientrato!\pSto iniziando a preoccuparmi[.]\pSai, per persone anziane come noi\nstare a passo coi tempi di una\lcitt[16] moderna non [1A] affatto\lfacile!
+[BLACK]Mio marito [1A] uscito questa mattina\na fare la spesa e non [1A] ancora\lrientrato!\pSto iniziando a preoccuparmi[.]\pSai, per persone anziane come noi\nstare a passo coi tempi di una\lcitt[16] moderna non [1A] affatto\lfacile!
 
 #org @Stellavia_10_2_NPC0_text2
-Se vedi un anziano signore smarrito\npotresti riaccompagnarlo qui?
+[BLACK]Se vedi un anziano signore smarrito\npotresti riaccompagnarlo qui?
 
 #org @Stellavia_10_2_NPC0_text3
-Sei riuscito a trovare mio marito?\pTrovarlo non dev'essere difficile:\n[1A] un signore anziano molto pigro,\lconoscendolo si sar[16] perso da\lqualche parte e si sar[16] seduto a\lciondolare[.]
+[BLACK]Sei riuscito a trovare mio marito?\pTrovarlo non dev'essere difficile:\n[1A] un signore anziano molto pigro,\lconoscendolo si sar[16] perso da\lqualche parte e si sar[16] seduto a\lciondolare[.]
 
 #org @Stellavia_10_2_NPC0_text4
-D'ora in poi quello spensierato ci\npenser[16] due volte prima di\lavventurarsi in citt[16] senza sapere\ldove andare[.]
+[BLACK]D'ora in poi quello spensierato ci\npenser[16] due volte prima di\lavventurarsi in citt[16] senza sapere\ldove andare[.]
 
 #org @Stellavia_10_2_NPC1_text1
-Non ho bisogno di una badante, sono\nancora abbastanza giovane dentro da\lvoler scoprire tante cose[.]\pThe more you f*ck around, the more\nyou are gonna find out!\pUn po' come con la MN 04 Forza, non\nsai mai cosa possa nascondersi\ldietro qualche ostacolo!
+[BLACK]Non ho bisogno di una badante, sono\nancora abbastanza giovane dentro da\lvoler scoprire tante cose[.]\pThe more you f*ck around, the more\nyou are gonna find out!\pUn po' come con la MN 04 Forza, non\nsai mai cosa possa nascondersi\ldietro qualche ostacolo!
 
 #org @Stellavia_10_2_level_text1
-Caro, ero davvero in pensiero per\nte!\pPensavo ti fossi cacciato in\nqualche guaio[.]
+[BLACK]Caro, ero davvero in pensiero per\nte!\pPensavo ti fossi cacciato in\nqualche guaio[.]
 
 #org @Stellavia_10_2_level_text2
-Hai fatto bene a preoccuparti[.]\pSai che ancora non mi rendo conto\ndell'et[16] che avanza e della mia\lforza che sta diminuendo[.]\pMa per fortuna questo giovanotto mi\nha trovato ed [1A] stato cos[1E] gentile\lda accompagnarmi a casa[.]\pLui di forza ne ha da vendere!
+[BLACK]Hai fatto bene a preoccuparti[.]\pSai che ancora non mi rendo conto\ndell'et[16] che avanza e della mia\lforza che sta diminuendo[.]\pMa per fortuna questo giovanotto mi\nha trovato ed [1A] stato cos[1E] gentile\lda accompagnarmi a casa[.]\pLui di forza ne ha da vendere!
 
 #org @Stellavia_10_2_level_text3
-Prendi questa, te la sei meritata!
+[BLACK]Prendi questa, te la sei meritata!
 
 //______10_3_______
 
 #org @Stellavia_10_3_NPC0_text1
-Alla radio stanno passando i\nmigliori pezzi di DJ Ross.\pQuel ragazzo merita tutta la fama\nche ha!
+[BLACK]Alla radio stanno passando i\nmigliori pezzi di [GRAY]DJ Ross[BLACK].\pQuel ragazzo merita tutta la fama\nche ha!
 
 #org @Stellavia_10_3_NPC1_text1
-Stamattina avevo lezione di Analisi\nMatematica 1.\pOvviamente mi sono svegliato tardi\ne sto facendo colazione solo ora,\lforse ieri sera non avrei dovuto\lstare al Rooftop Bar Loud and Cloud\lfino a tarda notte! 
+[BLACK]Stamattina avevo lezione di Analisi\nMatematica 1.\pOvviamente mi sono svegliato tardi\ne sto facendo colazione solo ora,\lforse ieri sera non avrei dovuto\lstare al [GREEN]Rooftop Bar Loud and Cloud[BLACK]\lfino a tarda notte! 
 
 #org @Stellavia_10_3_NPC2_text1
-In questa confraternita ognuno ha\nil suo ruolo.\pIo amo cucinare, quindi ogni sera\npreparo la cena per tutti, mentre\laltri studenti si occupano delle\lpulizie o della spesa.\pPer fortuna che ho il mio\nCharmander ad aiutarmi!
+[BLACK]In questa confraternita ognuno ha\nil suo ruolo.\pIo amo cucinare, quindi ogni sera\npreparo la cena per tutti, mentre\laltri studenti si occupano delle\lpulizie o della spesa.\pPer fortuna che ho il mio\n[GREEN]Charmander[BLACK] ad aiutarmi!
 
 #org @Stellavia_10_3_NPC3_text1
-Char-Charmander\nChar!
+[BLACK]Char-Charmander\nChar!
 
 #org @Stellavia_10_3_NPC4_text1
-Ma chi me lo fa fare di andare in\nbiblioteca?\pDevastante questa nuova puntata di\nTemptation Island, Alola Edition.
+[BLACK]Ma chi me lo fa fare di andare in\nbiblioteca?\pDevastante questa nuova puntata di\nTemptation Island, Alola Edition.
 
 #org @Stellavia_10_3_NPC5_text1
-Non ci posso credere, ieri sera\navevo sistemato tutti i miei appunti\lper l'esame sui Pokemon di tipo\lElettro[.]\pProbabilmente al mio Taillow non\nsono piaciuti e li ha spazzati via\lcon una raffica!
+[BLACK]Non ci posso credere, ieri sera\navevo sistemato tutti i miei appunti\lper l'esame sui Pokemon di tipo\lElettro[.]\pProbabilmente al mio [GREEN]Taillow[BLACK] non\nsono piaciuti e li ha spazzati via\lcon una raffica!
 
 #org @Stellavia_10_3_SIGN0
 Libro di cucina BBQ.\pRicetta per il Brisket affumicato\nalla Charmander:\lSpeziare il brisket con sale e\lbaccacedro tritata, poi cuocerlo\la bassa temperatura per 12 ore.\pConsigli dello Chef: usare braciere\nper mantenere la temperatura\lcostante a 130 gradi.
@@ -148,34 +148,34 @@ Quest'enciclopedia raccoglie\ninformazioni su tutti i tipi di\lPokemon.
 //____10_4_______
 
 #org @Stellavia_10_4_NPC0_text1
-Benvenuto all'Universit[16] di\nStellavia, dove gli alunni\ldiventano maestri!
+[BLACK]Benvenuto all'[GREEN]Universit[16] di\nStellavia[BLACK], dove gli alunni\ldiventano maestri!
 
 #org @Stellavia_10_4_NPC1_text1
-Le universit[16] non formano solo\nmenti.\pFormano anche dubbi.
+[BLACK]Le universit[16] non formano solo\nmenti.\pFormano anche dubbi.
 
 #org @Stellavia_10_4_NPC2_text1
-Ogni libro racconta una storia,\nma la vera storia [1A] quella che\lscegli di vivere fuori da qui.
+[BLACK]Ogni libro racconta una storia,\nma la vera storia [1A] quella che\lscegli di vivere fuori da qui.
 
 #org @Stellavia_10_4_NPC3_text1
-Gli altri studiano economia o\ndiritto.\pIo studio il vento[.]\pPerch[1A] il vento ricorda cose che\nla terra ha dimenticato.
+[BLACK]Gli altri studiano economia o\ndiritto.\pIo studio il vento[.]\pPerch[1A] il vento ricorda cose che\nla terra ha dimenticato.
 
 #org @Stellavia_10_4_NPC4_text1
-SSSSHHhh, Silenzio!\pAnche il tuo Pokemon.\nSoprattutto il tuo Pokemon.
+[BLACK]SSSSHHhh, Silenzio!\pAnche il tuo Pokemon.\nSoprattutto il tuo Pokemon.
 
 #org @Stellavia_10_4_NPC5_text1
-Non sei tu a scegliere l'argomento\ndella tesi.\p[05] lui che sceglie te!
+[BLACK]Non sei tu a scegliere l'argomento\ndella tesi.\p[05] lui che sceglie te!
 
 #org @Stellavia_10_4_NPC5_text2
-Vuoi sapere una curiosit[16]?\pCrispy, il creatore di Pokemon\nSunset, ha scritto la sua tesi di\llaurea in ottimizzazione della\llogistica nei magazzini, presso lo\lstabilimento BMW di Monaco di\lBaviera. 
+[BLACK]Vuoi sapere una curiosit[16]?\p[BLUE]Crispy[BLACK], il creatore di [ORANGE]Pokemon\nSunset[BLACK], ha scritto la sua tesi di\llaurea in ottimizzazione della\llogistica nei magazzini, presso lo\lstabilimento BMW di Monaco di\lBaviera. 
 
 #org @Stellavia_10_4_NPC6_text1
-Sto studiando. Giuro.
+[BLACK]Sto studiando. Giuro.
 
 #org @Stellavia_10_4_NPC7_text1
-Ogni Pokemon ha un'abilit[16].\nAnche le persone.\pLa mia? Rimandare gli esami[.]
+[BLACK]Ogni Pokemon ha un'abilit[16].\nAnche le persone.\pLa mia? Rimandare gli esami[.]
 
 #org @Stellavia_10_4_NPC8_text1
-Dormo cos[1E] poco che il mio Abra mi\nteletrasporta direttamente a\llezione mentre dormo[.]\pOggi per[22] si [1A] sbagliato e mi ha\nteletrasportato qui ben due ore in\lanticipo[.]
+[BLACK]Dormo cos[1E] poco che il mio Abra mi\nteletrasporta direttamente a\llezione mentre dormo[.]\pOggi per[22] si [1A] sbagliato e mi ha\nteletrasportato qui ben due ore in\lanticipo[.]
 
 #org @Stellavia_10_4_SIGN0
 Questa statua rappresenta Alakazam,\nil simbolo dell'Universit[16].\pAlakazam [1A] infatti ritenuto il\nPokemon pi[26] intelligente di tutti!
@@ -211,52 +211,52 @@ Appunti di matematica:\nIpotenusa, Cateto[.]\pE anche oggi il teorema di Pitagor
 //____10_5_______
 
 #org @Stellavia_10_5_NPC0_text1
-La somma dell'integrale [1A]\nl'integrale delle somme.
+[BLACK]La somma dell'integrale [1A]\nl'integrale delle somme.
 
 #org @Stellavia_10_5_NPC1_text1
-Sono qui solo per l'aria\ncondizionata[.]
+[BLACK]Sono qui solo per l'aria\ncondizionata[.]
 
 #org @Stellavia_10_5_NPC2_text1
-La disciplina [1A] tutto.\nAnche nella squadra Pokemon.
+[BLACK]La disciplina [1A] tutto.\nAnche nella squadra Pokemon.
 
 #org @Stellavia_10_5_NPC3_text1
-Se rispondi giusto alla prossima\ndomanda del Prof. ti regalo un\lRevitalizzante Max. 
+[BLACK]Se rispondi giusto alla prossima\ndomanda del Prof. ti regalo un\l[GREEN]Revitalizzante Max[BLACK]. 
 
 #org @Stellavia_10_5_NPC3_text2
-Vuoi provare a rispondere?
+[BLACK]Vuoi provare a rispondere?
 
 #org @Stellavia_10_5_NPC3_text3
-Peccato, sar[16] per un'altra volta!
+[BLACK]Peccato, sar[16] per un'altra volta!
 
 #org @Stellavia_10_5_NPC3_text4
-Silenzio in aula!\pCome ogni settimana, oggi [1A] il\ngiorno del quizzone, vediamo chi di\lvoi [1A] il pi[26] preparato!
+[BLACK]Silenzio in aula!\pCome ogni settimana, oggi [1A] il\ngiorno del quizzone, vediamo chi di\lvoi [1A] il pi[26] preparato!
 
 #org @Stellavia_10_5_NPC3_text5
-Qual'[1A] l'elemento pi[26] importante\ndi un grattacielo?
+[BLACK]Qual'[1A] l'elemento pi[26] importante\ndi un grattacielo?
 
 #org @Stellavia_10_5_NPC3_text6
-Risposta esatta!\nLe fondamenta infatti servono a\lsostenere il carico e distribuire\lle vibrazioni che si accumulano in\ltutto l'edificio[.]
+[BLACK]Risposta esatta!\nLe [GREEN]fondamenta[BLACK] infatti servono a\lsostenere il carico e distribuire\lle vibrazioni che si accumulano in\ltutto l'edificio[.]
 
 #org @Stellavia_10_5_NPC3_text7
-Ed ora andiamo alla seconda domanda:
+[BLACK]Ed ora andiamo alla seconda domanda:
 
 #org @Stellavia_10_5_NPC3_text8
-Qual [1A] il fattore pi[26] comune che\navvia l'evoluzione di un Pokemon?
+[BLACK]Qual [1A] il fattore pi[26] comune che\navvia l'evoluzione di un Pokemon?
 
 #org @Stellavia_10_5_NPC3_text9
-Esatto! Il metodo pi[26] comune per\nfar evolvere i Pokemon [1A] infatti\lfarli salire di livello,\lcos[1E] da renderli pi[26] forti ed\lesperti!
+[BLACK]Esatto! Il metodo pi[26] comune per\nfar evolvere i Pokemon [1A] infatti\lfarli [GREEN]salire di livello[BLACK],\lcos[1E] da renderli pi[26] forti ed\lesperti!
 
 #org @Stellavia_10_5_NPC3_text10
-Un momento!\pMa lei non [1A] uno studente di\nquesta classe[.]\pLa prego di lasciare l'aula.
+[BLACK]Un momento!\pMa lei non [1A] uno studente di\nquesta classe[.]\pLa prego di lasciare l'aula.
 
 #org @Stellavia_10_5_NPC3_text11
-Hehe, ci sei cascato in pieno,\n[1A] stato divertente, no?\pUna promessa [1A] una promessa,\ntieni questo!
+[BLACK]Hehe, ci sei cascato in pieno,\n[1A] stato divertente, no?\pUna promessa [1A] una promessa,\ntieni questo!
 
 #org @Stellavia_10_5_NPC3_text12
-Forse dovrei prendere ripetizioni\nda te[.]
+[BLACK]Forse dovrei prendere ripetizioni\nda te[.]
 
 #org @Stellavia_10_5_NPC4_text1
-Prendere appunti [1A] impossibile,\nil Prof. continua a cambiare tema\le seguire l'argomento [1A] quasi\limpossibile[.]\pAaarrgh! Non posso ripetere il\nsemestre un'altra volta!
+[BLACK]Prendere appunti [1A] impossibile,\nil Prof. continua a cambiare tema\le seguire l'argomento [1A] quasi\limpossibile[.]\pAaarrgh! Non posso ripetere il\nsemestre un'altra volta!
 
 #org @Stellavia_10_5_SIGN0
 Questa libreria contiene moltissimi\nlibri: dalla biologia dei Pokemon\lfino alle arti pi[26] tecniche, come\ll'ingegneria.
@@ -267,168 +267,168 @@ Su questa lavagna sono scritte\nformule incomprensibili.
 //____10_7_______
 
 #org @Stellavia_10_7_NPC0_text1
-Qui all'universit[16] di Stellavia\nnon formiamo solo allenatori.\pFormiamo menti capaci di capire il\nmondo che cambia, di navigare la\lcomplessit[16][.]
+[BLACK]Qui all'[GREEN]Universit[16] di Stellavia[BLACK]\nnon formiamo solo allenatori.\pFormiamo menti capaci di capire il\nmondo che cambia, di navigare la\lcomplessit[16][.]
 
 #org @Stellavia_10_7_NPC0_text2
-Le citt[16] crescono, le tecnologie\navanzano[.]\pMa senza giudizio, anche il\nprogresso diventa pericoloso.
+[BLACK]Le citt[16] crescono, le tecnologie\navanzano[.]\pMa senza giudizio, anche il\nprogresso diventa pericoloso.
 
 #org @Stellavia_10_7_NPC0_text3
-Ricorda questo:\nIl sapere non serve a dominare,\lserve a scegliere[.]\pAllenati, studia, sbaglia.\n[05] cos[1E] che si costruisce il\lfuturo[.]
+[BLACK]Ricorda questo:\nIl sapere non serve a dominare,\lserve a scegliere[.]\pAllenati, studia, sbaglia.\n[05] cos[1E] che si costruisce il\lfuturo[.]
 
 #org @Stellavia_10_7_NPC0_text4
-Prendi questo, di solito lo regalo\nai miei migliori studenti[.]\p[05] il miglior modo per crescere e\nimparare assieme alla tua squadra.
+[BLACK]Prendi questo, di solito lo regalo\nai miei migliori studenti[.]\p[05] il miglior modo per crescere e\nimparare assieme alla tua squadra.
 
 #org @Stellavia_10_7_NPC0_text5
-Le universit[16] servono per imparare,\nma la vera maestra di vita [1A]\ll'esperienza[.]\pUno studente pu[22] avere anche tre\ndottorati, ma senza un briciolo di\lesperienza pratica[.]\l[05] inutile.
+[BLACK]Le universit[16] servono per imparare,\nma la vera maestra di vita [1A]\ll'esperienza[.]\pUno studente pu[22] avere anche tre\ndottorati, ma senza un briciolo di\lesperienza pratica[.]\l[05] inutile.
 
 #org @Stellavia_10_7_NPC2_text1
-Non toccare nulla.\nSoprattutto NON toccare quello!
+[BLACK]Non toccare nulla.\nSoprattutto NON toccare quello!
 
 #org @Stellavia_10_7_NPC3_text1
-Ho quasi hackerato il PokeDex!\p[.]Forse non dovevo dirlo.
+[BLACK]Ho quasi hackerato il [GREEN]PokeDex[BLACK]!\p[.]Forse non dovevo dirlo.
 
 #org @Stellavia_10_7_NPC3_text2
-Tieni questo, ma non fare la spia!
+[BLACK]Tieni questo, ma non fare la spia!
 
 #org @Stellavia_10_7_NPC3_text3
-Ho perso il file[.] il FILEEEE[.]
+[BLACK]Ho perso il file[.] il FILEEEE[.]
 
 //____10_8_______
 
 #org @Stellavia_10_8_NPC0_text1
-Benvenuto alla Stellavia\nPokeExchange.\pAl primo piano puoi trovare gli\nuffici degli analisti, mentre al\lsecondo piano troverai l'ufficio\ldel direttore.
+[BLACK]Benvenuto alla [GREEN]Stellavia\nPokeExchange[BLACK].\pAl primo piano puoi trovare gli\nuffici degli analisti, mentre al\lsecondo piano troverai l'ufficio\ldel direttore.
 
 #org @Stellavia_10_8_NPC1_text1
-Sono qui per un colloquio come\ntirocinante.\pMi tremano le gambe dall'ansia!
+[BLACK]Sono qui per un colloquio come\ntirocinante.\pMi tremano le gambe dall'ansia!
 
 #org @Stellavia_10_8_NPC2_text1
-Dovevo incontrare il mio broker\nun'ora fa, ovviamente [1A] in ritardo.\pQuesti Finance Bros sono\ninaffidabili, tutto ci[22] di cui gli\limporta [1A] avere un gilet Patagonia\le i capelli sempre in ordine[.] 
+[BLACK]Dovevo incontrare il mio broker\nun'ora fa, ovviamente [1A] in ritardo.\pQuesti Finance Bros sono\ninaffidabili, tutto ci[22] di cui gli\limporta [1A] avere un gilet Patagonia\le i capelli sempre in ordine[.] 
 
 #org @Stellavia_10_8_NPC3_text1
-Oggi le azioni di PokeMart sono\ncrollate!\pTutti comprano al 7 Eevee!
+[BLACK]Oggi le azioni di [GREEN]PokeMart[BLACK] sono\ncrollate!\pTutti comprano al [GREEN]7 Eevee[BLACK]!
 
 #org @Stellavia_10_8_NPC4_text1
-Un giorno sar[22] ricca.\pO in Terapia.
+[BLACK]Un giorno sar[22] ricca.\pO in Terapia.
 
 #org @Stellavia_10_8_NPC5_text1
-Devo finire quest'analisi per una\nnuova acquisizione entro stasera.\pLavorer[22] fino a tarda notte.
+[BLACK]Devo finire quest'analisi per una\nnuova acquisizione entro stasera.\pLavorer[22] fino a tarda notte.
 
 #org @Stellavia_10_8_NPC6_text1
-Lavorare in finanza fa bene al\nportafoglio.\pMa a cosa servono tutti questi\nsoldi se poi non si ha nemmeno il\ltempo per spenderli?
+[BLACK]Lavorare in finanza fa bene al\nportafoglio.\pMa a cosa servono tutti questi\nsoldi se poi non si ha nemmeno il\ltempo per spenderli?
 
 #org @Stellavia_10_8_NPC7_text1
-Il denaro [1A] come un Persian:\nelegante, silenzioso, e ti graffia\lappena ti distrai.
+[BLACK]Il denaro [1A] come un [GREEN]Persian[BLACK]:\nelegante, silenzioso, e ti graffia\lappena ti distrai.
 
 #org @Stellavia_10_8_NPC8_text1
-Non ci credo, sono davvero un\ndisastro[.]\pOggi [1A] il mio primo giorno di\nlavoro e gi[16] non ricordo cosa mi\lhanno spiegato i miei colleghi su\lcome usare il software SAP.
+[BLACK]Non ci credo, sono davvero un\ndisastro[.]\pOggi [1A] il mio primo giorno di\nlavoro e gi[16] non ricordo cosa mi\lhanno spiegato i miei colleghi su\lcome usare il software SAP.
 
 #org @Stellavia_10_8_NPC8_text2
-Per caso conosci la transazione per\ncreare un ordine di vendita su SAP?
+[BLACK]Per caso conosci la transazione per\ncreare un ordine di vendita su SAP?
 
 #org @Stellavia_10_8_NPC8_text3
-Mmmh non penso proprio.\pMM01 serve a creare l'anagrafica di\nun nuovo materiale! 
+[BLACK]Mmmh non penso proprio.\p[GREEN]MM01[BLACK] serve a creare l'anagrafica di\nun nuovo materiale! 
 
 #org @Stellavia_10_8_NPC8_text4
-No, non ci siamo.\pQuesto serve per creare un ordine\ndi produzione.
+[BLACK]No, non ci siamo.\pQuesto serve per creare un ordine\ndi produzione.
 
 #org @Stellavia_10_8_NPC8_text5
-Esatto! [05] proprio questo, grazie\nmille!
+[BLACK]Esatto! [05] proprio questo, grazie\nmille!
 
 #org @Stellavia_10_8_NPC8_text6
-Pensa che in VA01, VA sta per\nVerkaufs Auftrag, che significa\lordine di vendita in tedesco.\nLa lingua madre di SAP.
+[BLACK]Pensa che in [GREEN]VA01[BLACK], VA sta per\nVerkaufs Auftrag, che significa\lordine di vendita in tedesco.\nLa lingua madre di SAP.
 
 #org @Stellavia_10_8_NPC8_text7
-Tieni questa in cambio!
+[BLACK]Tieni questa in cambio!
 
 #org @Stellavia_10_8_NPC8_text8
-Se i numeri sono in ordine, lo [1A]\nanche la mente!
+[BLACK]Se i numeri sono in ordine, lo [1A]\nanche la mente!
 
 #org @Stellavia_10_8_NPC9_text1
-Multitasking: mangio, lavoro,\npanico.
+[BLACK]Multitasking: mangio, lavoro,\npanico.
 
 #org @Stellavia_10_8_NPC10_text1
-Benvenuto giovanotto, sono il Sig.\nDallors, il direttore della Poke-\lExchange.
+[BLACK]Benvenuto giovanotto, sono il Sig.\nDallors, il direttore della [GREEN]Poke-\lExchange[BLACK].
 
 #org @Stellavia_10_8_NPC10_text2
-Offriamo piani di investimento con\nun pacchetto a partire da 5000\lPoke, sei interessato?
+[BLACK]Offriamo piani di investimento con\nun pacchetto a partire da [GREEN]5000\lPoke[BLACK], sei interessato?
 
 #org @Stellavia_10_8_NPC10_text3
-Niente di personale, ma ricorda che\nla vera ricchezza si costruisce nel\ltempo[.]
+[BLACK]Niente di personale, ma ricorda che\nla vera ricchezza si costruisce nel\ltempo[.]
 
 #org @Stellavia_10_8_NPC10_text4
-Mi dispiace, non hai abbastanza\nsoldi[.]
+[BLACK]Mi dispiace, non hai abbastanza\nsoldi[.]
 
 #org @Stellavia_10_8_NPC10_text5
-Fantastico!\pBenvenuto nella famiglia di Poke-\nExchange.\pTorna quando vuoi per scoprire\nl'interesse maturato sul tuo\linvestimento
+[BLACK]Fantastico!\pBenvenuto nella famiglia di [GREEN]Poke-\nExchange[BLACK].\pTorna quando vuoi per scoprire\nl'interesse maturato sul tuo\linvestimento
 
 #org @Stellavia_10_8_NPC10_text6
-[05] stato un piacere fare affari con\nte, torna quando vuoi!
+[BLACK][05] stato un piacere fare affari con\nte, torna quando vuoi!
 
 #org @Stellavia_10_8_NPC10_text7
-Torna quando vorrai prelevare i\ntuoi soldi!
+[BLACK]Torna quando vorrai prelevare i\ntuoi soldi!
 
 #org @Stellavia_10_8_NPC10_text_b50
-Mmmh, il tuo investimento ha perso\nil 50%. Vuoi ritirare i soldi?
+[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]50%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_b45
-Mmmh, il tuo investimento ha perso\nil 45%. Vuoi ritirare i soldi?
+[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]45%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_b40
-Mmmh, il tuo investimento ha perso\nil 40%. Vuoi ritirare i soldi?
+[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]40%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_b35
-Mmmh, il tuo investimento ha perso\nil 35%. Vuoi ritirare i soldi?
+[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]35%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_b30
-Mmmh, il tuo investimento ha perso\nil 30%. Vuoi ritirare i soldi?
+[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]30%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_b25
-Mmmh, il tuo investimento ha perso\nil 25%. Vuoi ritirare i soldi?
+[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]25%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_b20
-Mmmh, il tuo investimento ha perso\nil 20%. Vuoi ritirare i soldi?
+[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]20%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_b15
-Mmmh, il tuo investimento ha perso\nil 15%. Vuoi ritirare i soldi?
+[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]15%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_b10
-Mmmh, il tuo investimento ha perso\nil 10%. Vuoi ritirare i soldi?
+[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]10%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_b5
-Mmmh, il tuo investimento ha perso\nil 5%. Vuoi ritirare i soldi?
+[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]5%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_0
-Mmmh, il tuo investimento [1A] in\npari. Vuoi ritirare i soldi?
+[BLACK]Mmmh, il tuo investimento [1A] in\npari. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_5
-Buone notizie!\pIl tuo investimento ha guadagnato\nil 5%. Vuoi ritirare i soldi?
+[BLACK]Buone notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]5%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_10
-Buone notizie!\pIl tuo investimento ha guadagnato\nil 10%. Vuoi ritirare i soldi?
+[BLACK]Buone notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]10%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_15
-Buone notizie!\pIl tuo investimento ha guadagnato\nil 15%. Vuoi ritirare i soldi?
+[BLACK]Buone notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]15%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_20
-Buone notizie!\pIl tuo investimento ha guadagnato\nil 20%. Vuoi ritirare i soldi?
+[BLACK]Buone notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]20%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_25
-Buone notizie!\pIl tuo investimento ha guadagnato\nil 25%. Vuoi ritirare i soldi?
+[BLACK]Buone notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]25%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_30
-Buone notizie!\pIl tuo investimento ha guadagnato\nil 30%. Vuoi ritirare i soldi?
+[BLACK]Buone notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]30%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_35
-Buone notizie!\pIl tuo investimento ha guadagnato\nil 35%. Vuoi ritirare i soldi?
+[BLACK]Buone notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]35%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_40
-Ottime notizie!\pIl tuo investimento ha guadagnato\nil 40%. Vuoi ritirare i soldi?
+[BLACK]Ottime notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]40%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_45
-Ottime notizie!\pIl tuo investimento ha guadagnato\nil 45%. Vuoi ritirare i soldi?
+[BLACK]Ottime notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]45%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_NPC10_text_50
-Ottime notizie!\pIl tuo investimento ha guadagnato\nil 50%. Vuoi ritirare i soldi?
+[BLACK]Ottime notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]50%[BLACK]. Vuoi ritirare i soldi?
 
 #org @Stellavia_10_8_SIGN0
 Tauros [1A] il simbolo della\nPokeExchange,\lrappresenta il mercato rialzista.
@@ -446,22 +446,22 @@ Sono informazioni altamente\nriservate, meglio non guardare!
 //____10_9_______
 
 #org @Stellavia_10_9_NPC0_text1
-Sono venuto per comprare una cosa.\nUscir[22] con dieci, succede sempre\lcos[1E] dopotutto[.]
+[BLACK]Sono venuto per comprare una cosa.\nUscir[22] con dieci, succede sempre\lcos[1E] dopotutto[.]
 
 #org @Stellavia_10_9_NPC2_text1
-PokeBall, si. Hot dog, si.\nMa un hot dog IN UNA PokeBall?\p[.]Sto rivoluzionando la cucina,\nragazzo!
+[BLACK]PokeBall, si. Hot dog, si.\nMa un hot dog IN UNA PokeBall?\p[.]Sto rivoluzionando la cucina,\nragazzo!
 
 #org @Stellavia_10_9_NPC3_text1
-Charmander: Char - Char!
+[GREEN]Charmander[BLACK]: Char - Char!
 
 #org @Stellavia_10_9_NPC4_text1
-Stiamo testando nuovi prodotti,\nprendi questo.
+[BLACK]Stiamo testando nuovi prodotti,\nprendi questo.
 
 #org @Stellavia_10_9_NPC4_text2
-Da 7Eevee l'attenzione verso il\ncliente [1A] la cosa pi[26] importante.
+[BLACK]Da [GREEN]7Eevee[BLACK] l'attenzione verso il\ncliente [1A] la cosa pi[26] importante.
 
 #org @Stellavia_10_9_NPC5_text1
-Sono qui per comprare il caff[1A].\pQuesto [1A] il mio carburante.\nLetteralmente.
+[BLACK]Sono qui per comprare il caff[1A].\pQuesto [1A] il mio carburante.\nLetteralmente.
 
 #org @Stellavia_10_9_SIGN0
 In questi scatoloni ci sono prodotti\nesclusivi 7 Eevee.
@@ -476,79 +476,79 @@ Questo scaffale contiene molti\nprodotti freschi.
 //____10_10_______
 
 #org @Stellavia_10_10_SIGN0
-Questo libro racconta dell'era\nprimordiale di Eyros[.]\pPare fosse abitata da strane specie\ndi Pokemon, ormai estinte nel tempo.
+[BLACK]Questo libro racconta dell'era\nprimordiale di [GREEN]Eyros[BLACK][.]\pPare fosse abitata da strane specie\ndi Pokemon, ormai estinte nel tempo.
 
 #org @Stellavia_10_10_SIGN1
-Alla radio stanno passando un\nalbum dei Coldplay, questa si che\l[1A] musica!
+[BLACK]Alla radio stanno passando un\nalbum dei Coldplay, questa si che\l[1A] musica!
 
 #org @Stellavia_10_10_NPC0_text1
-Daje, sto a prepar[16] degli spaghi\nCacio e Pepe pe fa colpo su na\lpischella.\pSe ennamorer[16] de certo, credime.
+[BLACK]Daje, sto a prepar[16] degli spaghi\nCacio e Pepe pe fa colpo su na\lpischella.\pSe ennamorer[16] de certo, credime.
 
 #org @Stellavia_10_10_NPC0_text2
-Che stai a di? Voi la ricetta?\pCarcora che [1A] allo stesso tempo\nmolto facile e difficile AO[.]\pPecche ce stanno solo du\ningredienti si, per[22] te basta un\lsolo errore pe fa na miseria e\lrovinare l'equilibrio der piatto!
+[BLACK]Che stai a di? Voi la ricetta?\pCarcora che [1A] allo stesso tempo\nmolto facile e difficile AO[.]\pPecche ce stanno solo du\ningredienti si, per[22] te basta un\lsolo errore pe fa na miseria e\lrovinare l'equilibrio der piatto!
 
 #org @Stellavia_10_10_NPC0_text3
-Dosi pe du persone:\n120 gr. de pecorino,\lAO! Quello de Roma, me raccomando!\pPoi, tanto pepe, se deve senti AO!\pPraticamente, mentre a pasta coce,\nfai tostare er pepe in una padella\lantiaderente, poi quando serti\ler profumo der pepe en tutta a\lstanza, ce versi dentro un po de\lacqua de cottura[.]\pQuando a pasta sta ar dente ce la\nbutti nella padella cor pepe e\lun po de acqua de cottura e cuoci\lancora un minuto AO.\pDopodiche, spegni er fuoco e piano\npiano aggiungi er pecorino e\lmantechi.\pDeve fare splish splash AO, the\nsound of love.\pCarcora che [1A] tutto un gioco de\nequilibri, se ce sta troppa acqua,\lce butti dentro un poco de pecorino.\pSe ce stanno en po de grumi, ce\nbutti en poco de acqua de cottura.\pNon me deludere a fenomeno!
+[BLACK]Dosi pe du persone:\n120 gr. de pecorino,\lAO! Quello de Roma, me raccomando!\pPoi, tanto pepe, se deve senti AO!\pPraticamente, mentre a pasta coce,\nfai tostare er pepe in una padella\lantiaderente, poi quando serti\ler profumo der pepe en tutta a\lstanza, ce versi dentro un po de\lacqua de cottura[.]\pQuando a pasta sta ar dente ce la\nbutti nella padella cor pepe e\lun po de acqua de cottura e cuoci\lancora un minuto AO.\pDopodiche, spegni er fuoco e piano\npiano aggiungi er pecorino e\lmantechi.\pDeve fare splish splash AO, the\nsound of love.\pCarcora che [1A] tutto un gioco de\nequilibri, se ce sta troppa acqua,\lce butti dentro un poco de pecorino.\pSe ce stanno en po de grumi, ce\nbutti en poco de acqua de cottura.\pNon me deludere a fenomeno!
 
 #org @Stellavia_10_10_NPC1_text1
-La partita sta pe iniziare, sento\ngi[16] er core che me batte a crepa-\lpelle.\pEddajje maggica!!!
+[BLACK]La partita sta pe iniziare, sento\ngi[16] er core che me batte a crepa-\lpelle.\pEddajje maggica!!!
 
 #org @Stellavia_10_10_NPC2_text1
-Non chiedermi che cosa ci faccia\nqui:\lAvevo accettato di studiare insieme\la questo ragazzo[.]\pPenso lui abbia frainteso e pensi\nche questo sia un appuntamento[.] 
+[BLACK]Non chiedermi che cosa ci faccia\nqui:\lAvevo accettato di studiare insieme\la questo ragazzo[.]\pPenso lui abbia frainteso e pensi\nche questo sia un appuntamento[.] 
 
 //______10_11_______
 
 #org @Stellavia_10_11_NPC0_text1
-Vivere in una metropoli come\nStellavia [1A] molto stressante!\pIl miglior modo per mantenere lo\nstress sotto controllo [1A] allenarsi\lquasi tutti i giorni[.]\pOggi allener[22] schiena e tricipiti!
+[BLACK]Vivere in una metropoli come\n[GREEN]Stellavia[BLACK] [1A] molto stressante!\pIl miglior modo per mantenere lo\nstress sotto controllo [1A] allenarsi\lquasi tutti i giorni[.]\pOggi allener[22] schiena e tricipiti!
 
 #org @Stellavia_10_11_SIGN1
-Sono appunti su una tabella di\nallenamento basata su pi[26]\ldiscipline[.]\pForse una Hyrox?
+[BLACK]Sono appunti su una tabella di\nallenamento basata su pi[26]\ldiscipline[.]\pForse una Hyrox?
 
 //______10_12_______
 
 #org @Stellavia_10_12_NPC1_text1
-Se la citt[16] corre, tu[.] respira.
+[BLACK]Se la citt[16] corre, tu[.] respira.
 
 #org @Stellavia_10_12_NPC2_text1
-Il mio Pokemon sta bene.\nIo[.] non so.
+[BLACK]Il mio Pokemon sta bene.\nIo[.] non so.
 
 #org @Stellavia_10_12_NPC3_text1
-Prima di affrontare Ross, bevi un\nbicchiere d'acqua.\pCi sar[16] da ballare, fidati.
+[BLACK]Prima di affrontare [GRAY]Ross[BLACK], bevi un\nbicchiere d'acqua.\pCi sar[16] da ballare, fidati.
 
 #org @Stellavia_10_12_NPC4_text1
-[05] qui per dei controlli.\nHa urlato troppo alla festa di ieri.
+[BLACK][05] qui per dei controlli.\nHa urlato troppo alla festa di ieri.
 
 //______10_14_______
 
 #org @Stellavia_10_14_NPC0_text1
-Lui imita ogni rumore, ANCHE le mie\nlamentele.
+[BLACK]Lui imita ogni rumore, ANCHE le mie\nlamentele.
 
 #org @Stellavia_10_14_NPC1_text1
-Lavoro come sviluppatore.\pSe trovi un bug nel mio software [1A]\nvoluto. [05] ARTE.
+[BLACK]Lavoro come sviluppatore.\pSe trovi un bug nel mio software [1A]\nvoluto. [05] ARTE.
 
 #org @Stellavia_10_14_NPC2_text1
-Un grande magnate delle vendite un\ngiorno disse:\pPrima stringi amicizie, poi fai\nvendite e poi fai l'amore.\lIn nessun ordine particolare[.]
+[BLACK]Un grande magnate delle vendite un\ngiorno disse:\pPrima stringi amicizie, poi fai\nvendite e poi fai l'amore.\lIn nessun ordine particolare[.]
 
 #org @Stellavia_10_14_NPC2_text2
-Mi chiedo se davvero funzioni[.]\pMi sembri simpatico, tieni questi\ncampioni della nuova linea di\lPokeball.
+[BLACK]Mi chiedo se davvero funzioni[.]\pMi sembri simpatico, tieni questi\ncampioni della nuova linea di\l[GREEN]Pokeball[BLACK].
 
 #org @Stellavia_10_14_NPC3_text1
-Il turno di notte non perdona.\pOra mi merito una bella pennichella\nqui sul divano[.]
+[BLACK]Il turno di notte non perdona.\pOra mi merito una bella pennichella\nqui sul divano[.]
 
 #org @Stellavia_10_14_NPC4_text1
-Sto girando un video:\pCome arredare il tuo attico minimal.\nNon guardare il caos dietro di me.
+[BLACK]Sto girando un video:\pCome arredare il tuo attico minimal.\nNon guardare il caos dietro di me.
 
 #org @Stellavia_10_14_NPC5_text1
-LAMENTELEEE - LAMENTELEEE
+[BLACK]LAMENTELEEE - LAMENTELEEE
 
 #org @Stellavia_10_14_NPC6_text1
-Non credere che vivere in alto\nsignifichi stare lontano dai\lproblemi.\pI problemi[.] prendono l'ascensore.
+[BLACK]Non credere che vivere in alto\nsignifichi stare lontano dai\lproblemi.\pI problemi[.] prendono l'ascensore.
 
 #org @Stellavia_10_14_SIGN4
-[05] un bellissimo album di foto,\nChatot sembra proprio felice!
+[BLACK][05] un bellissimo album di foto,\n[GREEN]Chatot[BLACK] sembra proprio felice!
 
 #org @Stellavia_10_14_SIGN5
-Pianifica la tua vacanza da sogno,\nvisita Corallia!
+[BLACK]Pianifica la tua vacanza da sogno,\nvisita [GREEN]Corallia[BLACK]!
 
 #org @Stellavia_10_14_SIGN6
 Sta suonando Horse with no name,\ndegli America.
@@ -564,10 +564,10 @@ Questo album raccoglie le carte\ndella collezione Crepuscolo\lMascherato.\pManca
 //______10_17_______
 
 #org @Stellavia_10_17_NPC0_text1
-Guardo Stellavia dall'alto da\nvent'anni.\pNon ho ancora capito se cresce[.]\nO si perde.
+[BLACK]Guardo [GREEN]Stellavia[BLACK] dall'alto da\nvent'anni.\pNon ho ancora capito se cresce[.]\nO si perde.
 
 #org @Stellavia_10_17_NPC1_text1
-Soffri di vertigini?\nNon tutti sopportano l'altezza di\lquesti terrazzi.\pIl vento poi soffia veramente forte,\ni panni asciugheranno subito!
+[BLACK]Soffri di vertigini?\nNon tutti sopportano l'altezza di\lquesti terrazzi.\pIl vento poi soffia veramente forte,\ni panni asciugheranno subito!
 
 #org @Stellavia_10_17_SIGN0
 [PLAYER] guarda dal cannocchiale:\nSi vede la skyline di Stellavia!
@@ -575,31 +575,31 @@ Soffri di vertigini?\nNon tutti sopportano l'altezza di\lquesti terrazzi.\pIl ve
 //______10_19_______
 
 #org @Stellavia_10_19_NPC2_text1
-La metro collega tutto.\nPersone, storie, problemi[.]\pE qualche volta, soluzioni.
+[BLACK]La metro collega tutto.\nPersone, storie, problemi[.]\pE qualche volta, soluzioni.
 
 #org @Stellavia_10_19_NPC3_text1
-Pronto? Si mamma, sto bene.\nSi, sto mangiando.\lSi, sto aspettando la metro.\pNo, non ho lasciato il gas acceso!
+[BLACK]Pronto? Si mamma, sto bene.\nSi, sto mangiando.\lSi, sto aspettando la metro.\pNo, non ho lasciato il gas acceso!
 
 #org @Stellavia_10_19_NPC5_text1
-Benvenuto alla metropolitana di\nStellavia!\pSe hai bisogno di indicazioni,\nbiglietti o informazioni sulle\llinee, sono qui per aiutarti.
+[BLACK]Benvenuto alla [GREEN]Metropolitana di\nStellavia[BLACK]!\pSe hai bisogno di indicazioni,\nbiglietti o informazioni sulle\llinee, sono qui per aiutarti.
 
 #org @Stellavia_10_19_NPC6_text1
-Il vento decide la direzione.\nIo solo i binari.
+[BLACK]Il vento decide la direzione.\nIo solo i binari.
 
 #org @Stellavia_10_19_NPC4_text1
-Tre tipi di persone usano la metro:\nchi scappa, chi rincorre, e chi[.]\ltorna.
+[BLACK]Tre tipi di persone usano la metro:\nchi scappa, chi rincorre, e chi[.]\ltorna.
 
 #org @Stellavia_10_19_NPC4_text2
-Quale sei te?
+[BLACK]Quale sei te?
 
 #org @Stellavia_10_19_NPC4_text3
-Eh[.] tutti scappano da qualcosa,\nprima o poi.\pMa ricorda, ragazzo: non esiste\ntreno abbastanza veloce da lasciarti\ldietro ci[22] che porti nel cuore.\pPrima o poi[.] ti raggiunge.
+[BLACK]Eh[.] tutti scappano da qualcosa,\nprima o poi.\pMa ricorda, ragazzo: non esiste\ntreno abbastanza veloce da lasciarti\ldietro ci[22] che porti nel cuore.\pPrima o poi[.] ti raggiunge.
 
 #org @Stellavia_10_19_NPC4_text4
-Ci vuole un po', ragazzo[.]\nma il treno arriva sempre.\pAnche se non quello che aspetti.
+[BLACK]Ci vuole un po', ragazzo[.]\nma il treno arriva sempre.\pAnche se non quello che aspetti.
 
 #org @Stellavia_10_19_NPC4_text5
-Ah[.] tu sei uno di quelli che\nsanno dove andare.\pE soprattutto[.] dove tornare.\nNon molti possono dirlo.\lTieniti stretto quel posto.
+[BLACK]Ah[.] tu sei uno di quelli che\nsanno dove andare.\pE soprattutto[.] dove tornare.\nNon molti possono dirlo.\lTieniti stretto quel posto.
 
 #org @Stellavia_10_19_Sign3_text1
 Metropolitana di Stellavia -\nLinea 1:\pStellavia - Ardesiopoli Sud

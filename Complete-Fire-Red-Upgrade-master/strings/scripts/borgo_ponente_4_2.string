@@ -1,26 +1,26 @@
 #org @EventScript_Borgo_Ponente_4_2_text1
-Naomi: Ciao [PLAYER]!\pChe piacere vederti, cosa\nti porta da queste parti?
+[RED]Naomi[BLACK]: Ciao [LIGHT_BLUE][PLAYER][BLACK]!\pChe piacere vederti, cosa\nti porta da queste parti?
 
 #org @EventScript_Borgo_Ponente_4_2_text2
-[PLAYER]: [.]
+[LIGHT_BLUE][PLAYER][BLACK]: [.]
 
 #org @EventScript_Borgo_Ponente_4_2_text3
-Naomi: Sul serio!?!\pTuo fratello vuole farci vedere\nqualcosa nel Percorso 1?\pNon sto pi[26] nella pelle, parto\nsubito!!!
+[RED]Naomi[BLACK]: Sul serio!?!\pTuo fratello vuole farci vedere\nqualcosa nel [GREEN]Percorso 1[BLACK]?\pNon sto pi[26] nella pelle, parto\nsubito!!!
 
 #org @EventScript_Borgo_Ponente_4_2_NPC0_text1
-La vita qui [1A] cos[1E] tranquilla[.]\pSpero Naomi si stia divertendo.
+[BLACK]La vita qui [1A] cos[1E] tranquilla[.]\pSpero [RED]Naomi[BLACK] si stia divertendo.
 
 #org @EventScript_Borgo_Ponente_4_2_NPC0_text2
-Stai cercando Naomi?\nDovrebbe essere al piano di sopra,\lin camera sua.
+[BLACK]Stai cercando Naomi?\nDovrebbe essere al piano di sopra,\lin camera sua.
 
 #org @EventScript_Borgo_Ponente_4_2_NPC1_text1
-Non vedo l'ora di diventare grande\ncome la mia sorellona e iniziare\lil mio viaggio nel mondo dei Pok\emon!
+[BLACK]Non vedo l'ora di diventare grande\ncome la mia sorellona e iniziare\lil mio viaggio nel mondo dei Pok\emon!
 
 #org @EventScript_Borgo_Ponente_4_2_NPC3_text1
-Un percorso attraversabile\nsolamente sul dorso di un Pok\emon\lin grado di volare?\pMa certo, per attraversare il\nPercorso 11, cos[1E] come molti altri\lpercorsi nella Regione di Eyros,\lhai bisogno di un Pok\emon in grado\ldi usare la MN Zenit.
+[BLACK]Un percorso attraversabile\nsolamente sul dorso di un Pok\emon\lin grado di volare?\pMa certo, per attraversare il\n[GREEN]Percorso 11[BLACK], cos[1E] come molti altri\lpercorsi nella Regione di [GREEN]Eyros[BLACK],\lhai bisogno di un Pok\emon in grado\ldi usare la [GREEN]MN Zenit[BLACK].
 
 #org @Borgo_Ponente_4_2_Sign0_text1
-[05] il PC di Naomi, meglio\nnon cliccare niente[.]
+[BLACK][05] il PC di [RED]Naomi[BLACK], meglio\nnon cliccare niente[.]
 
 #org @EventScript_Borgo_Ponente_4_2_Sign3
-Questo [1A] il letto di Naomi.\nForse [1A] meglio lasciarlo in\lordine.
+[BLACK]Questo [1A] il letto di [RED]Naomi[BLACK].\nForse [1A] meglio lasciarlo in\lordine.

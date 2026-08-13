@@ -22,14 +22,14 @@ EventScript_Borgo_Ponente_4_1_Sign3:
 .global EventScript_Borgo_Ponente_4_1_tile1
 EventScript_Borgo_Ponente_4_1_tile1:
 	lockall
-	checkflag 0x91B
+	checkflag 0x994
 	if 0x0 _goto Borgo_Ponente_4_1_tile1_P1
 	releaseall
 	end
 
 	Borgo_Ponente_4_1_tile1_P1:
 		lockall
-		setflag 0x91B
+		setflag 0x994
 		msgbox Borgo_Ponente_4_1_tile1_P1_text1 MSG_NORMAL
 		callasm 0x809FC91
 		releaseall
@@ -99,7 +99,6 @@ gMapScripts_Borgo_Ponente_4_1:
 	Borgo_Ponente_4_1_MapScriptOnFrame_P2:
 		lockall
 		pause 0x1E
-		textcolor 0x00
 		compare 0x501F 0x100
 		if 0x1 _call Player_Blue
 		compare 0x501F 0x1A3
@@ -111,7 +110,6 @@ gMapScripts_Borgo_Ponente_4_1:
 		applymovement 0xFF Borgo_Ponente_4_1_mov2
 		waitmovement 0x0
 		pause 0x1E
-		textcolor 0x00
 		compare 0x501F 0x100
 		if 0x1 _call Player_Blue
 		compare 0x501F 0x1A3
@@ -132,13 +130,13 @@ gMapScripts_Borgo_Ponente_4_1:
 		.byte 0xFE
 
 		Player_Blue:
-			showpokepic 0x3b6 0x15 0x6
+			showpokepic 0x3b6 0x0 0x6
 			return
 
 		Player_Orange:
-			showpokepic 0x3bE 0x15 0x6
+			showpokepic 0x3bE 0x0 0x6
 			return
 
 		Player_Green:
-			showpokepic 0x3bF 0x15 0x6
+			showpokepic 0x3bF 0x0 0x6
 			return

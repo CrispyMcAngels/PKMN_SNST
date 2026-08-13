@@ -28,13 +28,12 @@ Dark_Future_32_3_MapScriptOnFrameBegin:
 
 Dark_Future_32_3_Part1:
     pause 0x2E
-    clearflag 0x91B
     movesprite 0x1 0x3 0x5
     sound 0x9
     pause 0x1E
     spriteface 0x2 0x1
     sound 0x15
-    applymovement 0x2 dark_future_32_3_mov1
+    applymovement 0x2 mov_exclamation
     waitmovement 0x2
     pause 0x1E
     showpokepic 0x3C9 0x0 0x6
@@ -85,10 +84,6 @@ Dark_Future_32_3_Part1:
     fadescreen 0x0
     releaseall
     end   
-
-    dark_future_32_3_mov1:
-        .byte 0x62
-        .byte 0xFE
 
     dark_future_32_3_mov2:
         .byte 0x12

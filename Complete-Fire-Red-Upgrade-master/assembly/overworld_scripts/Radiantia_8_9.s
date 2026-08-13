@@ -70,16 +70,17 @@ EventScript_Radiantia_8_9_NPC0:
 	movesprite 0x2 0x07 0x06
 	applymovement 0x2 Radiantia_8_9_NPC0_mov2a
 	waitmovement 0x2
+	spriteface 0xFF 0x1
 	pause 0x1E
 	msgbox Radiantia_8_9_NPC0_text2 MSG_NORMAL
 	pause 0x1E
 	msgbox Radiantia_8_9_NPC0_text3 MSG_NORMAL
 	pause 0x1E
 	fanfare 0x0103
-	textcolor 0x2
+	
 	msgbox Mission_Completed_text1 MSG_NORMAL
 	setflag 0x971
-	textcolor 0x0
+	
 	msgbox Radiantia_8_9_NPC0_text4 MSG_NORMAL	
 	giveitem 0x44 0x1 MSG_OBTAIN
 	release
@@ -131,10 +132,10 @@ EventScript_Radiantia_8_9_NPC0:
 		msgbox Radiantia_8_9_NPC0_text3 MSG_NORMAL
 		pause 0x1E
 		fanfare 0x0103
-		textcolor 0x2
+		
 		msgbox Mission_Completed_text1 MSG_NORMAL
 		setflag 0x971
-		textcolor 0x0
+		
 		msgbox Radiantia_8_9_NPC0_text4 MSG_NORMAL	
 		giveitem 0x44 0x1 MSG_OBTAIN
 		release
@@ -176,10 +177,10 @@ EventScript_Radiantia_8_9_NPC0:
 		msgbox Radiantia_8_9_NPC0_text3 MSG_NORMAL
 		pause 0x1E
 		fanfare 0x0103
-		textcolor 0x2
+		
 		msgbox Mission_Completed_text1 MSG_NORMAL
 		setflag 0x971
-		textcolor 0x0
+		
 		msgbox Radiantia_8_9_NPC0_text4 MSG_NORMAL	
 		giveitem 0x44 0x1 MSG_OBTAIN
 		release
@@ -210,13 +211,13 @@ EventScript_Radiantia_8_9_NPC1:
 
 
 		Player_Blue:
-			showpokepic 0x3b6 0x15 0x6
+			showpokepic 0x3b6 0x0 0x6
 			return
 
 		Player_Orange:
-			showpokepic 0x3bE 0x15 0x6
+			showpokepic 0x3bE 0x0 0x6
 			return
 
 		Player_Green:
-			showpokepic 0x3bF 0x15 0x6
+			showpokepic 0x3bF 0x0 0x6
 			return

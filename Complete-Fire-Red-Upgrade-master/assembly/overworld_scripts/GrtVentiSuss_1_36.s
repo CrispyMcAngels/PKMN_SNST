@@ -14,6 +14,10 @@ EventScript_GrtVentiSuss_1_36_tile0:
 	sound 0x5
 	applymovement 0x1 GrtVentiSuss_1_36_tile0_mov0
 	waitmovement 0x1
+	sound 0x15 
+	applymovement 0x1 mov_exclamation
+	waitmovement 0x1
+
 	cry 0xB2 0x0
 	msgbox Percorso3_3_21_tile0_text1 MSG_NORMAL
 	pause 0x1E
@@ -28,7 +32,6 @@ EventScript_GrtVentiSuss_1_36_tile0:
 	GrtVentiSuss_1_36_tile0_mov0:
 		.byte 0x0
 		.byte 0x1C
-		.byte 0x62
 		.byte 0xFE
 
 	GrtVentiSuss_1_36_tile0_mov1:

@@ -55,12 +55,12 @@ Borgo_Ponente_4_4_MapScriptOnFrameBegin:
 Borgo_Ponente_4_4_MapScriptOnFrameBegin_P1:
     lockall
     spriteface 0xFF 0x2
-	textcolor 0x00
     msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text1 MSG_NORMAL
-    applymovement 0x1 Borgo_Ponente_4_4_MapScriptOnFrame_mov1
+    spriteface 0x1 0x3
+    sound 0x15
+    applymovement 0x1 mov_exclamation
     waitmovement 0x0  
     pause 0x1E
-	textcolor 0x00
     msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text2 MSG_NORMAL    
     applymovement 0x1 Borgo_Ponente_4_4_MapScriptOnFrame_mov2
     waitmovement 0x0
@@ -68,16 +68,13 @@ Borgo_Ponente_4_4_MapScriptOnFrameBegin_P1:
     pause 0x1E
     applymovement 0x1 Borgo_Ponente_4_4_MapScriptOnFrame_mov3
     waitmovement 0x0  
-	textcolor 0x00
     msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text3 MSG_NORMAL
     fanfare 0x0101
     msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text4 MSG_NORMAL
     pause 0x1E
-	textcolor 0x00
     msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text5 MSG_NORMAL
     pause 0x1E
     pause 0x1E
-	textcolor 0x00
     msgbox Borgo_Ponente_4_4_MapScriptOnFrame_text6 MSG_NORMAL
     setvar 0x4050 0x2
     setvar 0x4051 0x14
@@ -85,12 +82,6 @@ Borgo_Ponente_4_4_MapScriptOnFrameBegin_P1:
     setflag 0x91E
     release
     end
-
-
-    Borgo_Ponente_4_4_MapScriptOnFrame_mov1:
-        .byte 0x2 
-        .byte 0x62
-        .byte 0xFE
 
     Borgo_Ponente_4_4_MapScriptOnFrame_mov2:
         .byte 0x12

@@ -34,6 +34,7 @@
 #define CFRU_TALL_GRASS_BEHAVIOR_BROWN MB_01
 #define CFRU_TALL_GRASS_BEHAVIOR_RICEFIELD MB_04
 #define CFRU_TALL_GRASS_BEHAVIOR_RED   MB_09
+#define CFRU_TALL_GRASS_BEHAVIOR_DARKGREEN   MB_0D
 #define FLDEFF_PAL_TAG_GENERAL_1 0x1005
 #define gFieldEffectObjectPaletteInfo1 ((const struct SpritePalette*) 0x83A5348)
 
@@ -111,12 +112,37 @@ static const u16 sCfruRedGrassPalette[] =
     RGB(29, 17, 19), //used
 };
 
+/*
+ * Dark green palette for CFRU_TALL_GRASS_BEHAVIOR_DARKGREEN (MB_0D).
+ * Edit colors as needed; index 0 is transparent.
+ */
+static const u16 sCfruDarkGreenGrassPalette[] =
+{
+    RGB(31, 0, 29),
+    RGB(16, 25, 12), //used
+    RGB(9, 17, 7), 
+    RGB(8, 14, 12), //used
+    RGB(5, 12, 11), //used
+    RGB(10, 13, 9), 
+    RGB(16, 23, 23),
+    RGB(12, 22, 24),
+    RGB(17, 25, 30),
+    RGB(19, 26, 26), //used   
+    RGB(24, 27, 15), //used
+    RGB(14, 26, 11),
+    RGB(9, 18, 14), //used
+    RGB(8, 16, 13), //used
+    RGB(5, 12, 11), //used
+    RGB(7, 23, 6), //used
+};
+
 bool8 CfruMetatileBehavior_IsTallGrass(u8 metatileBehavior)
 {
     return metatileBehavior == MB_TALL_GRASS
         || metatileBehavior == CFRU_TALL_GRASS_BEHAVIOR_BROWN
         || metatileBehavior == CFRU_TALL_GRASS_BEHAVIOR_RICEFIELD
-        || metatileBehavior == CFRU_TALL_GRASS_BEHAVIOR_RED;
+        || metatileBehavior == CFRU_TALL_GRASS_BEHAVIOR_RED
+        || metatileBehavior == CFRU_TALL_GRASS_BEHAVIOR_DARKGREEN;
 }
 
 static void LoadCfruTallGrassPalette(u8 metatileBehavior)
@@ -137,6 +163,9 @@ static void LoadCfruTallGrassPalette(u8 metatileBehavior)
         break;
     case CFRU_TALL_GRASS_BEHAVIOR_RED:
         palette = sCfruRedGrassPalette;
+        break;
+    case CFRU_TALL_GRASS_BEHAVIOR_DARKGREEN:
+        palette = sCfruDarkGreenGrassPalette;
         break;
     default:
         return;

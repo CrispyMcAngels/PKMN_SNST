@@ -141,7 +141,7 @@ EventScript_Percorso_4_3_22_NPC10:
 
 .global EventScript_Percorso_4_3_22_NPC11
 EventScript_Percorso_4_3_22_NPC11:
-	lock
+	lockall
 	faceplayer
 	checkitem 0x153 0x1
 	compare 0x800D 0x1
@@ -151,13 +151,15 @@ EventScript_Percorso_4_3_22_NPC11:
 	setvar 0x503B 0x0
 	trainerbattle3 0x3 0x30 0x100 Percorso_4_3_22_NPC11_text2
 	pause 0x1E
+	faceplayer
 	msgbox Percorso_4_3_22_NPC11_text3 MSG_NORMAL
 	pause 0x1E
 	giveitem 0x153 0x1 MSG_OBTAIN
 	pause 0x1E
+	faceplayer
 	msgbox Percorso_4_3_22_NPC11_text4 MSG_NORMAL
 	setvar 0x4053 0x8
-	release
+	releaseall
 	end
 
 	EventScript_Percorso_4_3_22_NPC11_P1:
@@ -219,7 +221,7 @@ EventScript_Percorso_4_3_22_NPC20:
 	faceplayer
 	msgbox Percorso_4_3_22_NPC20_text1 MSG_NORMAL
 	pause 0x1E
-	applymovement 0x14 Percorso_4_3_22_NPC20_mov1
+	applymovement 0x14 mov_exclamation
 	waitmovement 0x14
 	faceplayer
 	pause 0x1E
@@ -229,10 +231,6 @@ EventScript_Percorso_4_3_22_NPC20:
 	closeonkeypress
 	release
 	end
-
-	Percorso_4_3_22_NPC20_mov1:
-		.byte 0x62
-		.byte 0xFE
 
 	Percorso_4_3_22_NPC20_mov2:
 		.byte 0x21
@@ -320,13 +318,13 @@ EventScript_Percorso4_3_22_tile0:
 	applymovement 0x7F EventScript_Percorso4_3_22_tile0_mov0
 	waitmovement 0x0
 	pause 0x1E
-	textcolor 0x0
+	
 	msgbox Percorso_4_3_22_tile0_text1 MSG_NORMAL
 	pause 0x1E
 	msgbox Percorso_4_3_22_tile0_text2 MSG_NORMAL
 	pause 0x1E
 	cry 0x115 0x0 
-	textcolor 0x2
+	
 	msgbox Percorso_4_3_22_tile0_text3 MSG_NORMAL
 	pause 0x1E
 	applymovement 0xD EventScript_Percorso4_3_22_tile0_mov1
@@ -343,7 +341,7 @@ EventScript_Percorso4_3_22_tile0:
 	applymovement 0xD EventScript_Percorso4_3_22_tile0_mov3
 	waitmovement 0x0
 	pause 0x1E
-	textcolor 0x0
+	
 	msgbox Percorso_4_3_22_tile0_text4 MSG_NORMAL
 	movesprite2 0xD 0x0 0x0
 	hidesprite 0xD
@@ -352,7 +350,8 @@ EventScript_Percorso4_3_22_tile0:
 	applymovement 0x7F EventScript_Percorso4_3_22_tile0_mov4
 	waitmovement 0x0
 	special 0x114
-	applymovement 0xC EventScript_Percorso4_3_22_tile0_mov5
+	spriteface 0xC 0x1
+	applymovement 0xC mov_exclamation
 	waitmovement 0x0
 	msgbox Percorso_4_3_22_tile0_text5 MSG_NORMAL
 	pause 0x1E
@@ -395,11 +394,6 @@ EventScript_Percorso4_3_22_tile0:
 	EventScript_Percorso4_3_22_tile0_mov4:
 		.byte 0x10
 		.byte 0x10
-		.byte 0xFE
-
-	EventScript_Percorso4_3_22_tile0_mov5:
-		.byte 0x0 
-		.byte 0x62
 		.byte 0xFE
 
 	EventScript_Percorso4_3_22_tile0_mov6:

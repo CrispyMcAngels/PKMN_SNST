@@ -1,29 +1,29 @@
 #org @EventScript_Miralba_5_2_NPC0_text1
-Sai perch[1A] Miralba si chiama\ncos[1E]?\pBeh [1A] molto semplice.\pQui vicino, nella parte pi[26] a\nNord del Percorso 2, c'[1A] un punto\lpanoramico da dove [1A] possibile\lammirare delle albe mozzafiato.\pPerch[1A] non vai a vederlo con i\ntuoi stessi occhi?
+[BLACK]Sai perch[1A] [GREEN]Miralba[BLACK] si chiama\ncos[1E]?\pBeh [1A] molto semplice.\pQui vicino, nella parte pi[26] a\nNord del [GREEN]Percorso 2[BLACK], c'[1A] un punto\lpanoramico da dove [1A] possibile\lammirare delle albe mozzafiato.\pPerch[1A] non vai a vederlo con i\ntuoi stessi occhi?
 
 #org @EventScript_Miralba_5_2_NPC1_text1
-Qualche giorno fa sono andata con\nmio nonno nella Foresta Frondosa.\pDa lontano ho visto un Pok\emon\nbellissimo, aveva quattro zampe,\lle corna, e una pelliccia marrone\le verde.\pFarei di tutto per averlo!\nPotresti catturarlo per me?
+[BLACK]Qualche giorno fa sono andata con\nmio nonno nella [GREEN]Foresta Frondosa[BLACK].\pDa lontano ho visto un Pok\emon\nbellissimo, aveva quattro zampe,\lle corna, e una pelliccia marrone\le verde.\pFarei di tutto per averlo!\nPotresti catturarlo per me?
 
 #org @EventScript_Miralba_5_2_NPC1_text2
-Hai trovato il Pok\emon di cui ti\nho parlato?
+[BLACK]Hai trovato il Pok\emon di cui ti\nho parlato?
 
 #org @EventScript_Miralba_5_2_NPC1_text3
-Uffiii!\nQuel Pok\emon [1A] davvero introvabile!
+[BLACK]Uffiii!\nQuel Pok\emon [1A] davvero introvabile!
 
 #org @EventScript_Miralba_5_2_NPC1_text4
-Nooo, questo non [1A] il Pok\emon\nche cercavo[.]
+[BLACK]Nooo, questo non [1A] il Pok\emon\nche cercavo[.]
 
 #org @EventScript_Miralba_5_2_NPC1_text5
-[PLAYER] da Skiddo alla ragazza.
+[LIGHT_BLUE][PLAYER][BLACK] da [GREEN]Skiddo[BLACK] alla ragazza.
 
 #org @EventScript_Miralba_5_2_NPC1_text6
-Wow, non ci credo!\nSei riuscito a trovare uno Skiddo!\pPrendi questo come ricompensa!
+[BLACK]Wow, non ci credo!\nSei riuscito a trovare uno [GREEN]Skiddo[BLACK]!\pPrendi questo come ricompensa!
 
 #org @EventScript_Miralba_5_2_NPC1_text7
-[PLAYER] riceve vestiti verdi.
+[LIGHT_BLUE][PLAYER][BLACK] riceve vestiti verdi.
 
 #org @EventScript_Miralba_5_2_NPC1_text8
-Puoi cambiare i tuoi vestiti\ninteragendo con l'armadio\ldi casa tua.
+[BLACK]Puoi cambiare i tuoi vestiti\ninteragendo con l'armadio\ldi casa tua.
 
 #org @EventScript_Miralba_5_2_NPC1_text9
-Allener[22] Skiddo fino a quando\nnon sar[16] fortissimo!
+[BLACK]Allener[22] [GREEN]Skiddo[BLACK] fino a quando\nnon sar[16] fortissimo!

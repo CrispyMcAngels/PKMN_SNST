@@ -2,115 +2,115 @@
 [.]
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text2
-???: Il Monte Remoto[.]\pQui il tempo tace.\nQui il sole non cala mai[.]\pCome se questo luogo fosse rimasto\nsospeso nell'attimo che ho perduto[.]
+[CRONO]???[BLACK]: Il [GREEN]Monte Remoto[BLACK][.]\pQui il tempo tace.\nQui il sole non cala mai[.]\pCome se questo luogo fosse rimasto\nsospeso nell'attimo che ho perduto[.]
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text3
-???: Il tramonto[.] identico a\nquello di allora[.]
+[CRONO]???[BLACK]: Il tramonto[.] identico a\nquello di allora[.]
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text4
-???: Il giorno in cui le fiamme\ndella guerra hanno consumato tutto\lci[22] che amavo.
+[CRONO]???[BLACK]: Il giorno in cui le fiamme\ndella guerra hanno consumato tutto\lci[22] che amavo.
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text5
-???: Chi l'avrebbe mai detto[.]\pDopo mezzo secolo, eccomi di nuovo\nqui.\pMa questa volta[.] Nulla potr[16]\nfermarmi.\pN[1A] l'Ordine del Vento, n[1A] quelle\ntre Bestie Guardiane che osarono\lprivarmi della vittoria.
+[CRONO]???[BLACK]: Chi l'avrebbe mai detto[.]\pDopo mezzo secolo, eccomi di nuovo\nqui.\pMa questa volta[.] Nulla potr[16]\nfermarmi.\pN[1A] l'[LIGHT_BLUE]Ordine del Vento[BLACK], n[1A] quelle\ntre Bestie Guardiane che osarono\lprivarmi della vittoria.
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text6
-???: Con il potere di Ho-oh, il\nguardiano del tempo, risveglier[22]\lci[22] che mi [1A] stato strappato.\pIl mondo intero teme l'avanzata del\ntempo[.] io la spezzer[22].
+[CRONO]???[BLACK]: Con il potere di [RED]Ho-oh[BLACK], il\nguardiano del tempo, risveglier[22]\lci[22] che mi [1A] stato strappato.\pIl mondo intero teme l'avanzata del\ntempo[.] io la spezzer[22].
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text7
-???: Il tempo [1A] il vero carnefice.\p[05] lui che ruba, distrugge,\ncorrompe. Io lo incatener[22].\pE quando tutto sar[16] immobile,\nnessuna guerra, nessuna morte[.]\pNessuna perdita potr[16] pi[26] toccarmi.
+[CRONO]???[BLACK]: Il tempo [1A] il vero carnefice.\p[05] lui che ruba, distrugge,\ncorrompe. Io lo incatener[22].\pE quando tutto sar[16] immobile,\nnessuna guerra, nessuna morte[.]\pNessuna perdita potr[16] pi[26] toccarmi.
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text8
-???: Sar[22] ricordato come colui che\nha ridato eternit[16] a Eyros[.]\pE riavuto indietro ci[22] che il tempo\nmi ha tolto.
+[CRONO]???[BLACK]: [CRONO]Crono[BLACK], il mio nome sar[16]\nricordato come colui che ha ridato\leternit[16] a [GREEN]Eyros[BLACK][.]\pE riavuto indietro ci[22] che il tempo\nmi ha tolto.
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text9
-Crono: Da allora nulla sembra\nessere cambiato.\pEppure dentro di me[.] quel giorno\nnon [1A] mai finito.
+[CRONO]Crono[BLACK]: Da allora nulla sembra\nessere cambiato.\pEppure dentro di me[.] quel giorno\nnon [1A] mai finito.
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text10
 Monte Remoto[.]\p[.]500 anni fa[.]
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text11
-Crono: La fine del mio viaggio[.]\nFinalmente!
+[CRONO]Crono[BLACK]: La fine del mio viaggio[.]\nFinalmente!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text12
-Crono: Grazie alla Fiamma Tramonto\nquesto potere[.]\pSar[16] mio!
+[CRONO]Crono[BLACK]: Grazie alla [GREEN]Fiamma Tramonto[BLACK]\nquesto potere[.]\pSar[16] mio!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text13
-Crono: Ho-oh guardiano del tempo[.]\pQuesta volta non mi sfuggirai,\nvieni a me, portatore dell'eternit[16]!
+[CRONO]Crono[BLACK]: [RED]Ho-oh[BLACK] guardiano del tempo[.]\pQuesta volta non mi sfuggirai,\nvieni a me, portatore dell'eternit[16]!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text15
-Ho-oh: Gyooooohhhhhh!!!
+[RED]Ho-oh[BLACK]: Gyooooohhhhhh!!!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text16
-Crono: Ed ora[.]\n[.]diventa mio!
+[CRONO]Crono[BLACK]: Ed ora[.]\n[.]diventa mio!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text17
-Crono: Con il tuo potere sospender[22]\nil tempo stesso!\pCos[1E] rivedr[22] la mia famiglia, cos[1E]\nEyros non conoscer[16] mai pi[26] dolore.\pMolti lo chiameranno un\nsacrificio[.]\pIo lo chiamo redenzione.\pSe l'umanit[16] deve rinunciare al suo\ndomani, lo far[16].\pMeglio un presente eterno che un\nfuturo di cenere!
+[CRONO]Crono[BLACK]: Con il tuo potere sospender[22]\nil tempo stesso!\pCos[1E] rivedr[22] la mia famiglia, cos[1E]\n[GREEN]Eyros[BLACK] non conoscer[16] mai pi[26] dolore.\pMolti lo chiameranno un\nsacrificio[.]\pIo lo chiamo redenzione.\pSe l'umanit[16] deve rinunciare al suo\ndomani, lo far[16].\pMeglio un presente eterno che un\nfuturo di cenere!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text18
-Crono: Ma che?\pNon [1A] possibile[.]
+[CRONO]Crono[BLACK]: Ma che?\pNon [1A] possibile[.]
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text19
-Crono: Sta arrivando qualcuno[.]\p[.]qualcuno di molto forte!
+[CRONO]Crono[BLACK]: Sta arrivando qualcuno[.]\p[.]qualcuno di molto forte!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text20
-???: [.]
+[DARK_GRAY]???[BLACK]: [.]
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text21
-???: Rilascio!
+[DARK_GRAY]???[BLACK]: Rilascio!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text22
-Crono: Dannazione[.] voi di nuovo[.]\nEntei, Raikou, Suicune!\pSiete pronti a sacrificare Eyros\npur di difendere un dio che lascia\lmorire i suoi figli?
+[CRONO]Crono[BLACK]: Dannazione[.] voi di nuovo[.]\n[RED]Entei[BLACK], [ORANGE]Raikou[BLACK], [LIGHT_BLUE]Suicune[BLACK]!\pSiete pronti a sacrificare [GREEN]Eyros[BLACK]\npur di difendere un dio che lascia\lmorire i suoi figli?
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text23
-Crono: Ho-oh sconfiggili!
+[CRONO]Crono[BLACK]: [RED]Ho-oh[BLACK] sconfiggili!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text24
-Raikou: Rhooaaarrrr!!!
+[ORANGE]Raikou[BLACK]: Rhooaaarrrr!!!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text25
-Suicune: Rhooaaarrrr!!!
+[LIGHT_BLUE]Suicune[BLACK]: Rhooaaarrrr!!!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text26
-Entei: Rhooaaarrrr!!!
+[RED]Entei[BLACK]: Rhooaaarrrr!!!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text27
-Crono: Non capisco, che succede?
+[CRONO]Crono[BLACK]: Non capisco, che succede?
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text28
-Crono: HO-OH, RITIRATA!!!
+[CRONO]Crono[BLACK]: [RED]Ho-oh[BLACK], RITIRATA!!!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text28a
-Crono: [.]
+[CRONO]Crono[BLACK]: [.]
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text29
-Crono: No! Non pu[22] essere[.]\pDopo tutto ci[22] che ho fatto[.]\nancora una volta, derubato!\pNon mi arrender[22]. Non posso.\nCi dev'essere un modo[.]\pUn altro potere nascosto da qualche\nparte ad Eyros[.]
+[CRONO]Crono[BLACK]: No! Non pu[22] essere[.]\pDopo tutto ci[22] che ho fatto[.]\nancora una volta, derubato!\pNon mi arrender[22]. Non posso.\nCi dev'essere un modo[.]\pUn altro potere nascosto da qualche\nparte ad [GREEN]Eyros[BLACK][.]
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text30
-Crono: Si[.] lo trover[22].\pE se ci vorranno secoli attender[22].\nIl tempo non potr[16] nulla contro di\lme.\pIo lo divorer[22] dall'interno!
+[CRONO]Crono[BLACK]: Si[.] lo trover[22].\pE se ci vorranno secoli attender[22].\nIl tempo non potr[16] nulla contro di\lme.\pIo lo divorer[22] dall'interno!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text31
 Monte Remoto[.]\p[.]Presente
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text32
-Crono: Ebbene si[.]\pDopo secoli passati a vagabondare\nper Eyros ho trovato la soluzione[.]\pDopo pi[26] di 500 anni il Pok\emon\nleggendario finalmente si\lrisveglier[16] e nessuno potr[16] pi[26]\lfermarmi[.]
+[CRONO]Crono[BLACK]: Ebbene si[.]\pDopo secoli passati a vagabondare\nper [GREEN]Eyros[BLACK] ho trovato la soluzione[.]\pDopo pi[26] di 500 anni il Pok\emon\nleggendario finalmente si\lrisveglier[16] e nessuno potr[16] pi[26]\lfermarmi[.]
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text33
-Vesper: Maestro Crono,\nci siamo quasi[.]\pAbbiamo individuato un indizio che\npotrebbe mostrarci dove sono\lnascosti i focolari[.]
+[DUSK]Vesper[BLACK]: Maestro [CRONO]Crono[BLACK],\nci siamo quasi[.]\pAbbiamo individuato un indizio che\npotrebbe mostrarci dove sono\lnascosti i focolari[.]
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text33a
-Umbra: Le nostre reclute sono\ngi[16] in viaggio!
+[DUSK]Umbra[BLACK]: Le nostre reclute sono\ngi[16] in viaggio!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text34
-Crono: Eccellente!\pUmbra, Vesper, fate in modo che\ntutto vada secondo i piani!
+[CRONO]Crono[BLACK]: Eccellente!\p[DUSK]Umbra[BLACK], [DUSK]Vesper[BLACK], fate in modo che\ntutto vada secondo i piani!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text35
-Umbra: Sissignore!
+[DUSK]Umbra[BLACK]: Sissignore!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text36
-Crono: A presto,\pmia famiglia perduta[.]
+[CRONO]Crono[BLACK]: A presto,\pmia famiglia perduta[.]
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text37
-Crispy presenta[.]
+[DARK_GRAY]Crispy[BLACK] presenta[.]
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text38
-Atto uno:\pUna nuova alba
+Atto uno:\p[ORANGE]Una nuova alba[BLACK]

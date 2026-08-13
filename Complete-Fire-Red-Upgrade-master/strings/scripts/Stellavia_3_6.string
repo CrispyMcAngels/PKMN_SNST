@@ -1,5 +1,5 @@
 #org @Stellavia_3_6_NPC0_text1
-Stellavia [1A] una citt[16] che pulula\ndi giovani allenatori.\pIo e il mio Electrike non potevamo\nchiedere di meglio per allenarci!
+[GREEN]Stellavia[BLACK] [1A] una citt[16] che pulula\ndi giovani allenatori.\pIo e il mio [GREEN]Electrike[BLACK] non potevamo\nchiedere di meglio per allenarci!
 
 #org @Stellavia_3_6_NPC1_text1
 Electrikeeeee
@@ -11,110 +11,110 @@ In questa citt[16] tutto corre: taxi,\nbici, Pok\emon, sogni.\pMeno le persone. 
 Ludi-Ludi\n-Coloo
 
 #org @Stellavia_3_6_NPC3_text2
-Ludicolo vuole danzare in cambio di\nun offerta di 500 Pokedollari.\pVuoi dare l'offerta?
+[GREEN]Ludicolo[BLACK] vuole danzare in cambio di\nun offerta di [GREEN]500 Pokedollari[BLACK].\pVuoi dare l'offerta?
 
 #org @Stellavia_3_6_NPC3_text3
-Non hai abbastanza soldi!
+[BLACK]Non hai abbastanza soldi!
 
 #org @Stellavia_3_6_NPC3_text4
-Ludicolo sembra molto stanco[.]\pSi merita un po' di riposo dopo\naver ballato tutto il giorno!
+[GREEN]Ludicolo[BLACK] sembra molto stanco[.]\pSi merita un po' di riposo dopo\naver ballato tutto il giorno!
 
 #org @Stellavia_3_6_NPC4_text1
-Questo Ludicolo ha un'energia\ninesauribile: danza dal sorgere del\lsole fino al tramonto.\pPer tenermi in forma danzo assieme\na lui di tanto in tanto.
+[BLACK]Questo [GREEN]Ludicolo[BLACK] ha un'energia\ninesauribile: danza dal sorgere del\lsole fino al tramonto.\pPer tenermi in forma danzo assieme\na lui di tanto in tanto.
 
 #org @Stellavia_3_6_NPC5_text1
-Vorrei tanto veder danzare Ludicolo,\nma purtroppo non ho nessuna moneta\lda dargli!
+[BLACK]Vorrei tanto veder danzare [GREEN]Ludicolo[BLACK],\nma purtroppo non ho nessuna moneta\lda dargli!
 
 #org @Stellavia_3_6_NPC5_text2
-Era da molto tempo che volevo veder\nLudicolo danzare in prima persona,\lgrazie a te oggi ci sono riuscita!\pTieni, non posseggo molti soldi,\nma questa potrebbe tornarti utile!
+[BLACK]Era da molto tempo che volevo veder\n[GREEN]Ludicolo[BLACK] danzare in prima persona,\lgrazie a te oggi ci sono riuscita!\pTieni, non posseggo molti soldi,\nma questa potrebbe tornarti utile!
 
 #org @Stellavia_3_6_NPC5_text3
 //_/////////////////////////////////
-Ludicolo quando danza spacca forte.\nForse dovrei iniziare a danzare pure\lio?
+[GREEN]Ludicolo[BLACK] quando danza spacca forte.\nForse dovrei iniziare a danzare pure\lio?
 
 #org @Stellavia_3_6_NPC6_text1
-Com'[1A] la vita in una metropoli\ncome Stellavia?\pChe dire, per un'influencer come me\nnon esiste davvero posto migliore!\pLe possibilit[16] di shopping sono\ninfinite, e quando ho voglia di\ldivertirmi vado a sentire DJ Ross\lal Loud&Cloud rooftop!
+[BLACK]Com'[1A] la vita in una metropoli\ncome [GREEN]Stellavia[BLACK]?\pChe dire, per un'influencer come me\nnon esiste davvero posto migliore!\pLe possibilit[16] di shopping sono\ninfinite, e quando ho voglia di\ldivertirmi vado a sentire [GRAY]DJ Ross[BLACK]\lal [GREEN]Loud&Cloud Rooftop[BLACK]!
 
 #org @Stellavia_3_6_NPC7_text1
-Volevo andare al concerto di DJ Ross\ncon i miei amici, ma purtroppo [1A]\ltutto esaurito[.]
+[BLACK]Volevo andare al concerto di [GRAY]DJ Ross[BLACK]\ncon i miei amici, ma purtroppo [1A]\ltutto esaurito[.]
 
 #org @Stellavia_3_6_NPC8_text1
-LOOouudred - LOoouudred!
+[BLACK]LOOouudred - LOoouudred!
 
 #org @Stellavia_3_6_NPC9_text1
-Mi dispiace ragazzo, ma per ora i\nbiglietti per il concerto di DJ Ross\lsono finiti.\pProva a tornare pi[26] tardi, magari\nsi libera qualche posto[.]
+[BLACK]Mi dispiace ragazzo, ma per ora i\nbiglietti per il concerto di [GRAY]DJ Ross[BLACK]\lsono finiti.\pProva a tornare pi[26] tardi, magari\nsi libera qualche posto[.]
 
 #org @Stellavia_3_6_NPC11_text1
-La palestra [1A] chiusa, non hai\nsentito?\pRoss, il capopalestra, si esibir[16]\ncome DJ al RoofTop bar Loud and\lCloud.\pSe proprio vuoi sfidarlo, prova a\ncercarlo l[16].
+La palestra [1A] chiusa, non hai\nsentito?\p[GRAY]Ross[BLACK], il Capopalestra, si esibir[16]\ncome DJ al [GREEN]RoofTop Bar Loud and\lCloud[BLACK].\pSe proprio vuoi sfidarlo, prova a\ncercarlo l[16].
 
 #org @Stellavia_3_6_NPC12_text1
-Vedi il 7 Eevee laggi[26]?\p[05] aperto 24 ore su 24.\nUn po' come la speranza, direi.
+[BLACK]Vedi il [GREEN]7 Eevee[BLACK] laggi[26]?\p[05] aperto 24 ore su 24.\nUn po' come la speranza, direi.
 
 #org @Stellavia_3_6_NPC14_text1
-Stai attento quando entri dal\ncapopalestra Ross.\pL[1E] non si combatte con le mosse,\nma con il ritmo.
+[BLACK]Stai attento quando entri dal\ncapopalestra [GRAY]Ross[BLACK].\pL[1E] non si combatte con le mosse,\nma con il ritmo.
 
 #org @Stellavia_3_6_NPC15_text1
-Sapete cos'[1A] il vero potere?\nNo, non sono i soldi.\pSono le scelte.\pE voi allenatori ne fate una ogni\nvolta che lanciate una PokeBall.
+[BLACK]Sapete cos'[1A] il vero potere?\nNo, non sono i soldi.\pSono le scelte.\pE voi allenatori ne fate una ogni\nvolta che lanciate una [GREEN]PokeBall[BLACK].
 
 #org @Stellavia_3_6_NPC16_text1
-Zigza - ZigzaGOON
+[BLACK]Zigza - ZigzaGOON
 
 #org @Stellavia_3_6_NPC17_text1
-Sono di guardia alla Banca Centrale\nPokemon tutti i giorni tutto il\lgiorno.\pSoprattutto ora che le attivit[16]\ncriminali stanno aumentando[.]\pAl mio occhio di falco non sfugge\nnulla!
+[BLACK]Sono di guardia alla [GREEN]Banca Centrale\nPokemon[BLACK] tutti i giorni tutto il\lgiorno.\pSoprattutto ora che le attivit[16]\ncriminali stanno aumentando[.]\pAl mio occhio di falco non sfugge\nnulla!
 
 #org @Stellavia_3_6_NPC18_text1
-Lavorano tutti per crescere.\pMa tu[.] Cresci davvero, o alleni\nsolo Pokemon?
+[BLACK]Lavorano tutti per crescere.\pMa tu[.] Cresci davvero, o alleni\nsolo Pokemon?
 
 #org @Stellavia_3_6_NPC19_text1
-La crescita economica degli ultimi\ntempi sta portando moltissime\laziende e persone a spostarsi in\lcitt[16].\pCerto, per noi carpentieri c'[1A]\nmoltissimo lavoro.\pOgni tanto per[22] mi manca la vita\ntranquilla di paese[.]
+[BLACK]La crescita economica degli ultimi\ntempi sta portando moltissime\laziende e persone a spostarsi in\lcitt[16].\pCerto, per noi carpentieri c'[1A]\nmoltissimo lavoro.\pOgni tanto per[22] mi manca la vita\ntranquilla di paese[.]
 
 #org @Stellavia_3_6_NPC20_text1
-Machamp - Machaaamp!
+[BLACK]Machamp - Machaaamp!
 
 #org @Stellavia_3_6_NPC20_text2
-Grazie alla sua forza e manualit[16],\nMachamp [1A] un ottimo aiutante per i\lcarpentieri
+[BLACK]Grazie alla sua forza e manualit[16],\n[GREEN]Machamp[BLACK] [1A] un ottimo aiutante per i\lcarpentieri
 
 #org @Stellavia_3_6_NPC22_text1
-La citt[16] [1A] cresciuta molto pi[26]\nin fretta di quanto potessi\laccorgermene[.]\pSono uscito di casa per fare la\nspesa e mi sono perso[.]\pCon tutti questi grattacieli non\ncapisco pi[26] dove andare.\pMa almeno qui su questa panchina si\nsta al fresco!
+[BLACK]La citt[16] [1A] cresciuta molto pi[26]\nin fretta di quanto potessi\laccorgermene[.]\pSono uscito di casa per fare la\nspesa e mi sono perso[.]\pCon tutti questi grattacieli non\ncapisco pi[26] dove andare.\pMa almeno qui su questa panchina si\nsta al fresco!
 
 #org @Stellavia_3_6_NPC22_text2
-Come dici? la mia famiglia [1A]\npreoccupata per me?\pEcco, lo sapevo che mi sarei\ncacciato nei guai[.]
+[BLACK]Come dici? la mia famiglia [1A]\npreoccupata per me?\pEcco, lo sapevo che mi sarei\ncacciato nei guai[.]
 
 #org @Stellavia_3_6_NPC22_text3
-Saresti cos[1E] gentile da\naccompagnarmi a casa?\pAlla mia et[16] [1A] facile perdersi[.]
+[BLACK]Saresti cos[1E] gentile da\naccompagnarmi a casa?\pAlla mia et[16] [1A] facile perdersi[.]
 
 #org @Stellavia_3_6_NPC22_text4
-Lo sapevo che eri un bravo\ngiovanotto!
+[BLACK]Lo sapevo che eri un bravo\ngiovanotto!
 
 #org @Stellavia_3_6_NPC22_text5
-Non vuoi aiutare un povero\nvecchietto?
+[BLACK]Non vuoi aiutare un povero\nvecchietto?
 
 #org @Stellavia_3_6_NPC23_text1
-Io non alleno Pok\emon.\nIo li fotografo, sono i soli a non\lmentire mai.\pUna volta ho fotografato questo\nPokemon bellissimo, vorrei tanto\lrivederlo[.]
+[BLACK]Io non alleno Pok\emon.\nIo li fotografo, sono i soli a non\lmentire mai.\pUna volta ho fotografato questo\nPokemon bellissimo, vorrei tanto\lrivederlo[.]
 
 #org @Stellavia_3_6_NPC23_text2
-Ecco, guarda questa sua foto!
+[BLACK]Ecco, guarda questa sua foto!
 
 #org @Stellavia_3_6_NPC23_text3
-Tu che sei un allenatore,\nriusciresti a portarmene uno?\pVorrei fargli delle altre foto[.]
+[BLACK]Tu che sei un allenatore,\nriusciresti a portarmene uno?\pVorrei fargli delle altre foto[.]
 
 #org @Stellavia_3_6_NPC23_text4
-Hei, eccoti!\pHai per caso trovato quel\nbellissimo Pokemon farfalla che\lvolevo tanto fotografare?
+[BLACK]Hei, eccoti!\pHai per caso trovato quel\nbellissimo Pokemon farfalla che\lvolevo tanto fotografare?
 
 #org @Stellavia_3_6_NPC23_text5
-Non ancora eh? Peccato[.]\nTi aspetter[22] qui!
+[BLACK]Non ancora eh? Peccato[.]\nTi aspetter[22] qui!
 
 #org @Stellavia_3_6_NPC23_text6
-Incredibile! Sei proprio riuscito a\ntrovare un esemplare di Vivillon!
+[BLACK]Incredibile! Sei proprio riuscito a\ntrovare un esemplare di [GREEN]Vivillon[BLACK]!
 
 #org @Stellavia_3_6_NPC23_text7
-Perfetto, mettiti bene in posa!
+[BLACK]Perfetto, mettiti bene in posa!
 
 #org @Stellavia_3_6_NPC23_text8
-Ti ringrazio di cuore, ora ho\ncompletato la mia collezione di\lfotografie di Pokemon Coleottero!\pTieni questa, con tutta la fatica\nche hai fatto per portarmi questo\lPokemon, te la meriti proprio!
+[BLACK]Ti ringrazio di cuore, ora ho\ncompletato la mia collezione di\lfotografie di Pokemon Coleottero!\pTieni questa, con tutta la fatica\nche hai fatto per portarmi questo\lPokemon, te la meriti proprio!
 
 #org @Stellavia_3_6_NPC23_text9
-Nella fotografia, cos[1E] come nelle\nlotte Pokemon e nella vita, [1A]\lsempre importante mettere a fuoco\lprima di agire!
+[BLACK]Nella fotografia, cos[1E] come nelle\nlotte Pokemon e nella vita, [1A]\lsempre importante mettere a fuoco\lprima di agire!
 
 #org @Stellavia_3_6_SIGN0
 Stazione Metropolitana di Stellavia.
@@ -163,7 +163,7 @@ Torre Metagross: Progetto di\nespansione del distretto finanziario\ldi Stellavia
 
 #org @Stellavia_3_6_SIGN18
 //_/////////////////////////////////
-Stellavia [1A] considerata una citt[16]\nall'avanguardia sotto tutti gli\laspetti urbanistici.\pNon solo grazie a grattacieli che\nsfiorano le nuvole, ma anche alla\lpresenza di moltissimi parchi\lurbani.\pPolmone verde della citt[16] e zona\ndi svago per gli abitanti.
+[GREEN]Stellavia[BLACK] [1A] considerata una citt[16]\nall'avanguardia sotto tutti gli\laspetti urbanistici.\pNon solo grazie a grattacieli che\nsfiorano le nuvole, ma anche alla\lpresenza di moltissimi parchi\lurbani.\pPolmone verde della citt[16] e zona\ndi svago per gli abitanti.
 
 #org @Stellavia_3_6_SIGN19_text1
 //_/////////////////////////////////
@@ -178,4 +178,4 @@ Stellavia [1A] considerata una citt[16]\nall'avanguardia sotto tutti gli\laspett
 Hei, c'[1A] qualcosa!
 
 #org @Stellavia_3_6_SIGN19_text27
-[GREEN]Casa[MAIN_COLOUR] del Ricordamosse [22][1B]
+Casa del Ricordamosse

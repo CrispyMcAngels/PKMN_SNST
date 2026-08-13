@@ -1,63 +1,61 @@
 //_/////////////////////////////////
 #org @Ardesiopoli_6_2_MapScriptOnFrame_text1
-Benvenuto giovane sfidante!\nPurtroppo mi duole dirti che la\lpalestra oggi [1A] chiusa, Filiberto\lnon [1A] qui!
+[BLACK]Benvenuto giovane sfidante!\nPurtroppo mi duole dirti che la\lpalestra oggi [1A] chiusa, [ORANGE]Filiberto[BLACK]\lnon [1A] qui!
 
 #org @Ardesiopoli_6_2_NPC0_text1
-Filiberto: Finalmente ce l'hai\nfatta [PLAYER], sapevo che saresti\lriuscito a raggiungermi senza\lproblemi[.]\pVediamo di che pasta sei fatto!
+[ORANGE]Filiberto[BLACK]: Finalmente ce l'hai\nfatta [LIGHT_BLUE][PLAYER][BLACK], sapevo che saresti\lriuscito a raggiungermi senza\lproblemi[.]\pVediamo di che pasta sei fatto!
 
 #org @Ardesiopoli_6_2_NPC0_text2
-Wow, non pensavo fossi cos[1E] forte!
+Wow, non pensavo fossi cos[1E]\nforte!
 
 #org @Ardesiopoli_6_2_NPC0_text3
-Filiberto: Wow, sorprendente!\n[05] proprio vero che buon sangue non\lmente[.]\pLa Lega Pok\emon prevede che gli\nallenatori ricevano questa se\lriescono a sconfiggere un Capo\lPalestra.\pTi do con piacere la medaglia Amonite!
+[ORANGE]Filiberto[BLACK]: Wow, sorprendente!\n[05] proprio vero che buon sangue non\lmente[.]\pLa Lega Pok\emon prevede che gli\nallenatori ricevano questa se\lriescono a sconfiggere un Capo\lPalestra.\pTi do con piacere la [GREEN]Medaglia Amonite[BLACK]!
 
 #org @Ardesiopoli_6_2_NPC0_text4
-[PLAYER] riceve la medaglia Amonite!
+[LIGHT_BLUE][PLAYER][BLACK] riceve la medaglia Amonite!
 
 #org @Ardesiopoli_6_2_NPC0_text5
-La medaglia Amonite aumenta l'attacco\ndei tuoi Pok\emon e ti permette\lanche di usare la MN Taglio al di\lfuori della lotta.\pEcco, tieni anche questo!
+[BLACK]La [GREEN]Medaglia Amonite[BLACK] aumenta l'attacco\ndei tuoi Pok\emon e ti permette\lanche di usare la [GREEN]MN Taglio[BLACK] al di\lfuori della lotta.\pEcco, tieni anche questo!
 
 #org @Ardesiopoli_6_2_NPC0_text6
-Questa macchina tecnica, MT69,\ncontiene Lucidatura.\pI Pok\emon di tipo roccia sono\nspesso massicci e molto lenti.\lGrazie a questa MT, la loro\lvelocit[16] aumenter[16] drasticamente!
+[BLACK]Questa macchina tecnica, [GREEN]MT69[BLACK],\ncontiene [GREEN]Lucidatura[BLACK].\pI Pok\emon di tipo roccia sono\nspesso massicci e molto lenti.\lGrazie a questa MT, la loro\lvelocit[16] aumenter[16] drasticamente!
 
 #org @Ardesiopoli_6_2_NPC0_text7
-Filiberto: Bando alle ciance,\npenso proprio che adesso le analisi\lsiano pronte.\pTorniamo nel mio laboratorio! 
+[ORANGE]Filiberto[BLACK]: Bando alle ciance,\npenso proprio che adesso le analisi\lsiano pronte.\pTorniamo nel mio laboratorio! 
 
 #org @EventScript_Ardesiopoli_6_2_NPC1_text1
 //_/////////////////////////////////
-Studio i fossili da una vita[.]\nMa oggi sei tu il reperto che\nanalizzer[22]!
+[BLACK]Studio i fossili da una vita[.]\nMa oggi sei tu il reperto che\nanalizzer[22]!
 
 #org @EventScript_Ardesiopoli_6_2_NPC1_text2
 Eh? Come pu[22] un reperto battere\nl'archeologo?!
 
 #org @EventScript_Ardesiopoli_6_2_NPC1_text3
-Sto ancora studiando i dati della\nnostra lotta[.]\pMa sai una cosa? Il tuo stile di\nbattaglia [1A] davvero[.] evoluto!
-
+[BLACK]Sto ancora studiando i dati della\nnostra lotta[.]\pMa sai una cosa? Il tuo stile di\nbattaglia [1A] davvero[.] evoluto!
 
 #org @EventScript_Ardesiopoli_6_2_NPC3_text1
-
-I fossili non sono solo vecchi[.]\nSono tosti come la roccia!
+[BLACK]I fossili non sono solo vecchi[.]\nSono tosti come la roccia!
 
 #org @EventScript_Ardesiopoli_6_2_NPC3_text2
 Sei pi[26] solido di un Geodude!
 
 #org @EventScript_Ardesiopoli_6_2_NPC3_text3
-Ci sono lottatori duri come la pietra\ne poi ci sei tu.\pTi sei fatto strada come un piccone\nben affilato!
+[BLACK]Ci sono lottatori duri come la pietra\ne poi ci sei tu.\pTi sei fatto strada come un piccone\nben affilato!
 
 #org @EventScript_Ardesiopoli_6_2_NPC4_text1
-Ogni sfida [1A] un piccolo scavo[.]\nChiss[16] cosa scoprir[22] oggi!
+[BLACK]Ogni sfida [1A] un piccolo scavo[.]\nChiss[16] cosa scoprir[22] oggi!
 
 #org @EventScript_Ardesiopoli_6_2_NPC4_text2
 Wow! Hai riportato alla luce la mia\nsconfitta con grande maestria!
 
 #org @EventScript_Ardesiopoli_6_2_NPC4_text3
-Ogni sconfitta [1A] come uno strato da\nscavare[.]\pGrazie a te, oggi ho trovato \nqualcosa di prezioso: esperienza!
+[BLACK]Ogni sconfitta [1A] come uno strato da\nscavare[.]\pGrazie a te, oggi ho trovato \nqualcosa di prezioso: esperienza!
 
 #org @EventScript_Ardesiopoli_6_2_NPC2_text1
-Ah[.] un altro giovane esploratore?\pQuesta non [1A] una semplice Palestra.\n[05] un frammento sepolto del passato,\ldove il tempo si muove lento[.]\pCome la sabbia.\pFiliberto ti attende, ma non sperare\ndi raggiungerlo in linea retta.\pLe sabbie mobili di questo luogo non\nperdonano chi non osserva.\pSolo chi sa leggere i segni lasciati\ndai secoli trover[16] la strada.
+[BLACK]Ah[.] un altro giovane esploratore?\pQuesta non [1A] una semplice Palestra.\n[05] un frammento sepolto del passato,\ldove il tempo si muove lento[.]\pCome la sabbia.\pFiliberto ti attende, ma non sperare\ndi raggiungerlo in linea retta.\pLe sabbie mobili di questo luogo non\nperdonano chi non osserva.\pSolo chi sa leggere i segni lasciati\ndai secoli trover[16] la strada.
 
 #org @EventScript_Ardesiopoli_6_2_NPC2_text2
-Wow! Hai davvero battuto Filiberto?\pSei pi[26] resistente del fossile pi[26]\nduro!\pQuella Medaglia Amonite [1A] la prova\ndel tuo spirito da esploratore.\pContinua cos[1E], campione[.]\nHai appena iniziato a scavare il\ltuo destino!
+[BLACK]Wow! Hai davvero battuto [ORANGE]Filiberto[BLACK]?\pSei pi[26] resistente del fossile pi[26]\nduro!\pQuella [GREEN]Medaglia Amonite[BLACK] [1A] la prova\ndel tuo spirito da esploratore.\pContinua cos[1E], campione[.]\nHai appena iniziato a scavare il\ltuo destino!
 
 
 //_/////////////////////////////////

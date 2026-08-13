@@ -55,7 +55,7 @@ gMapScripts_Ardesiopoli_6_1:
 		Ardesiopoli_6_1_MapScriptOnFrameBegin:
 			lockall
 			showpokepic 0x3B8 0x0 0x6
-			textcolor 0x0
+			
 			msgbox Ardesiopoli_6_1_MapScriptOnFrame_text1 MSG_NORMAL
 			special 0x15A	
 			pause 0x1E
@@ -74,6 +74,12 @@ gMapScripts_Ardesiopoli_6_1:
 			special 0x15A	
 			applymovement 0x1 Ardesiopoli_6_1_MapScriptOnFrame_mov2
 			waitmovement 0x1 
+			sound 0x15	
+			applymovement 0x1 Ardesiopoli_6_1_MapScriptOnFrame_mov2_a0
+			waitmovement 0x1 
+			sound 0x15
+			applymovement 0x1 Ardesiopoli_6_1_MapScriptOnFrame_mov2_a
+			waitmovement 0x1 
 			showpokepic 0x3B8 0x0 0x6
 			msgbox Ardesiopoli_6_1_MapScriptOnFrame_text5 MSG_NORMAL
 			special 0x15A
@@ -87,6 +93,9 @@ gMapScripts_Ardesiopoli_6_1:
 			pause 0x1E			
 			applymovement 0x1 Ardesiopoli_6_1_MapScriptOnFrame_mov4
 			waitmovement 0x1 
+			sound 0x15	
+			applymovement 0x1 Ardesiopoli_6_1_MapScriptOnFrame_mov4_a
+			waitmovement 0x1
 			showpokepic 0x3B8 0x0 0x6
 			msgbox Ardesiopoli_6_1_MapScriptOnFrame_text7 MSG_NORMAL
 			special 0x15A
@@ -124,11 +133,17 @@ gMapScripts_Ardesiopoli_6_1:
 			Ardesiopoli_6_1_MapScriptOnFrame_mov2:
 				.byte 0x2
 				.byte 0x1C
+				.byte 0xFE
+
+			Ardesiopoli_6_1_MapScriptOnFrame_mov2_a0:
 				.byte 0x63
 				.byte 0x23
 				.byte 0x23
 				.byte 0x1C
 				.byte 0x1C
+				.byte 0xFE
+
+			Ardesiopoli_6_1_MapScriptOnFrame_mov2_a:
 				.byte 0x62
 				.byte 0x1A
 				.byte 0x11
@@ -146,6 +161,9 @@ gMapScripts_Ardesiopoli_6_1:
 			Ardesiopoli_6_1_MapScriptOnFrame_mov4:
 				.byte 0x2 
 				.byte 0x1C
+				.byte 0xFE
+
+			Ardesiopoli_6_1_MapScriptOnFrame_mov4_a:
 				.byte 0x63
 				.byte 0x1C
 				.byte 0x0 
@@ -163,7 +181,7 @@ EventScript_Ardesiopoli_6_1_NPC0:
 	faceplayer
 	checkflag 0x820
 	if 0x1 _goto EventScript_Ardesiopoli_6_1_NPC0_P1
-	applymovement 0x1 Ardesiopoli_6_1_NPC0_mov1
+	applymovement 0x1 mov_exclamation
 	waitmovement 0x1	
 	showpokepic 0x3B8 0x0 0x6
 	msgbox Ardesiopoli_6_1_NPC0_text1 MSG_NORMAL
@@ -189,7 +207,8 @@ EventScript_Ardesiopoli_6_1_NPC0:
 	msgbox Ardesiopoli_6_1_NPC0_text3 MSG_NORMAL
 	special 0x15A
 	pause 0x1E	
-	applymovement 0x1 Ardesiopoli_6_1_NPC0_mov1
+	sound 0x15
+	applymovement 0x1 mov_exclamation
 	waitmovement 0x1
 	spriteface 0x1 0x1
 	pause 0x1E
@@ -214,10 +233,6 @@ EventScript_Ardesiopoli_6_1_NPC0:
 		applymovement 0xFF Ardesiopoli_6_1_NPC0_mov4
 		waitmovement 0x0
 		return
-
-	Ardesiopoli_6_1_NPC0_mov1:
-		.byte 0x62
-		.byte 0xFE
 
 	Ardesiopoli_6_1_NPC0_mov2:
 		.byte 0x12
@@ -300,13 +315,13 @@ EventScript_Ardesiopoli_6_1_Sign1:
 	end
 
 Player_Blue:
-	showpokepic 0x3b6 0x15 0x6
+	showpokepic 0x3b6 0x0 0x6
 	return
 
 Player_Orange:
-	showpokepic 0x3bE 0x15 0x6
+	showpokepic 0x3bE 0x0 0x6
 	return
 
 Player_Green:
-	showpokepic 0x3bF 0x15 0x6
+	showpokepic 0x3bF 0x0 0x6
 	return

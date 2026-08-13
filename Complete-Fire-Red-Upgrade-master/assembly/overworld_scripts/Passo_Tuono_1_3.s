@@ -4,6 +4,16 @@
 .include "../xse_commands.s"
 .include "../xse_defines.s"
 
+//___LEVEL___
+
+.global gMapScripts_Passo_Tuono_1_3
+gMapScripts_Passo_Tuono_1_3:
+	mapscript MAP_SCRIPT_ON_LOAD Passo_Tuono_1_3_MapScriptOnLoad
+    .byte MAP_SCRIPT_TERMIN
+
+	Passo_Tuono_1_3_MapScriptOnLoad:
+		setvar 0x5007 0x15
+		end
 
 //TILES
 
@@ -12,8 +22,11 @@ EventScript_Passo_Tuono_1_3_tile0:
 	lockall
 	applymovement 0x7 Passo_Tuono_1_3_tile0_mov1
 	waitmovement 0x7
+	sound 0x15
+	applymovement 0x7 Passo_Tuono_1_3_tile0_mov1_b
+	waitmovement 0x7
 	pause 0x1E
-	textcolor 0x0
+	
 	msgbox Passo_Tuono_1_3_tile0_text1 MSG_NORMAL	
 	setvar 0x4051 0x40
 	releaseall
@@ -22,6 +35,9 @@ EventScript_Passo_Tuono_1_3_tile0:
 	Passo_Tuono_1_3_tile0_mov1:
 		.byte 0x2 
 		.byte 0x1B
+		.byte 0xFE
+
+	Passo_Tuono_1_3_tile0_mov1_b:
 		.byte 0x62
 		.byte 0x1B
 		.byte 0x12

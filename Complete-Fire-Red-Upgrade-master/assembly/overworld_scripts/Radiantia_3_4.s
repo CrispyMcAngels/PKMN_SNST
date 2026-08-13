@@ -31,6 +31,9 @@ gMapScripts_Radiantia_3_4:
 			if 0x1 _goto Radiantia_3_4_MapScriptOnFrameBegin_P1
 			applymovement 0xFF Radiantia_3_4_MapScriptOnFrameBegin_mov0
 			waitmovement 0xFF
+			sound 0x15
+			applymovement 0xFF mov_exclamation
+			waitmovement 0xFF			
 			compare 0x501F 0x100
 			if 0x1 _call Player_Blue
 			compare 0x501F 0x1A3
@@ -47,13 +50,12 @@ gMapScripts_Radiantia_3_4:
 			Radiantia_3_4_MapScriptOnFrameBegin_mov0:
 				.byte 0x1D
 				.byte 0x1B
-				.byte 0x1 
-				.byte 0x62
+				.byte 0x1
 				.byte 0xFE
 
 		Radiantia_3_4_MapScriptOnFrameBegin_P1:
 			pause 0x1E
-			applymovement 0xB Radiantia_3_4_mov1
+			applymovement 0xB mov_exclamation
 			waitmovement 0x0
 			pause 0x1E
 			spriteface 0xB 0x3
@@ -61,7 +63,7 @@ gMapScripts_Radiantia_3_4:
 			applymovement 0xB Radiantia_3_4_mov2
 			waitmovement 0x0			
 			pause 0x1E
-			textcolor 0x0
+			
 			showpokepic 0x3B4 0x0 0x6
 			msgbox Radiantia_3_4_MapScriptOnFrame_text2 MSG_NORMAL
 			special 0x15A
@@ -69,7 +71,7 @@ gMapScripts_Radiantia_3_4:
 			applymovement 0xFF Radiantia_3_4_mov3
 			waitmovement 0xFF		
 			pause 0x1E
-			applymovement 0xB Radiantia_3_4_mov1
+			applymovement 0xB mov_exclamation
 			waitmovement 0x0				
 			fadedefault
 			pause 0x1E
@@ -92,7 +94,7 @@ gMapScripts_Radiantia_3_4:
 			pause 0x1E
 			spriteface 0xB 0x1
 			pause 0x1E
-			applymovement 0xB Radiantia_3_4_mov1
+			applymovement 0xB mov_exclamation
 			waitmovement 0x0
 			spriteface 0xB 0x2
 			pause 0x1E
@@ -115,11 +117,6 @@ gMapScripts_Radiantia_3_4:
 			fadedefault
 			releaseall
 			end
-
-
-			Radiantia_3_4_mov1:
-				.byte 0x62
-				.byte 0xFE
 
 			Radiantia_3_4_mov2:
 				.byte 0x12

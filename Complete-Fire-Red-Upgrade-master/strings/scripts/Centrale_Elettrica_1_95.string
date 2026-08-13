@@ -6,23 +6,23 @@ Questo macchinario [1A] pieno di\npulsanti[.]\pMeglio non toccare nulla!
 Centrale Elettrica:\nSala Inferiore [ARROW_UP]
 
 #org @Centrale_Elettrica_1_95_NPC5_text1
-Tutti i macchinari qui dentro sono\nallo stato dell'arte.\pDopotutto siamo la prima centrale\nelettrica a produrre energia in\lquesto modo.
+[BLACK]Tutti i macchinari qui dentro sono\nallo stato dell'arte.\pDopotutto siamo la prima [GREEN]Centrale\nElettrica[BLACK] a produrre energia in\lquesto modo.
 
 #org @Centrale_Elettrica_1_95_NPC5_text2
 //_/////////////////////////////////
-Sai? Questa centrale non solo\nalimenta l'intera Stellavia.\pMa abbiamo pure un surplus di\ncorrente che distribuiamo a tutta\lEyros.
+[BLACK]Sai? Questa centrale non solo\nalimenta l'intera [GREEN]Stellavia[BLACK].\pMa abbiamo pure un surplus di\ncorrente che distribuiamo a tutta\l[GREEN]Eyros[BLACK].
 
 #org @Centrale_Elettrica_1_95_NPC2_text1
-I valori sembrano stabili, non\ndovrebbero esserci problemi oggi,\lma un minimo errore e potrebbero\lsuccedere guai[.]\pGuarda come questi generatori\ngirano veloci!
+[BLACK]I valori sembrano stabili, non\ndovrebbero esserci problemi oggi,\lma un minimo errore e potrebbero\lsuccedere guai[.]\pGuarda come questi generatori\ngirano veloci!
 
 #org @Centrale_Elettrica_1_95_NPC3_text1
-Sono in pausa e mi sto annoiando a\nmorte, che ne dici di una lotta?
+[BLACK]Sono in pausa e mi sto annoiando a\nmorte, che ne dici di una lotta?
 
 #org @Centrale_Elettrica_1_95_NPC3_text2
 Ouch, ora mi servir[16] una pausa\nancora pi[26] lunga per riprendermi!
 
 #org @Centrale_Elettrica_1_95_NPC3_text3
-Nella prossima pausa farei meglio\na leggere un libro, non a sfidare\lsconosciuti.
+[BLACK]Nella prossima pausa farei meglio\na leggere un libro, non a sfidare\lsconosciuti.
 
 #org @Centrale_Elettrica_1_95_NPC4_text1
-Stiamo estraendo energia pura al\nmomento, quindi l'accesso al piano\lsuperiore [1A] chiuso.
+[BLACK]Stiamo estraendo energia pura al\nmomento, quindi l'accesso al piano\lsuperiore [1A] chiuso.

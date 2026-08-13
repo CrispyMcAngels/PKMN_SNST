@@ -152,7 +152,7 @@ gMapScripts_Ardesiopoli_3_2:
 EventScript_Ardesiopoli_3_2_tile6:
 	lockall
 	playsong 0x112 0x0
-	textcolor 0x1
+	
 	msgbox Ardesiopoli_3_2_tile6_text1 MSG_NORMAL
 	getplayerpos 0x4001 0x4002
 
@@ -176,6 +176,9 @@ EventScript_Ardesiopoli_3_2_tile6:
 	pause 0x1E
 	applymovement 0xFF Ardesiopoli_3_2_tile6_mov4
 	waitmovement 0xFF
+	sound 0x15
+	applymovement 0xFF mov_question
+	waitmovement 0xFF
 	pause 0x1E
 	compare 0x4001 0x15
 	if 0x1 _call EventScript_Ardesiopoli_3_2_tile6_16b
@@ -186,10 +189,10 @@ EventScript_Ardesiopoli_3_2_tile6:
 	spriteface 0xFF 0x1
 	fadedefault
 	pause 0x1E
-	textcolor 0x1
+	
 	msgbox Ardesiopoli_3_2_tile6_text2 MSG_NORMAL
 	fanfare 0x0102
-	textcolor 0x2
+
 	msgbox Mission_Received_text1 MSG_NORMAL
 	setvar 0x4060 0x2
 	setflag 0x96B
@@ -197,12 +200,14 @@ EventScript_Ardesiopoli_3_2_tile6:
 	end
 
 	EventScript_Ardesiopoli_3_2_tile6_mid15:
+		sound 0x15
 		applymovement 0xFF Ardesiopoli_3_2_tile6_mov2
 		applymovement 0x1C Ardesiopoli_3_2_tile6_mov3a
 		waitmovement 0x0	
 		return
 
 	EventScript_Ardesiopoli_3_2_tile6_mid16:
+		sound 0x15
 		applymovement 0xFF Ardesiopoli_3_2_tile6_mov2
 		applymovement 0x1C Ardesiopoli_3_2_tile6_mov3
 		waitmovement 0x0	
@@ -242,6 +247,7 @@ EventScript_Ardesiopoli_3_2_tile6:
 		movesprite 0x1D 0x16 0x4C
 		applymovement 0x1D Ardesiopoli_3_2_tile6_mov5a
 		waitmovement 0x0
+		sound 0x15
 		return
 
 
@@ -295,7 +301,6 @@ EventScript_Ardesiopoli_3_2_tile6:
 		.byte 0x13
 		.byte 0x1 
 		.byte 0x1C
-		.byte 0x63
 		.byte 0xFE
 
 	Ardesiopoli_3_2_tile6_mov5:
@@ -330,10 +335,13 @@ EventScript_Ardesiopoli_3_2_tile5:
 	if 0x1 _goto EventScript_Ardesiopoli_3_2_tile5_P2
 	compare 0x405F 0x3
 	if 0x1 _goto EventScript_Ardesiopoli_3_2_tile5_P3
+	applymovement 0x11 Ardesiopoli_3_2_tile5_mov_a
+	applymovement 0x12 Ardesiopoli_3_2_tile5_mov_a
+	waitmovement 0x0
+	sound 0x15
 	applymovement 0x11 Ardesiopoli_3_2_tile5_mov1
 	applymovement 0x12 Ardesiopoli_3_2_tile5_mov2
 	waitmovement 0x0
-	textcolor 0x0
 	msgbox Ardesiopoli_3_2_tile5_text1 MSG_NORMAL
 	pause 0x1E
 	setvar 0x405F 0x2
@@ -345,9 +353,12 @@ EventScript_Ardesiopoli_3_2_tile5:
 	releaseall
 	end
 
-	Ardesiopoli_3_2_tile5_mov1:
+	Ardesiopoli_3_2_tile5_mov_a:
 		.byte 0x1 
 		.byte 0x1B
+		.byte 0xFE
+
+	Ardesiopoli_3_2_tile5_mov1:
 		.byte 0x62
 		.byte 0x1E
 		.byte 0x20
@@ -355,9 +366,8 @@ EventScript_Ardesiopoli_3_2_tile5:
 		.byte 0x2 
 		.byte 0xFE
 
+
 	Ardesiopoli_3_2_tile5_mov2:
-		.byte 0x1 
-		.byte 0x1B
 		.byte 0x62
 		.byte 0x1E
 		.byte 0x20
@@ -367,7 +377,7 @@ EventScript_Ardesiopoli_3_2_tile5:
 	EventScript_Ardesiopoli_3_2_tile5_P0:
 		closeonkeypress
 		fadedefault
-		textcolor 0x0
+		
 		msgbox Ardesiopoli_3_2_tile5_text0 MSG_NORMAL
 		releaseall
 		end
@@ -377,7 +387,7 @@ EventScript_Ardesiopoli_3_2_tile5:
 		applymovement 0x12 Ardesiopoli_3_2_tile5_mov4
 		applymovement 0xFF Ardesiopoli_3_2_tile5_mov5
 		waitmovement 0x0
-		textcolor 0x0		
+				
 		trainerbattle1 0x1 0x20 0x0 Ardesiopoli_3_2_tile5_text3 Ardesiopoli_3_2_tile5_text4 EventScript_Ardesiopoli_3_2_tile5_P1_2
 		releaseall
 		end
@@ -390,7 +400,7 @@ EventScript_Ardesiopoli_3_2_tile5:
 		applymovement 0x11 Ardesiopoli_3_2_tile5_mov6
 		applymovement 0x12 Ardesiopoli_3_2_tile5_mov7		
 		waitmovement 0x0 
-		textcolor 0x0
+		
 		trainerbattle1 0x1 0x21 0x0 Ardesiopoli_3_2_tile5_text5 Ardesiopoli_3_2_tile5_text6 EventScript_Ardesiopoli_3_2_tile5_P4
 		releaseall
 		end
@@ -430,10 +440,10 @@ EventScript_Ardesiopoli_3_2_tile5:
 			.byte 0xFE
 
 	EventScript_Ardesiopoli_3_2_tile5_P2a:
-		applymovement 0x11 Ardesiopoli_3_2_tile5_mov1a
-		applymovement 0x12 Ardesiopoli_3_2_tile5_mov1a
+		applymovement 0x11 mov_exclamation
+		applymovement 0x12 mov_exclamation
 		waitmovement 0x0
-		textcolor 0x0
+		
 		msgbox Ardesiopoli_3_2_tile5_text8 MSG_NORMAL
 		pause 0x1E
 		setvar 0x405F 0x2
@@ -444,16 +454,11 @@ EventScript_Ardesiopoli_3_2_tile5:
 		releaseall
 		end
 
-		Ardesiopoli_3_2_tile5_mov1a:
-			.byte 0x62
-			.byte 0xFE
-
-
 	EventScript_Ardesiopoli_3_2_tile5_P2:
 		applymovement 0x11 Ardesiopoli_3_2_tile5_mov1
 		applymovement 0x12 Ardesiopoli_3_2_tile5_mov2
 		waitmovement 0x0
-		textcolor 0x0
+		
 		msgbox Ardesiopoli_3_2_tile5_text8 MSG_NORMAL
 		pause 0x1E
 		msgbox Ardesiopoli_3_2_tile5_text2 MSG_YESNO
@@ -469,7 +474,7 @@ EventScript_Ardesiopoli_3_2_tile5:
 		applymovement 0x12 Ardesiopoli_3_2_tile5_mov9
 		applymovement 0xFF Ardesiopoli_3_2_tile5_mov5
 		waitmovement 0x0	
-		textcolor 0x0	
+			
 		trainerbattle1 0x1 0x21 0x0 Ardesiopoli_3_2_tile5_text5 Ardesiopoli_3_2_tile5_text6 EventScript_Ardesiopoli_3_2_tile5_P4
 		releaseall
 		end
@@ -492,7 +497,7 @@ EventScript_Ardesiopoli_3_2_tile5:
 		pause 0x1E
 		applymovement 0xFF Ardesiopoli_3_2_tile5_movCAM1
 		waitmovement 0x0
-		textcolor 0x0
+		
 		compare 0x501F 0x100
 		if 0x1 _call Player_Blue
 		compare 0x501F 0x1A3
@@ -502,7 +507,7 @@ EventScript_Ardesiopoli_3_2_tile5:
 		msgbox Ardesiopoli_3_2_tile5_text7 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
-		applymovement 0x12 Ardesiopoli_3_2_tile5_mov1a
+		applymovement 0x12 mov_exclamation
 		waitmovement 0x0
 		msgbox Ardesiopoli_3_2_tile5_text9 MSG_NORMAL
 		setvar 0x405F 0x4
@@ -526,7 +531,6 @@ EventScript_Ardesiopoli_3_2_tile0:
 	compare 0x4002 0x2E
 	if 0x1 _call EventScript_Ardesiopoli_3_2_tile0_DOWN
 	pause 0x1E
-	textcolor 0x01
 	showpokepic 0x3B5 0x0 0x6
 	msgbox Ardesiopoli_3_2_tile0_text1 MSG_NORMAL
 	special 0x15A
@@ -538,10 +542,10 @@ EventScript_Ardesiopoli_3_2_tile0:
 	trainerbattle3 0x3 0x19 0x100 Ardesiopoli_3_2_tile0_text2
 	fadedefault
 	pause 0x1E
+	sound 0x15
 	applymovement 0x2 Ardesiopoli_3_2_tile0_mov2
 	waitmovement 0x2
 	pause 0x1E
-	textcolor 0x01
 	showpokepic 0x3B5 0x0 0x6
 	msgbox Ardesiopoli_3_2_tile0_text3 MSG_NORMAL
 	special 0x15A
@@ -553,7 +557,7 @@ EventScript_Ardesiopoli_3_2_tile0:
 	if 0x0 _call EventScript_Ardesiopoli_3_2_tile0_P1_2
 	special 0x15A
 	pause 0x1E
-	applymovement 0x2 Ardesiopoli_3_2_tile0_mov3
+	applymovement 0x2 mov_question
 	waitmovement 0x2	
 	pause 0x1E
 	showpokepic 0x3B5 0x0 0x6
@@ -593,26 +597,33 @@ EventScript_Ardesiopoli_3_2_tile0:
 			return
 
 		EventScript_Ardesiopoli_3_2_tile0_UP:
+			applymovement 0x2 Ardesiopoli_3_2_tile0_mov_b
+			waitmovement 0x2
+			sound 0x15
 			applymovement 0x2 Ardesiopoli_3_2_tile0_mov1
 			waitmovement 0x2
 			return
 
 		EventScript_Ardesiopoli_3_2_tile0_DOWN:
+			applymovement 0x2 Ardesiopoli_3_2_tile0_mov_b
+			waitmovement 0x2
+			sound 0x15
 			applymovement 0x2 Ardesiopoli_3_2_tile0_mov1a
 			waitmovement 0x2
 			return		
 
-			Ardesiopoli_3_2_tile0_mov1:
+			Ardesiopoli_3_2_tile0_mov_b:
 				.byte 0x2 
 				.byte 0x1B
+				.byte 0xFE
+
+			Ardesiopoli_3_2_tile0_mov1:
 				.byte 0x62
 				.byte 0x12
 				.byte 0x12
 				.byte 0xFE
 
 			Ardesiopoli_3_2_tile0_mov1a:
-				.byte 0x2 
-				.byte 0x1B
 				.byte 0x62
 				.byte 0x12
 				.byte 0x10
@@ -621,10 +632,6 @@ EventScript_Ardesiopoli_3_2_tile0:
 
 			Ardesiopoli_3_2_tile0_mov2:
 				.byte 0x62 
-				.byte 0xFE
-
-			Ardesiopoli_3_2_tile0_mov3:
-				.byte 0x63
 				.byte 0xFE
 
 		EventScript_Ardesiopoli_3_2_tile0_UP2:
@@ -687,7 +694,7 @@ EventScript_Ardesiopoli_3_2_tile2:
 	compare 0x4001 0x17
 	if 0x1 _call EventScript_Ardesiopoli_3_2_tile2_P0_17
 	pause 0x1E
-	textcolor 0x0
+	
 	msgbox Ardesiopoli_3_2_NPC6_text1 MSG_NORMAL
 	pause 0x1E
 	getplayerpos 0x4001 0x4002
@@ -702,6 +709,7 @@ EventScript_Ardesiopoli_3_2_tile2:
 
 
 	EventScript_Ardesiopoli_3_2_tile2_P0_15:
+		sound 0x15
 		applymovement 0x7 Ardesiopoli_3_2_tile2_mov1_15
 		applymovement 0xFF Ardesiopoli_3_2_tile2_mov2_15
 		waitmovement 0x0
@@ -722,6 +730,7 @@ EventScript_Ardesiopoli_3_2_tile2:
 			.byte 0xFE
 
 	EventScript_Ardesiopoli_3_2_tile2_P0_16:
+		sound 0x15
 		applymovement 0x7 Ardesiopoli_3_2_tile2_mov1_16
 		applymovement 0xFF Ardesiopoli_3_2_tile2_mov2_16
 		waitmovement 0x0
@@ -744,6 +753,7 @@ EventScript_Ardesiopoli_3_2_tile2:
 			.byte 0xFE
 
 	EventScript_Ardesiopoli_3_2_tile2_P0_17:
+		sound 0x15
 		applymovement 0x7 Ardesiopoli_3_2_tile2_mov1_17
 		applymovement 0xFF Ardesiopoli_3_2_tile2_mov2_17
 		waitmovement 0x0
@@ -963,7 +973,8 @@ EventScript_Ardesiopoli_3_2_NPC19:
 	compare 0x405F 0x8
 	if 0x1 _goto EventScript_Ardesiopoli_3_2_NPC19_P1
 	cry 0x1c8 0x0
-	applymovement 0x14 Ardesiopoli_3_2_NPC19_mov1
+	sound 0x15
+	applymovement 0x14 mov_exclamation
 	waitmovement 0x14
 	pause 0x1E
 	compare 0x501F 0x100
@@ -972,18 +983,15 @@ EventScript_Ardesiopoli_3_2_NPC19:
 	if 0x1 _call Player_Orange
 	compare 0x501F 0x1A4
 	if 0x1 _call Player_Green
-	textcolor 0x0	
+		
 	msgbox Ardesiopoli_3_2_NPC19_text1 MSG_NORMAL	
 	special 0x15A
+	setflag 0x96A
 	setvar 0x405F 0x7
 	setvar 0x4050 0x8
-	warpmuted 0x6 0xB 0xFF 0x08 0x07
+	warpmuted 0x6 0xA 0xFF 0x07 0x0C
 	release
 	end
-
-	Ardesiopoli_3_2_NPC19_mov1:
-		.byte 0x62
-		.byte 0xFE
 
 	EventScript_Ardesiopoli_3_2_NPC19_P1:
 		cry 0x1c8 0x0
@@ -1046,13 +1054,13 @@ EventScript_Ardesiopoli_3_2_NPC28:
 
 
 Player_Blue:
-	showpokepic 0x3b6 0x15 0x6
+	showpokepic 0x3b6 0x0 0x6
 	return
 
 Player_Orange:
-	showpokepic 0x3bE 0x15 0x6
+	showpokepic 0x3bE 0x0 0x6
 	return
 
 Player_Green:
-	showpokepic 0x3bF 0x15 0x6
+	showpokepic 0x3bF 0x0 0x6
 	return

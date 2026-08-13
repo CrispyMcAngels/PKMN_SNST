@@ -1,122 +1,122 @@
 #org @Passo_Tuono_1_124_text1
-???: Una nuova alba sta per sorgere\nsu Eyros[.]
+[DARK_GRAY]???[BLACK]: Una nuova alba sta per sorgere\nsu [GREEN]Eyros[BLACK][.]
 
 #org @Passo_Tuono_1_124_text2
-Nel nome della luce dimenticata[.]\nSi spengano le ombre[.]
+[BLACK]Nel nome della luce dimenticata[.]\nSi spengano le ombre[.]
 
 #org @Passo_Tuono_1_124_text3
-Che Eyros ricordi la luce della\nFiamma Gialla[.]\pE il cielo trattenga il respiro[.]
+[BLACK]Che [GREEN]Eyros[BLACK] ricordi la luce della\n[ORANGE]Fiamma Gialla[BLACK][.]\pE il cielo trattenga il respiro[.]
 
 #org @Passo_Tuono_1_124_text4
-???: Bene, tutto procede da manuale.\nOra passiamo al sigillo!
+[DARK_GRAY]???[BLACK]: Bene, tutto procede da manuale.\nOra passiamo al sigillo!
 
 #org @Passo_Tuono_1_124_text5
-???: [.]
+[DARK_GRAY]???[BLACK]: [.]
 
 #org @Passo_Tuono_1_124_text6
-???: La Calma precede il vento[.]\p[.]Poi viene il pianto del cielo[.]\p[.]Ed infine la sua collera[.]
+[DARK_GRAY]???[BLACK]: La Calma precede il vento[.]\p[.]Poi viene il pianto del cielo[.]\p[.]Ed infine la sua collera[.]
 
 #org @Passo_Tuono_1_124_text7
-???: Il sigillo [1A] aperto[.]
+[DARK_GRAY]???[BLACK]: Il sigillo [1A] aperto[.]
 
 #org @Passo_Tuono_1_124_text8
-???: Tu che dormi oltre il tuono[.]\nApri gli occhi!
+[DARK_GRAY]???[BLACK]: Tu che dormi oltre il tuono[.]\nApri gli occhi!
 
 #org @Passo_Tuono_1_124_text9
-Raikou: Roaaaarrrrrr!!!
+[ORANGE]Raikou[BLACK]: Roaaaarrrrrr!!!
 
 #org @Passo_Tuono_1_124_text10
-???: Dormivi, fulmine antico[.]\nMa il tempo ha di nuovo bisogno di te[.]
+[DARK_GRAY]???[BLACK]: Dormivi, fulmine antico[.]\nMa il tempo ha di nuovo bisogno di te[.]
 
 #org @Passo_Tuono_1_124_text11
-[PLAYER]: Incredibile, [1A] tutto\ncome nella visione dell'uomo\lincappucciato[.]\pMi ricordo benissimo quella visione\ndovrei sapere come agire dunque!
+[LIGHT_BLUE][PLAYER][BLACK]: Incredibile, [1A] tutto\ncome nella visione dell'[DARK_GRAY]Uomo\lMisterioso[BLACK][.]\pMi ricordo benissimo quella visione\ndovrei sapere come agire dunque!
 
 #org @Passo_Tuono_1_124_text12
-[PLAYER]: Le Fiamme per[22] sono\nspente[.]
+[LIGHT_BLUE][PLAYER][BLACK]: Le Fiamme per[22] sono\nspente[.]
 
 #org @Passo_Tuono_1_124_text13
-[PLAYER]: La calma precede il vento,\npoi viene il pianto del cielo e\linfine la sua collera[.]\pL'uomo incappucciato ha pronunciato\nquesta frase nella visione[.]\pMa che cosa significano? 
+[LIGHT_BLUE][PLAYER][BLACK]: La calma precede il vento,\npoi viene il pianto del cielo e\linfine la sua collera[.]\pL'uomo incappucciato ha pronunciato\nquesta frase nella visione[.]\pMa che cosa significano? 
 
 #org @Passo_Tuono_1_124_text14
-[PLAYER]: Ma certo!\pDopo averlo detto ha interagito con\nquella stele!\pChe sia proprio quella la chiave\nper accendere le fiamme?
+[LIGHT_BLUE][PLAYER][BLACK]: Ma certo!\pDopo averlo detto ha interagito con\nquella stele!\pChe sia proprio quella la chiave\nper accendere le fiamme?
 
 #org @Passo_Tuono_1_124_text15
-[PLAYER] interagisce con la Stele.
+[LIGHT_BLUE][PLAYER][BLACK] interagisce con la Stele.
 
 
 //_____P3______
 
 #org @Passo_Tuono_1_124_text16
-[PLAYER]: Proprio come nella\nvisione!\pLa stele si [1A] attivata dopo aver\nrisolto l'enigma!\pEcco cosa significava quella\nfrase[.]
+[LIGHT_BLUE][PLAYER][BLACK]: Proprio come nella\nvisione!\pLa stele si [1A] attivata dopo aver\nrisolto l'enigma!\pEcco cosa significava quella\nfrase[.]
 
 #org @Passo_Tuono_1_124_text17
-[PLAYER]: Questa fiamma[.]\pNon c'era nella visione[.]\pHa un colore diverso da tutte le\naltre[.]\pEppure[.]\nemana un calore familiare.
+[LIGHT_BLUE][PLAYER][BLACK]: Questa fiamma[.]\pNon c'era nella visione[.]\pHa un colore diverso da tutte le\naltre[.]\pEppure[.]\nemana un calore familiare.
 
 #org @Passo_Tuono_1_124_text18
-???: Ti stavo aspettando[.]
+[ORANGE]???[BLACK]: Ti stavo aspettando[.]
 
 #org @Passo_Tuono_1_124_text19
-???: Finalmente sei arrivato.
+[ORANGE]???[BLACK]: Finalmente sei arrivato.
 
 #org @Passo_Tuono_1_124_text20
-[PLAYER]: Chi sei?! Mostrati!
+[LIGHT_BLUE][PLAYER][BLACK]: Chi sei?! Mostrati!
 
 #org @Passo_Tuono_1_124_text21
-???: Non ricordi la mia voce?
+[ORANGE]???[BLACK]: Non ricordi la mia voce?
 
 #org @Passo_Tuono_1_124_text22
-Raito: Ahah, ti vedo ancora\ndiffidente!\pL'avevo detto che ci saremmo rivisti\npresto.
+[ORANGE]Raito[BLACK]: Ahah, ti vedo ancora\ndiffidente!\pL'avevo detto che ci saremmo rivisti\npresto.
 
 #org @Passo_Tuono_1_124_text23
-[PLAYER]: Raito[.]\pMa cosa ci fai qui?
+[LIGHT_BLUE][PLAYER][BLACK]: [ORANGE]Raito[BLACK][.]\pMa cosa ci fai qui?
 
 #org @Passo_Tuono_1_124_text24
-Raito: C'[1A] un motivo se sei giunto\nfin qui, [PLAYER].\pDa quando ti ho visto nella Foresta\nFrondosa ho capito che non sei un\lsemplice allenatore.\pQuesta fiamma ti ha scelto[.]
+[ORANGE]Raito[BLACK]: C'[1A] un motivo se sei giunto\nfin qui, [LIGHT_BLUE][PLAYER][BLACK].\pDa quando ti ho visto nella [GREEN]Foresta\nFrondosa[BLACK] ho capito che non sei un\lsemplice allenatore.\pQuesta [ORANGE]Fiamma[BLACK] ti ha scelto[.]
 
 #org @Passo_Tuono_1_124_text25
-Vesper: Che discorso toccante!\pPeccato per[22] che finisca qui!
+[DUSK]Vesper[BLACK]: Che discorso toccante!\pPeccato per[22] che finisca qui!
 
 #org @Passo_Tuono_1_124_text26
-Recluta Dusk: Eheh! Tutto secondo i\npiani, comandante!
+[DUSK]Recluta Dusk[BLACK]: Eheh! Tutto secondo i\npiani, comandante!
 
 #org @Passo_Tuono_1_124_text27
-Vesper: Ben fatto, ragazzi.\pE tu, ragazzino[.]\pDevo ammettere che ti ho\nsottovalutato.\pDecifrare l'enigma delle Rovine\nAncestrali, trovare l'ingresso del\lTempio[.]\pNon male per un moccioso.
+[DUSK]Vesper[BLACK]: Ben fatto, ragazzi.\pE tu, ragazzino[.]\pDevo ammettere che ti ho\nsottovalutato.\pDecifrare l'enigma delle [GREEN]Rovine\nAncestrali[BLACK], trovare l'ingresso del\lTempio[.]\pNon male per un moccioso.
 
 #org @Passo_Tuono_1_124_text28
-Vesper: Ma non credere di poter fare\nil passo pi[26] lungo della gamba.\pNoi abbiamo lasciato che risolvessi\ntutto mentre stavamo a guardarti[.]\pPer poi prenderci la ricompensa.
+[DUSK]Vesper[BLACK]: Ma non credere di poter fare\nil passo pi[26] lungo della gamba.\pNoi abbiamo lasciato che risolvessi\ntutto mentre stavamo a guardarti[.]\pPer poi prenderci la ricompensa.
 
 #org @Passo_Tuono_1_124_text29
-[PLAYER]: [.]
+[LIGHT_BLUE][PLAYER][BLACK]: [.]
 
 #org @Passo_Tuono_1_124_text30
-Vesper: Alle rovine, te e i tuoi\namichetti siete riusciti a\lscamparla solo per fortuna, ma ora\lsei solo.\pReclute! Mostrategli cosa significa\nostacolare il Team Dusk!
+[DUSK]Vesper[BLACK]: Alle rovine, te e i tuoi\namichetti siete riusciti a\lscamparla solo per fortuna, ma ora\lsei solo.\p[DUSK]Reclute[BLACK]! Mostrategli cosa significa\nostacolare il [DUSK]Team Dusk[BLACK]!
 
 #org @Passo_Tuono_1_124_text31
-Hai osato accendere la Fiamma\nGialla[.]\pNon capisci cosa hai scatenato,\nvero?
+[BLACK]Hai osato accendere la [ORANGE]Fiamma\nGialla[BLACK][.]\pNon capisci cosa hai scatenato,\nvero?
 
 #org @Passo_Tuono_1_124_text32
 Il fulmine colpisce in un istante,\nma lascia cicatrici che durano per\lsempre.
 
 #org @Passo_Tuono_1_124_text33
-Raito: Ottimo lavoro, [PLAYER].\pIo non posso combattere[.]\nMa posso curare la tua squadra.
+[ORANGE]Raito[BLACK]: Ottimo lavoro, [LIGHT_BLUE][PLAYER][BLACK].\pIo non posso combattere[.]\nMa posso curare la tua squadra.
 
 #org @Passo_Tuono_1_124_text34
-Non riesco a credere che un\nragazzino come te sia riuscito a\ltrovare la Fiamma Gialla mentre noi\lin una settimana di ricerche non\lne abbiamo trovato nemmeno l'ombra!
+[BLACK]Non riesco a credere che un\nragazzino come te sia riuscito a\ltrovare la [ORANGE]Fiamma Gialla[BLACK] mentre noi\lin una settimana di ricerche non\lne abbiamo trovato nemmeno l'ombra!
 
 #org @Passo_Tuono_1_124_text35
 Sottovalutarti [1A] stato un errore!
 
 #org @Passo_Tuono_1_124_text36
-Indovina un po' perch[1A] sono\nl'ultima delle reclute a sfidarti?\pBingo, perch[1A] sono il pi[26] forte!
+[BLACK]Indovina un po' perch[1A] sono\nl'ultima delle reclute a sfidarti?\pBingo, perch[1A] sono il pi[26] forte!
 
 #org @Passo_Tuono_1_124_text37
 In realt[16] c'[1A] qualcuno ancora pi[26]\nforte di me!
 
 #org @Passo_Tuono_1_124_text38
-Raito: Ne manca solo uno, [PLAYER].\nMostragli di che pasta sei fatto!
+[ORANGE]Raito[BLACK]: Ne manca solo uno, [LIGHT_BLUE][PLAYER][BLACK].\nMostragli di che pasta sei fatto!
 
 #org @Passo_Tuono_1_124_text39
-Vesper: Impressionante.\pHai messo in ginocchio la mia\nsquadra, ma ora tocca a me!
+[DUSK]Vesper[BLACK]: Impressionante.\pHai messo in ginocchio la mia\nsquadra, ma ora tocca a me!
 
 #org @Passo_Tuono_1_124_text40
 Preparati a essere spazzato via!
@@ -125,64 +125,64 @@ Preparati a essere spazzato via!
 Chi sei veramente?
 
 #org @Passo_Tuono_1_124_text42
-Vesper: Tsk[.] Sei pi[26] forte di\nquanto pensassi.\pMa, ahim[1A], troppo lento[.]
+[DUSK]Vesper[BLACK]: Tsk[.] Sei pi[26] forte di\nquanto pensassi.\pMa, ahim[1A], troppo lento[.]
 
 #org @Passo_Tuono_1_124_text43
-Raito: Non [1A] possibile!\nLa Fiamma Gialla[.]\p[.]Come siete riusciti a prenderla?
+[ORANGE]Raito[BLACK]: Non [1A] possibile!\nLa [ORANGE]Fiamma Gialla[BLACK][.]\p[.]Come siete riusciti a prenderla?
 
 #org @Passo_Tuono_1_124_text44
-Vesper: [05] molto semplice[.]\pMentre mi tenevate occupato ed\neravate distratti dalla sfida,\li miei uomini si sono presi ci[22]\lche volevano!\pLa Fiamma Gialla ora [1A] nostra!
+[DUSK]Vesper[BLACK]: [05] molto semplice[.]\pMentre mi tenevate occupato ed\neravate distratti dalla sfida,\li miei uomini si sono presi ci[22]\lche volevano!\pLa [ORANGE]Fiamma Gialla[BLACK] ora [1A] nostra!
 
 #org @Passo_Tuono_1_124_text45
-Vesper: Ragazzi, ritirata immediata!\pPrima che arrivino i rinforzi!
+[DUSK]Vesper[BLACK]: Ragazzi, ritirata immediata!\pPrima che arrivino i rinforzi!
 
 #org @Passo_Tuono_1_124_text46
-Dannazione[.] Sono stato incauto!\pNon avrei mai dovuto permetterlo.\pProteggere questo focolare era il\nmio dovere[.]\pE l'ho fallito.
+[ORANGE]Raito[BLACK]: Dannazione[.] Sono stato incauto!\pNon avrei mai dovuto permetterlo.\pProteggere questo focolare era il\nmio dovere[.]\pE l'ho fallito.
 
 #org @Passo_Tuono_1_124_text47
-Crispy: [PLAYER]!\nEhi! Come sei arrivato qui cos[1E] in\lfretta?\pAspetta[.] Non dirmi che hai\nrisolto tu l'enigma!
+[BLUE]Crispy[BLACK]: [LIGHT_BLUE][PLAYER][BLACK]!\nEhi! Come sei arrivato qui cos[1E] in\lfretta?\pAspetta[.] Non dirmi che hai\nrisolto tu l'enigma!
 
 #org @Passo_Tuono_1_124_text48
-Agente: Il luogo sembra sicuro,\nma[.]\pQualcuno mi spiega cosa diavolo [1A]\nsuccesso qui dentro?
+[BLUE]Agente[BLACK]: Il luogo sembra sicuro,\nma[.]\pQualcuno mi spiega cosa diavolo [1A]\nsuccesso qui dentro?
 
 #org @Passo_Tuono_1_124_text49
-Raito: Non molto tempo fa il Team\nDusk ha fatto irruzione nel tempio.\pSono riusciti a rubare la Fiamma\nGialla, una reliquia antica di\lEyros.
+[ORANGE]Raito[BLACK]: Non molto tempo fa il [DUSK]Team\nDusk[BLACK] ha fatto irruzione nel tempio.\pSono riusciti a rubare la [ORANGE]Fiamma\nGialla[BLACK], una reliquia antica di\l[GREEN]Eyros[BLACK].
 
 #org @Passo_Tuono_1_124_text50
-Agente: Il Team Dusk, eh[.]\nNon sentivo quel nome da anni.\pSembravano scomparsi, e ora spuntano\ndal nulla come un temporale!
+[BLUE]Agente[BLACK]: Il [DUSK]Team Dusk[BLACK], eh[.]\nNon sentivo quel nome da anni.\pSembravano scomparsi, e ora spuntano\ndal nulla come un temporale!
 
 #org @Passo_Tuono_1_124_text51
-Crispy: Una Fiamma Gialla, dici?\pPerch[1A] mai rubare una cosa del\ngenere?
+[BLUE]Crispy[BLACK]: Una [ORANGE]Fiamma Gialla[BLACK], dici?\pPerch[1A] mai rubare una cosa del\ngenere?
 
 #org @Passo_Tuono_1_124_text52
-Raito: Perch[1A] non [1A] una semplice\nfiamma.\p[05] uno dei tre frammenti del potere\nche un tempo risvegli[22] il\lleggendario guardiano di Eyros[.]\p Ho-oh.
+[ORANGE]Raito[BLACK]: Perch[1A] non [1A] una semplice\nfiamma.\p[05] uno dei tre frammenti del potere\nche un tempo risvegli[22] il\lleggendario guardiano di [GREEN]Eyros[BLACK][.]\p [RED]Ho-oh[BLACK].
 
 #org @Passo_Tuono_1_124_text53
-Crispy: Aspetta, quindi le analisi\ndi Filiberto sulle incisioni\lerano corrette[.]\pE tu, Raito, come puoi sapere tutto\nquesto?
+[BLACK][BLUE]Crispy[BLACK]: Aspetta, quindi le analisi\ndi [ORANGE]Filiberto[BLACK] sulle incisioni\lerano corrette[.]\pE tu, [ORANGE]Raito[BLACK], come puoi sapere tutto\nquesto?
 
 #org @Passo_Tuono_1_124_text54
-Raito: [05] molto semplice[.]\p[.]Perch[1A] io sono il guardiano di\nquesto Tempio[.]
+[ORANGE]Raito[BLACK]: [05] molto semplice[.]\p[.]Perch[1A] io sono il guardiano di\nquesto Tempio[.]
 
 #org @Passo_Tuono_1_124_text55
-Crispy: Il guardiano[.]?\p[.]Ma allora chi sei davvero?
+[BLUE]Crispy[BLACK]: Il guardiano[.]?\p[.]Ma allora chi sei davvero?
 
 #org @Passo_Tuono_1_124_text56
-Raito: Le spiegazioni dovranno\nattendere[.]\pMa hai tutto il diritto di\npretenderle, sei il fratello del\lprescelto d'altronde[.]\pMa questo luogo non [1A] pi[26] sicuro.\pRaggiungetemi a Roccavento: l[1E] vi\nracconter[22] tutto.
+[ORANGE]Raito[BLACK]: Le spiegazioni dovranno\nattendere[.]\pMa hai tutto il diritto di\npretenderle, sei il fratello del\lprescelto d'altronde[.]\pMa questo luogo non [1A] pi[26] sicuro.\pRaggiungetemi a [GREEN]Roccavento[BLACK]: l[1E] vi\nracconter[22] tutto.
 
 #org @Passo_Tuono_1_124_text57
-Raito: Conto su di voi.\pProteggere il tempo, ora, [1A] nelle\nvostre mani.
+[ORANGE]Raito[BLACK]: Conto su di voi.\pProteggere il tempo, ora, [1A] nelle\nvostre mani.
 
 #org @Passo_Tuono_1_124_text58
-Crispy: Ma che!\pDa dove [1A] arrivato questo fulmine?
+[BLUE]Crispy[BLACK]: Ma che!\pDa dove [1A] arrivato questo fulmine?
 
 #org @Passo_Tuono_1_124_text59
-Crispy: Che tipo strano[.]\nE poi quella storia del prescelto[.]
+[BLUE]Crispy[BLACK]: Che tipo strano[.]\nE poi quella storia del prescelto[.]
 
 #org @Passo_Tuono_1_124_text60
-[PLAYER]: [.]
+[LIGHT_BLUE][PLAYER][BLACK]: [.]
 
 #org @Passo_Tuono_1_124_text61
-Crispy: Beh, l'unico modo per\ncapirci qualcosa [1A] andare a\lRoccavento, no?\pPreparati: ci andremo in volo con il\nmio Flygon.\pVoleremo dal punto panoramico di\nRadiantia!
+[BLUE]Crispy[BLACK]: Beh, l'unico modo per\ncapirci qualcosa [1A] andare a\l[GREEN]Roccavento[BLACK], no?\pPreparati: ci andremo in volo con il\nmio [GREEN]Flygon[BLACK].\pVoleremo dal punto panoramico di\n[GREEN]Radiantia[BLACK]!
 
 #org @Passo_Tuono_1_124_text62
-Crispy: [PLAYER],\nquando sei pronto raggiungimi l[1E].\pHo il presentimento che da adesso\nin poi[.]\pTutto si far[16] pi[26] serio.
+[BLUE]Crispy[BLACK]: [LIGHT_BLUE][PLAYER][BLACK],\nquando sei pronto raggiungimi l[1E].\pHo il presentimento che da adesso\nin poi[.]\pTutto si far[16] pi[26] serio.

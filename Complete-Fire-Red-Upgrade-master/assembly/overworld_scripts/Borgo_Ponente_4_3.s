@@ -81,19 +81,16 @@ gMapScripts_Borgo_Ponente_4_3:
 
 			Borgo_Ponente_4_3_MapScriptOnFrame_Part1:
 					spriteface 0xFF 0x2
-					textcolor 0x00
 				    showpokepic 0x3b7 0x0 0x6
     				//Ciao ragazzi...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text1 MSG_NORMAL
 					special 0x15A
 					pause 0x1E
-					textcolor 0x01
-					showpokepic 0x3b5 0x15 0x6
+					showpokepic 0x3b5 0x0 0x6
     				//salve prof oak..
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text2 MSG_NORMAL
 					special 0x15A
 					pause 0x1E
-					textcolor 0x00
 					showpokepic 0x3b7 0x0 0x6
     				//Ma certo...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text3 MSG_NORMAL
@@ -101,7 +98,6 @@ gMapScripts_Borgo_Ponente_4_3:
 					pause 0x1E
 					applymovement 0x2 Borgo_Ponente_4_3_MapScriptOnFrame_mov1
 					waitmovement 0x0
-					textcolor 0x00
 					showpokepic 0x3b7 0x0 0x6
     				//wow incredibile...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text4 MSG_NORMAL
@@ -109,7 +105,6 @@ gMapScripts_Borgo_Ponente_4_3:
 					pause 0x1E
 					applymovement 0x2 Borgo_Ponente_4_3_MapScriptOnFrame_mov2
 					waitmovement 0x0
-					textcolor 0x00
 					showpokepic 0x3b7 0x0 0x6
     				//ora che player ha...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text5 MSG_NORMAL
@@ -117,13 +112,11 @@ gMapScripts_Borgo_Ponente_4_3:
 					pause 0x1E
 					applymovement 0x4 Borgo_Ponente_4_3_MapScriptOnFrame_mov3
 					waitmovement 0x0
-					textcolor 0x01
-					showpokepic 0x3b5 0x15 0x6
+					showpokepic 0x3b5 0x0 0x6
     				//si esatto..
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text6 MSG_NORMAL
 					special 0x15A
 					pause 0x1E
-					textcolor 0x00
 					showpokepic 0x3b7 0x0 0x6
     				//Non preoccuparti
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text7 MSG_NORMAL
@@ -135,7 +128,6 @@ gMapScripts_Borgo_Ponente_4_3:
 					hidesprite 0x3
 					applymovement 0x2 Borgo_Ponente_4_3_MapScriptOnFrame_mov5
 					waitmovement 0x0
-					textcolor 0x00
 					showpokepic 0x3b7 0x0 0x6
     				//Ecco Brandon, tieni!
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text8 MSG_NORMAL
@@ -145,19 +137,16 @@ gMapScripts_Borgo_Ponente_4_3:
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text9 MSG_NORMAL
 
 					pause 0x1E
-					textcolor 0x01
-					showpokepic 0x3b5 0x15 0x6
+					showpokepic 0x3b5 0x0 0x6
     				//wow questo pokemon sembra fortissimo
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text10 MSG_NORMAL
 					special 0x15A
 					pause 0x1E
-					textcolor 0x00
 					showpokepic 0x3b7 0x0 0x6
     				//[1A] proprio cosi...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text11 MSG_NORMAL
 					special 0x15A
 					pause 0x1E
-					textcolor 0x00
 					compare 0x501F 0x100
 					if 0x1 _call Player_Blue
 					compare 0x501F 0x1A3
@@ -170,7 +159,6 @@ gMapScripts_Borgo_Ponente_4_3:
 
 
 					pause 0x1E
-					textcolor 0x00
 					showpokepic 0x3b7 0x0 0x6
     				//perche non vi sfidate...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text13 MSG_NORMAL
@@ -179,8 +167,7 @@ gMapScripts_Borgo_Ponente_4_3:
 					waitmovement 0x0
 					spriteface 0x4 0x4
 					spriteface 0xFF 0x3
-					textcolor 0x01
-					showpokepic 0x3b5 0x15 0x6
+					showpokepic 0x3b5 0x0 0x6
     				//Ma certo...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text14 MSG_NORMAL
 					special 0x15A
@@ -194,13 +181,15 @@ gMapScripts_Borgo_Ponente_4_3:
 					waitmovement 0x0
 					pause 0x1E
 					spriteface 0xFF 0x2
-					textcolor 0x00
 					showpokepic 0x3b7 0x0 0x6
     				//quel brandon...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text15 MSG_NORMAL
 					special 0x15A
 					applymovement 0x2 Borgo_Ponente_4_3_MapScriptOnFrame_mov10
 					waitmovement 0x0
+					sound 0x15
+					applymovement 0x2 mov_question
+					waitmovement 0x2
 					setvar 0x4050 0x2
 					setvar 0x4051 0x12
 					return
@@ -210,7 +199,6 @@ gMapScripts_Borgo_Ponente_4_3:
 						.byte 0x13
 						.byte 0x0 
 						.byte 0x1C
-						.byte 0x63
 						.byte 0xFE
 
 					Borgo_Ponente_4_3_MapScriptOnFrame_mov2:
@@ -273,13 +261,13 @@ gMapScripts_Borgo_Ponente_4_3:
 						.byte 0xFE
 
 		Player_Blue:
-			showpokepic 0x3b6 0x15 0x6
+			showpokepic 0x3b6 0x0 0x6
 			return
 
 		Player_Orange:
-			showpokepic 0x3bE 0x15 0x6
+			showpokepic 0x3bE 0x0 0x6
 			return
 
 		Player_Green:
-			showpokepic 0x3bF 0x15 0x6
+			showpokepic 0x3bF 0x0 0x6
 			return

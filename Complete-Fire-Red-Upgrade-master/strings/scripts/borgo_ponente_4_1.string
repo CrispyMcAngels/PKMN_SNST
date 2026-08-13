@@ -1,21 +1,21 @@
 
 #org @Borgo_Ponente_4_1_Sign0_text1
-[PLAYER] gioca con la Nintendo Wii.
+[LIGHT_BLUE][PLAYER][BLACK] gioca con la Nintendo Wii.
 
 #org @Borgo_Ponente_4_1_Sign1_text1
 Wow, ci sono tantissimi videogiochi\ntutti impilati: Pok\emon Unbound,\lPok\emon Giratina's Legend,\lPok\emon Silver Legend[.] \pNon li ho mai sentiti nominare!
 
 #org @EventScript_Borgo_Ponente_4_1_MapScriptOnFrameBegin_text1
-Pi[26] tardi[.]\n[.]Quella sera[.]
+[BLACK]Pi[26] tardi[.]\n[.]Quella sera[.]
 
 #org @EventScript_Borgo_Ponente_4_1_MapScriptOnFrameBegin_text2
-[PLAYER]: Woooaaahh!\nChe dormita!
+[LIGHT_BLUE][PLAYER][BLACK]: Woooaaahh!\nChe dormita!
 
 #org @EventScript_Borgo_Ponente_4_1_MapScriptOnFrameBegin_text3
-[PLAYER]: Meglio darsi una sveglia,\ndevo raggiungere Filiberto ad\lArdesiopoli.
+[LIGHT_BLUE][PLAYER][BLACK]: Meglio darsi una sveglia,\ndevo raggiungere [ORANGE]Filiberto[BLACK] ad\l[GREEN]Ardesiopoli[BLACK].
 
 #org @Borgo_Ponente_4_1_Sign3_text1
 Questo [1A] il letto di Naomi.\nMeglio non toccarlo!
 
 #org @Borgo_Ponente_4_1_tile1_P1_text1
-Ci siamo quasi[.]\pAncora qualche informazione e potrai\ncominciare la tua avventura.\pBuon divertimento!
+[BLACK]Ci siamo quasi[.]\pAncora qualche informazione e potrai\ncominciare la tua avventura.\pBuon divertimento!

@@ -1,11 +1,11 @@
 #org @Percorso_2_28_0_NPC0_text1
-Mi sono perso esplorando la\nForesta Frondosa e sono finito qui.\pAlmeno la vista non [1A] male.
+[BLACK]Mi sono perso esplorando la\n[GREEN]Foresta Frondosa[BLACK] e sono finito qui.\pAlmeno la vista non [1A] male.
 
 #org @Percorso_2_28_0_Sign0_text1
 Belvedere: Dove la vista\nmozzafiato non manca mai.
 
 #org @Percorso_2_28_0_Sign2_text1
-Questo [1A] un albero di Baccananas,\nvuoi raccogliere una Baccananas?
+[BLACK]Questo [1A] un albero di [GREEN]Baccananas[BLACK],\nvuoi raccogliere una [GREEN]Baccananas[BLACK]?
 
 #org @Percorso_2_28_0_Sign2_text2
-Hai gi[16] una Baccananas nello\nZaino!
+Hai gi[16] una [GREEN]Baccananas[BLACK] nello\nZaino!

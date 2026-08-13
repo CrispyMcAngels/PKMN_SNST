@@ -560,6 +560,10 @@ gEventsObjectPic_NPC82Pal 08F160A8
 gEventObjectGraphicsInfo_NPC83 08EB114C
 gEventsObjectPic_NPC83Pal 08F160B0
 
+#NPC85
+gEventObjectGraphicsInfo_NPC85 08EB1154
+gEventsObjectPic_NPC85Pal 08F160C0
+
 #NPC86
 gEventObjectGraphicsInfo_NPC86 08EB1158
 gEventsObjectPic_NPC86Pal 08F160C8
@@ -706,7 +710,6 @@ gEventsObjectPic_NPC122Pal 08F161E8
 
 #NPC123
 gEventObjectGraphicsInfo_NPC123 08EB11EC
-gEventsObjectPic_NPC123Pal 08F161F0
 
 #NPC124
 gEventObjectGraphicsInfo_NPC124 08EB11F0

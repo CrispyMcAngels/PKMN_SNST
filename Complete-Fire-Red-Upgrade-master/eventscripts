@@ -13,8 +13,13 @@ tile 1 61 7 EventScript_SDV_1_61_TileScript_up_down
 tile 1 61 8 EventScript_SDV_1_61_TileScript_up_down
 tile 1 61 9 EventScript_SDV_1_61_TileScript_up_down
 
-sign 0 13 0 EventScript_Centrale_Elettrica_0_13_Sign0
-sign 0 14 1 EventScript_Passo_Tuono_0_14_Sign0
+
+map 0 23 gMapScripts_Passo_Tuono_1_3
+sign 0 23 0 EventScript_Centrale_Elettrica_0_13_Sign0
+map 0 24 gMapScripts_Passo_Tuono_1_3
+sign 0 24 1 EventScript_Passo_Tuono_0_14_Sign0
+
+map 1 95 gMapScripts_Centrale_Elettrica_1_95
 sign 1 95 0 EventScript_Centrale_Elettrica_1_95_Sign0
 sign 1 95 1 EventScript_Centrale_Elettrica_1_95_Sign0
 sign 1 95 2 EventScript_Centrale_Elettrica_1_95_Sign0
@@ -324,10 +329,12 @@ npc 1 1 13 EventScript_Passo_Tuono_1_1_NPC13
 npc 1 1 14 EventScript_Passo_Tuono_1_1_NPC14
 npc 1 1 15 EventScript_Passo_Tuono_1_1_NPC15
 npc 1 1 16 EventScript_Passo_Tuono_1_1_NPC16
+npc 1 1 17 EventScript_Percorso_4_3_22_NPC24
 
 map 1 2 gMapScripts_Passo_Tuono_1_2
 tile 1 2 0 EventScript_Passo_Tuono_1_2_tile0
 
+map 1 3 gMapScripts_Passo_Tuono_1_3
 tile 1 3 0 EventScript_Passo_Tuono_1_3_tile0
 npc 1 3 0 EventScript_Passo_Tuono_1_3_NPC0
 npc 1 3 1 EventScript_Passo_Tuono_1_3_NPC1
@@ -340,39 +347,47 @@ npc 1 3 11 EventScript_Passo_Tuono_1_3_NPC11
 sign 1 3 2 EventScript_Passo_Tuono_1_3_Sign2
 sign 1 3 3 EventScript_Passo_Tuono_1_3_Sign3
 
-map 1 124 gMapScripts_Passo_Tuono_1_124
 
+map 0 20 gMapScripts_Passo_Tuono_1_3
+map 0 25 gMapScripts_Passo_Tuono_1_124
+map 0 26 gMapScripts_Passo_Tuono_1_3
+map 0 27 gMapScripts_Passo_Tuono_1_3
 
-npc 0 8 0 EventScript_Passo_Tuono_1_127_NPC0
-npc 0 8 1 EventScript_Passo_Tuono_1_127_NPC1
-npc 0 8 2 EventScript_Passo_Tuono_1_127_NPC2
-npc 0 8 3 EventScript_Passo_Tuono_1_127_NPC3
-npc 0 8 4 EventScript_Passo_Tuono_1_127_NPC4
+map 0 18 gMapScripts_Passo_Tuono_1_3
+npc 0 18 0 EventScript_Passo_Tuono_1_127_NPC0
+npc 0 18 1 EventScript_Passo_Tuono_1_127_NPC1
+npc 0 18 2 EventScript_Passo_Tuono_1_127_NPC2
+npc 0 18 3 EventScript_Passo_Tuono_1_127_NPC3
+npc 0 18 4 EventScript_Passo_Tuono_1_127_NPC4
 
-npc 0 9 0 EventScript_Passo_Tuono_1_128_NPC0
-npc 0 9 1 EventScript_Passo_Tuono_1_128_NPC1
+map 0 19 gMapScripts_Passo_Tuono_1_3
+npc 0 19 0 EventScript_Passo_Tuono_1_128_NPC0
+npc 0 19 1 EventScript_Passo_Tuono_1_128_NPC1
+sign 0 9 0 EventScript_Passo_Tuono_0_19_Sign0
 
-npc 0 11 0 EventScript_Percorso_4_3_22_NPC10
+map 0 21 gMapScripts_Passo_Tuono_1_3
+npc 0 21 0 EventScript_Percorso_4_3_22_NPC10
+sign 0 21 1 EventScript_Passo_Tuono_0_21_Sign1
 
-map 0 12 gMapScripts_Passo_Tuono_1_131
-tile 0 12 0 EventScript_Passo_Tuono_1_131_tile0_00
-tile 0 12 1 EventScript_Passo_Tuono_1_131_tile0_01
-tile 0 12 2 EventScript_Passo_Tuono_1_131_tile0_02
-tile 0 12 3 EventScript_Passo_Tuono_1_131_tile0_03
-tile 0 12 4 EventScript_Passo_Tuono_1_131_tile1_10
-tile 0 12 5 EventScript_Passo_Tuono_1_131_tile1_11
-tile 0 12 6 EventScript_Passo_Tuono_1_131_tile1_12
-tile 0 12 7 EventScript_Passo_Tuono_1_131_tile1_13
-tile 0 12 8 EventScript_Passo_Tuono_1_131_tile2_20
-tile 0 12 9 EventScript_Passo_Tuono_1_131_tile2_21
-tile 0 12 10 EventScript_Passo_Tuono_1_131_tile2_22
-tile 0 12 11 EventScript_Passo_Tuono_1_131_tile2_23
-tile 0 12 12 EventScript_Passo_Tuono_1_131_tile3_30
-tile 0 12 13 EventScript_Passo_Tuono_1_131_tile3_31
-tile 0 12 14 EventScript_Passo_Tuono_1_131_tile3_32
-tile 0 12 15 EventScript_Passo_Tuono_1_131_tile3_33
+map 0 22 gMapScripts_Passo_Tuono_1_131
+tile 0 22 0 EventScript_Passo_Tuono_1_131_tile0_00
+tile 0 22 1 EventScript_Passo_Tuono_1_131_tile0_01
+tile 0 22 2 EventScript_Passo_Tuono_1_131_tile0_02
+tile 0 22 3 EventScript_Passo_Tuono_1_131_tile0_03
+tile 0 22 4 EventScript_Passo_Tuono_1_131_tile1_10
+tile 0 22 5 EventScript_Passo_Tuono_1_131_tile1_11
+tile 0 22 6 EventScript_Passo_Tuono_1_131_tile1_12
+tile 0 22 7 EventScript_Passo_Tuono_1_131_tile1_13
+tile 0 22 8 EventScript_Passo_Tuono_1_131_tile2_20
+tile 0 22 9 EventScript_Passo_Tuono_1_131_tile2_21
+tile 0 22 10 EventScript_Passo_Tuono_1_131_tile2_22
+tile 0 22 11 EventScript_Passo_Tuono_1_131_tile2_23
+tile 0 22 12 EventScript_Passo_Tuono_1_131_tile3_30
+tile 0 22 13 EventScript_Passo_Tuono_1_131_tile3_31
+tile 0 22 14 EventScript_Passo_Tuono_1_131_tile3_32
+tile 0 22 15 EventScript_Passo_Tuono_1_131_tile3_33
 
-map 6 20 gMapScripts_Ardesiopoli_6_20
+map 6 24 gMapScripts_Ardesiopoli_6_20
 
 sign 3 4 0 EventScript_Radiantia_3_4_Sign0
 sign 3 4 1 EventScript_Radiantia_3_4_Sign1
@@ -400,36 +415,34 @@ sign 8 2 0 EventScript_Radiantia_8_2_Sign0
 npc 8 2 0 EventScript_Radiantia_8_2_NPC0
 npc 8 2 1 EventScript_Radiantia_8_2_NPC1
 npc 8 2 2 EventScript_Radiantia_8_2_NPC2
-
-npc 8 3 0 EventScript_Radiantia_8_3_NPC0
-npc 8 3 1 EventScript_Radiantia_8_3_NPC1
-
-npc 8 4 0 EventScript_Radiantia_8_4_NPC0
-npc 8 4 1 EventScript_Percorso_11_3_25_NPC2
+npc 8 2 3 EventScript_Radiantia_8_3_NPC0
+npc 8 2 4 EventScript_Radiantia_8_3_NPC1
+npc 8 2 6 EventScript_Radiantia_8_4_NPC0
+npc 8 2 7 EventScript_Percorso_11_3_25_NPC2
 
 npc 8 5 1 EventScript_Radiantia_8_5_NPC1
 npc 8 5 2 EventScript_Radiantia_8_5_NPC2
 npc 8 5 3 EventScript_Radiantia_8_5_NPC3
 
-map 8 6 gMapScripts_Radiantia_8_6
-sign 8 6 0 EventScript_Radiantia_8_6_Sign0
+map 8 14 gMapScripts_Radiantia_8_6
+sign 8 14 0 EventScript_Radiantia_8_6_Sign0
 
-map 8 9 gMapScripts_Radiantia_8_9
-sign 8 9 0 EventScript_Radiantia_8_9_Sign0
-sign 8 9 1 EventScript_Radiantia_8_9_Sign1
-npc 8 9 0 EventScript_Radiantia_8_9_NPC0
-npc 8 9 1 EventScript_Radiantia_8_9_NPC1
+map 8 13 gMapScripts_Radiantia_8_9
+sign 8 13 0 EventScript_Radiantia_8_9_Sign0
+sign 8 13 1 EventScript_Radiantia_8_9_Sign1
+npc 8 13 0 EventScript_Radiantia_8_9_NPC0
+npc 8 13 1 EventScript_Radiantia_8_9_NPC1
 
-map 8 8 gMapScripts_Radiantia_8_8
-sign 8 8 0 EventScript_Radiantia_8_8_Sign0
-sign 8 8 1 EventScript_Radiantia_8_8_Sign0
-npc 8 8 0 EventScript_Radiantia_8_8_NPC0
-npc 8 8 1 EventScript_Radiantia_8_8_NPC1
-npc 8 8 2 EventScript_Radiantia_8_8_NPC2
-npc 8 8 3 EventScript_Radiantia_8_8_NPC3
-npc 8 8 4 EventScript_Radiantia_8_8_NPC4
-npc 8 8 5 EventScript_Radiantia_8_8_NPC5
-npc 8 8 6 EventScript_Radiantia_8_8_NPC6
+map 8 10 gMapScripts_Radiantia_8_8
+sign 8 10 0 EventScript_Radiantia_8_8_Sign0
+sign 8 10 1 EventScript_Radiantia_8_8_Sign0
+npc 8 10 0 EventScript_Radiantia_8_8_NPC0
+npc 8 10 1 EventScript_Radiantia_8_8_NPC1
+npc 8 10 2 EventScript_Radiantia_8_8_NPC2
+npc 8 10 3 EventScript_Radiantia_8_8_NPC3
+npc 8 10 4 EventScript_Radiantia_8_8_NPC4
+npc 8 10 5 EventScript_Radiantia_8_8_NPC5
+npc 8 10 6 EventScript_Radiantia_8_8_NPC6
 
 map 1 36 gMapScripts_GrtVentiSuss_1_36
 tile 1 36 0 EventScript_GrtVentiSuss_1_36_tile0
@@ -439,7 +452,7 @@ npc 1 36 2 EventScript_GrtVentiSuss_1_36_NPC2
 tile 1 37 0 EventScript_GrtVentiSuss_1_37_tile0
 
 map 1 38 gMapScripts_GrtVentiSuss_1_38
-map 1 123 gMapScripts_TimeTravel_1_123
+map 0 17 gMapScripts_TimeTravel_1_123
 
 map 3 21 gMapScripts_Percorso3_3_21
 tile 3 21 0 EventScript_Percorso3_3_21_tile0
@@ -507,9 +520,10 @@ npc 3 22 25 EventScript_Percorso_4_3_22_NPC24
 
 tile 3 22 0 EventScript_Percorso4_3_22_tile0
 
-npc 16 2 0 EventScript_Percorso_4_16_2_NPC0
-npc 16 2 1 EventScript_Percorso_4_16_2_NPC1
-npc 16 2 3 EventScript_Percorso_4_16_2_NPC3
+map 16 3 gMapScripts_Percorso4_16_2
+npc 16 3 0 EventScript_Percorso_4_16_2_NPC0
+npc 16 3 1 EventScript_Percorso_4_16_2_NPC1
+npc 16 3 3 EventScript_Percorso_4_16_2_NPC3
 
 
 sign 3 2 0 EventScript_Ardesiopoli_3_2_Sign0_4
@@ -662,13 +676,14 @@ sign 6 9 3 EventScript_Ardesiopoli_6_9_Sign3
 tile 6 9 0 EventScript_Ardesiopoli_6_9_tile0
 tile 6 9 1 EventScript_Ardesiopoli_6_9_tile1
 
+map 6 10 gMapScripts_Ardesiopoli_6_10
 npc 6 10 0 EventScript_Ardesiopoli_6_10_NPC0
 npc 6 10 1 EventScript_Ardesiopoli_6_10_NPC1
+npc 6 10 2 EventScript_Ardesiopoli_6_10_NPC2
 
-map 6 11 gMapScripts_Ardesiopoli_6_11
+
 npc 6 11 0 EventScript_Ardesiopoli_6_11_NPC0
-npc 6 11 1 EventScript_Ardesiopoli_6_11_NPC1
-npc 6 11 2 EventScript_Ardesiopoli_6_11_NPC2
+npc 6 11 1 EventScript_Ardesiopoli_6_11_NPC2
 
 npc 6 12 0 EventScript_Ardesiopoli_6_12_NPC0
 npc 6 12 1 EventScript_Ardesiopoli_6_12_NPC1
@@ -696,54 +711,52 @@ npc 6 15 3 EventScript_Ardesiopoli_6_14_NPC1
 npc 6 15 4 EventScript_Ardesiopoli_6_14_NPC2
 sign 6 15 0 EventScript_Ardesiopoli_6_15_Sign0
 
-npc 6 16 0 EventScript_Ardesiopoli_6_16_NPC0
-npc 6 16 1 EventScript_Ardesiopoli_6_16_NPC1
-sign 6 16 0 EventScript_Ardesiopoli_6_16_Sign0
-sign 6 16 1 EventScript_Ardesiopoli_6_16_Sign0
-sign 6 16 2 EventScript_Ardesiopoli_6_16_Sign0
-sign 6 16 3 EventScript_Ardesiopoli_6_16_Sign0
-sign 6 16 4 EventScript_Ardesiopoli_6_16_Sign0
 
-npc 6 17 0 EventScript_Ardesiopoli_6_17_NPC0
-npc 6 17 1 EventScript_Ardesiopoli_6_17_NPC1
-npc 6 17 2 EventScript_Ardesiopoli_6_17_NPC2
-npc 6 17 3 EventScript_Ardesiopoli_6_17_NPC3
-sign 6 17 0 EventScript_Ardesiopoli_6_16_Sign0
-sign 6 17 1 EventScript_Ardesiopoli_6_16_Sign0
-sign 6 17 2 EventScript_Ardesiopoli_6_16_Sign0
+npc 6 22 0 EventScript_Ardesiopoli_6_16_NPC0
+npc 6 22 1 EventScript_Ardesiopoli_6_16_NPC1
+sign 6 22 0 EventScript_Ardesiopoli_6_16_Sign0
+sign 6 22 1 EventScript_Ardesiopoli_6_16_Sign0
+sign 6 22 2 EventScript_Ardesiopoli_6_16_Sign0
+sign 6 22 3 EventScript_Ardesiopoli_6_16_Sign0
+sign 6 22 4 EventScript_Ardesiopoli_6_16_Sign0
 
-map 6 18 gMapScripts_Ardesiopoli_6_18
-npc 6 18 0 EventScript_Ardesiopoli_6_18_NPC0
-sign 6 18 0 EventScript_Ardesiopoli_6_18_Sign0
 
-sign 3 66 0 EventScript_Ardesiopoli_6_18_Sign0
-map 3 66 gMapScripts_Ardesiopoli_6_18
-npc 3 66 0 EventScript_Ardesiopoli_6_18_NPC0
+npc 6 23 0 EventScript_Ardesiopoli_6_17_NPC0
+npc 6 23 1 EventScript_Ardesiopoli_6_17_NPC1
+npc 6 23 2 EventScript_Ardesiopoli_6_17_NPC2
+npc 6 23 3 EventScript_Ardesiopoli_6_17_NPC3
+sign 6 23 0 EventScript_Ardesiopoli_6_16_Sign0
+sign 6 23 1 EventScript_Ardesiopoli_6_16_Sign0
+sign 6 23 2 EventScript_Ardesiopoli_6_16_Sign0
 
-tile 1 33 0 EventScript_Rovine_Ancestrali_1_33_tile0
-tile 1 33 1 EventScript_Rovine_Ancestrali_1_33_tile1
-tile 1 33 2 EventScript_Rovine_Ancestrali_1_33_tile2
-tile 1 33 3 EventScript_Rovine_Ancestrali_1_33_tile3
-tile 1 33 4 EventScript_Rovine_Ancestrali_1_33_tile4
-tile 1 33 5 EventScript_Rovine_Ancestrali_1_33_tile5
-tile 1 33 6 EventScript_Rovine_Ancestrali_1_33_tile6
-tile 1 33 7 EventScript_Rovine_Ancestrali_1_33_tile7
-tile 1 33 8 EventScript_Rovine_Ancestrali_1_33_tile8
-tile 1 33 9 EventScript_Rovine_Ancestrali_1_33_tile9
-tile 1 33 10 EventScript_Rovine_Ancestrali_1_33_tile10
 
-npc 1 33 0 EventScript_Rovine_Ancestrali_1_33_NPC0
-npc 1 33 1 EventScript_Rovine_Ancestrali_1_33_NPC1
-npc 1 33 2 EventScript_Rovine_Ancestrali_1_33_NPC2
-npc 1 33 3 EventScript_Rovine_Ancestrali_1_33_NPC3
-npc 1 33 4 EventScript_Rovine_Ancestrali_1_33_NPC4
-npc 1 33 5 EventScript_Rovine_Ancestrali_1_33_NPC5
-npc 1 33 6 EventScript_Rovine_Ancestrali_1_33_NPC6
-map 1 33 gMapScripts_Rovine_Ancestrali_1_33
+sign 6 21 0 EventScript_Ardesiopoli_6_18_Sign0
+map 6 21 gMapScripts_Ardesiopoli_6_18
+npc 6 21 0 EventScript_Ardesiopoli_6_18_NPC0
+
+tile 0 28 0 EventScript_Rovine_Ancestrali_1_33_tile0
+tile 0 28 1 EventScript_Rovine_Ancestrali_1_33_tile1
+tile 0 28 2 EventScript_Rovine_Ancestrali_1_33_tile2
+tile 0 28 3 EventScript_Rovine_Ancestrali_1_33_tile3
+tile 0 28 4 EventScript_Rovine_Ancestrali_1_33_tile4
+tile 0 28 5 EventScript_Rovine_Ancestrali_1_33_tile5
+tile 0 28 6 EventScript_Rovine_Ancestrali_1_33_tile6
+tile 0 28 7 EventScript_Rovine_Ancestrali_1_33_tile7
+tile 0 28 8 EventScript_Rovine_Ancestrali_1_33_tile8
+tile 0 28 9 EventScript_Rovine_Ancestrali_1_33_tile9
+tile 0 28 10 EventScript_Rovine_Ancestrali_1_33_tile10
+
+npc 0 28 0 EventScript_Rovine_Ancestrali_1_33_NPC0
+npc 0 28 1 EventScript_Rovine_Ancestrali_1_33_NPC1
+npc 0 28 2 EventScript_Rovine_Ancestrali_1_33_NPC2
+npc 0 28 3 EventScript_Rovine_Ancestrali_1_33_NPC3
+npc 0 28 4 EventScript_Rovine_Ancestrali_1_33_NPC4
+npc 0 28 5 EventScript_Rovine_Ancestrali_1_33_NPC5
+npc 0 28 6 EventScript_Rovine_Ancestrali_1_33_NPC6
+map 0 28 gMapScripts_Rovine_Ancestrali_1_33
 
 map 1 34 gMapScripts_Rovine_Ancestrali_1_34
 tile 1 34 0 EventScript_Rovine_Ancestrali_1_34_tile0
-tile 1 34 1 EventScript_Rovine_Ancestrali_1_34_tile1
 tile 1 34 2 EventScript_Rovine_Ancestrali_1_34_tile6
 tile 1 34 3 EventScript_Rovine_Ancestrali_1_34_tile6
 tile 1 34 4 EventScript_Rovine_Ancestrali_1_34_tile8
@@ -939,6 +952,7 @@ npc 3 1 9 EventScript_Miralba_3_1_NPC9
 tile 3 1 0 EventScript_Miralba_3_1_Tile0
 tile 3 1 1 EventScript_Miralba_3_1_tile1
 tile 3 1 2 EventScript_Miralba_3_1_tile1
+tile 3 1 3 EventScript_Miralba_3_1_Tile0
 sign 3 1 0 EventScript_Miralba_Sign0
 sign 3 1 1 EventScript_Miralba_Sign0
 sign 3 1 2 EventScript_Miralba_Sign2
@@ -1013,6 +1027,7 @@ npc 3 41 7 EventScript_Percorso_2_3_41_NPC7
 npc 3 41 9 EventScript_Percorso_2_3_41_NPC9
 npc 3 41 10 EventScript_Percorso_2_3_41_NPC10
 npc 3 41 11 EventScript_Percorso_2_3_41_NPC11
+npc 3 41 15 EventScript_Common_Cut
 
 sign 3 41 0 EventScript_Percorso_2_3_41_Sign0
 sign 3 41 1 EventScript_Percorso_2_3_41_Sign1

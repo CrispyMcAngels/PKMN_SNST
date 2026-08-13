@@ -1,43 +1,43 @@
 #org @EventScript_Chatot_Master_texti
-Chatot - Chatot\pVuoi sapere come continuare la\ntua avventura?
+[BLACK]Chatot - Chatot\pVuoi sapere come continuare la\ntua avventura?
 
 #org @EventScript_Chatot_Master_text0
-Esplora la Foresta Frondosa!\pChatot - Chatot!
+[BLACK]Esplora la [GREEN]Foresta Frondosa[BLACK]!\pChatot - Chatot!
 
 #org @EventScript_Chatot_Master_text1
-Aiuta la ragazza a trovare il suo\nfratellino!\pChatot - Chatot!
+[BLACK]Aiuta la ragazza a trovare il suo\nfratellino!\pChatot - Chatot!
 
 #org @EventScript_Chatot_Master_text2
-Raggiungi Filiberto ad Ardesiopoli\nper analizzare le incisioni!\pChatot - Chatot!
+[BLACK]Raggiungi [ORANGE]Filiberto[BLACK] ad [GREEN]Ardesiopoli[BLACK]\nper analizzare le incisioni!\pChatot - Chatot!
 
 #org @EventScript_Chatot_Master_text3
-Esplora Ardesiopoli!\pChatot - Chatot!
+[BLACK]Esplora [GREEN]Ardesiopoli[BLACK]!\pChatot - Chatot!
 
 #org @EventScript_Chatot_Master_text4
-Aiuta la ragazza a trovare Shinx!\pChatot - Chatot!
+[BLACK]Aiuta la ragazza a trovare [GREEN]Shinx[BLACK]!\pChatot - Chatot!
 
 #org @EventScript_Chatot_Master_text5
-Parla con Filiberto al Museo\nArcheologico!\pChatot - Chatot!
+[BLACK]Parla con [ORANGE]Filiberto[BLACK] al [GREEN]Museo\nArcheologico[BLACK]!\pChatot - Chatot!
 
 #org @EventScript_Chatot_Master_text6
-Sfida la Palestra Pok\emon di\nFiliberto!\pChatot - Chatot!
+[BLACK]Sfida la Palestra Pok\emon di\n[ORANGE]Filiberto[BLACK]!\pChatot - Chatot!
 
 #org @EventScript_Chatot_Master_text7
-Esplora il Percorso 3 e il Percorso 4!\pChatot - Chatot!
+[BLACK]Esplora il [GREEN]Percorso 3[BLACK] e il [GREEN]Percorso 4[BLACK]!\pChatot - Chatot!
 
 #org @EventScript_Chatot_Master_text8
-Sfida la Palestra Pok\emon di\nRadiantia!\pChatot - Chatot!
+[BLACK]Sfida la Palestra Pok\emon di\n[GREEN]Radiantia[BLACK]!\pChatot - Chatot!
 
 #org @EventScript_Chatot_Master_text9
-Raggiungi la cima del Passo Tuono!\nTi consiglio di provare la nuova\lmetropolitana\pChatot - Chatot!
+[BLACK]Raggiungi la cima del [GREEN]Passo Tuono[BLACK]!\nTi consiglio di provare la nuova\lmetropolitana\pChatot - Chatot!
 
 #org @EventScript_Chatot_Master_text10
-Incontra Crispy a Radiantia!\pChatot - Chatot!
+[BLACK]Incontra [BLUE]Crispy[BLACK] a [GREEN]Radiantia[BLACK]!\pChatot - Chatot!
 
 //MISSIONI_________________________
 
 #org @Mission_Received_text1
-Nuova missione secondaria\ndisponibile!\pVisualizza le missioni secondarie\ndisponibili tramite la voce Quests\lnel Menu.
+[BLACK]Nuova missione secondaria\ndisponibile!
 
 #org @Mission_Completed_text1
-Complimenti, hai completato una\nmissione secondaria!
+[BLACK]Complimenti, hai completato una\nmissione secondaria!

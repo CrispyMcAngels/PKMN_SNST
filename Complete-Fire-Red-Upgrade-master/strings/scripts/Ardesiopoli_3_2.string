@@ -36,140 +36,138 @@ Museo archeologico
 Collina Ardesia - Ingresso Nord
 
 #org @Ardesiopoli_3_2_MapScriptOnFrame_text1
-Grazie per aver riportato Shinx!\nDove si era cacciato?\pPrendi, questo [1A] il minimo che\npossa fare per sdebitarmi,\la me non serve!
+[BLACK]Grazie per aver riportato [GREEN]Shinx[BLACK]!\nDove si era cacciato?\pPrendi, questo [1A] il minimo che\npossa fare per sdebitarmi,\la me non serve!
 
 #org @Ardesiopoli_3_2_MapScriptOnFrame_text2
-D'ora in poi potrai usare il\nPass Metro per spostarti da\lArdesiopoli Sud ad Ardesiopoli Nord.
+[BLACK]D'ora in poi potrai usare il\n[GREEN]Pass Metro[BLACK] per spostarti da\l[GREEN]Ardesiopoli Sud[BLACK] ad [GREEN]Ardesiopoli Nord[BLACK].
 
 #org @Ardesiopoli_3_2_NPC0_text1
-Adoro venire in questa piazza[.]\n[05] sempre cos[1E] piena di vita!
+[BLACK]Adoro venire in questa piazza[.]\n[05] sempre cos[1E] piena di vita!
 
 #org @Ardesiopoli_3_2_NPC2_text1
-Gnam Gnam\pMangiare un gelato guardando tutto\nquello che succede qui sotto da\lquesta panchina [1A] il mio\lpassatempo preferito!
+[BLACK]Gnam Gnam\pMangiare un gelato guardando tutto\nquello che succede qui sotto da\lquesta panchina [1A] il mio\lpassatempo preferito!
 
 #org @Ardesiopoli_3_2_NPC3_text1
-Mio nonno mi porta sempre qui in\nquesta piazza a passeggiare,\lmi piace tanto passare del tempo\lcon lui[.]\pConosce qualsiasi cosa!
+[BLACK]Mio nonno mi porta sempre qui in\nquesta piazza a passeggiare,\lmi piace tanto passare del tempo\lcon lui[.]\pConosce qualsiasi cosa!
 
 #org @Ardesiopoli_3_2_NPC4_text1
-Ai miei tempi non c'era la\nmetropolitana!\pSi passava ore a scalare le rocce\ntra Nord e Sud!
+[BLACK]Ai miei tempi non c'era la\nmetropolitana!\pSi passava ore a scalare le rocce\ntra Nord e Sud!
 
 #org @Ardesiopoli_3_2_NPC6_text1
-Sei un allenatore giusto?\nHai gi[16] sfidato Filiberto?\pLa palestra si trova sulla Collina\nArdesia.
+[BLACK]Sei un allenatore giusto?\nHai gi[16] sfidato [ORANGE]Filiberto[BLACK]?\pLa palestra si trova sulla [GREEN]Collina\nArdesia[BLACK].
 
 #org @Ardesiopoli_3_2_NPC6_text2
-Wow, [1A] la Medaglia Amonite!\nDevi essere sicuramente un\lallenatore in gamba!
+[BLACK]Wow, [1A] la [GREEN]Medaglia Amonite[BLACK]!\nDevi essere sicuramente un\lallenatore in gamba!
 
 #org @Ardesiopoli_3_2_NPC7_text1
-Mi chiedo cosa ci sia davvero sotto\nqueste rocce[.]\pForse antichi segreti dimenticati.
+[BLACK]Mi chiedo cosa ci sia davvero sotto\nqueste rocce[.]\pForse antichi segreti dimenticati.
 
 #org @Ardesiopoli_3_2_NPC8_text1
-Ho perso il mio Pok\emon sulla\nCollina Ardesia, per fortuna un\lgentile Archeologo l'ha ritrovato!
+[BLACK]Ho perso il mio Pok\emon sulla\n[GREEN]Collina Ardesia[BLACK], per fortuna un\lgentile Archeologo l'ha ritrovato!
 
 #org @Ardesiopoli_3_2_NPC9_text1
-Sono in citt[16] per visitare il\nmuseo!\pHo un compito da fare[.]\nma mi sono perso leggendo tutte le\ltarghette!
+[BLACK]Sono in citt[16] per visitare il\nmuseo!\pHo un compito da fare[.]\nma mi sono perso leggendo tutte le\ltarghette!
 
 #org @Ardesiopoli_3_2_NPC10_text1
-Una volta ho sfidato Filiberto[.]\nHo perso malamente, ma ho imparato\lqualcosa quel giorno:\pIo e Togepi non siamo fatte per\ncombattere!
+[BLACK]Una volta ho sfidato [ORANGE]Filiberto[BLACK][.]\nHo perso malamente, ma ho imparato\lqualcosa quel giorno:\pIo e [GREEN]Togepi[BLACK] non siamo fatte per\ncombattere!
 
 #org @Ardesiopoli_3_2_NPC11_text1
-Toge-Togepiii!
+[BLACK]Toge-Togepiii!
 
 #org @Ardesiopoli_3_2_NPC14_text1
-Questo [1A] uno dei punti pi[26] a\nNord della regione di Eyros[.]\pMolto spesso quando devo pensare\nvengo qui e guardo l'orizzonte\lper ore[.]\pChiss[16] che cosa si trova oltre\nl'orizzonte!
+[BLACK]Questo [1A] uno dei punti pi[26] a\nNord della regione di [GREEN]Eyros[BLACK][.]\pMolto spesso quando devo pensare\nvengo qui e guardo l'orizzonte\lper ore[.]\pChiss[16] che cosa si trova oltre\nl'orizzonte!
 
 #org @Ardesiopoli_3_2_NPC15_text0
-Quei bambini stanno giocando con\ni loro Pok\emon, ora vado a\lvedere se lasciano giocare anche me!
+[BLACK]Quei bambini stanno giocando con\ni loro Pok\emon, ora vado a\lvedere se lasciano giocare anche me!
 
 #org @Ardesiopoli_3_2_NPC15_text1
-Sigh[.] Sigh[.]\pEro venuta qui per vedere dei\nPok\emon sfidarsi, ma quei due\lbulletti mi hanno cacciato[.]
+[BLACK]Sigh[.] Sigh[.]\pEro venuta qui per vedere dei\nPok\emon sfidarsi, ma quei due\lbulletti mi hanno cacciato[.]
 
 #org @Ardesiopoli_3_2_NPC15_text2
-Questi due ragazzi hanno imparato\nla lezione.\pOra mi lasciano giocare\ncon i loro Pok\emon.
+[BLACK]Questi due ragazzi hanno imparato\nla lezione.\pOra mi lasciano giocare\ncon i loro Pok\emon.
 
 #org @Ardesiopoli_3_2_NPC16_text1
-Questa mini arena [1A] il modo\nmigliore per allenare il mio\lPok\emon e fare amicizia con i\lbambini di Ardesiopoli.
+[BLACK]Questa mini arena [1A] il modo\nmigliore per allenare il mio\lPok\emon e fare amicizia con i\lbambini di [GREEN]Ardesiopoli[BLACK].
 
 #org @Ardesiopoli_3_2_NPC17_text1
-Allenarsi qui sta diventando\nnoioso[.]\lGli altri bambini sono troppo\ldeboli per me[.]
+[BLACK]Allenarsi qui sta diventando\nnoioso[.]\lGli altri bambini sono troppo\ldeboli per me[.]
 
 //_/////////////////////////////////
 #org @Ardesiopoli_3_2_NPC18_text1
-Dicono che i Pok\emon fossile\npossano tornare in vita[.]\pIo voglio un Cranidos come compagno!
+[BLACK]Dicono che i Pok\emon fossile\npossano tornare in vita[.]\pIo voglio un [GREEN]Cranidos[BLACK] come compagno!
 
 #org @Ardesiopoli_3_2_NPC21_text1
-Dannazione, ho provato a sfidare\nil capopalestra di Ardesiopoli,\li miei Pok\emon di tipo volante\lsono stati spazzati via dai suoi\lPok\emon fossile[.]\pForse dovrei tornare nel Percorso 2\nad allenarmi[.]
+[BLACK]Dannazione, ho provato a sfidare\nil capopalestra di [GREEN]Ardesiopoli[BLACK],\li miei Pok\emon di tipo volante\lsono stati spazzati via dai suoi\lPok\emon fossile[.]\pForse dovrei tornare nel [GREEN]Percorso 2[BLACK]\nad allenarmi[.]
 
 #org @Ardesiopoli_3_2_NPC22_text1
-Sono di pattuglia ad Ardesiopoli,\nalcune persone hanno riportato\ldelle attivit[16] sospette!
-
-
+[BLACK]Sono di pattuglia ad [GREEN]Ardesiopoli[BLACK],\nalcune persone hanno riportato\ldelle attivit[16] sospette!
 
 #org @Ardesiopoli_3_2_NPC20_text1
-Sto per aprire un'azienda a\nStellavia.\pAbitando ad Ardesiopoli fare avanti\ne indietro ogni giorno [1A] molto\lcomplicato, ma quando i lavori per\lla nuova linea della metropolitana\lsaranno ultimati, spostarsi fino a\lStellavia sar[16] un gioco da ragazzi!
+[BLACK]Sto per aprire un'azienda a\n[GREEN]Stellavia[BLACK].\pAbitando ad [GREEN]Ardesiopoli[BLACK] fare avanti\ne indietro ogni giorno [1A] molto\lcomplicato, ma quando i lavori per\lla nuova linea della metropolitana\lsaranno ultimati, spostarsi fino a\l[GREEN]Stellavia[BLACK] sar[16] un gioco da ragazzi!
 
 #org @Ardesiopoli_3_2_NPC19_text1
-[PLAYER]: Eccoti Shinx, ti piace\nproprio correre, non [1A] vero?\pBene, torniamo dalla tua\nallenatrice!
+[LIGHT_BLUE][PLAYER][BLACK]: Eccoti [GREEN]Shinx[BLACK], ti piace\nproprio correre, non [1A] vero?\pBene, torniamo dalla tua\nallenatrice!
 
 #org @Ardesiopoli_3_2_NPC19_text2
-Shiiinx!
+[BLACK]Shiiinx!
 
 #org @Ardesiopoli_3_2_tile5_text0
-Torna quando sarai pronto!
+[BLACK]Torna quando sarai pronto!
 
 #org @Ardesiopoli_3_2_tile5_text1
-Ehi, tu non sei di queste parti,\nche ci fai qui!?\pQuesta [1A] la mini arena di\nArdesiopoli, se vuoi andare avanti\ldevi sfidare sia me che il mio\lamico.
+[BLACK]Ehi, tu non sei di queste parti,\nche ci fai qui!?\pQuesta [1A] la mini arena di\n[GREEN]Ardesiopoli[BLACK], se vuoi andare avanti\ldevi sfidare sia me che il mio\lamico.
 
 #org @Ardesiopoli_3_2_tile5_text2
-Che fai, accetti la sfida?
+[BLACK]Che fai, accetti la sfida?
 
 #org @Ardesiopoli_3_2_tile5_text3
-Ora vedrai di che pasta sono\nfatti i ragazzi di Ardesiopoli!
+[BLACK]Ora vedrai di che pasta sono\nfatti i ragazzi di [GREEN]Ardesiopoli[BLACK]!
 
 #org @Ardesiopoli_3_2_tile5_text4
 Non [1A] andata come pensavo[.]
 
 #org @Ardesiopoli_3_2_tile5_text5
-Quello di poco fa [1A] stato solo un\nriscaldamento, vediamo come te la\lcavi ora!
+[BLACK]Quello di poco fa [1A] stato solo un\nriscaldamento, vediamo come te la\lcavi ora!
 
 #org @Ardesiopoli_3_2_tile5_text6
 Ouch, sei in gamba, devo ammetterlo!
 
 #org @Ardesiopoli_3_2_tile5_text7
-[PLAYER]: Bene, ora che vi\nho battuto dovete smetterla di\lfare i bulletti e lasciar giocare\lquella bambina con voi!
+[LIGHT_BLUE][PLAYER][BLACK]: Bene, ora che vi\nho battuto dovete smetterla di\lfare i bulletti e lasciar giocare\lquella bambina con voi!
 
 #org @Ardesiopoli_3_2_tile5_text9
-Aaah, va bene!\pMa che ti aspettavi?\nSiamo solo dei bambini d'altronde[.]
+[BLACK]Aaah, va bene!\pMa che ti aspettavi?\nSiamo solo dei bambini d'altronde[.]
 
 #org @Ardesiopoli_3_2_tile5_text8
-Finalmente sei deciso a tornare[.]
+[BLACK]Finalmente sei deciso a tornare[.]
 
 #org @Ardesiopoli_3_2_tile0_text1
-Naomi: Ciao [PLAYER], anche tu da\nqueste parti?\pDopotutto non mi sorprende vederti\nqui, nella Foresta Frondosa ce la\lsiamo cavata bene insieme[.]\pScommetto che pure tu sei qui per\lsfidare Filiberto!\pFacciamo un gioco, ti lascier[22] andare\nverso la palestra Pok\emon solo se\lriuscirai a battermi!
+[RED]Naomi[BLACK]: Ciao [LIGHT_BLUE][PLAYER][BLACK], anche tu da\nqueste parti?\pDopotutto non mi sorprende vederti\nqui, nella [GREEN]Foresta Frondosa[BLACK] ce la\lsiamo cavata bene insieme[.]\pScommetto che pure tu sei qui per\lsfidare [ORANGE]Filiberto[BLACK]!\pFacciamo un gioco, ti lascier[22] andare\nverso la palestra Pok\emon solo se\lriuscirai a battermi!
 
 #org @Ardesiopoli_3_2_tile0_text2
 Non ci credo, un'altra volta!
 
 #org @Ardesiopoli_3_2_tile0_text3
-Naomi: [PLAYER] sono impressionata!\pNelle Rovine Ancestrali pensavo di\naver raggiunto un ottimo livello di\lallenamento e sintonia con i miei\lPok\emon[.]\pTu sei per[22] sempre un passo avanti[.]
+[RED]Naomi[BLACK]: [LIGHT_BLUE][PLAYER][BLACK] sono impressionata!\pNelle [GREEN]Rovine Ancestrali[BLACK] pensavo di\naver raggiunto un ottimo livello di\lallenamento e sintonia con i miei\lPok\emon[.]\pTu sei per[22] sempre un passo avanti[.]
 
 #org @Ardesiopoli_3_2_tile0_text4a
-Naomi: Non lo dico per gelosia,\nper[22] oggi n[1B] tu n[1B] io potremo\lsfidare Filiberto.\pLa palestra [1A] chiusa!\pChe quel tipo sia ancora nel suo\nlaboratorio?
+[RED]Naomi[BLACK]: Non lo dico per gelosia,\nper[22] oggi n[1B] tu n[1B] io potremo\lsfidare [ORANGE]Filiberto[BLACK].\pLa palestra [1A] chiusa!\pChe quel tipo sia ancora nel suo\nlaboratorio?
 
 #org @Ardesiopoli_3_2_tile0_text4b
-Naomi: Non mi sento ancora pronta per\nsfidare Filiberto, forse [1A] meglio\lche mi alleni ancora un po'!
+[RED]Naomi[BLACK]: Non mi sento ancora pronta per\nsfidare [ORANGE]Filiberto[BLACK], forse [1A] meglio\lche mi alleni ancora un po'!
 
 #org @Ardesiopoli_3_2_tile0_text5a
-Naomi: Non voglio pensarci ora!\nForse [1A] meglio se vado a fare un\lgiro ad Ardesiopoli Nord[.]\pCiao Ciao [PLAYER], fammi sapere\nse trovi Filiberto!
+[RED]Naomi[BLACK]: Non voglio pensarci ora!\nForse [1A] meglio se vado a fare un\lgiro ad [GREEN]Ardesiopoli Nord[BLACK][.]\pCiao Ciao [LIGHT_BLUE][PLAYER][BLACK], fammi sapere\nse trovi [ORANGE]Filiberto[BLACK]!
 
 #org @Ardesiopoli_3_2_tile0_text5b
-Naomi: Ma certo, quale posto\nmigliore del Percorso 2?\pCatturer[22] tantissimi Pok\emon\nselvatici e la prossima volta non\lavrai scampo!
+[RED]Naomi[BLACK]: Ma certo, quale posto\nmigliore del [GREEN]Percorso 2[BLACK]?\pCatturer[22] tantissimi Pok\emon\nselvatici e la prossima volta non\lavrai scampo!
 
 #org @Ardesiopoli_3_2_tile6_text1
-FERMATIIIIII!\pLADRO DI POK[06]MOOOOON!!!
+[BLACK]FERMATIIIIII!\p[DUSK]LADRO DI POK[06]MOOOOON[BLACK]!!!
 
 #org @Ardesiopoli_3_2_tile6_text2
-AIUTOOO! Quel mascalzone ha rubato\nil mio Darumaka!\pTi prego aiutami, ora non ho nessun\nPok\emon per inseguirlo!\pSembra sia scappato verso il centro\ndi Ardesiopoli[.]
+[BLACK]AIUTOOO! Quel mascalzone ha rubato\nil mio [GREEN]Darumaka[BLACK]!\pTi prego aiutami, ora non ho nessun\nPok\emon per inseguirlo!\pSembra sia scappato verso il centro\ndi [GREEN]Ardesiopoli[BLACK][.]
 
 #org @Ardesiopoli_3_2_NPC28_text1
 //_/////////////////////////////////
-Il ladro [1A] scappato verso il\ncentro di Ardesiopoli.\pHai gi[16] dato un'occhiata l[1E] dentro?
+[BLACK]Il ladro [1A] scappato verso il\ncentro di [GREEN]Ardesiopoli[BLACK].\pHai gi[16] dato un'occhiata l[1E] dentro?

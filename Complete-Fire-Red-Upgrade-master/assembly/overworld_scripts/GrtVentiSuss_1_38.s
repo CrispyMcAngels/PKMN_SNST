@@ -72,7 +72,7 @@ gMapScripts_GrtVentiSuss_1_38:
 			GrtVentiSuss_1_38_MapScriptOnFrameBegin_P1:
 				//player "finalmente ecco quel pokemon..."
 				pause 0x1E
-				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov4
+				applymovement 0xFF mov_exclamation
 				waitmovement 0xFF
 				pause 0x1E
 				compare 0x501F 0x100
@@ -81,11 +81,11 @@ gMapScripts_GrtVentiSuss_1_38:
 				if 0x1 _call Player_Orange
 				compare 0x501F 0x1A4
 				if 0x1 _call Player_Green
-				textcolor 0x0
+				
 				msgbox GrtVentiSuss_1_38_MapScript_text0 MSG_NORMAL
 				special 0x15A	
 				pause 0x1E
-				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov5
+				applymovement 0xFF mov_question
 				waitmovement 0xFF
 				pause 0x1E
 				compare 0x501F 0x100
@@ -94,7 +94,7 @@ gMapScripts_GrtVentiSuss_1_38:
 				if 0x1 _call Player_Orange
 				compare 0x501F 0x1A4
 				if 0x1 _call Player_Green
-				textcolor 0x0
+				
 				msgbox GrtVentiSuss_1_38_MapScript_text0a MSG_NORMAL
 				special 0x15A	
 				pause 0x1E
@@ -102,7 +102,7 @@ gMapScripts_GrtVentiSuss_1_38:
 				applymovement 0x7F GrtVentiSuss_1_38_MapScript_mov1
 				waitmovement 0x7F	
 				pause 0x1E
-				textcolor 0x1
+				
 				showpokepic 0x3C1 0x0 0x6
 				msgbox GrtVentiSuss_1_38_MapScript_text1 MSG_NORMAL
 				special 0x15A
@@ -110,6 +110,7 @@ gMapScripts_GrtVentiSuss_1_38:
 				applymovement 0x7F GrtVentiSuss_1_38_MapScript_mov2
 				waitmovement 0x7F				
 				special 0x114
+				sound 0x15
 				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov3
 				waitmovement 0xFF
 				pause 0x1E
@@ -123,11 +124,11 @@ gMapScripts_GrtVentiSuss_1_38:
 				if 0x1 _call Player_Orange
 				compare 0x501F 0x1A4
 				if 0x1 _call Player_Green
-				textcolor 0x0
+				
 				msgbox GrtVentiSuss_1_38_MapScript_text3 MSG_NORMAL
 				special 0x15A	
 				pause 0x1E
-				textcolor 0x1
+				
 				showpokepic 0x3C1 0x0 0x6
 				msgbox GrtVentiSuss_1_38_MapScript_text4 MSG_NORMAL
 				special 0x15A				
@@ -137,7 +138,7 @@ gMapScripts_GrtVentiSuss_1_38:
 				spriteface 0xB 0x1
 				pause 0x1E
 				sound 0x5
-				applymovement 0xA GrtVentiSuss_1_38_MapScript_mov4
+				applymovement 0xA mov_exclamation
 				waitmovement 0xA	
 				playsong 0x188 0x0
 
@@ -146,7 +147,7 @@ gMapScripts_GrtVentiSuss_1_38:
 				msgbox GrtVentiSuss_1_38_MapScript_text5 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
-				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov5
+				applymovement 0xFF mov_question
 				waitmovement 0xFF
 				pause 0x1E
 				compare 0x501F 0x100
@@ -155,7 +156,7 @@ gMapScripts_GrtVentiSuss_1_38:
 				if 0x1 _call Player_Orange
 				compare 0x501F 0x1A4
 				if 0x1 _call Player_Green
-				textcolor 0x0
+				
 				msgbox GrtVentiSuss_1_38_MapScript_text6 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
@@ -163,7 +164,7 @@ gMapScripts_GrtVentiSuss_1_38:
 				pause 0x1E
 				spriteface 0xA 0x1
 				pause 0x1E
-				textcolor 0x1
+				
 				showpokepic 0x3C1 0x0 0x6
 				msgbox GrtVentiSuss_1_38_MapScript_text7 MSG_NORMAL
 				special 0x15A	
@@ -173,7 +174,7 @@ gMapScripts_GrtVentiSuss_1_38:
 				special 0x15A
 				pause 0x1E
 				sound 0x5
-				applymovement 0xA GrtVentiSuss_1_38_MapScript_mov4
+				applymovement 0xA mov_exclamation
 				waitmovement 0xA
 				pause 0x1E
 				showpokepic 0x3C1 0x0 0x6
@@ -186,11 +187,11 @@ gMapScripts_GrtVentiSuss_1_38:
 				if 0x1 _call Player_Orange
 				compare 0x501F 0x1A4
 				if 0x1 _call Player_Green
-				textcolor 0x0
+				
 				msgbox GrtVentiSuss_1_38_MapScript_text10 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
-				textcolor 0x1
+				
 				showpokepic 0x3C1 0x0 0x6
 				msgbox GrtVentiSuss_1_38_MapScript_text11 MSG_NORMAL
 				special 0x15A
@@ -201,11 +202,11 @@ gMapScripts_GrtVentiSuss_1_38:
 				if 0x1 _call Player_Orange
 				compare 0x501F 0x1A4
 				if 0x1 _call Player_Green
-				textcolor 0x0
+				
 				msgbox GrtVentiSuss_1_38_MapScript_text12 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
-				textcolor 0x1
+				
 				showpokepic 0x3C1 0x0 0x6
 				msgbox GrtVentiSuss_1_38_MapScript_text13 MSG_NORMAL
 				special 0x15A
@@ -215,7 +216,7 @@ gMapScripts_GrtVentiSuss_1_38:
 				applymovement 0xB GrtVentiSuss_1_38_MapScript_mov6
 				waitmovement 0xB
 				cry 0xB2 0x0
-				textcolor 0x2
+				
 				msgbox Percorso3_3_21_tile0_text1 MSG_NORMAL
 				pause 0x1E
 				sound 0xC
@@ -228,7 +229,10 @@ gMapScripts_GrtVentiSuss_1_38:
 				waitmovement 0x7F
 				pause 0x1E	
 				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov7
-				waitmovement 0xFF				
+				waitmovement 0xFF	
+				sound 0x15
+				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov7_a
+				waitmovement 0xFF			
 				pause 0x1E
 				compare 0x501F 0x100
 				if 0x1 _call Player_Blue
@@ -236,18 +240,21 @@ gMapScripts_GrtVentiSuss_1_38:
 				if 0x1 _call Player_Orange
 				compare 0x501F 0x1A4
 				if 0x1 _call Player_Green
-				textcolor 0x0
+				
 				msgbox GrtVentiSuss_1_38_MapScript_text14 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
 				spriteface 0xFF 0x2
 				pause 0x1E
-				textcolor 0x1
+				
 				showpokepic 0x3C1 0x0 0x6
 				msgbox GrtVentiSuss_1_38_MapScript_text15 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
 				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov8
+				waitmovement 0xFF
+				sound 0x15
+				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov8_a
 				waitmovement 0xFF
 				pause 0x1E
 				compare 0x501F 0x100
@@ -256,17 +263,17 @@ gMapScripts_GrtVentiSuss_1_38:
 				if 0x1 _call Player_Orange
 				compare 0x501F 0x1A4
 				if 0x1 _call Player_Green
-				textcolor 0x0
+				
 				msgbox GrtVentiSuss_1_38_MapScript_text16 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
-				textcolor 0x1
+				
 				showpokepic 0x3C1 0x0 0x6
 				msgbox GrtVentiSuss_1_38_MapScript_text17 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
 				setvar 0x4051 0x3B
-				textcolor 0x2
+				
 				msgbox GrtVentiSuss_1_38_MapScript_text18 MSG_YESNO
 				compare 0x800D 0x1
 				if 0x1 _goto GrtVentiSuss_1_38_MapScript_P3
@@ -275,11 +282,11 @@ gMapScripts_GrtVentiSuss_1_38:
 				end
 
 				GrtVentiSuss_1_38_MapScript_P2:
-					textcolor 0x1
+					
 					showpokepic 0x3C1 0x0 0x6
 					msgbox GrtVentiSuss_1_38_MapScript_text21 MSG_NORMAL
 					special 0x15A
-					textcolor 0x2
+					
 					msgbox GrtVentiSuss_1_38_MapScript_text18 MSG_YESNO
 					compare 0x800D 0x1
 					if 0x1 _goto GrtVentiSuss_1_38_MapScript_P3
@@ -288,6 +295,7 @@ gMapScripts_GrtVentiSuss_1_38:
 					end
 				
 				GrtVentiSuss_1_38_MapScript_P2_A:
+					sound 0x15
 					applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov3
 					waitmovement 0xFF
 					compare 0x4051 0x3B
@@ -297,7 +305,7 @@ gMapScripts_GrtVentiSuss_1_38:
 
 				GrtVentiSuss_1_38_MapScript_P3:
 					pause 0x1E
-					textcolor 0x1
+					
 					showpokepic 0x3C1 0x0 0x6
 					msgbox GrtVentiSuss_1_38_MapScript_text19 MSG_NORMAL
 					special 0x15A
@@ -313,11 +321,11 @@ gMapScripts_GrtVentiSuss_1_38:
 				GrtVentiSuss_1_38_MapScript_P3_A:					
 					pause 0x1E
 					sound 0x5
-					applymovement 0xA GrtVentiSuss_1_38_MapScript_mov4
+					applymovement 0xA mov_exclamation
 					waitmovement 0xA
 					playsong 0x18C 0x0
 					pause 0x1E
-					textcolor 0x1
+					
 					showpokepic 0x3C1 0x0 0x6
 					msgbox GrtVentiSuss_1_38_MapScript_text22 MSG_NORMAL
 					special 0x15A
@@ -328,11 +336,11 @@ gMapScripts_GrtVentiSuss_1_38:
 					if 0x1 _call Player_Orange
 					compare 0x501F 0x1A4
 					if 0x1 _call Player_Green
-					textcolor 0x0
+					
 					msgbox GrtVentiSuss_1_38_MapScript_text23 MSG_NORMAL
 					special 0x15A
 					pause 0x1E
-					textcolor 0x1
+					
 					showpokepic 0x3C1 0x0 0x6
 					msgbox GrtVentiSuss_1_38_MapScript_text24 MSG_NORMAL
 					special 0x15A
@@ -342,7 +350,7 @@ gMapScripts_GrtVentiSuss_1_38:
 					setvar 0x4051 0x3C
 					//var 4054 e' il transport del puzzle
 					pause 0x1E
-					textcolor 0x2
+					
 					msgbox GrtVentiSuss_1_38_MapScript_text25 MSG_NORMAL
 					movesprite 0xE 0x0B 0x07
 					setvar 0x4054 0x0
@@ -377,7 +385,7 @@ gMapScripts_GrtVentiSuss_1_38:
 						movesprite 0xF 0x09 0x0A
 						movesprite 0xC 0x0 0x0
 						pause 0x1E
-						applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov4
+						applymovement 0xFF mov_exclamation
 						waitmovement 0xFF
 						pause 0x1E
 						pause 0x1E
@@ -387,7 +395,7 @@ gMapScripts_GrtVentiSuss_1_38:
 						if 0x1 _call Player_Orange
 						compare 0x501F 0x1A4
 						if 0x1 _call Player_Green
-						textcolor 0x0
+						
 						msgbox GrtVentiSuss_1_38_MapScript_text28 MSG_NORMAL
 						special 0x15A
 
@@ -402,7 +410,7 @@ gMapScripts_GrtVentiSuss_1_38:
 						//setweather 0xB
 						//doweather
 						pause 0x1E
-						textcolor 0x1
+						
 						showpokepic 0x3C1 0x0 0x6
 						msgbox GrtVentiSuss_1_38_MapScript_text26 MSG_NORMAL
 						special 0x15A
@@ -419,16 +427,16 @@ gMapScripts_GrtVentiSuss_1_38:
 						if 0x1 _call Player_Orange
 						compare 0x501F 0x1A4
 						if 0x1 _call Player_Green
-						textcolor 0x0
+						
 						msgbox GrtVentiSuss_1_38_MapScript_text31 MSG_NORMAL
 						special 0x15A
 						pause 0x1E
 
-						applymovement 0xA GrtVentiSuss_1_38_MapScript_mov4
+						applymovement 0xA mov_exclamation
 						waitmovement 0xA
 
 						pause 0x1E
-						textcolor 0x1
+						
 						showpokepic 0x3C1 0x0 0x6
 						msgbox GrtVentiSuss_1_38_MapScript_text27 MSG_NORMAL
 						special 0x15A
@@ -452,10 +460,10 @@ gMapScripts_GrtVentiSuss_1_38:
 						pause 0x1E
 						pause 0x1E
 						sound 0x5
-						applymovement 0xA GrtVentiSuss_1_38_MapScript_mov4
+						applymovement 0xA mov_exclamation
 						waitmovement 0xA							
 						pause 0x1E
-						textcolor 0x1
+						
 						showpokepic 0x3C1 0x0 0x6
 						msgbox GrtVentiSuss_1_38_MapScript_text29 MSG_NORMAL
 						special 0x15A
@@ -472,7 +480,7 @@ gMapScripts_GrtVentiSuss_1_38:
 						pause 0x1E
 						fadescreen 0x0
 						pause 0x1E
-						sound 0x5
+						sound 0x15
 						applymovement 0xB GrtVentiSuss_1_38_MapScript_mov12
 						waitmovement 0xB
 						cry 0xB2 0x0
@@ -486,13 +494,14 @@ gMapScripts_GrtVentiSuss_1_38:
 						setvar 0x4051 0x3D
 						pause 0x1E
 						pause 0x1E
-						warpmuted 0x1 0x7B 0xFF 0x07 0x06
+						warpmuted 0x0 0x11 0xFF 0x07 0x06
 						releaseall
 						end
 
 			GrtVentiSuss_1_38_MapScript_P6:
 				pause 0x3E
-				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov4
+				sound 0x15
+				applymovement 0xFF mov_exclamation
 				waitmovement 0xFF
 				pause 0x1E
 				compare 0x501F 0x100
@@ -501,7 +510,7 @@ gMapScripts_GrtVentiSuss_1_38:
 				if 0x1 _call Player_Orange
 				compare 0x501F 0x1A4
 				if 0x1 _call Player_Green
-				textcolor 0x0
+				
 				msgbox GrtVentiSuss_1_38_MapScript_text32 MSG_NORMAL
 				special 0x15A
 				playsong 0x189 0x0
@@ -518,7 +527,7 @@ gMapScripts_GrtVentiSuss_1_38:
 				msgbox GrtVentiSuss_1_38_MapScript_text33 MSG_NORMAL
 				special 0x15A
 				pause 0x2A
-				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov5
+				applymovement 0xFF mov_question
 				waitmovement 0xFF
 				pause 0x25
 				//ruota stops
@@ -566,6 +575,9 @@ gMapScripts_GrtVentiSuss_1_38:
 				msgbox GrtVentiSuss_1_38_MapScript_text37 MSG_NORMAL
 				special 0x15A	
 				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov14
+				waitmovement 0xFF
+				sound 0x15 
+				applymovement 0xFF mov_question
 				waitmovement 0xFF
 				pause 0x21
 				compare 0x501F 0x100
@@ -626,7 +638,8 @@ gMapScripts_GrtVentiSuss_1_38:
 				msgbox GrtVentiSuss_1_38_MapScript_text43 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
-				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov5
+				sound 0x15
+				applymovement 0xFF mov_question
 				waitmovement 0xFF
 				spriteface 0xFF 0x2
 				pause 0x1E
@@ -661,6 +674,7 @@ gMapScripts_GrtVentiSuss_1_38:
 				special 0x15A
 				setvar 0x4051 0x3F
 				setvar 0x4052 0x7
+				setflag 0x991
 				fadedefault
 				releaseall
 				end
@@ -697,15 +711,7 @@ gMapScripts_GrtVentiSuss_1_38:
 					.byte 0x13
 					.byte 0x13
 					.byte 0x1 
-					.byte 0xFE
-
-				GrtVentiSuss_1_38_MapScript_mov4:
-					.byte 0x62
-					.byte 0xFE
-
-				GrtVentiSuss_1_38_MapScript_mov5:
-					.byte 0x63
-					.byte 0xFE					
+					.byte 0xFE				
 
 				GrtVentiSuss_1_38_MapScript_mov6:
 					.byte 0x21
@@ -716,6 +722,9 @@ gMapScripts_GrtVentiSuss_1_38:
 				GrtVentiSuss_1_38_MapScript_mov7:
 					.byte 0x0 
 					.byte 0x1C
+					.byte 0xFE
+
+				GrtVentiSuss_1_38_MapScript_mov7_a:
 					.byte 0x62
 					.byte 0x1C
 					.byte 0x1C
@@ -729,6 +738,9 @@ gMapScripts_GrtVentiSuss_1_38:
 					.byte 0x2 
 					.byte 0x1C
 					.byte 0x1C
+					.byte 0xFE
+
+				GrtVentiSuss_1_38_MapScript_mov8_a:
 					.byte 0x63
 					.byte 0x1C
 					.byte 0x1C
@@ -814,7 +826,6 @@ gMapScripts_GrtVentiSuss_1_38:
 					.byte 0x1C
 					.byte 0x11
 					.byte 0x1B
-					.byte 0x63
 					.byte 0xFE
 
 				GrtVentiSuss_1_38_MapScript_mov15:
@@ -823,14 +834,14 @@ gMapScripts_GrtVentiSuss_1_38:
 
 
 		Player_Blue:
-			showpokepic 0x3b6 0x15 0x6
+			showpokepic 0x3b6 0x0 0x6
 			return
 
 		Player_Orange:
-			showpokepic 0x3bE 0x15 0x6
+			showpokepic 0x3bE 0x0 0x6
 			return
 
 		Player_Green:
-			showpokepic 0x3bF 0x15 0x6
+			showpokepic 0x3bF 0x0 0x6
 			return
 

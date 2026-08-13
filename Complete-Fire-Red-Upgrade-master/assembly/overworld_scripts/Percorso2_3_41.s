@@ -41,9 +41,9 @@ gMapScripts_Percorso2_3_41:
 		Percorso2_3_41_MapScriptOnFrame_P1:
 			lockall
 			pause 0x1E
-			showpokepic 0x3B4 0x15 0x6
+			showpokepic 0x3B4 0x0 0x6
 			//aaa
-			textcolor 0x0
+			
 			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text1 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
@@ -51,10 +51,10 @@ gMapScripts_Percorso2_3_41:
 			pause 0x1E
 			setvar 0x4051 0x23
 			pause 0x1E
-			showpokepic 0x3B4 0x15 0x6
+			showpokepic 0x3B4 0x0 0x6
 			special 0x15A
-			showpokepic 0x3B4 0x15 0x6
-			textcolor 0x0
+			showpokepic 0x3B4 0x0 0x6
+			
 			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text2 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
@@ -113,11 +113,14 @@ gMapScripts_Percorso2_3_41:
 			applymovement 0x6 Percorso2_3_41_MapScriptOnFrameBegin_P2_mov2
 			applymovement 0xFF Percorso2_3_41_MapScriptOnFrameBegin_P2_mov3
 			waitmovement 0x0
+			sound 0x15
+			applymovement 0xFF mov_exclamation
+			waitmovement 0xFF
 			pause 0x1E
 			showpokepic 0x3B9 0x0 0x6
 			special 0x15A
 			showpokepic 0x3B9 0x0 0x6
-			textcolor 0x0
+			
     		msgbox EventScript_Percorso2_3_41_tile0_text1 MSG_NORMAL
 			closeonkeypress
 			special 0x15A
@@ -126,13 +129,16 @@ gMapScripts_Percorso2_3_41:
 			waitmovement 0x0
 			applymovement 0xFF Percorso2_3_41_MapScriptOnFrameBegin_P2_mov5
 			waitmovement 0x0
+			sound 0x15
+			applymovement 0xFF Percorso2_3_41_MapScriptOnFrameBegin_P2_mov5_a
+			waitmovement 0x0
 			compare 0x501F 0x100
 			if 0x1 _call Player_Blue
 			compare 0x501F 0x1A3
 			if 0x1 _call Player_Orange
 			compare 0x501F 0x1A4
 			if 0x1 _call Player_Green
-			textcolor 0x0
+			
     		msgbox EventScript_Percorso2_3_41_tile0_text2 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
@@ -157,8 +163,7 @@ gMapScripts_Percorso2_3_41:
 			Percorso2_3_41_MapScriptOnFrameBegin_P2_mov3:
 				.byte 0x1A
 				.byte 0x4E
-				.byte 0x1 
-				.byte 0x62	
+				.byte 0x1
 				.byte 0xFE
 
 			Percorso2_3_41_MapScriptOnFrameBegin_P2_mov4:
@@ -177,6 +182,9 @@ gMapScripts_Percorso2_3_41:
 			Percorso2_3_41_MapScriptOnFrameBegin_P2_mov5:
 				.byte 0x0 
 				.byte 0x18
+				.byte 0xFE
+
+			Percorso2_3_41_MapScriptOnFrameBegin_P2_mov5_a:
 				.byte 0x63
 				.byte 0x18
 				.byte 0xFE
@@ -185,10 +193,10 @@ gMapScripts_Percorso2_3_41:
 			lockall
 			pause 0x1E
 			pause 0x1E
-			showpokepic 0x3B4 0x15 0x6
+			showpokepic 0x3B4 0x0 0x6
 			special 0x15A
-			showpokepic 0x3B4 0x15 0x6
-			textcolor 0x0
+			showpokepic 0x3B4 0x0 0x6
+			
 			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text5 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
@@ -208,11 +216,11 @@ gMapScripts_Percorso2_3_41:
 			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text6 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
-			applymovement 0x1 Percorso2_3_41_MapScriptOnFrameBegin_mov0
+			applymovement 0x1 mov_exclamation
 			waitmovement 0x0
-			showpokepic 0x3B4 0x15 0x6
+			showpokepic 0x3B4 0x0 0x6
 			special 0x15A
-			showpokepic 0x3B4 0x15 0x6
+			showpokepic 0x3B4 0x0 0x6
 			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text7 MSG_NORMAL
 			special 0x15A
 			//CUTSCENE PREPARATION
@@ -227,17 +235,17 @@ gMapScripts_Percorso2_3_41:
 			//set screen to sepia
 			writebytetooffset 0x2 0x2036E28
 			writebytetooffset 0x89 0x34F5DC
-			warpmuted 0x01 0x22 0xFF 0x0B 0x08
+			warpmuted 0x01 0x22 0xFF 0x05 0x06
 			release
 			end
 			
 		Percorso2_3_41_MapScriptOnFrame_P4:	
 			lockall
 			pause 0x1E
-			showpokepic 0x3B4 0x15 0x6
+			showpokepic 0x3B4 0x0 0x6
 			special 0x15A	
-			showpokepic 0x3B4 0x15 0x6
-			textcolor 0x0
+			showpokepic 0x3B4 0x0 0x6
+			
 			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text8 MSG_NORMAL
 			special 0x15A			
 			pause 0x1E
@@ -257,9 +265,9 @@ gMapScripts_Percorso2_3_41:
 			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text3 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
-			showpokepic 0x3B4 0x15 0x6
+			showpokepic 0x3B4 0x0 0x6
 			special 0x15A
-			showpokepic 0x3B4 0x15 0x6
+			showpokepic 0x3B4 0x0 0x6
 			msgbox Percorso2_3_41_MapScriptOnFrameBegin_text9 MSG_NORMAL
 			special 0x15A	
 			pause 0x1E
@@ -274,10 +282,6 @@ gMapScripts_Percorso2_3_41:
 			setvar 0x4053 0x2
 			releaseall
 			end
-
-			Percorso2_3_41_MapScriptOnFrameBegin_mov0:
-				.byte 0x62
-				.byte 0xFE
 
 			Percorso2_3_41_MapScriptOnFrameBegin_mov1:
 				.byte 0x13
@@ -377,7 +381,8 @@ EventScript_Percorso2_3_41_tile0:
 	lockall
 	playsong 0x0 0x0
 	pause 0x1E
-	applymovement 0xFF EventScript_Percorso2_3_41_tile0_mov0
+	sound 0x15
+	applymovement 0xFF mov_question
 	waitmovement 0x0
 	pause 0x1E
 	movesprite 0x6 0x1C 0x01
@@ -386,13 +391,17 @@ EventScript_Percorso2_3_41_tile0:
 	waitmovement 0x6
 	applymovement 0xFF 	EventScript_Percorso2_3_41_tile0_mov2
 	waitmovement 0xFF
+	sound 0x15
+	applymovement 0xFF 	mov_exclamation
+	waitmovement 0xFF
 	pause 0x1E
 	showpokepic 0x3B9 0x0 0x6
-	textcolor 0x0
+	
     msgbox EventScript_Percorso2_3_41_tile0_text1 MSG_NORMAL
 	closeonkeypress
     special 0x15A
 	pause 0x1E
+	sound 0x15
 	applymovement 0x6 EventScript_Percorso2_3_41_tile0_mov3
 	waitmovement 0x6
 	hidesprite 0x6
@@ -411,10 +420,6 @@ EventScript_Percorso2_3_41_tile0:
 	releaseall
 	end
 
-	EventScript_Percorso2_3_41_tile0_mov0:
-		.byte 0x63
-		.byte 0xFE
-
 	EventScript_Percorso2_3_41_tile0_mov1:
 		.byte 0x1D
 		.byte 0x1D
@@ -423,8 +428,7 @@ EventScript_Percorso2_3_41_tile0:
 
 	EventScript_Percorso2_3_41_tile0_mov2:
 		.byte 0x4E
-		.byte 0x1 
-		.byte 0x62
+		.byte 0x1
 		.byte 0xFE
 
 	EventScript_Percorso2_3_41_tile0_mov3:
@@ -457,10 +461,11 @@ EventScript_Percorso2_3_41_tile1:
 	waitmovement 0xFF
 	pause 0x1E
 	showpokepic 0x3B9 0x0 0x6
-	textcolor 0x0
+	
     msgbox EventScript_Percorso2_3_41_tile0_text1 MSG_NORMAL
 	closeonkeypress
     special 0x15A
+	sound 015
 	applymovement 0x6 EventScript_Percorso2_3_41_tile1_mov3
 	waitmovement 0x6
 	hidesprite 0x6
@@ -503,8 +508,11 @@ EventScript_Percorso2_3_41_tile2:
 	playsong 0x169 0x0
 	applymovement 0x9 EventScript_Percorso2_3_41_tile2_mov1
 	waitmovement 0x0
+	sound 0x15
+	applymovement 0x9 EventScript_Percorso2_3_41_tile2_mov1_a
+	waitmovement 0x0
 	showpokepic 0x3BA 0x0 0x6
-	textcolor 0x0
+	
     msgbox Percorso2_3_41_tile2_text1 MSG_NORMAL
     special 0x15A	
 	applymovement 0x9 EventScript_Percorso2_3_41_tile2_mov2
@@ -520,6 +528,9 @@ EventScript_Percorso2_3_41_tile2:
 	EventScript_Percorso2_3_41_tile2_mov1:
 		.byte 0x3 
 		.byte 0x1B
+		.byte 0xFE
+
+	EventScript_Percorso2_3_41_tile2_mov1_a:		
 		.byte 0x62
 		.byte 0x13
 		.byte 0x11
@@ -576,13 +587,13 @@ EventScript_Percorso_2_3_41_NPC11:
 	end
 
 Player_Blue:
-	showpokepic 0x3b6 0x15 0x6
+	showpokepic 0x3b6 0x0 0x6
 	return
 
 Player_Orange:
-	showpokepic 0x3bE 0x15 0x6
+	showpokepic 0x3bE 0x0 0x6
 	return
 
 Player_Green:
-	showpokepic 0x3bF 0x15 0x6
+	showpokepic 0x3bF 0x0 0x6
 	return

@@ -1,61 +1,60 @@
 //_/////////////////////////////////
 #org @Ardesiopoli_6_7_sign7_text1
-Treno in partenza per Stellavia,\nvuoi salire?
+[BLACK]Treno in partenza per [GREEN]Stellavia[BLACK],\nvuoi salire?
 
 #org @Ardesiopoli_6_7_NPC0_text1
-Treno in partenza per Ardesiopoli\nNord, vuoi salire?
+[BLACK]Treno in partenza per [GREEN]Ardesiopoli\nNord[BLACK], vuoi salire?
 
 #org @Ardesiopoli_6_7_NPC0_text2
-Senza biglietto non [1A] possibile\nsalire a bordo!
+[BLACK]Senza biglietto non [1A] possibile\nsalire a bordo!
 
 #org @Ardesiopoli_6_7_NPC0_text2a
-Biglietto convalidato, buon viaggio!
+[BLACK]Biglietto convalidato, buon viaggio!
 
 #org @Ardesiopoli_6_7_NPC0_text3
-Si parteee!
+[BLACK]Si parteee!
 
 #org @Ardesiopoli_6_7_Sign0_text1
-Questo poster [1A] rovinato
+[BLACK]Questo poster [1A] rovinato
 
 #org @Ardesiopoli_6_7_Sign0_text2
-Questo poster [1A] rovinato, sembra\nche un angolo si stia per staccare.\pVuoi guardare cosa c'[1A] dietro?
+[BLACK]Questo poster [1A] rovinato, sembra\nche un angolo si stia per staccare.\pVuoi guardare cosa c'[1A] dietro?
 
 #org @Ardesiopoli_6_7_Sign0_text3
-[PLAYER] sposta il Poster e scopre\nun passaggio segreto.
+[LIGHT_BLUE][PLAYER][BLACK] sposta il Poster e scopre\nun passaggio segreto.
 
 #org @Ardesiopoli_6_7_NPC1_text1
-La linea per Stellavia?\pInaugurazione rimandata[.] di nuovo.\pMa dicono che quando sar[16] pronta,\nci porter[16] fin nel cuore della\lcitt[16] pi[26] ricca di tutta Eyros.
+[BLACK]La linea per [GREEN]Stellavia[BLACK]?\pInaugurazione rimandata[.] di nuovo.\pMa dicono che quando sar[16] pronta,\nci porter[16] fin nel cuore della\lcitt[16] pi[26] ricca di tutta [GREEN]Eyros[BLACK].
 
 #org @Ardesiopoli_6_7_NPC1_text2
-Era da anni che aspettavo l'apertura\ndella linea che porta a Stellavia!\pDicono che i tunnel siano stati\nscavati grazie a una squadra di\lRhyperior e Steelix.
-
+[BLACK]Era da anni che aspettavo l'apertura\ndella linea che porta a [GREEN]Stellavia[BLACK]!\pDicono che i tunnel siano stati\nscavati grazie a una squadra di\l[GREEN]Rhyperior[BLACK] e [GREEN]Steelix[BLACK].
 
 #org @Ardesiopoli_6_7_NPC2_text1
-Ho preso la metro sbagliata e sono\nfinito di nuovo a Nord[.]\pMaledetta mia distrazione[.]\pStellavia sembra un sogno ormai.
+[BLACK]Ho preso la metro sbagliata e sono\nfinito di nuovo a Nord[.]\pMaledetta mia distrazione[.]\p[GREEN]Stellavia[BLACK] sembra un sogno ormai.
 
 #org @Ardesiopoli_6_7_NPC3_text1
-[.]S[1E], sono ancora bloccato ad\nArdesiopoli.\pLa linea [1A] chiusa, il progetto [1A]\nin ritardo[.]\pSE, riferisci al Consiglio[.] Ciao.
+[.]S[1E], sono ancora bloccato ad\n[GREEN]Ardesiopoli[BLACK].\pLa linea [1A] chiusa, il progetto [1A]\nin ritardo[.]\pSE, riferisci al Consiglio[.] Ciao.
 
 #org @Ardesiopoli_6_7_NPC3_text2
-Lavoro nel dipartimento di Mergers &\nAcquisitions della Banca di Stellavia.\pPer i pendolari come me, questa\nmetropolitana [1A] una manna dal cielo!
+[BLACK]Lavoro nel dipartimento di Mergers &\nAcquisitions della [GREEN]Banca di\lStellavia[BLACK].\pPer i pendolari come me, questa\nmetropolitana [1A] una manna dal cielo!
 
 #org @Ardesiopoli_6_7_NPC4_text1
-Lo sapevi che questa stazione ha\nbinari posati su una formazione\lrocciosa millenaria?\pCerte cose succedono solo qui ad\nEyros!
+[BLACK]Lo sapevi che questa stazione ha\nbinari posati su una formazione\lrocciosa millenaria?\pCerte cose succedono solo qui ad\n[GREEN]Eyros[BLACK]!
 
 #org @Ardesiopoli_6_7_NPC5_text1
-Adoro guardare i treni passare[.]\p[05] come se ogni viaggio fosse\nun'avventura diversa.\pIl prossimo, magari, mi porter[16]\nfino a Stellavia!
+[BLACK]Adoro guardare i treni passare[.]\p[05] come se ogni viaggio fosse\nun'avventura diversa.\pIl prossimo, magari, mi porter[16]\nfino a [GREEN]Stellavia[BLACK]!
 
 #org @Ardesiopoli_6_7_NPC6_text1
-Sto aspettando l'autorizzazione per\naprire il mio chiosco nella nuova\llinea[.]\pTi piacerebbe un Panino Fossile?\pSono famosi ad Ardesiopoli!
+[BLACK]Sto aspettando l'autorizzazione per\naprire il mio chiosco nella nuova\llinea[.]\pTi piacerebbe un Panino Fossile?\pSono famosi ad [GREEN]Ardesiopoli[BLACK]!
 
 #org @Ardesiopoli_6_7_NPC7_text1
-Stiamo lavorando giorno e notte\nper completare il tunnel verso\lStellavia[.]\pMa tra scavi e strane interferenze,\nnon [1A] facile come sembra!
+[BLACK]Stiamo lavorando giorno e notte\nper completare il tunnel verso\l[GREEN]Stellavia[BLACK][.]\pMa tra scavi e strane interferenze,\nnon [1A] facile come sembra!
 
 #org @Ardesiopoli_6_7_NPC7_text2
-Dopo quasi due anni i lavori per la\nnuova linea sono finalmente\lterminati!\pIn particolare ci sono stati dei\nrallentamenti all'incirca sotto il\lPasso Tuono[.]\pDelle strane interferenze\nelettromagnetiche bloccavano\li nostri strumenti[.]\pInfatti senza il mio Rhyperior\nnulla di tutto ci[22] sarebbe stato\lpossibile!
+[BLACK]Dopo quasi due anni i lavori per la\nnuova linea sono finalmente\lterminati!\pIn particolare ci sono stati dei\nrallentamenti all'incirca sotto il\l[GREEN]Passo Tuono[BLACK][.]\pDelle strane interferenze\nelettromagnetiche bloccavano\li nostri strumenti[.]\pInfatti senza il mio [GREEN]Rhyperior[BLACK]\nnulla di tutto ci[22] sarebbe stato\lpossibile!
 
 #org @Ardesiopoli_6_7_NPC8_text1
-Studio archeologia e sogno di lavorare\ncon Filiberto un giorno[.]\pChiss[16] se ha bisogno di un'altra\nassistente!
+[BLACK]Studio archeologia e sogno di\nlavorare con [ORANGE]Filiberto[BLACK] un giorno[.]\pChiss[16] se ha bisogno di un'altra\nassistente!
 
 #org @Ardesiopoli_6_7_Sign1_text1
 Linea Metro 1:\nArdesiopoli Sud - Stellavia
@@ -67,4 +66,4 @@ Ardesiopoli Sud, punti di interesse:\nCentro Pok\emon, Pok\emon Market,\lPalestr
 Linea Metro 2:\nArdesiopoli Sud - Ardesiopoli Nord
 
 #org @Ardesiopoli_6_7_NPC0_text0a
-Questo treno sta per partire!
+[BLACK]Questo treno sta per partire!

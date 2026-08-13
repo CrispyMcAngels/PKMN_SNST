@@ -1,20 +1,20 @@
 #org @EventScript_Miralba_5_0_NPC0_text1
-Mi sono trasferito a Miralba\normai trent'anni fa, mentre i\lmiei nipoti vengono a trovarmi\lraramente.
+[BLACK]Mi sono trasferito a [GREEN]Miralba[BLACK]\normai trent'anni fa, mentre i\lmiei nipoti vengono a trovarmi\lraramente.
 
 #org @EventScript_Miralba_5_0_NPC1_text1
-Sono stufa di stare qui, voglio\ntornare a Stellavia.
+[BLACK]Sono stufa di stare qui, voglio\ntornare a [GREEN]Stellavia[BLACK].
 
 #org @EventScript_Miralba_5_0_NPC2_text1
-Non ci posso credere, stavo\nriordinando la mia libreria quando\lun Pok\emon [1A] entrato dalla\lfinestra, ha afferrato una delle mie\lantiche pergamene ed [1A] volato via.\pNon so davvero cosa fare[.]\pL'unica cosa che ha lasciato\n[1A] stata questa piuma[.]
+[BLACK]Non ci posso credere, stavo\nriordinando la mia libreria quando\lun Pok\emon [1A] entrato dalla\lfinestra, ha afferrato una delle mie\lantiche pergamene ed [1A] volato via.\pNon so davvero cosa fare[.]\pL'unica cosa che ha lasciato\n[1A] stata questa piuma[.]
 
 #org @EventScript_Miralba_5_0_NPC2_text2
-Hei, perch[1A] non mi dai una mano\na cercare la pergamena? Se la\ltrovi ti dar[22] una lauta\lricompensa!
+[BLACK]Hei, perch[1A] non mi dai una mano\na cercare la [GREEN]Pergamena[BLACK]?\nSe la trovi ti dar[22] una lauta ricompensa!
 
 #org @EventScript_Miralba_5_0_NPC2_text3
-Sei riuscito a trovare la\npergamena?
+[BLACK]Sei riuscito a trovare la\n[GREEN]Pergamena[BLACK]?
 
 #org @EventScript_Miralba_5_0_NPC2_text4
-!!!\pSei davvero riuscito a trovare la\npergamena.\pAvevo quasi perso le speranze[.]\nTieni questa come ricompensa!
+[BLACK]!!!\pSei davvero riuscito a trovare la\n[GREEN]Pergamena[BLACK].\pAvevo quasi perso le speranze[.]\nTieni questa come ricompensa!
 
 #org @EventScript_Miralba_5_0_NPC2_text5
-La prossima volta chiuder[22] le\nfinestre prima di riordinare la\llibreria!
+[BLACK]La prossima volta chiuder[22] le\nfinestre prima di riordinare la\llibreria!

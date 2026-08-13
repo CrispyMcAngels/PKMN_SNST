@@ -1,62 +1,62 @@
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text1
-Prof. Kraemer: Wilkommen ragazzi,\na cosa devo qvesta visita?
+[DARK_GRAY]Prof. Kraemer[BLACK]: Wilkommen ragazzi,\na cosa devo qvesta visita?
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text2
-Naomi: Salve Prof. Kraemer, siamo\nvenuti qui per farle vedere il\lPok\emon che [PLAYER] ha catturato nel\lPercorso 1.
+[RED]Naomi[BLACK]: Salve [DARK_GRAY]Prof. Kraemer[BLACK], siamo\nvenuti qui per farle vedere il\lPok\emon che [LIGHT_BLUE][PLAYER][BLACK] ha catturato nel\l[GREEN]Percorso 1[BLACK].
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text3
-Prof. Kraemer: Natuerlich, vediamo\nsubito di che Pok\emon si tratta[.]
+[DARK_GRAY]Prof. Kraemer[BLACK]: Natuerlich, vediamo\nsubito di che Pok\emon si tratta[.]
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text4
-Prof. Kraemer: Wunderbar, ein\nAxew!\pHai avuto davvero molta fortuna,\nio non pensare che ce ne essere\lnel Pevcovso 1[.]\pJedenfalls, qvesto esemplare molto in\nsalute e gi[16] affezionato a te, [PLAYER]!\pSar[16] sicuvamente ottimo\lcompagno per tua avventura.
+[DARK_GRAY]Prof. Kraemer[BLACK]: Wunderbar, ein\n[GREEN]Axew[BLACK]!\pHai avuto davvero molta fortuna,\nio non pensare che ce ne essere\lnel [GREEN]Pevcovso 1[BLACK][.]\pJedenfalls, qvesto esemplare molto in\nsalute e gi[16] affezionato a te, [LIGHT_BLUE][PLAYER][BLACK]!\pSar[16] sicuvamente ottimo\lcompagno per tua avventura.
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text5
-Prof. Kraemer: Immagino dass\nadesso che [PLAYER] ha un Pok\emon\lanche tu ne vuoi uno Naomi, oder?
+[DARK_GRAY]Prof. Kraemer[BLACK]: Immagino dass\nadesso che [LIGHT_BLUE][PLAYER][BLACK] ha un Pok\emon\lanche tu ne vuoi uno [RED]Naomi[BLACK], oder?
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text6
-Naomi: Si esatto!!!\nNon sto pi[26] nella pelle!
+[RED]Naomi[BLACK]: Si esatto!!!\nNon sto pi[26] nella pelle!
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text7
-Prof. Kraemer: Kein Problem!\pIo avere Pok\emon giusto per te[.]
+[DARK_GRAY]Prof. Kraemer[BLACK]: Kein Problem!\pIo avere Pok\emon giusto per te[.]
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text8
-Prof. Kraemer: Ecco Naomi, pev\nte!
+[DARK_GRAY]Prof. Kraemer[BLACK]: Ecco [RED]Naomi[BLACK], pev\nte!
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text9
-Naomi riceve Deino!
+[RED]Naomi[BLACK] riceve [GREEN]Deino[BLACK]!
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text10
-Naomi: Wooow questo Pok\emon\nsembra fortissimo!\pGrazie mille Prof Kraemer.
+[RED]Naomi[BLACK]: Wooow questo Pok\emon\nsembra fortissimo!\pGrazie mille [DARK_GRAY]Prof. Kraemer[BLACK].
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text11
-Prof. Kraemer: Esatto Naomi, io\nsono sicher che tu e Deino sarete\lottimi amici e buoni rivali per\l[PLAYER] e Axew!
+[DARK_GRAY]Prof. Kraemer[BLACK]: Esatto [RED]Naomi[BLACK], io\nsono sicher che tu e [GREEN]Deino[BLACK] sarete\lottimi amici e buoni rivali per\l[LIGHT_BLUE][PLAYER][BLACK] e [GREEN]Axew[BLACK]!
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text12
-[PLAYER]: [.]
+[LIGHT_BLUE][PLAYER][BLACK]: [.]
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text13
-Prof. Kraemer: Perch[1A] non fare\nsfida?\pSono sicher che una bella\nsfida vi aiutare per entrare in\lsintonia con vostri Pok\emon[.]
+[DARK_GRAY]Prof. Kraemer[BLACK]: Perch[1A] non fare\nsfida?\pSono sicher che una bella\nsfida vi aiutare per entrare in\lsintonia con vostri Pok\emon[.]
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text14
-Naomi: Ma certo!\nAspettavo questo momento da\ltantissimo tempo [PLAYER]!\pNon c'[1A] tempo da perdere,\nvado subito ad allenarmi con\lil mio Deino nel Percorso 11.\p[PLAYER], ti aspetto l[1E]!
+[RED]Naomi[BLACK]: Ma certo!\nAspettavo questo momento da\ltantissimo tempo [LIGHT_BLUE][PLAYER][BLACK]!\pNon c'[1A] tempo da perdere,\nvado subito ad allenarmi con\lil mio [GREEN]Deino[BLACK] nel [GREEN]Percorso 11[BLACK].\p[LIGHT_BLUE][PLAYER][BLACK], ti aspetto l[1E]!
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text15
-Prof. Kraemer: Qvella Naomi\ndavvero testa calda, oder?\pComunque, io sicuro che voi\ndiventare grandi amici.\pPerch[1A] non vai a fare sfida con\nlei in Pevcovso 11?\pIo dovere finire un Experiment in\nlaboratorio e poi venire anche io\ll[1E] in Percorso 11[.]
+[DARK_GRAY]Prof. Kraemer[BLACK]: Qvella [RED]Naomi[BLACK]\ndavvero testa calda, oder?\pComunque, io sicuro che voi\ndiventare grandi amici.\pPerch[1A] non vai a fare sfida con\nlei in [GREEN]Pevcovso 11[BLACK]?\pIo dovere finire un Experiment in\nlaboratorio e poi venire anche io\ll[1E] in [GREEN]Percorso 11[BLACK][.]
 
 #org @EventScript_Borgo_Ponente_4_3_NPC1_text1
-Prof. Kraemer: Hallo [PLAYER],\ncome procedere tuo Pokedex?
+[DARK_GRAY]Prof. Kraemer[BLACK]: Hallo [LIGHT_BLUE][PLAYER][BLACK],\ncome procedere tuo [GREEN]Pokedex[BLACK]?
 
 #org @EventScript_Borgo_Ponente_4_3_NPC0_text1
-Sono l'assistente del Prof.\nKraemer da molti anni ormai.\p[05] arrivato ad Eyros circa 20 anni\nfa e non ha smesso di lavorare\lnemmeno per un giorno.\pCome avrai notato, non ha ancora\nimparato perfettamente la nostra\llingua, infatti spesso lo aiuto\lanche con le traduzioni.\pQuesto lavoro [1A] un sogno per me!
+[BLACK]Sono l'assistente del [DARK_GRAY]Prof.\nKraemer[BLACK] da molti anni ormai.\p[05] arrivato ad [GREEN]Eyros[BLACK] circa 20 anni\nfa e non ha smesso di lavorare\lnemmeno per un giorno.\pCome avrai notato, non ha ancora\nimparato perfettamente la nostra\llingua, infatti spesso lo aiuto\lanche con le traduzioni.\pQuesto lavoro [1A] un sogno per me!
 
 #org @Borgo_Ponente_4_3_Sign0_text1
-Questi scaffali contengono\nmoltissimi libri sui Pok\emon.
+[BLACK]Questi scaffali contengono\nmoltissimi libri sui Pok\emon.
 
 #org @Borgo_Ponente_4_3_Sign1_text1
-Sembrano dei macchinari molto\navanzati per allevare i Pok\emon!
+[BLACK]Sembrano dei macchinari molto\navanzati per allevare i Pok\emon!
 
 #org @Borgo_Ponente_4_3_Sign2_text1
-Questi devono essere gli\nappunti personali del Prof. Kraemer.
+[BLACK]Questi devono essere gli\nappunti personali del [DARK_GRAY]Prof. Kraemer[BLACK].
 
 #org @Borgo_Ponente_4_3_Sign3_text1
-Questo macchinario ha molte\nlucine, meglio non toccare\lniente[.]
+[BLACK]Questo macchinario ha molte\nlucine, meglio non toccare\lniente[.]

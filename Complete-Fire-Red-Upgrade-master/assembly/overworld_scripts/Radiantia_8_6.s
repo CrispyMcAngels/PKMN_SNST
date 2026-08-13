@@ -16,7 +16,12 @@ EventScript_Radiantia_8_6_Sign0:
 .global gMapScripts_Radiantia_8_6
 gMapScripts_Radiantia_8_6:
     mapscript MAP_SCRIPT_ON_FRAME_TABLE Radiantia_8_6_MapScriptOnFrame
+	mapscript MAP_SCRIPT_ON_LOAD Radiantia_8_6_MapScriptOnLoad
     .byte MAP_SCRIPT_TERMIN
+
+	Radiantia_8_6_MapScriptOnLoad:
+		setvar 0x5007 0x17
+		end
 
 	Radiantia_8_6_MapScriptOnFrame:
 		levelscript 0x4062, 1, Radiantia_8_6_MapScriptOnFrameBegin
@@ -26,6 +31,7 @@ gMapScripts_Radiantia_8_6:
 			lockall
 			checkflag 0x970
 			if 0x1 _goto Radiantia_8_6_MapScriptOnFrameBegin_P1
+			sound 0x15
 			applymovement 0x1 Radiantia_8_6_mov0
 			applymovement 0x2 Radiantia_8_6_mov0
 			applymovement 0x3 Radiantia_8_6_mov0
@@ -150,13 +156,13 @@ gMapScripts_Radiantia_8_6:
 
 
 		Player_Blue:
-			showpokepic 0x3b6 0x15 0x6
+			showpokepic 0x3b6 0x0 0x6
 			return
 
 		Player_Orange:
-			showpokepic 0x3bE 0x15 0x6
+			showpokepic 0x3bE 0x0 0x6
 			return
 
 		Player_Green:
-			showpokepic 0x3bF 0x15 0x6
+			showpokepic 0x3bF 0x0 0x6
 			return
