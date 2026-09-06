@@ -1,3 +1,25 @@
+#org @Radiantia_3_4_tile0_text1
+[BLUE]Crispy[BLACK]: Dunque[.] sei sicura che\nquesta sia la strada giusta?
+
+#org @Radiantia_3_4_tile0_text2
+[DARK_GREEN]Eleonora[BLACK]: Esattamente, dovrete\npercorrere tutto il [GREEN]Percorso 12[BLACK].\p[GREEN]Roccavento[BLACK] si trova proprio in\nfondo al percorso.
+
+#org @Radiantia_3_4_tile0_text3
+[BLUE]Crispy[BLACK]: Eccoti [PLAYER]!\pSei pronto a volare fino a\n[GREEN]Roccavento[BLACK]?\p[ORANGE]Raito[BLACK] ci aspetta l[1E][.]
+
+#org @Radiantia_3_4_tile0_text4
+[BLUE]Crispy[BLACK]: Prenditi il tuo tempo,\nio e [GREEN]Flygon[BLACK] siamo sempre pronti\la partire.
+
+#org @Radiantia_3_4_tile0_text5
+[DARK_GREEN]Eleonora[BLACK]: Questo [1A] lo spirito\ngiusto [LIGHT_BLUE][PLAYER][BLACK]!\pGoditi il panorama sul [GREEN]Percorso 12[BLACK],\nla vista [1A] mozzafiato!\pBene, meglio che ritorni alla\n[GREEN]Palestra di Radiantia[BLACK], fate buon\lviaggio!
+
+#org @Radiantia_3_4_tile0_text6
+[BLUE]Crispy[BLACK]: Bene [LIGHT_BLUE][PLAYER][BLACK], non ci resta\nche partire.\pTu volerai sullo [GREEN]Swellow[BLACK] di\n[DARK_GREEN]Eleonora[BLACK].
+
+#org @Radiantia_3_4_NPC12_text1
+//_/////////////////////////////////
+[DARK_GREEN]Eleonora[BLACK]: Ciao [LIGHT_BLUE][PLAYER][BLACK], come va?\nSei emozionato per il viaggio?
+
 #org @Radiantia_3_4_Sign0_text1
 Oltre il gran burrone di Radiantia\nsi estende il Percorso 12,\lpercorribile tramite la MN Zenit.
 
@@ -32,7 +54,6 @@ Palestra Pok\emon di Radiantia.
 [BLACK]Dal faro si vedono le stelle pi[26]\nchiare di tutta la regione[.]\pE a volte, anche i Pok\emon che le\nsfiorano.
 
 #org @Radiantia_3_4_NPC5_text1
-//_/////////////////////////////////
 [BLACK]Sono originario di [GREEN]Corallia[BLACK] e sto\nviaggiando [GREEN]Eyros[BLACK] per conquistare\ltutte le medaglie.\pLa palestra di questa citt[16] [1A]\nspecializzata in Pok\emon di tipo\lvolante[.]\pD'altronde cosa c'era da aspettarsi\nin una citt[16] sul ciglio di un\lburrone?
 
 #org @Radiantia_3_4_MapScriptOnFrame_text1

@@ -20,12 +20,13 @@ typedef bool8 IgnoredPalT[16];
 #define gIgnoredDNSPalIndices ((IgnoredPalT*) 0x203B830)
 
 //This file's functions:
-#ifdef TIME_ENABLED
+#if defined(TIME_ENABLED) || defined(DNS_PALETTE_BY_VAR)
 static void FadeDayNightPalettes();
+static void GetDNSFadeParams(u8* coeff, u16* colour, bool8* isNight);
 static void BlendFadedPalettes(u32 selectedPalettes, u8 coeff, u32 color);
 static void BlendFadedPalette(u16 palOffset, u16 numEntries, u8 coeff, u32 blendColor);
 static u16 FadeColourForDNS(struct PlttData* blend, u8 coeff, s8 r, s8 g, s8 b);
-static void FadeOverworldBackground(u32 selectedPalettes, u8 coeff, u32 color, bool8 palFadeActive);
+static void FadeOverworldBackground(u32 selectedPalettes, u8 coeff, u32 color, bool8 palFadeActive, bool8 isNight);
 #endif
 static bool8 IsDate1BeforeDate2(u32 y1, u32 m1, u32 d1, u32 y2, u32 m2, u32 d2);
 static bool8 IsLeapYear(u32 year);
@@ -38,7 +39,7 @@ void TransferPlttBuffer(void)
 		void *dest = (void *)PLTT;
 		DmaCopy16(3, src, dest, PLTT_SIZE);
 
-		#ifdef TIME_ENABLED
+		#if defined(TIME_ENABLED) || defined(DNS_PALETTE_BY_VAR)
 		FadeDayNightPalettes();
 		#endif
 
@@ -48,7 +49,7 @@ void TransferPlttBuffer(void)
 	}
 }
 
-#ifdef TIME_ENABLED
+#if defined(TIME_ENABLED) || defined(DNS_PALETTE_BY_VAR)
 static void FadeDayNightPalettes()
 {
 	u32 palsToFade;
@@ -67,8 +68,10 @@ static void FadeDayNightPalettes()
 
 			if (fadePalettes)
 			{
-				u8 coeff = gDNSNightFadingByTime[gClock.hour][gClock.minute / 10].amount;
-				u16 colour = gDNSNightFadingByTime[gClock.hour][gClock.minute / 10].colour;
+				u8 coeff;
+				u16 colour;
+				bool8 isNight;
+				GetDNSFadeParams(&coeff, &colour, &isNight);
 				bool8 palFadeActive = gPaletteFade->active || gWeatherPtr->palProcessingState == WEATHER_PAL_STATE_SCREEN_FADING_IN;
 
 				if (inOverworld)
@@ -85,7 +88,7 @@ static void FadeDayNightPalettes()
 						apply_map_tileset1_tileset2_palette(gMapHeader.mapLayout);
 
 					gWindowsLitUp = FALSE;
-					FadeOverworldBackground(palsToFade, coeff, colour, palFadeActive); //Load/remove the palettes to fade once during the day and night
+					FadeOverworldBackground(palsToFade, coeff, colour, palFadeActive, isNight); //Load/remove the palettes to fade once during the day and night
 					gLastRecordedFadeCoeff = coeff;
 					gLastRecordedFadeColour = colour;
 
@@ -114,6 +117,29 @@ static void FadeDayNightPalettes()
 			gLastRecordedFadeCoeff = 0;
 			break;
 	}
+}
+
+static void GetDNSFadeParams(u8* coeff, u16* colour, bool8* isNight)
+{
+	#ifdef DNS_PALETTE_BY_VAR
+	u16 mode = VarGet(VAR_DNS_PALETTE_MODE);
+	if (mode < ARRAY_COUNT(gDNSVarFadeModes))
+	{
+		*coeff = gDNSVarFadeModes[mode].amount;
+		*colour = gDNSVarFadeModes[mode].colour;
+		*isNight = gDNSVarFadeModes[mode].isNight;
+	}
+	else //Fallback to night preset
+	{
+		*coeff = gDNSVarFadeModes[3].amount;
+		*colour = gDNSVarFadeModes[3].colour;
+		*isNight = gDNSVarFadeModes[3].isNight;
+	}
+	#else
+	*coeff = gDNSNightFadingByTime[gClock.hour][gClock.minute / 10].amount;
+	*colour = gDNSNightFadingByTime[gClock.hour][gClock.minute / 10].colour;
+	*isNight = IsNightTime();
+	#endif
 }
 
 /*u8*/  #define gPlttBufferUnfaded ((u16*) 0x20371F8)
@@ -208,11 +234,11 @@ static u16 FadeColourForDNS(struct PlttData* blend, u8 coeff, s8 r, s8 g, s8 b)
 }
 
 //This function gets called once when the game transitions to a new fade colour
-static void FadeOverworldBackground(u32 selectedPalettes, u8 coeff, u32 color, bool8 palFadeActive)
+static void FadeOverworldBackground(u32 selectedPalettes, u8 coeff, u32 color, bool8 palFadeActive, bool8 isNight)
 {
 	u32 i, j, row, column;
 
-	if (IsNightTime())
+	if (isNight)
 	{
 		if (!gWindowsLitUp)
 		{
@@ -288,11 +314,11 @@ void apply_map_tileset_palette(struct Tileset const* tileset, u16 destOffset, u1
 	}
 }
 
-#if (defined TIME_ENABLED && defined DNS_IN_BATTLE)
+#if ((defined(TIME_ENABLED) || defined(DNS_PALETTE_BY_VAR)) && defined(DNS_IN_BATTLE))
 void DNSBattleBGPalFade(void)
 {
 	switch (GetCurrentMapType()) {
-		case MAP_TYPE_0:			//No fading in these areas
+		case MAP_TYPE_0:			//No fading in these areas 
 		case MAP_TYPE_UNDERGROUND:
 		case MAP_TYPE_INDOOR:
 		case MAP_TYPE_SECRET_BASE:
@@ -300,8 +326,12 @@ void DNSBattleBGPalFade(void)
 	}
 
 	u16 i, palOffset;
-	u8 coeff = gDNSNightFadingByTime[gClock.hour][gClock.minute / 10].amount;
-	u32 blendColor = gDNSNightFadingByTime[gClock.hour][gClock.minute / 10].colour;
+	u8 coeff;
+	u16 colour;
+	bool8 isNight;
+	GetDNSFadeParams(&coeff, &colour, &isNight);
+	u32 blendColor = colour;
+	(void) isNight;
 	u8 selectedPalettes = BATTLE_DNS_PAL_FADE & 0x1C;
 
 	for (palOffset = 0; selectedPalettes; palOffset += 16)
@@ -322,14 +352,14 @@ void DNSBattleBGPalFade(void)
 				gPlttBufferFaded[index] = color;
 			}
 		}
-		selectedPalettes >>= 1;
+		selectedPalettes >>= 1;     
 	}
 }
 #endif
 
 bool8 IsDayTime(void)
 {
-	return gClock.hour >= TIME_MORNING_START && gClock.hour < TIME_NIGHT_START;
+	return gClock.hour >= TIME_MORNING_START && gClock.hour < TIME_NIGHT_START; 
 }
 
 bool8 IsOnlyDayTime(void)
@@ -467,12 +497,12 @@ u32 GetYearDifference(u32 startYear, u32 endYear)
 	return endYear - startYear;
 }
 
-/* Test Cases
+/* Test Cases 
 int main()
 {
 	u8 dayToIncrease = 31;
-	u8 monthToIncrease = 12;
-	u32 yearToIncrease = 2019;
+	u8 monthToIncrease = 12;  
+	u32 yearToIncrease = 2019; 
 	IncreaseDateByOneDay(&yearToIncrease, &monthToIncrease, &dayToIncrease);
 
 	printf("Date 1 Before Date 2: %d\n", IsDate1BeforeThanDate2(2019, 12, 31, 2019, 05, 30));
@@ -481,12 +511,12 @@ int main()
 	printf("New Year: %d, New Month: %d, New Day: %d\n", yearToIncrease, monthToIncrease, dayToIncrease);
 
 	printf("06-15-2000 @00:00 to 05-01-2018 @00:00\n");
-	printf("Year difference: %d\n", GetYearDifference(2000, 2018)); //18
+	printf("Year difference: %d\n", GetYearDifference(2000, 2018)); //18 
 	printf("Month Difference: %d\n", GetMonthDifference(2000, 06, 2018, 05)); //15
 	printf("Day Difference: %d\n", GetDayDifference(2000, 06, 15, 2018, 05, 01)); //6529
 	printf("Hour Difference: %d\n", GetHourDifference(2000, 06, 15, 00, 2018, 05, 01, 00)); //156696
 	printf("Minute Difference: %d\n", GetMinuteDifference(2000, 06, 15, 00, 01, 2018, 05, 01, 00, 00)); //9401759
 
-	return 0;
-}
+	return 0; 
+} 
 */

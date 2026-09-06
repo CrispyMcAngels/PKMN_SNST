@@ -17,6 +17,8 @@ gMapScripts_TimeTravel_1_123:
 		.hword MAP_SCRIPT_TERMIN
 
 		TimeTravel_1_123_MapScriptOnFrameBegin:
+			compare 0x4067 0x2
+			if 0x1 _goto TimeTravel_1_123_MapScriptOnFrame_T_ECHO_2
 			compare 0x4051 0x3D
 			if 0x1 _goto TimeTravel_1_123_MapScriptOnFrameBegin_P1
 			compare 0x4051 0x3E
@@ -181,6 +183,17 @@ gMapScripts_TimeTravel_1_123:
 					warpmuted 0x1 0x26 0xFF 0x9 0x7
 					releaseall
 					end
+
+			TimeTravel_1_123_MapScriptOnFrame_T_ECHO_2:
+				pause 0x30
+				showpokepic 0x3B6 0x0 0x6
+				msgbox TimeTravel_1_123_t_echo_2_text1 MSG_NORMAL
+				special 0x15A	
+				setvar 0x501F 0x155
+				pause 0x30
+				warpteleport 0x3 0xC 0xFF 0x3 0x7
+				releaseall
+				end
 
 
 

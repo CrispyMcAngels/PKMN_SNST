@@ -751,6 +751,14 @@ gEventsObjectPic_NPC132Pal 08F16238
 gEventObjectGraphicsInfo_NPC133 08EB1214
 gEventsObjectPic_NPC133Pal 08F16240
 
+#NPC135
+gEventObjectGraphicsInfo_NPC135 08EB121C
+gEventsObjectPic_NPC135Pal 08F16250
+
+#NPC136
+gEventObjectGraphicsInfo_NPC136 08EB1220
+gEventsObjectPic_NPC136Pal 08F16258
+
 #NPC141
 gEventObjectGraphicsInfo_NPC141 08EB1234
 gEventsObjectPic_NPC141Pal 08F16280

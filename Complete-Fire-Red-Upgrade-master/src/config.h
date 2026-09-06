@@ -198,6 +198,8 @@ enum //These vars need to be one after the other (hence the enum)
 /*===== Other General Options =====*/
 //#define TIME_ENABLED //Comment this line to disable time based features. All time dependent features will default in Daytime.
 //#define DNS_IN_BATTLE //Comment this line to disable the Day/Night system from working in battle
+#define DNS_PALETTE_BY_VAR //Drive DNS palette fading from VAR_DNS_PALETTE_MODE instead of the RTC clock.
+#define VAR_DNS_PALETTE_MODE 0x500E //0 = day, 1 = dawn, 2 = dusk, 3 = night, 4 = late dusk/sunset, 5 = future, 6+ = custom presets in gDNSVarFadeModes.
 //#define OVERWRITE_RIVAL //Comment this line to disable to loading of your rival's name into trainer classes 0x51, 0x59, and 0x5A
 //#define TRAINER_CLASS_POKE_BALLS //Comment this line to disable creating Trainer's pokemon with Poke Balls specific to their trainer class
 //#define TRAINERS_WITH_EVS //Uncomment this line to enable the Trainers with EVs hack, (only avaible with custom moveset and held item)

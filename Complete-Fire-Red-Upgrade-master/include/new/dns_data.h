@@ -244,6 +244,31 @@ const struct DNSPalFade gDNSNightFadingByTime[24][6] =
 		   },
 };
 
+// Used when DNS_PALETTE_BY_VAR is enabled.
+// Set VAR_DNS_PALETTE_MODE to an index in this table.
+// isNight controls whether "night-only" behavior (like lit windows) is applied.
+struct DNSVarFadeMode
+{
+	u16 colour;
+	u8 amount;
+	bool8 isNight;
+};
+
+const struct DNSVarFadeMode gDNSVarFadeModes[] =
+{
+	[0] = {RGB(0, 0, 0), 0, FALSE}, // Day
+	[1] = {RGB(0, 6, 16), 4, FALSE}, // Dawn
+	[2] = {RGB(19, 0, 10), 1, FALSE}, // Dusk
+	[3] = {RGB(5, 0, 21), 3, TRUE}, // Night
+	[4] = {RGB(31, 16, 2), 3, FALSE}, // Late dusk/sunset (orange)
+	[5] = {RGB(8, 0, 14), 7, FALSE}, // Future (very strong dark purple/violet)
+
+	// Custom presets. Edit/add these freely.
+	[6] = {RGB(30, 30, 30), 8, FALSE}, //Whiting out
+	[7] = {RGB(9, 2, 24), 4, TRUE},
+	[8] = {RGB(20, 10, 0), 2, FALSE},
+};
+
 #define TILESET_PAL_FADE_END {0xFF, 0x0}
 
 #ifndef UNBOUND //Change This
@@ -261,7 +286,7 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 	//		{10, RGB(31, 31, 10)},
 	//	},
 	//},
-	{ //Tileset 1 - Borgo Ponente - overall windows
+	{ //Tileset 1 - Borgo Ponente - overall windows  
 		.tilesetPointer = 0x82D4AAC, //Tileset 1
 		.paletteNumToFade = 9,
 		.paletteIndicesToFade =

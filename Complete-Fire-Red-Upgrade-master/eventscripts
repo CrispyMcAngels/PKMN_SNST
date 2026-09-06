@@ -1,3 +1,19 @@
+map 3 50 gMapScripts_Risaia_Rosa_3_50
+tile 3 50 0 EventScript_Risaia_Rosa_3_50_tile0
+tile 3 50 1 EventScript_Risaia_Rosa_3_50_tile1
+tile 3 50 2 EventScript_Risaia_Rosa_3_50_tile1
+tile 3 50 3 EventScript_Risaia_Rosa_3_50_tile1
+sign 3 50 0 EventScript_Roccavento_3_50_Sign0
+
+map 3 3 gMapScripts_Roccavento_3_3
+npc 3 3 2 EventScript_Roccavento_3_3_NPC2
+npc 3 3 3 EventScript_Roccavento_3_3_NPC3
+npc 3 3 4 EventScript_Ardesiopoli_3_2_NPC11
+npc 3 3 5 EventScript_Roccavento_3_3_NPC5
+npc 3 3 14 EventScript_Roccavento_3_3_NPC14
+
+map 3 23 gMapScripts_Percorso12_3_23
+
 map 3 12 gMapScripts_Dark_Future_3_12
 map 32 3 gMapScripts_Dark_Future_32_3
 
@@ -403,6 +419,10 @@ npc 3 4 3 EventScript_Radiantia_3_4_NPC3
 npc 3 4 4 EventScript_Radiantia_3_4_NPC4
 npc 3 4 5 EventScript_Radiantia_3_4_NPC5
 npc 3 4 7 EventScript_Chatot_Master
+npc 3 4 10 EventScript_Radiantia_3_4_NPC10
+npc 3 4 11 EventScript_Radiantia_3_4_NPC11
+tile 3 4 0 EventScript_Radiantia_3_4_tile0
+tile 3 4 1 EventScript_Radiantia_3_4_tile0
 map 3 4 gMapScripts_Radiantia_3_4
 
 npc 8 0 0 EventScript_common_healing_pkmn_center
@@ -459,6 +479,8 @@ tile 3 21 0 EventScript_Percorso3_3_21_tile0
 tile 3 21 1 EventScript_Percorso3_3_21_tile1
 tile 3 21 2 EventScript_Percorso3_3_21_tile2
 tile 3 21 3 EventScript_Percorso3_3_21_tile3
+tile 3 21 4 EventScript_Percorso3_3_21_tile4
+tile 3 21 5 EventScript_Percorso3_3_21_tile4
 npc 3 21 0 EventScript_Percorso_3_3_21_NPC0
 npc 3 21 1 EventScript_Percorso_3_3_21_NPC1
 npc 3 21 2 EventScript_Common_Cut

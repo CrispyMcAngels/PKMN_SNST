@@ -5,6 +5,226 @@
 .include "../xse_defines.s"
 
 
+.global EventScript_Percorso3_3_21_tile4
+EventScript_Percorso3_3_21_tile4:
+	lockall
+	pause 0x1E
+	spriteface 0x14 0x4
+	pause 0x15
+	sound 0x15
+	applymovement 0x14 mov_exclamation
+	waitmovement 0x14 
+	playsong 0x13C 0x0
+	getplayerpos 0x4001 0x4002
+	compare 0x4002 0x0E
+	if 0x1 _call EventScript_Percorso3_3_21_tile4_Y_0E
+	if 0x0 _call EventScript_Percorso3_3_21_tile4_Y_0D
+	pause 0x1E
+	checkflag 0x231
+	if 0x1 _goto EventScript_Percorso3_3_21_tile4_P1
+	showpokepic 0x3B5 0x0 0x6
+	msgbox Percorso3_3_21_tile4_text1 MSG_NORMAL
+	special 0x15A
+	pause 0x1E	
+	applymovement 0xFF Percorso3_3_21_tile4_mov1
+	waitmovement 0xFF
+	showpokepic 0x3B6 0x0 0x6
+	msgbox Percorso3_3_21_tile4_text2 MSG_NORMAL
+	special 0x15A
+	pause 0x1E	
+	sound 0x15
+	applymovement 0x14 mov_exclamation
+	waitmovement 0x14 
+	showpokepic 0x3B5 0x0 0x6
+	msgbox Percorso3_3_21_tile4_text3 MSG_NORMAL
+	special 0x15A
+	pause 0x1E	
+	spriteface 0x14 0x1
+	pause 0x1E
+	spriteface 0x14 0x4
+	showpokepic 0x3B5 0x0 0x6
+	msgbox Percorso3_3_21_tile4_text4 MSG_NORMAL
+	special 0x15A
+	pause 0x1E
+	sound 0x15
+	applymovement 0x14 mov_question
+	waitmovement 0x14
+	pause 0x1E
+	showpokepic 0x3B5 0x0 0x6
+	msgbox Percorso3_3_21_tile4_text5 MSG_NORMAL
+	special 0x15A
+	pause 0x1E
+	showpokepic 0x3B6 0x0 0x6
+	msgbox Percorso3_3_21_tile4_text2 MSG_NORMAL
+	special 0x15A
+	pause 0x1E	
+	sound 0x15
+	sound 0x15
+	applymovement 0x14 mov_exclamation
+	waitmovement 0x14
+	pause 0x1E
+	showpokepic 0x3B5 0x0 0x6
+	msgbox Percorso3_3_21_tile4_text6 MSG_NORMAL
+	special 0x15A
+	pause 0x1E
+	sound 0x15
+	applymovement 0x14 mov_question
+	waitmovement 0x14
+	pause 0x1E
+	showpokepic 0x3B5 0x0 0x6
+	msgbox Percorso3_3_21_tile4_text7 MSG_NORMAL
+	special 0x15A
+	pause 0x1E	
+	showpokepic 0x3B6 0x0 0x6
+	msgbox Percorso3_3_21_tile4_text2 MSG_NORMAL
+	special 0x15A
+	pause 0x1E	
+	showpokepic 0x3B5 0x0 0x6
+	msgbox Percorso3_3_21_tile4_text8 MSG_NORMAL
+	special 0x15A
+	pause 0x1E	
+	sound 0x15
+	applymovement 0x14 mov_exclamation
+	waitmovement 0x14
+	pause 0x1E	
+	showpokepic 0x3B5 0x0 0x6
+	msgbox Percorso3_3_21_tile4_text9 MSG_NORMAL
+	special 0x15A
+	pause 0x1E	
+	setflag 0x231
+	checkflag 0x231
+	if 0x1 _goto EventScript_Percorso3_3_21_tile4_P2
+	releaseall
+	end
+
+EventScript_Percorso3_3_21_tile4_P1:
+	showpokepic 0x3B5 0x0 0x6
+	msgbox Percorso3_3_21_tile4_text13 MSG_NORMAL
+	special 0x15A
+	pause 0x1E	
+	checkflag 0x231
+	if 0x1 _goto EventScript_Percorso3_3_21_tile4_P2
+	releaseall
+	end
+
+EventScript_Percorso3_3_21_tile4_P2:
+	//trainerbattle
+	setvar 0x503A 0x2 
+	setvar 0x503B 0x0
+	trainerbattle3 0x3 0x53 0x100 Percorso3_3_21_tile4_text10
+	pause 0x1E
+	fadedefault
+	sound 0x15
+	applymovement 0x14 mov_exclamation
+	waitmovement 0x14
+	pause 0x1E	
+	showpokepic 0x3B5 0x0 0x6
+	msgbox Percorso3_3_21_tile4_text11 MSG_NORMAL
+	special 0x15A
+	pause 0x1E		
+	getplayerpos 0x4001 0x4002
+	compare 0x4002 0x0D
+	if 0x1 _call EventScript_Percorso3_3_21_tile4_Y_0D_2
+	compare 0x4002 0x0E
+	if 0x1 _call EventScript_Percorso3_3_21_tile4_Y_0E_2
+	spriteface 0xFF 0x4
+	pause 0x1E
+	showpokepic 0x3B5 0x0 0x6
+	msgbox Percorso3_3_21_tile4_text12 MSG_NORMAL
+	special 0x15A
+	pause 0x1E
+	applymovement 0x14 Percorso3_3_21_tile4_mov4
+	waitmovement 0x14
+	setvar 0x4051 0x4A
+	releaseall
+	end
+
+
+	EventScript_Percorso3_3_21_tile4_Y_0E:
+		applymovement 0x14 mov_Percorso3_3_21_tile4_Y_0D
+		waitmovement 0x14
+		return
+
+	EventScript_Percorso3_3_21_tile4_Y_0D:
+		applymovement 0x14 mov_Percorso3_3_21_tile4_Y_0E
+		waitmovement 0x14
+		return	
+
+	EventScript_Percorso3_3_21_tile4_Y_0D_2:
+		applymovement 0x14 Percorso3_3_21_tile4_mov2
+		waitmovement 0x14
+		return	
+
+	EventScript_Percorso3_3_21_tile4_Y_0E_2:
+		applymovement 0x14 Percorso3_3_21_tile4_mov3
+		waitmovement 0x14
+		return	
+
+
+
+mov_Percorso3_3_21_tile4_Y_0E:
+	.byte 0x13
+	.byte 0x13
+	.byte 0x13
+	.byte 0xFE
+
+mov_Percorso3_3_21_tile4_Y_0D:
+	.byte 0x10
+	.byte 0x13
+	.byte 0x13
+	.byte 0x13
+	.byte 0xFE
+
+Percorso3_3_21_tile4_mov1:
+	.byte 0x23
+	.byte 0x23
+	.byte 0x23
+	.byte 0xFE
+
+Percorso3_3_21_tile4_mov2:
+	.byte 0x10
+	.byte 0x13
+	.byte 0x13
+	.byte 0x11
+	.byte 0x13
+	.byte 0x1A
+	.byte 0x2 
+	.byte 0xFE
+
+Percorso3_3_21_tile4_mov3:
+	.byte 0x11
+	.byte 0x13
+	.byte 0x13
+	.byte 0x13
+	.byte 0x1A
+	.byte 0x2 
+	.byte 0xFE
+
+Percorso3_3_21_tile4_mov4:
+	.byte 0x13
+	.byte 0x13
+	.byte 0x11
+	.byte 0x11
+	.byte 0x11
+	.byte 0x11
+	.byte 0x11
+	.byte 0x13
+	.byte 0x13
+	.byte 0x13
+	.byte 0x13
+	.byte 0x13
+	.byte 0x13
+	.byte 0x11
+	.byte 0x11
+	.byte 0x11
+	.byte 0x11
+	.byte 0x11
+	.byte 0x11
+	.byte 0x60
+	.byte 0xFE
+
+
+
 .global EventScript_Percorso3_3_21_tile3
 EventScript_Percorso3_3_21_tile3:
 	lockall
@@ -169,6 +389,8 @@ gMapScripts_Percorso3_3_21:
 			if 0x1 _call Percorso2_3_21_MapScriptOnLoad_Xatu1
 			compare 0x4051 0x37
 			if 0x1 _call Percorso2_3_21_MapScriptOnLoad_Xatu2
+			compare 0x4051 0x49
+			if 0x1 _call Percorso3_3_21_MapScriptOnLoad_Naomi
 			end
 
 			Percorso2_3_21_MapScriptOnLoad_Xatu1:
@@ -178,6 +400,10 @@ gMapScripts_Percorso3_3_21:
 
 			Percorso2_3_21_MapScriptOnLoad_Xatu2:
 				movesprite2 0x12 0x1B 0x07
+				return
+
+			Percorso3_3_21_MapScriptOnLoad_Naomi:
+				movesprite2 0x14 0x35 0x0D
 				return
 
 .global EventScript_Percorso_3_3_21_NPC0
