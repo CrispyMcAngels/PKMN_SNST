@@ -185,6 +185,7 @@ static u8 CreateMugshotTrainerSprite(u8 trainerSpriteID, s16 x, s16 y, u8 subpri
 				{
 					struct CompressedSpritePalette palStruct = {GetTrainerSpritePal(trainerSpriteID), gTrainerFrontPicPaletteTable[trainerSpriteID].tag};
 					LoadCompressedSpritePaletteOverrideBuffer(&palStruct, buffer);
+					TryApplyTrainerFrontSpritePalOverrideByTag(trainerSpriteID, gTrainerFrontPicPaletteTable[trainerSpriteID].tag);
 					LoadCompressedSpriteSheetOverrideBuffer(&gTrainerFrontPicTable[trainerSpriteID], buffer);
 				}
 			}
@@ -193,6 +194,7 @@ static u8 CreateMugshotTrainerSprite(u8 trainerSpriteID, s16 x, s16 y, u8 subpri
 			{
 				struct CompressedSpritePalette palStruct = {GetTrainerSpritePal(trainerSpriteID), gTrainerFrontPicPaletteTable[trainerSpriteID].tag};
 				LoadCompressedSpritePaletteOverrideBuffer(&palStruct, buffer);
+				TryApplyTrainerFrontSpritePalOverrideByTag(trainerSpriteID, gTrainerFrontPicPaletteTable[trainerSpriteID].tag);
 				LoadCompressedSpriteSheetOverrideBuffer(&gTrainerFrontPicTable[trainerSpriteID], buffer);
 			}
 			break;

@@ -26,6 +26,90 @@ Credit to Navenatox
 #define FOG_FADE_COLOUR TintColor(RGB(28, 31, 28))
 #define FOG_BRIGHTEN_INTENSITY 12
 
+// Palette tag 0x1100 is used by gEventsObjectPic_NPC0Pal in this project.
+#define NPC0_SHARED_PAL_TAG 0x1100
+#define NPC0_PAL_OVERRIDE_VAR 0x4068
+#define NPC0_PAL_OVERRIDE_DISABLED 0
+#define PALETTE_OVERRIDE_END 0xFF
+
+struct PaletteOverrideEntry
+{
+	u8 index;
+	u16 color;
+};
+
+static const struct PaletteOverrideEntry sNpc0PaletteOverride[] =
+{
+	{5, RGB(31, 21, 6)},
+	{7, RGB(22, 14, 3)},
+	{PALETTE_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sNpc0PaletteOverride2[] =
+{
+	{5, RGB(11, 23, 16)},
+	{7, RGB(4, 17, 9)},
+	{PALETTE_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sNpc0PaletteOverride3[] =
+{
+	{1, RGB(24, 8, 28)},
+	{2, RGB(17, 5, 20)},
+	{3, RGB(12, 3, 14)},
+	{PALETTE_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sNpc0PaletteOverride4[] =
+{
+	{1, RGB(31, 28, 8)},
+	{2, RGB(24, 21, 6)},
+	{3, RGB(17, 14, 4)},
+	{PALETTE_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sNpc0PaletteOverride5[] =
+{
+	{1, RGB(20, 31, 12)},
+	{2, RGB(14, 23, 8)},
+	{3, RGB(9, 16, 5)},
+	{PALETTE_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sNpc0PaletteOverride6[] =
+{
+	{1, RGB(31, 17, 24)},
+	{2, RGB(24, 11, 18)},
+	{3, RGB(16, 7, 12)},
+	{PALETTE_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sNpc0PaletteOverride7[] =
+{
+	{1, RGB(26, 26, 26)},
+	{2, RGB(18, 18, 18)},
+	{3, RGB(10, 10, 10)},
+	{PALETTE_OVERRIDE_END, 0},
+};
+
+struct PaletteOverrideProfile
+{
+	u16 triggerValue;
+	const struct PaletteOverrideEntry* entries;
+};
+
+static const struct PaletteOverrideProfile sNpc0PaletteOverrides[] =
+{
+	{1, sNpc0PaletteOverride},
+	{2, sNpc0PaletteOverride2},
+	{3, sNpc0PaletteOverride3},
+	{4, sNpc0PaletteOverride4},
+	{5, sNpc0PaletteOverride5},
+	{6, sNpc0PaletteOverride6},
+	{7, sNpc0PaletteOverride7},
+	{0xFFFF, NULL},
+};
+
 struct PalRef
 {
 	u8 Type;
@@ -43,6 +127,8 @@ static u8 PalRefIncreaseCount(u8 palSlot);
 static void BrightenReflection(u8 palSlot);
 static u8 AddPalTag(u16 palTag);
 static void MaskPaletteIfFadingIn(u8 palSlot);
+static const struct PaletteOverrideEntry* GetNpc0PaletteOverrideByVarValue(u16 varValue);
+static void TryApplyNpc0PaletteOverride(u16 palTag, u8 palSlot);
 
 u8 AddPalRef(u8 type, u16 palTag)
 {
@@ -284,6 +370,45 @@ static void MaskPaletteIfFadingIn(u8 palSlot) //Prevent the palette from flashin
 	}
 }
 
+static const struct PaletteOverrideEntry* GetNpc0PaletteOverrideByVarValue(u16 varValue)
+{
+	for (int i = 0; sNpc0PaletteOverrides[i].triggerValue != 0xFFFF; ++i)
+	{
+		if (sNpc0PaletteOverrides[i].triggerValue == varValue)
+			return sNpc0PaletteOverrides[i].entries;
+	}
+
+	return NULL;
+}
+
+static void TryApplyNpc0PaletteOverride(u16 palTag, u8 palSlot)
+{
+	u16 overrideVarValue;
+	const struct PaletteOverrideEntry* overrideEntries;
+
+	if (palTag != NPC0_SHARED_PAL_TAG)
+		return;
+
+	overrideVarValue = VarGet(NPC0_PAL_OVERRIDE_VAR);
+	if (overrideVarValue == NPC0_PAL_OVERRIDE_DISABLED)
+		return;
+
+	overrideEntries = GetNpc0PaletteOverrideByVarValue(overrideVarValue);
+	if (overrideEntries == NULL)
+		return;
+
+	u16* unfadedPal = &gPlttBufferUnfaded[(16 * 16) + palSlot * 16];
+	u16* fadedPal = &gPlttBufferFaded[(16 * 16) + palSlot * 16];
+
+	for (int i = 0; overrideEntries[i].index != PALETTE_OVERRIDE_END; ++i)
+	{
+		u8 index = overrideEntries[i].index;
+		u16 color = overrideEntries[i].color;
+		unfadedPal[index] = color;
+		fadedPal[index] = color;
+	}
+}
+
 u8 GetPalSlotMisc(u32 OBJData)
 {
 	u8 palSlot;
@@ -320,6 +445,7 @@ u8 FindOrLoadNPCPalette(u16 palTag)
 		return PalRefIncreaseCount(0);
 
 	LoadNPCPalette(palTag, palSlot);
+	TryApplyNpc0PaletteOverride(palTag, palSlot);
 	FogBrightenPalettes(FOG_BRIGHTEN_INTENSITY);
 	MaskPaletteIfFadingIn(palSlot);
 	return PalRefIncreaseCount(palSlot);
@@ -337,6 +463,7 @@ u8 FindOrCreateReflectionPalette(u8 palSlotNPC)
 		return PalRefIncreaseCount(0);
 
 	LoadNPCPalette(palTag, palSlot);
+	TryApplyNpc0PaletteOverride(palTag, palSlot);
 	BlendPalettes(gBitTable[(palSlot + 16)], 6, RGB(12, 20, 27)); //Make it blueish
 	BrightenReflection(palSlot); //And a little brighter
 	TintOBJPalette(palSlot);

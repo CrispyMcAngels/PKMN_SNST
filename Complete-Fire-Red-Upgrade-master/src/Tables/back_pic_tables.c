@@ -21,6 +21,8 @@ tables to edit:
 #define gTrainerPalette_PokeDude (const u8*) 0x8E76F0C
 #define gTrainerPalette_OldMan (const u8*) 0x8E76F34
 
+extern const u8 gTrainerBackPic_RedPal[];
+#define gTrainerPalette_Red gTrainerBackPic_RedPal
 extern const u8 gTrainerBackPic_BrendanPal[];
 #define gTrainerPalette_Brendan gTrainerBackPic_BrendanPal
 extern const u8 gTrainerBackPic_MayPal[];

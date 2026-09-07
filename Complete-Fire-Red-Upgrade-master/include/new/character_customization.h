@@ -16,6 +16,7 @@ u16 GetEventObjectGraphicsId(struct EventObject* eventObj);
 u16 GetBackspriteId(void);
 void LoadTrainerBackPal(u16 trainerPicId, u8 paletteNum);
 const u8* GetTrainerSpritePal(u16 trainerPicId);
+void TryApplyTrainerFrontSpritePalOverrideByTag(u16 trainerPicId, u16 paletteTag);
 
 //Hooked In Functions
 NPCPtr GetEventObjectGraphicsInfo(u16 graphicsId);

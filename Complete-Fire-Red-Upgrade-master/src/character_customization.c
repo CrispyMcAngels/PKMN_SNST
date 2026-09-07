@@ -108,6 +108,159 @@ struct PlayerGraphics
 	u8 stateFlag;
 };
 
+#define TRAINER_BACK_RED_PAL_OVERRIDE_VAR 0x4068
+#define TRAINER_BACK_RED_PAL_OVERRIDE_DISABLED 0
+#define TRAINER_BACK_RED_PAL_OVERRIDE_END 0xFF
+#define TRAINER_BACK_PAL_OBJ_BASE_INDEX 0x100
+
+#define TRAINER_FRONT_PLAYER_PAL_OVERRIDE_VAR 0x4068
+#define TRAINER_FRONT_PLAYER_PAL_OVERRIDE_DISABLED 0
+#define TRAINER_FRONT_PLAYER_PAL_OVERRIDE_END 0xFF
+
+struct PaletteOverrideEntry
+{
+	u8 index;
+	u16 color;
+};
+
+struct PaletteOverrideProfile
+{
+	u16 triggerValue;
+	const struct PaletteOverrideEntry* entries;
+};
+
+static const struct PaletteOverrideEntry sTrainerBackRedPalOverride1[] =
+{
+	{11, RGB(31, 21, 6)},
+	{13, RGB(22, 14, 3)},
+	{TRAINER_BACK_RED_PAL_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sTrainerBackRedPalOverride2[] =
+{
+	{11, RGB(9, 18, 13)},
+	{13, RGB(7, 13, 9)},
+	{TRAINER_BACK_RED_PAL_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sTrainerBackRedPalOverride3[] =
+{
+	{1, RGB(24, 8, 28)},
+	{2, RGB(17, 5, 20)},
+	{3, RGB(12, 3, 14)},
+	{TRAINER_BACK_RED_PAL_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sTrainerBackRedPalOverride4[] =
+{
+	{1, RGB(31, 28, 8)},
+	{2, RGB(24, 21, 6)},
+	{3, RGB(17, 14, 4)},
+	{TRAINER_BACK_RED_PAL_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sTrainerBackRedPalOverride5[] =
+{
+	{1, RGB(20, 31, 12)},
+	{2, RGB(14, 23, 8)},
+	{3, RGB(9, 16, 5)},
+	{TRAINER_BACK_RED_PAL_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sTrainerBackRedPalOverride6[] =
+{
+	{1, RGB(31, 17, 24)},
+	{2, RGB(24, 11, 18)},
+	{3, RGB(16, 7, 12)},
+	{TRAINER_BACK_RED_PAL_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sTrainerBackRedPalOverride7[] =
+{
+	{1, RGB(26, 26, 26)},
+	{2, RGB(18, 18, 18)},
+	{3, RGB(10, 10, 10)},
+	{TRAINER_BACK_RED_PAL_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideProfile sTrainerBackRedPalOverrides[] =
+{
+	{1, sTrainerBackRedPalOverride1},
+	{2, sTrainerBackRedPalOverride2},
+	{3, sTrainerBackRedPalOverride3},
+	{4, sTrainerBackRedPalOverride4},
+	{5, sTrainerBackRedPalOverride5},
+	{6, sTrainerBackRedPalOverride6},
+	{7, sTrainerBackRedPalOverride7},
+	{0xFFFF, NULL},
+};
+
+static const struct PaletteOverrideEntry sTrainerFrontPlayerPalOverride1[] =
+{
+	{11, RGB(31, 21, 6)},
+	{13, RGB(22, 14, 3)},
+	{TRAINER_FRONT_PLAYER_PAL_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sTrainerFrontPlayerPalOverride2[] =
+{
+	{11, RGB(9, 18, 13)},
+	{13, RGB(7, 13, 9)},
+	{TRAINER_FRONT_PLAYER_PAL_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sTrainerFrontPlayerPalOverride3[] =
+{
+	{1, RGB(24, 8, 28)},
+	{2, RGB(17, 5, 20)},
+	{3, RGB(12, 3, 14)},
+	{TRAINER_FRONT_PLAYER_PAL_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sTrainerFrontPlayerPalOverride4[] =
+{
+	{1, RGB(31, 28, 8)},
+	{2, RGB(24, 21, 6)},
+	{3, RGB(17, 14, 4)},
+	{TRAINER_FRONT_PLAYER_PAL_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sTrainerFrontPlayerPalOverride5[] =
+{
+	{1, RGB(20, 31, 12)},
+	{2, RGB(14, 23, 8)},
+	{3, RGB(9, 16, 5)},
+	{TRAINER_FRONT_PLAYER_PAL_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sTrainerFrontPlayerPalOverride6[] =
+{
+	{1, RGB(31, 17, 24)},
+	{2, RGB(24, 11, 18)},
+	{3, RGB(16, 7, 12)},
+	{TRAINER_FRONT_PLAYER_PAL_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sTrainerFrontPlayerPalOverride7[] =
+{
+	{1, RGB(26, 26, 26)},
+	{2, RGB(18, 18, 18)},
+	{3, RGB(10, 10, 10)},
+	{TRAINER_FRONT_PLAYER_PAL_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideProfile sTrainerFrontPlayerPalOverrides[] =
+{
+	{1, sTrainerFrontPlayerPalOverride1},
+	{2, sTrainerFrontPlayerPalOverride2},
+	{3, sTrainerFrontPlayerPalOverride3},
+	{4, sTrainerFrontPlayerPalOverride4},
+	{5, sTrainerFrontPlayerPalOverride5},
+	{6, sTrainerFrontPlayerPalOverride6},
+	{7, sTrainerFrontPlayerPalOverride7},
+	{0xFFFF, NULL},
+};
+
 static const struct PlayerGraphics sPlayerAvatarGfxIds[][2] =
 {
 	[PLAYER_AVATAR_STATE_NORMAL] =     {{EVENT_OBJ_GFX_RED_NORMAL, PLAYER_AVATAR_FLAG_ON_FOOT},          {EVENT_OBJ_GFX_LEAF_NORMAL, PLAYER_AVATAR_FLAG_ON_FOOT}},
@@ -120,6 +273,10 @@ static const struct PlayerGraphics sPlayerAvatarGfxIds[][2] =
 };
 
 //This file's functions:
+static const struct PaletteOverrideEntry* GetTrainerBackRedPalOverrideByVarValue(u16 varValue);
+static void TryApplyTrainerBackRedPalOverride(u16 trainerPicId, u8 paletteNum);
+static const struct PaletteOverrideEntry* GetTrainerFrontPlayerPalOverrideByVarValue(u16 varValue);
+static void TryApplyTrainerFrontPlayerPalOverrideToColorOffset(u16 trainerPicId, u16 palColorOffset);
 #ifdef UNBOUND
 static const u8* GetAlternateTrainerSpritePal(void);
 #endif
@@ -429,6 +586,93 @@ u16 GetBackspriteId(void)
 	return trainerPicId;
 }
 
+static const struct PaletteOverrideEntry* GetTrainerBackRedPalOverrideByVarValue(u16 varValue)
+{
+	for (int i = 0; sTrainerBackRedPalOverrides[i].triggerValue != 0xFFFF; ++i)
+	{
+		if (sTrainerBackRedPalOverrides[i].triggerValue == varValue)
+			return sTrainerBackRedPalOverrides[i].entries;
+	}
+
+	return NULL;
+}
+
+static const struct PaletteOverrideEntry* GetTrainerFrontPlayerPalOverrideByVarValue(u16 varValue)
+{
+	for (int i = 0; sTrainerFrontPlayerPalOverrides[i].triggerValue != 0xFFFF; ++i)
+	{
+		if (sTrainerFrontPlayerPalOverrides[i].triggerValue == varValue)
+			return sTrainerFrontPlayerPalOverrides[i].entries;
+	}
+
+	return NULL;
+}
+
+static void TryApplyTrainerFrontPlayerPalOverrideToColorOffset(u16 trainerPicId, u16 palColorOffset)
+{
+	u16 overrideVarValue;
+	const struct PaletteOverrideEntry* overrideEntries;
+
+	if (trainerPicId != TRAINER_PIC_PLAYER_M && trainerPicId != TRAINER_PIC_PLAYER_F)
+		return;
+
+	overrideVarValue = VarGet(TRAINER_FRONT_PLAYER_PAL_OVERRIDE_VAR);
+	if (overrideVarValue == TRAINER_FRONT_PLAYER_PAL_OVERRIDE_DISABLED)
+		return;
+
+	overrideEntries = GetTrainerFrontPlayerPalOverrideByVarValue(overrideVarValue);
+	if (overrideEntries == NULL)
+		return;
+
+	u16* unfadedPal = &gPlttBufferUnfaded[palColorOffset];
+	u16* fadedPal = &gPlttBufferFaded[palColorOffset];
+
+	for (int i = 0; overrideEntries[i].index != TRAINER_FRONT_PLAYER_PAL_OVERRIDE_END; ++i)
+	{
+		u8 index = overrideEntries[i].index;
+		u16 color = overrideEntries[i].color;
+		unfadedPal[index] = color;
+		fadedPal[index] = color;
+	}
+}
+
+void TryApplyTrainerFrontSpritePalOverrideByTag(u16 trainerPicId, u16 paletteTag)
+{
+	u8 palSlot = IndexOfSpritePaletteTag(paletteTag);
+	if (palSlot == 0xFF)
+		return;
+
+	TryApplyTrainerFrontPlayerPalOverrideToColorOffset(trainerPicId, TRAINER_BACK_PAL_OBJ_BASE_INDEX + palSlot * 16);
+}
+
+static void TryApplyTrainerBackRedPalOverride(u16 trainerPicId, u8 paletteNum)
+{
+	u16 overrideVarValue;
+	const struct PaletteOverrideEntry* overrideEntries;
+
+	if (trainerPicId != TRAINER_BACK_PIC_RED)
+		return;
+
+	overrideVarValue = VarGet(TRAINER_BACK_RED_PAL_OVERRIDE_VAR);
+	if (overrideVarValue == TRAINER_BACK_RED_PAL_OVERRIDE_DISABLED)
+		return;
+
+	overrideEntries = GetTrainerBackRedPalOverrideByVarValue(overrideVarValue);
+	if (overrideEntries == NULL)
+		return;
+
+	u16* unfadedPal = &gPlttBufferUnfaded[TRAINER_BACK_PAL_OBJ_BASE_INDEX + paletteNum * 16];
+	u16* fadedPal = &gPlttBufferFaded[TRAINER_BACK_PAL_OBJ_BASE_INDEX + paletteNum * 16];
+
+	for (int i = 0; overrideEntries[i].index != TRAINER_BACK_RED_PAL_OVERRIDE_END; ++i)
+	{
+		u8 index = overrideEntries[i].index;
+		u16 color = overrideEntries[i].color;
+		unfadedPal[index] = color;
+		fadedPal[index] = color;
+	}
+}
+
 void LoadTrainerBackPal(u16 trainerPicId, u8 paletteNum)
 {
 	#ifdef UNBOUND
@@ -451,11 +695,15 @@ void LoadTrainerBackPal(u16 trainerPicId, u8 paletteNum)
 	#else
 		DecompressTrainerBackPic(trainerPicId, paletteNum);
 	#endif
+
+	TryApplyTrainerBackRedPalOverride(trainerPicId, paletteNum);
 }
 
 void TryUpdateTrainerPicPalTrainerCard(u16 trainerPicId, u16 palOffset)
 {
-	LoadCompressedPalette(GetTrainerSpritePal(trainerPicId), palOffset * 0x10, 0x20);
+	u16 palColorOffset = palOffset * 0x10;
+	LoadCompressedPalette(GetTrainerSpritePal(trainerPicId), palColorOffset, 0x20);
+	TryApplyTrainerFrontPlayerPalOverrideToColorOffset(trainerPicId, palColorOffset);
 }
 
 const u8* GetTrainerSpritePal(u16 trainerPicId)

@@ -787,10 +787,6 @@ gEventsObjectPic_NPC147Pal 08F162B0
 gEventObjectGraphicsInfo_NPC162 08EB1288
 gEventsObjectPic_NPC162Pal 08F162E8
 
-#NPC163
-gEventObjectGraphicsInfo_NPC163 08EB128C
-gEventsObjectPic_NPC163Pal 08F162F0
-
-#NPC164
-gEventObjectGraphicsInfo_NPC164 08EB1290
-gEventsObjectPic_NPC164Pal 08F162F8
+#PLAYERFRONTSPRITE
+PlayerFrontSpriteTiles 82399B4
+PlayerFrontSpritePal 8239354
