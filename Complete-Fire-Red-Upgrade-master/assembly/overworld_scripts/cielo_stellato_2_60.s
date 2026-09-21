@@ -794,8 +794,11 @@ CieloStellato_2_60_MapScriptOnFrameBegin:
     end
 
 CieloStellato_2_60_Part1a:
+    setflag 0x995
+    setflag 0x996
     pause 0x3E
     applymovement 0xFF CieloStelato_intro_mov1
+    applymovement 0x2 CieloStelato_intro_mov2_moon
     waitmovement 0xFF
     pause 0x3E
     showpokepic 0x3C8 0x0 0x6
@@ -880,6 +883,14 @@ CieloStellato_2_60_Part1a:
         .byte 0xC 
         .byte 0xC 
         .byte 0xC 
+        .byte 0xFE
+
+    CieloStelato_intro_mov2_moon:
+        .byte 0x8
+        .byte 0x8 
+        .byte 0x8 
+        .byte 0x8 
+        .byte 0x8 
         .byte 0xFE
 
 
@@ -1017,6 +1028,7 @@ CieloStellato_2_60_Part2:
     sound 0x15
     pause 0x10
     applymovement 0xFF CieloStellato_2_60_mov1
+    applymovement 0x2 CieloStellato_2_60_mov1_moon
     waitmovement 0xFF
     showpokepic 0x3C8 0x0 0x6
 	msgbox CieloStellato_2_60_Part1_text20 MSG_NORMAL
@@ -1050,6 +1062,14 @@ CieloStellato_2_60_Part2:
         .byte 0xD 
         .byte 0xD 
         .byte 0xD 
+        .byte 0xFE
+
+    CieloStellato_2_60_mov1_moon:
+        .byte 0x9
+        .byte 0x9 
+        .byte 0x9 
+        .byte 0x9 
+        .byte 0x9 
         .byte 0xFE
 
 

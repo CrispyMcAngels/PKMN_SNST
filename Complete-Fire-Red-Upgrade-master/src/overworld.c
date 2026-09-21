@@ -1611,6 +1611,7 @@ void FieldCB_RushInjuredPokemonToCenter(void)
     ScriptContext2_Enable();
     palette_bg_faded_fill_black();
 	DismissMapNamePopup();
+	FollowMe_WarpSetEnd(); //Let the follower reappear after whiting out, like after any other warp
     taskId = CreateTask(Task_RushInjuredPokemonToCenter, 10);
     gTasks[taskId].data[0] = 0;
 }

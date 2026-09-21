@@ -67,7 +67,7 @@ Apri il men[26] [GREEN]Start[BLACK] per accedere\nad [GREEN]Echi del Tempo[BLACK
 [LIGHT_BLUE]PLAYER[BLACK]: La sento[.]\pQuesta sensazione,\ncome dopo aver girato la [GREEN]Ruota[BLACK][.]
 
 #org @Risaia_Rosa_3_50_MapScript_text2
-[ORANGE]Raito[BLACK]: Questo [1A] il punto di non\nritorno [LIGHT_BLUE]Player[BLACK][.]\pBuona fortuna!
+[ORANGE]Raito[BLACK]: Questo [1A] il punto di non\nritorno [LIGHT_BLUE][PLAYER][BLACK][.]\pBuona fortuna!
 
 #org @Risaia_Rosa_3_50_tile1_text1
 [LIGHT_BLUE]Player[BLACK]: Non [1A] il momento di\nandarsene!\pDevo accedere agli [GREEN]Echi del Tempo[BLACK]\ntramite il men[26] [GREEN]Start[BLACK].

@@ -1,3 +1,17 @@
+map 3 55 gMapScripts_Scogliera_Crepuscolo_3_55
+map 42 0 gMapScripts_Scogliera_Crepuscolo_42_0
+
+tile 3 12 0 EventScript_Dark_Future_3_12_tile0
+tile 3 12 1 EventScript_Dark_Future_3_12_tile0
+tile 3 12 2 EventScript_Dark_Future_3_12_tile0
+tile 3 12 3 EventScript_Dark_Future_3_12_tile3
+sign 3 12 0 EventScript_Dark_Future_3_12_Sign0
+
+map 3 54 gMapScripts_Dark_Future_3_54
+map 39 1 gMapScripts_Dark_Future_39_0
+map 3 49 gMapScripts_Selva_Spenta_3_49
+tile 3 49 0 EventScript_Selva_Spenta_3_49_tile0
+
 map 3 50 gMapScripts_Risaia_Rosa_3_50
 tile 3 50 0 EventScript_Risaia_Rosa_3_50_tile0
 tile 3 50 1 EventScript_Risaia_Rosa_3_50_tile1
