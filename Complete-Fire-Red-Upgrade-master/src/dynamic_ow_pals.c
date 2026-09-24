@@ -29,6 +29,8 @@ Credit to Navenatox
 // Palette tag 0x1100 is used by gEventsObjectPic_NPC0Pal in this project.
 #define NPC0_SHARED_PAL_TAG 0x1100
 #define NPC0_PAL_OVERRIDE_VAR 0x4068
+// Palette tag of the player portrait shown via showpokepic (SPECIES_TOUCANNON in DPE, gFrontSprite950Toucannon).
+#define PLAYER_PORTRAIT_PAL_TAG 0x3B6
 #define NPC0_PAL_OVERRIDE_DISABLED 0
 #define PALETTE_OVERRIDE_END 0xFF
 
@@ -110,6 +112,68 @@ static const struct PaletteOverrideProfile sNpc0PaletteOverrides[] =
 	{0xFFFF, NULL},
 };
 
+// Player portrait overrides: slot 14 = light shade, slot 15 = dark shade.
+static const struct PaletteOverrideEntry sPortraitPaletteOverride[] =
+{
+	{14, RGB(31, 21, 6)},
+	{15, RGB(22, 14, 3)},
+	{PALETTE_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sPortraitPaletteOverride2[] =
+{
+	{14, RGB(11, 23, 16)},
+	{15, RGB(4, 17, 9)},
+	{PALETTE_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sPortraitPaletteOverride3[] =
+{
+	{14, RGB(24, 8, 28)},
+	{15, RGB(17, 5, 20)},
+	{PALETTE_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sPortraitPaletteOverride4[] =
+{
+	{14, RGB(31, 28, 8)},
+	{15, RGB(24, 21, 6)},
+	{PALETTE_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sPortraitPaletteOverride5[] =
+{
+	{14, RGB(20, 31, 12)},
+	{15, RGB(14, 23, 8)},
+	{PALETTE_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sPortraitPaletteOverride6[] =
+{
+	{14, RGB(31, 17, 24)},
+	{15, RGB(24, 11, 18)},
+	{PALETTE_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideEntry sPortraitPaletteOverride7[] =
+{
+	{14, RGB(26, 26, 26)},
+	{15, RGB(18, 18, 18)},
+	{PALETTE_OVERRIDE_END, 0},
+};
+
+static const struct PaletteOverrideProfile sPortraitPaletteOverrides[] =
+{
+	{1, sPortraitPaletteOverride},
+	{2, sPortraitPaletteOverride2},
+	{3, sPortraitPaletteOverride3},
+	{4, sPortraitPaletteOverride4},
+	{5, sPortraitPaletteOverride5},
+	{6, sPortraitPaletteOverride6},
+	{7, sPortraitPaletteOverride7},
+	{0xFFFF, NULL},
+};
+
 struct PalRef
 {
 	u8 Type;
@@ -127,8 +191,10 @@ static u8 PalRefIncreaseCount(u8 palSlot);
 static void BrightenReflection(u8 palSlot);
 static u8 AddPalTag(u16 palTag);
 static void MaskPaletteIfFadingIn(u8 palSlot);
-static const struct PaletteOverrideEntry* GetNpc0PaletteOverrideByVarValue(u16 varValue);
+static const struct PaletteOverrideEntry* GetPaletteOverrideByVarValue(const struct PaletteOverrideProfile* profiles, u16 varValue);
+static void ApplyPaletteOverride(const struct PaletteOverrideProfile* profiles, u8 palSlot);
 static void TryApplyNpc0PaletteOverride(u16 palTag, u8 palSlot);
+static void TryApplyPortraitPaletteOverride(u16 palTag, u8 palSlot);
 
 u8 AddPalRef(u8 type, u16 palTag)
 {
@@ -163,6 +229,15 @@ u8 GetPalTypeByPaletteOffset(u16 offset)
 
 	u8 palSlot = (u32) (&gPlttBufferUnfaded[offset] - gPlttBufferUnfaded2) / 16;
 	return sPalRefs[palSlot].Type;
+}
+
+u16 GetPalTagByPaletteOffset(u16 offset)
+{
+	if (&gPlttBufferUnfaded[offset] < gPlttBufferUnfaded2)
+		return 0xFFFF;
+
+	u8 palSlot = (u32) (&gPlttBufferUnfaded[offset] - gPlttBufferUnfaded2) / 16;
+	return sPalRefs[palSlot].PalTag;
 }
 
 u8 GetFadeTypeByWeather(u8 weather)
@@ -355,6 +430,7 @@ u8 FindOrLoadPalette(struct SpritePalette* pal) //Hook at 0x8928 via r1
 	}
 
 	DoLoadSpritePalette(pal->data, palSlot * 16);
+	TryApplyPortraitPaletteOverride(palTag, palSlot);
 	return palSlot;
 }
 
@@ -370,30 +446,27 @@ static void MaskPaletteIfFadingIn(u8 palSlot) //Prevent the palette from flashin
 	}
 }
 
-static const struct PaletteOverrideEntry* GetNpc0PaletteOverrideByVarValue(u16 varValue)
+static const struct PaletteOverrideEntry* GetPaletteOverrideByVarValue(const struct PaletteOverrideProfile* profiles, u16 varValue)
 {
-	for (int i = 0; sNpc0PaletteOverrides[i].triggerValue != 0xFFFF; ++i)
+	for (int i = 0; profiles[i].triggerValue != 0xFFFF; ++i)
 	{
-		if (sNpc0PaletteOverrides[i].triggerValue == varValue)
-			return sNpc0PaletteOverrides[i].entries;
+		if (profiles[i].triggerValue == varValue)
+			return profiles[i].entries;
 	}
 
 	return NULL;
 }
 
-static void TryApplyNpc0PaletteOverride(u16 palTag, u8 palSlot)
+static void ApplyPaletteOverride(const struct PaletteOverrideProfile* profiles, u8 palSlot)
 {
 	u16 overrideVarValue;
 	const struct PaletteOverrideEntry* overrideEntries;
-
-	if (palTag != NPC0_SHARED_PAL_TAG)
-		return;
 
 	overrideVarValue = VarGet(NPC0_PAL_OVERRIDE_VAR);
 	if (overrideVarValue == NPC0_PAL_OVERRIDE_DISABLED)
 		return;
 
-	overrideEntries = GetNpc0PaletteOverrideByVarValue(overrideVarValue);
+	overrideEntries = GetPaletteOverrideByVarValue(profiles, overrideVarValue);
 	if (overrideEntries == NULL)
 		return;
 
@@ -407,6 +480,18 @@ static void TryApplyNpc0PaletteOverride(u16 palTag, u8 palSlot)
 		unfadedPal[index] = color;
 		fadedPal[index] = color;
 	}
+}
+
+static void TryApplyNpc0PaletteOverride(u16 palTag, u8 palSlot)
+{
+	if (palTag == NPC0_SHARED_PAL_TAG)
+		ApplyPaletteOverride(sNpc0PaletteOverrides, palSlot);
+}
+
+static void TryApplyPortraitPaletteOverride(u16 palTag, u8 palSlot)
+{
+	if (palTag == PLAYER_PORTRAIT_PAL_TAG)
+		ApplyPaletteOverride(sPortraitPaletteOverrides, palSlot);
 }
 
 u8 GetPalSlotMisc(u32 OBJData)

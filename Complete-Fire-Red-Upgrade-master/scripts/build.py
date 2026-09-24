@@ -35,9 +35,10 @@ if sys.platform.startswith('win'):
     AS = PATH + PREFIX + 'as'
     CC = PATH + PREFIX + 'gcc'
     LD = PATH + PREFIX + 'ld'
-    GR = 'deps/grit.exe'
-    WAV2AGB = 'deps/wav2agb.exe'
-    MID2AGB = 'deps/mid2agb.exe'
+    # Use backslashes, since Windows can fail to start these with a forward slash in the path
+    GR = os.path.join('deps', 'grit.exe')
+    WAV2AGB = os.path.join('deps', 'wav2agb.exe')
+    MID2AGB = os.path.join('deps', 'mid2agb.exe')
     OBJCOPY = PATH + PREFIX + 'objcopy'
 
 else:  # Linux, OSX, etc.
@@ -331,7 +332,14 @@ def ProcessMusic(midiFile: str) -> str:
 def LinkObjects(objects: itertools.chain) -> str:
     """Link objects into one binary."""
     linked = 'build/linked.o'
-    cmd = [LD] + LDFLAGS + ['-o', linked] + list(objects)
+
+    # Pass the objects through a response file, since the full list exceeds the Windows command line limit
+    responseFile = 'build/objects.txt'
+    with open(responseFile, 'w') as file:
+        for obj in objects:
+            file.write('"' + obj.replace('\\', '/') + '"\n')
+
+    cmd = [LD] + LDFLAGS + ['-o', linked, '@' + responseFile]
     RunCommand(cmd)
     return linked
 

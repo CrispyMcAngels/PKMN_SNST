@@ -142,9 +142,5 @@ EventScript_Dark_Future_3_12_tile3:
 
 .global EventScript_Dark_Future_3_12_Sign0
 EventScript_Dark_Future_3_12_Sign0:
-	special 0x27
-    special 0x23
-    setvar 0x8004 0xF
-    special 0x62
-    givepokemon 0x3A 0x14 0x0 0x0 0x0 0x0
+	msgbox Dark_Future_3_12_text6 0x7
 	end

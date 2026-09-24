@@ -55,7 +55,7 @@ Dentro c'[1A] mangia, ma devo stare\lguardia a Ombre[.]
 [BLUE]Saggio[BLACK]: Lo hai veduto.
 
 #org @Scogliera_Crepuscolo_42_0_text4
-[BLUE]Saggio[BLACK]: Non dove bruciare.\nEppure brucia.
+[BLUE]Saggio[BLACK]: Non deve bruciare.\nEppure brucia.
 
 #org @Scogliera_Crepuscolo_42_0_text5
 [ORANGE]Myryam[BLACK]: Da noi fuoco non brucia pi[26].
@@ -79,13 +79,13 @@ Dentro c'[1A] mangia, ma devo stare\lguardia a Ombre[.]
 [ORANGE]Myryam[BLACK]: Tu sa cose[.]
 
 #org @Scogliera_Crepuscolo_42_0_text12
-[BLUE]Saggio[BLACK]: So cose che Vecchi han lasciato[.]
+[BLUE]Saggio[BLACK]: So cose che Vecchi\nhan lasciato[.]
 
 #org @Scogliera_Crepuscolo_42_0_text13
 [ORANGE]Myryam[BLACK]: Chi era, Vecchi?
 
 #org @Scogliera_Crepuscolo_42_0_text14
-[BLUE]Saggio[BLACK]: Ordine del Vento.\pUomini e Donne custodivan quello\nche era del tempo.
+[BLUE]Saggio[BLACK]: Ordine del Vento[.]\pUomini e Donne custodivan quello\nche era del tempo.
 
 #org @Scogliera_Crepuscolo_42_0_text15
 [ORANGE]Myryam[BLACK]: E dove sta ora Vecchi?
@@ -127,13 +127,13 @@ Dentro c'[1A] mangia, ma devo stare\lguardia a Ombre[.]
 [ORANGE]Myryam[BLACK]: Perch[1A]?
 
 #org @Scogliera_Crepuscolo_42_0_text28
-[BLUE]Saggio[BLACK]: Ombre non cercan pi[26] te solo.\nOra van verso citt[16].
+[BLUE]Saggio[BLACK]: Ombre non cercan pi[26] te solo.\pOra van verso citt[16].
 
 #org @Scogliera_Crepuscolo_42_0_text29
 [ORANGE]Myryam[BLACK]: Io che fa, allora?
 
 #org @Scogliera_Crepuscolo_42_0_text30
-[BLUE]Saggio[BLACK]: A Nord,\p sta luogo antico[.]
+[BLUE]Saggio[BLACK]: A Nord,\psta luogo antico[.]
 
 #org @Scogliera_Crepuscolo_42_0_text31
 [ORANGE]Myryam[BLACK]: Luogo vecchio?

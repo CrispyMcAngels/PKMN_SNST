@@ -200,6 +200,10 @@ enum //These vars need to be one after the other (hence the enum)
 //#define DNS_IN_BATTLE //Comment this line to disable the Day/Night system from working in battle
 #define DNS_PALETTE_BY_VAR //Drive DNS palette fading from VAR_DNS_PALETTE_MODE instead of the RTC clock.
 #define VAR_DNS_PALETTE_MODE 0x500E //0 = day, 1 = dawn, 2 = dusk, 3 = night, 4 = late dusk/sunset, 5 = future, 6+ = custom presets in gDNSVarFadeModes.
+#define LIGHT_HALO_PAL_TAG 0x118C //Overworld NPCs using this palette tag are light halos: not tinted by the DNS, drawn semi-transparent behind other NPCs and centred on their tile.
+#define LIGHT_HALO_ON_TOP //Comment this line to draw halos behind NPCs instead of over them. Sprites can't blend with other sprites, so an NPC under a halo is hidden by it rather than lit.
+#define LIGHT_HALO_ALPHA_HALO 6 //Weight of the halo sprite in the blend (0-16).
+#define LIGHT_HALO_ALPHA_BG 16 //Weight of the map under the halo (0-16). If both weights add up to more than 16, the halo brightens the map like a light.
 //#define OVERWRITE_RIVAL //Comment this line to disable to loading of your rival's name into trainer classes 0x51, 0x59, and 0x5A
 //#define TRAINER_CLASS_POKE_BALLS //Comment this line to disable creating Trainer's pokemon with Poke Balls specific to their trainer class
 //#define TRAINERS_WITH_EVS //Uncomment this line to enable the Trainers with EVs hack, (only avaible with custom moveset and held item)

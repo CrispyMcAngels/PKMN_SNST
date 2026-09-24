@@ -11,6 +11,7 @@ map 3 54 gMapScripts_Dark_Future_3_54
 map 39 1 gMapScripts_Dark_Future_39_0
 map 3 49 gMapScripts_Selva_Spenta_3_49
 tile 3 49 0 EventScript_Selva_Spenta_3_49_tile0
+npc 3 49 0 EventScript_Selva_Spenta_3_49_NPC0
 
 map 3 50 gMapScripts_Risaia_Rosa_3_50
 tile 3 50 0 EventScript_Risaia_Rosa_3_50_tile0
@@ -30,6 +31,7 @@ map 3 23 gMapScripts_Percorso12_3_23
 
 map 3 12 gMapScripts_Dark_Future_3_12
 map 32 3 gMapScripts_Dark_Future_32_3
+npc 32 3 1 dark_future_32_3_NPC1
 
 map 1 61 gMapScripts_Santuario_del_Vento_1_61
 tile 1 61 0 EventScript_SDV_1_61_TileScript_up_down

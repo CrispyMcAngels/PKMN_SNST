@@ -29,7 +29,18 @@ EventScript_Borgo_Ponente_4_1_tile1:
 
 	Borgo_Ponente_4_1_tile1_P1:
 		lockall
+
+		//enable bag
+		setflag 0x995
+		//enable trainer name
+		setflag 0x996
+		//enable save
+		setflag 0x997
+		//enable side quest 
+		setflag 0x998
+
 		setflag 0x994
+
 		msgbox Borgo_Ponente_4_1_tile1_P1_text1 MSG_NORMAL
 		callasm 0x809FC91
 		releaseall

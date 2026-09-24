@@ -12,6 +12,7 @@
 u8 AddPalRef(u8 type, u16 palTag);
 u8 FindPalRef(u8 type, u16 palTag);
 u8 GetPalTypeByPaletteOffset(u16 offset);
+u16 GetPalTagByPaletteOffset(u16 offset);
 u8 GetFadeTypeByWeather(u8 weather);
 void PalRefDecreaseCount(u8 palSlot);
 void ClearAllPalRefs(void);

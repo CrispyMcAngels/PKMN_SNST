@@ -165,12 +165,27 @@ Dark_Future_32_3_Part1:
         setvar 0x4050 0xB
         setvar 0x4051 0x4E
 
-        //remove running shoes, pokedex, bag, trainer name and dexnav
+        //remove running shoes, 
         clearflag 0x82F
+        //remove pokedex
         clearflag 0x829
+        //remove bag
         clearflag 0x995
+        //remove trainer name
         clearflag 0x996
+        //remove dexnav
         clearflag 0x91E
+        //remove save
+        clearflag 0x997
+        //remove side quest 
+        clearflag 0x998 
+        //remove time echoes 
+        clearflag 0x990
+
+        special 0x27
+        setvar 0x8004 0xF
+        special 0x62
+        givepokemon 0x3A 0x14 0x0 0x0 0x0 0x0
 
 
         warp 0x3 0xc 0xFF 0x3 0x7
@@ -193,3 +208,12 @@ Dark_Future_32_3_Part1:
             .byte 0x60
             .byte 0xFE
 
+.global dark_future_32_3_NPC1
+dark_future_32_3_NPC1:
+	lock
+	faceplayer
+	showpokepic 0x3C9 0x0 0x6
+	msgbox Dark_Future_32_3_MPC1_text1 MSG_NORMAL
+	special 0x15A
+	release
+	end

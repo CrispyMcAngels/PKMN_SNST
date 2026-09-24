@@ -4544,6 +4544,7 @@
 		.affineAnims = gDummySpriteAffineAnimTable,
 	};
 
+
 //_____NPC135_____
 
 	extern const u8 gEventsObjectPic_NPC135Tiles[];
@@ -4581,6 +4582,7 @@
 		.images = gEventObjectPicTable_NPC135,
 		.affineAnims = gDummySpriteAffineAnimTable,
 	};
+
 
 //_____NPC136_____
 
@@ -4734,43 +4736,6 @@
 		.affineAnims = gDummySpriteAffineAnimTable,
 	};
 
-//_____NPC145_____
-
-	extern const u8 gEventsObjectPic_NPC145Tiles[];
-
-	static const struct SpriteFrameImage gEventObjectPicTable_NPC145[] =
-	{
-		overworld_frame(gEventsObjectPic_NPC145Tiles, 8, 8, 0),
-		overworld_frame(gEventsObjectPic_NPC145Tiles, 8, 8, 1),
-		overworld_frame(gEventsObjectPic_NPC145Tiles, 8, 8, 2),
-		overworld_frame(gEventsObjectPic_NPC145Tiles, 8, 8, 3),
-		overworld_frame(gEventsObjectPic_NPC145Tiles, 8, 8, 4),
-		overworld_frame(gEventsObjectPic_NPC145Tiles, 8, 8, 5),
-		overworld_frame(gEventsObjectPic_NPC145Tiles, 8, 8, 6),
-		overworld_frame(gEventsObjectPic_NPC145Tiles, 8, 8, 7),
-	};
-
-	const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_NPC145 =
-	{
-		.tileTag = 0xFFFF,
-		.paletteTag1 = 0x118A,
-		.paletteTag2 = EVENT_OBJ_PAL_TAG_NONE,
-		.size = (64 * 64) / 2,
-		.width = 64,
-		.height = 64,
-		.paletteSlot = 0,
-		.shadowSize = SHADOW_SIZE_L,
-		.inanimate = FALSE,
-		.disableReflectionPaletteLoad = FALSE,
-		.tracks = TRACKS_FOOT,
-		.gender = MALE,
-		.oam = gEventObjectBaseOam_64x64,
-		.subspriteTables = gEventObjectSpriteOamTables_64x64,
-		.anims = gEventObjectImageAnimTable_Standard,
-		.images = gEventObjectPicTable_NPC145,
-		.affineAnims = gDummySpriteAffineAnimTable,
-	};
-
 
 //_____NPC146_____
 
@@ -4810,39 +4775,49 @@
 		.affineAnims = gDummySpriteAffineAnimTable,
 	};
 
-	//_____NPC147_____
+	//_____NPC147_HALO____
+
+	static const struct OamData sLightHaloOam =
+	{
+		.objMode = ST_OAM_OBJ_BLEND, //Semi-transparent
+		.shape = ST_OAM_SQUARE,
+		.size = ST_OAM_SIZE_2, //32x32
+		.priority = 2,
+	};
+
 
 	extern const u8 gEventsObjectPic_NPC147Tiles[];
 
+	//0 stand south, 1 stand north, 2 stand west/east, 3-4 walk south, 5-6 walk north, 7-8 walk west/east
 	static const struct SpriteFrameImage gEventObjectPicTable_NPC147[] =
 	{
-		overworld_frame(gEventsObjectPic_NPC147Tiles, 8, 8, 0),
-		overworld_frame(gEventsObjectPic_NPC147Tiles, 8, 8, 1),
-		overworld_frame(gEventsObjectPic_NPC147Tiles, 8, 8, 2),
-		overworld_frame(gEventsObjectPic_NPC147Tiles, 8, 8, 3),
-		overworld_frame(gEventsObjectPic_NPC147Tiles, 8, 8, 4),
-		overworld_frame(gEventsObjectPic_NPC147Tiles, 8, 8, 5),
-		overworld_frame(gEventsObjectPic_NPC147Tiles, 8, 8, 6),
-		overworld_frame(gEventsObjectPic_NPC147Tiles, 8, 8, 7),
-		overworld_frame(gEventsObjectPic_NPC147Tiles, 8, 8, 8),
+		overworld_frame(gEventsObjectPic_NPC147Tiles, 4, 4, 0),
+		overworld_frame(gEventsObjectPic_NPC147Tiles, 4, 4, 1),
+		overworld_frame(gEventsObjectPic_NPC147Tiles, 4, 4, 2),
+		overworld_frame(gEventsObjectPic_NPC147Tiles, 4, 4, 3),
+		overworld_frame(gEventsObjectPic_NPC147Tiles, 4, 4, 4),
+		overworld_frame(gEventsObjectPic_NPC147Tiles, 4, 4, 5),
+		overworld_frame(gEventsObjectPic_NPC147Tiles, 4, 4, 6),
+		overworld_frame(gEventsObjectPic_NPC147Tiles, 4, 4, 7),
+		overworld_frame(gEventsObjectPic_NPC147Tiles, 4, 4, 8),
 	};
 
 	const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_NPC147 =
 	{
 		.tileTag = 0xFFFF,
-		.paletteTag1 = 0x118C,
+		.paletteTag1 = LIGHT_HALO_PAL_TAG,
 		.paletteTag2 = EVENT_OBJ_PAL_TAG_NONE,
-		.size = (64 * 64) / 2,
-		.width = 64,
-		.height = 64,
+		.size = (32 * 32) / 2,
+		.width = 32,
+		.height = 32,
 		.paletteSlot = 0,
-		.shadowSize = SHADOW_SIZE_L,
-		.inanimate = FALSE,
-		.disableReflectionPaletteLoad = FALSE,
-		.tracks = TRACKS_FOOT,
+		.shadowSize = SHADOW_SIZE_M,
+		.inanimate = FALSE, //Let it play its walking animation while it moves
+		.disableReflectionPaletteLoad = TRUE,
+		.tracks = TRACKS_NONE,
 		.gender = MALE,
-		.oam = gEventObjectBaseOam_64x64,
-		.subspriteTables = gEventObjectSpriteOamTables_64x64,
+		.oam = &sLightHaloOam,
+		.subspriteTables = gEventObjectSpriteOamTables_32x32,
 		.anims = gEventObjectImageAnimTable_Standard,
 		.images = gEventObjectPicTable_NPC147,
 		.affineAnims = gDummySpriteAffineAnimTable,
@@ -4885,3 +4860,4 @@
 		.images = gEventObjectPicTable_NPC162,
 		.affineAnims = gDummySpriteAffineAnimTable,
 	};
+

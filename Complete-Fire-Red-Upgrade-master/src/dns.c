@@ -8,6 +8,7 @@
 #include "../include/new/dns.h"
 #include "../include/new/dns_data.h"
 #include "../include/new/dynamic_ow_pals.h"
+#include "../include/new/light_halo.h"
 #include "../include/new/util.h"
 /*
 dns.c
@@ -42,6 +43,7 @@ void TransferPlttBuffer(void)
 		#if defined(TIME_ENABLED) || defined(DNS_PALETTE_BY_VAR)
 		FadeDayNightPalettes();
 		#endif
+		UpdateLightHalos();
 
 		sPlttBufferTransferPending = 0;
 		if (gPaletteFade->mode == HARDWARE_FADE && gPaletteFade->active)
@@ -151,7 +153,7 @@ static void BlendFadedPalettes(u32 selectedPalettes, u8 coeff, u32 color)
 
 	for (paletteOffset = 256; selectedPalettes; paletteOffset += 16)
 	{
-		if (selectedPalettes & 1)
+		if ((selectedPalettes & 1) && GetPalTagByPaletteOffset(paletteOffset) != LIGHT_HALO_PAL_TAG) //Light halos keep their own colours
 		{
 			switch (GetPalTypeByPaletteOffset(paletteOffset)) {
 				case PalTypeUnused:
