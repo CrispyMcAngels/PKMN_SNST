@@ -346,12 +346,7 @@ EventScript_Rovine_Ancestrali_1_35_Sign0:
 		pause 0x1E
 		setvar 0x4051 0x21
 		setvar 0x4050 0x4
-		compare 0x5006 0x0 
-		if 0x1 _call OW_Player_Blue
-		compare 0x5006 0x1
-		if 0x1 _call OW_Player_Orange
-		compare 0x5006 0x2
-		if 0x1 _call OW_Player_Green
+		setvar 0x501F 0x100
 		msgbox Rovine_Ancestrali_1_35_SOL_text1 0x7
 		closeonkeypress
 		pause 0x1E
@@ -6591,17 +6586,3 @@ Rovine_Ancestrali_1_35_start9_tile14:
 	
 	releaseall
 	end
-
-
-
-OW_Player_Blue:
-	setvar 0x501F 0x100
-	return
-
-OW_Player_Orange:
-	setvar 0x501F 0x1A3
-	return
-
-OW_Player_Green:
-	setvar 0x501F 0x1A4
-	return

@@ -43,26 +43,26 @@ Dark_Future_32_3_Part1:
     applymovement 0x2 mov_exclamation
     waitmovement 0x2
     pause 0x1E
-    showpokepic 0x3C9 0x0 0x6
+    show_mugshot LIO
 	msgbox Dark_Future_32_3_text1 MSG_NORMAL
 	special 0x15A
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_32_3_text2 MSG_NORMAL
 	special 0x15A
     pause 0x1E
     applymovement 0x1 dark_future_32_3_mov2
     waitmovement 0x1      
     pause 0x1E
-    showpokepic 0x3C9 0x0 0x6
+    show_mugshot LIO
 	msgbox Dark_Future_32_3_text3 MSG_NORMAL
 	special 0x15A
     pause 0x1E   
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_32_3_text4 MSG_NORMAL
 	special 0x15A
     pause 0x3E
-    showpokepic 0x3C9 0x0 0x6
+    show_mugshot LIO
 	msgbox Dark_Future_32_3_text5 MSG_NORMAL
 	special 0x15A
     pause 0x1E
@@ -70,7 +70,7 @@ Dark_Future_32_3_Part1:
     pause 0x1E
     spriteface 0x1 0x2
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_32_3_text6 MSG_NORMAL
 	special 0x15A        
     pause 0x2E
@@ -87,6 +87,7 @@ Dark_Future_32_3_Part1:
     setflag 0x967
     setvar 0x4050 0x1
     setvar 0x501F 0x0157
+    setvar 0x500E 0x0
     warpmuted 0x2 0x1B 0xFF 0x05 0x26
     fadescreen 0x0
     releaseall
@@ -108,18 +109,18 @@ Dark_Future_32_3_Part1:
         spriteface 0x2 0x3
         pause 0x2E
         spriteface 0xFF 0x4
-        showpokepic 0x3C9 0x0 0x6
+        show_mugshot LIO
 	    msgbox Dark_Future_32_3_text7 MSG_NORMAL
 	    special 0x15A
         pause 0x1E
-        showpokepic 0x3C7 0x0 0x6
+        show_mugshot MYRYAM
 	    msgbox Dark_Future_32_3_text8 MSG_NORMAL
 	    special 0x15A
         pause 0x1E
         applymovement 0x2 dark_future_32_3_mov3
         waitmovement 0x2                            
         pause 0x1E
-        showpokepic 0x3C9 0x0 0x6
+        show_mugshot LIO
 	    msgbox Dark_Future_32_3_text9 MSG_NORMAL
 	    special 0x15A
         pause 0x1E
@@ -131,7 +132,7 @@ Dark_Future_32_3_Part1:
         pause 0x1E
         spriteface 0xFF 0x4
         pause 0x1E
-        showpokepic 0x3C7 0x0 0x6
+        show_mugshot MYRYAM
 	    msgbox Dark_Future_32_3_text10 MSG_NORMAL
 	    special 0x15A
         pause 0x1E
@@ -139,16 +140,16 @@ Dark_Future_32_3_Part1:
         applymovement 0x2 mov_question
         waitmovement 0x2
         pause 0x1E
-        showpokepic 0x3C9 0x0 0x6
+        show_mugshot LIO
 	    msgbox Dark_Future_32_3_text11 MSG_NORMAL
 	    special 0x15A
         pause 0x1E
-        showpokepic 0x3C7 0x0 0x6
+        show_mugshot MYRYAM
 	    msgbox Dark_Future_32_3_text12 MSG_NORMAL
 	    special 0x15A
         applymovement 0xFF dark_future_32_3_mov4
         waitmovement 0xFF
-        showpokepic 0x3C9 0x0 0x6
+        show_mugshot LIO
 	    msgbox Dark_Future_32_3_text13 MSG_NORMAL
 	    special 0x15A
         pause 0x1E
@@ -156,7 +157,7 @@ Dark_Future_32_3_Part1:
         waitmovement 0xFF
         spriteface 0xFF 0x2
         pause 0x1E
-        showpokepic 0x3C7 0x0 0x6
+        show_mugshot MYRYAM
 	    msgbox Dark_Future_32_3_text14 MSG_NORMAL
 	    special 0x15A
         pause 0x1E
@@ -185,7 +186,7 @@ Dark_Future_32_3_Part1:
         special 0x27
         setvar 0x8004 0xF
         special 0x62
-        givepokemon 0x3A 0x14 0x0 0x0 0x0 0x0
+        givepokemon 0x44F 0x14 0x0 0x0 0x0 0x0
 
 
         warp 0x3 0xc 0xFF 0x3 0x7
@@ -212,8 +213,16 @@ Dark_Future_32_3_Part1:
 dark_future_32_3_NPC1:
 	lock
 	faceplayer
-	showpokepic 0x3C9 0x0 0x6
+	show_mugshot LIO
 	msgbox Dark_Future_32_3_MPC1_text1 MSG_NORMAL
 	special 0x15A
+	release
+	end
+
+.global dark_future_32_2_NPC0
+dark_future_32_2_NPC0:
+	lock
+	faceplayer
+	msgbox Dark_Future_32_2_NPC1_text0 MSG_NORMAL
 	release
 	end

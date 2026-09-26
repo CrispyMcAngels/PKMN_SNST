@@ -24,7 +24,14 @@ gMapScripts_Risaia_Rosa_3_50:
 
 	Risaia_Rosa_3_50_MapScriptOnLoad:
 		setvar 0x5007 0x14
+		compare 0x4051 0x53
+		if 0x1 _goto Risaia_Rosa_3_50_MapScriptOnLoad_P1
 		end
+
+		Risaia_Rosa_3_50_MapScriptOnLoad_P1:
+			movesprite2 0x0 0xD 0x13
+			spritebehave 0x0 0xA
+			return
 
 		
 	Risaia_Rosa_3_50_MapScriptOnFrame:
@@ -32,6 +39,8 @@ gMapScripts_Risaia_Rosa_3_50:
 		.hword MAP_SCRIPT_TERMIN
 
 		Risaia_Rosa_3_50_MapScriptOnFrameBegin:
+			compare 0x4051 0x53
+			if 0x1 _goto Risaia_Rosa_3_50_MapScriptOnFrameBegin_P2
 			compare 0x4067 0x2
 			if 0x1 _goto Risaia_Rosa_3_50_MapScriptOnFrameBegin_P1
 			releaseall
@@ -40,7 +49,7 @@ gMapScripts_Risaia_Rosa_3_50:
 		Risaia_Rosa_3_50_MapScriptOnFrameBegin_P1:
 			spriteface 0xFF 0x2	
 			pause 0x25
-			showpokepic 0x3B6 0x0 0x6
+			show_mugshot PLAYER
 			msgbox Risaia_Rosa_3_50_MapScript_text1 MSG_NORMAL
 			special 0x15A	
 			pause 0x1E
@@ -49,7 +58,7 @@ gMapScripts_Risaia_Rosa_3_50:
 			pause 0x25
 			setvar 0x500E 0x6
 			pause 0x1E		
-			showpokepic 0x3BA 0x0 0x6
+			show_mugshot RAITO
 			msgbox Risaia_Rosa_3_50_MapScript_text2 MSG_NORMAL
 			special 0x15A	
 			pause 0x1E
@@ -66,6 +75,113 @@ gMapScripts_Risaia_Rosa_3_50:
 			releaseall 
 			end
 
+		Risaia_Rosa_3_50_MapScriptOnFrameBegin_P2:
+			pause 0x4E
+			sound 0x15
+			applymovement 0x1 mov_exclamation
+			waitmovement 0x1
+			show_mugshot RAITO
+			msgbox Risaia_Rosa_3_50_MapScript_text3 MSG_NORMAL
+			special 0x15A
+			pause 0x1E
+			spriteface 0xFF 0x3
+			pause 0x1E
+			applymovement 0xFF Risaia_Rosa_3_50_MapScript_mov1
+			waitmovement 0xFF
+			pause 0x1E
+			show_mugshot PLAYER 
+			msgbox Risaia_Rosa_3_50_MapScript_text4 MSG_NORMAL
+			special 0x15A
+			pause 0x1E
+			show_mugshot PLAYER
+			msgbox Risaia_Rosa_3_50_MapScript_text5 MSG_NORMAL
+			special 0x15A
+			playsong 0x192 0x0
+			pause 0x1E
+			show_mugshot RAITO
+			msgbox Risaia_Rosa_3_50_MapScript_text6 MSG_NORMAL
+			special 0x15A
+			pause 0x1E
+			spriteface 0x1 0x2
+			pause 0x1E
+			spriteface 0xFF 0x2
+			pause 0x1E
+			show_mugshot RAITO
+			msgbox Risaia_Rosa_3_50_MapScript_text7 MSG_NORMAL
+			special 0x15A
+			pause 0x2E
+			spriteface 0x1 0x4
+			pause 0x1E
+			spriteface 0x1 0x3
+			pause 0x1E
+			show_mugshot RAITO
+			msgbox Risaia_Rosa_3_50_MapScript_text8 MSG_NORMAL
+			special 0x15A
+			pause 0x1E
+			spriteface 0x1 0x1
+			pause 0x1E
+			show_mugshot RAITO
+			msgbox Risaia_Rosa_3_50_MapScript_text9 MSG_NORMAL
+			special 0x15A
+			pause 0x1E
+			spriteface 0x1 0x4
+			pause 0x1E
+			show_mugshot RAITO
+			msgbox Risaia_Rosa_3_50_MapScript_text10 MSG_NORMAL
+			special 0x15A
+			pause 0x1E
+			applymovement 0x1 Risaia_Rosa_3_50_MapScript_mov2
+			waitmovement 0x1
+			spriteface 0xFF 0x1
+			pause 0x1E
+			show_mugshot RAITO
+			msgbox Risaia_Rosa_3_50_MapScript_text11 MSG_NORMAL
+			special 0x15A
+			pause 0x1E
+			applymovement 0x1 Risaia_Rosa_3_50_MapScript_mov3
+			waitmovement 0x1
+			movesprite 0x1 0x0 0x0
+			//disable level script 
+			setvar 0x4067 0x0
+			//go on var 
+			setvar 0x4051 0x54
+			fadedefault
+			releaseall
+			end
+
+	Risaia_Rosa_3_50_MapScript_mov1:
+		.byte 0x23
+		.byte 0x23
+		.byte 0x23
+		.byte 0xFE
+
+	Risaia_Rosa_3_50_MapScript_mov2:
+		.byte 0x10
+		.byte 0x13
+		.byte 0x1 
+		.byte 0xFE
+
+	Risaia_Rosa_3_50_MapScript_mov3:
+		.byte 0x10
+		.byte 0x13
+		.byte 0x10
+		.byte 0x10
+		.byte 0x10
+		.byte 0x12
+		.byte 0x12
+		.byte 0x12
+		.byte 0x12
+		.byte 0x12
+		.byte 0x10
+		.byte 0x10
+		.byte 0x10
+		.byte 0x10
+		.byte 0x60
+		.byte 0x12
+		.byte 0x12
+		.byte 0x12
+		.byte 0x12
+		.byte 0xFE
 
 
 //___TILEs___
@@ -77,16 +193,16 @@ EventScript_Risaia_Rosa_3_50_tile0:
 	waitmovement 0xFF
 	sound 0x15
 	pause 0x1E
-	showpokepic 0x3BA 0x0 0x6
+	show_mugshot RAITO
 	msgbox Risaia_Rosa_3_50_tile0_text1 MSG_NORMAL
 	special 0x15A	
 	pause 0x1E
-	showpokepic 0x3BA 0x0 0x6
+	show_mugshot RAITO
 	msgbox Risaia_Rosa_3_50_tile0_text2 MSG_NORMAL
 	special 0x15A	
 	playsong 0x188
 	pause 0x2E
-	showpokepic 0x3BA 0x0 0x6
+	show_mugshot RAITO
 	msgbox Risaia_Rosa_3_50_tile0_text3 MSG_NORMAL
 	special 0x15A	
 	pause 0x1E
@@ -94,7 +210,7 @@ EventScript_Risaia_Rosa_3_50_tile0:
 	applymovement 0x7F Risaia_Rosa_3_50_tile0_mov2
 	waitmovement 0x7F
 	pause 0x2E
-	showpokepic 0x3BA 0x0 0x6
+	show_mugshot RAITO
 	msgbox Risaia_Rosa_3_50_tile0_text4 MSG_NORMAL
 	special 0x15A	
 	pause 0x2E	
@@ -102,25 +218,25 @@ EventScript_Risaia_Rosa_3_50_tile0:
 	waitmovement 0x7F	
 
 	pause 0x25
-	showpokepic 0x3BA 0x0 0x6
+	show_mugshot RAITO
 	msgbox Risaia_Rosa_3_50_tile0_text5 MSG_NORMAL
 	special 0x15A	
 	pause 0x1E
 	spriteface 0x1 0x1
 	pause 0x1E
 	pause 0x1E
-	showpokepic 0x3BA 0x0 0x6
+	show_mugshot RAITO
 	msgbox Risaia_Rosa_3_50_tile0_text6 MSG_NORMAL
 	special 0x15A	
 	pause 0x1E
 	spriteface 0x1 0x2
 	pause 0x1E
-	showpokepic 0x3BA 0x0 0x6
+	show_mugshot RAITO
 	msgbox Risaia_Rosa_3_50_tile0_text7 MSG_NORMAL
 	special 0x15A	
 	spriteface 0x1 0x1
 	pause 0x1E
-	showpokepic 0x3BA 0x0 0x6
+	show_mugshot RAITO
 	msgbox Risaia_Rosa_3_50_tile0_text8 MSG_NORMAL
 	special 0x15A	
 	pause 0x25
@@ -131,7 +247,7 @@ EventScript_Risaia_Rosa_3_50_tile0:
 	applymovement 0xFF mov_question
 	waitmovement 0xFF
 	pause 0x1E
-	showpokepic 0x3B6 0x0 0x6
+	show_mugshot PLAYER
 	msgbox Risaia_Rosa_3_50_tile0_text16 MSG_NORMAL
 	special 0x15A	
 	pause 0x25
@@ -142,15 +258,15 @@ EventScript_Risaia_Rosa_3_50_tile0:
 	applymovement 0x1 mov_exclamation
 	waitmovement 0x1
 	pause 0x1E
-	showpokepic 0x3BA 0x0 0x6
+	show_mugshot RAITO
 	msgbox Risaia_Rosa_3_50_tile0_text9 MSG_NORMAL
 	special 0x15A	
 	pause 0x1E
-	showpokepic 0x3B6 0x0 0x6
+	show_mugshot PLAYER
 	msgbox Risaia_Rosa_3_50_tile0_text10 MSG_NORMAL
 	special 0x15A	
 	pause 0x1E
-	showpokepic 0x3BA 0x0 0x6
+	show_mugshot RAITO
 	msgbox Risaia_Rosa_3_50_tile0_text11 MSG_NORMAL
 	special 0x15A	
 
@@ -159,7 +275,7 @@ EventScript_Risaia_Rosa_3_50_tile0:
 	waitmovement 0x1
 	spriteface 0xFF 0x2
 	pause 0x1E
-	showpokepic 0x3BA 0x0 0x6
+	show_mugshot RAITO
 	msgbox Risaia_Rosa_3_50_tile0_text12 MSG_NORMAL
 	special 0x15A	
 	pause 0x1E	
@@ -175,7 +291,7 @@ EventScript_Risaia_Rosa_3_50_tile0:
 	pause 0x25
 	spritebehave 0x2 0x49
 	pause 0x25
-	showpokepic 0x3BA 0x0 0x6
+	show_mugshot RAITO
 	msgbox Risaia_Rosa_3_50_tile0_text12b MSG_NORMAL
 	special 0x15A	
 	pause 0x1E		
@@ -199,14 +315,14 @@ EventScript_Risaia_Rosa_3_50_tile0:
 	setmaptile 0x10 0x12 0x3C1 0x1
 	special 0x8e
 	pause 0x25
-	showpokepic 0x3BA 0x0 0x6
+	show_mugshot RAITO
 	msgbox Risaia_Rosa_3_50_tile0_text12a MSG_NORMAL
 	special 0x15A	
 	spriteface 0x1 0x4
 	pause 0x10
 	spriteface 0xFF 0x3
 	pause 0x1E
-	showpokepic 0x3BA 0x0 0x6
+	show_mugshot RAITO
 	msgbox Risaia_Rosa_3_50_tile0_text13 MSG_NORMAL
 	special 0x15A		
 	setflag 0x990
@@ -291,7 +407,7 @@ Risaia_Rosa_3_50_tile0_mov7:
 .global EventScript_Risaia_Rosa_3_50_tile1
 EventScript_Risaia_Rosa_3_50_tile1:
 	lockall
-	showpokepic 0x3B6 0x0 0x6
+	show_mugshot PLAYER
 	msgbox Risaia_Rosa_3_50_tile1_text1 MSG_NORMAL
 	special 0x15A
 	getplayerpos 0x4001 0x4002

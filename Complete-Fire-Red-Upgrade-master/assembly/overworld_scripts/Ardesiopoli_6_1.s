@@ -54,13 +54,13 @@ gMapScripts_Ardesiopoli_6_1:
 
 		Ardesiopoli_6_1_MapScriptOnFrameBegin:
 			lockall
-			showpokepic 0x3B8 0x0 0x6
+			show_mugshot FILIBERTO
 			
 			msgbox Ardesiopoli_6_1_MapScriptOnFrame_text1 MSG_NORMAL
 			special 0x15A	
 			pause 0x1E
 			spriteface 0x1 0x4
-			showpokepic 0x3B8 0x0 0x6
+			show_mugshot FILIBERTO
 			msgbox Ardesiopoli_6_1_MapScriptOnFrame_text2 MSG_NORMAL
 			special 0x15A				
 			spriteface 0x5 0x3
@@ -69,7 +69,7 @@ gMapScripts_Ardesiopoli_6_1:
 			applymovement 0x5 Ardesiopoli_6_1_MapScriptOnFrame_mov1
 			waitmovement 0x0
 			spriteface 0x1 0x1 
-			showpokepic 0x3B8 0x0 0x6
+			show_mugshot FILIBERTO
 			msgbox Ardesiopoli_6_1_MapScriptOnFrame_text4 MSG_NORMAL
 			special 0x15A	
 			applymovement 0x1 Ardesiopoli_6_1_MapScriptOnFrame_mov2
@@ -80,14 +80,14 @@ gMapScripts_Ardesiopoli_6_1:
 			sound 0x15
 			applymovement 0x1 Ardesiopoli_6_1_MapScriptOnFrame_mov2_a
 			waitmovement 0x1 
-			showpokepic 0x3B8 0x0 0x6
+			show_mugshot FILIBERTO
 			msgbox Ardesiopoli_6_1_MapScriptOnFrame_text5 MSG_NORMAL
 			special 0x15A
 			pause 0x1E	
 			applymovement 0x1 Ardesiopoli_6_1_MapScriptOnFrame_mov3
 			waitmovement 0x1
 			playsong 0x188 0x0
-			showpokepic 0x3B8 0x0 0x6
+			show_mugshot FILIBERTO
 			msgbox Ardesiopoli_6_1_MapScriptOnFrame_text6 MSG_NORMAL
 			special 0x15A
 			pause 0x1E			
@@ -96,22 +96,22 @@ gMapScripts_Ardesiopoli_6_1:
 			sound 0x15	
 			applymovement 0x1 Ardesiopoli_6_1_MapScriptOnFrame_mov4_a
 			waitmovement 0x1
-			showpokepic 0x3B8 0x0 0x6
+			show_mugshot FILIBERTO
 			msgbox Ardesiopoli_6_1_MapScriptOnFrame_text7 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
 			applymovement 0x1 Ardesiopoli_6_1_MapScriptOnFrame_mov5
 			waitmovement 0x1 
-			showpokepic 0x3B8 0x0 0x6
+			show_mugshot FILIBERTO
 			msgbox Ardesiopoli_6_1_MapScriptOnFrame_text8 MSG_NORMAL
 			special 0x15A	
 			pause 0x1E
-			showpokepic 0x3B8 0x0 0x6
+			show_mugshot FILIBERTO
 			msgbox Ardesiopoli_6_1_MapScriptOnFrame_text9 MSG_NORMAL
 			special 0x15A				
 			fadedefault
 			pause 0x1E
-			showpokepic 0x3B8 0x0 0x6
+			show_mugshot FILIBERTO
 			msgbox Ardesiopoli_6_1_MapScriptOnFrame_text10 MSG_NORMAL
 			special 0x15A
 			setvar 0x4050 0xA
@@ -183,7 +183,7 @@ EventScript_Ardesiopoli_6_1_NPC0:
 	if 0x1 _goto EventScript_Ardesiopoli_6_1_NPC0_P1
 	applymovement 0x1 mov_exclamation
 	waitmovement 0x1	
-	showpokepic 0x3B8 0x0 0x6
+	show_mugshot FILIBERTO
 	msgbox Ardesiopoli_6_1_NPC0_text1 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
@@ -194,16 +194,12 @@ EventScript_Ardesiopoli_6_1_NPC0:
 	compare 0x4001 0x0A
 	if 0x1 _call EventScript_Ardesiopoli_6_1_NPC0_D
 	pause 0x1E
-	showpokepic 0x3B8 0x0 0x6
+	show_mugshot FILIBERTO
 	msgbox Ardesiopoli_6_1_NPC0_text2 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
 	compare 0x501F 0x100
-	if 0x1 _call Player_Blue
-	compare 0x501F 0x1A3
-	if 0x1 _call Player_Orange
-	compare 0x501F 0x1A4
-	if 0x1 _call Player_Green	
+	show_mugshot PLAYER
 	msgbox Ardesiopoli_6_1_NPC0_text3 MSG_NORMAL
 	special 0x15A
 	pause 0x1E	
@@ -212,7 +208,7 @@ EventScript_Ardesiopoli_6_1_NPC0:
 	waitmovement 0x1
 	spriteface 0x1 0x1
 	pause 0x1E
-	showpokepic 0x3B8 0x0 0x6
+	show_mugshot FILIBERTO
 	msgbox Ardesiopoli_6_1_NPC0_text4 MSG_NORMAL
 	special 0x15A
 	setvar 0x4051 0x31
@@ -265,7 +261,7 @@ EventScript_Ardesiopoli_6_1_NPC0:
 		.byte 0xFE
 
 	EventScript_Ardesiopoli_6_1_NPC0_P1:
-		showpokepic 0x3B8 0x0 0x6
+		show_mugshot FILIBERTO
 		msgbox Ardesiopoli_6_1_NPC0_text5 MSG_NORMAL
 		special 0x15A
 		release 
@@ -313,15 +309,3 @@ EventScript_Ardesiopoli_6_1_Sign0:
 EventScript_Ardesiopoli_6_1_Sign1:
 	msgbox Ardesiopoli_6_1_Sign1_text1 0x7
 	end
-
-Player_Blue:
-	showpokepic 0x3b6 0x0 0x6
-	return
-
-Player_Orange:
-	showpokepic 0x3bE 0x0 0x6
-	return
-
-Player_Green:
-	showpokepic 0x3bF 0x0 0x6
-	return

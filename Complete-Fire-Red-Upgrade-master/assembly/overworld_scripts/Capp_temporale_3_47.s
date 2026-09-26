@@ -69,14 +69,14 @@ gMapScripts_Capp_temporale_3_47:
 		pause 0x1E
 		applymovement 0x4 Capp_temporale_3_47_mov1
 		waitmovement 0x0
-		showpokepic 0x3B9 0x0 0x6
+		show_mugshot UNKNOWN_MAN_2
     	msgbox EventScript_Capp_temporale_3_47_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x1e
 		movesprite 0x1 0x06 0x0C
 		sound 0xC
 		pause 0x1e
-		showpokepic 0x3B9 0x0 0x6
+		show_mugshot UNKNOWN_MAN_2
     	msgbox EventScript_Capp_temporale_3_47_text2 MSG_NORMAL
 		special 0x15A		
 		pause 0x1e
@@ -84,7 +84,7 @@ gMapScripts_Capp_temporale_3_47:
 		applymovement 0xFF Capp_temporale_3_47_mov2a
 		waitmovement 0x4
 		pause 0x1e
-		showpokepic 0x3B9 0x0 0x6
+		show_mugshot UNKNOWN_MAN_2
     	msgbox EventScript_Capp_temporale_3_47_text3 MSG_NORMAL
 		special 0x15A		
 		pause 0x1e	
@@ -100,7 +100,7 @@ gMapScripts_Capp_temporale_3_47:
 		waitmovement 0x0
 		spritebehave 0x2 0x43
 		spriteface 0x4 0x3
-		showpokepic 0x3B9 0x0 0x6
+		show_mugshot UNKNOWN_MAN_2
     	msgbox EventScript_Capp_temporale_3_47_text5 MSG_NORMAL
 		special 0x15A		
 		pause 0x1e
@@ -193,7 +193,7 @@ gMapScripts_Capp_temporale_3_47:
 		applymovement 0x4 Capp_temporale_3_47_mov7
 		waitmovement 0x4
 		pause 0x1E
-		showpokepic 0x3B9 0x0 0x6
+		show_mugshot UNKNOWN_MAN_2
     	msgbox EventScript_Capp_temporale_3_47_text6 MSG_NORMAL
 		special 0x15A
 		pause 0x1e
@@ -234,12 +234,7 @@ gMapScripts_Capp_temporale_3_47:
 		msgbox EventScript_Capp_temporale_3_47_text7 0x7
 		setvar 0x4050 0x6
 		setvar 0x4051 0x2D
-		compare 0x5006 0x0 
-		if 0x1 _call OW_Player_Blue
-		compare 0x5006 0x1
-		if 0x1 _call OW_Player_Orange
-		compare 0x5006 0x2
-		if 0x1 _call OW_Player_Green
+		setvar 0x501F 0x100
 		playsong 0x0 0x0
 		fadescreen 0x1
 		writebytetooffset 0x30 0x4000012
@@ -251,15 +246,3 @@ gMapScripts_Capp_temporale_3_47:
 		warpmuted 0x04 0x01 0xFF 0x01 0x03
 		releaseall
 		end
-
-OW_Player_Blue:
-	setvar 0x501F 0x100
-	return
-
-OW_Player_Orange:
-	setvar 0x501F 0x1A3
-	return
-
-OW_Player_Green:
-	setvar 0x501F 0x1A4
-	return

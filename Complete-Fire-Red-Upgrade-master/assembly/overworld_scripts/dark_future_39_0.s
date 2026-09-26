@@ -33,7 +33,7 @@ Dark_Future_39_0_MapScriptOnFrameBegin_P1:
     applymovement 0x1 dark_future_39_0_mov3
     waitmovement 0xFF
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_39_0_text1 MSG_NORMAL
 	special 0x15A
     pause 0x1E
@@ -43,7 +43,7 @@ Dark_Future_39_0_MapScriptOnFrameBegin_P1:
     applymovement 0xFF mov_question
     waitmovement 0xFF
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_39_0_text2 MSG_NORMAL
 	special 0x15A   
     pause 0x1E
@@ -51,7 +51,7 @@ Dark_Future_39_0_MapScriptOnFrameBegin_P1:
     waitmovement 0xFF
     pause 0x1E
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_39_0_text3 MSG_NORMAL
 	special 0x15A   
     pause 0x15
@@ -71,7 +71,7 @@ Dark_Future_39_0_MapScriptOnFrameBegin_P1:
     waitmovement 0x1
     spriteface 0xFF 0x2 
     cry 0x3A 0x0
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_39_0_text4 MSG_NORMAL
 	special 0x15A  
     pause 0x1E
@@ -87,12 +87,12 @@ Dark_Future_39_0_MapScriptOnFrameBegin_P1:
     waitfanfare
     movesprite 0x2 0x0 0xC
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_39_0_text5 MSG_NORMAL
 	special 0x15A   
     pause 0x2E
     spriteface 0xFF 0x3 
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_39_0_text6 MSG_NORMAL
 	special 0x15A         
     pause 0x1E
@@ -100,7 +100,7 @@ Dark_Future_39_0_MapScriptOnFrameBegin_P1:
     applymovement 0x1 dark_future_39_0_mov9
     waitmovement 0x1
     pause 0x3E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_39_0_text7 MSG_NORMAL
 	special 0x15A     
     pause 0x1E

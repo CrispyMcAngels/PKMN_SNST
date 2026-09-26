@@ -84,20 +84,20 @@ gMapScripts_Percorso1_3_19:
 			applymovement 0x4 MapScripts_Percorso1_3_19_MapScriptOnFrame_mov8
 			waitmovement 0x0
 			
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			//Wow, non avevo ancora...
 			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text8 MSG_NORMAL
 			special 0x15A
 			applymovement 0x3 MapScripts_Percorso1_3_19_MapScriptOnFrame_mov9
 			waitmovement 0x0
 			
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			//Ah player, prendi questa...
 			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text9 MSG_NORMAL
 			special 0x15A
 			giveitem 0x4 0x1 MSG_OBTAIN
 			
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			//Crispy: Grazie alle sue ottime
 			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text10 MSG_NORMAL
 			special 0x15A
@@ -108,7 +108,7 @@ gMapScripts_Percorso1_3_19:
 			applymovement 0x4 mov_exclamation
 			waitmovement 0x4
 			
-			showpokepic 0x3B5 0x0 0x6
+			show_mugshot NAOMI
 			//Naomi: Hey Crispy, non avresti\nuna Pok\eball anche per me?
 			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text10a MSG_NORMAL
 			special 0x15A
@@ -117,7 +117,7 @@ gMapScripts_Percorso1_3_19:
 			waitmovement 0x3
 			pause 0x1e			
 			
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			//Crispy: Mi dispiace Naomi
 			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text10b MSG_NORMAL
 			special 0x15A
@@ -125,7 +125,7 @@ gMapScripts_Percorso1_3_19:
 			waitmovement 0x3			
 			pause 0x1E
 			
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			//Crispy: Ma certo!\nPerche' non andate a far visita
 			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text10c MSG_NORMAL
 			special 0x15A		
@@ -133,7 +133,7 @@ gMapScripts_Percorso1_3_19:
 			applymovement 0x4 mov_question
 			waitmovement 0x4	
 					
-			showpokepic 0x3B5 0x0 0x6
+			show_mugshot NAOMI
 			//Naomi: Sei sicuro?
 			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text10d MSG_NORMAL
 			special 0x15A
@@ -141,7 +141,7 @@ gMapScripts_Percorso1_3_19:
 			pause 0x1e
 			spriteface 0xFF 0x1
 			
-			showpokepic 0x3B5 0x0 0x6
+			show_mugshot NAOMI
 			//Naomi: [Player], che stiamo aspettando?
 			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text10e MSG_NORMAL
 			special 0x15A
@@ -150,7 +150,7 @@ gMapScripts_Percorso1_3_19:
 			spriteface 0xff 0x3
 			pause 0x1E
 			
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			//Crispy: Oh! Si e' fatto tardi...
 			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text10f MSG_NORMAL
 			special 0x15A
@@ -159,7 +159,7 @@ gMapScripts_Percorso1_3_19:
 			waitmovement 0x3
 			pause 0x1e
 			
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			//Crispy: Naomi, [Player], perche..
 			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text10g MSG_NORMAL
 			special 0x15A
@@ -171,23 +171,18 @@ gMapScripts_Percorso1_3_19:
 			pause 0x1E
 			spriteface 0xFF 0x1
 			
-			showpokepic 0x3B5 0x0 0x6
+			show_mugshot NAOMI
 			//tuo fratello...
 			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text11 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
 			
-			compare 0x501F 0x100
-			if 0x1 _call Player_Blue
-			compare 0x501F 0x1A3
-			if 0x1 _call Player_Orange
-			compare 0x501F 0x1A4
-			if 0x1 _call Player_Green
+			show_mugshot PLAYER
 			//...
 			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text12 MSG_NORMAL
 			special 0x15A	
 			
-			showpokepic 0x3B5 0x0 0x6
+			show_mugshot NAOMI
 			//Per oggi puo' bastare
 			msgbox MapScripts_Percorso1_3_19_MapScriptOnFrame_text13 MSG_NORMAL
 			special 0x15A
@@ -259,12 +254,7 @@ gMapScripts_Percorso1_3_19:
 EventScript_Percorso1_3_19_tile0:
 	lockall
 	
-	compare 0x501F 0x100
-	if 0x1 _call Player_Blue
-	compare 0x501F 0x1A3
-	if 0x1 _call Player_Orange
-	compare 0x501F 0x1A4
-	if 0x1 _call Player_Green
+	show_mugshot PLAYER
     msgbox EventScript_Percorso1_3_19_tile0_text1 MSG_NORMAL
     special 0x15A
 	applymovement 0xFF EventScript_Percorso1_3_19_tile0_mov1
@@ -297,18 +287,13 @@ EventScript_Percorso1_3_19_tile1:
 	applymovement 0x4 EventScript_Percorso1_3_19_tile1_mov2a
 	waitmovement 0x0
 	
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	//Aiutooo
     msgbox EventScript_Percorso1_3_19_tile1_text2 MSG_NORMAL
     special 0x15A
 	pause 0x1E
 	
-	compare 0x501F 0x100
-	if 0x1 _call Player_Blue
-	compare 0x501F 0x1A3
-	if 0x1 _call Player_Orange
-	compare 0x501F 0x1A4
-	if 0x1 _call Player_Green
+	show_mugshot PLAYER
 	//...
     msgbox EventScript_Percorso1_3_19_tile1_text3 MSG_NORMAL
     special 0x15A
@@ -343,7 +328,7 @@ EventScript_Percorso1_3_19_tile1:
 	fadedefault
 	pause 0x1E
 	
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	//Fiuuu, per un pelo!
     msgbox EventScript_Percorso1_3_19_tile1_text5 MSG_NORMAL
     special 0x15A
@@ -355,7 +340,7 @@ EventScript_Percorso1_3_19_tile1:
 	
 	msgbox EventScript_Percorso1_3_19_tile1_text4 MSG_NORMAL
 	
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	//sembra proprio che...
     msgbox EventScript_Percorso1_3_19_tile1_text6 MSG_NORMAL
     special 0x15A
@@ -371,12 +356,7 @@ EventScript_Percorso1_3_19_tile1:
 
 	EventScript_Percorso1_3_19_tile1_yes:
 		
-		compare 0x501F 0x100
-		if 0x1 _call Player_Blue
-		compare 0x501F 0x1A3
-		if 0x1 _call Player_Orange
-		compare 0x501F 0x1A4
-		if 0x1 _call Player_Green
+		show_mugshot PLAYER
 		//vai, pokeball....
 		msgbox EventScript_Percorso1_3_19_tile1_text8 MSG_NORMAL
 		special 0x15A
@@ -393,7 +373,7 @@ EventScript_Percorso1_3_19_tile1:
 		applymovement 0x4 EventScript_Percorso1_3_19_tile1_mov10
 		waitmovement 0x0
 		
-		showpokepic 0x3B5 0x0 0x6
+		show_mugshot NAOMI
 		//complimenti player
 		msgbox EventScript_Percorso1_3_19_tile1_text10 MSG_NORMAL
 		special 0x15A
@@ -411,7 +391,7 @@ EventScript_Percorso1_3_19_tile1:
 	EventScript_Percorso1_3_19_tile1_no:
 		pause 0x1E
 		
-		showpokepic 0x3B5 0x0 0x6
+		show_mugshot NAOMI
 		//sei sicuro?
 		msgbox EventScript_Percorso1_3_19_tile1_text11 MSG_NORMAL
 		special 0x15A
@@ -582,20 +562,8 @@ EventScript_Percorso_1_3_19_NPC3:
 	lock
 	faceplayer
 	
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	msgbox Percorso_1_3_19_NPC3_text1 MSG_NORMAL
 	special 0x15A
 	release
 	end
-
-Player_Blue:
-	showpokepic 0x3b6 0x0 0x6
-	return
-
-Player_Orange:
-	showpokepic 0x3bE 0x0 0x6
-	return
-
-Player_Green:
-	showpokepic 0x3bF 0x0 0x6
-	return

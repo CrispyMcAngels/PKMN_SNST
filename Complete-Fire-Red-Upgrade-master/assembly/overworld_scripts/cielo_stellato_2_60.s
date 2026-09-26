@@ -801,22 +801,22 @@ CieloStellato_2_60_Part1a:
     applymovement 0x2 CieloStelato_intro_mov2_moon
     waitmovement 0xFF
     pause 0x3E
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
 	msgbox CieloStellato_2_60_Part1_text1 MSG_NORMAL
 	special 0x15A
     pause 0x1F
 
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
 	msgbox CieloStellato_2_60_Part1_text2 MSG_NORMAL
 	special 0x15A
     pause 0x1F
 
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
 	msgbox CieloStellato_2_60_Part1_text3 MSG_NORMAL
 	special 0x15A
     pause 0x2E
 
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
 	msgbox CieloStellato_2_60_Part1_text4 MSG_NORMAL
 	special 0x15A
     pause 0x1E
@@ -826,7 +826,7 @@ CieloStellato_2_60_Part1a:
     pause 0x1E
     showpokepic 0x3C4 0xA 0x5
     pause 0xF
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
     msgbox CieloStellato_2_60_Part1_text5 MSG_NORMAL
 	special 0x15A
     special 0x15A
@@ -834,7 +834,7 @@ CieloStellato_2_60_Part1a:
 
     showpokepic 0x3C5 0xA 0x5
     pause 0xF
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
     msgbox CieloStellato_2_60_Part1_text6 MSG_NORMAL
 	special 0x15A
     special 0x15A
@@ -842,7 +842,7 @@ CieloStellato_2_60_Part1a:
 
     showpokepic 0x3C6 0xA 0x5
     pause 0xF
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
     msgbox CieloStellato_2_60_Part1_text7 MSG_NORMAL
 	special 0x15A
     special 0x15A
@@ -850,12 +850,12 @@ CieloStellato_2_60_Part1a:
     fadescreen 0x0  
 
     pause 0x1E
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
 	msgbox CieloStellato_2_60_Part1_text8 MSG_NORMAL
 	special 0x15A
     pause 0x1E   
 
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
 	msgbox CieloStellato_2_60_Part1_text9 MSG_NORMAL
 	special 0x15A
     pause 0x1E   
@@ -913,7 +913,7 @@ PassatoTuono_3_46_MapScriptOnFrame:
     PassatoTuono_3_46_MapScriptOnFramePart1:
         lockall
         pause 0x2E
-        showpokepic 0x3C8 0x0 0x6
+        show_mugshot OLD_CRISPY
         msgbox CieloStellato_2_60_Part1_text10 MSG_NORMAL
         special 0x15A
         pause 0x2E   
@@ -940,7 +940,7 @@ PassatoAcqua_3_67_MapScriptOnFrame:
         PassatoAcqua_3_67_MapScriptOnFramePart1:
             lockall
             pause 0x2E
-            showpokepic 0x3C8 0x0 0x6
+            show_mugshot OLD_CRISPY
             msgbox CieloStellato_2_60_Part1_text11 MSG_NORMAL
             special 0x15A
             pause 0x2E   
@@ -968,7 +968,7 @@ PassatoFuoco_3_68_MapScriptOnFrame:
         PassatoFuoco_3_68_MapScriptOnFramePart1:
             lockall
             pause 0x2E
-            showpokepic 0x3C8 0x0 0x6
+            show_mugshot OLD_CRISPY
             msgbox CieloStellato_2_60_Part1_text12 MSG_NORMAL
             special 0x15A
             pause 0x2E   
@@ -979,17 +979,17 @@ PassatoFuoco_3_68_MapScriptOnFrame:
     
 CieloStellato_2_60_Part2:
     pause 0x22
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
 	msgbox CieloStellato_2_60_Part1_text13 MSG_NORMAL
 	special 0x15A
     pause 0x1F
 
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
 	msgbox CieloStellato_2_60_Part1_text14 MSG_NORMAL
 	special 0x15A
     pause 0x1F
 
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
 	msgbox CieloStellato_2_60_Part1_text15 MSG_NORMAL
 	special 0x15A
     pause 0x1F
@@ -1004,22 +1004,22 @@ CieloStellato_2_60_Part2:
     waitstate
 
     pause 0x1E
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
 	msgbox CieloStellato_2_60_Part1_text16 MSG_NORMAL
 	special 0x15A
     pause 0x1F
 
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
 	msgbox CieloStellato_2_60_Part1_text17 MSG_NORMAL
 	special 0x15A
     pause 0x1F
 
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
 	msgbox CieloStellato_2_60_Part1_text18 MSG_NORMAL
 	special 0x15A
     pause 0x1F
 
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
 	msgbox CieloStellato_2_60_Part1_text19 MSG_NORMAL
 	special 0x15A
     pause 0x1F
@@ -1030,7 +1030,7 @@ CieloStellato_2_60_Part2:
     applymovement 0xFF CieloStellato_2_60_mov1
     applymovement 0x2 CieloStellato_2_60_mov1_moon
     waitmovement 0xFF
-    showpokepic 0x3C8 0x0 0x6
+    show_mugshot OLD_CRISPY
 	msgbox CieloStellato_2_60_Part1_text20 MSG_NORMAL
 	special 0x15A
     pause 0x1F
@@ -1040,6 +1040,7 @@ CieloStellato_2_60_Part2:
     writebytetooffset 0x30 0x4000012
     msgbox CieloStellato_2_60_Part1_text21 0x7
     writebytetooffset 0x0 0x4000012
+    setvar 0x500E 0x5
     warpmuted 0x3 0xC 0xFF 0x11 0x9
     waitkeypress
     releaseall

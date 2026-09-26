@@ -108,7 +108,7 @@ EventScript_Foresta_Frondosa_1_0_Sign5:
 		waitmovement 0xB
 		spriteface 0xFF 0x4 
 		pause 0x1E
-		showpokepic 0x3BA 0x0 0x6
+		show_mugshot RAITO
 		
 		msgbox Foresta_Frondosa_1_0_Sign5_text5 MSG_NORMAL
 		special 0x15A
@@ -117,12 +117,7 @@ EventScript_Foresta_Frondosa_1_0_Sign5:
 		waitmovement 0xB
 		movesprite2 0xB 0x1 0x0
 		pause 0x1E
-		compare 0x501F 0x100
-		if 0x1 _call Player_Blue
-		compare 0x501F 0x1A3
-		if 0x1 _call Player_Orange
-		compare 0x501F 0x1A4
-		if 0x1 _call Player_Green
+		show_mugshot PLAYER
 		msgbox Foresta_Frondosa_1_0_Sign5_text6 MSG_NORMAL
 		closeonkeypress
 		special 0x15A
@@ -347,12 +342,7 @@ EventScript_Foresta_Frondosa_1_0_NPC7:
 	applymovement 0xFF Foresta_Frondosa_1_0_NPC7_mov2
 	waitmovement 0xFF
 	
-	compare 0x501F 0x100
-	if 0x1 _call Player_Blue
-	compare 0x501F 0x1A3
-	if 0x1 _call Player_Orange
-	compare 0x501F 0x1A4
-	if 0x1 _call Player_Green
+	show_mugshot PLAYER
     msgbox Foresta_Frondosa_1_0_NPC7_text2 MSG_NORMAL
     special 0x15A
 	pause 0x1E
@@ -372,14 +362,14 @@ EventScript_Foresta_Frondosa_1_0_NPC7:
 		waitmovement 0xB	
 		spriteface 0xFF 0x4
 		pause 0x1E
-		showpokepic 0x3BA 0x0 0x6
+		show_mugshot RAITO
 		msgbox Foresta_Frondosa_1_0_NPC7_text3 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		sound 0x15
 		applymovement 0xB mov_exclamation
 		waitmovement 0xB
-		showpokepic 0x3BA 0x0 0x6
+		show_mugshot RAITO
 		msgbox Foresta_Frondosa_1_0_NPC10_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -438,12 +428,7 @@ EventScript_Foresta_Frondosa_1_0_NPC8:
 	applymovement 0xFF Foresta_Frondosa_1_0_NPC7_mov2
 	waitmovement 0xFF
 	
-	compare 0x501F 0x100
-	if 0x1 _call Player_Blue
-	compare 0x501F 0x1A3
-	if 0x1 _call Player_Orange
-	compare 0x501F 0x1A4
-	if 0x1 _call Player_Green
+	show_mugshot PLAYER
     msgbox Foresta_Frondosa_1_0_NPC7_text2 MSG_NORMAL
     special 0x15A
 	pause 0x1E
@@ -463,13 +448,13 @@ EventScript_Foresta_Frondosa_1_0_NPC8:
 		waitmovement 0xB	
 		spriteface 0xFF 0x4
 		pause 0x1E
-		showpokepic 0x3BA 0x0 0x6
+		show_mugshot RAITO
 		msgbox Foresta_Frondosa_1_0_NPC7_text3 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		applymovement 0xB mov_exclamation
 		waitmovement 0xB
-		showpokepic 0x3BA 0x0 0x6
+		show_mugshot RAITO
 		msgbox Foresta_Frondosa_1_0_NPC10_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -523,7 +508,7 @@ EventScript_Foresta_Frondosa_1_0_NPC10:
 	faceplayer
 	compare 0x4051 0x19
 	if 0x1 _goto EventScript_Foresta_Frondosa_1_0_NPC10_P2
-	showpokepic 0x3BA 0x0 0x6
+	show_mugshot RAITO
 	msgbox Foresta_Frondosa_1_0_NPC10_text1 MSG_NORMAL
 	special 0x15A
 	release
@@ -531,7 +516,7 @@ EventScript_Foresta_Frondosa_1_0_NPC10:
 
 
 	EventScript_Foresta_Frondosa_1_0_NPC10_P2:
-		showpokepic 0x3BA 0x0 0x6
+		show_mugshot RAITO
 		msgbox Foresta_Frondosa_1_0_NPC10_text2 MSG_NORMAL
 		special 0x15A
 		release
@@ -611,12 +596,7 @@ EventScript_Foresta_Frondosa_1_0_NPC21:
 	faceplayer
 	checkflag 0x95E
 	if 0x1 _goto EventScript_Foresta_Frondosa_1_0_NPC21_P2
-	compare 0x501F 0x100
-	if 0x1 _call Player_Blue
-	compare 0x501F 0x1A3
-	if 0x1 _call Player_Orange
-	compare 0x501F 0x1A4
-	if 0x1 _call Player_Green
+	show_mugshot PLAYER
 	msgbox Foresta_Frondosa_1_0_NPC21_text1 MSG_NORMAL
 	special 0x15A
 	release
@@ -624,32 +604,17 @@ EventScript_Foresta_Frondosa_1_0_NPC21:
 
 
 	EventScript_Foresta_Frondosa_1_0_NPC21_P2:
-		compare 0x501F 0x100
-		if 0x1 _call Player_Blue
-		compare 0x501F 0x1A3
-		if 0x1 _call Player_Orange
-		compare 0x501F 0x1A4
-		if 0x1 _call Player_Green
+		show_mugshot PLAYER
 		msgbox Foresta_Frondosa_1_0_NPC21_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		playsong 0x18B 0x0
-		compare 0x501F 0x100
-		if 0x1 _call Player_Blue
-		compare 0x501F 0x1A3
-		if 0x1 _call Player_Orange
-		compare 0x501F 0x1A4
-		if 0x1 _call Player_Green
+		show_mugshot PLAYER
 		msgbox Foresta_Frondosa_1_0_NPC21_text3 MSG_NORMAL
 		special 0x15A
 		fadedefault
 		pause 0x1E
-		compare 0x501F 0x100
-		if 0x1 _call Player_Blue
-		compare 0x501F 0x1A3
-		if 0x1 _call Player_Orange
-		compare 0x501F 0x1A4
-		if 0x1 _call Player_Green
+		show_mugshot PLAYER
 		msgbox Foresta_Frondosa_1_0_NPC21_text4 MSG_NORMAL
 		special 0x15A		
 		getplayerpos 0x4001 0x4002
@@ -669,12 +634,7 @@ EventScript_Foresta_Frondosa_1_0_NPC21:
 			applymovement 0xFF mov_exclamation
 			waitmovement 0xFF
 			pause 0x1E
-			compare 0x501F 0x100
-			if 0x1 _call Player_Blue
-			compare 0x501F 0x1A3
-			if 0x1 _call Player_Orange
-			compare 0x501F 0x1A4
-			if 0x1 _call Player_Green
+			show_mugshot PLAYER
 			msgbox Foresta_Frondosa_1_0_NPC21_text4a MSG_NORMAL
 			special 0x15A	
 			applymovement 0x15 Foresta_Frondosa_1_0_NPC21_mov3d
@@ -688,12 +648,7 @@ EventScript_Foresta_Frondosa_1_0_NPC21:
 			hidesprite 0x15
 			pause 0x1E
 			spriteface 0xFF 0x2
-			compare 0x501F 0x100
-			if 0x1 _call Player_Blue
-			compare 0x501F 0x1A3
-			if 0x1 _call Player_Orange
-			compare 0x501F 0x1A4
-			if 0x1 _call Player_Green
+			show_mugshot PLAYER
 			msgbox Foresta_Frondosa_1_0_NPC21_text6 MSG_NORMAL
 			special 0x15A
 			giveitem 0x112 0x1 MSG_FIND
@@ -715,12 +670,7 @@ EventScript_Foresta_Frondosa_1_0_NPC21:
 			applymovement 0xFF mov_exclamation
 			waitmovement 0xFF
 			pause 0x1E
-			compare 0x501F 0x100
-			if 0x1 _call Player_Blue
-			compare 0x501F 0x1A3
-			if 0x1 _call Player_Orange
-			compare 0x501F 0x1A4
-			if 0x1 _call Player_Green
+			show_mugshot PLAYER
 			msgbox Foresta_Frondosa_1_0_NPC21_text4a MSG_NORMAL
 			special 0x15A	
 			applymovement 0x15 Foresta_Frondosa_1_0_NPC21_mov3l
@@ -734,12 +684,7 @@ EventScript_Foresta_Frondosa_1_0_NPC21:
 			hidesprite 0x15
 			setflag 0x95F
 			pause 0x1E
-			compare 0x501F 0x100
-			if 0x1 _call Player_Blue
-			compare 0x501F 0x1A3
-			if 0x1 _call Player_Orange
-			compare 0x501F 0x1A4
-			if 0x1 _call Player_Green
+			show_mugshot PLAYER
 			msgbox Foresta_Frondosa_1_0_NPC21_text6 MSG_NORMAL
 			special 0x15A			
 			hidesprite 0x16
@@ -753,15 +698,3 @@ EventScript_Foresta_Frondosa_1_0_NPC21:
 					.byte 0x1e
 					.byte 0x1e
 					.byte 0xFE
-
-		Player_Blue:
-			showpokepic 0x3b6 0x0 0x6
-			return
-
-		Player_Orange:
-			showpokepic 0x3bE 0x0 0x6
-			return
-
-		Player_Green:
-			showpokepic 0x3bF 0x0 0x6
-			return

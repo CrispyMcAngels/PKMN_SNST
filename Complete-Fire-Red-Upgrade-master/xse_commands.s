@@ -1960,3 +1960,6 @@ map \map
 .hword \var, \val
 .word \script
 .endm
+
+@ Character portraits: show_mugshot <NAME>
+.include "../mugshot_defines.s"

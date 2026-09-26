@@ -269,12 +269,12 @@ gMapScripts_Passo_Tuono_1_124:
 				special 0x114
 				pause 0x1E
 				pause 0x1E
-				showpokepic 0x3AC 0x0 0x6
+				show_mugshot UNKNOWN_MAN
 				msgbox Passo_Tuono_1_124_text1 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
 				pause 0x1E
-				showpokepic 0x3AC 0x0 0x6
+				show_mugshot UNKNOWN_MAN
 				msgbox Passo_Tuono_1_124_text2 MSG_NORMAL
 				special 0x15A				
 				pause 0x1E
@@ -289,7 +289,7 @@ gMapScripts_Passo_Tuono_1_124:
 				waitstate
 
 				pause 0x1E
-				showpokepic 0x3AC 0x0 0x6
+				show_mugshot UNKNOWN_MAN
 				msgbox Passo_Tuono_1_124_text3 MSG_NORMAL
 				special 0x15A	
 				pause 0x25
@@ -373,18 +373,18 @@ gMapScripts_Passo_Tuono_1_124:
 				applymovement 0xFF Passo_Tuono_1_124_mov4e
 				waitmovement 0xFF
 				pause 0x1E
-				showpokepic 0x3AC 0x0 0x6
+				show_mugshot UNKNOWN_MAN
 				msgbox Passo_Tuono_1_124_text4 MSG_NORMAL
 				special 0x15A	
 				pause 0x1E
 				applymovement 0xFF Passo_Tuono_1_124_mov5
 				waitmovement 0xFF			
 				pause 0x1E
-				showpokepic 0x3AC 0x0 0x6
+				show_mugshot UNKNOWN_MAN
 				msgbox Passo_Tuono_1_124_text5 MSG_NORMAL
 				special 0x15A	
 				pause 0x1E
-				showpokepic 0x3AC 0x0 0x6
+				show_mugshot UNKNOWN_MAN
 				msgbox Passo_Tuono_1_124_text6 MSG_NORMAL
 				special 0x15A
 				sound 0xC
@@ -422,14 +422,14 @@ gMapScripts_Passo_Tuono_1_124:
 				sound 0x15
 				applymovement 0xFF Passo_Tuono_1_124_mov6_b
 				waitmovement 0xFF
-				showpokepic 0x3AC 0x0 0x6
+				show_mugshot UNKNOWN_MAN
 				msgbox Passo_Tuono_1_124_text7 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
 				applymovement 0xFF Passo_Tuono_1_124_mov7
 				waitmovement 0xFF
 				pause 0x1E
-				showpokepic 0x3AC 0x0 0x6
+				show_mugshot UNKNOWN_MAN
 				msgbox Passo_Tuono_1_124_text8 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
@@ -469,7 +469,7 @@ gMapScripts_Passo_Tuono_1_124:
 				msgbox Passo_Tuono_1_124_text9 MSG_NORMAL
 				pause 0x2E
 
-				showpokepic 0x3AC 0x0 0x6
+				show_mugshot UNKNOWN_MAN
 				msgbox Passo_Tuono_1_124_text10 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
@@ -595,12 +595,7 @@ gMapScripts_Passo_Tuono_1_124:
 				pause 0x1E
 				applymovement 0xFF Passo_Tuono_1_124_mov9
 				waitmovement 0xFF
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green	
+				show_mugshot PLAYER	
 				msgbox Passo_Tuono_1_124_text11 MSG_NORMAL	
 				special 0x15A	
 				pause 0x1E
@@ -610,12 +605,7 @@ gMapScripts_Passo_Tuono_1_124:
 				applymovement 0xFF Passo_Tuono_1_124_mov10_a
 				waitmovement 0xFF
 				pause 0x1E
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green	
+				show_mugshot PLAYER
 				msgbox Passo_Tuono_1_124_text12 MSG_NORMAL	
 				special 0x15A	
 				pause 0x1E
@@ -625,12 +615,7 @@ gMapScripts_Passo_Tuono_1_124:
 				applymovement 0xFF mov_exclamation
 				waitmovement 0xFF
 				pause 0x1E
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green					
+				show_mugshot PLAYER					
 				msgbox Passo_Tuono_1_124_text13 MSG_NORMAL	
 				special 0x15A	
 				pause 0x1E
@@ -641,11 +626,7 @@ gMapScripts_Passo_Tuono_1_124:
 				waitmovement 0xFF			
 				pause 0x1E
 				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green					
+				show_mugshot PLAYER				
 				msgbox Passo_Tuono_1_124_text14 MSG_NORMAL	
 				special 0x15A	
 				pause 0x1E
@@ -669,12 +650,7 @@ gMapScripts_Passo_Tuono_1_124:
 				sound 0x15
 				applymovement 0xFF mov_exclamation
 				waitmovement 0xFF
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green					
+				show_mugshot PLAYER				
 				msgbox Passo_Tuono_1_124_text16 MSG_NORMAL	
 				special 0x15A	
 				pause 0x1E				
@@ -715,38 +691,28 @@ gMapScripts_Passo_Tuono_1_124:
 				applymovement 0xFF Passo_Tuono_1_124_mov18_a
 				waitmovement 0xFF			
 				pause 0x1E
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green					
+				show_mugshot PLAYER					
 				msgbox Passo_Tuono_1_124_text17 MSG_NORMAL	
 				special 0x15A	
 				pause 0x1E
 				movesprite 0x5 0x06 0x07
 				pause 0x2E	
-				showpokepic 0x3C2 0x0 0x6
+				show_mugshot RAITO_SHADOW
 				msgbox Passo_Tuono_1_124_text18 MSG_NORMAL	
 				special 0x15A	
 				pause 0x2E					
-				showpokepic 0x3C2 0x0 0x6
+				show_mugshot RAITO_SHADOW
 				msgbox Passo_Tuono_1_124_text19 MSG_NORMAL	
 				special 0x15A	
 				pause 0x2E
 				applymovement 0xFF mov_exclamation
 				waitmovement 0xFF
 				pause 0x1E
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green					
+				show_mugshot PLAYER				
 				msgbox Passo_Tuono_1_124_text20 MSG_NORMAL	
 				special 0x15A	
 				pause 0x2E	
-				showpokepic 0x3C2 0x0 0x6
+				show_mugshot RAITO_SHADOW
 				msgbox Passo_Tuono_1_124_text21 MSG_NORMAL	
 				special 0x15A	
 				pause 0x2E
@@ -758,7 +724,7 @@ gMapScripts_Passo_Tuono_1_124:
 				waitmovement 0x6
 				sound 0x15
 				pause 0x25
-				showpokepic 0x3BA 0x0 0x6
+				show_mugshot RAITO
 				msgbox Passo_Tuono_1_124_text22 MSG_NORMAL	
 				special 0x15A	
 				pause 0x1E	
@@ -767,16 +733,11 @@ gMapScripts_Passo_Tuono_1_124:
 				waitmovement 0xFF
 				pause 0x1E
 				playsong 0x189 0x0
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green					
+				show_mugshot PLAYER				
 				msgbox Passo_Tuono_1_124_text23 MSG_NORMAL	
 				special 0x15A	
 				pause 0x2E	
-				showpokepic 0x3BA 0x0 0x6
+				show_mugshot RAITO
 				msgbox Passo_Tuono_1_124_text24 MSG_NORMAL	
 				special 0x15A	
 				pause 0x1E			
@@ -794,7 +755,7 @@ gMapScripts_Passo_Tuono_1_124:
 				applymovement 0x7 Passo_Tuono_1_124_mov21
 				waitmovement 0x7
 				pause 0x1E
-				showpokepic 0x3AD 0x0 0x6
+				show_mugshot VESPER
 				msgbox Passo_Tuono_1_124_text25 MSG_NORMAL	
 				special 0x15A	
 				pause 0x24
@@ -816,11 +777,11 @@ gMapScripts_Passo_Tuono_1_124:
 				applymovement 0xA Passo_Tuono_1_124_mov24
 				waitmovement 0xA	
 				pause 0x1E
-				showpokepic 0x3BB 0x0 0x6
+				show_mugshot DUSK_GRUNT_M
 				msgbox Passo_Tuono_1_124_text26 MSG_NORMAL	
 				special 0x15A 	
 				pause 0x2E
-				showpokepic 0x3AD 0x0 0x6
+				show_mugshot VESPER
 				msgbox Passo_Tuono_1_124_text27 MSG_NORMAL	
 				special 0x15A				
 				pause 0x25
@@ -829,20 +790,15 @@ gMapScripts_Passo_Tuono_1_124:
 				waitmovement 0x7F
 				special 0x114
 				pause 0x22
-				showpokepic 0x3AD 0x0 0x6
+				show_mugshot VESPER
 				msgbox Passo_Tuono_1_124_text28 MSG_NORMAL	
 				special 0x15A					
 				pause 0x1E
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green					
+				show_mugshot PLAYER					
 				msgbox Passo_Tuono_1_124_text29 MSG_NORMAL	
 				special 0x15A	
 				pause 0x2E	
-				showpokepic 0x3AD 0x0 0x6
+				show_mugshot VESPER
 				msgbox Passo_Tuono_1_124_text30 MSG_NORMAL	
 				special 0x15A	
 				pause 0x2E
@@ -863,7 +819,7 @@ gMapScripts_Passo_Tuono_1_124:
 			Passo_Tuono_1_124_MapScriptOnFrameBegin_P4:	 
 				spriteface 0xFF 0x3
 				pause 0x1E
-				showpokepic 0x3BB 0x0 0x6
+				show_mugshot DUSK_GRUNT_M
 				msgbox Passo_Tuono_1_124_text31 MSG_NORMAL	
 				special 0x15A	
 				trainerbattle3 0x3 0x4b 0x0 Passo_Tuono_1_124_text32
@@ -877,7 +833,7 @@ gMapScripts_Passo_Tuono_1_124:
 			Passo_Tuono_1_124_MapScriptOnFrameBegin_P5:	 
 				spriteface 0xFF 0x1
 				pause 0x1E
-				showpokepic 0x3BC 0x0 0x6
+				show_mugshot DUSK_GRUNT_F
 				msgbox Passo_Tuono_1_124_text34 MSG_NORMAL	
 				special 0x15A	
 				trainerbattle3 0x3 0x4c 0x0 Passo_Tuono_1_124_text35
@@ -891,7 +847,7 @@ gMapScripts_Passo_Tuono_1_124:
 			Passo_Tuono_1_124_MapScriptOnFrameBegin_P6:	 
 				spriteface 0xFF 0x4
 				pause 0x1E
-				showpokepic 0x3BB 0x0 0x6
+				show_mugshot DUSK_GRUNT_M
 				msgbox Passo_Tuono_1_124_text36 MSG_NORMAL	
 				special 0x15A	
 				trainerbattle3 0x3 0x4d 0x0 Passo_Tuono_1_124_text37
@@ -901,7 +857,7 @@ gMapScripts_Passo_Tuono_1_124:
 				spriteface 0xFF 0x2
 				
 				pause 0x1E
-				showpokepic 0x3BA 0x0 0x6
+				show_mugshot RAITO
 				msgbox Passo_Tuono_1_124_text33 MSG_NORMAL	
 				special 0x15A					
 				//heal party
@@ -912,7 +868,7 @@ gMapScripts_Passo_Tuono_1_124:
 				special 0x0 
 				fadescreen 0x0
 				pause 0x22
-				showpokepic 0x3BA 0x0 0x6
+				show_mugshot RAITO
 				msgbox Passo_Tuono_1_124_text38 MSG_NORMAL	
 				special 0x15A	
 				pause 0x23
@@ -934,7 +890,7 @@ gMapScripts_Passo_Tuono_1_124:
 				spriteface 0xFF 0x1
 				//discorsi Vesper
 				pause 0x1E
-				showpokepic 0x3AD 0x0 0x6
+				show_mugshot VESPER
 				msgbox Passo_Tuono_1_124_text39 MSG_NORMAL	
 				special 0x15A	
 				pause 0x1E
@@ -944,7 +900,7 @@ gMapScripts_Passo_Tuono_1_124:
 				movesprite 0xA 0x8 0x7
 				spriteface 0xA 0x3
 				pause 0x23	
-				showpokepic 0x3AD 0x0 0x6
+				show_mugshot VESPER
 				msgbox Passo_Tuono_1_124_text42 MSG_NORMAL	
 				special 0x15A	
 				pause 0x1E
@@ -962,17 +918,17 @@ gMapScripts_Passo_Tuono_1_124:
 				applymovement 0x6 mov_exclamation
 				waitmovement 0xFF
 				pause 0x1E
-				showpokepic 0x3BA 0x0 0x6
+				show_mugshot RAITO
 				msgbox Passo_Tuono_1_124_text43 MSG_NORMAL	
 				special 0x15A	
 				pause 0x1E				
-				showpokepic 0x3AD 0x0 0x6
+				show_mugshot VESPER
 				msgbox Passo_Tuono_1_124_text44 MSG_NORMAL	
 				special 0x15A					
 				pause 0x1E
 				spriteface 0x7 0x1
 				pause 0x1E				
-				showpokepic 0x3AD 0x0 0x6
+				show_mugshot VESPER
 				msgbox Passo_Tuono_1_124_text45 MSG_NORMAL	
 				special 0x15A		
 				pause 0x1E
@@ -990,7 +946,7 @@ gMapScripts_Passo_Tuono_1_124:
 				waitmovement 0x6
 				spriteface 0xFF 0x3
 				pause 0x1E
-				showpokepic 0x3BA 0x0 0x6
+				show_mugshot RAITO
 				msgbox Passo_Tuono_1_124_text46 MSG_NORMAL	
 				special 0x15A		
 				pause 0x1E				
@@ -1008,7 +964,7 @@ gMapScripts_Passo_Tuono_1_124:
 				pause 0x25
 				applymovement 0xB mov_exclamation
 				waitmovement 0xB
-				showpokepic 0x3B4 0x0 0x6
+				show_mugshot CRISPY
 				msgbox Passo_Tuono_1_124_text47 MSG_NORMAL	
 				special 0x15A		
 				pause 0x1E
@@ -1018,13 +974,13 @@ gMapScripts_Passo_Tuono_1_124:
 				pause 0x1E
 				msgbox Passo_Tuono_1_124_text48 MSG_NORMAL	
 				pause 0x1E
-				showpokepic 0x3BA 0x0 0x6
+				show_mugshot RAITO
 				msgbox Passo_Tuono_1_124_text49 MSG_NORMAL	
 				special 0x15A		
 				pause 0x1E		
 				msgbox Passo_Tuono_1_124_text50 MSG_NORMAL	
 				pause 0x1E
-				showpokepic 0x3B4 0x0 0x6
+				show_mugshot CRISPY
 				msgbox Passo_Tuono_1_124_text51 MSG_NORMAL	
 				special 0x15A		
 				pause 0x1E
@@ -1035,7 +991,7 @@ gMapScripts_Passo_Tuono_1_124:
 				waitmovement 0xB
 				playsong 0x188 0x0
 				pause 0x1E
-				showpokepic 0x3BA 0x0 0x6
+				show_mugshot RAITO
 				msgbox Passo_Tuono_1_124_text52 MSG_NORMAL	
 				special 0x15A		
 				pause 0x1E		
@@ -1044,7 +1000,7 @@ gMapScripts_Passo_Tuono_1_124:
 				applymovement 0xB mov_exclamation
 				waitmovement 0xB				
 				pause 0x1E
-				showpokepic 0x3B4 0x0 0x6
+				show_mugshot CRISPY
 				msgbox Passo_Tuono_1_124_text53 MSG_NORMAL	
 				special 0x15A		
 				pause 0x1E
@@ -1053,7 +1009,7 @@ gMapScripts_Passo_Tuono_1_124:
 				spriteface 0xFF 0x3
 				spriteface 0xB 0x4
 				pause 0x1E
-				showpokepic 0x3BA 0x0 0x6
+				show_mugshot RAITO
 				msgbox Passo_Tuono_1_124_text54 MSG_NORMAL	
 				special 0x15A		
 				pause 0x1E		
@@ -1061,16 +1017,16 @@ gMapScripts_Passo_Tuono_1_124:
 				applymovement 0xB mov_question
 				waitmovement 0xB
 				pause 0x1E
-				showpokepic 0x3B4 0x0 0x6
+				show_mugshot CRISPY
 				msgbox Passo_Tuono_1_124_text55 MSG_NORMAL	
 				special 0x15A	
 				pause 0x1E
-				showpokepic 0x3BA 0x0 0x6
+				show_mugshot RAITO
 				msgbox Passo_Tuono_1_124_text56 MSG_NORMAL	
 				special 0x15A		
 				pause 0x1E	
 				spriteface 0x6 0x4
-				showpokepic 0x3BA 0x0 0x6
+				show_mugshot RAITO
 				msgbox Passo_Tuono_1_124_text57 MSG_NORMAL	
 				special 0x15A		
 				pause 0x1E	
@@ -1096,33 +1052,28 @@ gMapScripts_Passo_Tuono_1_124:
 				applymovement 0xB mov_exclamation
 				waitmovement 0xB
 				pause 0x1E
-				showpokepic 0x3B4 0x0 0x6
+				show_mugshot CRISPY
 				msgbox Passo_Tuono_1_124_text58 MSG_NORMAL	
 				special 0x15A		
 				pause 0x1E	
 				applymovement 0xB Passo_Tuono_1_124_mov40
 				waitmovement 0xB				
 				pause 0x1E
-				showpokepic 0x3B4 0x0 0x6
+				show_mugshot CRISPY
 				msgbox Passo_Tuono_1_124_text59 MSG_NORMAL	
 				special 0x15A		
 				pause 0x2E	
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green					
+				show_mugshot PLAYER					
 				msgbox Passo_Tuono_1_124_text60 MSG_NORMAL	
 				special 0x15A	
 				pause 0x1E
-				showpokepic 0x3B4 0x0 0x6
+				show_mugshot CRISPY
 				msgbox Passo_Tuono_1_124_text61 MSG_NORMAL	
 				special 0x15A	
 				applymovement 0xB Passo_Tuono_1_124_mov41
 				waitmovement 0xB	
 				pause 0x2E
-				showpokepic 0x3B4 0x0 0x6
+				show_mugshot CRISPY
 				msgbox Passo_Tuono_1_124_text62 MSG_NORMAL	
 				special 0x15A	
 				applymovement 0xB Passo_Tuono_1_124_mov42
@@ -1377,18 +1328,3 @@ gMapScripts_Passo_Tuono_1_124:
 					.byte 0x10
 					.byte 0x10
 					.byte 0xFE
-
-
-
-
-		Player_Blue:
-			showpokepic 0x3b6 0x0 0x6
-			return
-
-		Player_Orange:
-			showpokepic 0x3bE 0x0 0x6
-			return
-
-		Player_Green:
-			showpokepic 0x3bF 0x0 0x6
-			return

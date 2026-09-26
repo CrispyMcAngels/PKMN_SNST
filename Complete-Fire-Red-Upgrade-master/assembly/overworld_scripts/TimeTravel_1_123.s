@@ -17,6 +17,9 @@ gMapScripts_TimeTravel_1_123:
 		.hword MAP_SCRIPT_TERMIN
 
 		TimeTravel_1_123_MapScriptOnFrameBegin:
+			compare 0x4051 0x53
+			//back to Risaia Rosa
+			if 0x1 _goto TimeTravel_1_123_MapScriptOnFrame_T_ECHO_2_AFTER			
 			compare 0x4067 0x2
 			if 0x1 _goto TimeTravel_1_123_MapScriptOnFrame_T_ECHO_2
 			compare 0x4051 0x3D
@@ -30,62 +33,32 @@ gMapScripts_TimeTravel_1_123:
 				pause 0x1E
 				pause 0x1E
 				pause 0x1E
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green	
+				show_mugshot PLAYER	
 				msgbox TimeTravel_1_123_text1 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green	
+				show_mugshot PLAYER	
 				msgbox TimeTravel_1_123_text1a MSG_NORMAL
 				special 0x15A
 				pause 0x1E
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green	
+				show_mugshot PLAYER
 				
 				msgbox TimeTravel_1_123_text1b MSG_NORMAL
 				special 0x15A
 				pause 0x1E
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green	
+				show_mugshot PLAYER
 				
 				msgbox TimeTravel_1_123_text1c MSG_NORMAL
 				special 0x15A
 				pause 0x1E
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green	
+				show_mugshot PLAYER
 				
 				msgbox TimeTravel_1_123_text1d MSG_NORMAL
 				special 0x15A	
 				pause 0x1E
 				pause 0x1E
 				pause 0x1E
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green	
+				show_mugshot PLAYER
 				
 				msgbox TimeTravel_1_123_text2 MSG_NORMAL
 				special 0x15A
@@ -94,12 +67,7 @@ gMapScripts_TimeTravel_1_123:
 				fadescreen 0x3
 				pause 0x1E
 				pause 0x1E
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green	
+				show_mugshot PLAYER
 				
 				msgbox TimeTravel_1_123_text3 MSG_NORMAL
 				special 0x15A
@@ -113,80 +81,38 @@ gMapScripts_TimeTravel_1_123:
 			TimeTravel_1_123_MapScriptOnFrameBegin_P2:
 				pause 0x1E
 				pause 0x1E
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green	
+				show_mugshot PLAYER
 				
 				msgbox TimeTravel_1_123_text4 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
 				pause 0x1E
 				pause 0x1E
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green	
+				show_mugshot PLAYER
 				
 				msgbox TimeTravel_1_123_text5 MSG_NORMAL
 				special 0x15A
 				pause 0x78
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green	
+				show_mugshot PLAYER
 				
 				msgbox TimeTravel_1_123_text6 MSG_NORMAL
 				special 0x15A
 				pause 0x28
 				fadescreen 0x3
 				pause 0xB4
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green	
+				show_mugshot PLAYER
 				
 				msgbox TimeTravel_1_123_text7 MSG_NORMAL
 				special 0x15A
 
-				compare 0x5026 0x0
-				if 0x1 _call blue_z
-				compare 0x5026 0x88
-				if 0x1 _call orange_z
-				compare 0x5026 0x85
-				if 0x1 _call green_z	
+				setvar 0x501F 0x100
+				warpmuted 0x1 0x26 0xFF 0x9 0x7
 				releaseall
 				end
 
-				blue_z:
-					setvar 0x501F 0x100
-					warpmuted 0x1 0x26 0xFF 0x9 0x7
-					releaseall
-					end
-
-				orange_z:
-					setvar 0x501F 0x1a3
-					warpmuted 0x1 0x26 0xFF 0x9 0x7
-					releaseall
-					end
-
-				green_z:
-					setvar 0x501F 0x1a4
-					warpmuted 0x1 0x26 0xFF 0x9 0x7
-					releaseall
-					end
-
 			TimeTravel_1_123_MapScriptOnFrame_T_ECHO_2:
-				pause 050
-				showpokepic 0x3B6 0x0 0x6
+				pause 0x50
+				show_mugshot PLAYER
 				msgbox TimeTravel_1_123_t_echo_2_text1 MSG_NORMAL
 				special 0x15A	
 				setvar 0x501F 0x155
@@ -204,17 +130,29 @@ gMapScripts_TimeTravel_1_123:
 				releaseall
 				end
 
-
-
-		Player_Blue:
-			showpokepic 0x3b6 0x0 0x6
-			return
-
-		Player_Orange:
-			showpokepic 0x3bE 0x0 0x6
-			return
-
-		Player_Green:
-			showpokepic 0x3bF 0x0 0x6
-			return
+			TimeTravel_1_123_MapScriptOnFrame_T_ECHO_2_AFTER:
+				pause 0x60
+				show_mugshot PLAYER
+				msgbox TimeTravel_1_123_t_echo_2_text2 MSG_NORMAL
+				special 0x15A	
+				pause 0x40
+				show_mugshot PLAYER
+				msgbox TimeTravel_1_123_t_echo_2_text3 MSG_NORMAL
+				special 0x15A	
+				pause 0x30
+				show_mugshot PLAYER
+				msgbox TimeTravel_1_123_t_echo_2_text4 MSG_NORMAL
+				special 0x15A	
+				pause 0x30
+				show_mugshot PLAYER
+				msgbox TimeTravel_1_123_t_echo_2_text5 MSG_NORMAL
+				special 0x15A	
+				pause 0x30
+				spriteface 0xFF 0x1
+				//set normal OW sprite
+				setvar 0x501F 0x100
+				
+				warpteleport 0x03 0x32 0xFF 0xF 0x13
+				releaseall
+				end				
 

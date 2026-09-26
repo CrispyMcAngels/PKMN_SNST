@@ -57,12 +57,7 @@ EventScript_Radiantia_8_9_NPC0:
 	pause 0x1E
 	spriteface 0xFF 0x4
 	pause 0x1E
-	compare 0x501F 0x100
-	if 0x1 _call Player_Blue
-	compare 0x501F 0x1A3
-	if 0x1 _call Player_Orange
-	compare 0x501F 0x1A4
-	if 0x1 _call Player_Green
+	show_mugshot PLAYER
 	msgbox Radiantia_8_9_NPC0_text1 MSG_NORMAL
 	special 0x15A
 	pause 0x22
@@ -112,12 +107,7 @@ EventScript_Radiantia_8_9_NPC0:
 		sound 0x9
 		pause 0x1E
 		pause 0x1E
-		compare 0x501F 0x100
-		if 0x1 _call Player_Blue
-		compare 0x501F 0x1A3
-		if 0x1 _call Player_Orange
-		compare 0x501F 0x1A4
-		if 0x1 _call Player_Green
+		show_mugshot PLAYER
 		msgbox Radiantia_8_9_NPC0_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x22
@@ -157,12 +147,7 @@ EventScript_Radiantia_8_9_NPC0:
 		pause 0x1E
 		spriteface 0xFF 0x4
 		pause 0x1E
-		compare 0x501F 0x100
-		if 0x1 _call Player_Blue
-		compare 0x501F 0x1A3
-		if 0x1 _call Player_Orange
-		compare 0x501F 0x1A4
-		if 0x1 _call Player_Green
+		show_mugshot PLAYER
 		msgbox Radiantia_8_9_NPC0_text1 MSG_NORMAL
 		special 0x15A
 		pause 0x22
@@ -208,16 +193,3 @@ EventScript_Radiantia_8_9_NPC1:
 	msgbox Radiantia_8_9_NPC1_text1 MSG_NORMAL
 	release
 	end
-
-
-		Player_Blue:
-			showpokepic 0x3b6 0x0 0x6
-			return
-
-		Player_Orange:
-			showpokepic 0x3bE 0x0 0x6
-			return
-
-		Player_Green:
-			showpokepic 0x3bF 0x0 0x6
-			return

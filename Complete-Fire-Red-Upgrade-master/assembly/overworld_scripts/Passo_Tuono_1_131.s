@@ -38,12 +38,7 @@ gMapScripts_Passo_Tuono_1_131:
 				applymovement 0xFF Passo_Tuono_1_131_mov0
 				waitmovement 0xFF
 				pause 0x1E
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green					
+				show_mugshot PLAYER					
 				msgbox Passo_Tuono_1_131_text1 MSG_NORMAL	
 				special 0x15A	
 				pause 0x1E
@@ -798,12 +793,7 @@ EventScript_Passo_Tuono_1_131_tile3_33:
 		spritebehave 0x8 0x43
 		spritebehave 0x9 0x43
 		pause 0x2E
-		compare 0x5026 0x0
-		if 0x1 _call Player_Blue
-		compare 0x5026 0x88
-		if 0x1 _call Player_Orange
-		compare 0x5026 0x85
-		if 0x1 _call Player_Green					
+		show_mugshot PLAYER					
 		msgbox Passo_Tuono_1_131_text2 MSG_NORMAL	
 		special 0x15A
 		setvar 0x4051 0x44
@@ -812,37 +802,8 @@ EventScript_Passo_Tuono_1_131_tile3_33:
 		setvar 0x4052 0x7
 		fadescreen 0x3
 		//put correct OW sprite
-		compare 0x5026 0x0
-		if 0x1 _call OW_Player_Blue
-		compare 0x5026 0x88
-		if 0x1 _call OW_Player_Orange
-		compare 0x5026 0x85
-		if 0x1 _call OW_Player_Green	
+		setvar 0x501F 0x100
 		fadescreen 0x2
 		warpmuted 0x0 0x19 0xFF 0x6 0x4
 		releaseall
 		end
-
-		Player_Blue:
-			showpokepic 0x3b6 0x0 0x6
-			return
-
-		Player_Orange:
-			showpokepic 0x3bE 0x0 0x6
-			return
-
-		Player_Green:
-			showpokepic 0x3bF 0x0 0x6
-			return
-
-OW_Player_Blue:
-	setvar 0x501F 0x100
-	return
-
-OW_Player_Orange:
-	setvar 0x501F 0x1A3
-	return
-
-OW_Player_Green:
-	setvar 0x501F 0x1A4
-	return

@@ -35,7 +35,7 @@ gMapScripts_Percorso12_3_23:
 			pause 0x1E
 			applymovement 0x1 mov_exclamation
 			waitmovement 0x1
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			msgbox Percorso12_3_23_MapScriptOnFrame_text1 MSG_NORMAL
 			special 0x15A	
 			setvar 0x4051 0x4C	
@@ -47,7 +47,7 @@ gMapScripts_Percorso12_3_23:
 			special 0x108
 			waitstate			
 			pause 0x1E
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			msgbox Percorso12_3_23_MapScriptOnFrame_text2 MSG_NORMAL
 			special 0x15A	
 			applymovement 0xFF Percorso12_3_23_MapScriptOnFrameBegin_mov2

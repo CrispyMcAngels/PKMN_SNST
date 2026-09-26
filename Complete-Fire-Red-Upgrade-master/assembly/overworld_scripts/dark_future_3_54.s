@@ -31,7 +31,7 @@ Dark_Future_3_54_MapScriptOnFrameBegin_P1:
     compare 0x4001 0x9
     if 0x1 _call Dark_Future_3_54_MapScriptOnFrameBegin_P1a
     pause 0x2E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_3_54_text1 MSG_NORMAL
 	special 0x15A
     pause 0x1E
@@ -39,13 +39,13 @@ Dark_Future_3_54_MapScriptOnFrameBegin_P1:
     applymovement 0x7F dark_future_3_54_mov3
     waitmovement 0x7F
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_3_54_text2 MSG_NORMAL
 	special 0x15A
     pause 0x1E
     spriteface 0xFF 0x4
     pause 0x2E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_3_54_text3 MSG_NORMAL
 	special 0x15A
     pause 0x1E
@@ -58,7 +58,7 @@ Dark_Future_3_54_MapScriptOnFrameBegin_P1:
     cry 0x3A 0x0
 	msgbox Dark_Future_3_54_text4 MSG_NORMAL
     pause 0x25
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_3_54_text5 MSG_NORMAL
 	special 0x15A   
     pause 0x1E
@@ -140,7 +140,7 @@ Dark_Future_3_54_MapScriptOnFrameBegin_P2:
     applymovement 0x1 dark_future_3_54_mov6
     waitmovement 0x1
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_3_54_text6 MSG_NORMAL
 	special 0x15A   
     pause 0x1E
@@ -155,7 +155,7 @@ Dark_Future_3_54_MapScriptOnFrameBegin_P2:
     waitmovement 0xFF
     playsong 0x182
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_3_54_text7 MSG_NORMAL
 	special 0x15A 
     pause 0x1E
@@ -176,7 +176,7 @@ Dark_Future_3_54_MapScriptOnFrameBegin_P2:
     pause 0x1E
     applymovement 0xFF dark_future_3_54_mov10
     waitmovement 0xFF
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_3_54_text8 MSG_NORMAL
 	special 0x15A    
     pause 0x1E
@@ -284,6 +284,7 @@ Dark_Future_3_54_MapScriptOnFrameBegin_P2:
 
 .global gMapScripts_Selva_Spenta_3_49
 gMapScripts_Selva_Spenta_3_49:
+    mapscript MAP_SCRIPT_ON_LOAD Selva_Spenta_3_49_MapScriptOnLoad
     mapscript MAP_SCRIPT_ON_FRAME_TABLE Selva_Spenta_3_49_MapScriptOnFrame
 	mapscript MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE Selva_Spenta_3_49_MapScriptOnWarpIntoMapTable
     .byte MAP_SCRIPT_TERMIN
@@ -295,6 +296,10 @@ gMapScripts_Selva_Spenta_3_49:
 	Selva_Spenta_3_49_MapScriptOnWarpIntoMapTableBegin:
 		spriteface 0xFF 0x2
 		end	
+
+    Selva_Spenta_3_49_MapScriptOnLoad:
+        setvar 0x5007 0x1A
+        end
 
 Selva_Spenta_3_49_MapScriptOnFrame:
     levelscript 0x4050, 0xB, Selva_Spenta_3_49_MapScriptOnFrameBegin
@@ -324,7 +329,7 @@ Selva_Spenta_3_49_MapScriptOnFrameBegin_P1:
     spriteface 0xFF 0x2
     pause 0x2E
     spriteface 0xFF 0x1
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Selva_Spenta_3_49_text1 MSG_NORMAL
 	special 0x15A
     setvar 0x8000 0x1
@@ -358,7 +363,7 @@ EventScript_Selva_Spenta_3_49_tile0:
 	sound 0x15
     applymovement 0xFF mov_exclamation
 	waitmovement 0xFF
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Selva_Spenta_3_49_text2 MSG_NORMAL
 	special 0x15A	
     applymovement 0xFF Selva_Spenta_3_49_mov2
@@ -416,7 +421,7 @@ Scogliera_Crepuscolo_3_55_MapScriptOnFrameBegin_P1:
     applymovement 0x1 Scogliera_Crepuscolo_3_55_mov1a
     waitmovement 0xFF
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_3_55_text1 MSG_NORMAL
 	special 0x15A	
     pause 0x2E
@@ -426,7 +431,7 @@ Scogliera_Crepuscolo_3_55_MapScriptOnFrameBegin_P1:
     applymovement 0xFF mov_exclamation
     waitmovement 0xFF
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_3_55_text2 MSG_NORMAL
 	special 0x15A
     special 0x113
@@ -442,13 +447,13 @@ Scogliera_Crepuscolo_3_55_MapScriptOnFrameBegin_P1:
     applymovement 0xFF mov_question
     waitmovement 0xFF
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_3_55_text3 MSG_NORMAL
 	special 0x15A
     pause 0x1E
     spriteface 0xFF 0x2
     pause 0x2E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_3_55_text4 MSG_NORMAL
 	special 0x15A
     pause 0x1E
@@ -538,7 +543,7 @@ Scogliera_Crepuscolo_42_0_MapScriptOnFrameBegin:
     end
 
 Scogliera_Crepuscolo_42_0_MapScriptOnFrameBegin_P1:
-    playsong 0x192
+    
     pause 0x2E
     sound 0x15 
     applymovement 0xFF mov_exclamation
@@ -547,44 +552,45 @@ Scogliera_Crepuscolo_42_0_MapScriptOnFrameBegin_P1:
     applymovement 0xFF Scogliera_Crepuscolo_42_0_mov1
     waitmovement 0xFF
     pause 0x2E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text1 MSG_NORMAL
 	special 0x15A	
     pause 0x2E
     spriteface 0xFF 0x2
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text2 MSG_NORMAL
 	special 0x15A
     pause 0x1E
     applymovement 0x1 Scogliera_Crepuscolo_42_0_mov2
     waitmovement 0x1
     pause 0x1E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text3 MSG_NORMAL
 	special 0x15A
+    playsong 0x192
     pause 0x1E
     spriteface 0x1 0x3 
     pause 0x2E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text4 MSG_NORMAL
 	special 0x15A
     pause 0x2E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text5 MSG_NORMAL
 	special 0x15A
     pause 0x2E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text6 MSG_NORMAL
 	special 0x15A
     pause 0x2E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text7 MSG_NORMAL
 	special 0x15A
     pause 0x1E
     spriteface 0x1 0x1 
     pause 0x2E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text8 MSG_NORMAL
 	special 0x15A
     pause 0x2E
@@ -592,174 +598,174 @@ Scogliera_Crepuscolo_42_0_MapScriptOnFrameBegin_P1:
     applymovement 0xFF mov_question
     waitmovement 0xFF
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text9 MSG_NORMAL
 	special 0x15A
     pause 0x2E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text10 MSG_NORMAL
 	special 0x15A
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text11 MSG_NORMAL
 	special 0x15A
     pause 0x2E
     spriteface 0x1 0x3 
     pause 0x2E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text12 MSG_NORMAL
 	special 0x15A
     pause 0x1E
     sound 0x15
     applymovement 0xFF mov_exclamation
     waitmovement 0xFF
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text13 MSG_NORMAL
 	special 0x15A
     pause 0x2E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text14 MSG_NORMAL
 	special 0x15A
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text15 MSG_NORMAL
 	special 0x15A
     pause 0x2E
     spriteface 0x1 0x1 
     pause 0x2E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text16 MSG_NORMAL
 	special 0x15A
     pause 0x2E
     spriteface 0x1 0x2 
     pause 0x1E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text17 MSG_NORMAL
 	special 0x15A
     pause 0x2E
     spriteface 0x1 0x1 
     pause 0x2E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text18 MSG_NORMAL
 	special 0x15A  
     pause 0x2E
     sound 0x15 
     applymovement 0xFF mov_exclamation
     waitmovement 0xFF 
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text19 MSG_NORMAL
 	special 0x15A
     pause 0x2E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text20 MSG_NORMAL
 	special 0x15A
     pause 0x2E
     spriteface 0xFF 0x3 
     pause 0x2E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text21 MSG_NORMAL
 	special 0x15A
     pause 0x3E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text22 MSG_NORMAL
 	special 0x15A
     pause 0x2E
     spriteface 0xFF 0x2 
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text23 MSG_NORMAL
 	special 0x15A
     pause 0x2E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text24 MSG_NORMAL
 	special 0x15A
     pause 0x2E
     sound 0x15 
     applymovement 0xFF mov_exclamation
     waitmovement 0xFF
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text25 MSG_NORMAL
 	special 0x15A
     pause 0x2E
     spriteface 0x1 0x1
     pause 0x2E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text26 MSG_NORMAL
 	special 0x15A
     pause 0x2E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text27 MSG_NORMAL
 	special 0x15A
     pause 0x2E
     spriteface 0x1 0x3 
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text28 MSG_NORMAL
 	special 0x15A
     pause 0x2E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text29 MSG_NORMAL
 	special 0x15A
     pause 0x2E
     applymovement 0x1 Scogliera_Crepuscolo_42_0_mov3
     waitmovement 0x1
     pause 0x1E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text30 MSG_NORMAL
 	special 0x15A
     pause 0x2E
     sound 0x15
     applymovement 0xFF mov_question
     waitmovement 0xFF
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text31 MSG_NORMAL
 	special 0x15A
     pause 0x2E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text32 MSG_NORMAL
 	special 0x15A
     pause 0x2E
     spriteface 0x1 0x1 
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text33 MSG_NORMAL
 	special 0x15A
     pause 0x2E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text34 MSG_NORMAL
 	special 0x15A
     pause 0x2E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text35 MSG_NORMAL
 	special 0x15A
     pause 0x1E
     applymovement 0x1 Scogliera_Crepuscolo_42_0_mov2
     waitmovement 0x1
     pause 0x1E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text36 MSG_NORMAL
 	special 0x15A
     pause 0x2E
     spriteface 0xFF 0x3 
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text37 MSG_NORMAL
 	special 0x15A
     pause 0x2E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text38 MSG_NORMAL
 	special 0x15A
     pause 0x1E
     spriteface 0xFF 0x2 
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text39 MSG_NORMAL
 	special 0x15A
     pause 0x2E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text40 MSG_NORMAL
 	special 0x15A
     pause 0x2E
     applymovement 0xFF Scogliera_Crepuscolo_42_0_mov4
     waitmovement 0xFF
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Scogliera_Crepuscolo_42_0_text41 MSG_NORMAL
 	special 0x15A
     pause 0x1E
@@ -774,13 +780,15 @@ Scogliera_Crepuscolo_42_0_MapScriptOnFrameBegin_P1:
     applymovement 0x7F Scogliera_Crepuscolo_42_0_mov7
     waitmovement 0x7F
     special 0x114
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text42 MSG_NORMAL
 	special 0x15A
     pause 0x2E
+    applymovement 0x1 Scogliera_Crepuscolo_42_0_mov2
+    waitmovement 0x1
     spriteface 0x1 0x3 
     pause 0x2E
-    showpokepic 0x3CA 0x0 0x6
+    show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text43 MSG_NORMAL
 	special 0x15A
     pause 0x3E
@@ -805,8 +813,15 @@ Scogliera_Crepuscolo_42_0_MapScriptOnFrameBegin_P1:
     setflag 0x998 
     //enable time echoes 
     setflag 0x990
-
+    //Destroy follower NPC 
+    special 0xD2
+    //give back pokemon party
+    special 0x28 
+    //ask to save 
+    special 0x26
     setvar 0x4051 0x53
+    //set normal screen fading
+    setvar 0x500E 0x0
     //warp a time travel
     warp 0x0 0x11 0xFF 0x7 0x6
     releaseall

@@ -84,12 +84,12 @@ EventScript_Radiantia_8_8_NPC6:
 	if 0x1 _goto EventScript_Radiantia_8_8_NPC6_P3
 	checkflag 0x972
 	if 0x1 _goto EventScript_Radiantia_8_8_NPC6_P0
-	showpokepic 0x3C0 0x0 0x6
+	show_mugshot ELEONORA
 	msgbox Radiantia_8_8_NPC6_text1 MSG_NORMAL
 	special 0x15A
 	pause 0x2E
 	faceplayer
-	showpokepic 0x3C0 0x0 0x6
+	show_mugshot ELEONORA
 	msgbox Radiantia_8_8_NPC6_text2 MSG_NORMAL
 	special 0x15A
 	setflag 0x972
@@ -111,7 +111,7 @@ EventScript_Radiantia_8_8_NPC6:
 		end
 
 	EventScript_Radiantia_8_8_NPC6_P1:
-		showpokepic 0x3C0 0x0 0x6
+		show_mugshot ELEONORA
 		msgbox Radiantia_8_8_NPC6_text8 MSG_NORMAL
 		special 0x15A	
 		release
@@ -119,7 +119,7 @@ EventScript_Radiantia_8_8_NPC6:
 
 	EventScript_Radiantia_8_8_NPC6_P2:
 		pause 0x1E
-		showpokepic 0x3C0 0x0 0x6
+		show_mugshot ELEONORA
 		msgbox Radiantia_8_8_NPC6_text4 MSG_NORMAL
 		special 0x15A
 		setvar 0x503A 0x2 
@@ -128,11 +128,11 @@ EventScript_Radiantia_8_8_NPC6:
 		trainerbattle3 0x3 0x36 0x100 Radiantia_8_8_NPC6_text5
 		fadedefault
 		pause 0x1E
-		showpokepic 0x3C0 0x0 0x6
+		show_mugshot ELEONORA
 		msgbox Radiantia_8_8_NPC6_text6 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
-		showpokepic 0x3C0 0x0 0x6
+		show_mugshot ELEONORA
 		msgbox Radiantia_8_8_NPC6_text7 MSG_NORMAL
 		special 0x15A
 		setflag 0x821
@@ -149,7 +149,7 @@ EventScript_Radiantia_8_8_NPC6:
 		giveitem 0x148 0x1 MSG_OBTAIN
 
 		pause 0x1E
-		showpokepic 0x3C0 0x0 0x6
+		show_mugshot ELEONORA
 		msgbox Radiantia_8_8_NPC6_text10 MSG_NORMAL
 		special 0x15A
 		setvar 0x4061 0x2
@@ -159,7 +159,7 @@ EventScript_Radiantia_8_8_NPC6:
 
 	EventScript_Radiantia_8_8_NPC6_P3:
 		faceplayer
-		showpokepic 0x3C0 0x0 0x6
+		show_mugshot ELEONORA
 		msgbox Radiantia_8_8_NPC6_text9 MSG_NORMAL
 		special 0x15A
 		release

@@ -497,13 +497,8 @@ EventScript_Ardesiopoli_3_2_tile5:
 		pause 0x1E
 		applymovement 0xFF Ardesiopoli_3_2_tile5_movCAM1
 		waitmovement 0x0
-		
-		compare 0x501F 0x100
-		if 0x1 _call Player_Blue
-		compare 0x501F 0x1A3
-		if 0x1 _call Player_Orange
-		compare 0x501F 0x1A4
-		if 0x1 _call Player_Green		
+		pause 0x1E
+		show_mugshot PLAYER
 		msgbox Ardesiopoli_3_2_tile5_text7 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -531,7 +526,7 @@ EventScript_Ardesiopoli_3_2_tile0:
 	compare 0x4002 0x2E
 	if 0x1 _call EventScript_Ardesiopoli_3_2_tile0_DOWN
 	pause 0x1E
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	msgbox Ardesiopoli_3_2_tile0_text1 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
@@ -546,12 +541,12 @@ EventScript_Ardesiopoli_3_2_tile0:
 	applymovement 0x2 Ardesiopoli_3_2_tile0_mov2
 	waitmovement 0x2
 	pause 0x1E
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	msgbox Ardesiopoli_3_2_tile0_text3 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
 	pause 0x1E
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	compare 0x4051 0x31
 	if 0x1 _call EventScript_Ardesiopoli_3_2_tile0_P1_1
 	if 0x0 _call EventScript_Ardesiopoli_3_2_tile0_P1_2
@@ -560,7 +555,7 @@ EventScript_Ardesiopoli_3_2_tile0:
 	applymovement 0x2 mov_question
 	waitmovement 0x2	
 	pause 0x1E
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	compare 0x4051 0x31
 	if 0x1 _call EventScript_Ardesiopoli_3_2_tile0_P2_1
 	if 0x0 _call EventScript_Ardesiopoli_3_2_tile0_P2_2
@@ -977,13 +972,7 @@ EventScript_Ardesiopoli_3_2_NPC19:
 	applymovement 0x14 mov_exclamation
 	waitmovement 0x14
 	pause 0x1E
-	compare 0x501F 0x100
-	if 0x1 _call Player_Blue
-	compare 0x501F 0x1A3
-	if 0x1 _call Player_Orange
-	compare 0x501F 0x1A4
-	if 0x1 _call Player_Green
-		
+	show_mugshot PLAYER
 	msgbox Ardesiopoli_3_2_NPC19_text1 MSG_NORMAL	
 	special 0x15A
 	setflag 0x96A
@@ -1050,17 +1039,3 @@ EventScript_Ardesiopoli_3_2_NPC28:
 	msgbox Ardesiopoli_3_2_NPC28_text1 MSG_NORMAL
 	release
 	end
-
-
-
-Player_Blue:
-	showpokepic 0x3b6 0x0 0x6
-	return
-
-Player_Orange:
-	showpokepic 0x3bE 0x0 0x6
-	return
-
-Player_Green:
-	showpokepic 0x3bF 0x0 0x6
-	return

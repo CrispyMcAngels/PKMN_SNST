@@ -42,19 +42,19 @@ gMapScripts_Roccavento_3_3:
 			waitmovement 0xD
 			sound 0x15
 			pause 0x1E			
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			msgbox Roccavento_3_3_MapScriptOnFrame_text1 MSG_NORMAL
 			special 0x15A
 			pause 0x25			
 			spriteface 0xD 0x2
 			pause 0x1E
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			msgbox Roccavento_3_3_MapScriptOnFrame_text2 MSG_NORMAL
 			special 0x15A
 			pause 0x25			
 			spriteface 0xD 0x3
 			pause 0x1E
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			msgbox Roccavento_3_3_MapScriptOnFrame_text3 MSG_NORMAL
 			special 0x15A
 			pause 0x25		
@@ -62,11 +62,11 @@ gMapScripts_Roccavento_3_3:
 			waitmovement 0xD
 			sound 0x15
 			pause 0x1E
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			msgbox Roccavento_3_3_MapScriptOnFrame_text4 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			msgbox Roccavento_3_3_MapScriptOnFrame_text5 MSG_NORMAL
 			special 0x15A
 			setvar 0x4051 0x4D

@@ -22,27 +22,27 @@ EventScript_Percorso3_3_21_tile4:
 	pause 0x1E
 	checkflag 0x231
 	if 0x1 _goto EventScript_Percorso3_3_21_tile4_P1
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	msgbox Percorso3_3_21_tile4_text1 MSG_NORMAL
 	special 0x15A
 	pause 0x1E	
 	applymovement 0xFF Percorso3_3_21_tile4_mov1
 	waitmovement 0xFF
-	showpokepic 0x3B6 0x0 0x6
+	show_mugshot PLAYER
 	msgbox Percorso3_3_21_tile4_text2 MSG_NORMAL
 	special 0x15A
 	pause 0x1E	
 	sound 0x15
 	applymovement 0x14 mov_exclamation
 	waitmovement 0x14 
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	msgbox Percorso3_3_21_tile4_text3 MSG_NORMAL
 	special 0x15A
 	pause 0x1E	
 	spriteface 0x14 0x1
 	pause 0x1E
 	spriteface 0x14 0x4
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	msgbox Percorso3_3_21_tile4_text4 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
@@ -50,11 +50,11 @@ EventScript_Percorso3_3_21_tile4:
 	applymovement 0x14 mov_question
 	waitmovement 0x14
 	pause 0x1E
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	msgbox Percorso3_3_21_tile4_text5 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
-	showpokepic 0x3B6 0x0 0x6
+	show_mugshot PLAYER
 	msgbox Percorso3_3_21_tile4_text2 MSG_NORMAL
 	special 0x15A
 	pause 0x1E	
@@ -63,7 +63,7 @@ EventScript_Percorso3_3_21_tile4:
 	applymovement 0x14 mov_exclamation
 	waitmovement 0x14
 	pause 0x1E
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	msgbox Percorso3_3_21_tile4_text6 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
@@ -71,15 +71,15 @@ EventScript_Percorso3_3_21_tile4:
 	applymovement 0x14 mov_question
 	waitmovement 0x14
 	pause 0x1E
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	msgbox Percorso3_3_21_tile4_text7 MSG_NORMAL
 	special 0x15A
 	pause 0x1E	
-	showpokepic 0x3B6 0x0 0x6
+	show_mugshot PLAYER
 	msgbox Percorso3_3_21_tile4_text2 MSG_NORMAL
 	special 0x15A
 	pause 0x1E	
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	msgbox Percorso3_3_21_tile4_text8 MSG_NORMAL
 	special 0x15A
 	pause 0x1E	
@@ -87,7 +87,7 @@ EventScript_Percorso3_3_21_tile4:
 	applymovement 0x14 mov_exclamation
 	waitmovement 0x14
 	pause 0x1E	
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	msgbox Percorso3_3_21_tile4_text9 MSG_NORMAL
 	special 0x15A
 	pause 0x1E	
@@ -98,7 +98,7 @@ EventScript_Percorso3_3_21_tile4:
 	end
 
 EventScript_Percorso3_3_21_tile4_P1:
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	msgbox Percorso3_3_21_tile4_text13 MSG_NORMAL
 	special 0x15A
 	pause 0x1E	
@@ -118,7 +118,7 @@ EventScript_Percorso3_3_21_tile4_P2:
 	applymovement 0x14 mov_exclamation
 	waitmovement 0x14
 	pause 0x1E	
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	msgbox Percorso3_3_21_tile4_text11 MSG_NORMAL
 	special 0x15A
 	pause 0x1E		
@@ -129,7 +129,7 @@ EventScript_Percorso3_3_21_tile4_P2:
 	if 0x1 _call EventScript_Percorso3_3_21_tile4_Y_0E_2
 	spriteface 0xFF 0x4
 	pause 0x1E
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	msgbox Percorso3_3_21_tile4_text12 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
@@ -268,12 +268,7 @@ EventScript_Percorso3_3_21_tile0:
 	applymovement 0xFF mov_question
 	waitmovement 0xFF	
 	pause 0x1E
-	compare 0x501F 0x100
-	if 0x1 _call Player_Blue
-	compare 0x501F 0x1A3
-	if 0x1 _call Player_Orange
-	compare 0x501F 0x1A4
-	if 0x1 _call Player_Green
+	show_mugshot PLAYER
 	
     msgbox Percorso3_3_21_tile0_text2 MSG_NORMAL
     special 0x15A
@@ -304,12 +299,7 @@ EventScript_Percorso3_3_21_tile0:
 .global EventScript_Percorso3_3_21_tile1
 EventScript_Percorso3_3_21_tile1:
 	lockall
-	compare 0x501F 0x100
-	if 0x1 _call Player_Blue
-	compare 0x501F 0x1A3
-	if 0x1 _call Player_Orange
-	compare 0x501F 0x1A4
-	if 0x1 _call Player_Green
+	show_mugshot PLAYER
 	
     msgbox Percorso3_3_21_tile1_text1 MSG_NORMAL
     special 0x15A
@@ -341,12 +331,7 @@ EventScript_Percorso3_3_21_tile2:
 	pause 0x1E
 	applymovement 0xFF mov_exclamation
 	waitmovement 0xFF
-	compare 0x501F 0x100
-	if 0x1 _call Player_Blue
-	compare 0x501F 0x1A3
-	if 0x1 _call Player_Orange
-	compare 0x501F 0x1A4
-	if 0x1 _call Player_Green
+	show_mugshot PLAYER
 	
     msgbox Percorso3_3_21_tile2_text1 MSG_NORMAL
     special 0x15A
@@ -363,19 +348,6 @@ EventScript_Percorso3_3_21_tile2:
 		.byte 0x60
 		.byte 0x1E
 		.byte 0xFE
-
-
-		Player_Blue:
-			showpokepic 0x3b6 0x0 0x6
-			return
-
-		Player_Orange:
-			showpokepic 0x3bE 0x0 0x6
-			return
-
-		Player_Green:
-			showpokepic 0x3bF 0x0 0x6
-			return
 
 
 .global gMapScripts_Percorso3_3_21

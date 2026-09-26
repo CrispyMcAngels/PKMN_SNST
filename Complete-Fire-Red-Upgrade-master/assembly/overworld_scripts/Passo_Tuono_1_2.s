@@ -49,7 +49,7 @@ gMapScripts_Passo_Tuono_1_2:
 			if 0x1 _goto Passo_Tuono_1_2_MapScriptOnFrameBegin_P2
 			pause 0x1E
 			pause 0x1E
-			showpokepic 0x3AC 0x0 0x6
+			show_mugshot UNKNOWN_MAN
 			
 			//???:...
 			msgbox Passo_Tuono_1_2_text1 MSG_NORMAL
@@ -65,14 +65,14 @@ gMapScripts_Passo_Tuono_1_2:
 			waitmovement 0xFF
 
 			pause 0x1E
-			showpokepic 0x3AC 0x0 0x6
+			show_mugshot UNKNOWN_MAN
 			
 			//???: Questo posto...
 			msgbox Passo_Tuono_1_2_text2 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
 			pause 0x1E
-			showpokepic 0x3AC 0x0 0x6
+			show_mugshot UNKNOWN_MAN
 			
 			//???: Dopo quasi 500 anni è ancora come prima... ...D'altronde solo pochi ne conoscono la sua esistenza...
 			msgbox Passo_Tuono_1_2_text3 MSG_NORMAL
@@ -166,13 +166,7 @@ gMapScripts_Passo_Tuono_1_2:
 				applymovement 0xFF Passo_Tuono_1_2_mov4
 				waitmovement 0xFF
 				pause 0x1E
-				compare 0x5026 0x0
-				if 0x1 _call Player_Blue
-				compare 0x5026 0x88
-				if 0x1 _call Player_Orange
-				compare 0x5026 0x85
-				if 0x1 _call Player_Green	
-				
+				show_mugshot PLAYER
 				msgbox Passo_Tuono_1_2_tile0_text3 MSG_NORMAL	
 				special 0x15A	
 				pause 0x1E
@@ -186,7 +180,7 @@ gMapScripts_Passo_Tuono_1_2:
 				pause 0x1E
 
 				
-				showpokepic 0x3aD 0x0 0x6
+				show_mugshot VESPER
 				msgbox Passo_Tuono_1_2_tile0_text4 MSG_NORMAL	
 				special 0x15A
 				pause 0x25
@@ -240,13 +234,7 @@ EventScript_Passo_Tuono_1_2_tile0:
 	lockall
 	spriteface 0xFF 0x2
 	pause 0x1E
-	compare 0x5026 0x0
-	if 0x1 _call Player_Blue
-	compare 0x5026 0x88
-	if 0x1 _call Player_Orange
-	compare 0x5026 0x85
-	if 0x1 _call Player_Green	
-	
+	show_mugshot PLAYER
 	msgbox Passo_Tuono_1_2_tile0_text1 MSG_NORMAL	
 	special 0x15A	
 	pause 0x1E
@@ -256,13 +244,7 @@ EventScript_Passo_Tuono_1_2_tile0:
 	applymovement 0xFF mov_exclamation
 	waitmovement 0xFF
 	pause 0x1E
-	compare 0x5026 0x0
-	if 0x1 _call Player_Blue
-	compare 0x5026 0x88
-	if 0x1 _call Player_Orange
-	compare 0x5026 0x85
-	if 0x1 _call Player_Green	
-	
+	show_mugshot PLAYER
 	msgbox Passo_Tuono_1_2_tile0_text2 MSG_NORMAL	
 	special 0x15A	
 	setvar 0x501F 0x149
@@ -285,17 +267,6 @@ EventScript_Passo_Tuono_1_2_tile0:
 	releaseall
 	end
 
-		Player_Blue:
-			showpokepic 0x3b6 0x0 0x6
-			return
-
-		Player_Orange:
-			showpokepic 0x3bE 0x0 0x6
-			return
-
-		Player_Green:
-			showpokepic 0x3bF 0x0 0x6
-			return
 
 	Passo_Tuono_1_2_tile0_mov1:
 		.byte 0x1 

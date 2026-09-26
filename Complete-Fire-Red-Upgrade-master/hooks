@@ -459,6 +459,10 @@ FollowMe_WarpHoleEndHook 8084770 0
 FollowMe_LocalIdHook 0805DF60 3
 FollowMe_ScriptHook 0805FC20 3
 FollowMe_WhiteOutHook 8054E1A 2
+EventObjectUpdateZCoord 080682A4 1
+
+##Text Palette
+GetStdTextPalette 08150408 1
 
 ##Learn Move
 GiveMoveToBoxMon 0803E8B0 2

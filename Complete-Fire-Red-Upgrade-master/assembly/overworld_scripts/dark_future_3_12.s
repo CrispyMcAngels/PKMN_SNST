@@ -75,7 +75,7 @@ EventScript_Dark_Future_3_12_tile0:
 	sound 0x15
     applymovement 0xFF mov_exclamation
 	waitmovement 0xFF
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_3_12_text1 MSG_NORMAL
 	special 0x15A	
 	pause 0x1E
@@ -83,7 +83,7 @@ EventScript_Dark_Future_3_12_tile0:
     applymovement 0x7F dark_future_3_12_mov3
 	waitmovement 0x7F
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_3_12_text2 MSG_NORMAL
 	special 0x15A	
 	pause 0x2E
@@ -91,13 +91,13 @@ EventScript_Dark_Future_3_12_tile0:
 	waitmovement 0x7F
     special 0x114
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_3_12_text3 MSG_NORMAL
 	special 0x15A	
     pause 0x1E
     spriteface 0xFF 0x1
     pause 0x1E
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_3_12_text4 MSG_NORMAL
 	special 0x15A	
     setvar 0x4051 0x4F
@@ -133,7 +133,7 @@ EventScript_Dark_Future_3_12_tile3:
 	sound 0x15
     applymovement 0xFF mov_question
 	waitmovement 0xFF
-    showpokepic 0x3C7 0x0 0x6
+    show_mugshot MYRYAM
 	msgbox Dark_Future_3_12_text5 MSG_NORMAL
 	special 0x15A	
     setvar 0x4051 0x50

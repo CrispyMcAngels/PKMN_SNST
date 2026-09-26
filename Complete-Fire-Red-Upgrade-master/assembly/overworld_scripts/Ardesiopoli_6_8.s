@@ -142,7 +142,7 @@ EventScript_Ardesiopoli_6_8_NPC1:
 .global EventScript_Ardesiopoli_6_8_NPC0
 EventScript_Ardesiopoli_6_8_NPC0:
 	lock
-	showpokepic 0x3BB 0x0 0x6
+	show_mugshot DUSK_GRUNT_M
 	msgbox Ardesiopoli_6_8_NPC0_text1 MSG_NORMAL
 	special 0x15A	
 	pause 0x1E
@@ -161,7 +161,7 @@ EventScript_Ardesiopoli_6_8_NPC0:
 		sound 0x15
 		applymovement 0x1 mov_exclamation
 		waitmovement 0x0
-		showpokepic 0x3BB 0x0 0x6
+		show_mugshot DUSK_GRUNT_M
 		msgbox Ardesiopoli_6_8_NPC0_text4 MSG_NORMAL
 		special 0x15A	
 		pause 0x1E
@@ -170,7 +170,7 @@ EventScript_Ardesiopoli_6_8_NPC0:
 		closeonkeypress
 		applymovement 0x1 Ardesiopoli_6_8_NPC0_mov2
 		waitmovement 0x0	
-		showpokepic 0x3BB 0x0 0x6
+		show_mugshot DUSK_GRUNT_M
 		msgbox Ardesiopoli_6_8_NPC0_text6 MSG_NORMAL
 		special 0x15A
 		setflag 0x96C

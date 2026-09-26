@@ -87,12 +87,7 @@ gMapScripts_Radiantia_8_6:
 			applymovement 0x3 Radiantia_8_6_mov0
 			waitmovement 0x0
 			pause 0x1E
-			compare 0x501F 0x100
-			if 0x1 _call Player_Blue
-			compare 0x501F 0x1A3
-			if 0x1 _call Player_Orange
-			compare 0x501F 0x1A4
-			if 0x1 _call Player_Green
+			show_mugshot PLAYER
 			msgbox Radiantia_8_5_NPC0_text2 MSG_NORMAL
 			special 0x15A
 			checkflag 0x975
@@ -141,28 +136,10 @@ gMapScripts_Radiantia_8_6:
 					hidesprite 0x3
 					setflag 0x976
 					pause 0x1E
-					compare 0x501F 0x100
-					if 0x1 _call Player_Blue
-					compare 0x501F 0x1A3
-					if 0x1 _call Player_Orange
-					compare 0x501F 0x1A4
-					if 0x1 _call Player_Green
+					show_mugshot PLAYER
 					pause 0x1E
 					msgbox Radiantia_8_5_NPC0_text3 MSG_NORMAL
 					special 0x15A
 					setvar 0x4062 0x2
 					releaseall
 					end	
-
-
-		Player_Blue:
-			showpokepic 0x3b6 0x0 0x6
-			return
-
-		Player_Orange:
-			showpokepic 0x3bE 0x0 0x6
-			return
-
-		Player_Green:
-			showpokepic 0x3bF 0x0 0x6
-			return

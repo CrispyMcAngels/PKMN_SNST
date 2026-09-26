@@ -22,7 +22,7 @@ gMapScripts_Capp_temporale_0_6:
 		pause 0x1E
 		pause 0x1E
 		pause 0x1E
-		showpokepic 0x3B9 0x0 0x6
+		show_mugshot UNKNOWN_MAN_2
     	msgbox EventScript_Capp_temporale_0_6_text1 MSG_NORMAL
 		special 0x15A
 		applymovement 0x1 Capp_temporale_0_6_mov1

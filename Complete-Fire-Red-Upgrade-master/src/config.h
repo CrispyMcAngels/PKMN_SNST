@@ -59,6 +59,12 @@
 #define FLAG_RAID_BATTLE_NO_FORCE_END 0x91A //When set, if FLAG_RAID_BATTLE is set, then raid battles won't be force ended.
 #define FLAG_FAST_BATTLE_MESSAGES 0x925 //When set, battle messages have no wait time once they've completed printing
 #define FLAG_FOLLOWER_IGNORE_ACTIVE_SCRIPT 0x926 //If set, the follower will reappear and move even when a script is in progress
+#define FLAG_FOLLOWER_POKEMON 0x999 //If set, the first Pokemon in the party listed in sFollowerMons (follow_me.c) follows the player. Comment out this line to remove the feature.
+#define FLAG_FOLLOWER_POKEMON_HIDDEN 0x99A //Set by FollowerMon_ReturnToBall to hide the following Pokemon (eg. for cutscenes). Clear it and the Pokemon comes back on the player's next step.
+#define VAR_FOLLOWER_POKEMON_UNLOCK 0x501F //The following Pokemon only appears when this var equals FOLLOWER_POKEMON_UNLOCK_VALUE
+#define FOLLOWER_POKEMON_UNLOCK_VALUE 0x0100
+#define VAR_TEXT_PAL_CUSTOM_COLOR 0x503E //If not 0, replaces color TEXT_PAL_CUSTOM_COLOR_SLOT of the standard text palette (0x471DEC) with this GBA color (0x0001-0x7FFF, use 0x8000 for black). Comment out this line to remove the feature.
+#define TEXT_PAL_CUSTOM_COLOR_SLOT 11
 #define FLAG_KEEP_CONSUMABLE_ITEMS 0x927 //If set, consumable items are returned after battles
 #define FLAG_DAILY_EVENTS_START 0xE00 //To flag + 0xFF, resets every new day.
 

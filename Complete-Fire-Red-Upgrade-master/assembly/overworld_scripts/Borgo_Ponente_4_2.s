@@ -27,23 +27,18 @@ EventScript_Borgo_Ponente_4_2_Left:
 	lock
 	faceplayer
 	setflag 0x02A
-    showpokepic 0x3B5 0x0 0x6
+    show_mugshot NAOMI
     msgbox EventScript_Borgo_Ponente_4_2_text1 MSG_NORMAL
     special 0x15A
 	pause 0x1E
-	compare 0x501F 0x100
-	if 0x1 _call Player_Blue
-	compare 0x501F 0x1A3
-	if 0x1 _call Player_Orange
-	compare 0x501F 0x1A4
-	if 0x1 _call Player_Green
+	show_mugshot PLAYER
     msgbox EventScript_Borgo_Ponente_4_2_text2 MSG_NORMAL
     special 0x15A
 	pause 0x1E
 	sound 0x5
 	applymovement 0x3 Borgo_Ponente_4_2_mov1a
 	waitmovement 0x0
-    showpokepic 0x3B5 0x0 0x6
+    show_mugshot NAOMI
     msgbox EventScript_Borgo_Ponente_4_2_text3 MSG_NORMAL
     special 0x15A
 	pause 0x1E
@@ -83,23 +78,18 @@ EventScript_Borgo_Ponente_4_2_Down:
 	lock
 	faceplayer
 	setflag 0x02A
-    showpokepic 0x3B5 0x0 0x6
+    show_mugshot NAOMI
     msgbox EventScript_Borgo_Ponente_4_2_text1 MSG_NORMAL
     special 0x15A
 	pause 0x1E
-	compare 0x501F 0x100
-	if 0x1 _call Player_Blue
-	compare 0x501F 0x1A3
-	if 0x1 _call Player_Orange
-	compare 0x501F 0x1A4
-	if 0x1 _call Player_Green
+	show_mugshot PLAYER
     msgbox EventScript_Borgo_Ponente_4_2_text2 MSG_NORMAL
     special 0x15A
 	pause 0x1E
 	sound 0x5
 	applymovement 0x3 Borgo_Ponente_4_2_mov1b
 	waitmovement 0x0
-    showpokepic 0x3B5 0x0 0x6
+    show_mugshot NAOMI
     msgbox EventScript_Borgo_Ponente_4_2_text3 MSG_NORMAL
     special 0x15A
 	pause 0x1E
@@ -137,23 +127,18 @@ EventScript_Borgo_Ponente_4_2_Right:
 	lock
 	faceplayer
 	setflag 0x02A
-    showpokepic 0x3B5 0x0 0x6
+    show_mugshot NAOMI
     msgbox EventScript_Borgo_Ponente_4_2_text1 MSG_NORMAL
     special 0x15A
 	pause 0x1E
-	compare 0x501F 0x100
-	if 0x1 _call Player_Blue
-	compare 0x501F 0x1A3
-	if 0x1 _call Player_Orange
-	compare 0x501F 0x1A4
-	if 0x1 _call Player_Green
+	show_mugshot PLAYER
     msgbox EventScript_Borgo_Ponente_4_2_text2 MSG_NORMAL
     special 0x15A
 	pause 0x1E
 	sound 0x5
 	applymovement 0x3 Borgo_Ponente_4_2_mov1c
 	waitmovement 0x0
-    showpokepic 0x3B5 0x0 0x6
+    show_mugshot NAOMI
     msgbox EventScript_Borgo_Ponente_4_2_text3 MSG_NORMAL
     special 0x15A
 	pause 0x1E
@@ -205,15 +190,3 @@ EventScript_Borgo_Ponente_4_2_NPC3:
 	msgbox EventScript_Borgo_Ponente_4_2_NPC3_text1 MSG_NORMAL
 	release
 	end
-
-		Player_Blue:
-			showpokepic 0x3b6 0x0 0x6
-			return
-
-		Player_Orange:
-			showpokepic 0x3bE 0x0 0x6
-			return
-
-		Player_Green:
-			showpokepic 0x3bF 0x0 0x6
-			return

@@ -15,11 +15,11 @@ EventScript_Radiantia_3_4_tile0:
 	compare 0x4002 0x14
 	if 0x1 _call EventScript_Radiantia_3_4_tile0_P0
 	pause 0x1E
-	showpokepic 0x3B4 0x0 0x6
+	show_mugshot CRISPY
 	msgbox Radiantia_3_4_tile0_text1 MSG_NORMAL
 	special 0x15A	
 	pause 0x1E
-	showpokepic 0x3C0 0x0 0x6
+	show_mugshot ELEONORA
 	msgbox Radiantia_3_4_tile0_text2 MSG_NORMAL
 	special 0x15A	
 	pause 0x1E
@@ -31,13 +31,13 @@ EventScript_Radiantia_3_4_tile0:
 	waitmovement 0xB
 	setvar 0x4051 0x4B
 	pause 0x1E
-	showpokepic 0x3B4 0x0 0x6
+	show_mugshot CRISPY
 	msgbox Radiantia_3_4_tile0_text3 MSG_YESNO
 	special 0x15A
 	compare 0x800D 0x1
 	if 0x1 _goto EventScript_Radiantia_3_4_tile0_P1
 	pause 0x1E
-	showpokepic 0x3B4 0x0 0x6
+	show_mugshot CRISPY
 	msgbox Radiantia_3_4_tile0_text4 MSG_NORMAL
 	special 0x15A	
 	fadedefault
@@ -48,7 +48,7 @@ EventScript_Radiantia_3_4_tile0:
 	EventScript_Radiantia_3_4_tile0_P1:
 		pause 0x1E
 		spriteface 0xB 0x2
-		showpokepic 0x3C0 0x0 0x6
+		show_mugshot ELEONORA
 		msgbox Radiantia_3_4_tile0_text5 MSG_NORMAL
 		special 0x15A	
 		pause 0x1E
@@ -57,7 +57,7 @@ EventScript_Radiantia_3_4_tile0:
 		pause 0x1E		
 		spriteface 0xB 0x4
 		pause 0x1E
-		showpokepic 0x3B4 0x0 0x6
+		show_mugshot CRISPY
 		msgbox Radiantia_3_4_tile0_text6 MSG_NORMAL
 		special 0x15A	
 		pause 0x1E
@@ -137,12 +137,7 @@ gMapScripts_Radiantia_3_4:
 			sound 0x15
 			applymovement 0xFF mov_exclamation
 			waitmovement 0xFF			
-			compare 0x501F 0x100
-			if 0x1 _call Player_Blue
-			compare 0x501F 0x1A3
-			if 0x1 _call Player_Orange
-			compare 0x501F 0x1A4
-			if 0x1 _call Player_Green
+			show_mugshot PLAYER
 			pause 0x1E
 			msgbox Radiantia_3_4_MapScriptOnFrame_text1 MSG_NORMAL
 			special 0x15A
@@ -168,7 +163,7 @@ gMapScripts_Radiantia_3_4:
 			waitmovement 0x0			
 			pause 0x1E
 			
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			msgbox Radiantia_3_4_MapScriptOnFrame_text2 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
@@ -180,7 +175,7 @@ gMapScripts_Radiantia_3_4:
 			sound 0x15				
 			fadedefault
 			pause 0x1E
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			msgbox Radiantia_3_4_MapScriptOnFrame_text3 MSG_NORMAL
 			special 0x15A		
 			pause 0x1E
@@ -189,11 +184,11 @@ gMapScripts_Radiantia_3_4:
 			pause 0x1E
 			spriteface 0xB 0x2
 			pause 0x1E
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			msgbox Radiantia_3_4_MapScriptOnFrame_text4 MSG_NORMAL
 			special 0x15A	
 			pause 0x1E
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			msgbox Radiantia_3_4_MapScriptOnFrame_text5 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
@@ -204,12 +199,12 @@ gMapScripts_Radiantia_3_4:
 			sound 0x15
 			spriteface 0xB 0x2
 			pause 0x1E
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			msgbox Radiantia_3_4_MapScriptOnFrame_text6 MSG_NORMAL
 			special 0x15A
 			pause 0x1E
 			pause 0x1E
-			showpokepic 0x3B4 0x0 0x6
+			show_mugshot CRISPY
 			msgbox Radiantia_3_4_MapScriptOnFrame_text7 MSG_NORMAL
 			special 0x15A
 			playsong 0x18A 0x0
@@ -337,24 +332,12 @@ EventScript_Radiantia_3_4_NPC5:
 	end
 
 
-		Player_Blue:
-			showpokepic 0x3b6 0x0 0x6
-			return
-
-		Player_Orange:
-			showpokepic 0x3bE 0x0 0x6
-			return
-
-		Player_Green:
-			showpokepic 0x3bF 0x0 0x6
-			return
-
 .global EventScript_Radiantia_3_4_NPC10
 EventScript_Radiantia_3_4_NPC10:
 	lock
 	faceplayer
 	playsong 0x189 0x0
-	showpokepic 0x3B4 0x0 0x6
+	show_mugshot CRISPY
 	msgbox Radiantia_3_4_tile0_text3 MSG_YESNO
 	special 0x15A
 	compare 0x800D 0x1
@@ -368,7 +351,7 @@ EventScript_Radiantia_3_4_NPC10:
 EventScript_Radiantia_3_4_NPC11:
 	lock
 	faceplayer
-	showpokepic 0x3C0 0x0 0x6
+	show_mugshot ELEONORA
 	msgbox Radiantia_3_4_NPC12_text1 MSG_NORMAL
 	special 0x15A	
 	release

@@ -31,14 +31,14 @@ EventScript_Borgo_Ponente_4_3_NPC1:
 	faceplayer
 	compare 0x4051 0x12
 	if 0x1 _call EventScript_Borgo_Ponente_4_3_NPC1_P1
-	showpokepic 0x3B7 0x0 0x6
+	show_mugshot PROFKRAEMER
 	msgbox EventScript_Borgo_Ponente_4_3_NPC1_text1 MSG_NORMAL
 	special 0x15A
 	release
 	end
 
 	EventScript_Borgo_Ponente_4_3_NPC1_P1:
-		showpokepic 0x3B7 0x0 0x6
+		show_mugshot PROFKRAEMER
 		msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text15 MSG_NORMAL
 		special 0x15A
 		release
@@ -81,43 +81,43 @@ gMapScripts_Borgo_Ponente_4_3:
 
 			Borgo_Ponente_4_3_MapScriptOnFrame_Part1:
 					spriteface 0xFF 0x2
-				    showpokepic 0x3b7 0x0 0x6
+				    show_mugshot PROFKRAEMER
     				//Ciao ragazzi...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text1 MSG_NORMAL
 					special 0x15A
 					pause 0x1E
-					showpokepic 0x3b5 0x0 0x6
+					show_mugshot NAOMI
     				//salve prof oak..
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text2 MSG_NORMAL
 					special 0x15A
 					pause 0x1E
-					showpokepic 0x3b7 0x0 0x6
+					show_mugshot PROFKRAEMER
     				//Ma certo...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text3 MSG_NORMAL
 					special 0x15A
 					pause 0x1E
 					applymovement 0x2 Borgo_Ponente_4_3_MapScriptOnFrame_mov1
 					waitmovement 0x0
-					showpokepic 0x3b7 0x0 0x6
+					show_mugshot PROFKRAEMER
     				//wow incredibile...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text4 MSG_NORMAL
 					special 0x15A
 					pause 0x1E
 					applymovement 0x2 Borgo_Ponente_4_3_MapScriptOnFrame_mov2
 					waitmovement 0x0
-					showpokepic 0x3b7 0x0 0x6
+					show_mugshot PROFKRAEMER
     				//ora che player ha...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text5 MSG_NORMAL
 					special 0x15A
 					pause 0x1E
 					applymovement 0x4 Borgo_Ponente_4_3_MapScriptOnFrame_mov3
 					waitmovement 0x0
-					showpokepic 0x3b5 0x0 0x6
+					show_mugshot NAOMI
     				//si esatto..
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text6 MSG_NORMAL
 					special 0x15A
 					pause 0x1E
-					showpokepic 0x3b7 0x0 0x6
+					show_mugshot PROFKRAEMER
     				//Non preoccuparti
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text7 MSG_NORMAL
 					special 0x15A
@@ -128,7 +128,7 @@ gMapScripts_Borgo_Ponente_4_3:
 					hidesprite 0x3
 					applymovement 0x2 Borgo_Ponente_4_3_MapScriptOnFrame_mov5
 					waitmovement 0x0
-					showpokepic 0x3b7 0x0 0x6
+					show_mugshot PROFKRAEMER
     				//Ecco Brandon, tieni!
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text8 MSG_NORMAL
 					special 0x15A
@@ -137,29 +137,24 @@ gMapScripts_Borgo_Ponente_4_3:
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text9 MSG_NORMAL
 
 					pause 0x1E
-					showpokepic 0x3b5 0x0 0x6
+					show_mugshot NAOMI
     				//wow questo pokemon sembra fortissimo
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text10 MSG_NORMAL
 					special 0x15A
 					pause 0x1E
-					showpokepic 0x3b7 0x0 0x6
+					show_mugshot PROFKRAEMER
     				//[1A] proprio cosi...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text11 MSG_NORMAL
 					special 0x15A
 					pause 0x1E
-					compare 0x501F 0x100
-					if 0x1 _call Player_Blue
-					compare 0x501F 0x1A3
-					if 0x1 _call Player_Orange
-					compare 0x501F 0x1A4
-					if 0x1 _call Player_Green
+					show_mugshot PLAYER
     				//player: ...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text12 MSG_NORMAL
 					special 0x15A
 
 
 					pause 0x1E
-					showpokepic 0x3b7 0x0 0x6
+					show_mugshot PROFKRAEMER
     				//perche non vi sfidate...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text13 MSG_NORMAL
 					special 0x15A
@@ -167,7 +162,7 @@ gMapScripts_Borgo_Ponente_4_3:
 					waitmovement 0x0
 					spriteface 0x4 0x4
 					spriteface 0xFF 0x3
-					showpokepic 0x3b5 0x0 0x6
+					show_mugshot NAOMI
     				//Ma certo...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text14 MSG_NORMAL
 					special 0x15A
@@ -181,7 +176,7 @@ gMapScripts_Borgo_Ponente_4_3:
 					waitmovement 0x0
 					pause 0x1E
 					spriteface 0xFF 0x2
-					showpokepic 0x3b7 0x0 0x6
+					show_mugshot PROFKRAEMER
     				//quel brandon...
 					msgbox Borgo_Ponente_4_3_MapScriptOnFrame_text15 MSG_NORMAL
 					special 0x15A
@@ -259,15 +254,3 @@ gMapScripts_Borgo_Ponente_4_3:
 						.byte 0x13
 						.byte 0x1 
 						.byte 0xFE
-
-		Player_Blue:
-			showpokepic 0x3b6 0x0 0x6
-			return
-
-		Player_Orange:
-			showpokepic 0x3bE 0x0 0x6
-			return
-
-		Player_Green:
-			showpokepic 0x3bF 0x0 0x6
-			return

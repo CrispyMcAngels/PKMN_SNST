@@ -10,10 +10,12 @@
 #include "../include/item.h"
 #include "../include/metatile_behavior.h"
 #include "../include/overworld.h"
+#include "../include/pokemon.h"
 #include "../include/script.h"
 #include "../include/constants/event_object_movement_constants.h"
 #include "../include/constants/event_objects.h"
 #include "../include/constants/songs.h"
+#include "../include/constants/species.h"
 
 #include "../include/new/character_customization.h"
 #include "../include/new/item.h"
@@ -50,9 +52,22 @@ static void Task_FollowerHandleEscalatorFinish(u8 taskId);
 static void CalculateFollowerEscalatorTrajectoryUp(struct Task *task);
 static void CalculateFollowerEscalatorTrajectoryDown(struct Task *task);
 static void SetFollowerSprite(u8 spriteIndex);
+static void GetFollowerTemplate(struct EventObjectTemplate* template);
+static void SpawnFollowerAvatar(void);
+static bool8 IsFollowerMon(void);
+static u16 GetFollowerMonGfxIdFromParty(void);
+static void SetUpFollowerMonState(u16 gfxId);
+static void RemoveFollowerMon(void);
 static void TurnNPCIntoFollower(u8 localId, u8 followerFlags);
 
 #define MOVEMENT_INVALID 0xFE
+
+#define FOLLOWER_MON_MAP_GROUP 0xFF //Stored in gFollowerState.map.group to mark a follower created at runtime (has no map template)
+#define FOLLOWER_MON_NONE 0xFFFF
+#define FOLLOWER_MON_FLAGS (FOLLOWER_FLAG_CAN_BIKE | FOLLOWER_FLAG_CAN_LEAVE_ROUTE | FOLLOWER_FLAG_CAN_SURF | FOLLOWER_FLAG_CAN_WATERFALL \
+						  | FOLLOWER_FLAG_CAN_DIVE | FOLLOWER_FLAG_CAN_ROCK_CLIMB)
+
+extern const u8 EventScript_FollowerMon[];
 
 enum
 {
@@ -90,6 +105,21 @@ static const struct FollowerSprites gFollowerAlternateSprites[] =
 	{EVENT_OBJ_GFX_JOGGER, EVENT_OBJ_GFX_CYCLIST_M, EVENT_OBJ_GFX_SWIMMER_M, EVENT_OBJ_GFX_SWIMMER_F}, //For debugging
 	{EVENT_OBJ_GFX_COLLECTOR, EVENT_OBJ_GFX_CYCLIST_M, EVENT_OBJ_GFX_SWIMMER_M, EVENT_OBJ_GFX_SWIMMER_F}, //For debugging
 	#endif
+};
+
+struct FollowerMon
+{
+	u16 species;
+	u16 gfxId;
+};
+
+//Pokemon that follow the player when FLAG_FOLLOWER_POKEMON is set.
+//The first party member found in this table is the one that follows.
+static const struct FollowerMon sFollowerMons[] =
+{
+	{SPECIES_AXEW,    111}, //NPC111
+	{SPECIES_FRAXURE, 111}, //Placeholder until its own sprite is made
+	{SPECIES_HAXORUS, 111}, //Placeholder until its own sprite is made
 };
 
 //General Utility
@@ -209,6 +239,109 @@ static void TryUpdateFollowerSpriteUnderwater(void)
 	}
 }
 
+//Hooked in: the follower always takes the player's elevation, so it's never drawn
+//over the player when they're on tiles of different heights (eg. going down a slope)
+void EventObjectUpdateZCoord(struct EventObject* eventObj)
+{
+	if (gFollowerState.inProgress
+	&& eventObj == &gEventObjects[GetFollowerMapObjId()]
+	&& eventObj->localId == gFollowerState.map.id)
+	{
+		struct EventObject* player = &gEventObjects[gPlayerAvatar->eventObjectId];
+		eventObj->currentElevation = player->currentElevation;
+		eventObj->elevation = player->elevation;
+		return;
+	}
+
+	//Vanilla
+	u8 currElevation = MapGridGetZCoordAt(eventObj->currentCoords.x, eventObj->currentCoords.y);
+	u8 prevElevation = MapGridGetZCoordAt(eventObj->previousCoords.x, eventObj->previousCoords.y);
+
+	if (currElevation == 0xF || prevElevation == 0xF)
+		return;
+
+	eventObj->currentElevation = currElevation;
+
+	if (currElevation != 0 && currElevation != 0xF)
+		eventObj->elevation = currElevation;
+}
+
+//Sideways stairs patch in the ROM: on tile behaviours 0xB0-0xB5, left/right steps are replaced by
+//the patch's movement actions 0xAA-0xB5. These move the NPC diagonally based on the tile it's standing on.
+#define MB_SIDEWAYS_STAIRS_FIRST 0xB0
+#define MB_SIDEWAYS_STAIRS_LAST 0xB5
+
+enum
+{
+	SIDEWAYS_STAIRS_SPEED_WALK,
+	SIDEWAYS_STAIRS_SPEED_FAST, //Bike, or running without running frames
+	SIDEWAYS_STAIRS_SPEED_RUN,
+	SIDEWAYS_STAIRS_SPEED_COUNT,
+};
+
+//Copy of the patch's table: [speed][tile behaviour - 0xB0] = {left action, right action}
+//0 means the step is straight on that tile
+static const u8 sSidewaysStairsActions[SIDEWAYS_STAIRS_SPEED_COUNT][MB_SIDEWAYS_STAIRS_LAST - MB_SIDEWAYS_STAIRS_FIRST + 1][2] =
+{
+	[SIDEWAYS_STAIRS_SPEED_WALK] = {{0xAC, 0xAB}, {0xAC, 0}, {0, 0xAB}, {0xAA, 0xAD}, {0, 0xAD}, {0xAA, 0}},
+	[SIDEWAYS_STAIRS_SPEED_FAST] = {{0xB4, 0xB3}, {0xB4, 0}, {0, 0xB3}, {0xB2, 0xB5}, {0, 0xB5}, {0xB2, 0}},
+	[SIDEWAYS_STAIRS_SPEED_RUN]  = {{0xB1, 0xAF}, {0xB1, 0}, {0, 0xAF}, {0xAE, 0xB0}, {0, 0xB0}, {0xAE, 0}},
+};
+
+//Turns the player's sideways stairs action into the regular action of the same speed
+static u8 SidewaysStairsActionToRegularAction(u8 state)
+{
+	switch (state) {
+		case 0xAA ... 0xAD:
+			return MOVEMENT_ACTION_WALK_NORMAL_LEFT;
+		case 0xAE ... 0xB1:
+			return MOVEMENT_ACTION_SLIDE_RIGHT_FOOT_LEFT; //Running
+		case 0xB2 ... 0xB5:
+			return MOVEMENT_ACTION_SLIDE_SLOW_LEFT; //Bike
+	}
+
+	return state;
+}
+
+//The follower steps on the same tiles the player did, so picking the action from its own tile
+//makes it go diagonally exactly where the player did
+static u8 GetFollowerSidewaysStairsAction(struct EventObject* follower, u8 newState)
+{
+	u8 speed, isRight;
+	u8 behaviour = follower->currentMetatileBehavior;
+
+	if (behaviour < MB_SIDEWAYS_STAIRS_FIRST || behaviour > MB_SIDEWAYS_STAIRS_LAST)
+		return newState;
+
+	switch (newState) {
+		case MOVEMENT_ACTION_WALK_NORMAL_LEFT:
+		case MOVEMENT_ACTION_WALK_NORMAL_RIGHT:
+			speed = SIDEWAYS_STAIRS_SPEED_WALK;
+			isRight = newState == MOVEMENT_ACTION_WALK_NORMAL_RIGHT;
+			break;
+		case MOVEMENT_ACTION_WALK_FAST_LEFT:
+		case MOVEMENT_ACTION_WALK_FAST_RIGHT:
+			speed = SIDEWAYS_STAIRS_SPEED_FAST;
+			isRight = newState == MOVEMENT_ACTION_WALK_FAST_RIGHT;
+			break;
+		case MOVEMENT_ACTION_SLIDE_SLOW_LEFT:
+		case MOVEMENT_ACTION_SLIDE_SLOW_RIGHT:
+			speed = SIDEWAYS_STAIRS_SPEED_FAST; //The patch slows the bike down on stairs
+			isRight = newState == MOVEMENT_ACTION_SLIDE_SLOW_RIGHT;
+			break;
+		case MOVEMENT_ACTION_SLIDE_RIGHT_FOOT_LEFT: //Only used when the follower has running frames
+		case MOVEMENT_ACTION_SLIDE_RIGHT_FOOT_RIGHT:
+			speed = SIDEWAYS_STAIRS_SPEED_RUN;
+			isRight = newState == MOVEMENT_ACTION_SLIDE_RIGHT_FOOT_RIGHT;
+			break;
+		default:
+			return newState; //Not a left/right step
+	}
+
+	u8 stairsAction = sSidewaysStairsActions[speed][behaviour - MB_SIDEWAYS_STAIRS_FIRST][isRight];
+	return stairsAction != 0 ? stairsAction : newState;
+}
+
 //Actual Follow Me
 void FollowMe(struct EventObject* npc, u8 state, bool8 ignoreScriptActive)
 {
@@ -224,6 +357,7 @@ void FollowMe(struct EventObject* npc, u8 state, bool8 ignoreScriptActive)
 		return; //Don't follow during a script
 
 	struct EventObject* follower = &gEventObjects[GetFollowerMapObjId()];
+	state = SidewaysStairsActionToRegularAction(state); //The follower picks its own stairs action below
 
 	//Check if state would cause hidden follower to reappear
 	if (IsStateMovement(state) && gFollowerState.warpEnd)
@@ -267,6 +401,8 @@ void FollowMe(struct EventObject* npc, u8 state, bool8 ignoreScriptActive)
 	if (newState == MOVEMENT_INVALID)
 		goto RESET;
 
+	newState = GetFollowerSidewaysStairsAction(follower, newState);
+
 	if (gFollowerState.createSurfBlob == SURF_BLOB_STATE_GET_ON) //Get on Surf Blob
 	{
 		gFollowerState.createSurfBlob = SURF_BLOB_STATE_ON;
@@ -294,6 +430,7 @@ void FollowMe(struct EventObject* npc, u8 state, bool8 ignoreScriptActive)
 		case MOVEMENT_ACTION_WALK_NORMAL_LEFT_DOWN_FACE_DOWN ... MOVEMENT_ACTION_WALK_NORMAL_RIGHT_UP_FACE_RIGHT:
 		case MOVEMENT_ACTION_RUN_LEFT_DOWN_FACE_DOWN ... MOVEMENT_ACTION_RUN_RIGHT_UP_FACE_RIGHT:
 		case MOVEMENT_ACTION_WALK_FAST_LEFT_DOWN_FACE_DOWN ... MOVEMENT_ACTION_WALK_FAST_RIGHT_UP_FACE_RIGHT:
+		case 0xAA ... 0xB5: //Sideways stairs patch: slower than a regular step, so the player's next step would cut it off halfway
 			CreateTask(Task_ReallowPlayerMovement, 1); //Synchronize movements on stairs and ledges
 			gPlayerAvatar->preventStep = TRUE;
 	}
@@ -1228,7 +1365,8 @@ static void SetFollowerSprite(u8 spriteIndex)
 	DestroySprite(&gSprites[oldSpriteId]);
 	RemoveEventObject(&gEventObjects[GetFollowerMapObjId()]);
 
-	struct EventObjectTemplate clone = *GetEventObjectTemplateByLocalIdAndMap(gFollowerState.map.id, gFollowerState.map.number, gFollowerState.map.group);
+	struct EventObjectTemplate clone;
+	GetFollowerTemplate(&clone);
 	clone.graphicsIdLowerByte = newGraphicsId & 0xFF;
 	clone.graphicsIdUpperByte = newGraphicsId >> 8;
 	gFollowerState.objId = TrySpawnEventObjectTemplate(&clone, gSaveBlock1->location.mapNum, gSaveBlock1->location.mapGroup, clone.x, clone.y);
@@ -1259,16 +1397,62 @@ void FollowMe_WarpSetEnd(void)
 	follower->movementDirection = player->movementDirection;
 }
 
+static void GetFollowerTemplate(struct EventObjectTemplate* template)
+{
+	if (gFollowerState.map.group == FOLLOWER_MON_MAP_GROUP)
+	{
+		//Created at runtime, so build the template from scratch
+		memset(template, 0, sizeof(struct EventObjectTemplate));
+		template->localId = DEFAULT_FOLLOWER_LOCAL_ID;
+		template->elevation = 3;
+		template->script = gFollowerState.script;
+	}
+	else
+		*template = *GetEventObjectTemplateByLocalIdAndMap(gFollowerState.map.id, gFollowerState.map.number, gFollowerState.map.group);
+}
+
+//Called when the player avatar is created on map load
 void CreateFollowerAvatar(void)
+{
+	#ifdef FLAG_FOLLOWER_POKEMON
+	if (!gFollowerState.inProgress || IsFollowerMon()) //Human followers take priority
+	{
+		u16 gfxId = GetFollowerMonGfxIdFromParty();
+
+		if (gfxId == FOLLOWER_MON_NONE)
+			gFollowerState.inProgress = FALSE;
+		else if (IsFollowerMon())
+			gFollowerState.gfxId = gfxId; //Could have evolved
+		else if (gMapHeader.mapType != MAP_TYPE_UNDERWATER)
+			SetUpFollowerMonState(gfxId);
+	}
+	#endif
+
+	SpawnFollowerAvatar();
+}
+
+static void SpawnFollowerAvatar(void)
 {
 	struct EventObject* player;
 	struct EventObjectTemplate clone;
+	u8 mapNum, mapGroup;
 
 	if (!gFollowerState.inProgress)
 		return;
 
 	player = &gEventObjects[gPlayerAvatar->eventObjectId];
-	clone = *GetEventObjectTemplateByLocalIdAndMap(gFollowerState.map.id, gFollowerState.map.number, gFollowerState.map.group);
+	GetFollowerTemplate(&clone);
+
+	if (IsFollowerMon())
+	{
+		mapNum = gSaveBlock1->location.mapNum;
+		mapGroup = gSaveBlock1->location.mapGroup;
+	}
+	else
+	{
+		mapNum = gFollowerState.map.number;
+		mapGroup = gFollowerState.map.group;
+	}
 
 	clone.graphicsIdLowerByte = GetFollowerSprite() & 0xFF;
 	clone.graphicsIdUpperByte = GetFollowerSprite() >> 8;
@@ -1289,9 +1473,12 @@ void CreateFollowerAvatar(void)
 	}
 
 	// Create NPC and store ID
-	gFollowerState.objId = TrySpawnEventObjectTemplate(&clone, gFollowerState.map.number, gFollowerState.map.group, clone.x, clone.y);
+	gFollowerState.objId = TrySpawnEventObjectTemplate(&clone, mapNum, mapGroup, clone.x, clone.y);
 	if (gFollowerState.objId == EVENT_OBJECTS_COUNT)
+	{
 		gFollowerState.inProgress = FALSE; //Cancel the following because couldn't load sprite
+		return;
+	}
 
 	if (gMapHeader.mapType == MAP_TYPE_UNDERWATER)
 		gFollowerState.createSurfBlob = SURF_BLOB_STATE_NONE;
@@ -1299,9 +1486,427 @@ void CreateFollowerAvatar(void)
 	gEventObjects[gFollowerState.objId].invisible = TRUE;
 }
 
+//Pokemon Follower
+static bool8 IsFollowerMon(void)
+{
+	return gFollowerState.inProgress && gFollowerState.map.group == FOLLOWER_MON_MAP_GROUP;
+}
+
+static const struct FollowerMon* GetFollowerMonFromParty(void)
+{
+	#ifdef FLAG_FOLLOWER_POKEMON
+	if (!FlagGet(FLAG_FOLLOWER_POKEMON))
+		return NULL;
+
+	#ifdef FLAG_FOLLOWER_POKEMON_HIDDEN
+	if (FlagGet(FLAG_FOLLOWER_POKEMON_HIDDEN))
+		return NULL;
+	#endif
+
+	#ifdef VAR_FOLLOWER_POKEMON_UNLOCK
+	if (VarGet(VAR_FOLLOWER_POKEMON_UNLOCK) != FOLLOWER_POKEMON_UNLOCK_VALUE)
+		return NULL;
+	#endif
+
+	for (u32 i = 0; i < PARTY_SIZE; ++i)
+	{
+		if (GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG, NULL))
+			continue;
+
+		u16 species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL);
+		for (u32 j = 0; j < ARRAY_COUNT(sFollowerMons); ++j)
+		{
+			if (sFollowerMons[j].species == species)
+				return &sFollowerMons[j];
+		}
+	}
+	#endif
+
+	return NULL;
+}
+
+static u16 GetFollowerMonGfxIdFromParty(void)
+{
+	const struct FollowerMon* followerMon = GetFollowerMonFromParty();
+	return followerMon == NULL ? FOLLOWER_MON_NONE : followerMon->gfxId;
+}
+
+static void SetUpFollowerMonState(u16 gfxId)
+{
+	gFollowerState.inProgress = TRUE;
+	gFollowerState.currentSprite = FOLLOWER_SPRITE_INDEX_NORMAL;
+	gFollowerState.delayedState = 0;
+	gFollowerState.map.id = DEFAULT_FOLLOWER_LOCAL_ID;
+	gFollowerState.map.number = 0;
+	gFollowerState.map.group = FOLLOWER_MON_MAP_GROUP;
+	gFollowerState.warpEnd = TRUE; //Come out from behind the player on their next step
+	gFollowerState.script = EventScript_FollowerMon;
+	gFollowerState.flag = 0;
+	gFollowerState.gfxId = gfxId;
+	gFollowerState.flags = FOLLOWER_MON_FLAGS;
+	gFollowerState.locked = FALSE;
+	gFollowerState.createSurfBlob = SURF_BLOB_STATE_NONE;
+	gFollowerState.comeOutDoorStairs = FALSE;
+}
+
+static void RemoveFollowerMon(void)
+{
+	HideFollower(); //Destroys the surf blob if there is one
+	RemoveEventObject(&gEventObjects[GetFollowerMapObjId()]);
+	gFollowerState.inProgress = FALSE;
+}
+
+//Called after every step the player takes, to react to party or flag changes
+void FollowerMon_UpdateOnStep(void)
+{
+	#ifdef FLAG_FOLLOWER_POKEMON
+	if (gFollowerState.inProgress && !IsFollowerMon())
+		return; //Human followers take priority
+
+	u16 gfxId = GetFollowerMonGfxIdFromParty();
+
+	if (!IsFollowerMon())
+	{
+		if (gfxId == FOLLOWER_MON_NONE
+		|| TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING | PLAYER_AVATAR_FLAG_UNDERWATER)
+		|| gMapHeader.mapType == MAP_TYPE_UNDERWATER)
+			return; //Wait until the player is back on land
+
+		SetUpFollowerMonState(gfxId);
+		SpawnFollowerAvatar();
+		if (gFollowerState.inProgress)
+			PlayerLogCoordinates(&gEventObjects[gPlayerAvatar->eventObjectId]);
+	}
+	else if (gfxId == FOLLOWER_MON_NONE)
+	{
+		RemoveFollowerMon();
+	}
+	else if (gfxId != gFollowerState.gfxId && gFollowerState.createSurfBlob == SURF_BLOB_STATE_NONE) //Wait until off the surf blob
+	{
+		//Evolved or party order changed
+		u8 spriteIndex = gFollowerState.currentSprite;
+		gFollowerState.gfxId = gfxId;
+		gFollowerState.currentSprite = 0xFF; //Force the sprite reload
+		SetFollowerSprite(spriteIndex);
+	}
+	#endif
+}
+
+//@Details: Buffers the species of the Pokemon following the player.
+//@Returns: Var8004: The species, or SPECIES_NONE if no Pokemon is following.
+void FollowerMon_BufferSpecies(void)
+{
+	const struct FollowerMon* followerMon = GetFollowerMonFromParty();
+	Var8004 = (IsFollowerMon() && followerMon != NULL) ? followerMon->species : SPECIES_NONE;
+}
+
+#define POKE_BALL_GFX_ID 92 //NPC92
+#define POKE_BALL_LOCAL_ID 0xFD
+#define POKE_BALL_BLINK_FRAMES 24
+#define POKE_BALL_HOP_FRAMES 16
+#define POKE_BALL_HOP_HEIGHT 6
+#define POKE_BALL_WAIT_FRAMES 16
+
+enum
+{
+	POKE_BALL_ANIM_START,
+	POKE_BALL_ANIM_BLINK,
+	POKE_BALL_ANIM_HOP,
+	POKE_BALL_ANIM_WAIT,
+	POKE_BALL_ANIM_END,
+};
+
+#define tState data[0]
+#define tTimer data[1]
+#define tBallObjId data[2]
+
+//Returns EVENT_OBJECTS_COUNT if the ball couldn't be created
+static u8 SpawnPokeBallObject(s16 x, s16 y, u8 elevation)
+{
+	struct EventObjectTemplate ball = {0};
+	ball.localId = POKE_BALL_LOCAL_ID;
+	ball.graphicsIdLowerByte = POKE_BALL_GFX_ID & 0xFF;
+	ball.graphicsIdUpperByte = POKE_BALL_GFX_ID >> 8;
+	ball.x = x - 7;
+	ball.y = y - 7;
+	ball.elevation = elevation;
+	ball.movementType = MOVEMENT_TYPE_NONE; //Only has one frame, so it must never animate
+
+	u8 objId = TrySpawnEventObjectTemplate(&ball, gSaveBlock1->location.mapNum, gSaveBlock1->location.mapGroup, ball.x, ball.y);
+	if (objId < EVENT_OBJECTS_COUNT) //The last two args are camera offsets, so the sprite needs to be put on the right tile
+		MoveEventObjectToMapCoords(&gEventObjects[objId], x, y);
+
+	return objId;
+}
+
+//Small hop done by hand, since movement actions would animate the ball.
+//Returns TRUE once the ball has landed.
+static bool8 UpdatePokeBallHop(struct Task* task)
+{
+	struct Sprite* ballSprite = &gSprites[gEventObjects[task->tBallObjId].spriteId];
+
+	if (++task->tTimer < POKE_BALL_HOP_FRAMES)
+	{
+		ballSprite->pos2.y = -Sine((task->tTimer * 0x80) / POKE_BALL_HOP_FRAMES, POKE_BALL_HOP_HEIGHT);
+		return FALSE;
+	}
+
+	ballSprite->pos2.y = 0;
+	PlaySE(SE_POKE_BALL_BOUNCE_1);
+	task->tTimer = 0;
+	return TRUE;
+}
+
+//Flickers the follower. Returns TRUE when done.
+static bool8 UpdateFollowerBlink(struct Task* task, struct EventObject* follower)
+{
+	if (++task->tTimer < POKE_BALL_BLINK_FRAMES)
+	{
+		follower->invisible = (task->tTimer / 2) & 1;
+		return FALSE;
+	}
+
+	task->tTimer = 0;
+	return TRUE;
+}
+
+//Tries behind the player first, then the sides, then in front
+static bool8 GetFreeTileNextToPlayer(s16* x, s16* y)
+{
+	struct EventObject* player = &gEventObjects[gPlayerAvatar->eventObjectId];
+	u8 facing = player->facingDirection;
+	u8 dirs[4];
+
+	dirs[0] = GetOppositeDirection(facing);
+	dirs[1] = (facing == DIR_NORTH || facing == DIR_SOUTH) ? DIR_WEST : DIR_NORTH;
+	dirs[2] = (facing == DIR_NORTH || facing == DIR_SOUTH) ? DIR_EAST : DIR_SOUTH;
+	dirs[3] = facing;
+
+	for (u32 i = 0; i < ARRAY_COUNT(dirs); ++i)
+	{
+		*x = player->currentCoords.x;
+		*y = player->currentCoords.y;
+		MoveCoords(dirs[i], x, y);
+
+		if (GetCollisionAtCoords(player, *x, *y, dirs[i]) == 0
+		&& !MetatileBehavior_IsSurfableWaterOrUnderwater(MapGridGetMetatileBehaviorAt(*x, *y)))
+			return TRUE;
+	}
+
+	return FALSE;
+}
+
+//Brings the following Pokemon back, still invisible. Returns FALSE if it wasn't created.
+//placed is FALSE when there was no free tile next to the player: it then comes out on their next step instead.
+static bool8 CreateFollowerMonNextToPlayer(bool8* placed)
+{
+	struct EventObject* player = &gEventObjects[gPlayerAvatar->eventObjectId];
+	s16 x, y;
+
+	*placed = FALSE;
+
+	#ifdef FLAG_FOLLOWER_POKEMON_HIDDEN
+	FlagClear(FLAG_FOLLOWER_POKEMON_HIDDEN);
+	#endif
+
+	if (IsFollowerMon())
+	{
+		if (!gEventObjects[GetFollowerMapObjId()].invisible)
+			return FALSE; //Already out
+
+		RemoveFollowerMon(); //Waiting to come out on the next step, so recreate it next to the player
+	}
+
+	if (gFollowerState.inProgress)
+		return FALSE; //Human followers take priority
+
+	u16 gfxId = GetFollowerMonGfxIdFromParty();
+	if (gfxId == FOLLOWER_MON_NONE
+	|| TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING | PLAYER_AVATAR_FLAG_UNDERWATER)
+	|| gMapHeader.mapType == MAP_TYPE_UNDERWATER)
+		return FALSE; //FollowerMon_UpdateOnStep brings it back once possible
+
+	SetUpFollowerMonState(gfxId);
+	SpawnFollowerAvatar();
+	if (!gFollowerState.inProgress)
+		return FALSE;
+
+	PlayerLogCoordinates(player);
+
+	if (GetFreeTileNextToPlayer(&x, &y))
+	{
+		struct EventObject* follower = &gEventObjects[GetFollowerMapObjId()];
+		MoveEventObjectToMapCoords(follower, x, y);
+		follower->currentMetatileBehavior = MapGridGetMetatileBehaviorAt(x, y);
+		EventObjectTurn(follower, player->facingDirection);
+		gFollowerState.warpEnd = FALSE;
+		*placed = TRUE;
+	}
+
+	return TRUE;
+}
+
+static void Task_FollowerMonReturnToBall(u8 taskId)
+{
+	struct Task* task = &gTasks[taskId];
+	struct EventObject* follower = &gEventObjects[GetFollowerMapObjId()];
+
+	switch (task->tState) {
+		case POKE_BALL_ANIM_START:
+			task->tBallObjId = EVENT_OBJECTS_COUNT;
+			task->tTimer = 0;
+
+			if (!IsFollowerMon())
+			{
+				task->tState = POKE_BALL_ANIM_END;
+				break;
+			}
+
+			if (follower->invisible) //Hasn't come out yet (eg. right after a warp), so nothing to show
+			{
+				RemoveFollowerMon();
+				task->tState = POKE_BALL_ANIM_END;
+				break;
+			}
+
+			task->tBallObjId = SpawnPokeBallObject(follower->currentCoords.x, follower->currentCoords.y, follower->currentElevation);
+			PlaySE(SE_POKE_BALL_OPEN);
+			task->tState = POKE_BALL_ANIM_BLINK;
+			break;
+		case POKE_BALL_ANIM_BLINK:
+			if (!UpdateFollowerBlink(task, follower)) //Flicker as it's pulled into the ball
+				break;
+
+			RemoveFollowerMon();
+			PlaySE(SE_POKE_BALL_CLOSE);
+			task->tState = (task->tBallObjId < EVENT_OBJECTS_COUNT) ? POKE_BALL_ANIM_HOP : POKE_BALL_ANIM_END;
+			break;
+		case POKE_BALL_ANIM_HOP:
+			if (UpdatePokeBallHop(task))
+				task->tState = POKE_BALL_ANIM_WAIT;
+			break;
+		case POKE_BALL_ANIM_WAIT:
+			if (++task->tTimer < POKE_BALL_WAIT_FRAMES)
+				break;
+
+			RemoveEventObject(&gEventObjects[task->tBallObjId]);
+			task->tState = POKE_BALL_ANIM_END;
+			break;
+		case POKE_BALL_ANIM_END:
+			EnableBothScriptContexts();
+			DestroyTask(taskId);
+			break;
+	}
+}
+
+static void Task_FollowerMonComeOutOfBall(u8 taskId)
+{
+	struct Task* task = &gTasks[taskId];
+	struct EventObject* follower = &gEventObjects[GetFollowerMapObjId()];
+	bool8 placed;
+
+	switch (task->tState) {
+		case POKE_BALL_ANIM_START:
+			task->tBallObjId = EVENT_OBJECTS_COUNT;
+			task->tTimer = 0;
+
+			if (!CreateFollowerMonNextToPlayer(&placed) || !placed)
+			{
+				task->tState = POKE_BALL_ANIM_END; //Nothing to show now
+				break;
+			}
+
+			follower = &gEventObjects[GetFollowerMapObjId()];
+			task->tBallObjId = SpawnPokeBallObject(follower->currentCoords.x, follower->currentCoords.y, gEventObjects[gPlayerAvatar->eventObjectId].currentElevation);
+			if (task->tBallObjId >= EVENT_OBJECTS_COUNT)
+			{
+				follower->invisible = FALSE; //Just show it
+				task->tState = POKE_BALL_ANIM_END;
+				break;
+			}
+
+			PlaySE(SE_THROW_POKE_BALL);
+			task->tState = POKE_BALL_ANIM_HOP;
+			break;
+		case POKE_BALL_ANIM_HOP:
+			if (UpdatePokeBallHop(task))
+				task->tState = POKE_BALL_ANIM_WAIT;
+			break;
+		case POKE_BALL_ANIM_WAIT:
+			if (++task->tTimer < POKE_BALL_WAIT_FRAMES)
+				break;
+
+			RemoveEventObject(&gEventObjects[task->tBallObjId]);
+			PlaySE(SE_POKE_BALL_OPEN);
+			task->tTimer = 0;
+			task->tState = POKE_BALL_ANIM_BLINK;
+			break;
+		case POKE_BALL_ANIM_BLINK:
+			if (!UpdateFollowerBlink(task, follower)) //Flicker as it comes out of the ball
+				break;
+
+			follower->invisible = FALSE;
+			task->tState = POKE_BALL_ANIM_END;
+			break;
+		case POKE_BALL_ANIM_END:
+			EnableBothScriptContexts();
+			DestroyTask(taskId);
+			break;
+	}
+}
+
+#undef tState
+#undef tTimer
+#undef tBallObjId
+
+//@Details: Recalls the following Pokemon into a Poke Ball and keeps it hidden until
+//			FollowerMon_Show/FollowerMon_ComeOutOfBall is used, or FLAG_FOLLOWER_POKEMON_HIDDEN
+//			is cleared (it then comes back on the player's next step).
+//			Must be followed by waitstate in the script.
+void FollowerMon_ReturnToBall(void)
+{
+	#ifdef FLAG_FOLLOWER_POKEMON_HIDDEN
+	FlagSet(FLAG_FOLLOWER_POKEMON_HIDDEN);
+	#endif
+	CreateTask(Task_FollowerMonReturnToBall, 0xFF);
+}
+
+//@Details: Instantly hides the following Pokemon, without any animation.
+//			It stays hidden the same way as with FollowerMon_ReturnToBall.
+void FollowerMon_Hide(void)
+{
+	#ifdef FLAG_FOLLOWER_POKEMON_HIDDEN
+	FlagSet(FLAG_FOLLOWER_POKEMON_HIDDEN);
+	#endif
+
+	if (IsFollowerMon())
+		RemoveFollowerMon();
+}
+
+//@Details: Instantly brings the following Pokemon back next to the player, without any animation.
+//			If there's no free tile next to the player, it comes out on their next step instead.
+void FollowerMon_Show(void)
+{
+	bool8 placed;
+
+	if (CreateFollowerMonNextToPlayer(&placed) && placed)
+		gEventObjects[GetFollowerMapObjId()].invisible = FALSE;
+}
+
+//@Details: Brings the following Pokemon back next to the player out of a Poke Ball.
+//			If there's no free tile next to the player, it comes out on their next step instead.
+//			Must be followed by waitstate in the script.
+void FollowerMon_ComeOutOfBall(void)
+{
+	CreateTask(Task_FollowerMonComeOutOfBall, 0xFF);
+}
+
 static void TurnNPCIntoFollower(u8 localId, u8 followerFlags)
 {
 	struct EventObject* follower;
+
+	if (IsFollowerMon())
+		RemoveFollowerMon(); //Human followers take priority
 
 	if (gFollowerState.inProgress)
 		return; //Only 1 NPC following at a time
@@ -1330,6 +1935,9 @@ static void TurnNPCIntoFollower(u8 localId, u8 followerFlags)
 			gFollowerState.script = script;
 			gFollowerState.flag = flag;
 			gFollowerState.flags = followerFlags;
+			gFollowerState.currentSprite = FOLLOWER_SPRITE_INDEX_NORMAL; //Could be left over from the Pokemon follower
+			gFollowerState.delayedState = 0;
+			gFollowerState.warpEnd = FALSE;
 			gFollowerState.createSurfBlob = SURF_BLOB_STATE_NONE;
 			gFollowerState.comeOutDoorStairs = FALSE;
 
@@ -1351,7 +1959,9 @@ void sp0D1_SetUpFollowerSprite(void)
 //@Details: Ends the follow me feature.
 void sp0D2_DestroyFollowerSprite(void)
 {
-	if (gFollowerState.inProgress)
+	if (IsFollowerMon())
+		RemoveFollowerMon(); //Comes back on the next step unless FLAG_FOLLOWER_POKEMON is cleared
+	else if (gFollowerState.inProgress)
 	{
 		RemoveEventObject(&gEventObjects[gFollowerState.objId]);
 		FlagSet(gFollowerState.flag);

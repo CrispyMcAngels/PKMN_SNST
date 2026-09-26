@@ -29,7 +29,7 @@ EventScript_Percorso_11_Brandon:
 	compare 0x4051 0x12
 	if 0x1 _call EventScript_Percorso_11_Brandon_Part1
 	faceplayer
-	showpokepic 0x3B5 0x0 0x6
+	show_mugshot NAOMI
 	msgbox Percorso_11_Brandon_text1 MSG_NORMAL
 	special 0x15A
 	release
@@ -38,7 +38,7 @@ EventScript_Percorso_11_Brandon:
 
 	EventScript_Percorso_11_Brandon_Part1:
 		//mmh dannzione
-		showpokepic 0x3B5 0x0 0x6
+		show_mugshot NAOMI
 		msgbox Percorso_11_Brandon_text2 MSG_NORMAL
 		special 0x15A
 		applymovement 0x1 EventScript_Percorso_11_Brandon_mov1
@@ -49,19 +49,14 @@ EventScript_Percorso_11_Brandon:
 		playsong 0x13C 0x0
 		//mmh dannzione
 		
-		showpokepic 0x3B5 0x0 0x6
+		show_mugshot NAOMI
 		msgbox Percorso_11_Brandon_text3 MSG_NORMAL
 		special 0x15A
 		applymovement 0xFF EventScript_Percorso_11_Brandon_mov2
 		waitmovement 0x0
 		//vai axew...
 		
-		compare 0x501F 0x100
-		if 0x1 _call Player_Blue
-		compare 0x501F 0x1A3
-		if 0x1 _call Player_Orange
-		compare 0x501F 0x1A4
-		if 0x1 _call Player_Green
+		show_mugshot PLAYER
 		msgbox Percorso_11_Brandon_text4 MSG_NORMAL
 		special 0x15A
 		movesprite 0x7 0x0F 0x0A
@@ -73,7 +68,7 @@ EventScript_Percorso_11_Brandon:
 		pause 0x1E
 		//vai deinoo...
 		
-		showpokepic 0x3B5 0x0 0x6
+		show_mugshot NAOMI
 		msgbox Percorso_11_Brandon_text5a MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -91,7 +86,7 @@ EventScript_Percorso_11_Brandon:
 		trainerbattle3 0x3 0x146 0x100 Percorso_11_Brandon_textIntro
 
 		
-		showpokepic 0x3B5 0x0 0x6
+		show_mugshot NAOMI
 		msgbox Percorso_11_Brandon_text7 MSG_NORMAL
 		special 0x15A
 		cry 0x2AE 0x0
@@ -100,12 +95,7 @@ EventScript_Percorso_11_Brandon:
 		pause 0x1E
 		//ottimo lavoro axew...
 		
-		compare 0x501F 0x100
-		if 0x1 _call Player_Blue
-		compare 0x501F 0x1A3
-		if 0x1 _call Player_Orange
-		compare 0x501F 0x1A4
-		if 0x1 _call Player_Green
+		show_mugshot PLAYER
 		msgbox Percorso_11_Brandon_text8 MSG_NORMAL
 		special 0x15A
 		cry 0x297 0x0
@@ -126,7 +116,7 @@ EventScript_Percorso_11_Brandon:
 		waitmovement 0x0
 		//eccomi ragazzi...
 		
-		showpokepic 0x3B7 0x0 0x6
+		show_mugshot PROFKRAEMER
 		msgbox Percorso_11_Brandon_text9 MSG_NORMAL
 		special 0x15A
 		fanfare 0x0101
@@ -135,7 +125,7 @@ EventScript_Percorso_11_Brandon:
 		waitmovement 0x0
 		//tieni brandon...
 		
-		showpokepic 0x3B7 0x0 0x6
+		show_mugshot PROFKRAEMER
 		msgbox Percorso_11_Brandon_text11 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -144,21 +134,21 @@ EventScript_Percorso_11_Brandon:
 		msgbox Percorso_11_Brandon_text12 MSG_NORMAL
 		//questo strumento
 		
-		showpokepic 0x3B7 0x0 0x6
+		show_mugshot PROFKRAEMER
 		msgbox Percorso_11_Brandon_text13 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 
 		//La ringrazio Prof. Kraemer...
 		
-		showpokepic 0x3B5 0x0 0x6
+		show_mugshot NAOMI
 		msgbox Percorso_11_Brandon_text13a MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 
 		//Raccogliere Informationen uber
 		
-		showpokepic 0x3B7 0x0 0x6
+		show_mugshot PROFKRAEMER
 		msgbox Percorso_11_Brandon_text13b MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -168,14 +158,14 @@ EventScript_Percorso_11_Brandon:
 		waitmovement 0x1
 		//sono sicura...
 		
-		showpokepic 0x3B5 0x0 0x6
+		show_mugshot NAOMI
 		msgbox Percorso_11_Brandon_text14 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
 		spriteface 0x1 0x3
 		//non trovi player...
 		
-		showpokepic 0x3B5 0x0 0x6
+		show_mugshot NAOMI
 		msgbox Percorso_11_Brandon_text14a MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -185,12 +175,7 @@ EventScript_Percorso_11_Brandon:
 		waitmovement 0xFF
 		//player: ...
 		
-		compare 0x501F 0x100
-		if 0x1 _call Player_Blue
-		compare 0x501F 0x1A3
-		if 0x1 _call Player_Orange
-		compare 0x501F 0x1A4
-		if 0x1 _call Player_Green
+		show_mugshot PLAYER
 		msgbox Percorso_11_Brandon_text14b MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -199,12 +184,12 @@ EventScript_Percorso_11_Brandon:
 
 		//Genau...
 		
-		showpokepic 0x3B7 0x0 0x6
+		show_mugshot PROFKRAEMER
 		msgbox Percorso_11_Brandon_text15 MSG_NORMAL
 		special 0x15A
 		//hai sentito player?
 		
-		showpokepic 0x3B5 0x0 0x6
+		show_mugshot NAOMI
 		msgbox Percorso_11_Brandon_text15a MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -214,7 +199,7 @@ EventScript_Percorso_11_Brandon:
 		spriteface 0x5 0x1
 		//Qvesto percorso...
 		
-		showpokepic 0x3B7 0x0 0x6
+		show_mugshot PROFKRAEMER
 		msgbox Percorso_11_Brandon_text15b MSG_NORMAL
 		special 0x15A
 		applymovement 0x1 EventScript_Percorso_11_Brandon_mov8
@@ -222,14 +207,14 @@ EventScript_Percorso_11_Brandon:
 
 		//hai sentito player?
 		
-		showpokepic 0x3B5 0x0 0x6
+		show_mugshot NAOMI
 		msgbox Percorso_11_Brandon_text16 MSG_NORMAL
 		special 0x15A
 		spriteface 0x1 0x2
 		pause 0x1E
 		//sono certo...
 		
-		showpokepic 0x3B7 0x0 0x6
+		show_mugshot PROFKRAEMER
 		msgbox Percorso_11_Brandon_text17 MSG_NORMAL
 		special 0x15A
 		playsong 0x012E 0x0 
@@ -241,7 +226,7 @@ EventScript_Percorso_11_Brandon:
 		spriteface 0x1 0x3
 		pause 0x1E
 		
-		showpokepic 0x3B5 0x0 0x6
+		show_mugshot NAOMI
 		msgbox Percorso_11_Brandon_text1 MSG_NORMAL
 		special 0x15A
 		applymovement 0x1 EventScript_Percorso_11_Brandon_mov10
@@ -353,15 +338,3 @@ EventScript_Percorso_11_3_25_NPC1:
 	msgbox Percorso_11_3_25_NPC1_text1 MSG_NORMAL
 	release
 	end
-
-Player_Blue:
-	showpokepic 0x3b6 0x0 0x6
-	return
-
-Player_Orange:
-	showpokepic 0x3bE 0x0 0x6
-	return
-
-Player_Green:
-	showpokepic 0x3bF 0x0 0x6
-	return

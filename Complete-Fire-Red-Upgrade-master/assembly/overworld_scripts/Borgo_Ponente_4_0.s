@@ -127,7 +127,7 @@ EventScript_Borgo_Ponente_4_0_tileA_P1:
 	sound 0x15
 	applymovement 0x1 Borgo_Ponente_4_0_tileA_mov1_a
 	waitmovement 0x0
-    showpokepic 0x3B3 0x0 0x6
+    show_mugshot MAMMA
     msgbox EventScript_Borgo_Ponente_4_0_tileA_text1 MSG_NORMAL
     special 0x15A
 	pause 0x1E
@@ -179,7 +179,7 @@ EventScript_Borgo_Ponente_4_0_tileB_P1:
 	sound 0x15
 	applymovement 0x1 Borgo_Ponente_4_0_tileB_mov1_a
 	waitmovement 0x0
-    showpokepic 0x3b3 0x0 0x6
+    show_mugshot MAMMA
     msgbox EventScript_Borgo_Ponente_4_0_tileA_text1 MSG_NORMAL
     special 0x15A
 	pause 0x1E
@@ -232,7 +232,7 @@ EventScript_Borgo_Ponente_4_0_mom:
 	checkflag 0x95B
 	if 0x1 _call EventScript_Borgo_Ponente_4_0_mom_P2
 	
-	showpokepic 0x3b3 0x0 0x6
+	show_mugshot MAMMA
 	msgbox EventScript_Borgo_Ponente_4_0_mom_text2 MSG_NORMAL
 	special 0x15A
 	fadescreen 0x1 
@@ -241,7 +241,7 @@ EventScript_Borgo_Ponente_4_0_mom:
 	special 0x0
 	fadescreen 0x0
 	
-	showpokepic 0x3b3 0x0 0x6
+	show_mugshot MAMMA
 	msgbox EventScript_Borgo_Ponente_4_0_mom_text3 MSG_NORMAL
 	special 0x15A
 	release
@@ -250,7 +250,7 @@ EventScript_Borgo_Ponente_4_0_mom:
 
 	EventScript_Borgo_Ponente_4_0_mom_P1:
 		
-		showpokepic 0x3b3 0x0 0x6
+		show_mugshot MAMMA
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text1 MSG_NORMAL
 		special 0x15A
 		release
@@ -258,14 +258,14 @@ EventScript_Borgo_Ponente_4_0_mom:
 
 	EventScript_Borgo_Ponente_4_0_mom_P1a:
 		
-		showpokepic 0x3b3 0x0 0x6
+		show_mugshot MAMMA
 		msgbox EventScript_Borgo_Ponente_4_0_mom_P1a_text1 MSG_NORMAL
 		special 0x15A
 		applymovement 0x1 mov_exclamation
 		waitmovement 0x1
 		pause 0x1E
 		
-		showpokepic 0x3b3 0x0 0x6
+		show_mugshot MAMMA
 		msgbox EventScript_Borgo_Ponente_4_0_mom_P1a_text2 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -278,7 +278,7 @@ EventScript_Borgo_Ponente_4_0_mom:
 		special 0x15A
 		pause 0x1E
 		
-		showpokepic 0x3b3 0x0 0x6
+		show_mugshot MAMMA
 		msgbox EventScript_Borgo_Ponente_4_0_mom_P1a_text4 MSG_NORMAL
 		special 0x15A
 		getplayerpos 0x4001 0x4002
@@ -290,7 +290,7 @@ EventScript_Borgo_Ponente_4_0_mom:
 		if 0x1 _call Borgo_Ponente_4_0_mom_P1a_down
 		pause 0x1e
 		
-		showpokepic 0x3b3 0x0 0x6
+		show_mugshot MAMMA
 		msgbox EventScript_Borgo_Ponente_4_0_mom_P1a_text5 MSG_NORMAL
 		special 0x15A
 		pause 0x1e
@@ -299,7 +299,7 @@ EventScript_Borgo_Ponente_4_0_mom:
 		waitmovement 0x1
 		pause 0x1e
 		
-		showpokepic 0x3b3 0x0 0x6
+		show_mugshot MAMMA
 		msgbox EventScript_Borgo_Ponente_4_0_mom_P1a_text6 MSG_NORMAL
 		special 0x15A
 		//vestiti arancioni
@@ -308,7 +308,7 @@ EventScript_Borgo_Ponente_4_0_mom:
 		msgbox EventScript_Borgo_Ponente_4_0_mom_P1a_text7 MSG_NORMAL
 		pause 0x1E
 		
-		showpokepic 0x3b3 0x0 0x6
+		show_mugshot MAMMA
 		msgbox EventScript_Borgo_Ponente_4_0_mom_P1a_text8 MSG_NORMAL
 		special 0x15A
 		setflag 0x964
@@ -362,16 +362,11 @@ EventScript_Borgo_Ponente_4_0_mom:
 
 	EventScript_Borgo_Ponente_4_0_mom_P3:
 		
-		showpokepic 0x3b3 0x0 0x6
+		show_mugshot MAMMA
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text4 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
-		compare 0x501F 0x100
-		if 0x1 _call Player_Blue
-		compare 0x501F 0x1A3
-		if 0x1 _call Player_Orange
-		compare 0x501F 0x1A4
-		if 0x1 _call Player_Green
+		show_mugshot PLAYER
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text5 MSG_NORMAL
 		special 0x15A
 		pause 0x1E	
@@ -379,7 +374,7 @@ EventScript_Borgo_Ponente_4_0_mom:
 		applymovement 0x1 mov_exclamation
 		waitmovement 0x0
 		
-		showpokepic 0x3b3 0x0 0x6
+		show_mugshot MAMMA
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text6 MSG_NORMAL
 		special 0x15A		
 		pause 0x1E
@@ -390,7 +385,7 @@ EventScript_Borgo_Ponente_4_0_mom:
 		setflag 0x82F
 		pause 0x1E
 		
-		showpokepic 0x3b3 0x0 0x6
+		show_mugshot MAMMA
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text8 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -398,7 +393,7 @@ EventScript_Borgo_Ponente_4_0_mom:
 		waitmovement 0x0
 		faceplayer
 		
-		showpokepic 0x3b3 0x0 0x6
+		show_mugshot MAMMA
 		msgbox EventScript_Borgo_Ponente_4_0_mom_text9 MSG_NORMAL
 		special 0x15A
 		pause 0x1E
@@ -420,15 +415,3 @@ EventScript_Borgo_Ponente_4_0_mom:
 			.byte 0x1B
 			.byte 0x1B
 			.byte 0xFE
-
-		Player_Blue:
-			showpokepic 0x3b6 0x0 0x6
-			return
-
-		Player_Orange:
-			showpokepic 0x3bE 0x0 0x6
-			return
-
-		Player_Green:
-			showpokepic 0x3bF 0x0 0x6
-			return

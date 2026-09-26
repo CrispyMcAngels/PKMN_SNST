@@ -1461,6 +1461,7 @@ bool8 TryStartStepCountScript(u16 metatileBehavior)
 		return FALSE;
 
 	gDexNavCooldown = FALSE; //Pokemon can be found with the DexNav again
+	FollowerMon_UpdateOnStep();
 	UpdateHappinessStepCounter();
 	UpdateJPANStepCounters();
 	if (!(gPlayerAvatar->flags & PLAYER_AVATAR_FLAG_FISHING) && !MetatileBehavior_IsForcedMovementTile(metatileBehavior))

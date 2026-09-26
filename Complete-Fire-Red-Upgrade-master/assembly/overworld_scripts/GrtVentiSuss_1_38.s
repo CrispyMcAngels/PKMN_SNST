@@ -76,25 +76,14 @@ gMapScripts_GrtVentiSuss_1_38:
 				waitmovement 0xFF
 				pause 0x1E
 				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
-				
+				show_mugshot PLAYER				
 				msgbox GrtVentiSuss_1_38_MapScript_text0 MSG_NORMAL
 				special 0x15A	
 				pause 0x1E
 				applymovement 0xFF mov_question
 				waitmovement 0xFF
 				pause 0x1E
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
-				
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text0a MSG_NORMAL
 				special 0x15A	
 				pause 0x1E
@@ -103,7 +92,7 @@ gMapScripts_GrtVentiSuss_1_38:
 				waitmovement 0x7F	
 				pause 0x1E
 				
-				showpokepic 0x3C1 0x0 0x6
+				show_mugshot ERIS
 				msgbox GrtVentiSuss_1_38_MapScript_text1 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
@@ -114,22 +103,16 @@ gMapScripts_GrtVentiSuss_1_38:
 				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov3
 				waitmovement 0xFF
 				pause 0x1E
-				showpokepic 0x3C1 0x0 0x6
+				show_mugshot ERIS
 				msgbox GrtVentiSuss_1_38_MapScript_text2 MSG_NORMAL
 				special 0x15A				
 				pause 0x1E
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
-				
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text3 MSG_NORMAL
 				special 0x15A	
 				pause 0x1E
 				
-				showpokepic 0x3C1 0x0 0x6
+				show_mugshot ERIS
 				msgbox GrtVentiSuss_1_38_MapScript_text4 MSG_NORMAL
 				special 0x15A				
 				pause 0x1E
@@ -143,20 +126,14 @@ gMapScripts_GrtVentiSuss_1_38:
 				playsong 0x188 0x0
 
 				pause 0x1E
-				showpokepic 0x3C1 0x0 0x6
+				show_mugshot ERIS
 				msgbox GrtVentiSuss_1_38_MapScript_text5 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
 				applymovement 0xFF mov_question
 				waitmovement 0xFF
 				pause 0x1E
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
-				
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text6 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
@@ -165,11 +142,11 @@ gMapScripts_GrtVentiSuss_1_38:
 				spriteface 0xA 0x1
 				pause 0x1E
 				
-				showpokepic 0x3C1 0x0 0x6
+				show_mugshot ERIS
 				msgbox GrtVentiSuss_1_38_MapScript_text7 MSG_NORMAL
 				special 0x15A	
 				pause 0x1E
-				showpokepic 0x3C1 0x0 0x6
+				show_mugshot ERIS
 				msgbox GrtVentiSuss_1_38_MapScript_text8 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
@@ -177,37 +154,25 @@ gMapScripts_GrtVentiSuss_1_38:
 				applymovement 0xA mov_exclamation
 				waitmovement 0xA
 				pause 0x1E
-				showpokepic 0x3C1 0x0 0x6
+				show_mugshot ERIS
 				msgbox GrtVentiSuss_1_38_MapScript_text9 MSG_NORMAL
 				special 0x15A				
 				pause 0x1E
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
-				
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text10 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
 				
-				showpokepic 0x3C1 0x0 0x6
+				show_mugshot ERIS
 				msgbox GrtVentiSuss_1_38_MapScript_text11 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
-				
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text12 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
 				
-				showpokepic 0x3C1 0x0 0x6
+				show_mugshot ERIS
 				msgbox GrtVentiSuss_1_38_MapScript_text13 MSG_NORMAL
 				special 0x15A
 				//Un vento più forte entra nella grotta, e la grande ruota si illumina leggermente, emettendo un suono sordo.
@@ -234,20 +199,14 @@ gMapScripts_GrtVentiSuss_1_38:
 				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov7_a
 				waitmovement 0xFF			
 				pause 0x1E
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
-				
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text14 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
 				spriteface 0xFF 0x2
 				pause 0x1E
 				
-				showpokepic 0x3C1 0x0 0x6
+				show_mugshot ERIS
 				msgbox GrtVentiSuss_1_38_MapScript_text15 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
@@ -257,18 +216,12 @@ gMapScripts_GrtVentiSuss_1_38:
 				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov8_a
 				waitmovement 0xFF
 				pause 0x1E
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
-				
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text16 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
 				
-				showpokepic 0x3C1 0x0 0x6
+				show_mugshot ERIS
 				msgbox GrtVentiSuss_1_38_MapScript_text17 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
@@ -283,7 +236,7 @@ gMapScripts_GrtVentiSuss_1_38:
 
 				GrtVentiSuss_1_38_MapScript_P2:
 					
-					showpokepic 0x3C1 0x0 0x6
+					show_mugshot ERIS
 					msgbox GrtVentiSuss_1_38_MapScript_text21 MSG_NORMAL
 					special 0x15A
 					
@@ -306,7 +259,7 @@ gMapScripts_GrtVentiSuss_1_38:
 				GrtVentiSuss_1_38_MapScript_P3:
 					pause 0x1E
 					
-					showpokepic 0x3C1 0x0 0x6
+					show_mugshot ERIS
 					msgbox GrtVentiSuss_1_38_MapScript_text19 MSG_NORMAL
 					special 0x15A
 					//setvar 0x503A 0x2 
@@ -326,22 +279,16 @@ gMapScripts_GrtVentiSuss_1_38:
 					playsong 0x18C 0x0
 					pause 0x1E
 					
-					showpokepic 0x3C1 0x0 0x6
+					show_mugshot ERIS
 					msgbox GrtVentiSuss_1_38_MapScript_text22 MSG_NORMAL
 					special 0x15A
 					pause 0x1E			
-					compare 0x501F 0x100
-					if 0x1 _call Player_Blue
-					compare 0x501F 0x1A3
-					if 0x1 _call Player_Orange
-					compare 0x501F 0x1A4
-					if 0x1 _call Player_Green
-					
+					show_mugshot PLAYER
 					msgbox GrtVentiSuss_1_38_MapScript_text23 MSG_NORMAL
 					special 0x15A
 					pause 0x1E
 					
-					showpokepic 0x3C1 0x0 0x6
+					show_mugshot ERIS
 					msgbox GrtVentiSuss_1_38_MapScript_text24 MSG_NORMAL
 					special 0x15A
 					pause 0x1E
@@ -389,13 +336,7 @@ gMapScripts_GrtVentiSuss_1_38:
 						waitmovement 0xFF
 						pause 0x1E
 						pause 0x1E
-						compare 0x501F 0x100
-						if 0x1 _call Player_Blue
-						compare 0x501F 0x1A3
-						if 0x1 _call Player_Orange
-						compare 0x501F 0x1A4
-						if 0x1 _call Player_Green
-						
+						show_mugshot PLAYER
 						msgbox GrtVentiSuss_1_38_MapScript_text28 MSG_NORMAL
 						special 0x15A
 
@@ -411,7 +352,7 @@ gMapScripts_GrtVentiSuss_1_38:
 						//doweather
 						pause 0x1E
 						
-						showpokepic 0x3C1 0x0 0x6
+						show_mugshot ERIS
 						msgbox GrtVentiSuss_1_38_MapScript_text26 MSG_NORMAL
 						special 0x15A
 						pause 0x1E
@@ -421,13 +362,7 @@ gMapScripts_GrtVentiSuss_1_38:
 						applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov10
 						waitmovement 0xFF
 						pause 0x1E
-						compare 0x501F 0x100
-						if 0x1 _call Player_Blue
-						compare 0x501F 0x1A3
-						if 0x1 _call Player_Orange
-						compare 0x501F 0x1A4
-						if 0x1 _call Player_Green
-						
+						show_mugshot PLAYER
 						msgbox GrtVentiSuss_1_38_MapScript_text31 MSG_NORMAL
 						special 0x15A
 						pause 0x1E
@@ -437,7 +372,7 @@ gMapScripts_GrtVentiSuss_1_38:
 
 						pause 0x1E
 						
-						showpokepic 0x3C1 0x0 0x6
+						show_mugshot ERIS
 						msgbox GrtVentiSuss_1_38_MapScript_text27 MSG_NORMAL
 						special 0x15A
 
@@ -464,14 +399,14 @@ gMapScripts_GrtVentiSuss_1_38:
 						waitmovement 0xA							
 						pause 0x1E
 						
-						showpokepic 0x3C1 0x0 0x6
+						show_mugshot ERIS
 						msgbox GrtVentiSuss_1_38_MapScript_text29 MSG_NORMAL
 						special 0x15A
 						pause 0x1E
 						spriteface 0xA 0x2
 						pause 0x1E
 						pause 0x1E
-						showpokepic 0x3C1 0x0 0x6
+						show_mugshot ERIS
 						msgbox GrtVentiSuss_1_38_MapScript_text30 MSG_NORMAL
 						special 0x15A							
 						fadescreen 0x1
@@ -504,13 +439,7 @@ gMapScripts_GrtVentiSuss_1_38:
 				applymovement 0xFF mov_exclamation
 				waitmovement 0xFF
 				pause 0x1E
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
-				
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text32 MSG_NORMAL
 				special 0x15A
 				playsong 0x189 0x0
@@ -518,12 +447,7 @@ gMapScripts_GrtVentiSuss_1_38:
 				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov13
 				waitmovement 0xFF
 				pause 0x1E
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text33 MSG_NORMAL
 				special 0x15A
 				pause 0x2A
@@ -534,44 +458,24 @@ gMapScripts_GrtVentiSuss_1_38:
 				sound 0xC
 				movesprite 0x3 0x09 0x0A
 				movesprite 0xC 0x07 0x04
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text34 MSG_NORMAL
 				special 0x15A				
 				pause 0x25
 				spriteface 0xFF 0x3
 				pause 0x23
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text35 MSG_NORMAL
 				special 0x15A	
 
 				pause 0x23
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text36 MSG_NORMAL
 				special 0x15A	
 				pause 0x20
 				spriteface 0xFF 0x2
 				pause 0x23
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text37 MSG_NORMAL
 				special 0x15A	
 				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov14
@@ -580,61 +484,31 @@ gMapScripts_GrtVentiSuss_1_38:
 				applymovement 0xFF mov_question
 				waitmovement 0xFF
 				pause 0x21
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text38 MSG_NORMAL
 				special 0x15A
 				pause 0x21
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text39 MSG_NORMAL
 				special 0x15A
 				pause 0x21
 				spriteface 0xFF 0x1
 				pause 0x20
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text40 MSG_NORMAL
 				special 0x15A
 				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov15
 				waitmovement 0xFF
 				pause 0x1E
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text41 MSG_NORMAL
 				special 0x15A
 				pause 0x2A
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text42 MSG_NORMAL
 				special 0x15A
 				pause 0x2A
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text43 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
@@ -643,33 +517,18 @@ gMapScripts_GrtVentiSuss_1_38:
 				waitmovement 0xFF
 				spriteface 0xFF 0x2
 				pause 0x1E
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text44 MSG_NORMAL
 				special 0x15A
 				pause 0x2E
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text45 MSG_NORMAL
 				special 0x15A
 				pause 0x1E
 				applymovement 0xFF GrtVentiSuss_1_38_MapScript_mov7a
 				waitmovement 0xFF
 				pause 0x1E
-				compare 0x501F 0x100
-				if 0x1 _call Player_Blue
-				compare 0x501F 0x1A3
-				if 0x1 _call Player_Orange
-				compare 0x501F 0x1A4
-				if 0x1 _call Player_Green
+				show_mugshot PLAYER
 				msgbox GrtVentiSuss_1_38_MapScript_text46 MSG_NORMAL
 				special 0x15A
 				setvar 0x4051 0x3F
@@ -831,17 +690,3 @@ gMapScripts_GrtVentiSuss_1_38:
 				GrtVentiSuss_1_38_MapScript_mov15:
 					.byte 0x65
 					.byte 0xFE
-
-
-		Player_Blue:
-			showpokepic 0x3b6 0x0 0x6
-			return
-
-		Player_Orange:
-			showpokepic 0x3bE 0x0 0x6
-			return
-
-		Player_Green:
-			showpokepic 0x3bF 0x0 0x6
-			return
-

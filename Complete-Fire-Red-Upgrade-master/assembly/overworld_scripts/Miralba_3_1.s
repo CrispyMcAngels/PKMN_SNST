@@ -388,7 +388,7 @@ EventScript_Miralba_Sign8:
 
 .global EventScript_Miralba_3_1_NPC1
 EventScript_Miralba_3_1_NPC1:
-	showpokepic 0x3B8 0x0 0x6
+	show_mugshot FILIBERTO
 	msgbox Miralba_3_1_NPC1_text1 MSG_NORMAL
 	special 0x15A
 	end
@@ -398,12 +398,12 @@ EventScript_Miralba_3_1_tile1:
 	lockall
 	playsong 0x189
 	spriteface 0xFF 0x2
-	showpokepic 0x3B4 0x0 0x6
+	show_mugshot CRISPY
 	
 	msgbox Miralba_3_1_NPC0_text1 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
-	showpokepic 0x3B8 0x0 0x6
+	show_mugshot FILIBERTO
 	msgbox Miralba_3_1_NPC0_text2 MSG_NORMAL
 	special 0x15A
 	applymovement 0x1 Miralba_3_1_NPC0_mov1
@@ -411,28 +411,28 @@ EventScript_Miralba_3_1_tile1:
 	waitmovement 0x0
 	sound 0x15
 	pause 0x1E
-	showpokepic 0x3B4 0x0 0x6
+	show_mugshot CRISPY
 	msgbox Miralba_3_1_NPC0_text3 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
-	showpokepic 0x3B8 0x0 0x6
+	show_mugshot FILIBERTO
 	msgbox Miralba_3_1_NPC0_text4 MSG_NORMAL
 	special 0x15A
 	applymovement 0x2 Miralba_3_1_NPC0_mov2
 	waitmovement 0x0
 	pause 0x1E
-	showpokepic 0x3B8 0x0 0x6
+	show_mugshot FILIBERTO
 	msgbox Miralba_3_1_NPC0_text5 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
 	applymovement 0x1 Miralba_3_1_NPC0_mov3
 	waitmovement 0x0
 	pause 0x1E
-	showpokepic 0x3B4 0x0 0x6
+	show_mugshot CRISPY
 	msgbox Miralba_3_1_NPC0_text6 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
-	showpokepic 0x3B8 0x0 0x6
+	show_mugshot FILIBERTO
 	
 	msgbox Miralba_3_1_NPC0_text7 MSG_NORMAL
 	special 0x15A
@@ -444,7 +444,7 @@ EventScript_Miralba_3_1_tile1:
 	if 0x1 _call EventScript_Miralba_3_1_tile1_P1
 	spriteface 0x1 0x1
 	pause 0x1E
-	showpokepic 0x3B4 0x0 0x6
+	show_mugshot CRISPY
 	
 	msgbox Miralba_3_1_NPC0_text8 MSG_NORMAL
 	special 0x15A
@@ -454,7 +454,7 @@ EventScript_Miralba_3_1_tile1:
 	applymovement 0xFF Miralba_3_1_NPC0_mov6
 	waitmovement 0xFF	
 	fadedefault
-	showpokepic 0x3B4 0x0 0x6
+	show_mugshot CRISPY
 	
 	msgbox Miralba_3_1_NPC0_text9 MSG_NORMAL
 	special 0x15A
@@ -464,13 +464,13 @@ EventScript_Miralba_3_1_tile1:
 	applymovement 0xFF Miralba_3_1_NPC0_mov8
 	waitmovement 0xFF	
 	fadedefault
-	showpokepic 0x3B4 0x0 0x6
+	show_mugshot CRISPY
 	msgbox Miralba_3_1_NPC0_text10 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
 	spriteface 0xFF 0x4
 	spriteface 0x1 0x3
-	showpokepic 0x3B4 0x0 0x6
+	show_mugshot CRISPY
 	
 	msgbox Miralba_3_1_NPC0_text11 MSG_NORMAL
 	special 0x15A
@@ -483,7 +483,7 @@ EventScript_Miralba_3_1_tile1:
 	spriteface 0x3 0x2
 	cry 0x1EE 0x0
 	msgbox Miralba_3_1_NPC0_text12 MSG_NORMAL
-	showpokepic 0x3B4 0x0 0x6
+	show_mugshot CRISPY
 	msgbox Miralba_3_1_NPC0_text13 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
@@ -492,16 +492,11 @@ EventScript_Miralba_3_1_tile1:
 	spriteface 0xFF 0x4
 	spriteface 0x1 0x3
 	pause 0x1E
-	showpokepic 0x3B4 0x0 0x6
+	show_mugshot CRISPY
 	msgbox Miralba_3_1_NPC0_text14 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
-	compare 0x501F 0x100
-	if 0x1 _call Player_Blue
-	compare 0x501F 0x1A3
-	if 0x1 _call Player_Orange
-	compare 0x501F 0x1A4
-	if 0x1 _call Player_Green
+	show_mugshot PLAYER
 	msgbox Miralba_3_1_NPC0_text15 MSG_NORMAL
 	special 0x15A
 	playsong 0x18A 0x0
@@ -736,15 +731,3 @@ EventScript_Miralba_3_1_NPC8:
 EventScript_Miralba_3_1_NPC9:
 	giveitem 0x56 0x1 MSG_FIND
 	end
-
-		Player_Blue:
-			showpokepic 0x3b6 0x0 0x6
-			return
-
-		Player_Orange:
-			showpokepic 0x3bE 0x0 0x6
-			return
-
-		Player_Green:
-			showpokepic 0x3bF 0x0 0x6
-			return

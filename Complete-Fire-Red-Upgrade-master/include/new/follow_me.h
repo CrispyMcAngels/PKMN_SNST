@@ -29,6 +29,12 @@ void FollowMe_HandleBike(void);
 void FollowMe_HandleSprite(void);
 void FollowMe_WarpSetEnd(void);
 void CreateFollowerAvatar(void);
+void FollowerMon_UpdateOnStep(void);
+void FollowerMon_BufferSpecies(void);
+void FollowerMon_ReturnToBall(void);
+void FollowerMon_Hide(void);
+void FollowerMon_Show(void);
+void FollowerMon_ComeOutOfBall(void);
 
 //Functions Hooked In
 void PlayerGoThroughDoor(u8 taskId);

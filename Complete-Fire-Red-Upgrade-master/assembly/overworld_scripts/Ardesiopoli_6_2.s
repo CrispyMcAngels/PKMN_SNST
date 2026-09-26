@@ -59,7 +59,7 @@ gMapScripts_Ardesiopoli_6_2:
 EventScript_Ardesiopoli_6_2_NPC0:
 	lock
 	faceplayer
-	showpokepic 0x3B8 0x0 0x6
+	show_mugshot FILIBERTO
 	msgbox Ardesiopoli_6_2_NPC0_text1 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
@@ -68,7 +68,7 @@ EventScript_Ardesiopoli_6_2_NPC0:
 	setvar 0x503B 0x0
 	trainerbattle3 0x3 0x1E 0x100 Ardesiopoli_6_2_NPC0_text2
 	pause 0x1E
-	showpokepic 0x3B8 0x0 0x6
+	show_mugshot FILIBERTO
 	msgbox Ardesiopoli_6_2_NPC0_text3 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
@@ -84,18 +84,18 @@ EventScript_Ardesiopoli_6_2_NPC0:
 	waitmovement 0x0
 	special 0x114
 	pause 0x1E
-	showpokepic 0x3B8 0x0 0x6
+	show_mugshot FILIBERTO
 	msgbox Ardesiopoli_6_2_NPC0_text5 MSG_NORMAL
 	special 0x15A
 	pause 0x1E	
 	setvar 0x8008 0x1
 	giveitem 0x18A 0x1 MSG_OBTAIN
 	
-	showpokepic 0x3B8 0x0 0x6
+	show_mugshot FILIBERTO
 	msgbox Ardesiopoli_6_2_NPC0_text6 MSG_NORMAL
 	special 0x15A
 	pause 0x1E
-	showpokepic 0x3B8 0x0 0x6
+	show_mugshot FILIBERTO
 	msgbox Ardesiopoli_6_2_NPC0_text7 MSG_NORMAL
 	special 0x15A
 	setvar 0x4050 0x9
