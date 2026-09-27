@@ -152,6 +152,11 @@ ItemId_GetName 809A8BC 1
 GetAdjustedInitialTransitionFlags 8055ACC 3
 Overworld_IsBikingAllowed 8055C9C 0
 apply_map_tileset_palette 80599C8 3
+#ifdef VAR_PARALLAX
+ParallaxDrawWholeMapView 805A684 0
+##Also replaces DrawBlockHook (triple layer blocks), which is left out below
+ParallaxDrawMetatile 805A9B4 3
+#endif
 MetatileBehavior_IsDiveable 8059FB0 1
 MetatileBehavior_IsUnableToEmerge 8059FCC 1
 CfruMetatileBehavior_IsTallGrass 8059F34 1
@@ -612,7 +617,10 @@ FixMoveReminderDataLoading 080E54D0 1
 FixWindowTemplates 080E46B4 0
 
 ##Triple Layer Blocks
+##With VAR_PARALLAX, ParallaxDrawMetatile (bg3_parallax.c) replaces all of DrawMetatile, triple layer blocks included
+#ifndef VAR_PARALLAX
 DrawBlockHook 0805A9B8 1
+#endif
 
 ##Footstep Sounds
 #GrassFootstepNoiseHook 80DB3C8 1

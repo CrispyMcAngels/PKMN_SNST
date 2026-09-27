@@ -6,6 +6,7 @@
 #include "../include/shop.h"
 
 #include "../include/new/bg2_fade.h"
+#include "../include/new/bg3_parallax.h"
 #include "../include/new/dns.h"
 #include "../include/new/dns_data.h"
 #include "../include/new/dynamic_ow_pals.h"
@@ -51,6 +52,9 @@ void TransferPlttBuffer(void)
 			UpdateBlendRegisters();
 	}
 
+	#ifdef VAR_PARALLAX
+	UpdateParallaxScroll(); //After VBlankCB_Field's FieldUpdateBgTilemapScroll, so its BG3 scroll wins
+	#endif
 	#ifdef VAR_BG2_FADE_RADIUS
 	UpdateBg2FadeEffect(); //Every frame, even when the palette transfer is skipped, since its DMA must be restarted each VBlank
 	#endif

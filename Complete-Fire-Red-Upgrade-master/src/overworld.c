@@ -41,6 +41,7 @@
 #include "../include/constants/trainers.h"
 #include "../include/constants/trainer_classes.h"
 
+#include "../include/new/bg3_parallax.h"
 #include "../include/new/dexnav.h"
 #include "../include/new/item.h"
 #include "../include/new/follow_me.h"
@@ -1576,6 +1577,10 @@ void RunOnResumeMapScript(void)
 {
 	ForceClockUpdate();
 	MapHeaderRunScriptByTag(5);
+
+	#ifdef VAR_PARALLAX
+	TryRefreshParallaxAfterConnection(); //After the on-resume script, which may change the parallax var
+	#endif
 }
 
 bool8 TryRunOnFrameMapScript(void)
