@@ -15,7 +15,9 @@ bg3_parallax.c
 	VAR_PARALLAX (a temp var, so it's cleared on every warp) is set in the map's on-transition
 	script to 0xIIXY:
 		II = image number in sParallaxImages (1 and up, 0 = no parallax)
-		X  = horizontal speed, Y = vertical speed (0 = 0%, 1 = 25%, 2 = 50%, 3 = 75%, 4 = 100%)
+		X  = horizontal speed, Y = vertical speed (0 = 0%, 1 = 25%, 2 = 50%, 3 = 75%, 4 = 100%,
+		     5 = fit: the image crosses the map exactly once and never repeats. Walking from the map's
+		     first column to its last moves it 16 px (256 - screen width), first row to last 96 px)
 	The speeds can be changed at any time. Changing the image in the middle of a map needs
 	special 0x8E (DrawWholeMapView) afterwards.
 
@@ -27,12 +29,12 @@ bg3_parallax.c
 #ifdef VAR_PARALLAX
 
 //Built from graphics/Parallax/<name>.png
-extern const u8 ParallaxDemoTiles[];
-extern const u8 ParallaxDemoMap[];
-extern const u16 ParallaxDemoPal[];
-extern const u8 ParallaxTestTiles[];
-extern const u8 ParallaxTestMap[];
-extern const u16 ParallaxTestPal[];
+extern const u8 Parallax_CloudsTiles[];
+extern const u8 Parallax_CloudsMap[];
+extern const u16 Parallax_CloudsPal[];
+extern const u8 ParallaxSkySDVTiles[];
+extern const u8 ParallaxSkySDVMap[];
+extern const u16 ParallaxSkySDVPal[];
 
 struct ParallaxImage
 {
@@ -44,8 +46,8 @@ struct ParallaxImage
 //Image 1 is sParallaxImages[0], and so on
 static const struct ParallaxImage sParallaxImages[] =
 {
-	{ParallaxDemoTiles, ParallaxDemoMap, ParallaxDemoPal}, //1: coloured checkerboard, star marks the top-left corner
-	{ParallaxTestTiles, ParallaxTestMap, ParallaxTestPal}, //2
+	{Parallax_CloudsTiles, Parallax_CloudsMap, Parallax_CloudsPal}, //1: clouds
+	{ParallaxSkySDVTiles, ParallaxSkySDVMap, ParallaxSkySDVPal}, //2: sky
 };
 
 #define PARALLAX_CHAR_BASE 3
@@ -58,6 +60,10 @@ static const struct ParallaxImage sParallaxImages[] =
 #define GET_PARALLAX_X_SPEED(var) (((var) >> 4) & 0xF)
 #define GET_PARALLAX_Y_SPEED(var) ((var) & 0xF)
 #define MAX_SPEED 4 //100%
+#define SPEED_FIT 5 //The image crosses the map exactly once, so it's never repeated
+#define IMAGE_SIZE 256
+#define FIT_TRAVEL_X (IMAGE_SIZE - DISPLAY_WIDTH) //How far the image can move before it would wrap around
+#define FIT_TRAVEL_Y (IMAGE_SIZE - DISPLAY_HEIGHT)
 
 //Layer types as remapped by the triple layer block hack (assembly/triple_layer_blocks.s), whose
 //DrawBlockHook isn't inserted when parallax is on, since ParallaxDrawMetatile replaces the whole function
@@ -252,25 +258,71 @@ static void Task_RefreshParallax(u8 taskId)
 	DestroyTask(taskId);
 }
 
+//The camera's position in the current map, in pixels: 0 when the player stands on the map's first column (or row).
+//CameraMove updates the map position as soon as the camera starts moving into a tile, and
+//gFieldCamera.x/y count the pixels moved so far (negative when moving left/up)
+static s32 GetCameraPosInMap(s16 mapPos, s32 movementOffset)
+{
+	s32 pos = mapPos * 16 + movementOffset;
+
+	if (movementOffset > 0)
+		pos -= 16;
+	else if (movementOffset < 0)
+		pos += 16;
+
+	return pos;
+}
+
+//SPEED_FIT: the image's first pixel lines up with the screen's edge when the player is on the map's first
+//column (or row), and its last pixel when they're on the last one
+static u16 GetFitScroll(s32 cameraPos, s32 mapSize, u32 travel)
+{
+	s32 range = (mapSize - 1) * 16; //Camera positions from the first column to the last
+
+	if (range <= 0 || cameraPos <= 0)
+		return 0;
+	if (cameraPos >= range)
+		return travel;
+
+	return ((u32) cameraPos * travel) / (u32) range;
+}
+
 //Called every VBlank, after the vanilla code has set the BG scroll registers
 void UpdateParallaxScroll(void)
 {
 	u16 var;
+	u32 speedX, speedY;
 	s32 cameraX, cameraY;
 
 	if (sParallaxState->loadedImage == 0 || gMain.callback2 != CB2_Overworld)
 		return;
 
 	var = VarGet(VAR_PARALLAX);
-	u32 speedX = min(GET_PARALLAX_X_SPEED(var), MAX_SPEED);
-	u32 speedY = min(GET_PARALLAX_Y_SPEED(var), MAX_SPEED);
+	speedX = GET_PARALLAX_X_SPEED(var);
+	speedY = GET_PARALLAX_Y_SPEED(var);
 
-	cameraX = sParallaxState->anchorX - (s16) gTotalCameraPixelOffsetX + sHorizontalCameraPan;
-	cameraY = sParallaxState->anchorY - (s16) gTotalCameraPixelOffsetY + sVerticalCameraPan;
+	if (speedX == SPEED_FIT)
+	{
+		cameraX = GetCameraPosInMap(gSaveBlock1->pos.x, gFieldCamera.x) + sHorizontalCameraPan;
+		SetGpuReg(REG_OFFSET_BG3HOFS, GetFitScroll(cameraX, gMapHeader.mapLayout->width, FIT_TRAVEL_X));
+	}
+	else
+	{
+		cameraX = sParallaxState->anchorX - (s16) gTotalCameraPixelOffsetX + sHorizontalCameraPan;
+		//Shift rather than divide, so negative positions round the same way as positive ones (MAX_SPEED is 4)
+		SetGpuReg(REG_OFFSET_BG3HOFS, ((cameraX * (s32) min(speedX, MAX_SPEED)) >> 2) & 0x1FF);
+	}
 
-	//Shift rather than divide, so negative positions round the same way as positive ones (MAX_SPEED is 4)
-	SetGpuReg(REG_OFFSET_BG3HOFS, ((cameraX * (s32) speedX) >> 2) & 0x1FF);
-	SetGpuReg(REG_OFFSET_BG3VOFS, ((cameraY * (s32) speedY) >> 2) & 0x1FF);
+	if (speedY == SPEED_FIT)
+	{
+		cameraY = GetCameraPosInMap(gSaveBlock1->pos.y, gFieldCamera.y) + sVerticalCameraPan;
+		SetGpuReg(REG_OFFSET_BG3VOFS, GetFitScroll(cameraY, gMapHeader.mapLayout->height, FIT_TRAVEL_Y));
+	}
+	else
+	{
+		cameraY = sParallaxState->anchorY - (s16) gTotalCameraPixelOffsetY + sVerticalCameraPan;
+		SetGpuReg(REG_OFFSET_BG3VOFS, ((cameraY * (s32) min(speedY, MAX_SPEED)) >> 2) & 0x1FF);
+	}
 }
 
 #endif

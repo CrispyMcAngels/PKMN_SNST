@@ -113,10 +113,10 @@ static const struct SideQuest sSideQuests[] =
 	{gText_SideQuests_LostChild,       gText_SideQuests_LostChildDesc,       0x961, 0x962, 16},  //32x32
 	{gText_SideQuests_LostScroll,      gText_SideQuests_LostScrollDesc,      0x95E, 0x960, 99},  //16x16
 	{gText_SideQuests_CatchSkiddo,     gText_SideQuests_CatchSkiddoDesc,     0x965, 0x966, 22},  //32x32
-	{gText_SideQuests_FindShinx,       gText_SideQuests_FindShinxDesc,       0x969, 0x96A, 0xA8},
-	{gText_SideQuests_PokemonThief,    gText_SideQuests_PokemonThiefDesc,    0x96B, 0x96C, 0xA9},
-	{gText_SideQuests_StarryKitchen,   gText_SideQuests_StarryKitchenDesc,   0x96D, 0x96E, 0xAA},
-	{gText_SideQuests_MurkrowInvasion, gText_SideQuests_MurkrowInvasionDesc, 0x970, 0x971, 0xAD},
+	{gText_SideQuests_FindShinx,       gText_SideQuests_FindShinxDesc,       0x969, 0x96A, 116},
+	{gText_SideQuests_PokemonThief,    gText_SideQuests_PokemonThiefDesc,    0x96B, 0x96C, 49},
+	{gText_SideQuests_StarryKitchen,   gText_SideQuests_StarryKitchenDesc,   0x96D, 0x96E, 74},
+	{gText_SideQuests_MurkrowInvasion, gText_SideQuests_MurkrowInvasionDesc, 0x970, 0x971, 133},
 	{NULL}
 };
 

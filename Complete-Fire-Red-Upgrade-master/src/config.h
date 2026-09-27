@@ -65,7 +65,7 @@
 #define FOLLOWER_POKEMON_UNLOCK_VALUE 0x0100
 #define VAR_TEXT_PAL_CUSTOM_COLOR 0x503E //If not 0, replaces color TEXT_PAL_CUSTOM_COLOR_SLOT of the standard text palette (0x471DEC) with this GBA color (0x0001-0x7FFF, use 0x8000 for black). Comment out this line to remove the feature.
 #define TEXT_PAL_CUSTOM_COLOR_SLOT 11
-#define VAR_PARALLAX 0x400A //Temp var (cleared on every warp) for BG3 parallax, set in the map's on-transition script: 0xIIXY = image II (see bg3_parallax.c, 0 = off) scrolling at horizontal speed X and vertical speed Y (0 = 0%, 1 = 25%, 2 = 50%, 3 = 75%, 4 = 100%). Comment out this line to remove the feature.
+#define VAR_PARALLAX 0x400A //Temp var (cleared on every warp) for BG3 parallax, set in the map's on-transition script: 0xIIXY = image II (see bg3_parallax.c, 0 = off) scrolling at horizontal speed X and vertical speed Y (0 = 0%, 1 = 25%, 2 = 50%, 3 = 75%, 4 = 100%, 5 = fit to the map size so the image never repeats). Comment out this line to remove the feature.
 #define PARALLAX_TILE_OFFSET 50 //First tile in BG char block 3 used by parallax images (the tiles before it hold the text box frames). Images can use 256 minus this many unique tiles.
 #define PARALLAX_PAL_SLOT 11 //BG palette slot parallax images use. Tilesets on parallax maps must not use this palette.
 #define VAR_BG2_FADE_RADIUS 0x5041 //If not 0, the BG2 map layer is only drawn within this many pixels of the screen centre (like Flash, but the rest stays visible). Comment out this line to remove the feature.

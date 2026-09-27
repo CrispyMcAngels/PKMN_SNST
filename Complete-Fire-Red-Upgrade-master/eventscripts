@@ -35,16 +35,6 @@ npc 32 3 1 dark_future_32_3_NPC1
 npc 32 2 0 dark_future_32_2_NPC0
 
 map 1 61 gMapScripts_Santuario_del_Vento_1_61
-tile 1 61 0 EventScript_SDV_1_61_TileScript_up_down
-tile 1 61 1 EventScript_SDV_1_61_TileScript_up_down
-tile 1 61 2 EventScript_SDV_1_61_TileScript_up_down
-tile 1 61 3 EventScript_SDV_1_61_TileScript_up_down
-tile 1 61 4 EventScript_SDV_1_61_TileScript_up_down
-tile 1 61 5 EventScript_SDV_1_61_TileScript_up_down
-tile 1 61 6 EventScript_SDV_1_61_TileScript_up_down
-tile 1 61 7 EventScript_SDV_1_61_TileScript_up_down
-tile 1 61 8 EventScript_SDV_1_61_TileScript_up_down
-tile 1 61 9 EventScript_SDV_1_61_TileScript_up_down
 
 
 map 0 23 gMapScripts_Passo_Tuono_1_3

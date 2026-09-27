@@ -161,6 +161,9 @@ Dark_Future_3_54_MapScriptOnFrameBegin_P2:
     pause 0x1E
     sound 0xD
     pause 0x1E
+    sound 250
+    pause 0x1E
+    sound 250
     spriteface 0x1 0x3
     applymovement 0x1 dark_future_3_54_mov10
     waitmovement 0x1
@@ -169,6 +172,10 @@ Dark_Future_3_54_MapScriptOnFrameBegin_P2:
     pause 0x2E
     fadescreen 0x1
     sound 0xD
+    pause 0x2E
+    sound 250
+    pause 0x1E
+    sound 250
     pause 0x2E
     cry 0x169 0x0
     pause 0x1E

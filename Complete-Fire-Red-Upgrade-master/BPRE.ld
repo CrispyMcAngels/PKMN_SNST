@@ -305,6 +305,7 @@ sHorizontalCameraPan = 0x3000E98;
 sVerticalCameraPan = 0x3000E9A;
 DrawWholeMapViewInternal = 0x805A6A8 | 1;
 gTotalCameraPixelOffsetY = 0x3005068;
+gFieldCamera = 0x3005050;
 gTotalCameraPixelOffsetX = 0x300506C;
 gInputToStoreInQuestLogMaybe = 0x3005078;
 gCB2_AfterEvolution = 0x300537C;
