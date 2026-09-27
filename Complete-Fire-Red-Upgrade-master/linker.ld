@@ -1,7 +1,8 @@
 OUTPUT_ARCH(arm)
 MEMORY {
 
-		rom     : ORIGIN = (0x08000000 + 0x1609250), LENGTH = 32M
+		rom     : ORIGIN = (0x08000000 + 0x1609250), LENGTH = 0x206db0
+		rom2    : ORIGIN = (0x08000000 + 0x1100000), LENGTH = 0xb0000
         ewram   : ORIGIN = 0x02000000, LENGTH = 4M - 4k
 }
 
@@ -16,6 +17,9 @@ SECTIONS {
                 *(.ctors)
                 *(.dtors)
                 *(.rodata)
+                *(.rodata.*)
+                *(.data)
+                *(.data.*)
                 *(.fini)
                 *(COMMON)
                 __text_end  = . ;
@@ -26,4 +30,9 @@ SECTIONS {
         _end = __bss_end__ ;
         __end__ = __bss_end__ ;
         } >rom = 0xff
+
+        /* Graphics from the folders in ROM2_GRAPHICS_DIRS (scripts/build.py), in a second free block of the ROM */
+        .rom2 : {
+                *(.rom2)
+        } >rom2 = 0xff
 }

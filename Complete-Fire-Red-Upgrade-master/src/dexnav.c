@@ -2378,6 +2378,14 @@ bool8 StartMenuDexNavCallback(void)
     return FALSE;
 }
 
+//For custom start menus that leave the overworld themselves (like the BW start menu in src/start_menu_bw),
+//so the overworld is already cleaned up. Returns to the start menu through CB2_ReturnToFieldWithOpenMenu.
+void CB2_OpenDexNavFromStartMenu(void)
+{
+	sDexNavGuiPtr = Calloc(sizeof(struct DexNavGuiData));
+	SetMainCallback2(CB2_DexNav);
+}
+
 // ========================================== //
 // ============ Script Specials ============= //
 // ========================================== //

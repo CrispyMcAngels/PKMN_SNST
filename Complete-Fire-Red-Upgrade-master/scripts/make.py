@@ -12,6 +12,9 @@ ROM_NAME = "BPRE0.gba"  # The name of your rom
 OFFSET_TO_PUT = 0x1609250
 SEARCH_FREE_SPACE = False  # Set to True if you want the script to search for free space
                            # Set to False if you don't want to search for free space as you for example update the engine
+SPACE_END = 0x1810000  # First byte after OFFSET_TO_PUT that's already used (the DPE). The engine must end before it.
+ROM2_START = 0x1100000  # Second free block, for the graphics folders listed in ROM2_GRAPHICS_DIRS (scripts/build.py)
+ROM2_END = 0x11B0000    # First used byte after it
 
 #############
 # Options end here.
@@ -65,7 +68,10 @@ def ChangeFileLine(filePath: str, lineToChange: int, replacement: str):
 
 
 def EditLinker(offset: int):
-    ChangeFileLine("linker.ld", 4, "\t\trom     : ORIGIN = (0x08000000 + " + hex(offset) + "), LENGTH = 32M\n")
+    # With fixed space, the linker itself refuses to build if either region overflows
+    length = hex(SPACE_END - offset) if SEARCH_FREE_SPACE is False else "32M"
+    ChangeFileLine("linker.ld", 4, "\t\trom     : ORIGIN = (0x08000000 + " + hex(offset) + "), LENGTH = " + length + "\n")
+    ChangeFileLine("linker.ld", 5, "\t\trom2    : ORIGIN = (0x08000000 + " + hex(ROM2_START) + "), LENGTH = " + hex(ROM2_END - ROM2_START) + "\n")
 
 
 def EditInsert(offset: int):
@@ -81,6 +87,29 @@ def BuildCode():
 
     if result != 0:  # Build wasn't sucessful
         sys.exit(1)
+
+
+def CheckCodeFits(offset: int):
+    """Stop before inserting if the engine would overwrite what comes after it."""
+    size = os.path.getsize('build/output.bin')
+    end = offset + size
+
+    if SEARCH_FREE_SPACE is False and end > SPACE_END:
+        print('Error! The engine is {:,} bytes and ends at 0x{:X}, {:,} bytes past SPACE_END (0x{:X}). Nothing was inserted.'
+              .format(size, 0x08000000 + end, end - SPACE_END, 0x08000000 + SPACE_END))
+        sys.exit(1)
+
+    print('Engine: {:,} bytes at 0x{:X}-0x{:X}. {:,} bytes left before SPACE_END.'
+          .format(size, 0x08000000 + offset, 0x08000000 + end, SPACE_END - end))
+
+    rom2Size = os.path.getsize('build/output_rom2.bin') if os.path.isfile('build/output_rom2.bin') else 0
+    if rom2Size > ROM2_END - ROM2_START:
+        print('Error! The second region is {:,} bytes, but only {:,} fit between ROM2_START and ROM2_END. Nothing was inserted.'
+              .format(rom2Size, ROM2_END - ROM2_START))
+        sys.exit(1)
+
+    print('Engine (second region): {:,} bytes at 0x{:X}-0x{:X}. {:,} bytes left before ROM2_END.'
+          .format(rom2Size, 0x08000000 + ROM2_START, 0x08000000 + ROM2_START + rom2Size, ROM2_END - ROM2_START - rom2Size))
 
 
 def InsertCode():
@@ -110,6 +139,7 @@ def main():
             EditLinker(offset)
             EditInsert(offset)
             BuildCode()
+            CheckCodeFits(offset)
             InsertCode()
             rom.close()
 

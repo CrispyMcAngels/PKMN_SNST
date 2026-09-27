@@ -37,6 +37,7 @@ else:  # Linux, OSX, etc.
     AS = (PREFIX + 'as')
 
 OUTPUT = 'build/output.bin'
+OUTPUT_ROM2 = 'build/output_rom2.bin'
 BYTE_REPLACEMENT = 'bytereplacement'
 HOOKS = 'hooks'
 REPOINTS = 'repoints'
@@ -78,6 +79,17 @@ def GetTextSection() -> int:
         sys.exit(1)
 
 
+def GetSectionAddress(name: str):
+    """Return the address of a section in the linked file, or None if it's missing or empty."""
+    out = subprocess.check_output([OBJDUMP, '-h', 'build/linked.o']).decode()
+    for line in out.split('\n'):
+        parts = line.split()
+        if len(parts) >= 4 and parts[1] == name:
+            return int(parts[3], 16) if int(parts[2], 16) > 0 else None
+
+    return None
+
+
 def GetSymbols(subtract=0) -> {str: int}:
     out = subprocess.check_output([NM, 'build/linked.o'])
     lines = out.decode().split('\n')
@@ -89,7 +101,7 @@ def GetSymbols(subtract=0) -> {str: int}:
         if len(parts) < 3:
             continue
 
-        if parts[1].lower() not in {'t', 'd'}:
+        if parts[1].lower() not in {'t', 'd', 'r'}:  # 'r': read-only data, like the graphics in the .rom2 region
             continue
 
         offset = int(parts[0], 16)
@@ -294,6 +306,13 @@ def main():
         with open(OUTPUT, 'rb') as binary:
             rom.write(binary.read())
             binary.close()
+
+        # Second ROM region (graphics from ROM2_GRAPHICS_DIRS in build.py), at the address the linker gave it
+        rom2Address = GetSectionAddress('.rom2')
+        if rom2Address is not None and os.path.isfile(OUTPUT_ROM2):
+            rom.seek(rom2Address - 0x08000000)
+            with open(OUTPUT_ROM2, 'rb') as binary:
+                rom.write(binary.read())
 
         # Adjust symbol table
         for entry in table:

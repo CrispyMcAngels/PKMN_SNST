@@ -17,4 +17,5 @@ u8 GetPlayerDistance(s16 x, s16 y);
 //Functions Hooked In
 u8 SelectHookRestore(void);
 u8 StartMenuDexNavCallback(void);
+void CB2_OpenDexNavFromStartMenu(void);
 
