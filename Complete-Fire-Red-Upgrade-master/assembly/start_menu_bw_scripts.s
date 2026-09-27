@@ -31,7 +31,7 @@ Script_Retire:
 
 Script_Quests:
   pause 0x20
-  callasm 0x090C5871
+  callasm SideQuests_Open +1 @ src/side_quests
   waitstate
   end
 

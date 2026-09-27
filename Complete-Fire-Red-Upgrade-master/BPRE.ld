@@ -1931,3 +1931,6 @@ var_set = 0x0806e584|1;
 vblank_handler_set = 0x080006f4|1;
 gpu_pal_tag_search_lower_boundary = 0x03003e58;
 pal_fade_control = 0x02037ab8;
+
+/* Used by the Side Quests menu (src/side_quests). The rest of its pokeagb names are in the Time Echoes block above */
+LoadObjectEventPaletteSet = 0x0805F4DC | 1;

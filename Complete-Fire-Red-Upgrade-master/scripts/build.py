@@ -73,6 +73,7 @@ EXTRA_CFLAGS_BY_DIR = {  # Merged projects that were built with their own flags.
     'start_menu_bw': ['-mlong-calls'],  # Its headers don't mark ROM functions as long_call
     'time_echoes': ['-mlong-calls', '-fno-builtin', '-I', 'src/time_echoes/src/include'],  # pokeagb headers
     'option_menu_bw': ['-mlong-calls', '-fno-builtin', '-std=c11', '-DROM_BPRE', '-I', 'src/option_menu_bw/include'],  # decomp headers
+    'side_quests': ['-mlong-calls', '-fno-builtin', '-I', 'src/side_quests/include'],  # pokeagb headers
 }
 MUGSHOT_DEFINES = 'mugshot_defines.s'  # Source of the MUGSHOT_ names used by scripts...
 MUGSHOT_HEADER = 'include/new/mugshot_ids.h'  # ...and by C code, through this generated header

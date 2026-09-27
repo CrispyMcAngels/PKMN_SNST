@@ -1,0 +1,48 @@
+//Side Quests menu texts (src/side_quests). The quest list itself is sSideQuests in src/side_quests/side_quests.c.
+//Names fit on one line; descriptions have two lines, split with \n.
+//These are separate from the Time Echoes texts (src/time_echoes/src/include/debug_quests.c).
+
+#org @gText_SideQuests_Empty
+------\n
+
+#org @gText_SideQuests_LostChild
+Bambino sperduto
+
+#org @gText_SideQuests_LostChildDesc
+Aiuta la ragazza di Miralba a\ntrovare il suo fratellino.
+
+#org @gText_SideQuests_LostScroll
+Pergamena Perduta
+
+#org @gText_SideQuests_LostScrollDesc
+Riporta la pergamena al suo\nproprietario a Miralba.
+
+#org @gText_SideQuests_CatchSkiddo
+Cattura Skiddo
+
+#org @gText_SideQuests_CatchSkiddoDesc
+Porta uno Skiddo alla\nragazza di Miralba.
+
+#org @gText_SideQuests_FindShinx
+Trova Shinx
+
+#org @gText_SideQuests_FindShinxDesc
+Trova Shinx e riportalo al suo\nallenatore.
+
+#org @gText_SideQuests_PokemonThief
+Il ladro di Pokemon
+
+#org @gText_SideQuests_PokemonThiefDesc
+Trova il ladro e riporta Darumaka\nal suo allenatore.
+
+#org @gText_SideQuests_StarryKitchen
+Cucina Stellata
+
+#org @gText_SideQuests_StarryKitchenDesc
+Raccogli dei Grande fungo per lo\nchef di Ardesiopoli.
+
+#org @gText_SideQuests_MurkrowInvasion
+Invasione di Murkrow.
+
+#org @gText_SideQuests_MurkrowInvasionDesc
+Scaccia i Murkrow dall'osservatorio\ndi Radiantia.
