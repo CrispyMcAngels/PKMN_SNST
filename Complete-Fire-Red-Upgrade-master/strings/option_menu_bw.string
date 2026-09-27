@@ -1,0 +1,95 @@
+//Option Menu texts (src/option_menu_bw). The [FC][01][xx] colour code must stay the first 3 bytes:
+//the menu overwrites its colour byte to highlight the selected choice.
+
+#org @localText_Option
+[FC][01][02][FC][02][00]OPTIONS
+
+#org @localText_Instructions
+[FC][01][02][FC][02][00][FC][06][00]SAVE    CANCEL
+
+#org @localText_TextSpeed
+[FC][01][01][FC][02][00]Text Speed
+
+#org @localText_BattleScene
+[FC][01][01][FC][02][00]BATTLE SCENE
+
+#org @localText_BattleStyle
+[FC][01][01][FC][02][00]BATTLE STYLE
+
+#org @localText_Follower
+[FC][01][01][FC][02][00]FOLLOWING [53][54]
+
+#org @localText_Difficulty
+[FC][01][01][FC][02][00]DIFFICULTY
+
+#org @localText_ButtonMode
+[FC][01][01][FC][02][00]CONTROLS
+
+#org @localText_TextSpeedSlow
+[FC][01][01][FC][02][00]SLOW
+
+#org @localText_TextSpeedMid
+[FC][01][01][FC][02][00]MID
+
+#org @localText_TextSpeedFast
+[FC][01][01][FC][02][00]FAST
+
+#org @localText_BattleSceneOn
+[FC][01][01][FC][02][00]ON
+
+#org @localText_BattleSceneOff
+[FC][01][01][FC][02][00]OFF
+
+#org @localText_BattleStyleShift
+[FC][01][01][FC][02][00]SHIFT
+
+#org @localText_BattleStyleSet
+[FC][01][01][FC][02][00]SET
+
+#org @localText_FollowerOn
+[FC][01][01][FC][02][00]ON
+
+#org @localText_FollowerOff
+[FC][01][01][FC][02][00]OFF
+
+#org @localText_DifficultyNormal
+[FC][01][01][FC][02][00]NORMAL
+
+#org @localText_DifficultyTough
+[FC][01][01][FC][02][00]TOUGH
+
+#org @localText_DifficultyHard
+[FC][01][01][FC][02][00]HARD
+
+#org @localText_ButtonTypeNormal
+[FC][01][01][FC][02][00]NORMAL
+
+#org @localText_ButtonTypeLR
+[FC][01][01][FC][02][00]LR
+
+#org @localText_ButtonTypeLEqualsA
+[FC][01][01][FC][02][00]L=A
+
+#org @localText_TextSpeedDescription
+[FC][01][01][FC][02][00]Choose from three text speed levels.
+
+#org @localText_BattleSceneDescription
+[FC][01][01][FC][02][00]Show or disable animations\nduring battles.
+
+#org @localText_BattleStyleDescription
+[FC][01][01][FC][02][00]Configure the rules that apply in\ncombat.
+
+#org @localText_FollowerDescription
+[FC][01][01][FC][02][00]Let your POK[1B]MON follow you\nin the overworld.
+
+#org @localText_DifficultyDescription
+[FC][01][01][FC][02][00]Choose the game's difficulty.
+
+#org @localText_ButtonModeDescription
+[FC][01][01][FC][02][00]Configures the behavior of the\nL and R buttons.
+
+#org @localText_ExitWithSave
+[FC][01][01][FC][02][00]Saving the changes made...
+
+#org @localText_ExitWithoutSave
+[FC][01][01][FC][02][00]Discarding the changes made...

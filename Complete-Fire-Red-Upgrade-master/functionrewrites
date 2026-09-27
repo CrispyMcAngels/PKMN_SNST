@@ -2,3 +2,5 @@
 ##BW start menu (src/start_menu_bw)
 CB2_ReturnToFieldWithOpenMenu 0x80568a8 0 0
 StartMenu_Init 0806f258 0 0
+##Option Menu (src/option_menu_bw): replaces the vanilla options screen everywhere it's opened from
+CB2_NewInitOptionMenu 08088388 0 0
