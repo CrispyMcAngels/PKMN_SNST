@@ -65,6 +65,11 @@
 #define FOLLOWER_POKEMON_UNLOCK_VALUE 0x0100
 #define VAR_TEXT_PAL_CUSTOM_COLOR 0x503E //If not 0, replaces color TEXT_PAL_CUSTOM_COLOR_SLOT of the standard text palette (0x471DEC) with this GBA color (0x0001-0x7FFF, use 0x8000 for black). Comment out this line to remove the feature.
 #define TEXT_PAL_CUSTOM_COLOR_SLOT 11
+#define VAR_BG2_FADE_RADIUS 0x5041 //If not 0, the BG2 map layer is only drawn within this many pixels of the screen centre (like Flash, but the rest stays visible). Comment out this line to remove the feature.
+#define BG2_FADE_RING_WIDTH 12 //Width in pixels of the band past the radius where BG2 fades out. With BG2_FADE_DITHERED, use a multiple of 3 (each step is a third).
+#define BG2_FADE_RING_ALPHA 8 //Blend strength used in the band (0-16). With BG2_FADE_DITHERED, 8 gives steps of 75%, 50% and 25%.
+#define BG2_FADE_DITHER_SOFTEN 2 //With BG2_FADE_DITHERED: lowers the line texture. 0 = steps of 75/50/25% with lines alternating by 50%. 2 = steps of 81/50/19% alternating by at most 37.5%. Max 3 (and at most BG2_FADE_RING_ALPHA).
+#define BG2_FADE_DITHERED //Even and odd scanlines split the band differently, which looks like 3 fading steps all around the circle (with a fine line texture). Comment out for a single 50% step whose top and bottom fade per scanline.
 #define FLAG_KEEP_CONSUMABLE_ITEMS 0x927 //If set, consumable items are returned after battles
 #define FLAG_IN_BATTLE_TEAM_PREVIEW 0x929 //If set (and TEAM_PREVIEW_TRIGGER is defined), pressing L in a trainer battle's action menu shows the enemy team. Unrevealed Pokemon appear as question marks.
 #define FLAG_DAILY_EVENTS_START 0xE00 //To flag + 0xFF, resets every new day.

@@ -5,6 +5,7 @@
 #include "../include/palette.h"
 #include "../include/shop.h"
 
+#include "../include/new/bg2_fade.h"
 #include "../include/new/dns.h"
 #include "../include/new/dns_data.h"
 #include "../include/new/dynamic_ow_pals.h"
@@ -49,6 +50,10 @@ void TransferPlttBuffer(void)
 		if (gPaletteFade->mode == HARDWARE_FADE && gPaletteFade->active)
 			UpdateBlendRegisters();
 	}
+
+	#ifdef VAR_BG2_FADE_RADIUS
+	UpdateBg2FadeEffect(); //Every frame, even when the palette transfer is skipped, since its DMA must be restarted each VBlank
+	#endif
 }
 
 #if defined(TIME_ENABLED) || defined(DNS_PALETTE_BY_VAR)

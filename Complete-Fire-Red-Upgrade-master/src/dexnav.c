@@ -71,7 +71,6 @@ static u8 DexNavPickTile(u8 environment, u8 xSize, u8 ySize, bool8 smallScan);
 static u8 ShakingGrass(u8 environment, u8 xSize, u8 ySize, bool8 smallScan);
 //static void DexHUDHBlank(void);
 static void DexNavProximityUpdate(void);
-static void NullSubHBlank(void);
 static void DexNavFreeHUD(void);
 static void DexNavShowFieldMessage(u8 id);
 static void OutlinedFontDraw(u8 spriteId, u8 tileNum, u16 size);
@@ -429,10 +428,6 @@ static void DexNavProximityUpdate(void)
 };
 
 
-static void NullSubHBlank(void)
-{
-};
-
 static void DexNavFreeHUD(void)
 {
 	switch (sDexNavHudPtr->environment)
@@ -521,7 +516,7 @@ static void DexNavFreeHUD(void)
 
 	Free(sDexNavHudPtr);
 	DisableInterrupts(2);
-	SetHBlankCallback(NullSubHBlank);
+	SetHBlankCallback(NULL); //NULL rather than an empty function, so other overworld effects (like the BG2 fade) know HBlank is free
 
 /*
 	// WRITE_REG_WININ(0x1F1F);
