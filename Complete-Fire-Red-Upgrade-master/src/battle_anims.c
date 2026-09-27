@@ -12,6 +12,7 @@
 #include "../include/constants/songs.h"
 
 #include "../include/new/battle_anims.h"
+#include "../include/new/battle_indicators.h"
 #include "../include/new/battle_terrain.h"
 #include "../include/new/battle_util.h"
 #include "../include/new/dns.h"
@@ -4067,6 +4068,13 @@ void UpdateOamPriorityInAllHealthboxes(u8 priority)
 
 		case CONTROLLER_BALLTHROWANIM:
 			goto HIDE_BOXES;
+
+		case CONTROLLER_CHOOSEACTION: //Opening/closing the team preview
+			#ifdef TEAM_PREVIEW_TRIGGER
+			if (!CantLoadTeamPreviewTrigger())
+				goto HIDE_BOXES;
+			#endif
+			goto DEFAULT_CASE;
 
 		case CONTROLLER_BATTLEANIMATION:
 			switch (gBattleBufferA[gBattleAnimAttacker][1]) {

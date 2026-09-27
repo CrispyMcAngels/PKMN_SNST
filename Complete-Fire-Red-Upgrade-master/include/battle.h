@@ -969,6 +969,11 @@ struct NewBattleStruct
 		bool8 dynamaxPotential[MAX_BATTLERS_COUNT][MAX_BATTLERS_COUNT]; //dynamaxPotential[bankAtk][bankDef]
 		const void* megaPotential[MAX_BATTLERS_COUNT]; //aiMegaPotential[bankAtk] - stores evolution data of attacker
 	} ai;
+
+	//Kept last so existing offsets don't shift
+	u8 revealedEnemyMons; //Party indices of enemy Pokemon the player has seen (for the team preview)
+	bool8 threwBall : 1; //The player threw a Poke Ball this battle (for the last used ball trigger)
+	bool8 usedLastBall : 1; //Helps prevent the bag from opening
 };
 
 extern struct NewBattleStruct* gNewBS; //0x203E038

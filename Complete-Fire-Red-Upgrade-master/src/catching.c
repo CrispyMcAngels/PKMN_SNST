@@ -70,6 +70,10 @@ void atkEF_handleballthrow(void)
 	u8 defLevel = gBattleMons[gBankTarget].level;
 
 	u8 ballType = ItemId_GetType(gLastUsedItem);
+	gNewBS->threwBall = TRUE;
+	if (ballType != BALL_TYPE_QUICK_BALL //Useless to offer to player after initial use
+	|| gBattleResults.battleTurnCounter > 0) //Unless the player explictly chose it after the first turn
+		gLastUsedBall = gLastUsedItem;
 
 	if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
 	{
@@ -746,6 +750,29 @@ bool8 DoubleWildPokeBallItemUseFix(u8 taskId)
 	}
 
 	return effect;
+}
+
+//Same checks as DoubleWildPokeBallItemUseFix, without the bag messages
+bool8 CantCatchPokemonRightNow(void)
+{
+	if ((IsRaidBattle() && !RAID_BATTLE_END)
+	|| FlagGet(FLAG_NO_CATCHING) || FlagGet(FLAG_NO_CATCHING_AND_RUNNING))
+		return TRUE;
+
+	if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+	{
+		if ((BATTLER_ALIVE(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)) && BATTLER_ALIVE(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))
+		|| (BATTLER_ALIVE(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)) && BATTLER_SEMI_INVULNERABLE(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)))
+		|| (BATTLER_ALIVE(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)) && BATTLER_SEMI_INVULNERABLE(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))
+		|| (IS_DOUBLE_BATTLE
+		 && BATTLER_ALIVE(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))
+		 && gActiveBattler == GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT))) //Only Pokemon on left can throw ball
+			return TRUE;
+	}
+	else if (BATTLER_SEMI_INVULNERABLE(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)))
+		return TRUE;
+
+	return FALSE;
 }
 
 struct Pokemon* LoadTargetPartyData(void)

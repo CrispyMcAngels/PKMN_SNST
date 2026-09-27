@@ -377,6 +377,9 @@ void BattleBeginFirstTurn(void)
 					gNewBS->statRoseThisRound[i] = FALSE;
 					gNewBS->statFellThisTurn[i] = FALSE;
 					gNewBS->statFellThisRound[i] = FALSE;
+
+					if (SIDE(i) == B_SIDE_OPPONENT)
+						gNewBS->revealedEnemyMons |= gBitTable[gBattlerPartyIndexes[i]]; //Set up base for team preview
 				}
 
 				gBattleStruct->turnEffectsTracker = 0;

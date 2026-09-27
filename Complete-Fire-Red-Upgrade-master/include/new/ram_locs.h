@@ -143,7 +143,9 @@
 #define gExpandedFlags ((u8*) 0x0203B174)
 #define gExpandedVars ((u16*) (0x0203B174 + 0x200))
 
-//FREE: 0x203B774
+//0x203B774 - 0x203B793: sCustomStdTextPal (text_palette.c)
+extern u16 gLastUsedBall; //0x203B794
+//FREE: 0x203B796
 #define gPcSelectionTracker ((u8* 0x203B7AC)	// state tracker for pc selection
 #define gCreateSpriteTableSetter 0x203B7AD  // allow createsprite to load from a table as well
 #define gTimerValue (*(u16*) 0x203B7AE)

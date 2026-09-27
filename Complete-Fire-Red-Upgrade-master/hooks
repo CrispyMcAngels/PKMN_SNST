@@ -113,6 +113,9 @@ BattleAI_HandleItemUseBeforeAISetup 080C6D0C 0
 MegaRetrieveDataHook 80148C0 0
 HandleInputChooseMove 802EA10 0
 InitMoveSelectionsVarsAndStrings 08032CB4 0
+#ifdef LAST_USED_BALL_TRIGGER
+LastUsedBallOverrideHook 8032CEC 0
+#endif
 PlayerHandleStatusIconUpdateHook 803301C 1
 OpponentHandleStatusIconUpdateHook 8038974 1
 LoadHealthBoxesIndicatorHook 8048398 2

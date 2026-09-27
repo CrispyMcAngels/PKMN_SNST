@@ -66,6 +66,7 @@
 #define VAR_TEXT_PAL_CUSTOM_COLOR 0x503E //If not 0, replaces color TEXT_PAL_CUSTOM_COLOR_SLOT of the standard text palette (0x471DEC) with this GBA color (0x0001-0x7FFF, use 0x8000 for black). Comment out this line to remove the feature.
 #define TEXT_PAL_CUSTOM_COLOR_SLOT 11
 #define FLAG_KEEP_CONSUMABLE_ITEMS 0x927 //If set, consumable items are returned after battles
+#define FLAG_IN_BATTLE_TEAM_PREVIEW 0x929 //If set (and TEAM_PREVIEW_TRIGGER is defined), pressing L in a trainer battle's action menu shows the enemy team. Unrevealed Pokemon appear as question marks.
 #define FLAG_DAILY_EVENTS_START 0xE00 //To flag + 0xFF, resets every new day.
 
 /*===== Start Menu/Poketools Flags =====*/
@@ -325,6 +326,8 @@ enum //These vars need to be one after the other (hence the enum)
 #define ENCOUNTER_MUSIC_BY_CLASS //Plays music when a trainer spots the player based on the trainer class rather than the value set in the trainer data.
 #define OKAY_WITH_AI_SUICIDE //The AI is allowed to use self-destructing moves
 //#define HEALTHBAR_TYPE_ICONS //Pokemon types will always be shown next to the healthbar
+#define LAST_USED_BALL_TRIGGER //The player will be given an option to use their last used Poke Ball in wild battles by pressing L
+#define TEAM_PREVIEW_TRIGGER //The player can press L during action selection to view the enemy team (Frontier battles, or trainer battles with FLAG_IN_BATTLE_TEAM_PREVIEW set)
 
 /* DexNav Options */
 //See "include/new/dexnav_config.h"

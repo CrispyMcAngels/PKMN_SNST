@@ -715,6 +715,7 @@ const u32* __attribute__((long_call)) GetMonSpritePalFromSpeciesAndPersonality(u
 void __attribute__((long_call)) EmitSetMonData(u8 a, u8 request, u8 c, u8 bytes, void *data);
 void __attribute__((long_call)) ZeroPlayerPartyMons(void);
 void __attribute__((long_call)) ZeroEnemyPartyMons(void);
+bool8 __attribute__((long_call)) IsPlayerPartyAndPokemonStorageFull(void);
 
 u8 __attribute__((long_call)) CalculatePPWithBonus(u16 move, u8 ppBonuses, u8 moveIndex);
 u16 __attribute__((long_call)) SpeciesToNationalPokedexNum(u16 species);
