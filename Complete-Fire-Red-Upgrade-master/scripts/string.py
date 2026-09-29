@@ -39,7 +39,7 @@ SpecialBuffers = {
     "BLUE": ["FC", "01", "08"],
     "LIGHT_BLUE": ["FC", "01", "09"],
     "CRONO": ["FC", "01", "0A"],
-    "DUSK": ["FC", "01", "0B"],
+    "CUSTOM": ["FC", "01", "0B"],
     "DARK_GRAY": ["FC", "01", "0C"],
     "UNUSED2": ["FC", "01", "0D"],
     "UNUSED3": ["FC", "01", "0E"],

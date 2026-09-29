@@ -2,28 +2,28 @@
 [CRONO]Crono[BLACK]: [.]Non c'[1A] traccia dell'\ningresso.\pLa [ORANGE]Fiamma Gialla[BLACK] resta nascosta[.]\n[.]Ancora[.]
 
 #org @Passo_Tuono_1_1_text2
-[DUSK]Vesper[BLACK]: Beh[.] forse [1A] sotto un sasso\ngigante?
+[CUSTOM]Vesper[BLACK]: Beh[.] forse [1A] sotto un sasso\ngigante?
 
 #org @Passo_Tuono_1_1_text3
-[DUSK]Vesper[BLACK]: [.]O dietro quella roccia\nlaggi[26]?\pAhah[.] ehm.
+[CUSTOM]Vesper[BLACK]: [.]O dietro quella roccia\nlaggi[26]?\pAhah[.] ehm.
 
 #org @Passo_Tuono_1_1_text4
-[CRONO]Crono[BLACK]: Sei un disastro, [DUSK]Vesper[BLACK].\nMa[.] anche un buon braccio destro.\pLasciali venire[.]\nIl loro passo[.] ci guider[16].
+[CRONO]Crono[BLACK]: Sei un disastro, [CUSTOM]Vesper[BLACK].\nMa[.] anche un buon braccio destro.\pLasciali venire[.]\nIl loro passo[.] ci guider[16].
 
 #org @Passo_Tuono_1_1_text5
-[DUSK]Vesper[BLACK]: Oooh! Un piano-trappola!\pAspetto in agguato, come un[.]\nun Rattata!\pTranquillo, boss, non batter[22]\nciglio!\pO[.] forse uno lo batto[.]\nma piano!
+[CUSTOM]Vesper[BLACK]: Oooh! Un piano-trappola!\pAspetto in agguato, come un[.]\nun Rattata!\pTranquillo, boss, non batter[22]\nciglio!\pO[.] forse uno lo batto[.]\nma piano!
 
 #org @Passo_Tuono_1_1_text6
 [CRONO]Crono[BLACK]: Non serve che tu capisca!\nServe che tu veda.
 
 #org @Passo_Tuono_1_1_text7
-[DUSK]Vesper[BLACK]: Uuuh[.] che tipi tosti i\ncapi malvagi[.]\p[CRONO]Crono[BLACK] [1A] proprio l'ombra pi[26]\nelegante che abbia mai visto.\pSilenzioso[.] Freddo[.] Cos[1E][.]\n[.]minaccioso!
+[CUSTOM]Vesper[BLACK]: Uuuh[.] che tipi tosti i\ncapi malvagi[.]\p[CRONO]Crono[BLACK] [1A] proprio l'ombra pi[26]\nelegante che abbia mai visto.\pSilenzioso[.] Freddo[.] Cos[1E][.]\n[.]minaccioso!
 
 #org @Passo_Tuono_1_1_text8
-[DUSK]Vesper[BLACK]: Un giorno anche io sar[22]\ncome lui!\p[.]Forse con un mantello pi[26] lungo.\pE magari meno silenzi imbarazzanti[.]
+[CUSTOM]Vesper[BLACK]: Un giorno anche io sar[22]\ncome lui!\p[.]Forse con un mantello pi[26] lungo.\pE magari meno silenzi imbarazzanti[.]
 
 #org @Passo_Tuono_1_1_text9
-[DUSK]Vesper[BLACK]: Ok [DUSK]Vesper[BLACK][.] modalit[16]\nninja silenzioso attivata!
+[CUSTOM]Vesper[BLACK]: Ok [CUSTOM]Vesper[BLACK][.] modalit[16]\nninja silenzioso attivata!
 
 #org @Passo_Tuono_1_1_Sign4_text1
 Sembra esserci un pulsante su\nquesta statuina, vuoi premerlo?
@@ -51,55 +51,55 @@ L'aria qui vibra[.]\pCome se il cielo trattenesse il\nrespiro.\p'La calma preced
 
 //Recluta 1 - NPC3
 #org @Passo_Tuono_1_1_NPC3_text1
-[DUSK]Recluta Dusk[BLACK]: Ugh[.] questo posto\nmi fa rizzare i capelli!
+[CUSTOM]Recluta Dusk[BLACK]: Ugh[.] questo posto\nmi fa rizzare i capelli!
 
 #org @Passo_Tuono_1_1_NPC3_text2
 Forse non serve un ingresso se ci\nfulmina prima il\lcielo!
 
 #org @Passo_Tuono_1_1_NPC3_text3
-[DUSK]Recluta Dusk[BLACK]: Dovrebbe esserci un\ningresso da qualche parte, ma ogni\lbussola impazzisce qui!
+[CUSTOM]Recluta Dusk[BLACK]: Dovrebbe esserci un\ningresso da qualche parte, ma ogni\lbussola impazzisce qui!
 
 //Recluta 2 - NPC2
 #org @Passo_Tuono_1_1_NPC2_text1
-[DUSK]Recluta Dusk[BLACK]: Pensi che se tocco\nquell'antenna divento pi[26]\lpotente?
+[CUSTOM]Recluta Dusk[BLACK]: Pensi che se tocco\nquell'antenna divento pi[26]\lpotente?
 
 #org @Passo_Tuono_1_1_NPC2_text2
 Non era un'ipotesi scientifica.\nEra stupida. Ora lo so.
 
 #org @Passo_Tuono_1_1_NPC2_text3
-[DUSK]Recluta Dusk[BLACK]: Queste antenne mi\nmettono i brividi[.]\pStandoci vicino ho sempre paura che\nun lampo mi colpisca dritto in testa
+[CUSTOM]Recluta Dusk[BLACK]: Queste antenne mi\nmettono i brividi[.]\pStandoci vicino ho sempre paura che\nun lampo mi colpisca dritto in testa
 
 
 //Recluta 3 - NPC4 
 #org @Passo_Tuono_1_1_NPC4_text1
-[DUSK]Recluta Dusk[BLACK]: Ho sentito parlare i\nlampi e il vento, mi hanno detto \lche vincer[22] questa sfida!
+[CUSTOM]Recluta Dusk[BLACK]: Ho sentito parlare i\nlampi e il vento, mi hanno detto \lche vincer[22] questa sfida!
 
 #org @Passo_Tuono_1_1_NPC4_text2
 Forse il vento parlava, ma non in\nuna lingua che capisco.
 
 #org @Passo_Tuono_1_1_NPC4_text3
-[DUSK]Recluta Dusk[BLACK]: Il Maestro [CRONO]Crono[BLACK]\nci ha detto di "seguire la voce del\lvento".\pMa io sento solo[.]\nBOOM! CRACK! AHI LE ORECCHIE!
+[CUSTOM]Recluta Dusk[BLACK]: Il Maestro [CRONO]Crono[BLACK]\nci ha detto di "seguire la voce del\lvento".\pMa io sento solo[.]\nBOOM! CRACK! AHI LE ORECCHIE!
 
 
 //Recluta 4 - NPC6
 #org @Passo_Tuono_1_1_NPC6_text1
-[DUSK]Recluta Dusk[BLACK]: Le rocce incanalano\nl'energia dei fulmini, io la user[22]\lper batterti!
+[CUSTOM]Recluta Dusk[BLACK]: Le rocce incanalano\nl'energia dei fulmini, io la user[22]\lper batterti!
 
 #org @Passo_Tuono_1_1_NPC6_text2
 Forse mi sarebbe servita pi[26]\nenergia!
 
 #org @Passo_Tuono_1_1_NPC6_text3
-[DUSK]Recluta Dusk[BLACK]: Queste rocce si\nilluminano quando fulmina[.]\pAffascinante, no? Chiss[16] se\nposso prenderne un pezzo come\lsouvenir[.]
+[CUSTOM]Recluta Dusk[BLACK]: Queste rocce si\nilluminano quando fulmina[.]\pAffascinante, no? Chiss[16] se\nposso prenderne un pezzo come\lsouvenir[.]
 
 //Recluta 5 - NPC5
 #org @Passo_Tuono_1_1_NPC5_text1
-[DUSK]Recluta Dusk[BLACK]: Sai per caso dove [1A]\nnascosta la [ORANGE]Fiamma Gialla[BLACK]?\pSe ti batto me lo devi dire!
+[CUSTOM]Recluta Dusk[BLACK]: Sai per caso dove [1A]\nnascosta la [ORANGE]Fiamma Gialla[BLACK]?\pSe ti batto me lo devi dire!
 
 #org @Passo_Tuono_1_1_NPC5_text2
 Tieniti pure i tuoi segreti!
 
 #org @Passo_Tuono_1_1_NPC5_text3
-[DUSK]Recluta Dusk[BLACK]: Dicono che qui sia\nsepolta la [ORANGE]Fiamma Gialla[BLACK][.]\pMa se [1A] sotto terra, perch[1A] tuona\nsopra?!
+[CUSTOM]Recluta Dusk[BLACK]: Dicono che qui sia\nsepolta la [ORANGE]Fiamma Gialla[BLACK][.]\pMa se [1A] sotto terra, perch[1A] tuona\nsopra?!
 
 //_/////////////////////////////////
 #org @Passo_Tuono_1_1_SignR_text1

@@ -788,6 +788,8 @@ CieloStellato_2_60_MapScriptOnFrameBegin:
     end
 
 CieloStellato_2_60_Part1a:
+    setvar 0x503E 0x190B
+    call EventScript_RefreshTextColor
     setflag 0x995
     setflag 0x996
     pause 0x3E

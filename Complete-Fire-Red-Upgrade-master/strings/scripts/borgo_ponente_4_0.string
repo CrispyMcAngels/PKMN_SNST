@@ -17,7 +17,7 @@
 [LIGHT_BLUE][PLAYER][BLACK]: [.]
 
 #org @EventScript_Borgo_Ponente_4_0_mom_text6
-[RED]Mamma[BLACK]: Wow, incredibile!\pHai davvero affrontato il [DUSK]Team\nDusk[BLACK] assieme a tuo fratello?\pOrmai non sei pi[26] il piccolo\nbambino di una volta[.]\pCome mamma devo riconoscerlo e non\nimpedirti di proseguire il tuo\lpercorso[.]\pPrendi queste!
+[RED]Mamma[BLACK]: Wow, incredibile!\pHai davvero affrontato il [CUSTOM]Team\nDusk[BLACK] assieme a tuo fratello?\pOrmai non sei pi[26] il piccolo\nbambino di una volta[.]\pCome mamma devo riconoscerlo e non\nimpedirti di proseguire il tuo\lpercorso[.]\pPrendi queste!
 
 #org @EventScript_Borgo_Ponente_4_0_mom_text7
 [LIGHT_BLUE][PLAYER][BLACK] riceve le [GREEN]Scarpe da Corsa[BLACK]!

@@ -105,6 +105,18 @@ static u8 ChooseWildMonLevel(const struct WildPokemon* wildPokemon)
 		min = wildPokemon->maxLevel;
 		max = wildPokemon->minLevel;
 	}
+
+	#ifdef VAR_GAME_DIFFICULTY
+	if (VarGet(VAR_GAME_DIFFICULTY) >= OPTIONS_HARD_DIFFICULTY //Tough or Hard
+	#ifdef FLAG_SCALE_WILD_POKEMON_LEVELS
+	&& !FlagGet(FLAG_SCALE_WILD_POKEMON_LEVELS) //Already scaled to the party
+	#endif
+	)
+	{
+		min = MathMin(MAX_LEVEL, min + WILD_DIFFICULTY_LEVEL_BONUS);
+		max = MathMin(MAX_LEVEL, max + WILD_DIFFICULTY_LEVEL_BONUS);
+	}
+	#endif
 	range = max - min + 1;
 	rand = Random() % range;
 

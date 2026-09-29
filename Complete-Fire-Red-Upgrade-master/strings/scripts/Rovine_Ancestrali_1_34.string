@@ -17,10 +17,10 @@
 [RED]Naomi[BLACK]: Bene, ora non abbiamo\npi[26] scuse.\pDiamoci da fare!
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text6
-[DUSK]Recluta Dusk[BLACK]: Allarme intrusi!\nCome avete fatto ad arrivare fin\lqui?!?
+[CUSTOM]Recluta Dusk[BLACK]: Allarme intrusi!\nCome avete fatto ad arrivare fin\lqui?!?
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text7
-[DUSK]Recluta Dusk[BLACK]: Tra poco vi\nscorter[22] personalmente all'uscita!
+[CUSTOM]Recluta Dusk[BLACK]: Tra poco vi\nscorter[22] personalmente all'uscita!
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P1_text8
 Fate come volete, ormai [1A] gi[16]\ntroppo tardi[.]
@@ -35,28 +35,28 @@ Ci mancavano solo dei ficcanaso\ncome voi[.]
 [RED]Naomi[BLACK]: Da questa parte ho la\nsituazione sotto controllo.\pTu pensa alla recluta a sinistra.
 
 #org @Rovine_Ancestrali_1_34_NPC1_text1
-[DUSK]Recluta Dusk[BLACK]: Ancora non riesco\na crederci che due marmocchi come\lvoi ci stiano mettendo i bastoni\ltra le ruote.
+[CUSTOM]Recluta Dusk[BLACK]: Ancora non riesco\na crederci che due marmocchi come\lvoi ci stiano mettendo i bastoni\ltra le ruote.
 
 #org @Rovine_Ancestrali_1_34_NPC2_text1
-[DUSK]Recluta Dusk[BLACK]: Questa [1A] solo\nl'ascesa del [DUSK]Team Dusk[BLACK], forse\loggi siete riusciti a fermarci!\pMa non intralcerete il nostro\ngrande piano!
+[CUSTOM]Recluta Dusk[BLACK]: Questa [1A] solo\nl'ascesa del [CUSTOM]Team Dusk[BLACK], forse\loggi siete riusciti a fermarci!\pMa non intralcerete il nostro\ngrande piano!
 
 #org @Rovine_Ancestrali_1_34_NPC4_text1
-[DUSK]Recluta Dusk[BLACK]: [GREEN]Larvitar[BLACK] usa morso!
+[CUSTOM]Recluta Dusk[BLACK]: [GREEN]Larvitar[BLACK] usa morso!
 
 #org @Rovine_Ancestrali_1_34_NPC3_text1
-[DUSK]Recluta Dusk[BLACK]: Con le buone o con\nle cattive, ti butter[22] fuori di\lqui!
+[CUSTOM]Recluta Dusk[BLACK]: Con le buone o con\nle cattive, ti butter[22] fuori di\lqui!
 
 #org @Rovine_Ancestrali_1_34_NPC3_text2
 Non [1A] andata come pensavo[.]
 
 #org @Rovine_Ancestrali_1_34_NPC3_text3
-[DUSK]Recluta Dusk[BLACK]: Cosa ci facciamo\nqui?\pScoprilo tu stesso, il nostro capo\l[1A] proprio qui sopra!
+[CUSTOM]Recluta Dusk[BLACK]: Cosa ci facciamo\nqui?\pScoprilo tu stesso, il nostro capo\l[1A] proprio qui sopra!
 
 #org @Rovine_Ancestrali_1_34_tile6_text1
 [GREEN]Crispy[BLACK]: Non te lo chieder[22] una\nseconda volta!\lDimmi chi siete e che cosa ci fate\lqui!
 
 #org @Rovine_Ancestrali_1_34_tile6_text2
-[DUSK]Vesper[BLACK]: Dannazione, se quel tizio\nmascherato non mi avesse sconfitto\lpoco fa, potrei sbarazzarmi di\lquesto arrogante in un batter\ld'occhio!
+[CUSTOM]Vesper[BLACK]: Dannazione, se quel tizio\nmascherato non mi avesse sconfitto\lpoco fa, potrei sbarazzarmi di\lquesto arrogante in un batter\ld'occhio!
 
 #org @Rovine_Ancestrali_1_34_tile6_text3
 [BLUE]Crispy[BLACK]: Non mi lasci altra scelta!\n[GREEN]Sceptile[BLACK], usa [GREEN]Fendifoglia[BLACK]!
@@ -65,13 +65,13 @@ Non [1A] andata come pensavo[.]
 Scep-Sceptile!
 
 #org @Rovine_Ancestrali_1_34_tile6_text5
-[DUSK]Vesper[BLACK]: Fermati!\pD'altronde non mi lasci altra\lscelta[.]\pLascia che mi presenti:\nIl mio nome [1A] [DUSK]Vesper[BLACK], e sono il\lcomandante del [DUSK]Team Dusk[BLACK], un\lgruppo di criminali che ha\ll'obbiettivo di[.]\p[.]Di risvegliare i Pok\emon\nleggendari della regione di [GREEN]Eyros[BLACK]\lper[.]\p[.]Prenderne il sopravvento[.]
+[CUSTOM]Vesper[BLACK]: Fermati!\pD'altronde non mi lasci altra\lscelta[.]\pLascia che mi presenti:\nIl mio nome [1A] [CUSTOM]Vesper[BLACK], e sono il\lcomandante del [CUSTOM]Team Dusk[BLACK], un\lgruppo di criminali che ha\ll'obbiettivo di[.]\p[.]Di risvegliare i Pok\emon\nleggendari della regione di [GREEN]Eyros[BLACK]\lper[.]\p[.]Prenderne il sopravvento[.]
 
 #org @Rovine_Ancestrali_1_34_tile6_text6
 [ORANGE]Filiberto[BLACK]: Come dici?\nI Pok\emon leggendari?!?\pPensavo quelle fossero solo antiche\nstorie che si raccontano ai bambini[.]\pNon mi dire[.]\nNon mi dire che queste Rovine sono\lin qualche modo collegate con gli\lantichi Pok\emon di [GREEN]Eyros[BLACK]?
 
 #org @Rovine_Ancestrali_1_34_tile6_text7
-[DUSK]Vesper[BLACK]: Sei un tipo sveglio,\nd'altronde da uno scienziato come\lte ce lo si poteva aspettare[.]\pCome si suol dire, in ogni leggenda\nc'[1A] un filo di verit[16], e il [DUSK]Team\lDusk[BLACK] ha ormai scoperto tutto\lquello che c'era da scoprire sugli\lantichi Pok\emon leggendari[.]\pForza ragazzi, leviamo le tende!
+[CUSTOM]Vesper[BLACK]: Sei un tipo sveglio,\nd'altronde da uno scienziato come\lte ce lo si poteva aspettare[.]\pCome si suol dire, in ogni leggenda\nc'[1A] un filo di verit[16], e il [CUSTOM]Team\lDusk[BLACK] ha ormai scoperto tutto\lquello che c'era da scoprire sugli\lantichi Pok\emon leggendari[.]\pForza ragazzi, leviamo le tende!
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_text1
 [GREEN]Crispy[BLACK]: [LIGHT_BLUE][PLAYER][BLACK], [RED]Naomi[BLACK]!\nEro sicuro che ci avreste\lraggiunto anche voi, grazie per\laverci aiutato!\pQuei furfanti sono riusciti a\nsvignarsela con quello che\lvolevano[.]\pSe solo fossimo arrivati un attimo\nprima[.]
@@ -107,7 +107,7 @@ Queste incisioni raffigurano gli\nantichi Pok\emon leggendari della\lregione di 
 [GREEN]Crispy[BLACK]: Davvero impressionante!\pCosa ti sembrano queste incisioni,\n[ORANGE]Filiberto[BLACK]?
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text3
-[ORANGE]Filiberto[BLACK]: A prima vista, queste\nincisioni sembrano combaciare con\lle informazioni fornite dal [DUSK]Team\lDusk[BLACK][.]\pTuttavia, per esserne certi,\nvorrei prelevarne un frammento e\lportarlo nel mio laboratorio ad\lArdesiopoli.\pL[1E] potr[22] analizzarlo con maggiore\nattenzione e confermare con\lprecisione le sue vere origini.\pSe le nostre ipotesi sono\ncorrette, potremmo essere di fronte\la una scoperta fondamentale!\pNon c'[1A] tempo da perdere!\nDevo tornare subito al mio\llaboratorio e mettermi al lavoro\lper analizzare questo frammento[.]\p[GREEN]Crispy[BLACK], [LIGHT_BLUE][PLAYER][BLACK], vi aspetter[22]\nproprio l[1E] per mostrarvi i\lrisultati delle analisi.
+[ORANGE]Filiberto[BLACK]: A prima vista, queste\nincisioni sembrano combaciare con\lle informazioni fornite dal [CUSTOM]Team\lDusk[BLACK][.]\pTuttavia, per esserne certi,\nvorrei prelevarne un frammento e\lportarlo nel mio laboratorio ad\lArdesiopoli.\pL[1E] potr[22] analizzarlo con maggiore\nattenzione e confermare con\lprecisione le sue vere origini.\pSe le nostre ipotesi sono\ncorrette, potremmo essere di fronte\la una scoperta fondamentale!\pNon c'[1A] tempo da perdere!\nDevo tornare subito al mio\llaboratorio e mettermi al lavoro\lper analizzare questo frammento[.]\p[GREEN]Crispy[BLACK], [LIGHT_BLUE][PLAYER][BLACK], vi aspetter[22]\nproprio l[1E] per mostrarvi i\lrisultati delle analisi.
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text4
 [GREEN]Crispy[BLACK]: Complimenti [LIGHT_BLUE][PLAYER][BLACK]!\n[05] chiaro che come allenatore sei\lgi[16] maturato molto!\pMa parliamone fuori di qui[.]

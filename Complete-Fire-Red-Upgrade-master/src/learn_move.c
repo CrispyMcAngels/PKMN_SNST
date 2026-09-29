@@ -194,6 +194,19 @@ u8 GetMoveRelearnerMoves(struct Pokemon* mon, u16* moves)
 	return numMoves;
 }
 
+//The next move in the species' learnset learned at exactly this level, starting from *position (which moves past it).
+//MOVE_NONE when there are no more. Used by level_up_to_cap.c, which keeps *position in a script var.
+u16 GetNextLevelUpMove(u16 species, u8 level, u16* position)
+{
+	for (; !(gLevelUpLearnsets[species][*position].move == 0 && gLevelUpLearnsets[species][*position].level == 0xFF); ++*position)
+	{
+		if (gLevelUpLearnsets[species][*position].level == level)
+			return gLevelUpLearnsets[species][(*position)++].move;
+	}
+
+	return MOVE_NONE;
+}
+
 u8 GetLevelUpMovesBySpecies(u16 species, u16* moves)
 {
 	u8 numMoves = 0;

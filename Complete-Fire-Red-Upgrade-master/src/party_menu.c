@@ -34,6 +34,7 @@
 #include "../include/new/build_pokemon.h"
 #include "../include/new/evolution.h"
 #include "../include/new/follow_me.h"
+#include "../include/new/exp.h"
 #include "../include/new/form_change.h"
 #include "../include/new/item.h"
 #include "../include/new/overworld.h"
@@ -1490,6 +1491,29 @@ void ItemUseCB_MedicineStep(u8 taskId, TaskFunc func)
 		ScheduleBgCopyTilemapToVram(2);
 		gTasks[taskId].func = func;
 	}
+}
+
+void __attribute__((long_call)) ItemUseCB_RareCandy(u8 taskId, TaskFunc func);
+
+//Rare Candy: on Hard it can't take a Pokemon past the level cap (GetCurrentLevelCap in exp.c)
+void ItemUseCB_RareCandyLevelCap(u8 taskId, TaskFunc func)
+{
+	#ifdef VAR_GAME_DIFFICULTY
+	struct Pokemon* mon = &gPlayerParty[gPartyMenu.slotId];
+
+	if (VarGet(VAR_GAME_DIFFICULTY) >= OPTIONS_EXPERT_DIFFICULTY //Hard
+	&& GetMonData(mon, MON_DATA_LEVEL, NULL) >= GetCurrentLevelCap())
+	{
+		PlaySE(SE_SELECT);
+		gPartyMenuUseExitCallback = FALSE;
+		DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+		ScheduleBgCopyTilemapToVram(2);
+		gTasks[taskId].func = func;
+		return;
+	}
+	#endif
+
+	ItemUseCB_RareCandy(taskId, func); //Vanilla: level up, new moves, evolution
 }
 
 void Task_DoLearnedMoveFanfareAfterText(u8 taskId)

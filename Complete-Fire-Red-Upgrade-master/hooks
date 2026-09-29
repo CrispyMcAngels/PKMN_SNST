@@ -488,6 +488,8 @@ SizeMinigameLoadAlternateHeightHook 080A0774 2
 PokedexScreenStats 08106370 0
 
 ##Daycare
+DaycareTakeMonLevelCapHook 08045690 1
+DaycareLevelLevelCapHook 08045766 1
 GiveEggFromDaycare 080460D4 1
 CreateEgg 08046150 2
 IsEggPending 80463FC 1

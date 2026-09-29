@@ -74,22 +74,22 @@
 [ORANGE]Raito[BLACK]: C'[1A] un motivo se sei giunto\nfin qui, [LIGHT_BLUE][PLAYER][BLACK].\pDa quando ti ho visto nella [GREEN]Foresta\nFrondosa[BLACK] ho capito che non sei un\lsemplice allenatore.\pQuesta [ORANGE]Fiamma[BLACK] ti ha scelto[.]
 
 #org @Passo_Tuono_1_124_text25
-[DUSK]Vesper[BLACK]: Che discorso toccante!\pPeccato per[22] che finisca qui!
+[CUSTOM]Vesper[BLACK]: Che discorso toccante!\pPeccato per[22] che finisca qui!
 
 #org @Passo_Tuono_1_124_text26
-[DUSK]Recluta Dusk[BLACK]: Eheh! Tutto secondo i\npiani, comandante!
+[CUSTOM]Recluta Dusk[BLACK]: Eheh! Tutto secondo i\npiani, comandante!
 
 #org @Passo_Tuono_1_124_text27
-[DUSK]Vesper[BLACK]: Ben fatto, ragazzi.\pE tu, ragazzino[.]\pDevo ammettere che ti ho\nsottovalutato.\pDecifrare l'enigma delle [GREEN]Rovine\nAncestrali[BLACK], trovare l'ingresso del\lTempio[.]\pNon male per un moccioso.
+[CUSTOM]Vesper[BLACK]: Ben fatto, ragazzi.\pE tu, ragazzino[.]\pDevo ammettere che ti ho\nsottovalutato.\pDecifrare l'enigma delle [GREEN]Rovine\nAncestrali[BLACK], trovare l'ingresso del\lTempio[.]\pNon male per un moccioso.
 
 #org @Passo_Tuono_1_124_text28
-[DUSK]Vesper[BLACK]: Ma non credere di poter fare\nil passo pi[26] lungo della gamba.\pNoi abbiamo lasciato che risolvessi\ntutto mentre stavamo a guardarti[.]\pPer poi prenderci la ricompensa.
+[CUSTOM]Vesper[BLACK]: Ma non credere di poter fare\nil passo pi[26] lungo della gamba.\pNoi abbiamo lasciato che risolvessi\ntutto mentre stavamo a guardarti[.]\pPer poi prenderci la ricompensa.
 
 #org @Passo_Tuono_1_124_text29
 [LIGHT_BLUE][PLAYER][BLACK]: [.]
 
 #org @Passo_Tuono_1_124_text30
-[DUSK]Vesper[BLACK]: Alle rovine, te e i tuoi\namichetti siete riusciti a\lscamparla solo per fortuna, ma ora\lsei solo.\p[DUSK]Reclute[BLACK]! Mostrategli cosa significa\nostacolare il [DUSK]Team Dusk[BLACK]!
+[CUSTOM]Vesper[BLACK]: Alle rovine, te e i tuoi\namichetti siete riusciti a\lscamparla solo per fortuna, ma ora\lsei solo.\p[CUSTOM]Reclute[BLACK]! Mostrategli cosa significa\nostacolare il [CUSTOM]Team Dusk[BLACK]!
 
 #org @Passo_Tuono_1_124_text31
 [BLACK]Hai osato accendere la [ORANGE]Fiamma\nGialla[BLACK][.]\pNon capisci cosa hai scatenato,\nvero?
@@ -116,7 +116,7 @@ In realt[16] c'[1A] qualcuno ancora pi[26]\nforte di me!
 [ORANGE]Raito[BLACK]: Ne manca solo uno, [LIGHT_BLUE][PLAYER][BLACK].\nMostragli di che pasta sei fatto!
 
 #org @Passo_Tuono_1_124_text39
-[DUSK]Vesper[BLACK]: Impressionante.\pHai messo in ginocchio la mia\nsquadra, ma ora tocca a me!
+[CUSTOM]Vesper[BLACK]: Impressionante.\pHai messo in ginocchio la mia\nsquadra, ma ora tocca a me!
 
 #org @Passo_Tuono_1_124_text40
 Preparati a essere spazzato via!
@@ -125,16 +125,16 @@ Preparati a essere spazzato via!
 Chi sei veramente?
 
 #org @Passo_Tuono_1_124_text42
-[DUSK]Vesper[BLACK]: Tsk[.] Sei pi[26] forte di\nquanto pensassi.\pMa, ahim[1A], troppo lento[.]
+[CUSTOM]Vesper[BLACK]: Tsk[.] Sei pi[26] forte di\nquanto pensassi.\pMa, ahim[1A], troppo lento[.]
 
 #org @Passo_Tuono_1_124_text43
 [ORANGE]Raito[BLACK]: Non [1A] possibile!\nLa [ORANGE]Fiamma Gialla[BLACK][.]\p[.]Come siete riusciti a prenderla?
 
 #org @Passo_Tuono_1_124_text44
-[DUSK]Vesper[BLACK]: [05] molto semplice[.]\pMentre mi tenevate occupato ed\neravate distratti dalla sfida,\li miei uomini si sono presi ci[22]\lche volevano!\pLa [ORANGE]Fiamma Gialla[BLACK] ora [1A] nostra!
+[CUSTOM]Vesper[BLACK]: [05] molto semplice[.]\pMentre mi tenevate occupato ed\neravate distratti dalla sfida,\li miei uomini si sono presi ci[22]\lche volevano!\pLa [ORANGE]Fiamma Gialla[BLACK] ora [1A] nostra!
 
 #org @Passo_Tuono_1_124_text45
-[DUSK]Vesper[BLACK]: Ragazzi, ritirata immediata!\pPrima che arrivino i rinforzi!
+[CUSTOM]Vesper[BLACK]: Ragazzi, ritirata immediata!\pPrima che arrivino i rinforzi!
 
 #org @Passo_Tuono_1_124_text46
 [ORANGE]Raito[BLACK]: Dannazione[.] Sono stato incauto!\pNon avrei mai dovuto permetterlo.\pProteggere questo focolare era il\nmio dovere[.]\pE l'ho fallito.
@@ -146,10 +146,10 @@ Chi sei veramente?
 [BLUE]Agente[BLACK]: Il luogo sembra sicuro,\nma[.]\pQualcuno mi spiega cosa diavolo [1A]\nsuccesso qui dentro?
 
 #org @Passo_Tuono_1_124_text49
-[ORANGE]Raito[BLACK]: Non molto tempo fa il [DUSK]Team\nDusk[BLACK] ha fatto irruzione nel tempio.\pSono riusciti a rubare la [ORANGE]Fiamma\nGialla[BLACK], una reliquia antica di\l[GREEN]Eyros[BLACK].
+[ORANGE]Raito[BLACK]: Non molto tempo fa il [CUSTOM]Team\nDusk[BLACK] ha fatto irruzione nel tempio.\pSono riusciti a rubare la [ORANGE]Fiamma\nGialla[BLACK], una reliquia antica di\l[GREEN]Eyros[BLACK].
 
 #org @Passo_Tuono_1_124_text50
-[BLUE]Agente[BLACK]: Il [DUSK]Team Dusk[BLACK], eh[.]\nNon sentivo quel nome da anni.\pSembravano scomparsi, e ora spuntano\ndal nulla come un temporale!
+[BLUE]Agente[BLACK]: Il [CUSTOM]Team Dusk[BLACK], eh[.]\nNon sentivo quel nome da anni.\pSembravano scomparsi, e ora spuntano\ndal nulla come un temporale!
 
 #org @Passo_Tuono_1_124_text51
 [BLUE]Crispy[BLACK]: Una [ORANGE]Fiamma Gialla[BLACK], dici?\pPerch[1A] mai rubare una cosa del\ngenere?

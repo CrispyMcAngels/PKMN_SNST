@@ -1,21 +1,21 @@
 //_/////////////////////////////////
 #org @Ardesiopoli_6_8_NPC0_text1
-[DUSK]Recluta Dusk[BLACK]: Eheheh il capo sar[16]\nmolto contento quando vedr[16] questo\lPok\emon raro!
+[CUSTOM]Recluta Dusk[BLACK]: Eheheh il capo sar[16]\nmolto contento quando vedr[16] questo\lPok\emon raro!
 
 #org @Ardesiopoli_6_8_NPC0_text2
-[DUSK]Recluta Dusk[BLACK]: Ehi tu, come hai\nfatto a trovarmi?\pQuesto [1A] il mio nascondiglio\nsegreto!
+[CUSTOM]Recluta Dusk[BLACK]: Ehi tu, come hai\nfatto a trovarmi?\pQuesto [1A] il mio nascondiglio\nsegreto!
 
 #org @Ardesiopoli_6_8_NPC0_text3
 Dannazione, che figura ci faccio\nadesso?
 
 #org @Ardesiopoli_6_8_NPC0_text4
-[DUSK]Recluta Dusk[BLACK]: E chi lo spiega al\ncapo ora?\pE va bene[.]\n[.]Quella vecchietta non se ne fa\lniente, ma vabb[1A][.]\pRiprenditi questo Pok\emon!
+[CUSTOM]Recluta Dusk[BLACK]: E chi lo spiega al\ncapo ora?\pE va bene[.]\n[.]Quella vecchietta non se ne fa\lniente, ma vabb[1A][.]\pRiprenditi questo Pok\emon!
 
 #org @Ardesiopoli_6_8_NPC0_text5
 [LIGHT_BLUE][PLAYER][BLACK] prende [GREEN]Darumaka[BLACK]!
 
 #org @Ardesiopoli_6_8_NPC0_text6
-[DUSK]Recluta Dusk[BLACK]: Eheheh ora meglio\nlevare le tende!
+[CUSTOM]Recluta Dusk[BLACK]: Eheheh ora meglio\nlevare le tende!
 
 #org @Ardesiopoli_6_8_MapScriptOnFrameBegin_text1
 [BLACK]Grazie per aver salvato il mio\n[GREEN]Darumaka[BLACK], te ne sono molto grata!

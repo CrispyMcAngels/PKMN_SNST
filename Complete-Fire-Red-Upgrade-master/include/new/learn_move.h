@@ -16,6 +16,7 @@ u16 BuildLearnableMoveset(struct Pokemon* mon, u16* moves);
 
 //Functions Hooked In
 u16 MonTryLearningNewMove(struct Pokemon* mon, bool8 firstMove);
+u16 GetNextLevelUpMove(u16 species, u8 level, u16* position);
 u8 GetMoveRelearnerMoves(struct Pokemon* mon, u16* moves);
 u8 GetNumberOfRelearnableMoves(struct Pokemon* mon);
 u16 GiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move);

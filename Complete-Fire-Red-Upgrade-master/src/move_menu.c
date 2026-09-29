@@ -2024,10 +2024,10 @@ bool8 IsBagDisabled(void)
 		if (difficulty == OPTIONS_HARD_DIFFICULTY)
 		{
 			if (gNewBS->playerItemUsedCount >= 4) //Max four items can be used
-				return FALSE;
+				return TRUE;
 		}
-		if (difficulty >= OPTIONS_EXPERT_DIFFICULTY) //No items in battles for Experts
-			return FALSE;
+		else if (difficulty >= OPTIONS_EXPERT_DIFFICULTY) //No items in battles for Experts
+			return TRUE;
 	}
 	#endif
 

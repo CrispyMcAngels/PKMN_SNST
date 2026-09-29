@@ -255,3 +255,6 @@ FldEff_CfruJumpTallGrass 081D9818
 ##Follower Pokemon leaves before a cutscene moves the player or camera
 ScrCmd_applymovement 815FAF0
 #endif
+
+##Rare Candy respects the level cap on Hard (ItemUseCB_RareCandyLevelCap in party_menu.c)
+ItemUseCB_RareCandyLevelCap 080A174C

@@ -95,16 +95,16 @@ Monte Remoto[.]\p[.]Presente
 [CRONO]Crono[BLACK]: Ebbene si[.]\pDopo secoli passati a vagabondare\nper [GREEN]Eyros[BLACK] ho trovato la soluzione[.]\pDopo pi[26] di 500 anni il Pok\emon\nleggendario finalmente si\lrisveglier[16] e nessuno potr[16] pi[26]\lfermarmi[.]
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text33
-[DUSK]Vesper[BLACK]: Maestro [CRONO]Crono[BLACK],\nci siamo quasi[.]\pAbbiamo individuato un indizio che\npotrebbe mostrarci dove sono\lnascosti i focolari[.]
+[CUSTOM]Vesper[BLACK]: Maestro [CRONO]Crono[BLACK],\nci siamo quasi[.]\pAbbiamo individuato un indizio che\npotrebbe mostrarci dove sono\lnascosti i focolari[.]
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text33a
-[DUSK]Umbra[BLACK]: Le nostre reclute sono\ngi[16] in viaggio!
+[CUSTOM]Umbra[BLACK]: Le nostre reclute sono\ngi[16] in viaggio!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text34
-[CRONO]Crono[BLACK]: Eccellente!\p[DUSK]Umbra[BLACK], [DUSK]Vesper[BLACK], fate in modo che\ntutto vada secondo i piani!
+[CRONO]Crono[BLACK]: Eccellente!\p[CUSTOM]Umbra[BLACK], [CUSTOM]Vesper[BLACK], fate in modo che\ntutto vada secondo i piani!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text35
-[DUSK]Umbra[BLACK]: Sissignore!
+[CUSTOM]Umbra[BLACK]: Sissignore!
 
 #org @MonteRemoto_2_27_MapScriptOnFrame_text36
 [CRONO]Crono[BLACK]: A presto,\pmia famiglia perduta[.]

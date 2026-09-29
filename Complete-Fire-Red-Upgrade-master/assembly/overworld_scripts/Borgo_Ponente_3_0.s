@@ -7,7 +7,7 @@
 .global EventScript_Borgo_Ponente_Sign0
 EventScript_Borgo_Ponente_Sign0:
 
-	call EventScript_FollowerMon_ReturnToBall
+	call EventScript_LevelPartyToCap
 	msgbox Borgo_Ponente_Sign0 0x7
 	end
 

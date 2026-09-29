@@ -1271,3 +1271,31 @@ LastUsedBallOverrideHook_SkipBag: @Skips the palette fade to bag
 	bx r0
 
 .pool
+
+.pool
+@0x8045690 with r1: collecting a Pokemon from the Day Care (r0 = its experience, r5 = the Day Care slot, the Pokemon at sp)
+.global DaycareTakeMonLevelCapHook
+DaycareTakeMonLevelCapHook:
+	mov r1, r5
+	add r1, #0x88
+	ldr r1, [r1]		@ Steps walked
+	mov r2, sp
+	bl ApplyLevelCapToDaycareExp
+	ldr r1, =0x8045698 | 1	@ Stores r0 as the new experience
+	bx r1
+
+.pool
+@0x8045766 with r1: the level shown for a Pokemon in the Day Care (r0 = its experience, r5 = steps, r4 = the Pokemon)
+.global DaycareLevelLevelCapHook
+DaycareLevelLevelCapHook:
+	mov r1, r5
+	mov r2, r4
+	bl ApplyLevelCapToDaycareBoxExp
+	str r0, [sp, #0x50]	@ The instructions the hook replaced
+	add r2, sp, #0x50
+	mov r0, sp
+	mov r1, #25		@ MON_DATA_EXP
+	ldr r3, =0x8045770 | 1
+	bx r3
+
+.pool

@@ -145,6 +145,7 @@ static bool8 CanTrainerEvolveMon(void);
 static bool8 IsPseudoBossTrainerPartyForLevelScaling(u8 trainerPartyFlags);
 #endif
 static bool8 IsBossTrainerClassForLevelScaling(u16 trainerId);
+static u8 GetDifficultyLevelBonus(u16 trainerId, u8 side);
 static void ModifySpeciesAndLevelForGenericBattle(u16* species, u8* level, u8 minEnemyTeamLevel, u8 averagePlayerTeamLevel, u8 trainerClass, bool8 shouldEvolve);
 static void ModifySpeciesAndLevelForBossBattle(unusedArg u16* species, unusedArg u8* level, unusedArg u8 maxEnemyTeamLevel, unusedArg u8 maxPlayerTeamLevel, unusedArg bool8 shouldEvolve);
 static u8 BuildFrontierParty(struct Pokemon* const party, const u16 trainerNum, const u8 tier, const bool8 firstTrainer, const bool8 forPlayer, const u8 side);
@@ -917,6 +918,40 @@ static bool8 IsPseudoBossTrainerPartyForLevelScaling(u8 trainerPartyFlags)
 }
 
 #endif
+
+#ifdef VAR_GAME_DIFFICULTY
+extern const u16 gDifficultyBossTrainers[];
+
+static bool8 IsDifficultyBoss(u16 trainerId)
+{
+	for (u32 i = 0; gDifficultyBossTrainers[i] != 0xFFFF; ++i)
+	{
+		if (gDifficultyBossTrainers[i] == trainerId)
+			return TRUE;
+	}
+
+	return FALSE;
+}
+#endif
+
+//Bosses in gDifficultyBossTrainers get stronger with the difficulty
+static u8 GetDifficultyLevelBonus(unusedArg u16 trainerId, unusedArg u8 side)
+{
+	#ifdef VAR_GAME_DIFFICULTY
+	if (side == B_SIDE_OPPONENT && IsDifficultyBoss(trainerId)
+	&& !(gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_LINK)))
+	{
+		switch (VarGet(VAR_GAME_DIFFICULTY)) {
+			case OPTIONS_HARD_DIFFICULTY: //Tough
+				return DIFFICULTY_BOSS_LEVEL_BONUS_TOUGH;
+			case OPTIONS_EXPERT_DIFFICULTY: //Hard
+				return DIFFICULTY_BOSS_LEVEL_BONUS_HARD;
+		}
+	}
+	#endif
+
+	return 0;
+}
 
 static bool8 IsBossTrainerClassForLevelScaling(u16 trainerId)
 {

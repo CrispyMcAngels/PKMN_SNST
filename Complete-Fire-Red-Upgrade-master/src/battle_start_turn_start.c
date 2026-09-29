@@ -125,6 +125,12 @@ void BattleBeginFirstTurn(void)
 		switch(*state) {
 			case BackupPartyItems:
 				SavePartyItems();
+				#ifdef VAR_GAME_DIFFICULTY
+				if (VarGet(VAR_GAME_DIFFICULTY) >= OPTIONS_EXPERT_DIFFICULTY //Hard
+				&& gBattleTypeFlags & BATTLE_TYPE_TRAINER
+				&& !(gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_LINK)))
+					gBattleScripting.battleStyle = OPTIONS_BATTLE_STYLE_SET; //No free switch after knocking out a Pokemon
+				#endif
 				++*state;
 				break;
 			case GetTurnOrder:

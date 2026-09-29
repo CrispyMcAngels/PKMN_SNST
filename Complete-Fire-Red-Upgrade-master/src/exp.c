@@ -10,6 +10,7 @@
 
 #include "../include/new/battle_strings.h"
 #include "../include/new/battle_util.h"
+#include "../include/new/build_pokemon.h"
 #include "../include/new/dns.h"
 #include "../include/new/dynamax.h"
 #include "../include/new/exp.h"
@@ -51,7 +52,6 @@ static void EmitExpBarUpdate(u8 a, u8 b, u32 c);
 static void EmitExpTransferBack(u8 bufferId, u8 b, u8 *c);
 static void Task_GiveExpToMon(u8 taskId);
 static void sub_80300F4(u8 taskId);
-static u32 GetExpToLevel(u8 toLevel, u8 growthRate);
 static void MonGainEVs(struct Pokemon *mon, u16 defeatedSpecies);
 
 ///////////////////// GAIN EXPERIENCE //////////////////////
@@ -249,6 +249,10 @@ void atk23_getexp(void)
 
 	SKIP_EXP_CALC:
 		calculatedExp = MathMax(1, calculatedExp);
+		#ifdef VAR_GAME_DIFFICULTY
+		calculatedExp = ApplyLevelCapToExp(GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPECIES, NULL),
+		                                   GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_EXP, NULL), calculatedExp);
+		#endif
 		gBattleMoveDamage = calculatedExp;
 
 		gBattleScripting.expStateTracker++;
@@ -312,9 +316,11 @@ void atk23_getexp(void)
 
 			#ifdef FLAG_EXP_SHARE
 				if (*expGiveType == GiveExpBattlePariticpants) //Don't print the gained exp string unless it participated in battle
-					PrepareStringBattle(STRINGID_PKMNGAINEDEXP, gBattleStruct->expGetterBank);
+					if (calculatedExp > 0) //Nothing to say at the level cap on Hard
+						PrepareStringBattle(STRINGID_PKMNGAINEDEXP, gBattleStruct->expGetterBank);
 			#else
-				PrepareStringBattle(STRINGID_PKMNGAINEDEXP, gBattleStruct->expGetterBank);
+				if (calculatedExp > 0) //Nothing to say at the level cap on Hard
+					PrepareStringBattle(STRINGID_PKMNGAINEDEXP, gBattleStruct->expGetterBank);
 			#endif
 			MonGainEVs(&gPlayerParty[gBattleStruct->expGetterMonId], gBattleMons[gBankFainted].species);
 		}
@@ -690,7 +696,58 @@ static void sub_80300F4(u8 taskId)
 	}
 }
 
-static u32 GetExpToLevel(u8 toLevel, u8 growthRate)
+#ifdef VAR_GAME_DIFFICULTY
+extern const u8 gLevelCapsByBadges[];
+
+u8 GetCurrentLevelCap(void)
+{
+	return gLevelCapsByBadges[GetOpenWorldBadgeCount()];
+}
+
+//Normal: no cap. Tough: experience past the level cap is divided by LEVEL_CAP_SOFT_EXP_DIVISOR. Hard: it's lost.
+//A Pokemon below the cap can always reach it: only the part of the experience past it is affected.
+u32 ApplyLevelCapToExp(u16 species, u32 currentExp, u32 gainedExp)
+{
+	u8 difficulty = VarGet(VAR_GAME_DIFFICULTY);
+	u8 cap = GetCurrentLevelCap();
+	u32 capExp, belowCap;
+
+	if (difficulty < OPTIONS_HARD_DIFFICULTY || cap >= MAX_LEVEL)
+		return gainedExp;
+
+	capExp = GetExpToLevel(cap, gBaseStats[species].growthRate); //Experience at which the Pokemon reaches the cap
+	if (currentExp + gainedExp <= capExp)
+		return gainedExp;
+
+	belowCap = (currentExp < capExp) ? capExp - currentExp : 0;
+	if (difficulty == OPTIONS_HARD_DIFFICULTY) //Tough
+		return belowCap + (gainedExp - belowCap) / LEVEL_CAP_SOFT_EXP_DIVISOR;
+
+	return belowCap; //Hard
+}
+#endif
+
+//Day Care: the experience from the steps walked follows the same level cap rules as battles.
+//Called by DaycareTakeMonLevelCapHook and DaycareLevelLevelCapHook (general_hooks.s).
+u32 ApplyLevelCapToDaycareExp(u32 exp, u32 steps, unusedArg struct Pokemon* mon)
+{
+	#ifdef VAR_GAME_DIFFICULTY
+	return exp + ApplyLevelCapToExp(GetMonData(mon, MON_DATA_SPECIES, NULL), exp, steps);
+	#else
+	return exp + steps;
+	#endif
+}
+
+u32 ApplyLevelCapToDaycareBoxExp(u32 exp, u32 steps, unusedArg struct BoxPokemon* mon)
+{
+	#ifdef VAR_GAME_DIFFICULTY
+	return exp + ApplyLevelCapToExp(GetBoxMonData(mon, MON_DATA_SPECIES, NULL), exp, steps);
+	#else
+	return exp + steps;
+	#endif
+}
+
+u32 GetExpToLevel(u8 toLevel, u8 growthRate)
 {
 	return gExperienceTables[growthRate][toLevel];
 }

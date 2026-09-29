@@ -24,11 +24,13 @@
 
 // Difficulty: var holds 0/1/2, hard mode also sets its own flag
 #define VAR_DIFFICULTY          0x406A
-#define FLAG_HARD_MODE          0x915 // Same as CFRU's FLAG_DISABLE_BAG: Hard mode also blocks the bag in battle
 #define DIFFICULTY_NORMAL       0
 #define DIFFICULTY_TOUGH        1
 #define DIFFICULTY_HARD         2
 #define DIFFICULTY_COUNT        3
+
+// VAR_DIFFICULTY holds CFRU's difficulty numbers (VAR_GAME_DIFFICULTY in config.h): the menu shows Normal, Tough, Hard
+static const u8 sDifficultyToGameDifficulty[DIFFICULTY_COUNT] = {0, 2, 3}; // Normal, CFRU Hard, CFRU Expert
 
 // Task data
 enum
@@ -332,9 +334,12 @@ void CB2_NewInitOptionMenu(void)
         gTasks[taskId].data[TD_BATTLESTYLE] = gSaveBlock2Ptr->optionsBattleStyle;
         gTasks[taskId].data[TD_FOLLOWER] = FlagGet(FLAG_FOLLOWER) ? FOLLOWER_ON : FOLLOWER_OFF;
         gTasks[taskId].data[TD_BUTTONMODE] = gSaveBlock2Ptr->optionsButtonMode;
-        gTasks[taskId].data[TD_DIFFICULTY] = VarGet(VAR_DIFFICULTY);
-        if (gTasks[taskId].data[TD_DIFFICULTY] >= DIFFICULTY_COUNT)
-            gTasks[taskId].data[TD_DIFFICULTY] = DIFFICULTY_NORMAL;
+        gTasks[taskId].data[TD_DIFFICULTY] = DIFFICULTY_NORMAL;
+        for (u32 i = 0; i < DIFFICULTY_COUNT; i++)
+        {
+            if (VarGet(VAR_DIFFICULTY) == sDifficultyToGameDifficulty[i])
+                gTasks[taskId].data[TD_DIFFICULTY] = i;
+        }
 
         TextSpeed_DrawChoices(gTasks[taskId].data[TD_TEXTSPEED]);
         BattleScene_DrawChoices(gTasks[taskId].data[TD_BATTLESCENE]);
@@ -487,11 +492,7 @@ static void Task_OptionMenuSave(u8 taskId)
 		else
 			FlagClear(FLAG_FOLLOWER);
 
-		VarSet(VAR_DIFFICULTY, gTasks[taskId].data[TD_DIFFICULTY]);
-		if (gTasks[taskId].data[TD_DIFFICULTY] == DIFFICULTY_HARD)
-			FlagSet(FLAG_HARD_MODE);
-		else
-			FlagClear(FLAG_HARD_MODE);
+		VarSet(VAR_DIFFICULTY, sDifficultyToGameDifficulty[gTasks[taskId].data[TD_DIFFICULTY]]);
 
 		BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 0x10, 0);
 		gTasks[taskId].func = Task_OptionMenuFadeOut;

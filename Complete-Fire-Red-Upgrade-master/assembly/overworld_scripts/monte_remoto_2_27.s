@@ -92,6 +92,9 @@ MonteRemoto_2_27_MapScriptOnFrameBegin:
 
 MonteRemoto_2_27_MapScriptOnFrameBegin_Part1:
     lockall
+    //changing Custom text color
+    setvar 0x503E 0x2447
+    call EventScript_RefreshTextColor
     pause 0x1E
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text1 MSG_NORMAL
     pause 0x1E

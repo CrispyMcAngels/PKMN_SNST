@@ -779,6 +779,7 @@
 "./build/MUS_z_darkfuture.o"
 "./build/MUS_z_rhrn.o"
 "./build/MUS_z_roccavento.o"
+"./build/MUS_z_sdv.o"
 "./build/MUS_z_time_gear_light.o"
 "./build/MUS_grass_footstep.o"
 "./build/MUS_sand_footstep.o"
