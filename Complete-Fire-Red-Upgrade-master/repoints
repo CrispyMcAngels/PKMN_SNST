@@ -786,3 +786,9 @@ gEventsObjectPic_NPC162Pal 08F162E8
 #PLAYERFRONTSPRITE
 PlayerFrontSpriteTiles 82399B4
 PlayerFrontSpritePal 8239354
+#AFTER WHITEOUT SCRIPTS (assembly/overworld_scripts/whiteout.s)
+EventScript_AfterWhiteOutHeal 0807F5CC
+EventScript_AfterWhiteOutMomHeal 0807F5EC
+
+#DEFAULT PLAYER NAME (the #removeintro patch in bytereplacement copies it at the start of a new game)
+gText_DefaultPlayerName 08054A70

@@ -251,3 +251,7 @@ FieldUseFunc_AbilityCapsule 93C7D68
 
 FldEff_CfruTallGrass 081D97DD
 FldEff_CfruJumpTallGrass 081D9818
+#ifdef FLAG_FOLLOWER_POKEMON_CUTSCENE
+##Follower Pokemon leaves before a cutscene moves the player or camera
+ScrCmd_applymovement 815FAF0
+#endif

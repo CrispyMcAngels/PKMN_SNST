@@ -19,6 +19,7 @@ EventScript_common_healing_pkmn_center:
 	release
 	end
 
+    .global EventScript_common_healing_pkmn_center_P1 @Also used after whiting out (whiteout.s)
     EventScript_common_healing_pkmn_center_P1:
         msgbox healing_pkmn_center_text4 MSG_NORMAL
         special2 0x800D, 0x84   

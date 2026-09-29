@@ -1626,6 +1626,9 @@ bool8 WhiteoutLogic(void)
 {
 #ifdef SET_HEALING_PLACE_HACK
 	u16 loc = VarGet(VAR_HEALINGMAP);
+	if (loc == 0)
+		return TRUE; //No custom respawn set, so use the last sethealingplace like normal
+
 	gWarp1->mapNum = (loc >> 8) & 0xFF;	// upper byte
 	gWarp1->mapGroup = loc & 0xFF;	// lower byte
 	gWarp1->warpId = 0xFF;

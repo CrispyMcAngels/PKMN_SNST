@@ -2,6 +2,8 @@
 
 #include "../global.h"
 
+struct ScriptContext;
+
 /**
  * \file follow_me.c
  * \brief Contains functions for implementing a feature that allows the player to
@@ -32,9 +34,13 @@ void CreateFollowerAvatar(void);
 void FollowerMon_UpdateOnStep(void);
 void FollowerMon_BufferSpecies(void);
 void FollowerMon_ReturnToBall(void);
+void FollowerMon_CutsceneHide(void);
+void FollowerMon_CutsceneHideInstant(void);
+bool8 ScrCmd_applymovement(struct ScriptContext* ctx);
 void FollowerMon_Hide(void);
 void FollowerMon_Show(void);
 void FollowerMon_ComeOutOfBall(void);
+void FollowerMon_CutsceneEnd(void);
 
 //Functions Hooked In
 void PlayerGoThroughDoor(u8 taskId);

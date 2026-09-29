@@ -61,6 +61,7 @@
 #define FLAG_FOLLOWER_IGNORE_ACTIVE_SCRIPT 0x926 //If set, the follower will reappear and move even when a script is in progress
 #define FLAG_FOLLOWER_POKEMON 0x999 //If set, the first Pokemon in the party listed in sFollowerMons (follow_me.c) follows the player. Comment out this line to remove the feature.
 #define FLAG_FOLLOWER_POKEMON_HIDDEN 0x99A //Set by FollowerMon_ReturnToBall to hide the following Pokemon (eg. for cutscenes). Clear it and the Pokemon comes back on the player's next step.
+#define FLAG_FOLLOWER_POKEMON_CUTSCENE 0x99B //Set when a cutscene recalls the following Pokemon (script moves the player or camera, or FollowerMon_CutsceneHide). It comes back on the player's first free step after the script ends. Comment out this line to never hide it automatically.
 #define VAR_FOLLOWER_POKEMON_UNLOCK 0x501F //The following Pokemon only appears when this var equals FOLLOWER_POKEMON_UNLOCK_VALUE
 #define FOLLOWER_POKEMON_UNLOCK_VALUE 0x0100
 #define VAR_TEXT_PAL_CUSTOM_COLOR 0x503E //If not 0, replaces color TEXT_PAL_CUSTOM_COLOR_SLOT of the standard text palette (0x471DEC) with this GBA color (0x0001-0x7FFF, use 0x8000 for black). Comment out this line to remove the feature.
@@ -239,7 +240,7 @@ enum //These vars need to be one after the other (hence the enum)
 #define OBEDIENCE_BY_BADGE_AMOUNT //Determines obedience based on the number of badges the Player has, rather than which badges the player has
 #define SAVE_BLOCK_EXPANSION //Commenting this requires you to also manually remove Save Expansion Hooks found in hooks. It will also break several features. DO NOT COMMENT OUT!
 #define SELECT_FROM_PC //Comment this out to remove select-from-pc hack
-#define SET_HEALING_PLACE_HACK  //Uncomment this if you want custom map/bank whiteout respawn locations
+#define SET_HEALING_PLACE_HACK  //Uncomment this if you want custom map/bank whiteout respawn locations (only used while VAR_HEALINGMAP is not 0)
 //#define FOSSIL_IMAGE_HACK   //Uncommenting includes JPANs fossil image hack (see EXISTING_FOSSIL_IMAGE_TABLE_ADDRESS)
 #define EVO_HOLD_ITEM_REMOVAL //Comment this out if you want leveling up/hold item evolution (eg. sneasel) to remove the item (like normal)
 //#define EXPAND_MOVESETS //Comment this out if you're using the Dynamic Pokemon Expansion repo to expand the movesets

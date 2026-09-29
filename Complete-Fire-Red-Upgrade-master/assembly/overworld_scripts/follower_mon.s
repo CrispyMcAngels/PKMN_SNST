@@ -44,3 +44,28 @@ EventScript_FollowerMon_ComeOutOfBall:
 	callasm FollowerMon_ComeOutOfBall
 	waitstate
 	return
+
+@Recalls the following Pokemon into a Poke Ball for a cutscene (FLAG_FOLLOWER_POKEMON_CUTSCENE).
+@It comes back by itself on the player's first free step after the script, or earlier with
+@EventScript_FollowerMon_CutsceneEnd. Scripts that move the player or the camera more than
+@one step already do this automatically, so this is only needed for scenes that only move NPCs.
+.global EventScript_FollowerMon_CutsceneHide
+EventScript_FollowerMon_CutsceneHide:
+	callasm FollowerMon_CutsceneHide
+	waitstate
+	return
+
+@Instantly hides the following Pokemon for a cutscene, no animation.
+@It comes back the same way as with EventScript_FollowerMon_CutsceneHide.
+.global EventScript_FollowerMon_CutsceneHideInstant
+EventScript_FollowerMon_CutsceneHideInstant:
+	callasm FollowerMon_CutsceneHideInstant
+	return
+
+@Brings the following Pokemon back out of its Poke Ball at the end of a cutscene,
+@instead of letting it walk out on the player's next step. Does nothing if no cutscene recalled it.
+.global EventScript_FollowerMon_CutsceneEnd
+EventScript_FollowerMon_CutsceneEnd:
+	callasm FollowerMon_CutsceneEnd
+	waitstate
+	return

@@ -1503,6 +1503,11 @@ static const struct FollowerMon* GetFollowerMonFromParty(void)
 		return NULL;
 	#endif
 
+	#ifdef FLAG_FOLLOWER_POKEMON_CUTSCENE
+	if (FlagGet(FLAG_FOLLOWER_POKEMON_CUTSCENE))
+		return NULL; //Stays away until the cutscene is over
+	#endif
+
 	#ifdef VAR_FOLLOWER_POKEMON_UNLOCK
 	if (VarGet(VAR_FOLLOWER_POKEMON_UNLOCK) != FOLLOWER_POKEMON_UNLOCK_VALUE)
 		return NULL;
@@ -1560,6 +1565,10 @@ static void RemoveFollowerMon(void)
 void FollowerMon_UpdateOnStep(void)
 {
 	#ifdef FLAG_FOLLOWER_POKEMON
+	#ifdef FLAG_FOLLOWER_POKEMON_CUTSCENE
+	FlagClear(FLAG_FOLLOWER_POKEMON_CUTSCENE); //The player is walking freely again, so the cutscene is over
+	#endif
+
 	if (gFollowerState.inProgress && !IsFollowerMon())
 		return; //Human followers take priority
 
@@ -1707,6 +1716,9 @@ static bool8 CreateFollowerMonNextToPlayer(bool8* placed)
 
 	#ifdef FLAG_FOLLOWER_POKEMON_HIDDEN
 	FlagClear(FLAG_FOLLOWER_POKEMON_HIDDEN);
+	#endif
+	#ifdef FLAG_FOLLOWER_POKEMON_CUTSCENE
+	FlagClear(FLAG_FOLLOWER_POKEMON_CUTSCENE);
 	#endif
 
 	if (IsFollowerMon())
@@ -1871,6 +1883,31 @@ void FollowerMon_ReturnToBall(void)
 	CreateTask(Task_FollowerMonReturnToBall, 0xFF);
 }
 
+//@Details: Recalls the following Pokemon into a Poke Ball for a cutscene. Unlike FollowerMon_ReturnToBall,
+//			it comes back by itself on the player's first free step after the script ends.
+//			Does nothing if no Pokemon is following. Must be followed by waitstate in the script.
+void FollowerMon_CutsceneHide(void)
+{
+	#ifdef FLAG_FOLLOWER_POKEMON_CUTSCENE
+	if (IsFollowerMon())
+		FlagSet(FLAG_FOLLOWER_POKEMON_CUTSCENE);
+	#endif
+	CreateTask(Task_FollowerMonReturnToBall, 0xFF);
+}
+
+//@Details: Instantly hides the following Pokemon for a cutscene, without any animation.
+//			It comes back the same way as with FollowerMon_CutsceneHide.
+void FollowerMon_CutsceneHideInstant(void)
+{
+	if (IsFollowerMon())
+	{
+		#ifdef FLAG_FOLLOWER_POKEMON_CUTSCENE
+		FlagSet(FLAG_FOLLOWER_POKEMON_CUTSCENE);
+		#endif
+		RemoveFollowerMon();
+	}
+}
+
 //@Details: Instantly hides the following Pokemon, without any animation.
 //			It stays hidden the same way as with FollowerMon_ReturnToBall.
 void FollowerMon_Hide(void)
@@ -1899,6 +1936,19 @@ void FollowerMon_Show(void)
 void FollowerMon_ComeOutOfBall(void)
 {
 	CreateTask(Task_FollowerMonComeOutOfBall, 0xFF);
+}
+
+//@Details: Ends a cutscene by bringing the following Pokemon back out of its Poke Ball right away,
+//			but only if a cutscene recalled it (FLAG_FOLLOWER_POKEMON_CUTSCENE).
+//			Must be followed by waitstate in the script.
+void FollowerMon_CutsceneEnd(void)
+{
+	u8 taskId = CreateTask(Task_FollowerMonComeOutOfBall, 0xFF);
+
+	#ifdef FLAG_FOLLOWER_POKEMON_CUTSCENE
+	if (!FlagGet(FLAG_FOLLOWER_POKEMON_CUTSCENE))
+	#endif
+		gTasks[taskId].data[0] = POKE_BALL_ANIM_END; //Not hidden by a cutscene, so just let the script go on
 }
 
 static void TurnNPCIntoFollower(u8 localId, u8 followerFlags)
@@ -2021,4 +2071,89 @@ bool8 ShouldFollowerIgnoreActiveScript(void)
 	#else
 	return FALSE;
 	#endif
+}
+
+#ifdef FLAG_FOLLOWER_POKEMON_CUTSCENE
+#define EVENT_OBJ_ID_CAMERA 0x7F
+#define MOVEMENT_ACTION_STEP_END 0xFE
+
+//Movement actions that move the object to another tile (walking, running, jumping, sliding...)
+static bool8 IsMovementActionAStep(u8 action)
+{
+	return (action >= MOVEMENT_ACTION_WALK_SLOWEST_DOWN && action <= MOVEMENT_ACTION_JUMP_2_RIGHT)
+		|| (action >= MOVEMENT_ACTION_WALK_FAST_DOWN && action <= MOVEMENT_ACTION_WALK_FAST_RIGHT)
+		|| (action >= MOVEMENT_ACTION_SLIDE_SLOW_DOWN && action <= MOVEMENT_ACTION_SLIDE_LEFT_FOOT_RIGHT)
+		|| (action >= MOVEMENT_ACTION_JUMP_SPECIAL_DOWN && action <= MOVEMENT_ACTION_JUMP_SPECIAL_RIGHT)
+		|| (action >= MOVEMENT_ACTION_JUMP_DOWN && action <= MOVEMENT_ACTION_JUMP_RIGHT)
+		|| (action >= MOVEMENT_ACTION_WALK_SLOWEST_UP_BACKWARDS && action <= MOVEMENT_ACTION_WALK_NORMAL_RIGHT_UP_FACE_RIGHT)
+		|| (action >= MOVEMENT_ACTION_RUN_LEFT_DOWN_FACE_DOWN && action <= MOVEMENT_ACTION_WALK_FAST_RIGHT_UP_FACE_RIGHT);
+}
+
+//The following Pokemon is recalled when a script moves the player or the camera more than one step
+static bool8 ShouldFollowerMonHideForMovement(struct ScriptContext* ctx, u16 localId, const u8* movements)
+{
+	u32 i, steps = 0;
+
+	if (ctx != &gScriptEnv1 //Only scripts that can wait for the animation
+	|| !IsFollowerMon()
+	|| ShouldFollowerIgnoreActiveScript()
+	|| (localId != EVENT_OBJ_ID_PLAYER && localId != EVENT_OBJ_ID_CAMERA))
+		return FALSE;
+
+	for (i = 0; i < 64 && movements[i] != MOVEMENT_ACTION_STEP_END; ++i)
+	{
+		if (IsMovementActionAStep(movements[i]) && ++steps > 1)
+			return TRUE;
+	}
+
+	return FALSE; //Turning, emotes, pauses or a single step don't separate them
+}
+
+#define ScriptMovement_MoveObjects ((TaskFunc) (0x0809776C | 1)) //The task that runs applymovement
+bool8 __attribute__((long_call)) ScriptMovement_IsObjectMovementFinished(u8 localId, u8 mapNum, u8 mapGroup);
+
+//Other characters already walking because of the script (eg. NPCs set off right before the player)
+static bool8 IsAnotherObjectMovingByScript(void)
+{
+	u32 i;
+
+	if (!FuncIsActiveTask(ScriptMovement_MoveObjects))
+		return FALSE; //No applymovement running
+
+	for (i = 0; i < EVENT_OBJECTS_COUNT; ++i)
+	{
+		struct EventObject* obj = &gEventObjects[i];
+
+		if (obj->active && !obj->isPlayer && i != GetFollowerMapObjId()
+		&& !ScriptMovement_IsObjectMovementFinished(obj->localId, obj->mapNum, obj->mapGroup))
+			return TRUE;
+	}
+
+	return FALSE;
+}
+#endif
+
+//Replaces script command 0x4F (applymovement)
+bool8 ScrCmd_applymovement(struct ScriptContext* ctx)
+{
+	#ifdef FLAG_FOLLOWER_POKEMON_CUTSCENE
+	u16 localId = VarGet(T1_READ_16(ctx->scriptPtr));
+	const u8* movements = T1_READ_PTR(ctx->scriptPtr + 2);
+
+	if (ShouldFollowerMonHideForMovement(ctx, localId, movements))
+	{
+		if (IsAnotherObjectMovingByScript())
+		{
+			FollowerMon_CutsceneHideInstant(); //Others are already walking, so don't hold the player back
+			return ScrCmd_applymovementVanilla(ctx);
+		}
+
+		FollowerMon_CutsceneHide();
+		ctx->scriptPtr--; //Run this applymovement again once the Pokemon is in its ball
+		ScriptContext1_Stop(); //Like waitstate, the animation task restarts the script
+		return TRUE;
+	}
+	#endif
+
+	return ScrCmd_applymovementVanilla(ctx);
 }

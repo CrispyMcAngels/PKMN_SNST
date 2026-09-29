@@ -154,6 +154,7 @@ EventScript_Ardesiopoli_3_2_tile6:
 	playsong 0x112 0x0
 	
 	msgbox Ardesiopoli_3_2_tile6_text1 MSG_NORMAL
+	call EventScript_FollowerMon_CutsceneHideInstant
 	getplayerpos 0x4001 0x4002
 
 	compare 0x4001 0x15

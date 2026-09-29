@@ -25,8 +25,6 @@ gMapScripts_CieloStellato_2_60:
 
 CieloStellato_2_60_MapScriptOnLoad:
     setvar 0x501F 0x12E
-    compare 0x4051 0x0
-    if 0x0 _call CieloStellato_2_60_MapScriptOnLoad_set_parallax
     compare 0x4051 0x3
     if 0x1 _call CieloStellato_2_60_MapScriptOnLoad_Raikou_eyes
     compare 0x4051 0x4
@@ -40,10 +38,6 @@ CieloStellato_2_60_MapScriptOnLoad:
     compare 0x4051 0x8
     if 0x1 _call CieloStellato_2_60_MapScriptOnLoad_Entei_full       
     end
-
-CieloStellato_2_60_MapScriptOnLoad_set_parallax:
-    setvar 0x400A 0x3
-    return
 
 CieloStellato_2_60_MapScriptOnLoad_Raikou_eyes:
     setmaptile 0x0 0x0 0x281 0x0
@@ -798,7 +792,6 @@ CieloStellato_2_60_Part1a:
     setflag 0x996
     pause 0x3E
     applymovement 0xFF CieloStelato_intro_mov1
-    applymovement 0x2 CieloStelato_intro_mov2_moon
     waitmovement 0xFF
     pause 0x3E
     show_mugshot OLD_CRISPY
@@ -885,13 +878,6 @@ CieloStellato_2_60_Part1a:
         .byte 0xC 
         .byte 0xFE
 
-    CieloStelato_intro_mov2_moon:
-        .byte 0x8
-        .byte 0x8 
-        .byte 0x8 
-        .byte 0x8 
-        .byte 0x8 
-        .byte 0xFE
 
 
 .global gMapScripts_PassatoTuono_3_46
@@ -1028,7 +1014,6 @@ CieloStellato_2_60_Part2:
     sound 0x15
     pause 0x10
     applymovement 0xFF CieloStellato_2_60_mov1
-    applymovement 0x2 CieloStellato_2_60_mov1_moon
     waitmovement 0xFF
     show_mugshot OLD_CRISPY
 	msgbox CieloStellato_2_60_Part1_text20 MSG_NORMAL
@@ -1063,14 +1048,6 @@ CieloStellato_2_60_Part2:
         .byte 0xD 
         .byte 0xD 
         .byte 0xD 
-        .byte 0xFE
-
-    CieloStellato_2_60_mov1_moon:
-        .byte 0x9
-        .byte 0x9 
-        .byte 0x9 
-        .byte 0x9 
-        .byte 0x9 
         .byte 0xFE
 
 

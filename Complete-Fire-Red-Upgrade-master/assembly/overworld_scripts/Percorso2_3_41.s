@@ -335,6 +335,7 @@ EventScript_Percorso_2_3_41_Sign2:
 .global EventScript_Percorso2_3_41_tile0
 EventScript_Percorso2_3_41_tile0:
 	lockall
+	call EventScript_FollowerMon_CutsceneHideInstant
 	playsong 0x0 0x0
 	pause 0x1E
 	sound 0x15
@@ -403,6 +404,7 @@ EventScript_Percorso2_3_41_tile0:
 .global EventScript_Percorso2_3_41_tile1
 EventScript_Percorso2_3_41_tile1:
 	lockall
+	call EventScript_FollowerMon_CutsceneHideInstant
 	playsong 0x0 0x0
 	movesprite 0x6 0x1D 0x01
 	sound 0x09

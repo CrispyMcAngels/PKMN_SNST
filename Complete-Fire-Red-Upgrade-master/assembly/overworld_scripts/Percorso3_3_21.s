@@ -8,6 +8,7 @@
 .global EventScript_Percorso3_3_21_tile4
 EventScript_Percorso3_3_21_tile4:
 	lockall
+	call EventScript_FollowerMon_CutsceneHideInstant
 	pause 0x1E
 	spriteface 0x14 0x4
 	pause 0x15

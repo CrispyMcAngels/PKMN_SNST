@@ -1423,6 +1423,8 @@ TextWindow_SetStdFrame0_WithPal = 0x814FF2C | 1;
 
 /* Text Input Functions */
 DoNamingScreen = 0x809D954 | 1;
+ScrCmd_applymovementVanilla = 0x806B200 | 1;
+ScriptMovement_IsObjectMovementFinished = 0x809748C | 1;
 MainState_StartPageSwap = 0x809E210 | 1;
 MainState_WaitPageSwap = 0x809E250 | 1;
 sub_809E518 = 0x809E518 | 1;

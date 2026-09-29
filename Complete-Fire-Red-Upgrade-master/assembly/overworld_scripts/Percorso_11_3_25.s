@@ -37,6 +37,7 @@ EventScript_Percorso_11_Brandon:
 
 
 	EventScript_Percorso_11_Brandon_Part1:
+		call EventScript_FollowerMon_CutsceneHide	@Axew goes back in its ball before the challenge
 		//mmh dannzione
 		show_mugshot NAOMI
 		msgbox Percorso_11_Brandon_text2 MSG_NORMAL
@@ -232,6 +233,7 @@ EventScript_Percorso_11_Brandon:
 		applymovement 0x1 EventScript_Percorso_11_Brandon_mov10
 		waitmovement 0x0
 		special 0x0
+		call EventScript_FollowerMon_CutsceneEnd	@Healed Axew comes back out as they set off
 		setvar 0x4051 0x13
 		clearflag 0x950
 		release

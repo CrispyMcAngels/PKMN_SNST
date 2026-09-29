@@ -829,6 +829,8 @@ Scogliera_Crepuscolo_42_0_MapScriptOnFrameBegin_P1:
     setvar 0x4051 0x53
     //set normal screen fading
     setvar 0x500E 0x0
+    //setting healing place back to vanilla settings
+    setvar 0x5037 0x0
     //warp a time travel
     warp 0x0 0x11 0xFF 0x7 0x6
     releaseall
