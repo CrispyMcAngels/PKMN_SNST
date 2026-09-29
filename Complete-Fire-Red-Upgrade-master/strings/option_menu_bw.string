@@ -5,7 +5,10 @@
 [FC][01][02][FC][02][00]OPTIONS
 
 #org @localText_Instructions
-[FC][01][02][FC][02][00][FC][06][00]SAVE    CANCEL
+[FC][01][02][FC][02][00][FC][06][00]SAVE
+
+#org @localText_InstructionsCancel
+[FC][01][02][FC][02][00][FC][06][00]CANCEL
 
 #org @localText_TextSpeed
 [FC][01][01][FC][02][00]Text Speed

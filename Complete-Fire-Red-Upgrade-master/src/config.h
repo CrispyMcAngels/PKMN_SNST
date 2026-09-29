@@ -69,6 +69,10 @@
 #define VAR_PARALLAX 0x400A //Temp var (cleared on every warp) for BG3 parallax, set in the map's on-transition script: 0xIIXY = image II (see bg3_parallax.c, 0 = off) scrolling at horizontal speed X and vertical speed Y (0 = 0%, 1 = 25%, 2 = 50%, 3 = 75%, 4 = 100%, 5 = fit to the map size so the image never repeats). Comment out this line to remove the feature.
 #define PARALLAX_TILE_OFFSET 50 //First tile in BG char block 3 used by parallax images (the tiles before it hold the text box frames). Images can use 256 minus this many unique tiles.
 #define PARALLAX_PAL_SLOT 11 //BG palette slot parallax images use. Tilesets on parallax maps must not use this palette.
+#define FOREST_LIGHT_WEATHER 15 //Weather 15 is "forest light" (forest_light.c): NPC148's frames shade the map, with sunlight through the gaps. It's added through gWeatherFuncsExpanded (forest_light.c + repoints). Comment out this line to remove the feature.
+#define FOREST_LIGHT_SCROLL_SPEED 3 //How fast the forest light pattern scrolls compared to the camera: 0 = 0%, 1 = 25%, 2 = 50%, 3 = 75%, 4 = 100%
+#define FOREST_LIGHT_BLEND_EVA 7 //How strong the forest shade is (0-16): weight of NPC148's colours...
+#define FOREST_LIGHT_BLEND_EVB 10 //...and of the map under them (0-16). Sunlit (transparent) pixels always show the map unchanged.
 #define VAR_BG2_FADE_RADIUS 0x5041 //If not 0, the BG2 map layer is only drawn within this many pixels of the screen centre (like Flash, but the rest stays visible). Comment out this line to remove the feature.
 #define BG2_FADE_RING_WIDTH 12 //Width in pixels of the band past the radius where BG2 fades out. With BG2_FADE_DITHERED, use a multiple of 3 (each step is a third).
 #define BG2_FADE_RING_ALPHA 8 //Blend strength used in the band (0-16). With BG2_FADE_DITHERED, 8 gives steps of 75%, 50% and 25%.

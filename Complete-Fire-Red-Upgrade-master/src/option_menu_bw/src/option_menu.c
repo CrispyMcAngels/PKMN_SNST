@@ -74,7 +74,6 @@ static void Difficulty_DrawChoices(u8 selection);
 static u8   ButtonMode_ProcessInput(u8 selection);
 static void ButtonMode_DrawChoices(u8 selection);
 static void DrawOptionMenuTexts(void);
-static void DrawFrame(void);
 static void OptionMenu_ClearWindow(u8 option);
 static void ShowDescription(const u8 *text);
 static void SetDescription(u8 selection);
@@ -94,16 +93,19 @@ OPTION_MENU_SCREEN(Following)
 OPTION_MENU_SCREEN(Controls)
 OPTION_MENU_SCREEN(Difficulty)
 
-// Text colours, loaded into BG palette 5 (window 0)
+// Text colours, loaded into BG palette 5 (window 0). Dark text for the light option menu graphics:
+// 1 = row names, the selected choice and the description (dark purple), 2 = title and SAVE/CANCEL (dark purple),
+// 3 = shadow (light grey), 5 = unselected choices (grey-purple)
 static const u16 sOptionMenuTextPal[16] =
 {
-    0x0000, 0x7368, 0x7FFF, 0x2D4A, 0x318C, 0x35CD, 0x0000, 0x0000,
+    0x0000, 0x44AA, 0x44AA, 0x675A, 0x318C, 0x5A33, 0x0000, 0x0000,
     0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x675A, 0x0000,
 };
 
 // Texts are in strings/option_menu_bw.string
 extern const u8 localText_Option[];
 extern const u8 localText_Instructions[];
+extern const u8 localText_InstructionsCancel[];
 extern const u8 localText_TextSpeed[];
 extern const u8 localText_BattleScene[];
 extern const u8 localText_BattleStyle[];
@@ -195,16 +197,7 @@ static const struct WindowTemplate sOptionMenuWinTemplates[] =
         .paletteNum = 5,
         .baseBlock = 0
     },
-	{
-        .bg = 2,
-        .tilemapLeft = 0,
-        .tilemapTop = 14,
-        .width = 30,
-        .height = 6,
-        .paletteNum = 14,
-        .baseBlock = 0
-    },
-	DUMMY_WIN_TEMPLATE
+	DUMMY_WIN_TEMPLATE //The description box is part of the background graphics
 };
 
 static const struct BgTemplate sOptionMenuBgTemplates[] =
@@ -295,8 +288,7 @@ void CB2_NewInitOptionMenu(void)
         SetGpuReg(REG_OFFSET_BLDALPHA, 0);
         SetGpuReg(REG_OFFSET_BLDY, 0);
 	    ShowBg(0);
-        ShowBg(1);
-		ShowBg(2);
+        ShowBg(1); //BG2 held the old description box frame
 		gMain.state++;
         break;
     case 2:
@@ -308,11 +300,7 @@ void CB2_NewInitOptionMenu(void)
         gMain.state++;
         break;
     case 3:
-        LoadBgTiles(2, GetWindowFrameTilesPal(gSaveBlock2Ptr->optionsWindowFrameType)->tiles, 0x120, 0x1A2);
-		gMain.state++;
-        break;
     case 4:
-        LoadPalette(GetWindowFrameTilesPal(gSaveBlock2Ptr->optionsWindowFrameType)->pal, 0xE0, 0x20);
         gMain.state++;
         break;
     case 5:
@@ -332,8 +320,6 @@ void CB2_NewInitOptionMenu(void)
         gMain.state++;
         break;
     case 9:
-		PutWindowTilemap(1);
-		DrawFrame();
         gMain.state++;
         break;
     case 10:
@@ -563,7 +549,7 @@ static void ShowDescription(const u8 *text)
     for (i = 0; *text != EOS && i <= 160; i++)
         dst[i] = *(text++);
 	
-	dst[2] = 5;
+	dst[2] = 1; //Dark purple on the white description box
     dst[i] = EOS;
 	AddTextPrinterParameterized4(0, 1, 12, 120, 0, 0, 0, 0, dst);
 }
@@ -754,7 +740,8 @@ static void DrawOptionMenuTexts(void)
 
     FillWindowPixelBuffer(0, PIXEL_FILL(0));
 	AddTextPrinterParameterized(0, 1, localText_Option, 8, 1, TEXT_SPEED_FF, NULL);
-	AddTextPrinterParameterized(0, 1, localText_Instructions, 140, 0 , TEXT_SPEED_FF, NULL);
+	AddTextPrinterParameterized(0, 1, localText_Instructions, 140, 0 , TEXT_SPEED_FF, NULL); //SAVE, right of the A icon (x 128-135)
+	AddTextPrinterParameterized(0, 1, localText_InstructionsCancel, 196, 0 , TEXT_SPEED_FF, NULL); //CANCEL, right of the B icon (x 184-191)
 	SetDescription(0);
 	for (i = 0; i < MENUITEM_COUNT; i++)
     {
@@ -763,17 +750,3 @@ static void DrawOptionMenuTexts(void)
     CopyWindowToVram(0, 2);
 }
 
-static void DrawFrame(void)
-{   //                     bg, tileNum,  x,    y,  width, height,  pal
-    FillBgTilemapBufferRect(2,   0x1A2,  0,   14,      1,      1,   14);
-    FillBgTilemapBufferRect(2, 	 0x1A3,  1,   14,     28,      1,   14);
-    FillBgTilemapBufferRect(2,   0x1A4, 29,   14,      1,      1,   14);
-    FillBgTilemapBufferRect(2,   0x1A5,  0,   15,      1,      4,   14);
-    FillBgTilemapBufferRect(2,   0x1A6,  1,   15,     28,      4,   14);
-    FillBgTilemapBufferRect(2,   0x1A7, 29,   15,      1,      4,   14);
-    FillBgTilemapBufferRect(2,   0x1A8,  0,   19,      1,      1,   14);
-    FillBgTilemapBufferRect(2,   0x1A9,  1,   19,     28,      1,   14);
-    FillBgTilemapBufferRect(2,   0x1AA, 29,   19,      1,      1,   14);
-
-    CopyBgTilemapBufferToVram(2);
-}

@@ -779,6 +779,10 @@ gEventsObjectPic_NPC146Pal 08F162A8
 gEventObjectGraphicsInfo_NPC147 08EB124C
 gEventsObjectPic_NPC147Pal 08F162B0
 
+#NPC148
+gEventObjectGraphicsInfo_NPC148 08EB1250
+gEventsObjectPic_NPC148Pal 08F162B8
+
 #NPC162
 gEventObjectGraphicsInfo_NPC162 08EB1288
 gEventsObjectPic_NPC162Pal 08F162E8
@@ -792,3 +796,12 @@ EventScript_AfterWhiteOutMomHeal 0807F5EC
 
 #DEFAULT PLAYER NAME (the #removeintro patch in bytereplacement copies it at the start of a new game)
 gText_DefaultPlayerName 08054A70
+
+##Weather table with 16 entries, so weather 15 can be forest light (src/forest_light.c). No #ifdef:
+##this file's config.h include isn't read, and without FOREST_LIGHT_WEATHER the symbol is just missing.
+gWeatherFuncsExpanded 08079D54
+gWeatherFuncsExpanded 08079E00
+gWeatherFuncsExpanded 08079E70
+gWeatherFuncsExpanded 08079EB0
+##TranslateWeatherNum's jump table: weather 15 stays 15 instead of becoming WEATHER_NONE
+TranslateWeatherNum_ForestLight 0807B220

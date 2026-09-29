@@ -4823,6 +4823,54 @@
 		.affineAnims = gDummySpriteAffineAnimTable,
 	};
 
+	//_____NPC148_FOREST_LIGHT_FILTER____
+	//5 frames of 64x64 used by weather 15 (forest light) to build its 256x256 pattern: transparent = sunlight, dark = shade
+
+	static const struct OamData sForestLightOam =
+	{
+		.objMode = ST_OAM_OBJ_BLEND, //Semi-transparent, blended with the map
+		.shape = ST_OAM_SQUARE,
+		.size = ST_OAM_SIZE_3, //64x64
+		.priority = 2,
+	};
+
+	extern const u8 gEventsObjectPic_NPC148Tiles[];
+
+	//Frames 0-4; the rest repeat frame 0 so the standard animation table never reads past the sheet
+	static const struct SpriteFrameImage gEventObjectPicTable_NPC148[] =
+	{
+		overworld_frame(gEventsObjectPic_NPC148Tiles, 8, 8, 0),
+		overworld_frame(gEventsObjectPic_NPC148Tiles, 8, 8, 1),
+		overworld_frame(gEventsObjectPic_NPC148Tiles, 8, 8, 2),
+		overworld_frame(gEventsObjectPic_NPC148Tiles, 8, 8, 3),
+		overworld_frame(gEventsObjectPic_NPC148Tiles, 8, 8, 4),
+		overworld_frame(gEventsObjectPic_NPC148Tiles, 8, 8, 0),
+		overworld_frame(gEventsObjectPic_NPC148Tiles, 8, 8, 0),
+		overworld_frame(gEventsObjectPic_NPC148Tiles, 8, 8, 0),
+		overworld_frame(gEventsObjectPic_NPC148Tiles, 8, 8, 0),
+	};
+
+	const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_NPC148 =
+	{
+		.tileTag = 0xFFFF,
+		.paletteTag1 = 0x118D,
+		.paletteTag2 = EVENT_OBJ_PAL_TAG_NONE,
+		.size = (64 * 64) / 2,
+		.width = 64,
+		.height = 64,
+		.paletteSlot = 0,
+		.shadowSize = SHADOW_SIZE_M,
+		.inanimate = TRUE, //Never plays walking frames
+		.disableReflectionPaletteLoad = TRUE,
+		.tracks = TRACKS_NONE,
+		.gender = MALE,
+		.oam = &sForestLightOam,
+		.subspriteTables = gEventObjectSpriteOamTables_64x64,
+		.anims = gEventObjectImageAnimTable_Standard,
+		.images = gEventObjectPicTable_NPC148,
+		.affineAnims = gDummySpriteAffineAnimTable,
+	};
+
 //_____NPC162_____
 
 	extern const u8 gEventsObjectPic_NPC162Tiles[];
