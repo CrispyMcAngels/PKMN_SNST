@@ -18,6 +18,7 @@ void PalRefDecreaseCount(u8 palSlot);
 void ClearAllPalRefs(void);
 u8 GetPalSlotMisc(u32 OBJData);
 u8 FindOrLoadNPCPalette(u16 palTag);
+u8 FindOrLoadNPCPaletteFromData(u16 palTag, const u16* palette);
 u8 FindOrCreateReflectionPalette(u8 palSlotNPC);
 void FogBrightenPalettes(u16 brightenIntensity);
 void FogBrightenAndFade(u8 palSlot, u8 fadeIntensity, u16 fadeColor);

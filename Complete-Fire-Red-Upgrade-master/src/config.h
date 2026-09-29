@@ -116,6 +116,7 @@ enum //These vars need to be one after the other (hence the enum)
 #define VAR_PLAYER_VS_SEEKER 0x503D         //Change vs seeker usage sprite. NOT in JPAN's engine
 #define VAR_PLAYER_VS_SEEKER_ON_BIKE 0x5024	//Change vs seeker on bike sprite. 0x4059 in JPAN engine.
 #define VAR_PLAYER_UNDERWATER 0x5025		//Change underwater sprite.
+#define VAR_SKY_MOUNT 0x5029				//Pokemon the player rides in the sky (sky_mount.c): 0 = none, 1+ = entry in sSkyMounts. Set it before warping into a sky map, clear it before warping out. Comment out this line to remove the feature.
 #define VAR_TRAINERCARD_MALE 0x5026			//Change trainer card image (male). 0x4060 in JPAN engine.
 #define VAR_TRAINERCARD_FEMALE 0x5027		//Change trainer card image (female). 0x4061 in JPAN engine.
 

@@ -13,6 +13,7 @@
 #include "../include/new/character_customization.h"
 #include "../include/new/follow_me.h"
 #include "../include/new/multi.h"
+#include "../include/new/sky_mount.h"
 #include "../include/new/util.h"
 /*
 character_customization.c
@@ -381,6 +382,9 @@ u16 GetPlayerAvatarGraphicsIdByStateId(u8 state)
 
 u8 GetPlayerAvatarStateTransitionByGraphicsId(u16 graphicsId, u8 gender)
 {
+	if (IsSkyMountActive())
+		return PLAYER_AVATAR_FLAG_ON_FOOT; //The sitting sprite while riding in the sky (sky_mount.c) isn't surfing
+
     for (u8 state = 0; state < NELEMS(sPlayerAvatarGfxIds); ++state)
     {
 		u16 customGraphicsId = GetCustomGraphicsIdByState(state);

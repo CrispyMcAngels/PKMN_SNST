@@ -536,6 +536,26 @@ u8 FindOrLoadNPCPalette(u16 palTag)
 	return PalRefIncreaseCount(palSlot);
 }
 
+//Like FindOrLoadNPCPalette, but for a palette that isn't in the NPC palette table (eg. the mounts in sky_mount.c).
+//Sprites using it have palette tag 0xFFFF in their template and get oam.paletteNum set to the returned slot.
+//Call it once per sprite, since destroying each sprite frees one reference.
+u8 FindOrLoadNPCPaletteFromData(u16 palTag, const u16* palette)
+{
+	u8 palSlot = FindPalRef(PalTypeNPC, palTag);
+	if (palSlot != 0xFF)
+		return PalRefIncreaseCount(palSlot);
+
+	palSlot = AddPalRef(PalTypeNPC, palTag);
+	if (palSlot == 0xFF)
+		return PalRefIncreaseCount(0);
+
+	DoLoadSpritePalette(palette, palSlot * 16);
+	TintOBJPalette(palSlot);
+	FogBrightenPalettes(FOG_BRIGHTEN_INTENSITY);
+	MaskPaletteIfFadingIn(palSlot);
+	return PalRefIncreaseCount(palSlot);
+}
+
 u8 FindOrCreateReflectionPalette(u8 palSlotNPC)
 {
 	u16 palTag = sPalRefs[palSlotNPC].PalTag;

@@ -52,6 +52,7 @@
 #include "../include/new/overworld_data.h"
 #include "../include/new/party_menu.h"
 #include "../include/new/read_keys.h"
+#include "../include/new/sky_mount.h"
 #include "../include/new/wild_encounter.h"
 
 /*
@@ -1682,6 +1683,7 @@ bool8 IsRunningDisallowed(u8 tile)
 {
 	return IsRunningDisabledByFlag() || IsRunningDisallowedByMetatile(tile)
 		|| gMapHeader.mapType == MAP_TYPE_UNDERWATER
+		|| IsSkyMountActive() //The surfing sprite has no running frames
 	#ifndef CAN_RUN_IN_BUILDINGS
 		|| GetCurrentMapType() == MAP_TYPE_INDOOR
 	#endif
@@ -1698,7 +1700,7 @@ bool8 Overworld_IsBikingAllowed(void)
 	if (gFollowerState.inProgress && !(gFollowerState.flags & FOLLOWER_FLAG_CAN_BIKE))
 		return FALSE;
 
-	if (gMapHeader.mapType == MAP_TYPE_UNDERWATER)
+	if (gMapHeader.mapType == MAP_TYPE_UNDERWATER || IsSkyMountActive())
 		return FALSE;
 
 	return gMapHeader.bikingAllowed
@@ -2506,7 +2508,9 @@ bool8 IsUnderwater(void)
 
 u8 GetAdjustedInitialTransitionFlags(struct InitialPlayerAvatarState *playerStruct, u16 metatileBehavior, u8 mapType)
 {
-	if (mapType != MAP_TYPE_INDOOR && FlagGet(0x802))
+	if (IsSkyMountActive())
+		return PLAYER_AVATAR_FLAG_ON_FOOT; //Riding in the sky (sky_mount.c): never arrive underwater, surfing or on the bike
+	else if (mapType != MAP_TYPE_INDOOR && FlagGet(0x802))
 		return PLAYER_AVATAR_FLAG_ON_FOOT;
 	else if (mapType == MAP_TYPE_UNDERWATER)
 		return PLAYER_AVATAR_FLAG_UNDERWATER;

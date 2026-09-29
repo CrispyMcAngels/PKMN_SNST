@@ -110,6 +110,7 @@ FollowMe_DismountSurf:
 .pool
 FollowMe_CreateAvatarHook2:
 	bl FollowMe_HandleSprite
+	bl SkyMount_UpdatePlayerSprite @Arriving on foot reset the player's sprite
 	add sp, #4
 	pop {r4-r5, pc}
 

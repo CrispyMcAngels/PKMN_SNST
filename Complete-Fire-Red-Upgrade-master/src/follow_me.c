@@ -23,6 +23,7 @@
 #include "../include/new/frontier.h"
 #include "../include/new/util.h"
 #include "../include/new/overworld.h"
+#include "../include/new/sky_mount.h"
 
 /**
  * \file follow_me.c
@@ -896,6 +897,8 @@ void FollowMe_FollowerToWater(void)
 
 void FollowMe_BindToSurbBlobOnReloadScreen(void)
 {
+	SkyMount_TryCreate(); //Its sprites are gone after a battle or a menu
+
 	if (!gFollowerState.inProgress)
 		return;
 
@@ -1429,6 +1432,7 @@ void CreateFollowerAvatar(void)
 	#endif
 
 	SpawnFollowerAvatar();
+	SkyMount_TryCreate(); //Arrive riding if VAR_SKY_MOUNT is set
 }
 
 static void SpawnFollowerAvatar(void)
@@ -1507,6 +1511,9 @@ static const struct FollowerMon* GetFollowerMonFromParty(void)
 	if (FlagGet(FLAG_FOLLOWER_POKEMON_CUTSCENE))
 		return NULL; //Stays away until the cutscene is over
 	#endif
+
+	if (IsSkyMountActive())
+		return NULL; //The player is riding a Pokemon in the sky
 
 	#ifdef VAR_FOLLOWER_POKEMON_UNLOCK
 	if (VarGet(VAR_FOLLOWER_POKEMON_UNLOCK) != FOLLOWER_POKEMON_UNLOCK_VALUE)
