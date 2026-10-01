@@ -2,19 +2,19 @@
 //[BUFFER1] = the Pokemon, [BUFFER2] = the move or the level, [BUFFER3] = the forgotten move.
 
 #org @gText_LevelUpToCap_Learned
-[BUFFER1] ha imparato\n[BUFFER2]!
+[BLACK][GREEN][BUFFER1][BLACK] ha imparato\n[GREEN][BUFFER2][BLACK]!
 
 #org @gText_LevelUpToCap_WantsToLearn
-[BUFFER1] vuole imparare\n[BUFFER2].\pMa conosce gi[16] quattro mosse.\nVuoi che ne dimentichi una?
+[BLACK][GREEN][BUFFER1][BLACK] vuole imparare\n[GREEN][BUFFER2][BLACK].\pMa conosce gi[16] quattro mosse.\nVuoi che ne dimentichi una?
 
 #org @gText_LevelUpToCap_DidNotLearn
-[BUFFER1] non ha imparato\n[BUFFER2].
+[BLACK][GREEN][BUFFER1][BLACK] non ha imparato\n[GREEN][BUFFER2][BLACK].
 
 #org @gText_LevelUpToCap_ForgotAndLearned
-1, 2 e... Puff!\p[BUFFER1] ha dimenticato\n[BUFFER3].\pE...\p[BUFFER1] ha imparato\n[BUFFER2]!
+[BLACK]1, 2 e... Puff!\p[GREEN][BUFFER1][BLACK] ha dimenticato\n[GREEN][BUFFER3][BLACK].\pE...\p[GREEN][BUFFER1][BLACK] ha imparato\n[GREEN][BUFFER2][BLACK]!
 
 #org @gText_LevelUpToCap_GrewToLevel
-[BUFFER1] [1A] salito al Lv. [BUFFER2]!
+[BLACK][GREEN][BUFFER1][BLACK] [1A] salito al Lv. [BUFFER2]!
 
 #org @gText_LevelUpToCap_AlreadyAtCap
-I tuoi Pok\emon hanno gi[16] raggiunto\nil livello massimo per ora!
+[BLACK]I tuoi Pok\emon hanno gi[16] raggiunto\nil livello massimo per ora!

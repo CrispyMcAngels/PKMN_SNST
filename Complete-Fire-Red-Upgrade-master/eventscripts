@@ -801,62 +801,7 @@ npc 1 34 4 EventScript_Rovine_Ancestrali_1_34_NPC4
 npc 1 34 7 EventScript_Rovine_Ancestrali_1_34_NPC7
 npc 1 34 8 EventScript_Rovine_Ancestrali_1_34_NPC8
 
-tile 0 5 0 EventScript_Rovine_Ancestrali_1_35_tile0
-tile 0 5 1 EventScript_Rovine_Ancestrali_1_35_tile1
-tile 0 5 2 EventScript_Rovine_Ancestrali_1_35_tile2
-tile 0 5 3 EventScript_Rovine_Ancestrali_1_35_tile3
-tile 0 5 4 EventScript_Rovine_Ancestrali_1_35_tile4
-tile 0 5 5 EventScript_Rovine_Ancestrali_1_35_tile5
-tile 0 5 6 EventScript_Rovine_Ancestrali_1_35_tile6
-tile 0 5 7 EventScript_Rovine_Ancestrali_1_35_tile7
-tile 0 5 8 EventScript_Rovine_Ancestrali_1_35_tile8
-tile 0 5 9 EventScript_Rovine_Ancestrali_1_35_tile9
-tile 0 5 10 EventScript_Rovine_Ancestrali_1_35_tileA
-tile 0 5 11 EventScript_Rovine_Ancestrali_1_35_tileB
-tile 0 5 12 EventScript_Rovine_Ancestrali_1_35_tileC
-tile 0 5 13 EventScript_Rovine_Ancestrali_1_35_tileD
-tile 0 5 14 EventScript_Rovine_Ancestrali_1_35_tileE
-tile 0 5 15 EventScript_Rovine_Ancestrali_1_35_tileF
-tile 0 5 16 EventScript_Rovine_Ancestrali_1_35_tile10
-tile 0 5 17 EventScript_Rovine_Ancestrali_1_35_tile11
-tile 0 5 18 EventScript_Rovine_Ancestrali_1_35_tile12
-tile 0 5 19 EventScript_Rovine_Ancestrali_1_35_tile13
-tile 0 5 20 EventScript_Rovine_Ancestrali_1_35_tile14
 
-sign 0 5 0 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 1 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 2 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 3 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 4 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 5 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 6 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 7 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 8 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 9 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 10 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 11 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 12 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 13 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 14 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 15 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 16 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 17 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 18 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 19 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 20 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 21 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 22 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 23 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 24 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 25 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 26 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 27 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 28 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 29 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 30 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 31 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 32 EventScript_Rovine_Ancestrali_1_35_GPP
-sign 0 5 33 EventScript_Rovine_Ancestrali_1_35_GPP
 
 
 map 0 5 gMapScripts_Rovine_Ancestrali_1_35

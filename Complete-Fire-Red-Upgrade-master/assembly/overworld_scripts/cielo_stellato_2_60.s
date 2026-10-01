@@ -788,7 +788,7 @@ CieloStellato_2_60_MapScriptOnFrameBegin:
     end
 
 CieloStellato_2_60_Part1a:
-    setvar 0x503E 0x190B
+    setvar 0x503E 0x2590
     call EventScript_RefreshTextColor
     setflag 0x995
     setflag 0x996
@@ -977,6 +977,10 @@ CieloStellato_2_60_Part2:
 	special 0x15A
     pause 0x1F
 
+
+    //colore custom Tramonto 
+    setvar 0x503E 0x325F
+    call EventScript_RefreshTextColor
     show_mugshot OLD_CRISPY
 	msgbox CieloStellato_2_60_Part1_text15 MSG_NORMAL
 	special 0x15A

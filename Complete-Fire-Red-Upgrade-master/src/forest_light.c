@@ -1,18 +1,23 @@
 #include "defines.h"
 #include "../include/field_camera.h"
 #include "../include/field_weather.h"
+#include "../include/gpu_regs.h"
 #include "../include/sprite.h"
 
+#include "../include/new/bg3_parallax.h"
 #include "../include/new/dynamic_ow_pals.h"
+#include "../include/new/forest_light.h"
 /*
 forest_light.c
-	weather 15 "forest light": sunlight coming through the trees. Like the vanilla fog, 20 semi-transparent
-	64x64 sprites cover the screen, but each one shows one of NPC148's frames (transparent = sunlight,
-	dark = shade), picked from sPattern so they form a 256x256 pattern that repeats across the map.
+	weather 15 "forest light": sunlight coming through the trees. NPC148's frames (transparent = sunlight,
+	dark = shade) are laid out as in sPattern to form a 256x256 pattern that repeats across the map.
 	The pattern scrolls at FOREST_LIGHT_SCROLL_SPEED of the camera's speed for a sense of depth.
 
-	The sprites are behind the NPCs (like fog), so they shade the ground layers (BG2 and BG3) but not
-	the NPCs, nor the top layer (BG1, eg. tree tops), which is drawn over them.
+	With FOREST_LIGHT_BG3, the pattern is drawn on BG3 by bg3_parallax.c (ForestLight_LoadBg3) and
+	put over the map, so it shades every map layer and the NPCs; text boxes (BG0) stay on top.
+	Without it, like the vanilla fog, 20 semi-transparent 64x64 sprites show the pattern. They are
+	behind the NPCs, so they shade the ground layers (BG2 and BG3) but not the NPCs, nor the top
+	layer (BG1, eg. tree tops), which is drawn over them.
 	Weather 15 is added through gWeatherFuncsExpanded at the end of this file (see repoints).
 */
 
@@ -37,7 +42,9 @@ forest_light.c
 extern const u8 gEventsObjectPic_NPC148Tiles[];
 extern const u16 gEventsObjectPic_NPC148Pal[];
 
+#ifndef FOREST_LIGHT_BG3
 static void ForestLightSpriteCallback(struct Sprite* sprite);
+#endif
 
 //NPC148's frame shown by each 64x64 block of the 256x256 pattern, optionally mirrored.
 //Frame 0 is plain shade, so it's the most common; the light patches (1-4) are spread out.
@@ -48,6 +55,116 @@ static const u8 sPattern[PATTERN_BLOCKS][PATTERN_BLOCKS] =
 	{4,          0,          0, 1 | FLIP_V},
 	{0, 3 | FLIP_H,          0, 0},
 };
+
+#ifdef FOREST_LIGHT_BG3
+#define NUM_SOURCE_TILES (NUM_FRAMES * FRAME_TILES)
+#define TILE_WORDS (TILE_SIZE_4BPP / sizeof(u32))
+#define PATTERN_TILES (PATTERN_BLOCKS * 8) //The pattern is 32x32 tiles, the size of BG3's tilemap
+#define BG_TILE_FLIP_H 0x400
+#define BG_TILE_FLIP_V 0x800
+#define BG_TILE_PAL_SHIFT 12
+
+static bool8 AreTilesEqual(const u32* a, const u32* b)
+{
+	for (u32 i = 0; i < TILE_WORDS; ++i)
+	{
+		if (a[i] != b[i])
+			return FALSE;
+	}
+
+	return TRUE;
+}
+
+//Draws the 256x256 pattern on BG3 for bg3_parallax.c: NPC148's frames become BG tiles (a tile that
+//appears several times is stored once, from firstTile on in charBlock) and sPattern becomes the tilemap.
+//A mirrored block has its tile columns (or rows) in reverse order, each tile flipped the same way.
+//Returns FALSE if the frames have more than maxTiles different tiles.
+bool8 ForestLight_LoadBg3(u32* charBlock, u16 firstTile, u32 maxTiles, u16* tilemap, u8 palSlot)
+{
+	u8 storedAs[NUM_SOURCE_TILES]; //Which stored tile each of NPC148's tiles is
+	const u32* source = (const u32*) gEventsObjectPic_NPC148Tiles;
+	u32* dest = charBlock + firstTile * TILE_WORDS;
+	u32 i, j, numStored = 0;
+
+	for (i = 0; i < NUM_SOURCE_TILES; ++i)
+	{
+		const u32* tile = &source[i * TILE_WORDS];
+
+		for (j = 0; j < numStored; ++j)
+		{
+			if (AreTilesEqual(tile, &dest[j * TILE_WORDS]))
+				break;
+		}
+
+		if (j == numStored) //New tile
+		{
+			if (numStored >= maxTiles)
+				return FALSE;
+
+			CpuCopy32(tile, &dest[numStored * TILE_WORDS], TILE_SIZE_4BPP);
+			++numStored;
+		}
+
+		storedAs[i] = j;
+	}
+
+	for (u32 y = 0; y < PATTERN_TILES; ++y)
+	{
+		for (u32 x = 0; x < PATTERN_TILES; ++x)
+		{
+			u8 block = sPattern[y / 8][x / 8];
+			u32 tileX = x % 8;
+			u32 tileY = y % 8;
+			u16 flips = 0;
+
+			if (block & FLIP_H)
+			{
+				tileX = 7 - tileX;
+				flips |= BG_TILE_FLIP_H;
+			}
+			if (block & FLIP_V)
+			{
+				tileY = 7 - tileY;
+				flips |= BG_TILE_FLIP_V;
+			}
+
+			i = (block & FRAME_MASK) * FRAME_TILES + tileY * 8 + tileX;
+			tilemap[y * PATTERN_TILES + x] = (firstTile + storedAs[i]) | flips | (palSlot << BG_TILE_PAL_SHIFT);
+		}
+	}
+
+	return TRUE;
+}
+
+void ForestLight_LoadBg3Palette(u8 palSlot)
+{
+	LoadPalette(gEventsObjectPic_NPC148Pal, palSlot * 16, 16 * sizeof(u16));
+}
+
+//BG3 is loaded by bg3_parallax.c whenever the whole map is drawn; this only covers the weather
+//starting or stopping in the middle of a map (setweather + doweather in a script)
+static void ForestLight_Show(void)
+{
+	TryRefreshParallaxAfterWeatherChange();
+}
+
+static void ForestLight_Hide(void)
+{
+	TryRefreshParallaxAfterWeatherChange();
+}
+
+//Returning to the overworld (after a battle, a menu) resets the blend register to the overworld's default
+static bool8 ForestLight_NeedsBlendReset(void)
+{
+	return GetGpuReg(REG_OFFSET_BLDALPHA) != BLDALPHA_BLEND(FOREST_LIGHT_BLEND_EVA, FOREST_LIGHT_BLEND_EVB);
+}
+
+static bool8 ForestLight_IsShown(void)
+{
+	return !ForestLight_NeedsBlendReset();
+}
+
+#else //Sprite version
 
 static const struct OamData sForestLightOam =
 {
@@ -154,6 +271,28 @@ static void DestroyForestLightSprites(void)
 	FreeSpriteTilesByTag(FOREST_LIGHT_TILE_TAG);
 }
 
+static void ForestLight_Show(void)
+{
+	TryCreateForestLightSprites();
+}
+
+static void ForestLight_Hide(void)
+{
+	DestroyForestLightSprites();
+}
+
+//The sprites are gone after a battle or a menu; recreating them needs the blend set again
+static bool8 ForestLight_NeedsBlendReset(void)
+{
+	return TryCreateForestLightSprites();
+}
+
+static bool8 ForestLight_IsShown(void)
+{
+	return DoForestLightSpritesExist();
+}
+#endif
+
 void ForestLight_InitVars(void)
 {
 	gWeatherPtr->initStep = 0;
@@ -161,7 +300,7 @@ void ForestLight_InitVars(void)
 	gWeatherPtr->gammaTargetIndex = 0;
 	gWeatherPtr->gammaStepDelay = 20;
 
-	if (!DoForestLightSpritesExist())
+	if (!ForestLight_IsShown())
 		Weather_SetBlendCoeffs(0, 16); //Fade in from nothing
 }
 
@@ -169,7 +308,7 @@ void ForestLight_Main(void)
 {
 	switch (gWeatherPtr->initStep) {
 		case 0:
-			TryCreateForestLightSprites();
+			ForestLight_Show();
 			Weather_SetTargetBlendCoeffs(FOREST_LIGHT_BLEND_EVA, FOREST_LIGHT_BLEND_EVB, 3);
 			gWeatherPtr->initStep++;
 			break;
@@ -181,7 +320,7 @@ void ForestLight_Main(void)
 			}
 			break;
 		default:
-			if (TryCreateForestLightSprites()) //Gone after a battle or a menu
+			if (ForestLight_NeedsBlendReset()) //After a battle or a menu
 				Weather_SetBlendCoeffs(FOREST_LIGHT_BLEND_EVA, FOREST_LIGHT_BLEND_EVB);
 			break;
 	}
@@ -206,7 +345,7 @@ bool8 ForestLight_Finish(void)
 				gWeatherPtr->finishStep++;
 			break;
 		case 2:
-			DestroyForestLightSprites();
+			ForestLight_Hide();
 			gWeatherPtr->finishStep++;
 			break;
 		default:

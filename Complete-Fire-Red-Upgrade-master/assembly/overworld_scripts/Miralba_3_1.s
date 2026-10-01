@@ -85,6 +85,7 @@ EventScript_Miralba_3_1_NPC5:
 
 	EventScript_Miralba_3_1_NPC5_P1:
 		sound 0x15
+		call EventScript_FollowerMon_CutsceneHide
 		applymovement 0x6 mov_exclamation
 		waitmovement 0x0
 		pause 0x1E
@@ -142,6 +143,7 @@ EventScript_Miralba_3_1_NPC5:
 	EventScript_Miralba_3_1_NPC5_P2:
 		applymovement 0x6 mov_exclamation
 		waitmovement 0x0
+		call EventScript_FollowerMon_CutsceneHide
 		pause 0x1E
 		msgbox Miralba_3_1_Tile0_text3 MSG_NORMAL
 		hidesprite 0xB
@@ -153,6 +155,7 @@ EventScript_Miralba_3_1_NPC5:
 		applymovement 0x6 Miralba_3_1_NPC5_mov4
 		waitmovement 0x0
 		showsprite 0xB
+		clearflag 0x962 @hidesprite 0xB set it, and it's also the Lost Child quest's "completed" flag
 		release
 		end
 
@@ -180,6 +183,7 @@ EventScript_Miralba_3_1_Tile0:
 	EventScript_Miralba_3_1_Tile0_P1:
 		lockall
 		spriteface 0x6 0x1
+		call EventScript_FollowerMon_CutsceneHide
 		sound 0x15
 		applymovement 0x6 mov_exclamation
 		waitmovement 0x0
@@ -244,7 +248,7 @@ EventScript_Miralba_3_1_Tile0:
 		waitmovement 0x0
 		pause 0x1E
 		spriteface 0xFF 0x2
-		
+		call EventScript_FollowerMon_CutsceneHide
 		msgbox Miralba_3_1_Tile0_text3 MSG_NORMAL
 		hidesprite 0xB
 		applymovement 0x6 Miralba_3_1_Tile0_mov2
@@ -255,6 +259,7 @@ EventScript_Miralba_3_1_Tile0:
 		applymovement 0x6 Miralba_3_1_Tile0_mov4
 		waitmovement 0x0
 		showsprite 0xB
+		clearflag 0x962 @hidesprite 0xB set it, and it's also the Lost Child quest's "completed" flag
 		releaseall
 		end
 
@@ -396,6 +401,7 @@ EventScript_Miralba_3_1_NPC1:
 .global EventScript_Miralba_3_1_tile1
 EventScript_Miralba_3_1_tile1:
 	lockall
+	call EventScript_FollowerMon_CutsceneHide
 	playsong 0x189
 	spriteface 0xFF 0x2
 	show_mugshot CRISPY

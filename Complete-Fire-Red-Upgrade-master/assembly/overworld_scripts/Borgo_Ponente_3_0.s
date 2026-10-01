@@ -450,10 +450,10 @@ gMapScripts_Borgo_Ponente_3_0:
 				pause 0x1E
 				applymovement 0x8 Borgo_Ponente_3_0_MapScriptOnFrame_mov3
 				waitmovement 0x0
-				movesprite 0x8 0x0E 0x16 @The NPC on screen
-				movesprite2 0x8 0x0E 0x16 @Where it respawns after going off-screen
 				applymovement 0x8 Borgo_Ponente_3_0_MapScriptOnFrame_mov4
 				waitmovement 0x0
+				movesprite 0x8 0x0E 0x6 @The NPC on screen
+				movesprite2 0x8 0x0E 0x6 @Where it respawns after going off-screen
 				fadedefault
 				setvar 0x4051 0xE
 				setvar 0x4050 0x2

@@ -6,6 +6,7 @@
 #include "../include/overworld.h"
 
 #include "../include/new/bg3_parallax.h"
+#include "../include/new/forest_light.h"
 /*
 bg3_parallax.c
 	handles BG3 parallax: on maps that ask for it, BG3 (the bottom map layer) shows an image
@@ -49,6 +50,13 @@ static const struct ParallaxImage sParallaxImages[] =
 	{Parallax_CloudsTiles, Parallax_CloudsMap, Parallax_CloudsPal}, //1: clouds
 	{ParallaxSkySDVTiles, ParallaxSkySDVMap, ParallaxSkySDVPal}, //2: sky
 };
+
+#ifdef FOREST_LIGHT_BG3
+#define PARALLAX_IMAGE_FOREST_LIGHT 0xFF //Not in sParallaxImages: forest_light.c draws it from NPC148's frames
+#define FILTER_BG_PRIORITY 0 //Over BG1, BG2 and the sprites; BG0 (text boxes) still wins at the same priority
+#define MAP_BG3_PRIORITY 3
+#define FILTER_BLEND_LAYERS (BLDCNT_TGT2_BG1 | BLDCNT_TGT2_BG2 | BLDCNT_TGT2_OBJ | BLDCNT_TGT2_BD)
+#endif
 
 #define PARALLAX_CHAR_BASE 3
 #define PARALLAX_MAX_TILES (256 - PARALLAX_TILE_OFFSET) //The rest of char block 3 holds the BG tilemaps
@@ -103,7 +111,14 @@ static void Task_RefreshParallax(u8 taskId);
 
 static u8 GetWantedParallaxImage(void)
 {
-	u8 imageId = GET_PARALLAX_IMAGE(VarGet(VAR_PARALLAX));
+	u8 imageId;
+
+	#ifdef FOREST_LIGHT_BG3
+	if (gSaveBlock1->weather == FOREST_LIGHT_WEATHER) //Set from the map header before the map is drawn
+		return PARALLAX_IMAGE_FOREST_LIGHT; //Wins over the map's parallax image
+	#endif
+
+	imageId = GET_PARALLAX_IMAGE(VarGet(VAR_PARALLAX));
 
 	if (imageId > ARRAY_COUNT(sParallaxImages))
 		return 0;
@@ -191,28 +206,78 @@ void ParallaxDrawWholeMapView(void)
 	DrawWholeMapViewInternal(gSaveBlock1->pos.x, gSaveBlock1->pos.y, gMapHeader.mapLayout);
 }
 
+#ifdef FOREST_LIGHT_BG3
+//Blends BG3 with everything under it. The overworld sets these registers again on its own (when it's
+//set up, and its screen window turns colour effects off, which stops all blending), so this runs every frame.
+//The strength (BLDALPHA) is left to the weather, which fades it in and out.
+static void ApplyFilterBlend(void)
+{
+	u16 bldcnt = GetGpuReg(REG_OFFSET_BLDCNT);
+	u16 wantedBldcnt = (bldcnt & ~BLDCNT_EFFECT_DARKEN) //Clears both effect bits, so it's never lighten or darken
+					 | BLDCNT_TGT1_BG3 | FILTER_BLEND_LAYERS | BLDCNT_EFFECT_BLEND;
+	u16 winin = GetGpuReg(REG_OFFSET_WININ);
+	u16 winout = GetGpuReg(REG_OFFSET_WINOUT);
+
+	if (bldcnt != wantedBldcnt)
+		SetGpuReg(REG_OFFSET_BLDCNT, wantedBldcnt);
+	if ((winin & (WININ_WIN0_CLR | WININ_WIN1_CLR)) != (WININ_WIN0_CLR | WININ_WIN1_CLR))
+		SetGpuReg(REG_OFFSET_WININ, winin | WININ_WIN0_CLR | WININ_WIN1_CLR);
+	if (!(winout & WINOUT_WIN01_CLR))
+		SetGpuReg(REG_OFFSET_WINOUT, winout | WINOUT_WIN01_CLR);
+}
+
+//Puts BG3 over the map and blends it with everything under it (forest light), or back to the bottom (map, parallax)
+static void SetBg3AsFilter(bool8 filter)
+{
+	if (filter)
+	{
+		SetBgAttribute(3, BG_ATTR_PRIORITY, FILTER_BG_PRIORITY);
+		ApplyFilterBlend();
+	}
+	else
+	{
+		SetBgAttribute(3, BG_ATTR_PRIORITY, MAP_BG3_PRIORITY);
+		ClearGpuRegBits(REG_OFFSET_BLDCNT, BLDCNT_TGT1_BG3);
+	}
+}
+#endif
+
 static bool8 LoadParallaxImage(u8 imageId)
 {
-	u32 i;
-	const struct ParallaxImage* image = &sParallaxImages[imageId - 1];
-	u32 tilesSize = *((const u32*) image->tiles) >> 8; //Decompressed size, from the LZ77 header
-
-	if (tilesSize > PARALLAX_MAX_TILES * TILE_SIZE_4BPP) //Would spill into the tilemaps
-		return FALSE;
-
-	LZDecompressVram(image->tiles, (void*) (BG_CHAR_ADDR(PARALLAX_CHAR_BASE) + PARALLAX_TILE_OFFSET * TILE_SIZE_4BPP));
-	LZDecompressWram(image->tilemap, gBGTilemapBuffers3);
-
-	for (i = 0; i < PARALLAX_TILEMAP_ENTRIES; ++i) //Point the tilemap at where the tiles and palette really are
+	#ifdef FOREST_LIGHT_BG3
+	if (imageId == PARALLAX_IMAGE_FOREST_LIGHT)
 	{
-		u16 entry = gBGTilemapBuffers3[i];
-		gBGTilemapBuffers3[i] = (entry & ~(TILE_NUM_MASK | (0xF << TILE_PAL_SHIFT)))
-							  | ((entry & TILE_NUM_MASK) + PARALLAX_TILE_OFFSET)
-							  | (PARALLAX_PAL_SLOT << TILE_PAL_SHIFT);
+		if (!ForestLight_LoadBg3((u32*) BG_CHAR_ADDR(PARALLAX_CHAR_BASE), PARALLAX_TILE_OFFSET, PARALLAX_MAX_TILES,
+		                         gBGTilemapBuffers3, PARALLAX_PAL_SLOT))
+			return FALSE;
+	}
+	else
+	#endif
+	{
+		u32 i;
+		const struct ParallaxImage* image = &sParallaxImages[imageId - 1];
+		u32 tilesSize = *((const u32*) image->tiles) >> 8; //Decompressed size, from the LZ77 header
+
+		if (tilesSize > PARALLAX_MAX_TILES * TILE_SIZE_4BPP) //Would spill into the tilemaps
+			return FALSE;
+
+		LZDecompressVram(image->tiles, (void*) (BG_CHAR_ADDR(PARALLAX_CHAR_BASE) + PARALLAX_TILE_OFFSET * TILE_SIZE_4BPP));
+		LZDecompressWram(image->tilemap, gBGTilemapBuffers3);
+
+		for (i = 0; i < PARALLAX_TILEMAP_ENTRIES; ++i) //Point the tilemap at where the tiles and palette really are
+		{
+			u16 entry = gBGTilemapBuffers3[i];
+			gBGTilemapBuffers3[i] = (entry & ~(TILE_NUM_MASK | (0xF << TILE_PAL_SHIFT)))
+								  | ((entry & TILE_NUM_MASK) + PARALLAX_TILE_OFFSET)
+								  | (PARALLAX_PAL_SLOT << TILE_PAL_SHIFT);
+		}
 	}
 
 	LoadParallaxPalette(imageId);
 	SetBgAttribute(3, BG_ATTR_CHARBASEINDEX, PARALLAX_CHAR_BASE);
+	#ifdef FOREST_LIGHT_BG3
+	SetBg3AsFilter(imageId == PARALLAX_IMAGE_FOREST_LIGHT);
+	#endif
 	ShowBg(3); //Applies the new char base
 	ScheduleBgCopyTilemapToVram(3);
 
@@ -225,13 +290,21 @@ static bool8 LoadParallaxImage(u8 imageId)
 
 static void LoadParallaxPalette(u8 imageId)
 {
-	LoadPalette(sParallaxImages[imageId - 1].palette, PARALLAX_PAL_SLOT * 16, 16 * sizeof(u16));
+	#ifdef FOREST_LIGHT_BG3
+	if (imageId == PARALLAX_IMAGE_FOREST_LIGHT)
+		ForestLight_LoadBg3Palette(PARALLAX_PAL_SLOT);
+	else
+	#endif
+		LoadPalette(sParallaxImages[imageId - 1].palette, PARALLAX_PAL_SLOT * 16, 16 * sizeof(u16));
 	ApplyWeatherGammaShiftToPal(PARALLAX_PAL_SLOT);
 }
 
 static void StopParallax(void)
 {
 	SetBgAttribute(3, BG_ATTR_CHARBASEINDEX, 0); //Back to the map tiles
+	#ifdef FOREST_LIGHT_BG3
+	SetBg3AsFilter(FALSE);
+	#endif
 	ShowBg(3);
 	sParallaxState->loadedImage = 0;
 }
@@ -250,6 +323,18 @@ void TryRefreshParallaxAfterConnection(void)
 	}
 	else if (!FuncIsActiveTask(Task_RefreshParallax))
 		CreateTask(Task_RefreshParallax, 80); //This runs in the middle of moving the camera, so redraw once it's done
+}
+
+//Called by the forest light weather when it starts, and when it ends after fading out.
+//Only does something if the weather changed in the middle of a map (setweather + doweather);
+//on a map load the whole map is drawn later anyway
+void TryRefreshParallaxAfterWeatherChange(void)
+{
+	if (gMain.callback2 != CB2_Overworld)
+		return;
+
+	if (GetWantedParallaxImage() != sParallaxState->loadedImage && !FuncIsActiveTask(Task_RefreshParallax))
+		CreateTask(Task_RefreshParallax, 80);
 }
 
 static void Task_RefreshParallax(u8 taskId)
@@ -300,6 +385,14 @@ void UpdateParallaxScroll(void)
 	var = VarGet(VAR_PARALLAX);
 	speedX = GET_PARALLAX_X_SPEED(var);
 	speedY = GET_PARALLAX_Y_SPEED(var);
+
+	#ifdef FOREST_LIGHT_BG3
+	if (sParallaxState->loadedImage == PARALLAX_IMAGE_FOREST_LIGHT)
+	{
+		speedX = speedY = FOREST_LIGHT_SCROLL_SPEED; //Same drift as the sprite version
+		ApplyFilterBlend();
+	}
+	#endif
 
 	if (speedX == SPEED_FIT)
 	{

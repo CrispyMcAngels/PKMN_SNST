@@ -4,113 +4,97 @@
 .include "../xse_commands.s"
 .include "../xse_defines.s"
 
+@Wardrobe: one menu listing only the outfits the player owns.
+@Blue is always available, orange with flag 0x964, green with flag 0x966.
+@The chosen outfit is stored in var 0x4068 (0x0 blue, 0x1 orange, 0x2 green).
+@The menu is CFRU's scrolling multichoice (special 0x158 with 0x8004 = 0, lists in src/scripting.c gScrollingSets):
+@0x8000 = 0 Blue/Orange, 1 Blue/Green, 2 Blue/Orange/Green.
 .global EventScript_Borgo_Ponente_4_0_Armadio
 EventScript_Borgo_Ponente_4_0_Armadio:
+	lock
 	checkflag 0x964
-	if 0x1 _goto EventScript_Borgo_Ponente_4_0_Armadio_Arancione
+	if 0x1 _goto EventScript_Borgo_Ponente_4_0_Armadio_HasOrange
 	checkflag 0x966
-	if 0x1 _goto EventScript_Borgo_Ponente_4_0_Armadio_Verde
-	msgbox Borgo_Ponente_4_0_Armadio_text1 MSG_NORMAL
+	if 0x1 _goto EventScript_Borgo_Ponente_4_0_Armadio_BlueGreen
+	msgbox Borgo_Ponente_4_0_Armadio_text1 MSG_NORMAL @Only the blue clothes: the wardrobe is empty
+	release
 	end
 
-	EventScript_Borgo_Ponente_4_0_Armadio_Arancione:
+	EventScript_Borgo_Ponente_4_0_Armadio_HasOrange:
+		setvar 0x8000 0x0 @Blue/Orange
 		checkflag 0x966
-		if 0x1 _goto EventScript_Borgo_Ponente_4_0_Armadio_Arancione_Verde
+		if 0x1 _call EventScript_Borgo_Ponente_4_0_Armadio_AllThree
+		goto EventScript_Borgo_Ponente_4_0_Armadio_Menu
+
+	EventScript_Borgo_Ponente_4_0_Armadio_AllThree:
+		setvar 0x8000 0x2 @Blue/Orange/Green
+		return
+
+	EventScript_Borgo_Ponente_4_0_Armadio_BlueGreen:
+		setvar 0x8000 0x1 @Blue/Green
+		goto EventScript_Borgo_Ponente_4_0_Armadio_Menu
+
+	EventScript_Borgo_Ponente_4_0_Armadio_Menu:
 		msgbox Borgo_Ponente_4_0_Armadio_Arancione_text1 MSG_NORMAL
 		preparemsg armadio_msg
 		waitmsg
-		//msgbox armadio_msg MSG_NORMAL
-		multichoice 0x0 0x0 0x15 0x0
-		compare 0x800D 0x7F 
+		setvar 0x8001 0x3 @Up to 3 options shown at once
+		setvar 0x8004 0x0 @Special 0x158 is only CFRU's scrolling multichoice when 0x8004 is 0; other values freeze the script
+		special 0x158
+		waitstate
+		compare 0x800D 0x7F
 		if 0x1 _goto Set_OW_canceled
 		compare 0x800D 0x0
 		if 0x1 _goto Set_blue_OW
+		compare 0x8000 0x1
+		if 0x1 _goto Set_green_OW @In the Blue/Green list the second option is green
 		compare 0x800D 0x1
 		if 0x1 _goto Set_orange_OW
-		end
+		goto Set_green_OW
 
 			Set_blue_OW:
-				compare 0x501F 0x100 
+				compare 0x4068 0x0
 				if 0x1 _goto Already_Blue_OW
-				//OW
-				setvar 0x501F 0x100
-				//frontsprite
-				setvar 0x5026 0x0
-				//backsprite
-				setvar 0x5006 0x0
-				warp 0x4 0x0 0xFF 0x8 0x3 
-				end
+				setvar 0x4068 0x0
+				goto Set_OW_Reload
 
 				Already_Blue_OW:
 					msgbox Borgo_Ponente_4_0_Armadio_already_blue_text1 MSG_NORMAL
+					release
 					end
 
 			Set_orange_OW:
-				compare 0x501F 0x1A3 
+				compare 0x4068 0x1
 				if 0x1 _goto Already_Orange_OW
-				//OW
-				setvar 0x501F 0x1A3
-				//frontsprite
-				setvar 0x5026 0x88
-				//backsprite
-				setvar 0x5006 0x1
-				warp 0x4 0x0 0xFF 0x8 0x3 
-				end
+				setvar 0x4068 0x1
+				goto Set_OW_Reload
 
 				Already_Orange_OW:
 					msgbox Borgo_Ponente_4_0_Armadio_already_orange_text1 MSG_NORMAL
+					release
 					end
 
-			Set_OW_canceled:
-				end
-
-	EventScript_Borgo_Ponente_4_0_Armadio_Verde:
-		msgbox Borgo_Ponente_4_0_Armadio_Arancione_text1 MSG_NORMAL
-
-		preparemsg armadio_msg
-		waitmsg
-		
-		multichoice 0x0 0x0 0x16 0x0
-		compare 0x800D 0x7F 
-		if 0x1 _goto Set_OW_canceled
-		compare 0x800D 0x0
-		if 0x1 _goto Set_blue_OW
-		compare 0x800D 0x1
-		if 0x1 _goto Set_green_OW
-		end
-
 			Set_green_OW:
-				compare 0x501F 0x1A4 
+				compare 0x4068 0x2
 				if 0x1 _goto Already_Green_OW
-				//OW
-				setvar 0x501F 0x1A4
-				//frontsprite
-				setvar 0x5026 0x85
-				//backsprite 133
-				setvar 0x5006 0x2
-				warp 0x4 0x0 0xFF 0x8 0x3 
-				end
+				setvar 0x4068 0x2
+				goto Set_OW_Reload
 
 				Already_Green_OW:
 					msgbox Borgo_Ponente_4_0_Armadio_already_green_text1 MSG_NORMAL
+					release
 					end
 
-	EventScript_Borgo_Ponente_4_0_Armadio_Arancione_Verde:
-		msgbox Borgo_Ponente_4_0_Armadio_Arancione_text1 MSG_NORMAL
+			@The outfit colours are palette swaps read from 0x4068 (dynamic_ow_pals.c, character_customization.c),
+			@so the player keeps their own sprites; warping to the same spot reloads the palettes
+			Set_OW_Reload:
+				warp 0x4 0x0 0xFF 0x8 0x3
+				end
 
-		preparemsg armadio_msg
-		waitmsg
-		
-		multichoice 0x0 0x0 0x17 0x0
-		compare 0x800D 0x7F 
-		if 0x1 _goto Set_OW_canceled
-		compare 0x800D 0x0
-		if 0x1 _goto Set_blue_OW
-		compare 0x800D 0x1
-		if 0x1 _goto Set_orange_OW
-		compare 0x800D 0x2
-		if 0x1 _goto Set_green_OW
-		end
+			Set_OW_canceled:
+				closeonkeypress
+				release
+				end
 
 
 .global EventScript_Borgo_Ponente_4_0_tileA

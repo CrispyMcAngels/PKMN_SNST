@@ -11,6 +11,7 @@
 //Exported Functions
 void UpdateParallaxScroll(void);
 void TryRefreshParallaxAfterConnection(void);
+void TryRefreshParallaxAfterWeatherChange(void);
 
 //Functions Hooked In
 void ParallaxDrawMetatile(s32 metatileLayerType, const u16* tiles, u16 offset);

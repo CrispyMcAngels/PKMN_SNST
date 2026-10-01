@@ -1268,16 +1268,7 @@ bool8 CantLoadTeamPreviewTrigger(void)
 	if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER)) //Wild Battle
 		return TRUE; //No enemy team
 
-	if (gBattleTypeFlags & BATTLE_TYPE_LINK)
-		return FALSE; //TODO: Not unless the player selects it beforehand
-
-	bool8 can = (gBattleTypeFlags & BATTLE_TYPE_FRONTIER) != 0 //Regular Frontier battle
-		#ifdef FLAG_IN_BATTLE_TEAM_PREVIEW
-		|| FlagGet(FLAG_IN_BATTLE_TEAM_PREVIEW)
-		#endif
-		;
-
-	return !can;
+	return FALSE; //Always available in trainer battles (flag 0x929 shared memory with temp var 0x4002)
 }
 
 void TryLoadTeamPreviewTrigger(void)

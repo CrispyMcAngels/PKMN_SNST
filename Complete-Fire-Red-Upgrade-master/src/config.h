@@ -78,13 +78,14 @@
 #define FOREST_LIGHT_SCROLL_SPEED 3 //How fast the forest light pattern scrolls compared to the camera: 0 = 0%, 1 = 25%, 2 = 50%, 3 = 75%, 4 = 100%
 #define FOREST_LIGHT_BLEND_EVA 7 //How strong the forest shade is (0-16): weight of NPC148's colours...
 #define FOREST_LIGHT_BLEND_EVB 10 //...and of the map under them (0-16). Sunlit (transparent) pixels always show the map unchanged.
+#define FOREST_LIGHT_BG3 //Draws the forest light pattern on BG3, over the map and the NPCs (uses the BG3 parallax code, so VAR_PARALLAX must be on too). Maps with weather 15 lose their parallax image and triple layer blocks. Comment out this line to use the sprite version (behind the NPCs and the tree tops) instead.
 #define VAR_BG2_FADE_RADIUS 0x5041 //If not 0, the BG2 map layer is only drawn within this many pixels of the screen centre (like Flash, but the rest stays visible). Comment out this line to remove the feature.
 #define BG2_FADE_RING_WIDTH 12 //Width in pixels of the band past the radius where BG2 fades out. With BG2_FADE_DITHERED, use a multiple of 3 (each step is a third).
 #define BG2_FADE_RING_ALPHA 8 //Blend strength used in the band (0-16). With BG2_FADE_DITHERED, 8 gives steps of 75%, 50% and 25%.
 #define BG2_FADE_DITHER_SOFTEN 2 //With BG2_FADE_DITHERED: lowers the line texture. 0 = steps of 75/50/25% with lines alternating by 50%. 2 = steps of 81/50/19% alternating by at most 37.5%. Max 3 (and at most BG2_FADE_RING_ALPHA).
 #define BG2_FADE_DITHERED //Even and odd scanlines split the band differently, which looks like 3 fading steps all around the circle (with a fine line texture). Comment out for a single 50% step whose top and bottom fade per scanline.
 #define FLAG_KEEP_CONSUMABLE_ITEMS 0x927 //If set, consumable items are returned after battles
-#define FLAG_IN_BATTLE_TEAM_PREVIEW 0x929 //If set (and TEAM_PREVIEW_TRIGGER is defined), pressing L in a trainer battle's action menu shows the enemy team. Unrevealed Pokemon appear as question marks.
+//#define FLAG_IN_BATTLE_TEAM_PREVIEW 0x929 //Unused: the team preview (TEAM_PREVIEW_TRIGGER) is now always available in trainer battles. Flag 0x929 is really bit 9 of temp var 0x4002.
 #define FLAG_DAILY_EVENTS_START 0xE00 //To flag + 0xFF, resets every new day.
 
 /*===== Start Menu/Poketools Flags =====*/
@@ -125,6 +126,7 @@ enum //These vars need to be one after the other (hence the enum)
 #define VAR_PLAYER_VS_SEEKER 0x503D         //Change vs seeker usage sprite. NOT in JPAN's engine
 #define VAR_PLAYER_VS_SEEKER_ON_BIKE 0x5024	//Change vs seeker on bike sprite. 0x4059 in JPAN engine.
 #define VAR_PLAYER_UNDERWATER 0x5025		//Change underwater sprite.
+#define VAR_LEVEL_UP_TO_CAP 0x502A //Used by EventScript_LevelPartyToCap (level_up_to_cap.c): this var and the next 3 (to 0x502D). Not the 0x8004+ vars: the summary and evolution screens change those.
 #define VAR_SKY_MOUNT 0x5029				//Pokemon the player rides in the sky (sky_mount.c): 0 = none, 1+ = entry in sSkyMounts. Set it before warping into a sky map, clear it before warping out. Comment out this line to remove the feature.
 #define VAR_TRAINERCARD_MALE 0x5026			//Change trainer card image (male). 0x4060 in JPAN engine.
 #define VAR_TRAINERCARD_FEMALE 0x5027		//Change trainer card image (female). 0x4061 in JPAN engine.
@@ -346,7 +348,7 @@ enum //These vars need to be one after the other (hence the enum)
 #define OKAY_WITH_AI_SUICIDE //The AI is allowed to use self-destructing moves
 //#define HEALTHBAR_TYPE_ICONS //Pokemon types will always be shown next to the healthbar
 #define LAST_USED_BALL_TRIGGER //The player will be given an option to use their last used Poke Ball in wild battles by pressing L
-#define TEAM_PREVIEW_TRIGGER //The player can press L during action selection to view the enemy team (Frontier battles, or trainer battles with FLAG_IN_BATTLE_TEAM_PREVIEW set)
+#define TEAM_PREVIEW_TRIGGER //The player can press L during action selection to view the enemy team in any trainer battle
 
 /* DexNav Options */
 //See "include/new/dexnav_config.h"

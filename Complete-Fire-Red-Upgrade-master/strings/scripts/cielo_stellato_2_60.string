@@ -9,25 +9,25 @@
 
 #org @CieloStellato_2_60_Part1_text1
 //_/////////////////////////////////
-[ORANGE]???[BLACK]: Molti credono che il tempo\nscorra come un fiume[.]\pDritto[.]\pImmobile nella sua direzione[.]
+[CUSTOM]???[BLACK]: Molti credono che il tempo\nscorra come un fiume[.]\pDritto[.]\pImmobile nella sua direzione[.]
 
 #org @CieloStellato_2_60_Part1_text2
 Ma il tempo mente[.]\nSi spezza[.]\pSi piega[.]\pRitorna sui propri passi come il\nvento tra le montagne di Eyros[.]
 
 #org @CieloStellato_2_60_Part1_text3
-[ORANGE]???[BLACK]: Molto prima che i nostri nomi\nvenissero dimenticati,\lla Regione di Eyros splendeva come\lun gioiello nel cuore del mondo[.]
+[CUSTOM]???[BLACK]: Molto prima che i nostri nomi\nvenissero dimenticati,\lla Regione di Eyros splendeva come\lun gioiello nel cuore del mondo[.]
 
 #org @CieloStellato_2_60_Part1_text4
 Tre regni vegliavano sulla terra:
 
 #org @CieloStellato_2_60_Part1_text5
-Il Regno del Fulmine[.]
+Il [ORANGE]Regno del Fulmine[BLACK][.]
 
 #org @CieloStellato_2_60_Part1_text6
-Il Regno dell'Acqua[.]
+Il [BLUE]Regno dell'Acqua[BLACK][.]
 
 #org @CieloStellato_2_60_Part1_text7
-E il Regno del Fuoco.
+E il [RED]Regno del Fuoco[BLACK].
 
 #org @CieloStellato_2_60_Part1_text8
 E fintanto che le loro fiamme\nardevano insieme, la terra\lrespirava in armonia[.]
@@ -45,13 +45,13 @@ Il cielo cremisi.\pLe citt[16] ridotte in cenere.
 E il vento[.]\nche portava con s[1B] soltanto urla\le silenzio[.]
 
 #org @CieloStellato_2_60_Part1_text13
-Fu allora che pochi uomini e donne,\nstanchi della paura e della\lperdita, si unirono sotto un\lunico nome:\pl'Ordine del Vento[.]
+Fu allora che pochi uomini e donne,\nstanchi della paura e della\lperdita, si unirono sotto un\lunico nome:\pl'[LIGHT_BLUE]Ordine del Vento[BLACK][.]
 
 #org @CieloStellato_2_60_Part1_text14
 Non erano re.\pNon erano eroi.\pErano soltanto anime che si\nrifiutavano di lasciare morire il\lmondo[.]
 
 #org @CieloStellato_2_60_Part1_text15
-Attraverso antichi rituali,\nessi richiamarono il Custode del\lTramonto[.]
+Attraverso antichi rituali,\nessi richiamarono il [CUSTOM]Custode del\lTramonto[BLACK][.]
 
 #org @CieloStellato_2_60_Part1_text16
 L'antico Pok\emon leggendario di\nEyros discese dai cieli,\lportando con s[1B] l'ultima luce del\lgiorno e il primo respiro della\lnotte[.]

@@ -130,28 +130,11 @@ gMapScripts_Passo_Tuono_1_2:
 				fadescreen 0x1
 				writebytetooffset 0x0 0x2036E28
 				writebytetooffset 0x25 0x350A34
-				compare 0x5026 0x0
-				if 0x1 _call blue_z
-				compare 0x5026 0x88
-				if 0x1 _call orange_z
-				compare 0x5026 0x85
-				if 0x1 _call green_z
+				setvar 0x501F 0x100 @Back to the player's own sprite; the outfit colour comes from var 0x4068
 				setvar 0x4051 0x42
 				warpmuted 0x1 0x2 0xFF 0x0A 0x0C
 				releaseall
 				end
-
-				blue_z:
-					setvar 0x501F 0x100
-					return
-
-				orange_z:
-					setvar 0x501F 0x1a3
-					return
-
-				green_z:
-					setvar 0x501F 0x1a4
-					return
 
 				Passo_Tuono_1_2_mov3:
 					.byte 0x11

@@ -59,6 +59,7 @@ EventScript_Ardesiopoli_6_9_NPC4:
 		end
 
 	EventScript_Ardesiopoli_6_9_NPC0_YES:
+		call EventScript_FollowerMon_CutsceneHide
 		applymovement 0xFF Ardesiopoli_6_9_NPC0_mov1
 		waitmovement 0x0
 		pause 0x1e

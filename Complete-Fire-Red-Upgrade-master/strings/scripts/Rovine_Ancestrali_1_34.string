@@ -53,7 +53,7 @@ Non [1A] andata come pensavo[.]
 [CUSTOM]Recluta Dusk[BLACK]: Cosa ci facciamo\nqui?\pScoprilo tu stesso, il nostro capo\l[1A] proprio qui sopra!
 
 #org @Rovine_Ancestrali_1_34_tile6_text1
-[GREEN]Crispy[BLACK]: Non te lo chieder[22] una\nseconda volta!\lDimmi chi siete e che cosa ci fate\lqui!
+[BLUE]Crispy[BLACK]: Non te lo chieder[22] una\nseconda volta!\lDimmi chi siete e che cosa ci fate\lqui!
 
 #org @Rovine_Ancestrali_1_34_tile6_text2
 [CUSTOM]Vesper[BLACK]: Dannazione, se quel tizio\nmascherato non mi avesse sconfitto\lpoco fa, potrei sbarazzarmi di\lquesto arrogante in un batter\ld'occhio!
@@ -74,10 +74,10 @@ Scep-Sceptile!
 [CUSTOM]Vesper[BLACK]: Sei un tipo sveglio,\nd'altronde da uno scienziato come\lte ce lo si poteva aspettare[.]\pCome si suol dire, in ogni leggenda\nc'[1A] un filo di verit[16], e il [CUSTOM]Team\lDusk[BLACK] ha ormai scoperto tutto\lquello che c'era da scoprire sugli\lantichi Pok\emon leggendari[.]\pForza ragazzi, leviamo le tende!
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_text1
-[GREEN]Crispy[BLACK]: [LIGHT_BLUE][PLAYER][BLACK], [RED]Naomi[BLACK]!\nEro sicuro che ci avreste\lraggiunto anche voi, grazie per\laverci aiutato!\pQuei furfanti sono riusciti a\nsvignarsela con quello che\lvolevano[.]\pSe solo fossimo arrivati un attimo\nprima[.]
+[BLUE]Crispy[BLACK]: [LIGHT_BLUE][PLAYER][BLACK], [RED]Naomi[BLACK]!\nEro sicuro che ci avreste\lraggiunto anche voi, grazie per\laverci aiutato!\pQuei furfanti sono riusciti a\nsvignarsela con quello che\lvolevano[.]\pSe solo fossimo arrivati un attimo\nprima[.]
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_text2
-[ORANGE]Filiberto[BLACK]: Non sentirti cos[1E] in\ncolpa [GREEN]Crispy[BLACK], non potevamo\lesserne al corrente[.]\pPiuttosto, guardiamo anche noi cosa\ncontengono queste Rovine[.]
+[ORANGE]Filiberto[BLACK]: Non sentirti cos[1E] in\ncolpa [BLUE]Crispy[BLACK], non potevamo\lesserne al corrente[.]\pPiuttosto, guardiamo anche noi cosa\ncontengono queste Rovine[.]
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P2_text3
 [ORANGE]Filiberto[BLACK]: Non capisco, sembrano\nincisioni antiche[.]\pVogliono sicuramente comunicare\nqualcosa, ma non riesco a\ldecifrarle[.]\p[LIGHT_BLUE][PLAYER][BLACK] perch[1A] non provi a dare un\nocchiata pure te?
@@ -86,7 +86,7 @@ Scep-Sceptile!
 [ORANGE]Filiberto[BLACK]: sei riuscito a\ndecifrare le incisioni [LIGHT_BLUE][PLAYER][BLACK]?
 
 #org @Rovine_Ancestrali_1_34_NPC8_text1
-[GREEN]Crispy[BLACK]: Poteva andare meglio, ma\nora l'unica cosa che possiamo\lfare [1A] decifrare queste incisioni.
+[BLUE]Crispy[BLACK]: Poteva andare meglio, ma\nora l'unica cosa che possiamo\lfare [1A] decifrare queste incisioni.
 
 #org @Rovine_Ancestrali_1_34_NPC0_text2
 [RED]Naomi[BLACK]: Non trovi sia emozionante\ncombattere i cattivi assieme ad\lallenatori forti come tuo\lfratello e [ORANGE]Filiberto[BLACK]?
@@ -104,10 +104,10 @@ Queste incisioni raffigurano gli\nantichi Pok\emon leggendari della\lregione di 
 [ORANGE]Filiberto[BLACK]: [05] incredibile [LIGHT_BLUE][PLAYER][BLACK]!\nSei riuscito a risolvere l'enigma.\p[05] proprio vero che buon sangue\nnon mente!
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text2
-[GREEN]Crispy[BLACK]: Davvero impressionante!\pCosa ti sembrano queste incisioni,\n[ORANGE]Filiberto[BLACK]?
+[BLUE]Crispy[BLACK]: Davvero impressionante!\pCosa ti sembrano queste incisioni,\n[ORANGE]Filiberto[BLACK]?
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text3
-[ORANGE]Filiberto[BLACK]: A prima vista, queste\nincisioni sembrano combaciare con\lle informazioni fornite dal [CUSTOM]Team\lDusk[BLACK][.]\pTuttavia, per esserne certi,\nvorrei prelevarne un frammento e\lportarlo nel mio laboratorio ad\lArdesiopoli.\pL[1E] potr[22] analizzarlo con maggiore\nattenzione e confermare con\lprecisione le sue vere origini.\pSe le nostre ipotesi sono\ncorrette, potremmo essere di fronte\la una scoperta fondamentale!\pNon c'[1A] tempo da perdere!\nDevo tornare subito al mio\llaboratorio e mettermi al lavoro\lper analizzare questo frammento[.]\p[GREEN]Crispy[BLACK], [LIGHT_BLUE][PLAYER][BLACK], vi aspetter[22]\nproprio l[1E] per mostrarvi i\lrisultati delle analisi.
+[ORANGE]Filiberto[BLACK]: A prima vista, queste\nincisioni sembrano combaciare con\lle informazioni fornite dal [CUSTOM]Team\lDusk[BLACK][.]\pTuttavia, per esserne certi,\nvorrei prelevarne un frammento e\lportarlo nel mio laboratorio ad\lArdesiopoli.\pL[1E] potr[22] analizzarlo con maggiore\nattenzione e confermare con\lprecisione le sue vere origini.\pSe le nostre ipotesi sono\ncorrette, potremmo essere di fronte\la una scoperta fondamentale!\pNon c'[1A] tempo da perdere!\nDevo tornare subito al mio\llaboratorio e mettermi al lavoro\lper analizzare questo frammento[.]\p[BLUE]Crispy[BLACK], [LIGHT_BLUE][PLAYER][BLACK], vi aspetter[22]\nproprio l[1E] per mostrarvi i\lrisultati delle analisi.
 
 #org @Rovine_Ancestrali_1_34_MapScriptOnFrame_P3_text4
-[GREEN]Crispy[BLACK]: Complimenti [LIGHT_BLUE][PLAYER][BLACK]!\n[05] chiaro che come allenatore sei\lgi[16] maturato molto!\pMa parliamone fuori di qui[.]
+[BLUE]Crispy[BLACK]: Complimenti [LIGHT_BLUE][PLAYER][BLACK]!\n[05] chiaro che come allenatore sei\lgi[16] maturato molto!\pMa parliamone fuori di qui[.]

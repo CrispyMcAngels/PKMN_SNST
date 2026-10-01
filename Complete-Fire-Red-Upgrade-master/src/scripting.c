@@ -3136,7 +3136,7 @@ const struct ScrollingMulti gScrollingSets[] =
 {
 	{sMultichoiceSet1, ARRAY_COUNT(sMultichoiceSet1)},
 	{sMultichoiceSet2, ARRAY_COUNT(sMultichoiceSet2)},
-	{sMultichoiceSet2, ARRAY_COUNT(sMultichoiceSet3)},
+	{sMultichoiceSet3, ARRAY_COUNT(sMultichoiceSet3)},
 };
 
 //Link number of opts shown at once to the box height

@@ -633,7 +633,6 @@ gMapScripts_Passo_Tuono_1_124:
 				applymovement 0xFF mov_exclamation
 				waitmovement 0xFF			
 				pause 0x1E
-				compare 0x5026 0x0
 				show_mugshot PLAYER				
 				msgbox Passo_Tuono_1_124_text14 MSG_NORMAL	
 				special 0x15A	

@@ -1524,6 +1524,7 @@ EventScript_Stellavia_10_19_Sign0:
 		end
 
 	EventScript_Stellavia_10_19_Sign0_YES:
+		call EventScript_FollowerMon_CutsceneHide
 		applymovement 0xFF Stellavia_10_19_Sign0_mov1
 		waitmovement 0x0
 		pause 0x1e

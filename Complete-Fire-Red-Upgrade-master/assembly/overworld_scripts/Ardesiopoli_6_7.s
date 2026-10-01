@@ -105,6 +105,7 @@ gMapScripts_Ardesiopoli_6_7:
 			end
 
 		EventScript_Ardesiopoli_6_7_NPC0_YES2:
+			call EventScript_FollowerMon_CutsceneHide
 			applymovement 0xFF Ardesiopoli_6_7_NPC0_mov1
 			waitmovement 0x0
 			pause 0x1e
@@ -204,6 +205,7 @@ gMapScripts_Ardesiopoli_6_7:
 		end
 
 	EventScript_Ardesiopoli_6_7_sign7_YES:
+		call EventScript_FollowerMon_CutsceneHide
 		applymovement 0xFF Ardesiopoli_6_7_NPC0_mov1
 		waitmovement 0xFF
 		pause 0x1e

@@ -52,6 +52,7 @@ EventScript_Rovine_Ancestrali_1_33_tile0:
 
 	EventScript_Rovine_Ancestrali_1_33_tile0_P3:
 		lockall
+		call EventScript_FollowerMon_CutsceneHideInstant
 		sound 0x15
 		applymovement 0x1 EventScript_Rovine_Ancestrali_1_33_tile0_P3_mov1
 		waitmovement 0x1
