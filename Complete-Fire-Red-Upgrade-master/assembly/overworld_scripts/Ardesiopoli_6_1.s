@@ -181,6 +181,7 @@ EventScript_Ardesiopoli_6_1_NPC0:
 	faceplayer
 	checkflag 0x820
 	if 0x1 _goto EventScript_Ardesiopoli_6_1_NPC0_P1
+	call EventScript_FollowerMon_CutsceneHide
 	applymovement 0x1 mov_exclamation
 	waitmovement 0x1	
 	show_mugshot FILIBERTO

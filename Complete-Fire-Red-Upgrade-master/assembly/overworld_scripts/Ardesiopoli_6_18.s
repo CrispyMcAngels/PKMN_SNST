@@ -8,7 +8,7 @@
 
 	.global EventScript_Ardesiopoli_6_18_Sign0
 	EventScript_Ardesiopoli_6_18_Sign0:
-		msgbox Ardesiopoli_6_18_Sign0_text1 0x7
+		msgbox Ardesiopoli_6_18_Sign0_text1 MSG_NORMAL
 		end
 
 //LEVELS__________________
@@ -27,8 +27,6 @@ gMapScripts_Ardesiopoli_6_18:
 			movesprite2 0x1 0x02 0x0F
 			spritebehave 0x1 0x8
 			return
-
-
 
 //NPCS____________________
 

@@ -350,7 +350,7 @@ Su questa lavagna sono scritte\nformule incomprensibili.
 [BLACK]Benvenuto giovanotto, sono il Sig.\nDallors, il direttore della [GREEN]Poke-\lExchange[BLACK].
 
 #org @Stellavia_10_8_NPC10_text2
-[BLACK]Offriamo piani di investimento con\nun pacchetto a partire da [GREEN]5000\lPoke[BLACK], sei interessato?
+[BLACK]Offriamo piani di investimento da\n[GREEN]5000[BLACK], [GREEN]10000[BLACK] o [GREEN]20000 Poke[BLACK].\pSei interessato?
 
 #org @Stellavia_10_8_NPC10_text3
 [BLACK]Niente di personale, ma ricorda che\nla vera ricchezza si costruisce nel\ltempo[.]
@@ -359,7 +359,7 @@ Su questa lavagna sono scritte\nformule incomprensibili.
 [BLACK]Mi dispiace, non hai abbastanza\nsoldi[.]
 
 #org @Stellavia_10_8_NPC10_text5
-[BLACK]Fantastico!\pBenvenuto nella famiglia di [GREEN]Poke-\nExchange[BLACK].\pTorna quando vuoi per scoprire\nl'interesse maturato sul tuo\linvestimento
+[BLACK]Fantastico!\pBenvenuto nella famiglia di [GREEN]Poke-\nExchange[BLACK].\pIl mercato cambia mentre esplori la\nregione: torna quando vuoi per\lscoprire quanto vale il tuo\linvestimento!
 
 #org @Stellavia_10_8_NPC10_text6
 [BLACK][05] stato un piacere fare affari con\nte, torna quando vuoi!
@@ -367,68 +367,23 @@ Su questa lavagna sono scritte\nformule incomprensibili.
 #org @Stellavia_10_8_NPC10_text7
 [BLACK]Torna quando vorrai prelevare i\ntuoi soldi!
 
-#org @Stellavia_10_8_NPC10_text_b50
-[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]50%[BLACK]. Vuoi ritirare i soldi?
+#org @Stellavia_10_8_NPC10_text_amount
+[BLACK]Quanto vuoi investire?
 
-#org @Stellavia_10_8_NPC10_text_b45
-[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]45%[BLACK]. Vuoi ritirare i soldi?
+#org @Stellavia_10_8_NPC10_text_plans
+[BLACK]Abbiamo tre piani di investimento.\p[GREEN]Prudente[BLACK]: un guadagno piccolo\nma sicuro, fino al [GREEN]25%[BLACK].\p[GREEN]Bilanciato[BLACK]: qualche rischio, ma\npuoi arrivare a raddoppiare.\p[GREEN]Speculativo[BLACK]: puoi perdere molto,\no triplicare il capitale!
 
-#org @Stellavia_10_8_NPC10_text_b40
-[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]40%[BLACK]. Vuoi ritirare i soldi?
+#org @Stellavia_10_8_NPC10_text_plan
+[BLACK]Quale piano scegli?
 
-#org @Stellavia_10_8_NPC10_text_b35
-[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]35%[BLACK]. Vuoi ritirare i soldi?
+#org @Stellavia_10_8_NPC10_text_gain
+[BLACK]Ottime notizie!\pIl tuo investimento ora vale\n[GREEN][BUFFER1] Poke[BLACK] ([GREEN]+[BUFFER2]%[BLACK]).\pVuoi ritirare i soldi?
 
-#org @Stellavia_10_8_NPC10_text_b30
-[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]30%[BLACK]. Vuoi ritirare i soldi?
+#org @Stellavia_10_8_NPC10_text_loss
+[BLACK]Mmmh[.]\pIl tuo investimento ora vale\n[RED][BUFFER1] Poke[BLACK] ([RED]-[BUFFER2]%[BLACK]).\pVuoi ritirare i soldi?
 
-#org @Stellavia_10_8_NPC10_text_b25
-[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]25%[BLACK]. Vuoi ritirare i soldi?
-
-#org @Stellavia_10_8_NPC10_text_b20
-[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]20%[BLACK]. Vuoi ritirare i soldi?
-
-#org @Stellavia_10_8_NPC10_text_b15
-[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]15%[BLACK]. Vuoi ritirare i soldi?
-
-#org @Stellavia_10_8_NPC10_text_b10
-[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]10%[BLACK]. Vuoi ritirare i soldi?
-
-#org @Stellavia_10_8_NPC10_text_b5
-[BLACK]Mmmh, il tuo investimento ha perso\nil [RED]5%[BLACK]. Vuoi ritirare i soldi?
-
-#org @Stellavia_10_8_NPC10_text_0
-[BLACK]Mmmh, il tuo investimento [1A] in\npari. Vuoi ritirare i soldi?
-
-#org @Stellavia_10_8_NPC10_text_5
-[BLACK]Buone notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]5%[BLACK]. Vuoi ritirare i soldi?
-
-#org @Stellavia_10_8_NPC10_text_10
-[BLACK]Buone notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]10%[BLACK]. Vuoi ritirare i soldi?
-
-#org @Stellavia_10_8_NPC10_text_15
-[BLACK]Buone notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]15%[BLACK]. Vuoi ritirare i soldi?
-
-#org @Stellavia_10_8_NPC10_text_20
-[BLACK]Buone notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]20%[BLACK]. Vuoi ritirare i soldi?
-
-#org @Stellavia_10_8_NPC10_text_25
-[BLACK]Buone notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]25%[BLACK]. Vuoi ritirare i soldi?
-
-#org @Stellavia_10_8_NPC10_text_30
-[BLACK]Buone notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]30%[BLACK]. Vuoi ritirare i soldi?
-
-#org @Stellavia_10_8_NPC10_text_35
-[BLACK]Buone notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]35%[BLACK]. Vuoi ritirare i soldi?
-
-#org @Stellavia_10_8_NPC10_text_40
-[BLACK]Ottime notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]40%[BLACK]. Vuoi ritirare i soldi?
-
-#org @Stellavia_10_8_NPC10_text_45
-[BLACK]Ottime notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]45%[BLACK]. Vuoi ritirare i soldi?
-
-#org @Stellavia_10_8_NPC10_text_50
-[BLACK]Ottime notizie!\pIl tuo investimento ha guadagnato\nil [GREEN]50%[BLACK]. Vuoi ritirare i soldi?
+#org @Stellavia_10_8_NPC10_text_even
+[BLACK]Il tuo investimento vale ancora\n[BUFFER1] Poke: il mercato non si\l[1A] ancora mosso.\pVuoi ritirare i soldi?
 
 #org @Stellavia_10_8_SIGN0
 Tauros [1A] il simbolo della\nPokeExchange,\lrappresenta il mercato rialzista.

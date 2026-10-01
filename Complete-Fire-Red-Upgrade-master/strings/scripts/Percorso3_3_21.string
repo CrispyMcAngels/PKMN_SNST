@@ -17,10 +17,12 @@
 [RED]Naomi[BLACK]: Che cosa?!?!\pIl [CUSTOM]Team Dusk[BLACK] ha attaccato il [GREEN]Passo\nTuono[BLACK]?\pOra capisco perch[1A] la polizia abbia\nchiuso l'ingresso al Passo[.]
 
 #org @Percorso3_3_21_tile4_text7
-[RED]Naomi[BLACK]: Questa parte [1A] chiara,\nma che cosa significa che un\lsignore che hai incontrato nella\l[GREEN]Foresta Frondosa[BLACK] [1A] apparso al [GREEN]Passo\lTuono[BLACK] e ti ha chiesto di andare a\l[GREEN]Roccavento[BLACK] con tuo fratello?\pPensavo quella citt[16] fosse abitata\nsolamente da strani monaci[.]\pChe cosa avr[16] a che fare questo\nsignore con loro?
+[RED]Naomi[BLACK]: Aspetta, fammi capire[.]\pQuel tipo della [GREEN]Foresta Frondosa[BLACK] era\nal [GREEN]Passo Tuono[BLACK], e ora vuole vedere\lte e tuo fratello a [GREEN]Roccavento[BLACK]?\pPensavo quella citt[16] fosse abitata\nsolamente da strani monaci[.]\pChe cosa c'entra lui con loro?
 
 #org @Percorso3_3_21_tile4_text8
-[RED]Naomi[BLACK]: Chiaro, come puoi sapere\ngi[16] tutto ora se devi ancora\landarci?
+[RED]Naomi[BLACK]: Non lo sai nemmeno tu, eh?\pBeh, immagino che lo scoprirai solo\nandandoci[.]
+
+
 
 #org @Percorso3_3_21_tile4_text9
 [RED]Naomi[BLACK]: Ho capito, perch[1A] non ci\nchiariamo un po' le idee con una\lbella sfida?

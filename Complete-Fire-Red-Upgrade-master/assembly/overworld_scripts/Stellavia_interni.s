@@ -886,322 +886,97 @@ EventScript_Stellavia_10_8_NPC9:
 	release
 	end
 
+@Sig. Dallors, director of the Poke-Exchange: invest 5000, 10000 or 20000 Poke in one of three plans.
+@The value changes with the steps the player walks (src/bank_investment.c), so asking again doesn't
+@change it. Flag 0x98B = money invested; vars 0x5030-0x5034 hold the investment.
 .global EventScript_Stellavia_10_8_NPC10
 EventScript_Stellavia_10_8_NPC10:
 	lock
 	faceplayer
 	checkflag 0x98B
-	if 0x1 _goto EventScript_Stellavia_10_8_NPC10_P3
+	if 0x1 _goto EventScript_Stellavia_10_8_NPC10_Invested
 	msgbox Stellavia_10_8_NPC10_text1 MSG_NORMAL
 	pause 0x1E
 	msgbox Stellavia_10_8_NPC10_text2 MSG_YESNO
 	compare 0x800D 0x1
-	if 0x1 _goto EventScript_Stellavia_10_8_NPC10_P1
-	msgbox Stellavia_10_8_NPC10_text3 MSG_NORMAL
+	if 0x0 _goto EventScript_Stellavia_10_8_NPC10_No
+	@How much
+	preparemsg Stellavia_10_8_NPC10_text_amount
+	waitmsg
+	setvar 0x8000 0x3 @Scrolling multichoice list 3: 5000 / 10000 / 20000 Poke
+	setvar 0x8001 0x3
+	setvar 0x8004 0x0 @Special 0x158 is only CFRU's scrolling multichoice when 0x8004 is 0
+	special 0x158
+	waitstate
+	compare 0x800D 0x7F
+	if 0x1 _goto EventScript_Stellavia_10_8_NPC10_No
+	copyvar 0x8005 0x800D
+	@Which plan
+	msgbox Stellavia_10_8_NPC10_text_plans MSG_NORMAL
+	preparemsg Stellavia_10_8_NPC10_text_plan
+	waitmsg
+	setvar 0x8000 0x4 @Scrolling multichoice list 4: Prudente / Bilanciato / Speculativo
+	setvar 0x8001 0x3
+	setvar 0x8004 0x0
+	special 0x158
+	waitstate
+	compare 0x800D 0x7F
+	if 0x1 _goto EventScript_Stellavia_10_8_NPC10_No
+	copyvar 0x8000 0x800D @Plan
+	copyvar 0x8001 0x8005 @Amount
+	callasm Investment_Start
+	compare 0x800D 0x0
+	if 0x1 _goto EventScript_Stellavia_10_8_NPC10_NoMoney
+	setflag 0x98B
+	sound 0x19
+	fanfare 0x10C
+	waitfanfare
+	msgbox Stellavia_10_8_NPC10_text5 MSG_NORMAL
 	release
 	end
 
-	EventScript_Stellavia_10_8_NPC10_P1:
-		checkmoney 0x1388 0x0
-		compare 0x800D 0x1
-		if 0x4 _goto EventScript_Stellavia_10_8_NPC10_P2
-		msgbox Stellavia_10_8_NPC10_text4 MSG_NORMAL
-		release 
-		end
-
-		EventScript_Stellavia_10_8_NPC10_P2:
-			sound 0x19
-			removemoney 0x1388 0x0
-			setflag 0x98B
-			fanfare 0x10C
-			waitfanfare
-			msgbox Stellavia_10_8_NPC10_text5 MSG_NORMAL
-			release 
-			end
-
-	EventScript_Stellavia_10_8_NPC10_P3:
-		random 0x14
-		compare 0x800D 0x0
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b50
-		compare 0x800D 0x1
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b45
-		compare 0x800D 0x2
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b40
-		compare 0x800D 0x3
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b35
-		compare 0x800D 0x4
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b30
-		compare 0x800D 0x5
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b25
-		compare 0x800D 0x6
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b20
-		compare 0x800D 0x7
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b15
-		compare 0x800D 0x8
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b10
-		compare 0x800D 0x9
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_b5
-		compare 0x800D 0xA
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_0
-		compare 0x800D 0xB
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_5
-		compare 0x800D 0xC
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_10
-		compare 0x800D 0xD
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_15
-		compare 0x800D 0xE
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_20
-		compare 0x800D 0xF
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_25
-		compare 0x800D 0x10
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_30
-		compare 0x800D 0x11
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_35
-		compare 0x800D 0x12
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_40
-		compare 0x800D 0x13
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_45
-		compare 0x800D 0x14
-		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_50
+	EventScript_Stellavia_10_8_NPC10_No:
+		closeonkeypress
+		msgbox Stellavia_10_8_NPC10_text3 MSG_NORMAL
 		release
 		end
 
-		EventScript_Stellavia_10_8_NPC10_END:
-			msgbox Stellavia_10_8_NPC10_text7 MSG_NORMAL
-			release 
-			end
+	EventScript_Stellavia_10_8_NPC10_NoMoney:
+		msgbox Stellavia_10_8_NPC10_text4 MSG_NORMAL
+		release
+		end
 
-		EventScript_Stellavia_10_8_NPC10_b50:
-			msgbox Stellavia_10_8_NPC10_text_b50 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0x9C4 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
+	EventScript_Stellavia_10_8_NPC10_Invested:
+		callasm Investment_Check @[BUFFER1] = value, [BUFFER2] = percent
+		compare 0x800D 0x0
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_Loss
+		compare 0x800D 0x1
+		if 0x1 _goto EventScript_Stellavia_10_8_NPC10_Gain
+		msgbox Stellavia_10_8_NPC10_text_even MSG_YESNO @Unchanged, or no market day yet
+		goto EventScript_Stellavia_10_8_NPC10_Withdraw
 
-		EventScript_Stellavia_10_8_NPC10_b45:
-			msgbox Stellavia_10_8_NPC10_text_b45 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0xABE 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
+	EventScript_Stellavia_10_8_NPC10_Loss:
+		msgbox Stellavia_10_8_NPC10_text_loss MSG_YESNO
+		goto EventScript_Stellavia_10_8_NPC10_Withdraw
 
-		EventScript_Stellavia_10_8_NPC10_b40:
-			msgbox Stellavia_10_8_NPC10_text_b40 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0xBB8 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
+	EventScript_Stellavia_10_8_NPC10_Gain:
+		msgbox Stellavia_10_8_NPC10_text_gain MSG_YESNO
 
-		EventScript_Stellavia_10_8_NPC10_b35:
-			msgbox Stellavia_10_8_NPC10_text_b35 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0xCB2 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
+	EventScript_Stellavia_10_8_NPC10_Withdraw:
+		compare 0x800D 0x1
+		if 0x0 _goto EventScript_Stellavia_10_8_NPC10_Keep
+		callasm Investment_Withdraw
+		clearflag 0x98B
+		fanfare 0x10C
+		waitfanfare
+		msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
+		release
+		end
 
-		EventScript_Stellavia_10_8_NPC10_b30:
-			msgbox Stellavia_10_8_NPC10_text_b30 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0xDAC 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
-		EventScript_Stellavia_10_8_NPC10_b25:
-			msgbox Stellavia_10_8_NPC10_text_b25 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0xEA6 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
-		EventScript_Stellavia_10_8_NPC10_b20:
-			msgbox Stellavia_10_8_NPC10_text_b20 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0xFA0 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
-		EventScript_Stellavia_10_8_NPC10_b15:
-			msgbox Stellavia_10_8_NPC10_text_b15 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0x109A 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
-		EventScript_Stellavia_10_8_NPC10_b10:
-			msgbox Stellavia_10_8_NPC10_text_b10 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0x1194 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
-		EventScript_Stellavia_10_8_NPC10_b5:
-			msgbox Stellavia_10_8_NPC10_text_b5 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0x128E 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
-		EventScript_Stellavia_10_8_NPC10_0:
-			msgbox Stellavia_10_8_NPC10_text_0 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0x1388 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
-		EventScript_Stellavia_10_8_NPC10_5:
-			msgbox Stellavia_10_8_NPC10_text_5 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0x1482 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
-		EventScript_Stellavia_10_8_NPC10_10:
-			msgbox Stellavia_10_8_NPC10_text_10 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0x157C 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
-		EventScript_Stellavia_10_8_NPC10_15:
-			msgbox Stellavia_10_8_NPC10_text_15 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0x1676 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
-		EventScript_Stellavia_10_8_NPC10_20:
-			msgbox Stellavia_10_8_NPC10_text_20 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0x1770 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
-		EventScript_Stellavia_10_8_NPC10_25:
-			msgbox Stellavia_10_8_NPC10_text_25 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0x186A 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
-		EventScript_Stellavia_10_8_NPC10_30:
-			msgbox Stellavia_10_8_NPC10_text_30 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0x1964 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
-		EventScript_Stellavia_10_8_NPC10_35:
-			msgbox Stellavia_10_8_NPC10_text_35 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0x1A5E 0x0
-			fanfare 0x10C
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
-		EventScript_Stellavia_10_8_NPC10_40:
-			msgbox Stellavia_10_8_NPC10_text_40 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0x1B58 0x0
-			fanfare 0x10D
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
-		EventScript_Stellavia_10_8_NPC10_45:
-			msgbox Stellavia_10_8_NPC10_text_45 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0x1C52 0x0
-			fanfare 0x10D
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
-		EventScript_Stellavia_10_8_NPC10_50:
-			msgbox Stellavia_10_8_NPC10_text_50 MSG_YESNO
-			compare 0x800D 0x1
-			if 0x0 _goto EventScript_Stellavia_10_8_NPC10_END
-			addmoney 0x1D4C 0x0
-			fanfare 0x10D
-			msgbox Stellavia_10_8_NPC10_text6 MSG_NORMAL
-			clearflag 0x98B
-			release
-			end
-
+	EventScript_Stellavia_10_8_NPC10_Keep:
+		msgbox Stellavia_10_8_NPC10_text7 MSG_NORMAL
+		release
+		end
 
 .global EventScript_Stellavia_10_8_Sign0
 EventScript_Stellavia_10_8_Sign0:

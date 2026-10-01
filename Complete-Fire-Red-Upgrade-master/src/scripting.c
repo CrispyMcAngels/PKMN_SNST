@@ -3087,6 +3087,12 @@ void ConvertCoinInt(u32 coinAmount)
 extern const u8 sBlueOwText_1[];
 extern const u8 sOrangeOwText_1[];
 extern const u8 sGreenOwText_1[];
+extern const u8 sInvestAmountText_5000[];
+extern const u8 sInvestAmountText_10000[];
+extern const u8 sInvestAmountText_20000[];
+extern const u8 sInvestPlanText_Prudente[];
+extern const u8 sInvestPlanText_Bilanciato[];
+extern const u8 sInvestPlanText_Speculativo[];
 extern const u8 sExampleText_4[];
 extern const u8 sExampleText_5[];
 extern const u8 sExampleText_6[];
@@ -3131,12 +3137,29 @@ static const u8* sMultichoiceSet3[] =
 	sGreenOwText_1,
 };
 
+//Poke-Exchange investment (bank_investment.c): amounts, then plans
+static const u8* sMultichoiceSet4[] =
+{
+	sInvestAmountText_5000,
+	sInvestAmountText_10000,
+	sInvestAmountText_20000,
+};
+
+static const u8* sMultichoiceSet5[] =
+{
+	sInvestPlanText_Prudente,
+	sInvestPlanText_Bilanciato,
+	sInvestPlanText_Speculativo,
+};
+
 // Multichoice Lists
 const struct ScrollingMulti gScrollingSets[] =
 {
 	{sMultichoiceSet1, ARRAY_COUNT(sMultichoiceSet1)},
 	{sMultichoiceSet2, ARRAY_COUNT(sMultichoiceSet2)},
 	{sMultichoiceSet3, ARRAY_COUNT(sMultichoiceSet3)},
+	{sMultichoiceSet4, ARRAY_COUNT(sMultichoiceSet4)}, //3: investment amount
+	{sMultichoiceSet5, ARRAY_COUNT(sMultichoiceSet5)}, //4: investment plan
 };
 
 //Link number of opts shown at once to the box height

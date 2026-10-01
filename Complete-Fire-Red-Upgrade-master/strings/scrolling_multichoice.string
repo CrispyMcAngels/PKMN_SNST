@@ -6,10 +6,28 @@
 [BLUE]Blu
 
 #org @sOrangeOwText_1
-[ORANGE]Ancioni
+[ORANGE]Arancioni
 
 #org @sGreenOwText_1
 [GREEN]Verdi
+
+#org @sInvestAmountText_5000
+5000 Poke
+
+#org @sInvestAmountText_10000
+10000 Poke
+
+#org @sInvestAmountText_20000
+20000 Poke
+
+#org @sInvestPlanText_Prudente
+Prudente
+
+#org @sInvestPlanText_Bilanciato
+Bilanciato
+
+#org @sInvestPlanText_Speculativo
+Speculativo
 
 #org @sExampleText_3
 Example 3

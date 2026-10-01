@@ -305,7 +305,7 @@ EventScript_Percorso_2_3_41_NPC2:
 .global EventScript_Percorso_2_3_41_NPC3
 EventScript_Percorso_2_3_41_NPC3:
 
-	trainerbattle0 0x0 0x3 0x0 Percorso_2_3_41_NPC3_text1 Percorso_2_3_41_NPC3_text1
+	trainerbattle0 0x0 0x3 0x0 Percorso_2_3_41_NPC3_text1 Percorso_2_3_41_NPC3_text2
 	msgbox Percorso_2_3_41_NPC3_text3 MSG_NORMAL
 	end
 
