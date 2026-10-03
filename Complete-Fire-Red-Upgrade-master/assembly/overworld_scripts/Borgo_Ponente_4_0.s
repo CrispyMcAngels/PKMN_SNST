@@ -5,52 +5,38 @@
 .include "../xse_defines.s"
 
 @Wardrobe: one menu listing only the outfits the player owns.
-@Blue is always available, orange with flag 0x964, green with flag 0x966.
-@The chosen outfit is stored in var 0x4068 (0x0 blue, 0x1 orange, 0x2 green).
-@The menu is CFRU's scrolling multichoice (special 0x158 with 0x8004 = 0, lists in src/scripting.c gScrollingSets):
-@0x8000 = 0 Blue/Orange, 1 Blue/Green, 2 Blue/Orange/Green.
+@Blue is always available, orange with flag 0x964, green with flag 0x966, red with flag 0x34D ("Consegna lampo" side quest).
+@The chosen outfit is stored in var 0x4068 (0x0 blue, 0x1 orange, 0x2 green, 0x3 red).
+@The menu is CFRU's scrolling multichoice (special 0x158 with 0x8004 = 0, lists in src/scripting.c gScrollingSets).
+@Wardrobe_PrepareMenu picks the list of the owned clothes, Wardrobe_GetChosenOutfit turns the choice into an outfit (0x8005).
 .global EventScript_Borgo_Ponente_4_0_Armadio
 EventScript_Borgo_Ponente_4_0_Armadio:
 	lock
-	checkflag 0x964
-	if 0x1 _goto EventScript_Borgo_Ponente_4_0_Armadio_HasOrange
-	checkflag 0x966
-	if 0x1 _goto EventScript_Borgo_Ponente_4_0_Armadio_BlueGreen
-	msgbox Borgo_Ponente_4_0_Armadio_text1 MSG_NORMAL @Only the blue clothes: the wardrobe is empty
-	release
-	end
+	callasm Wardrobe_PrepareMenu
+	compare 0x800D 0x0
+	if 0x1 _goto EventScript_Borgo_Ponente_4_0_Armadio_Empty
+	msgbox Borgo_Ponente_4_0_Armadio_Arancione_text1 MSG_NORMAL
+	preparemsg armadio_msg
+	waitmsg
+	setvar 0x8001 0x3 @Up to 3 options shown at once, the 4th scrolls
+	setvar 0x8004 0x0 @Special 0x158 is only CFRU's scrolling multichoice when 0x8004 is 0; other values freeze the script
+	special 0x158
+	waitstate
+	callasm Wardrobe_GetChosenOutfit
+	compare 0x8005 0x0
+	if 0x1 _goto Set_blue_OW
+	compare 0x8005 0x1
+	if 0x1 _goto Set_orange_OW
+	compare 0x8005 0x2
+	if 0x1 _goto Set_green_OW
+	compare 0x8005 0x3
+	if 0x1 _goto Set_red_OW
+	goto Set_OW_canceled
 
-	EventScript_Borgo_Ponente_4_0_Armadio_HasOrange:
-		setvar 0x8000 0x0 @Blue/Orange
-		checkflag 0x966
-		if 0x1 _call EventScript_Borgo_Ponente_4_0_Armadio_AllThree
-		goto EventScript_Borgo_Ponente_4_0_Armadio_Menu
-
-	EventScript_Borgo_Ponente_4_0_Armadio_AllThree:
-		setvar 0x8000 0x2 @Blue/Orange/Green
-		return
-
-	EventScript_Borgo_Ponente_4_0_Armadio_BlueGreen:
-		setvar 0x8000 0x1 @Blue/Green
-		goto EventScript_Borgo_Ponente_4_0_Armadio_Menu
-
-	EventScript_Borgo_Ponente_4_0_Armadio_Menu:
-		msgbox Borgo_Ponente_4_0_Armadio_Arancione_text1 MSG_NORMAL
-		preparemsg armadio_msg
-		waitmsg
-		setvar 0x8001 0x3 @Up to 3 options shown at once
-		setvar 0x8004 0x0 @Special 0x158 is only CFRU's scrolling multichoice when 0x8004 is 0; other values freeze the script
-		special 0x158
-		waitstate
-		compare 0x800D 0x7F
-		if 0x1 _goto Set_OW_canceled
-		compare 0x800D 0x0
-		if 0x1 _goto Set_blue_OW
-		compare 0x8000 0x1
-		if 0x1 _goto Set_green_OW @In the Blue/Green list the second option is green
-		compare 0x800D 0x1
-		if 0x1 _goto Set_orange_OW
-		goto Set_green_OW
+	EventScript_Borgo_Ponente_4_0_Armadio_Empty:
+		msgbox Borgo_Ponente_4_0_Armadio_text1 MSG_NORMAL @Only the blue clothes: the wardrobe is empty
+		release
+		end
 
 			Set_blue_OW:
 				compare 0x4068 0x0
@@ -82,6 +68,17 @@ EventScript_Borgo_Ponente_4_0_Armadio:
 
 				Already_Green_OW:
 					msgbox Borgo_Ponente_4_0_Armadio_already_green_text1 MSG_NORMAL
+					release
+					end
+
+			Set_red_OW:
+				compare 0x4068 0x3
+				if 0x1 _goto Already_Red_OW
+				setvar 0x4068 0x3
+				goto Set_OW_Reload
+
+				Already_Red_OW:
+					msgbox Borgo_Ponente_4_0_Armadio_already_red_text1 MSG_NORMAL
 					release
 					end
 

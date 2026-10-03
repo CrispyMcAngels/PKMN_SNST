@@ -978,6 +978,123 @@ EventScript_Stellavia_10_8_NPC10:
 		release
 		end
 
+@Stellavia bank elevator (map 10.8): the signs on the three elevator doors (x 10).
+@Floors: ground (door y 40), first (y 20), second (y 9). The list leaves out the current floor
+@(scrolling multichoice lists 5-7). The door opens, the player walks in, the door closes, and the warp
+@puts them on the target door: FireRed then opens it and walks them out, since the door block 0xB1 is
+@an animated warp door (behaviour 0x69, animation in graphics.doors.animations).
+.global EventScript_Stellavia_10_8_Elevator
+EventScript_Stellavia_10_8_Elevator:
+	lockall
+	getplayerpos 0x4001 0x4002
+	setvar 0x8000 0x7 @Second floor: the player stands at y 10
+	compare 0x4002 0x10
+	if 0x0 _goto Stellavia_10_8_Elevator_Menu @y < 16
+	setvar 0x8000 0x6 @First floor: y 21
+	compare 0x4002 0x20
+	if 0x0 _goto Stellavia_10_8_Elevator_Menu @y < 32
+	setvar 0x8000 0x5 @Ground floor: y 41
+
+	Stellavia_10_8_Elevator_Menu:
+		copyvar 0x4003 0x8000 @The list stands for the current floor
+		preparemsg Stellavia_10_8_Elevator_text1
+		waitmsg
+		setvar 0x8001 0x2
+		setvar 0x8004 0x0 @Special 0x158 is only CFRU's scrolling multichoice when 0x8004 is 0
+		special 0x158
+		waitstate
+		closeonkeypress
+		compare 0x800D 0x7F
+		if 0x1 _goto Stellavia_10_8_Elevator_Cancel
+		compare 0x4003 0x5
+		if 0x1 _goto Stellavia_10_8_Elevator_FromGround
+		compare 0x4003 0x6
+		if 0x1 _goto Stellavia_10_8_Elevator_FromFirst
+		goto Stellavia_10_8_Elevator_FromSecond
+
+	Stellavia_10_8_Elevator_FromGround:
+		call EventScript_FollowerMon_CutsceneHide
+		call Stellavia_10_8_Elevator_EnterGround
+		compare 0x800D 0x0
+		if 0x1 _goto Stellavia_10_8_Elevator_ToFirst
+		goto Stellavia_10_8_Elevator_ToSecond
+
+	Stellavia_10_8_Elevator_FromFirst:
+		call EventScript_FollowerMon_CutsceneHide
+		call Stellavia_10_8_Elevator_EnterFirst
+		compare 0x800D 0x0
+		if 0x1 _goto Stellavia_10_8_Elevator_ToGround
+		goto Stellavia_10_8_Elevator_ToSecond
+
+	Stellavia_10_8_Elevator_FromSecond:
+		call EventScript_FollowerMon_CutsceneHide
+		call Stellavia_10_8_Elevator_EnterSecond
+		compare 0x800D 0x0
+		if 0x1 _goto Stellavia_10_8_Elevator_ToGround
+		goto Stellavia_10_8_Elevator_ToFirst
+
+	@The door opens, the player walks in and disappears, the door closes (0x800D is kept for the choice)
+	Stellavia_10_8_Elevator_EnterGround:
+		copyvar 0x4003 0x800D
+		sound 0x42 @SE_DING_DONG, as in the subway
+		opendoor 0xA 0x28
+		waitdooranim
+		applymovement 0xFF Stellavia_10_8_Elevator_mov_in
+		waitmovement 0xFF
+		closedoor 0xA 0x28
+		waitdooranim
+		copyvar 0x800D 0x4003
+		return
+
+	Stellavia_10_8_Elevator_EnterFirst:
+		copyvar 0x4003 0x800D
+		sound 0x42
+		opendoor 0xA 0x14
+		waitdooranim
+		applymovement 0xFF Stellavia_10_8_Elevator_mov_in
+		waitmovement 0xFF
+		closedoor 0xA 0x14
+		waitdooranim
+		copyvar 0x800D 0x4003
+		return
+
+	Stellavia_10_8_Elevator_EnterSecond:
+		copyvar 0x4003 0x800D
+		sound 0x42
+		opendoor 0xA 0x9
+		waitdooranim
+		applymovement 0xFF Stellavia_10_8_Elevator_mov_in
+		waitmovement 0xFF
+		closedoor 0xA 0x9
+		waitdooranim
+		copyvar 0x800D 0x4003
+		return
+
+	@Warping onto a door: FireRed opens it, walks the player out and closes it
+	Stellavia_10_8_Elevator_ToGround:
+		warp 0xA 0x8 0xFF 0xA 0x28
+		releaseall
+		end
+
+	Stellavia_10_8_Elevator_ToFirst:
+		warp 0xA 0x8 0xFF 0xA 0x14
+		releaseall
+		end
+
+	Stellavia_10_8_Elevator_ToSecond:
+		warp 0xA 0x8 0xFF 0xA 0x9
+		releaseall
+		end
+
+	Stellavia_10_8_Elevator_Cancel:
+		releaseall
+		end
+
+	Stellavia_10_8_Elevator_mov_in:
+		.byte 0x11 @Walk up, into the elevator
+		.byte 0x60 @Invisible
+		.byte 0xFE
+
 .global EventScript_Stellavia_10_8_Sign0
 EventScript_Stellavia_10_8_Sign0:
 	msgbox Stellavia_10_8_SIGN0 0x7

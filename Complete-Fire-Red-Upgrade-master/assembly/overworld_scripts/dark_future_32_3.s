@@ -166,26 +166,11 @@ Dark_Future_32_3_Part1:
         setvar 0x4050 0xB
         setvar 0x4051 0x4E
 
-        //remove running shoes, 
-        clearflag 0x82F
-        //remove pokedex
-        clearflag 0x829
-        //remove bag
-        clearflag 0x995
-        //remove trainer name
-        clearflag 0x996
-        //remove dexnav
-        clearflag 0x91E
-        //remove save
-        clearflag 0x997
-        //remove side quest 
-        clearflag 0x998 
-        //remove time echoes 
-        clearflag 0x990
-
-        special 0x27
-        setvar 0x8004 0xF
-        special 0x62
+        //play as Myryam (player_characters.c): her own party, bag, money, name and sprites; the
+        //Pokedex, DexNav, side quests, Time Echoes and running shoes are off until the echo ends
+        setvar 0x501F 0x100 @the main character's own sprite, so it's the one put aside with him
+        setvar 0x5035 0x1
+        callasm PlayerCharacter_Switch
         givepokemon 0x44F 0x14 0x0 0x0 0x0 0x0
 
 

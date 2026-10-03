@@ -21,7 +21,7 @@
 [BLACK]Questo poster [1A] rovinato, sembra\nche un angolo si stia per staccare.\pVuoi guardare cosa c'[1A] dietro?
 
 #org @Ardesiopoli_6_7_Sign0_text3
-[LIGHT_BLUE][PLAYER][BLACK] sposta il Poster e scopre\nun passaggio segreto.
+[PLAYER_CUSTOM][PLAYER][BLACK] sposta il Poster e scopre\nun passaggio segreto.
 
 #org @Ardesiopoli_6_7_NPC1_text1
 [BLACK]La linea per [GREEN]Stellavia[BLACK]?\pInaugurazione rimandata[.] di nuovo.\pMa dicono che quando sar[16] pronta,\nci porter[16] fin nel cuore della\lcitt[16] pi[26] ricca di tutta [GREEN]Eyros[BLACK].

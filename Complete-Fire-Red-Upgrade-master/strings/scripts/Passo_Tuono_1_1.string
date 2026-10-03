@@ -29,7 +29,7 @@
 Sembra esserci un pulsante su\nquesta statuina, vuoi premerlo?
 
 #org @Passo_Tuono_1_1_Sign4_text2
-[LIGHT_BLUE][PLAYER][BLACK] preme il pulsante!
+[PLAYER_CUSTOM][PLAYER][BLACK] preme il pulsante!
 
 #org @Passo_Tuono_1_1_Sign4_text3
 Qualcosa si [1A] mosso poco lontano\nda qui[.]

@@ -1,14 +1,18 @@
 #include "defines.h"
 
+#include "../include/new/dynamic_ow_pals.h"
+
 /**
  * \file text_palette.c
- * \brief Lets a var replace one color of the standard text palette at runtime.
+ * \brief Lets a var replace one color of the standard text palette at runtime ([CUSTOM]),
+ *        and gives the player's name the color of their outfit ([PLAYER_CUSTOM]).
  */
 
 #define sStdTextPalettes ((const u16*) 0x08471DEC) //5 palettes of 16 colors
 #define sCustomStdTextPal ((u16*) 0x0203B774) //32 bytes: RAM copy of the first palette with the custom color
 #define NUM_STD_TEXT_PALETTES 5
 #define NUM_BG_PALETTES 16
+#define TEXT_PAL_PLAYER_DEFAULT_COLOR 9 //[PLAYER_CUSTOM], for the original blue clothes
 
 //This file's functions:
 static bool8 IsStdTextPaletteLoadedAt(const u16* loadedPal);
@@ -19,12 +23,22 @@ const u16* GetStdTextPalette(u8 id)
 	if (id >= NUM_STD_TEXT_PALETTES)
 		id = NUM_STD_TEXT_PALETTES - 1;
 
-	#ifdef VAR_TEXT_PAL_CUSTOM_COLOR
-	u16 customColor = VarGet(VAR_TEXT_PAL_CUSTOM_COLOR);
-	if (id == 0 && customColor != 0)
+	#if defined VAR_TEXT_PAL_CUSTOM_COLOR || defined TEXT_PAL_PLAYER_COLOR_SLOT
+	if (id == 0)
 	{
 		memcpy(sCustomStdTextPal, sStdTextPalettes, 16 * sizeof(u16));
-		sCustomStdTextPal[TEXT_PAL_CUSTOM_COLOR_SLOT] = customColor & 0x7FFF; //Bit 15 is unused by the GBA, so 0x8000 is black
+
+		#ifdef VAR_TEXT_PAL_CUSTOM_COLOR
+		u16 customColor = VarGet(VAR_TEXT_PAL_CUSTOM_COLOR);
+		if (customColor != 0)
+			sCustomStdTextPal[TEXT_PAL_CUSTOM_COLOR_SLOT] = customColor & 0x7FFF; //Bit 15 is unused by the GBA, so 0x8000 is black
+		#endif
+
+		#ifdef TEXT_PAL_PLAYER_COLOR_SLOT
+		//Set in the wardrobe, which warps right after, so the text boxes load the new color then
+		sCustomStdTextPal[TEXT_PAL_PLAYER_COLOR_SLOT] = GetPlayerOutfitTextColor(sStdTextPalettes[TEXT_PAL_PLAYER_DEFAULT_COLOR]);
+		#endif
+
 		return sCustomStdTextPal;
 	}
 	#endif
@@ -32,12 +46,19 @@ const u16* GetStdTextPalette(u8 id)
 	return &sStdTextPalettes[id * 16];
 }
 
-//Compares everything but the custom color, since it may hold an older custom value
+//Compares everything but the custom colors, since they may hold other values
 static bool8 IsStdTextPaletteLoadedAt(const u16* loadedPal)
 {
 	for (u32 i = 0; i < 16; ++i)
 	{
-		if (i != TEXT_PAL_CUSTOM_COLOR_SLOT && loadedPal[i] != sStdTextPalettes[i])
+		if (i == TEXT_PAL_CUSTOM_COLOR_SLOT)
+			continue;
+		#ifdef TEXT_PAL_PLAYER_COLOR_SLOT
+		if (i == TEXT_PAL_PLAYER_COLOR_SLOT)
+			continue;
+		#endif
+
+		if (loadedPal[i] != sStdTextPalettes[i])
 			return FALSE;
 	}
 

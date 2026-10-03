@@ -520,6 +520,16 @@ EventScript_Percorso2_3_41_tile3:
 		.byte 0x13
 		.byte 0xFE
 
+@Behind the Cut tree: tells the player about the special grass (encounter type 5: 50% chance of a wild
+@double battle, only with at least 2 Pokemon able to fight)
+.global EventScript_Percorso_2_3_41_DoubleGrass
+EventScript_Percorso_2_3_41_DoubleGrass:
+	lock
+	faceplayer
+	msgbox Percorso_2_3_41_DoubleGrass_text1 MSG_NORMAL
+	release
+	end
+
 .global EventScript_Percorso_2_3_41_NPC10
 EventScript_Percorso_2_3_41_NPC10:
 	giveitem 0xD 0x1 MSG_FIND
@@ -528,4 +538,111 @@ EventScript_Percorso_2_3_41_NPC10:
 .global EventScript_Percorso_2_3_41_NPC11
 EventScript_Percorso_2_3_41_NPC11:
 	giveitem 0x40 0x1 MSG_FIND
+	end
+
+@"Consegna lampo" side quest (src/courier_quest.c): the officer lends the player his Rapidash to bring a parcel
+@to the scientist on Percorso 4 (map 3.22, NPC 8) within COURIER_QUEST_MAX_STEPS steps.
+@Var 0x5042: 0 = not delivering, 1 = delivering, 2 = delivered. Flag 0x34C = quest started (side quest list),
+@flag 0x34D = completed (the red clothes in the wardrobe).
+.global EventScript_Percorso_2_3_41_Courier
+EventScript_Percorso_2_3_41_Courier:
+	lock
+	faceplayer
+	checkflag 0x34D
+	if 0x1 _goto EventScript_Percorso_2_3_41_Courier_Done
+	compare 0x5042 0x2
+	if 0x1 _goto EventScript_Percorso_2_3_41_Courier_Reward
+	compare 0x5042 0x1
+	if 0x1 _goto EventScript_Percorso_2_3_41_Courier_Hurry
+	checkflag 0x34C
+	if 0x1 _goto EventScript_Percorso_2_3_41_Courier_Retry
+	msgbox Percorso_2_3_41_Courier_text_intro MSG_YESNO
+	goto EventScript_Percorso_2_3_41_Courier_Answer
+
+	EventScript_Percorso_2_3_41_Courier_Retry:
+		msgbox Percorso_2_3_41_Courier_text_retry MSG_YESNO
+
+	EventScript_Percorso_2_3_41_Courier_Answer:
+		compare 0x800D 0x0
+		if 0x1 _goto EventScript_Percorso_2_3_41_Courier_Refuse
+		setflag 0x34C
+		callasm CourierQuest_BufferMaxSteps
+		msgbox Percorso_2_3_41_Courier_text_rules MSG_NORMAL
+		cry 0x4E 0x0
+		waitcry
+		callasm CourierQuest_Start @On Rapidash, bike speed and music, the steps start counting
+		msgbox Percorso_2_3_41_Courier_text_mount MSG_NORMAL
+		release
+		end
+
+	EventScript_Percorso_2_3_41_Courier_Refuse:
+		msgbox Percorso_2_3_41_Courier_text_refuse MSG_NORMAL
+		release
+		end
+
+	EventScript_Percorso_2_3_41_Courier_Hurry:
+		msgbox Percorso_2_3_41_Courier_text_hurry MSG_NORMAL
+		release
+		end
+
+	EventScript_Percorso_2_3_41_Courier_Reward:
+		msgbox Percorso_2_3_41_Courier_text_thanks MSG_NORMAL
+		fanfare 0x0101
+		msgbox Percorso_2_3_41_Courier_text_obtain MSG_NORMAL
+		setflag 0x34D @Quest completed: red clothes in the wardrobe
+		setvar 0x5042 0x0
+		pause 0x1E
+		msgbox Percorso_2_3_41_Courier_text_wardrobe MSG_NORMAL
+		release
+		end
+
+	EventScript_Percorso_2_3_41_Courier_Done:
+		msgbox Percorso_2_3_41_Courier_text_done MSG_NORMAL
+		release
+		end
+
+@Started by src/courier_quest.c while delivering: B or Select pressed
+.global EventScript_CourierQuest_AskQuit
+EventScript_CourierQuest_AskQuit:
+	lockall
+	msgbox CourierQuest_text_ask_quit MSG_YESNO
+	compare 0x800D 0x1
+	if 0x1 _goto EventScript_CourierQuest_Quit
+	releaseall
+	end
+
+@Started by src/courier_quest.c while delivering: a door or warp into a building
+.global EventScript_CourierQuest_AskQuitIndoor
+EventScript_CourierQuest_AskQuitIndoor:
+	lockall
+	msgbox CourierQuest_text_indoor MSG_YESNO
+	compare 0x800D 0x1
+	if 0x1 _goto EventScript_CourierQuest_Quit
+	releaseall
+	end
+
+EventScript_CourierQuest_Quit:
+	callasm CourierQuest_Cancel @Off Rapidash, the quest can be started again from the officer
+	cry 0x4E 0x0
+	waitcry
+	msgbox CourierQuest_text_quit MSG_NORMAL
+	releaseall
+	end
+
+@Started by src/courier_quest.c while delivering: COURIER_QUEST_WARNING_1/2 steps left ([BUFFER1])
+.global EventScript_CourierQuest_Warning
+EventScript_CourierQuest_Warning:
+	lockall
+	msgbox CourierQuest_text_warning MSG_NORMAL
+	releaseall
+	end
+
+@Started by src/courier_quest.c while delivering: no steps left. Back to the officer, on foot
+.global EventScript_CourierQuest_TooLate
+EventScript_CourierQuest_TooLate:
+	lockall
+	msgbox CourierQuest_text_too_late MSG_NORMAL
+	fadescreen 0x1
+	callasm CourierQuest_Cancel
+	warp 0x3 0x29 0xFF 0x19 0x19 @Percorso 2, in front of the officer
 	end

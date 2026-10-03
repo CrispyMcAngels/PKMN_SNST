@@ -14,13 +14,13 @@
 [BLACK]Nooo, questo non [1A] il Pok\emon\nche cercavo[.]
 
 #org @EventScript_Miralba_5_2_NPC1_text5
-[LIGHT_BLUE][PLAYER][BLACK] da [GREEN]Skiddo[BLACK] alla ragazza.
+[PLAYER_CUSTOM][PLAYER][BLACK] da [GREEN]Skiddo[BLACK] alla ragazza.
 
 #org @EventScript_Miralba_5_2_NPC1_text6
 [BLACK]Wow, non ci credo!\nSei riuscito a trovare uno [GREEN]Skiddo[BLACK]!\pPrendi questo come ricompensa!
 
 #org @EventScript_Miralba_5_2_NPC1_text7
-[LIGHT_BLUE][PLAYER][BLACK] riceve vestiti verdi.
+[PLAYER_CUSTOM][PLAYER][BLACK] riceve vestiti verdi.
 
 #org @EventScript_Miralba_5_2_NPC1_text8
 [BLACK]Puoi cambiare i tuoi vestiti\ninteragendo con l'armadio\ldi casa tua.

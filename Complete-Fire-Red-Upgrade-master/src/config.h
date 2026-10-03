@@ -71,6 +71,7 @@
 #define FOLLOWER_POKEMON_UNLOCK_VALUE 0x0100
 #define VAR_TEXT_PAL_CUSTOM_COLOR 0x503E //If not 0, replaces color TEXT_PAL_CUSTOM_COLOR_SLOT of the standard text palette (0x471DEC) with this GBA color (0x0001-0x7FFF, use 0x8000 for black). Comment out this line to remove the feature.
 #define TEXT_PAL_CUSTOM_COLOR_SLOT 11
+#define TEXT_PAL_PLAYER_COLOR_SLOT 13 //[PLAYER_CUSTOM]: the player's name color, the lighter clothes color of the outfit in var 0x4068 (dynamic_ow_pals.c). Comment out this line to remove the feature.
 #define VAR_PARALLAX 0x400A //Temp var (cleared on every warp) for BG3 parallax, set in the map's on-transition script: 0xIIXY = image II (see bg3_parallax.c, 0 = off) scrolling at horizontal speed X and vertical speed Y (0 = 0%, 1 = 25%, 2 = 50%, 3 = 75%, 4 = 100%, 5 = fit to the map size so the image never repeats). Comment out this line to remove the feature.
 #define PARALLAX_TILE_OFFSET 50 //First tile in BG char block 3 used by parallax images (the tiles before it hold the text box frames). Images can use 256 minus this many unique tiles.
 #define PARALLAX_PAL_SLOT 11 //BG palette slot parallax images use. Tilesets on parallax maps must not use this palette.
@@ -119,6 +120,7 @@ enum //These vars need to be one after the other (hence the enum)
 
 /*===== Character Customization Vars =====*/
 #define VAR_PLAYER_WALKRUN 0x501F			//Change walking, running player sprite. 0x4054 in JPAN engine.
+#define VAR_PLAYER_CHARACTER 0x5035		//Character being played: 0 = the main character, 1-5 = the Time Echo protagonists in gEchoCharacters (player_characters.c). Each has its own party, bag, money, name and sprites.
 #define VAR_PLAYER_BIKING 0x5020			//Change biking player sprite. 0x4055 in JPAN engine.
 #define VAR_PLAYER_SURFING 0x5021			//Change player surfing sprite. 0x4056 in JPAN engine.
 #define VAR_PLAYER_HM_USE 0x5022			//Change field move usage sprite. 0x4057 in JPAN engine.
@@ -128,6 +130,13 @@ enum //These vars need to be one after the other (hence the enum)
 #define VAR_PLAYER_UNDERWATER 0x5025		//Change underwater sprite.
 #define VAR_LEVEL_UP_TO_CAP 0x502A //Used by EventScript_LevelPartyToCap (level_up_to_cap.c): this var and the next 3 (to 0x502D). Not the 0x8004+ vars: the summary and evolution screens change those.
 #define VAR_SKY_MOUNT 0x5029				//Pokemon the player rides in the sky (sky_mount.c): 0 = none, 1+ = entry in sSkyMounts. Set it before warping into a sky map, clear it before warping out. Comment out this line to remove the feature.
+#define VAR_COURIER_STATE 0x5042			//"Consegna lampo" side quest (courier_quest.c): 0 = not delivering, 1 = delivering, 2 = delivered. Comment out this line to remove the feature.
+#define VAR_COURIER_START_STEPS 0x5043	//Step count when the delivery started: this var and the next (0x5044)
+#define COURIER_QUEST_MAX_STEPS 250		//Steps to reach the scientist on Percorso 4
+#define COURIER_QUEST_WARNING_1 100		//Steps left when the first warning comes
+#define COURIER_QUEST_WARNING_2 30		//Steps left when the last warning comes
+#define COURIER_QUEST_MOUNT 2			//Rapidash in sSkyMounts (sky_mount.c)
+#define FLAG_CUT_TREES_TEMP 0x12		//Temporary flag that hides the Cut trees on the way, kept set while delivering
 #define VAR_TRAINERCARD_MALE 0x5026			//Change trainer card image (male). 0x4060 in JPAN engine.
 #define VAR_TRAINERCARD_FEMALE 0x5027		//Change trainer card image (female). 0x4061 in JPAN engine.
 

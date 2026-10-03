@@ -88,6 +88,88 @@ gMapScripts_Roccavento_3_3:
 
 //___NPCs___
 
+@The old man who owns the farmers' market: a shop that stays on the map (src/overworld_shop.c, shop 0).
+@The stock is listed beside the money box; the quantity is picked like in a mart.
+.global EventScript_Roccavento_3_3_NPC0
+EventScript_Roccavento_3_3_NPC0:
+	lock
+	faceplayer
+	preparemsg Roccavento_3_3_NPC0_text1
+	waitmsg
+	showmoney 0x0 0x0
+	setvar 0x8005 0x0 @Shop 0: Roccavento farmers' market
+	callasm OverworldShop_Open
+
+	Roccavento_3_3_NPC0_Shop:
+		setvar 0x8000 0x80 @OVERWORLD_SHOP_LIST: the open shop's stock
+		setvar 0x8001 0x5 @Items shown at once
+		setvar 0x8004 0x0 @Special 0x158 is only CFRU's scrolling multichoice when 0x8004 is 0
+		special 0x158
+		waitstate
+		compare 0x800D 0x7F
+		if 0x1 _goto Roccavento_3_3_NPC0_Leave
+		copyvar 0x8005 0x800D
+		callasm OverworldShop_SelectItem @[BUFFER1] = item
+		compare 0x800D 0x0
+		if 0x1 _goto Roccavento_3_3_NPC0_NoMoney
+		compare 0x800D 0x2
+		if 0x1 _goto Roccavento_3_3_NPC0_BagFull
+		preparemsg Roccavento_3_3_NPC0_text_howmany
+		waitmsg
+		callasm OverworldShop_ChooseQuantity @[BUFFER2] = quantity, [BUFFER3] = total price
+		waitstate
+		compare 0x800D 0x0
+		if 0x1 _goto Roccavento_3_3_NPC0_Again
+		msgbox Roccavento_3_3_NPC0_text_confirm MSG_YESNO
+		compare 0x800D 0x0
+		if 0x1 _goto Roccavento_3_3_NPC0_Again
+		callasm OverworldShop_Buy
+		compare 0x800D 0x0
+		if 0x1 _goto Roccavento_3_3_NPC0_BagFull
+		updatemoney 0x0 0x0
+		sound 0xF8 @SE_MONEY, as in the mart
+		msgbox Roccavento_3_3_NPC0_text_thanks MSG_NORMAL
+
+	Roccavento_3_3_NPC0_Again:
+		preparemsg Roccavento_3_3_NPC0_text_more
+		waitmsg
+		goto Roccavento_3_3_NPC0_Shop
+
+	Roccavento_3_3_NPC0_NoMoney:
+		msgbox Roccavento_3_3_NPC0_text_nomoney MSG_NORMAL
+		goto Roccavento_3_3_NPC0_Again
+
+	Roccavento_3_3_NPC0_BagFull:
+		msgbox Roccavento_3_3_NPC0_text_bagfull MSG_NORMAL
+		goto Roccavento_3_3_NPC0_Again
+
+	Roccavento_3_3_NPC0_Leave:
+		callasm OverworldShop_Close
+		hidemoney 0x0 0x0
+		msgbox Roccavento_3_3_NPC0_text2 MSG_NORMAL
+		release
+		end
+
+@Local ID 2: bald man in a dark robe, near the west bridge
+.global EventScript_Roccavento_3_3_NPC1
+EventScript_Roccavento_3_3_NPC1:
+	lock
+	faceplayer
+	msgbox Roccavento_3_3_NPC1_text1 MSG_NORMAL
+	release
+	end
+
+@Local ID 13: Crispy, after the cutscene. PLACEHOLDER text
+.global EventScript_Roccavento_3_3_NPC12
+EventScript_Roccavento_3_3_NPC12:
+	lock
+	faceplayer
+	show_mugshot CRISPY
+	msgbox Roccavento_3_3_NPC12_text1 MSG_NORMAL
+	special 0x15A
+	release
+	end
+
 .global EventScript_Roccavento_3_3_NPC2
 EventScript_Roccavento_3_3_NPC2:
 	lock

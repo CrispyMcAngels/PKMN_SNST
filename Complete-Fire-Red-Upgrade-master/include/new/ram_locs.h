@@ -143,13 +143,14 @@
 #define gExpandedFlags ((u8*) 0x0203B174)
 #define gExpandedVars ((u16*) (0x0203B174 + 0x200))
 
-//0x203B774 - 0x203B793: sCustomStdTextPal (text_palette.c)
+//0x203B774 - 0x203B793: sCustomStdTextPal (text_palette.c): standard text palette 0 with the [CUSTOM] and [PLAYER_CUSTOM] colors
 extern u16 gLastUsedBall; //0x203B794
 //FREE: 0x203B796
 //0x203B798 - 0x203B79D: sBg2FadeState (bg2_fade.c)
 //FREE: 0x203B79E
 //0x203B7A0 - 0x203B7A5: sParallaxState (bg3_parallax.c)
 //FREE: 0x203B7A6
+//0x203B7A8 - 0x203B7AB: sOverworldShop (overworld_shop.c)
 #define gPcSelectionTracker ((u8* 0x203B7AC)	// state tracker for pc selection
 #define gCreateSpriteTableSetter 0x203B7AD  // allow createsprite to load from a table as well
 #define gTimerValue (*(u16*) 0x203B7AE)

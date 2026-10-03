@@ -1,0 +1,17 @@
+//Fixed names of the Time Echo protagonists (player_characters.c, gEchoCharacters).
+//At most 7 letters. The main character keeps the name the player chose.
+
+#org @gText_EchoCharacterName_Myryam
+Myryam
+
+#org @gText_EchoCharacterName_2
+Eco2
+
+#org @gText_EchoCharacterName_3
+Eco3
+
+#org @gText_EchoCharacterName_4
+Eco4
+
+#org @gText_EchoCharacterName_5
+Eco5

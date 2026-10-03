@@ -1,0 +1,15 @@
+./assembly/../xse_defines.s: Assembler messages:
+./assembly/../xse_defines.s: Warning: end of file not at end of a line; newline inserted
+./assembly/../xse_defines.s: Assembler messages:
+./assembly/../xse_defines.s: Warning: end of file not at end of a line; newline inserted
+Assembling ./assembly\overworld_scripts\Ardesiopoli_3_2.s
+Assembling ./assembly\overworld_scripts\Borgo_Ponente_3_0.s
+Compiling ./src\text_palette.c
+Building Strings ./strings\scripts\Percorso2_3_41.string
+Built in 0:00:01.598889.
+Inserting code.
+Symbol missing: //gFieldEffectScript_TallGrass
+Symbol missing: //gFieldEffectScript_JumpTallGrass
+Inserted in 0:00:02.340888.
+Engine: 1,549,121 bytes at 0x9609250-0x9783591. 576,111 bytes left before SPACE_END.
+Engine (second region): 639,520 bytes at 0x9100000-0x919C220. 81,376 bytes left before ROM2_END.

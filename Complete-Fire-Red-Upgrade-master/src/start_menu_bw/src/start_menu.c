@@ -138,6 +138,7 @@ static void CommitWindow(u8 windowId);
 static void CleanWindows(void); 
 static void CommitWindows(void); 
 static void PrintGUIMenuItemsName(void);
+bool8 GetEchoCharacterMenuIcon(const void** gfx, const u16** pal); //player_characters.c
 static void DrawIcons(void);
 void CB2_SaveFromStartMenu(void);
 void StartMenu_Init(void); 
@@ -561,8 +562,12 @@ static void DrawIcons(void)
         break; 
       x = (PANEL_X -11) + (HSPACING-2+ 64/2 + 64)*i;
       y = (PANEL_Y-3)+ (VSPACING +32)*j; 
-      LoadSpriteSheet(&StartMenuIconTable[onscreenmenuitems[counter]].spritesheet); 
-      LoadSpritePalette(&StartMenuIconTable[onscreenmenuitems[counter]].spritepalette);
+      struct SpriteSheet sheet = StartMenuIconTable[onscreenmenuitems[counter]].spritesheet;
+      struct SpritePalette palette = StartMenuIconTable[onscreenmenuitems[counter]].spritepalette;
+      if (onscreenmenuitems[counter] == STARTMENU_PLAYER)
+        GetEchoCharacterMenuIcon(&sheet.data, &palette.data); //Time Echo protagonists have their own icon (player_characters.c)
+      LoadSpriteSheet(&sheet); 
+      LoadSpritePalette(&palette);
       u8 SpriteId = CreateSprite(&StartMenuIconTable[onscreenmenuitems[counter]].sprtemplate , x, y, 0);
       gSprites[SpriteId].data[0] = counter;
       gSprites[SpriteId].data[1] = 3;

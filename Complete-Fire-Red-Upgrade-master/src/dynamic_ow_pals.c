@@ -54,11 +54,10 @@ static const struct PaletteOverrideEntry sNpc0PaletteOverride2[] =
 	{PALETTE_OVERRIDE_END, 0},
 };
 
-static const struct PaletteOverrideEntry sNpc0PaletteOverride3[] =
+static const struct PaletteOverrideEntry sNpc0PaletteOverride3[] = //Red clothes (wardrobe, reward of the "Consegna lampo" side quest)
 {
-	{1, RGB(24, 8, 28)},
-	{2, RGB(17, 5, 20)},
-	{3, RGB(12, 3, 14)},
+	{5, RGB(29, 7, 7)},
+	{7, RGB(19, 3, 4)},
 	{PALETTE_OVERRIDE_END, 0},
 };
 
@@ -127,10 +126,10 @@ static const struct PaletteOverrideEntry sPortraitPaletteOverride2[] =
 	{PALETTE_OVERRIDE_END, 0},
 };
 
-static const struct PaletteOverrideEntry sPortraitPaletteOverride3[] =
+static const struct PaletteOverrideEntry sPortraitPaletteOverride3[] = //Red clothes (wardrobe, reward of the "Consegna lampo" side quest)
 {
-	{14, RGB(24, 8, 28)},
-	{15, RGB(17, 5, 20)},
+	{14, RGB(29, 7, 7)},
+	{15, RGB(19, 3, 4)},
 	{PALETTE_OVERRIDE_END, 0},
 };
 
@@ -492,6 +491,37 @@ static void TryApplyPortraitPaletteOverride(u16 palTag, u8 palSlot)
 {
 	if (palTag == PLAYER_PORTRAIT_PAL_TAG)
 		ApplyPaletteOverride(sPortraitPaletteOverrides, palSlot);
+}
+
+//@Details: The text color of the player's name ([PLAYER_CUSTOM], text_palette.c): the lighter of the two clothes
+//			colors of the outfit in var 0x4068. The original blue clothes (no override) keep defaultColor.
+u16 GetPlayerOutfitTextColor(u16 defaultColor)
+{
+	u16 overrideVarValue = VarGet(NPC0_PAL_OVERRIDE_VAR);
+	const struct PaletteOverrideEntry* overrideEntries;
+	u16 lightest = defaultColor;
+	u32 bestBrightness = 0;
+
+	if (overrideVarValue == NPC0_PAL_OVERRIDE_DISABLED)
+		return defaultColor;
+
+	overrideEntries = GetPaletteOverrideByVarValue(sPortraitPaletteOverrides, overrideVarValue);
+	if (overrideEntries == NULL)
+		return defaultColor;
+
+	for (int i = 0; overrideEntries[i].index != PALETTE_OVERRIDE_END; ++i)
+	{
+		u16 color = overrideEntries[i].color;
+		u32 brightness = Red(color) + Green(color) + Blue(color);
+
+		if (brightness >= bestBrightness)
+		{
+			bestBrightness = brightness;
+			lightest = color;
+		}
+	}
+
+	return lightest;
 }
 
 u8 GetPalSlotMisc(u32 OBJData)

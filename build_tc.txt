@@ -1,0 +1,52 @@
+./assembly/../xse_defines.s: Assembler messages:
+./assembly/../xse_defines.s: Warning: end of file not at end of a line; newline inserted
+Assembling ./assembly\overworld_scripts\Borgo_Ponente_4_0.s
+Compiling ./src\character_customization.c
+Compiling ./src\dynamic_ow_pals.c
+Compiling ./src\scripting.c
+Compiling ./src\text_palette.c
+Compiling ./src\side_quests\side_quests.c
+Building Strings ./strings\scripts\Ardesiopoli_3_2.string
+Building Strings ./strings\scripts\Ardesiopoli_6_1.string
+Building Strings ./strings\scripts\Ardesiopoli_6_2.string
+Building Strings ./strings\scripts\Ardesiopoli_6_7.string
+Building Strings ./strings\scripts\Ardesiopoli_6_8.string
+Building Strings ./strings\scripts\borgo_ponente_3_0.string
+Building Strings ./strings\scripts\borgo_ponente_4_0.string
+Building Strings ./strings\scripts\borgo_ponente_4_1.string
+Building Strings ./strings\scripts\borgo_ponente_4_2.string
+Building Strings ./strings\scripts\borgo_ponente_4_3.string
+Building Strings ./strings\scripts\borgo_ponente_4_4.string
+Building Strings ./strings\scripts\Capp_temporale_3_47.string
+Building Strings ./strings\scripts\Foresta_Frondosa_1_0.string
+Building Strings ./strings\scripts\GrtVentiSuss_1_37.string
+Building Strings ./strings\scripts\GrtVentiSuss_1_38.string
+Building Strings ./strings\scripts\Miralba_3_1.string
+Building Strings ./strings\scripts\Miralba_5_2.string
+Building Strings ./strings\scripts\Passo_Tuono_1_1.string
+Building Strings ./strings\scripts\Passo_Tuono_1_124.string
+Building Strings ./strings\scripts\Passo_Tuono_1_131.string
+Building Strings ./strings\scripts\Passo_Tuono_1_2.string
+Building Strings ./strings\scripts\Percorso1_3_19.string
+Building Strings ./strings\scripts\Percorso2_3_41.string
+Building Strings ./strings\scripts\Percorso3_3_21.string
+Building Strings ./strings\scripts\Percorso4_3_22.string
+Building Strings ./strings\scripts\Percorso_11_3_25.string
+Building Strings ./strings\scripts\Percorso_12_3_23.string
+Building Strings ./strings\scripts\Pozzo_eco_1_31.string
+Building Strings ./strings\scripts\Radiantia_3_4.string
+Building Strings ./strings\scripts\Radiantia_8_2.string
+Building Strings ./strings\scripts\Radiantia_8_6.string
+Building Strings ./strings\scripts\Risaia_Rosa_3_50.string
+Building Strings ./strings\scripts\Roccavento_3_3.string
+Building Strings ./strings\scripts\Rovine_Ancestrali_1_33.string
+Building Strings ./strings\scripts\Rovine_Ancestrali_1_34.string
+Building Strings ./strings\scripts\Rovine_Ancestrali_1_35.string
+Building Strings ./strings\scripts\TimeTravel_1_123.string
+Built in 0:00:03.418890.
+Inserting code.
+Symbol missing: //gFieldEffectScript_TallGrass
+Symbol missing: //gFieldEffectScript_JumpTallGrass
+Inserted in 0:00:02.295908.
+Engine: 1,549,145 bytes at 0x9609250-0x97835A9. 576,087 bytes left before SPACE_END.
+Engine (second region): 639,520 bytes at 0x9100000-0x919C220. 81,376 bytes left before ROM2_END.

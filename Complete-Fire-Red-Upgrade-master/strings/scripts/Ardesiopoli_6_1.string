@@ -1,12 +1,12 @@
 //_/////////////////////////////////
 #org @Ardesiopoli_6_1_NPC0_text1
-[ORANGE]Filiberto[BLACK]: Ciao [LIGHT_BLUE][PLAYER][BLACK], vedo che\nhai seguito il mio consiglio e sei\lvenuto fin qui!\pSeguimi, voglio mostrarti lo stato\ndelle ricerche sulle rovine della\l[GREEN]Foresta Frondosa[BLACK][.]
+[ORANGE]Filiberto[BLACK]: Ciao [PLAYER_CUSTOM][PLAYER][BLACK], vedo che\nhai seguito il mio consiglio e sei\lvenuto fin qui!\pSeguimi, voglio mostrarti lo stato\ndelle ricerche sulle rovine della\l[GREEN]Foresta Frondosa[BLACK][.]
 
 #org @Ardesiopoli_6_1_NPC0_text2
 [ORANGE]Filiberto[BLACK]: Io e i miei assistenti\nstiamo lavorando giorno e notte per\lriuscire a decifrare le incisioni\ldelle [GREEN]Rovine Ancestrali[BLACK][.]\pHo rovistato tutta la biblioteca e\nsolo poco fa ho trovato un\lmanoscritto che potrebbe tornare\lutile, il mio assistente migliore\lse ne sta occupando proprio ora!
 
 #org @Ardesiopoli_6_1_NPC0_text3
-[LIGHT_BLUE][PLAYER][BLACK]: [.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: [.]
 
 #org @Ardesiopoli_6_1_NPC0_text4
 [ORANGE]Filiberto[BLACK]: Come darti torto,\ndal fratello di un allenatore come\p[BLUE]Crispy[BLACK] non c'era che d'aspettarselo!\nIl modo migliore per affrontare\lquest'attesa [1A] sicuramente una\lbella lotta Pok\emon[.]\pTi aspetto nella mia Palestra!
@@ -33,7 +33,7 @@
 [ORANGE]Filiberto[BLACK]: Le incisioni sembrano\nessere risalenti all'antico periodo\lin cui la Regione di [GREEN]Eyros[BLACK] era\lgovernata dal Pok\emon leggendario\l[RED]Ho-Oh[BLACK] e dalle tre bestie guardiane,\lcustodi di particolari aree mistiche\ldella regione e uniche in grado di\lcontrastare la potenza di [RED]Ho-Oh[BLACK][.]
 
 #org @Ardesiopoli_6_1_MapScriptOnFrame_text7
-[GREEN]Filiberto[BLACK]: Non si narra di queste\nvicende da secoli, secondo i pi[26] si\ltratta infatti solamente di\lleggende[.]\pMa come si sa, in tutte le leggende\nc'[1A] un fondo di verit[16][.]\pLe incisioni sembrano riportare i\nluoghi in cui i tre guardiani [ORANGE]Raikou[BLACK],\l[RED]Entei[BLACK] e [LIGHT_BLUE]Suicune[BLACK] riposino[.]
+[GREEN]Filiberto[BLACK]: Non si narra di queste\nvicende da secoli, secondo i pi[26] si\ltratta infatti solamente di\lleggende[.]\pMa come si sa, in tutte le leggende\nc'[1A] un fondo di verit[16][.]\pLe incisioni sembrano riportare i\nluoghi in cui i tre guardiani [ORANGE]Raikou[BLACK],\l[RED]Entei[BLACK] e [BLUE]Suicune[BLACK] riposino[.]
 
 #org @Ardesiopoli_6_1_MapScriptOnFrame_text8
 [ORANGE]Filiberto[BLACK]: Ma certo! Il [CUSTOM]Team Dusk[BLACK]\nsta sicuramente pianificando di\limpossessarsi di questi Pok\emon!\pPer questo motivo era nella [GREEN]Foresta\nFrondosa[BLACK] alla ricerca di queste\lincisioni[.]

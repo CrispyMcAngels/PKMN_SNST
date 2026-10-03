@@ -16,6 +16,9 @@ sky_mount.c
 		- the following Pokemon stays away, and running and biking are disabled.
 	It's a separate sprite from the surf blob, so Surf, Rock Climb, etc. aren't affected.
 
+	Ground mounts (onGround) are ridden on land instead: the player is on the bike underneath,
+	for the bike's speed and music (eg. Rapidash in the "Consegna lampo" quest, courier_quest.c).
+
 	Set VAR_SKY_MOUNT before warping into a sky map and the player arrives riding.
 	Mid-map, use EventScript_SkyMount_Start / EventScript_SkyMount_End (sky_mount.s).
 
@@ -35,6 +38,7 @@ struct SkyMount
 	const struct SpriteTemplate* body;
 	const struct SpriteTemplate* overlay; //Can be NULL
 	const u16* palette;
+	bool8 onGround; //Ridden on land with the bike's speed, instead of in the sky
 };
 
 static void SkyMountBodyCallback(struct Sprite* sprite);
@@ -119,10 +123,38 @@ static const struct SpriteFrameImage sLatiosOverlayFrames[] =
 static const struct SpriteTemplate sLatiosBodyTemplate = sky_mount_template(sLatiosBodyFrames, SkyMountBodyCallback);
 static const struct SpriteTemplate sLatiosOverlayTemplate = sky_mount_template(sLatiosOverlayFrames, SkyMountOverlayCallback);
 
+//Rapidash (placeholder: a copy of Latios)
+extern const u32 SkyMount_RapidashTiles[];
+extern const u16 SkyMount_RapidashPal[];
+
+static const struct SpriteFrameImage sRapidashBodyFrames[] =
+{
+	overworld_frame(SkyMount_RapidashTiles, 4, 4, 0),
+	overworld_frame(SkyMount_RapidashTiles, 4, 4, 1),
+	overworld_frame(SkyMount_RapidashTiles, 4, 4, 2),
+	overworld_frame(SkyMount_RapidashTiles, 4, 4, 3),
+	overworld_frame(SkyMount_RapidashTiles, 4, 4, 4),
+	overworld_frame(SkyMount_RapidashTiles, 4, 4, 5),
+};
+
+static const struct SpriteFrameImage sRapidashOverlayFrames[] =
+{
+	overworld_frame(SkyMount_RapidashTiles, 4, 4, 6),
+	overworld_frame(SkyMount_RapidashTiles, 4, 4, 7),
+	overworld_frame(SkyMount_RapidashTiles, 4, 4, 8),
+	overworld_frame(SkyMount_RapidashTiles, 4, 4, 9),
+	overworld_frame(SkyMount_RapidashTiles, 4, 4, 10),
+	overworld_frame(SkyMount_RapidashTiles, 4, 4, 11),
+};
+
+static const struct SpriteTemplate sRapidashBodyTemplate = sky_mount_template(sRapidashBodyFrames, SkyMountBodyCallback);
+static const struct SpriteTemplate sRapidashOverlayTemplate = sky_mount_template(sRapidashOverlayFrames, SkyMountOverlayCallback);
+
 //VAR_SKY_MOUNT 1 is sSkyMounts[0], and so on
 static const struct SkyMount sSkyMounts[] =
 {
-	{&sLatiosBodyTemplate, &sLatiosOverlayTemplate, SkyMount_LatiosPal}, //1: Latios
+	{&sLatiosBodyTemplate, &sLatiosOverlayTemplate, SkyMount_LatiosPal, FALSE}, //1: Latios
+	{&sRapidashBodyTemplate, &sRapidashOverlayTemplate, SkyMount_RapidashPal, TRUE}, //2: Rapidash (courier_quest.c)
 };
 
 static const struct SkyMount* GetSkyMount(void)
@@ -138,6 +170,14 @@ static const struct SkyMount* GetSkyMount(void)
 bool8 IsSkyMountActive(void)
 {
 	return GetSkyMount() != NULL;
+}
+
+//The player rides on land, on the bike underneath (also TRUE for IsSkyMountActive)
+bool8 IsGroundMountActive(void)
+{
+	const struct SkyMount* mount = GetSkyMount();
+
+	return mount != NULL && mount->onGround;
 }
 
 static bool8 IsSkyMountSprite(struct Sprite* sprite)
@@ -257,6 +297,7 @@ void SkyMount_End(void)
 #else //VAR_SKY_MOUNT
 
 bool8 IsSkyMountActive(void) { return FALSE; }
+bool8 IsGroundMountActive(void) { return FALSE; }
 void SkyMount_TryCreate(void) {}
 void SkyMount_UpdatePlayerSprite(void) {}
 void SkyMount_Start(void) {}

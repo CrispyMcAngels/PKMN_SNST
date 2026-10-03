@@ -32,7 +32,7 @@ Consigli utili: se fatti tenere\nai Pok\emon, alcuni strumenti ne\lmigliorano le
 [DARK_GRAY]???[BLACK]: [.]
 
 #org @EventScript_Percorso2_3_41_tile0_text2
-[LIGHT_BLUE][PLAYER][BLACK]: Chi era quell'uomo?
+[PLAYER_CUSTOM][PLAYER][BLACK]: Chi era quell'uomo?
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text1
 [BLUE]Crispy[BLACK]: Sarebbe bello se anche te\nindagassi sulle malefatte del [CUSTOM]Team\lDusk[BLACK].\pPerch[1A] non vai ad [GREEN]Ardesiopoli[BLACK]\na vedere a che punto [1A]\ll'esperimento di [ORANGE]Filiberto[BLACK]?\pLa citt[16] non [1A] molto lontana, ma\ntieni questo, cos[1E] non ti perderai!
@@ -41,16 +41,16 @@ Consigli utili: se fatti tenere\nai Pok\emon, alcuni strumenti ne\lmigliorano le
 [BLUE]Crispy[BLACK]: Questa mappa ti permette di\nvisualizzare la mappa della\lregione di [GREEN]Eyros[BLACK] in qualsiasi\listante, cos[1E] non perderai mai la\ltua strada!\pAh anzi, hai avvisato la [RED]Mamma[BLACK] che\nstarai lontano da casa per un po'?\pForse [1A] meglio se vai a salutarla[.]
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text3
-[LIGHT_BLUE][PLAYER][BLACK]: [.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: [.]
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text4
-[LIGHT_BLUE][PLAYER][BLACK]: [BLUE]Crispy[BLACK], devo dirti una\ncosa[.]\pPoche ore fa, prima di entrare\nnella [GREEN]Foresta Frondosa[BLACK], mi sono\lscontrato con un uomo incappuciato\lproprio qui[.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: [BLUE]Crispy[BLACK], devo dirti una\ncosa[.]\pPoche ore fa, prima di entrare\nnella [GREEN]Foresta Frondosa[BLACK], mi sono\lscontrato con un uomo incappuciato\lproprio qui[.]
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text5
 [BLUE]Crispy[BLACK]: Non capisco[.]\pSei riuscito a vederlo in faccia?
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text6
-[LIGHT_BLUE][PLAYER][BLACK]: Purtroppo no, il volto\nera completamente coperto dal\lmantello.\pAveva, per[22][.]\nUn'aria familiare[.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: Purtroppo no, il volto\nera completamente coperto dal\lmantello.\pAveva, per[22][.]\nUn'aria familiare[.]
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text7
 [BLUE]Crispy[BLACK][BLACK]: Ma certo!\pSe non sbaglio [CUSTOM]Vesper[BLACK] aveva\nmenzionato di essere stato\lsconfitto da un uomo misterioso\lsubito prima che arrivassimo\lnoi[.]
@@ -63,7 +63,7 @@ Consigli utili: se fatti tenere\nai Pok\emon, alcuni strumenti ne\lmigliorano le
 //again at Percorso_2_3_41_NPC3_text3
 
 #org @Percorso2_3_41_MapScriptOnFrameBegin_text9
-[BLUE]Crispy[BLACK]: [LIGHT_BLUE][PLAYER][BLACK], io ora devo\nandare.\pRicordati di andare nel\nlaboratorio di [ORANGE]Filiberto[BLACK] ad\l[GREEN]Ardesiopoli[BLACK] dopo essere passato a\lsalutare la [RED]Mamma[BLACK][.]
+[BLUE]Crispy[BLACK]: [PLAYER_CUSTOM][PLAYER][BLACK], io ora devo\nandare.\pRicordati di andare nel\nlaboratorio di [ORANGE]Filiberto[BLACK] ad\l[GREEN]Ardesiopoli[BLACK] dopo essere passato a\lsalutare la [RED]Mamma[BLACK][.]
 
 #org @Percorso_2_3_41_NPC6_text1
 [DARK_GRAY]Hai visto quanti Pok\emon\nselvatici ci sono?\pAlla scuola Pok\emon di\n[GREEN]Ardesiopoli[BLACK] ho studiato che [GREEN]Eyros[BLACK]\l[1A] ricca di biodiversit[16] grazie\lalla sua magnifica natura!\pSi racconta che tutto sia iniziato\ndopo la grande guerra che\ldistrusse i tre regni della\lregione 5 secoli fa[.]\pDa l[1E] in poi si decise di\nricostruire [GREEN]Eyros[BLACK] mantenendo un\lforte contatto con la natura!
@@ -87,7 +87,56 @@ Ugh, i miei Pok\emon sono\nfantastici, [1A] solo che oggi non [1A]\lil loro gior
 [BLACK]La prossima volta sar[22] ancora pi[26]\nfavolosa e ti batter[22] con grazia!
 
 #org @Percorso2_3_41_tile2_text1
-[ORANGE]???[BLACK]: Se non sbaglio tu sei\nl'allenatore che prima ha portato\lle bacche ai [GREEN]Treecko[BLACK], giusto?\pPiacere di conoscerti, il mio\nnome [1A] [ORANGE]Raito[BLACK].\pTi ho osservato molto bene prima e\nnon ho potuto fare a meno di\lnotare qualcosa di speciale in te[.]\p[.]Che sia il legame con i tuoi\nPok\emon?\p[ORANGE]Raito[BLACK]: Non [1A] ancora ora di\nscoprirlo, ma sono sicuro che ci\lrivedremo presto[.]\p[.][LIGHT_BLUE][PLAYER][BLACK][.]
+[ORANGE]???[BLACK]: Se non sbaglio tu sei\nl'allenatore che prima ha portato\lle bacche ai [GREEN]Treecko[BLACK], giusto?\pPiacere di conoscerti, il mio\nnome [1A] [ORANGE]Raito[BLACK].\pTi ho osservato molto bene prima e\nnon ho potuto fare a meno di\lnotare qualcosa di speciale in te[.]\p[.]Che sia il legame con i tuoi\nPok\emon?\p[ORANGE]Raito[BLACK]: Non [1A] ancora ora di\nscoprirlo, ma sono sicuro che ci\lrivedremo presto[.]\p[.][PLAYER_CUSTOM][PLAYER][BLACK][.]
 
 #org @Percorso2_3_41_tile3_text1
-[LIGHT_BLUE][PLAYER][BLACK]: Meglio che vada a salutare\nla Mamma prima di continuare!
+[PLAYER_CUSTOM][PLAYER][BLACK]: Meglio che vada a salutare\nla Mamma prima di continuare!
+
+#org @Percorso_2_3_41_DoubleGrass_text1
+[BLACK]Psst! Vieni qui, ti svelo un\nsegreto.\pL'erba di questo prato [1A] speciale:\nci entri per cercare un Pok\emon e\lte ne saltano addosso DUE!\pL'altro giorno ero venuta a cercare\nun Pok\emon da coccolare[.]\le sono scappata inseguita da due\lPok\emon da calmare.\pMia nonna dice che [1A] colpa del\nconcime.\pSecondo me qui i Pok\emon non escono\nmai dalla tana senza un amico.\pAh, ma se in squadra hai un solo\nPok\emon, l'erba fa la timida e ne\lesce uno alla volta[.]\pChe galanteria!
+
+//"Consegna lampo" side quest (src/courier_quest.c)
+#org @Percorso_2_3_41_Courier_text_intro
+[BLACK]Ehi, tu! Hai proprio l'aria di chi sa\nmuoversi in fretta!\pLo scienziato del Percorso 4 aspetta\nun pacco urgente, ma io non posso\llasciare il mio posto di guardia.\pIl mio [GREEN]Rapidash[BLACK] conosce la strada:\nte la senti di fare la consegna al\lposto mio?
+
+#org @Percorso_2_3_41_Courier_text_retry
+[BLACK]Vuoi riprovare a portare il pacco\nallo scienziato del Percorso 4?
+
+#org @Percorso_2_3_41_Courier_text_refuse
+[BLACK]Peccato[.] Se cambi idea, sono qui.
+
+#org @Percorso_2_3_41_Courier_text_rules
+[BLACK]Ottimo! Ascolta bene: hai solo [BUFFER1]\npassi per arrivare dallo scienziato\ldel Percorso 4.\pNiente deviazioni negli edifici, e non\nperdere tempo!\p[GREEN]Rapidash[BLACK], conto su di te!
+
+#org @Percorso_2_3_41_Courier_text_mount
+[PLAYER_CUSTOM][PLAYER][BLACK] sale in sella a [GREEN]Rapidash[BLACK]!
+
+#org @Percorso_2_3_41_Courier_text_hurry
+[BLACK]Cosa ci fai ancora qui? Corri al\nPercorso 4!
+
+#org @Percorso_2_3_41_Courier_text_thanks
+[BLACK]Eccoti qui! Lo scienziato mi ha\nappena avvisato: il pacco [1A] arrivato\lsano e salvo.\pPer ringraziarti ho qualcosa per te:\nuna tenuta rossa fiammante, come la\lcriniera di [GREEN]Rapidash[BLACK]!
+
+#org @Percorso_2_3_41_Courier_text_obtain
+[PLAYER_CUSTOM][PLAYER][BLACK] riceve [RED]Vestiti Rossi[BLACK]!
+
+#org @Percorso_2_3_41_Courier_text_wardrobe
+[BLACK]Puoi indossarla quando vuoi dal tuo\narmadio di casa.
+
+#org @Percorso_2_3_41_Courier_text_done
+[BLACK]Grazie ancora per la consegna!\n[GREEN]Rapidash[BLACK] non vede l'ora di correre di\lnuovo con te.
+
+#org @CourierQuest_text_ask_quit
+[BLACK]Vuoi interrompere la consegna?
+
+#org @CourierQuest_text_indoor
+[BLACK]Non puoi entrare con [GREEN]Rapidash[BLACK]!\pVuoi interrompere la consegna?
+
+#org @CourierQuest_text_quit
+[BLACK][GREEN]Rapidash[BLACK] torna di corsa dall'agente,\ncon il pacco[.]
+
+#org @CourierQuest_text_warning
+[BLACK][GREEN]Rapidash[BLACK] sbuffa impaziente[.]\pMancano solo [BUFFER1] passi!
+
+#org @CourierQuest_text_too_late
+[BLACK]Oh no, il tempo [1A] scaduto!\p[GREEN]Rapidash[BLACK] torna indietro di corsa\ndall'agente[.]

@@ -5,16 +5,16 @@
 [ORANGE]Filiberto[BLACK]: Esatto, mi [1A] stato\nriferito che un gruppo di\lallenatori si [1A] accorto di un'\linsenatura nella Fores[.]
 
 #org @Miralba_3_1_NPC0_text3
-[BLUE]Crispy[BLACK]: Hei [LIGHT_BLUE][PLAYER][BLACK], ce l'hai fatta\nad arrivare!\pTi presento [ORANGE]Filiberto[BLACK], un mio\namico di vecchia data, nonch[1A]\lesperto archeologo e Capopalestra\ldi [GREEN]Ardesiopoli[BLACK].
+[BLUE]Crispy[BLACK]: Hei [PLAYER_CUSTOM][PLAYER][BLACK], ce l'hai fatta\nad arrivare!\pTi presento [ORANGE]Filiberto[BLACK], un mio\namico di vecchia data, nonch[1A]\lesperto archeologo e Capopalestra\ldi [GREEN]Ardesiopoli[BLACK].
 
 #org @Miralba_3_1_NPC0_text4
-[ORANGE]Filiberto[BLACK]: Piacere di conoscerti\n[LIGHT_BLUE][PLAYER][BLACK], se buon sangue non mente\lpure te diventerai un allenatore\lmolto in gamba.\pStavo giusto dicendo a tuo\nfratello che una nuova scoperta\larcheologica [1A] stata fatta poco\llontano da qui[.]
+[ORANGE]Filiberto[BLACK]: Piacere di conoscerti\n[PLAYER_CUSTOM][PLAYER][BLACK], se buon sangue non mente\lpure te diventerai un allenatore\lmolto in gamba.\pStavo giusto dicendo a tuo\nfratello che una nuova scoperta\larcheologica [1A] stata fatta poco\llontano da qui[.]
 
 #org @Miralba_3_1_NPC0_text5
 [ORANGE]Filiberto[BLACK]: Infatti il mio dovere di\ncapo archeologo mi chiama[.]\pTi aspetto l[1E] [BLUE]Crispy[BLACK].
 
 #org @Miralba_3_1_NPC0_text6
-[BLUE]Crispy[BLACK]: Certamente, sono molto\ncurioso pure io di vedere cos'[1A]\lstato scoperto!\pMostro la citt[16] di [GREEN]Miralba[BLACK] a\n[LIGHT_BLUE][PLAYER][BLACK] e ti raggiungo.
+[BLUE]Crispy[BLACK]: Certamente, sono molto\ncurioso pure io di vedere cos'[1A]\lstato scoperto!\pMostro la citt[16] di [GREEN]Miralba[BLACK] a\n[PLAYER_CUSTOM][PLAYER][BLACK] e ti raggiungo.
 
 #org @Miralba_3_1_NPC0_text7
 [ORANGE]Filiberto[BLACK]: A dopo!
@@ -41,7 +41,7 @@ Chatot-Chatot
 [BLUE]Crispy[BLACK]: Come hai sentito prima,\nora devo raggiungere [ORANGE]Filiberto[BLACK],\lmi pare che il posto si chiami\l[GREEN]Foresta Frondosa[BLACK][.]\pPerch[1A] non vieni pure te?\pCos[1E] vedrai come si comportano dei\lveri allenatori di Pok\emon!
 
 #org @Miralba_3_1_NPC0_text15
-[LIGHT_BLUE][PLAYER][BLACK]: [.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: [.]
 
 #org @Miralba_Sign0_text1
 Miralba: La solare cittadina dove\nil sole nascente splende sempre.

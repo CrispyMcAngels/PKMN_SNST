@@ -21,10 +21,13 @@ tile 3 50 3 EventScript_Risaia_Rosa_3_50_tile1
 sign 3 50 0 EventScript_Roccavento_3_50_Sign0
 
 map 3 3 gMapScripts_Roccavento_3_3
+npc 3 3 0 EventScript_Roccavento_3_3_NPC0
+npc 3 3 1 EventScript_Roccavento_3_3_NPC1
 npc 3 3 2 EventScript_Roccavento_3_3_NPC2
 npc 3 3 3 EventScript_Roccavento_3_3_NPC3
 npc 3 3 4 EventScript_Ardesiopoli_3_2_NPC11
 npc 3 3 5 EventScript_Roccavento_3_3_NPC5
+npc 3 3 12 EventScript_Roccavento_3_3_NPC12
 npc 3 3 14 EventScript_Roccavento_3_3_NPC14
 
 map 3 23 gMapScripts_Percorso12_3_23
@@ -262,6 +265,9 @@ sign 10 8 7 EventScript_Stellavia_10_8_Sign3
 sign 10 8 8 EventScript_Stellavia_10_8_Sign8
 sign 10 8 9 EventScript_Stellavia_10_8_Sign9
 sign 10 8 10 EventScript_Stellavia_10_8_Sign9
+sign 10 8 11 EventScript_Stellavia_10_8_Elevator
+sign 10 8 12 EventScript_Stellavia_10_8_Elevator
+sign 10 8 13 EventScript_Stellavia_10_8_Elevator
 
 npc 10 9 0 EventScript_Stellavia_10_9_NPC0
 npc 10 9 2 EventScript_Stellavia_10_9_NPC2
@@ -986,6 +992,8 @@ npc 3 41 9 EventScript_Percorso_2_3_41_NPC9
 npc 3 41 10 EventScript_Percorso_2_3_41_NPC10
 npc 3 41 11 EventScript_Percorso_2_3_41_NPC11
 npc 3 41 15 EventScript_Common_Cut
+npc 3 41 16 EventScript_Percorso_2_3_41_DoubleGrass
+npc 3 41 17 EventScript_Percorso_2_3_41_Courier
 
 sign 3 41 0 EventScript_Percorso_2_3_41_Sign0
 sign 3 41 1 EventScript_Percorso_2_3_41_Sign1

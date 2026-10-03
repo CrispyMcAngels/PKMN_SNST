@@ -1,14 +1,14 @@
 #org @Percorso_11_Brandon_text1
-[RED]Naomi[BLACK]: [LIGHT_BLUE][PLAYER][BLACK] te parti pure,\nio voglio restare un po' qui a\lguardare l'orizzonte.
+[RED]Naomi[BLACK]: [PLAYER_CUSTOM][PLAYER][BLACK] te parti pure,\nio voglio restare un po' qui a\lguardare l'orizzonte.
 
 #org @Percorso_11_Brandon_text2
 [RED]Naomi[BLACK]: Mmmh dannazione, sembra che\nnon si possa proseguire da questa\lparte senza un Pok\emon in grado di\lvolare[.]
 
 #org @Percorso_11_Brandon_text3
-[RED]Naomi[BLACK]: Hei [LIGHT_BLUE][PLAYER][BLACK], finalmente ti\nsei deciso a venire a sfidarmi[.]\pIo e [GREEN]Deino[BLACK] ti daremo molto filo\nda torcere[.]\pFatti sotto!
+[RED]Naomi[BLACK]: Hei [PLAYER_CUSTOM][PLAYER][BLACK], finalmente ti\nsei deciso a venire a sfidarmi[.]\pIo e [GREEN]Deino[BLACK] ti daremo molto filo\nda torcere[.]\pFatti sotto!
 
 #org @Percorso_11_Brandon_text4
-[LIGHT_BLUE][PLAYER][BLACK]: Vai, [GREEN]Axew[BLACK]!
+[PLAYER_CUSTOM][PLAYER][BLACK]: Vai, [GREEN]Axew[BLACK]!
 
 #org @Percorso_11_Brandon_text5
 [GREEN]Axew[BLACK]: Ax-Axew!
@@ -23,16 +23,16 @@
 Impossibile!
 
 #org @Percorso_11_Brandon_text7
-[RED]Naomi[BLACK]: Wow [LIGHT_BLUE][PLAYER][BLACK], sono sbalordita,\nil tuo legame con [GREEN]Axew[BLACK] [1A] gi[16]\lmolto forte!\pSono curiosa di vedere quanto\nforti diventerete.\pPer quanto mi riguarda invece devo\nancora allenarmi molto con [GREEN]Deino[BLACK],\lma sono sicura faremo presto dei\lprogressi!\pPer ora basta cos[1E] piccolino,\nrientra.
+[RED]Naomi[BLACK]: Wow [PLAYER_CUSTOM][PLAYER][BLACK], sono sbalordita,\nil tuo legame con [GREEN]Axew[BLACK] [1A] gi[16]\lmolto forte!\pSono curiosa di vedere quanto\nforti diventerete.\pPer quanto mi riguarda invece devo\nancora allenarmi molto con [GREEN]Deino[BLACK],\lma sono sicura faremo presto dei\lprogressi!\pPer ora basta cos[1E] piccolino,\nrientra.
 
 #org @Percorso_11_Brandon_text8
-[LIGHT_BLUE][PLAYER][BLACK]: Ottimo lavoro [GREEN]Axew[BLACK],\nrientra pure te!
+[PLAYER_CUSTOM][PLAYER][BLACK]: Ottimo lavoro [GREEN]Axew[BLACK],\nrientra pure te!
 
 #org @Percorso_11_Brandon_text9
 [DARK_GRAY]Prof. Kraemer[BLACK]: Hallo Jungs, sono\narrivato giusto in tempo per\lvedere vostra sfida da lontano[.]\pDavvero un bello spettacolo, sehr\nschon, sono soddisfatto di voi!\pOrmai, voi essere gi[16] allenatori\nPok\emon, qvindi, avrete bisogno\ldi qvesto[.]
 
 #org @Percorso_11_Brandon_text10
-[LIGHT_BLUE][PLAYER][BLACK] riceve [GREEN]Pok\edex[BLACK]!
+[PLAYER_CUSTOM][PLAYER][BLACK] riceve [GREEN]Pok\edex[BLACK]!
 
 #org @Percorso_11_Brandon_text11
 [DARK_GRAY]Prof. Kraemer[BLACK]: Tieni [RED]Naomi[BLACK], uno\nanche pev te!
@@ -44,7 +44,7 @@ Impossibile!
 [DARK_GRAY]Prof. Kraemer[BLACK]: [GREEN]Pok\edex[BLACK] essere\ncome enciclopedia Pok\emon:\lse voi vedere nuovo Pok\emon,\l[GREEN]Pok\edex[BLACK] registrer[16].
 
 #org @Percorso_11_Brandon_text13a
-[RED]Naomi[BLACK]: La ringrazio [DARK_GRAY]Prof. Kraemer[BLACK][.]\pMa perch[1A] [LIGHT_BLUE][PLAYER][BLACK] ed io dovremmo\ncompletare questo [GREEN]Pok\edex[BLACK]?
+[RED]Naomi[BLACK]: La ringrazio [DARK_GRAY]Prof. Kraemer[BLACK][.]\pMa perch[1A] [PLAYER_CUSTOM][PLAYER][BLACK] ed io dovremmo\ncompletare questo [GREEN]Pok\edex[BLACK]?
 
 #org @Percorso_11_Brandon_text13b
 [DARK_GRAY]Prof. Kraemer[BLACK]: Raccogliere\nInformationen su tutti i tipi di\lPok\emon [1A] lo scopo di mia ricerca\lqui in [GREEN]Eyros[BLACK], dove sono tanti\lPok\emon di regioni lontane[.]
@@ -53,10 +53,10 @@ Impossibile!
 [RED]Naomi[BLACK]: Sono sicura che grazie al\n[GREEN]Pok\edex[BLACK] riuscir[22] a registrare\ltutti i Pok\emon della regione di\l[GREEN]Eyros[BLACK][.]
 
 #org @Percorso_11_Brandon_text14a
-[RED]Naomi[BLACK]: Non trovi [LIGHT_BLUE][PLAYER][BLACK]?
+[RED]Naomi[BLACK]: Non trovi [PLAYER_CUSTOM][PLAYER][BLACK]?
 
 #org @Percorso_11_Brandon_text14b
-[LIGHT_BLUE][PLAYER][BLACK]: [.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: [.]
 
 #org @Percorso_11_Brandon_text15
 [DARK_GRAY]Prof. Kraemer[BLACK]: Genau!\nMa ricordatevi di venire in mio\llaboratorio per vedere progressi\ldi [GREEN]Pok\edex[BLACK], verstanden?
@@ -68,7 +68,7 @@ Impossibile!
 [DARK_GRAY]Prof. Kraemer[BLACK]: Qvesto Percorso\nporta nach [GREEN]Borgo Levante[BLACK].\p[GREEN]Percorso 11[BLACK] pu[22] essere\nattraversato solo se vostro\lPok\emon pu[22] [GREEN]MN Zenit[BLACK][.]\pPer iniziare vostva Abenteuer vi\nconsiglio di andare a [GREEN]Percorso 1[BLACK],\lverso citt[16] [GREEN]Miralba[BLACK][.]
 
 #org @Percorso_11_Brandon_text16
-[RED]Naomi[BLACK]: hai sentito [LIGHT_BLUE][PLAYER][BLACK]?\pSono sicura che nel [GREEN]Percorso 1[BLACK]\nriuscir[22] ad allenare molto bene\lil mio [GREEN]Deino[BLACK][.]\pPer la nostra prossima sfida non\nmi far[22] trovare impreparata!
+[RED]Naomi[BLACK]: hai sentito [PLAYER_CUSTOM][PLAYER][BLACK]?\pSono sicura che nel [GREEN]Percorso 1[BLACK]\nriuscir[22] ad allenare molto bene\lil mio [GREEN]Deino[BLACK][.]\pPer la nostra prossima sfida non\nmi far[22] trovare impreparata!
 
 #org @Percorso_11_Brandon_text17
 [DARK_GRAY]Prof. Kraemer[BLACK]: Alles gut!\pIo esseve sicuvo che qvesta\nrivalit[16] vi far[16] crescere viel!\pJetzt devo tornare indietro in mio\nlaboratorio[.]\pFate buon viaggio verso [GREEN]Miralba[BLACK]!

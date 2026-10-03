@@ -5,6 +5,7 @@
 #include "../include/save.h"
 #include "../include/constants/vars.h"
 
+#include "../include/new/player_characters.h"
 #include "../include/new/dns.h"
 #include "../include/new/save.h"
 #include "../include/new/ram_locs_battle.h"
@@ -297,6 +298,9 @@ u8 SaveDataAfterLinkBattle(void)
 void NewGameWipeNewSaveData(void)
 {
 	Memset((void*) gSaveBlockParasite, 0, 0x2EA4);
+	#ifdef VAR_PLAYER_CHARACTER
+	PlayerCharacters_Clear(); //No Time Echo protagonist played yet
+	#endif
 }
 
 static void Task_SaveErrorStatus_RunPrinter(unusedArg u8 taskId)

@@ -2,7 +2,7 @@
 [BLUE]Crispy[BLACK]: Wow! Non avevo ancora\ncatturato questo Pok\emon!\p[GREEN]Natu[BLACK] sar[16] sicuramente una grande\naggiunta alla mia squadra.\pAd ogni modo spero abbiate imparato\ncome catturare un Pok\emon:\lprima di lanciargli una [GREEN]Pok\eball[BLACK] [1A]\lsempre utile indebolirlo[.]
 
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text9
-[BLUE]Crispy[BLACK]: Ah [LIGHT_BLUE][PLAYER][BLACK], prendi questa,\nti sar[16] utile.
+[BLUE]Crispy[BLACK]: Ah [PLAYER_CUSTOM][PLAYER][BLACK], prendi questa,\nti sar[16] utile.
 
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text10
 [BLUE]Crispy[BLACK]: Grazie alle sue ottime\ncondizioni climatiche, la regione\ldi [GREEN]Eyros[BLACK] [1A] casa di molti Pok\emon\lprovienti da Regioni lontane.\pIn particolare questo percorso,\nil [GREEN]Percorso 1[BLACK], offre una vastissima\lbiodiversit[16], con ben oltre 10\lspecie di Pok\emon diversi.\p[BLUE]Crispy[BLACK]: Ti consiglio dunque di usare\nquella [GREEN]Pok\eball[BLACK] per il Pok\emon\lgiusto, quando se ne presenter[16]\ll'occasione[.]
@@ -15,7 +15,7 @@
 
 //[BLUE]Crispy[BLACK] si muove giu e guarda a dx
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text10b
-[BLUE]Crispy[BLACK]: Mi dispiace [RED]Naomi[BLACK],\npurtroppo quella che ho dato a\l[LIGHT_BLUE][PLAYER][BLACK] era l'ultima [GREEN]Pok\eball[BLACK] rimasta[.]
+[BLUE]Crispy[BLACK]: Mi dispiace [RED]Naomi[BLACK],\npurtroppo quella che ho dato a\l[PLAYER_CUSTOM][PLAYER][BLACK] era l'ultima [GREEN]Pok\eball[BLACK] rimasta[.]
 
 //[BLUE]Crispy[BLACK] !
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text10c
@@ -27,7 +27,7 @@
 
 //[RED]Naomi[BLACK] face up + PLAYER face down
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text10e
-[RED]Naomi[BLACK]: [LIGHT_BLUE][PLAYER][BLACK], che stiamo aspettando?\nAndiamo subito l[1E]!
+[RED]Naomi[BLACK]: [PLAYER_CUSTOM][PLAYER][BLACK], che stiamo aspettando?\nAndiamo subito l[1E]!
 
 //[BLUE]Crispy[BLACK], [RED]Naomi[BLACK] + PLAYER face left
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text10f
@@ -35,28 +35,28 @@
 
 //[BLUE]Crispy[BLACK] move up and face right
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text10g
-[BLUE]Crispy[BLACK]: [RED]Naomi[BLACK], [LIGHT_BLUE][PLAYER][BLACK], perch[1A] non\nvi dirigete pure voi verso [GREEN]Miralba[BLACK]\lnon appena il [DARK_GRAY]Prof. Kraemer[BLACK] vi\lavr[16] dato un Pok\emon?\pVi aspetto l[1E]!
+[BLUE]Crispy[BLACK]: [RED]Naomi[BLACK], [PLAYER_CUSTOM][PLAYER][BLACK], perch[1A] non\nvi dirigete pure voi verso [GREEN]Miralba[BLACK]\lnon appena il [DARK_GRAY]Prof. Kraemer[BLACK] vi\lavr[16] dato un Pok\emon?\pVi aspetto l[1E]!
 
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text11
 [RED]Naomi[BLACK]: Tuo fratello [1A] davvero\nin gamba, spero di poter\ldiventare un allenatore forte\lcome lui un giorno.
 
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text12
-[LIGHT_BLUE][PLAYER][BLACK]: [.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: [.]
 
 #org @MapScripts_Percorso1_3_19_MapScriptOnFrame_text13
 [RED]Naomi[BLACK]: Beh, direi proprio che\nper oggi possa bastare!\pMeglio tornare a casa prima che\nqualche Pok\emon selvatico ci\lattacchi[.]
 
 #org @EventScript_Percorso1_3_19_tile0_text1
-[LIGHT_BLUE][PLAYER][BLACK]: Meglio non addentrarsi\nnell'erba alta senza un Pok\emon!
+[PLAYER_CUSTOM][PLAYER][BLACK]: Meglio non addentrarsi\nnell'erba alta senza un Pok\emon!
 
 #org @EventScript_Percorso1_3_19_tile1_text1
 [RED]Skuntank[BLACK]: ROAAARRHH!!!
 
 #org @EventScript_Percorso1_3_19_tile1_text2
-[RED]Naomi[BLACK]: Aiutooo!\p[LIGHT_BLUE][PLAYER][BLACK] fai qualcosa!!!
+[RED]Naomi[BLACK]: Aiutooo!\p[PLAYER_CUSTOM][PLAYER][BLACK] fai qualcosa!!!
 
 #org @EventScript_Percorso1_3_19_tile1_text3
-[LIGHT_BLUE][PLAYER][BLACK]: [.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: [.]
 
 #org @EventScript_Percorso1_3_19_tile1_text4
 [GREEN]Axew[BLACK]: Axew-Axew!
@@ -65,22 +65,22 @@
 [RED]Naomi[BLACK]: Fiuuu, per un pelo!\pSe non fosse stato per questo\n[GREEN]Axew[BLACK] che ci ha aiutato saremmo\lstati spacciati contro quello\l[RED]Skuntank[BLACK][.]\p[RED]Naomi[BLACK]: Grazie mille piccolino :)
 
 #org @EventScript_Percorso1_3_19_tile1_text6
-[RED]Naomi[BLACK]: [LIGHT_BLUE][PLAYER][BLACK], sembra proprio\nche questo [GREEN]Axew[BLACK] voglia\ldiventare un tuo Pok\emon,\lperch[1A] non provi a catturarlo\lcon la [GREEN]Pok\eball[BLACK] che ti ha\ldato tuo fratello?
+[RED]Naomi[BLACK]: [PLAYER_CUSTOM][PLAYER][BLACK], sembra proprio\nche questo [GREEN]Axew[BLACK] voglia\ldiventare un tuo Pok\emon,\lperch[1A] non provi a catturarlo\lcon la [GREEN]Pok\eball[BLACK] che ti ha\ldato tuo fratello?
 
 #org @EventScript_Percorso1_3_19_tile1_text7
-[LIGHT_BLUE][PLAYER][BLACK], vuoi lanciare una [GREEN]Pok\eball[BLACK]?
+[PLAYER_CUSTOM][PLAYER][BLACK], vuoi lanciare una [GREEN]Pok\eball[BLACK]?
 
 #org @EventScript_Percorso1_3_19_tile1_text8
-[LIGHT_BLUE][PLAYER][BLACK]: Vai, [GREEN]Pok\eball[BLACK]!!!
+[PLAYER_CUSTOM][PLAYER][BLACK]: Vai, [GREEN]Pok\eball[BLACK]!!!
 
 #org @EventScript_Percorso1_3_19_tile1_text9
 Hai catturato [GREEN]Axew[BLACK]!
 
 #org @EventScript_Percorso1_3_19_tile1_text10
-[RED]Naomi[BLACK]: Wow [LIGHT_BLUE][PLAYER][BLACK] complimenti!\pHai catturato il tuo primo\nPok\emon, sono sicura che tu e\l[GREEN]Axew[BLACK] diventerete un'ottima\lsquadra.\p[.]\p[RED]Naomi[BLACK]: Vieni,\nandiamo a far vedere il tuo Pok\emon\lal [DARK_GRAY]Professor Kraemer[BLACK][.]\p[05] un tipo un po' strano,\nproveniente da una regione lontana,\lmagari mi dar[16] un Pok\emon!
+[RED]Naomi[BLACK]: Wow [PLAYER_CUSTOM][PLAYER][BLACK] complimenti!\pHai catturato il tuo primo\nPok\emon, sono sicura che tu e\l[GREEN]Axew[BLACK] diventerete un'ottima\lsquadra.\p[.]\p[RED]Naomi[BLACK]: Vieni,\nandiamo a far vedere il tuo Pok\emon\lal [DARK_GRAY]Professor Kraemer[BLACK][.]\p[05] un tipo un po' strano,\nproveniente da una regione lontana,\lmagari mi dar[16] un Pok\emon!
 
 #org @EventScript_Percorso1_3_19_tile1_text11
-[RED]Naomi[BLACK]: [LIGHT_BLUE][PLAYER][BLACK] sei sicuro?\n[GREEN]Axew[BLACK] mi sembra un ottimo\lPok\emon per iniziare la tua\lavventura[.]
+[RED]Naomi[BLACK]: [PLAYER_CUSTOM][PLAYER][BLACK] sei sicuro?\n[GREEN]Axew[BLACK] mi sembra un ottimo\lPok\emon per iniziare la tua\lavventura[.]
 
 #org @EventScript_Percorso1_3_19_tile2_text1
 [BLACK]Hei tu!\pPer caso sei un allenatore?\nLa mia azienda ha appena lanciato\lun nuovo dispositivo che aiuta gli\lallenatori ad individuare i Pok\emon\lnell'erba alta.\pTi interessa?\nSeguimi!

@@ -3,7 +3,7 @@
 [BLACK]Benvenuto giovane sfidante!\nPurtroppo mi duole dirti che la\lpalestra oggi [1A] chiusa, [ORANGE]Filiberto[BLACK]\lnon [1A] qui!
 
 #org @Ardesiopoli_6_2_NPC0_text1
-[ORANGE]Filiberto[BLACK]: Finalmente ce l'hai\nfatta [LIGHT_BLUE][PLAYER][BLACK], sapevo che saresti\lriuscito a raggiungermi senza\lproblemi[.]\pVediamo di che pasta sei fatto!
+[ORANGE]Filiberto[BLACK]: Finalmente ce l'hai\nfatta [PLAYER_CUSTOM][PLAYER][BLACK], sapevo che saresti\lriuscito a raggiungermi senza\lproblemi[.]\pVediamo di che pasta sei fatto!
 
 #org @Ardesiopoli_6_2_NPC0_text2
 Wow, non pensavo fossi cos[1E]\nforte!
@@ -12,7 +12,7 @@ Wow, non pensavo fossi cos[1E]\nforte!
 [ORANGE]Filiberto[BLACK]: Wow, sorprendente!\n[05] proprio vero che buon sangue non\lmente[.]\pLa Lega Pok\emon prevede che gli\nallenatori ricevano questa se\lriescono a sconfiggere un Capo\lPalestra.\pTi do con piacere la [GREEN]Medaglia Amonite[BLACK]!
 
 #org @Ardesiopoli_6_2_NPC0_text4
-[LIGHT_BLUE][PLAYER][BLACK] riceve la medaglia Amonite!
+[PLAYER_CUSTOM][PLAYER][BLACK] riceve la medaglia Amonite!
 
 #org @Ardesiopoli_6_2_NPC0_text5
 [BLACK]La [GREEN]Medaglia Amonite[BLACK] aumenta l'attacco\ndei tuoi Pok\emon e ti permette\lanche di usare la [GREEN]MN Taglio[BLACK] al di\lfuori della lotta.\pEcco, tieni anche questo!

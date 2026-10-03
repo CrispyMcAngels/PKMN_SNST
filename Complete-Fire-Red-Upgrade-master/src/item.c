@@ -15,6 +15,7 @@
 #include "../include/constants/songs.h"
 #include "../include/constants/tutors.h"
 
+#include "../include/new/player_characters.h"
 #include "../include/new/util.h"
 #include "../include/new/item.h"
 #include "../include/new/set_z_effect.h"
@@ -1076,6 +1077,23 @@ static const struct BagPockets sBagPocketArrangement =
 void SetMemoryForBagStorage(void)
 {
 	*gBagPockets = sBagPocketArrangement;
+
+	#ifdef VAR_PLAYER_CHARACTER
+	struct ItemSlot *echoItems, *echoKeyItems;
+	if (GetEchoCharacterBag(&echoItems, &echoKeyItems)) //Time Echo protagonist: their own small bag, no other pockets
+	{
+		gBagPockets->itemRam = echoItems;
+		gBagPockets->itemAmount = ECHO_BAG_ITEMS;
+		gBagPockets->keyItemRam = echoKeyItems;
+		gBagPockets->keyItemAmount = ECHO_BAG_KEY_ITEMS;
+		gBagPockets->pokeBallRam = echoItems;
+		gBagPockets->pokeBallAmount = 0;
+		gBagPockets->tmRam = echoItems;
+		gBagPockets->tmAmount = 0;
+		gBagPockets->berryRam = echoItems;
+		gBagPockets->berryAmount = 0;
+	}
+	#endif
 }
 
 #define sListBuffer1 (*((struct ListBuffer1**) 0x203AD18))
@@ -1174,27 +1192,28 @@ void StoreBagItemCount(void)
 	{
 		tossed = FALSE;
 		switch (pocket) {
-			case 0:
-				itemMem = sBagPocketArrangement.itemRam;
-				itemAmount = sBagPocketArrangement.itemAmount;
+			case 0: //The pockets in use: a Time Echo protagonist's are smaller (SetMemoryForBagStorage)
+				itemMem = gBagPockets->itemRam;
+				itemAmount = gBagPockets->itemAmount;
 				break;
 			case 1:
-				itemMem = sBagPocketArrangement.keyItemRam;
-				itemAmount = sBagPocketArrangement.keyItemAmount;
+				itemMem = gBagPockets->keyItemRam;
+				itemAmount = gBagPockets->keyItemAmount;
 				break;
 			default:
-				itemMem = sBagPocketArrangement.pokeBallRam;
-				itemAmount = sBagPocketArrangement.pokeBallAmount;
+				itemMem = gBagPockets->pokeBallRam;
+				itemAmount = gBagPockets->pokeBallAmount;
 		}
 
-		for (checkLength = 0; itemMem[checkLength].itemId != ITEM_NONE; ++checkLength);
+		//Stop at the pocket's end too: a full pocket has no empty slot after its last item
+		for (checkLength = 0; checkLength < itemAmount && itemMem[checkLength].itemId != ITEM_NONE; ++checkLength);
 
 		if (checkLength + 1 < itemAmount && itemMem[checkLength + 1].itemId != ITEM_NONE)
 		{
 			tossed = TRUE;
 			++checkLength;
 
-			for (; itemMem[checkLength].itemId != ITEM_NONE; ++checkLength);
+			for (; checkLength < itemAmount && itemMem[checkLength].itemId != ITEM_NONE; ++checkLength);
 		}
 
 		if (tossed)
@@ -1229,7 +1248,8 @@ bool8 DoesBagHaveBerry(void)
 
 void CompactItemsInBagPocket(struct ItemSlot* itemSlots, u16 amount)
 {
-	MergeSort(itemSlots, 0, amount - 1, CompareItemsByHavingValue); //Sort all the null items to the back
+	if (amount > 1) //Time Echo protagonists have pockets with no slots: amount - 1 would wrap around
+		MergeSort(itemSlots, 0, amount - 1, CompareItemsByHavingValue); //Sort all the null items to the back
 }
 
 
@@ -1390,7 +1410,8 @@ void SortBerriesOrTMHMs(struct BagPocket* bagPocket)
 	else
 		func = CompareBerries;
 
-	MergeSort(bagPocket->itemSlots, 0, itemAmount - 1, func);
+	if (itemAmount > 1) //Time Echo protagonists have no TM or berry slots: itemAmount - 1 would wrap around
+		MergeSort(bagPocket->itemSlots, 0, itemAmount - 1, func);
 }
 
 static s8 CompareItemsAlphabetically(struct ItemSlot* itemSlot1, struct ItemSlot* itemSlot2)
@@ -1501,18 +1522,18 @@ void SortItemsInBag(u8 pocket, u8 type)
 	u16 itemAmount;
 	s8 (*func)(struct ItemSlot*, struct ItemSlot*);
 
-	switch (pocket) {
+	switch (pocket) { //The pockets in use: a Time Echo protagonist's are smaller (SetMemoryForBagStorage)
 		case 0:
-			itemMem = sBagPocketArrangement.itemRam;
-			itemAmount = sBagPocketArrangement.itemAmount;
+			itemMem = gBagPockets->itemRam;
+			itemAmount = gBagPockets->itemAmount;
 			break;
 		case 1:
-			itemMem = sBagPocketArrangement.keyItemRam;
-			itemAmount = sBagPocketArrangement.keyItemAmount;
+			itemMem = gBagPockets->keyItemRam;
+			itemAmount = gBagPockets->keyItemAmount;
 			break;
 		default:
-			itemMem = sBagPocketArrangement.pokeBallRam;
-			itemAmount = sBagPocketArrangement.pokeBallAmount;
+			itemMem = gBagPockets->pokeBallRam;
+			itemAmount = gBagPockets->pokeBallAmount;
 	}
 
 	switch (type) {
@@ -1530,7 +1551,8 @@ void SortItemsInBag(u8 pocket, u8 type)
 			func = CompareItemsByType;
 	}
 
-	MergeSort(itemMem, 0, itemAmount - 1, func);
+	if (itemAmount > 1) //A pocket with no slots (Time Echo protagonists) has nothing to sort
+		MergeSort(itemMem, 0, itemAmount - 1, func);
 }
 
 void MergeSort(struct ItemSlot* array, u32 low, u32 high, s8 (*comparator)(struct ItemSlot*, struct ItemSlot*))

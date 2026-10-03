@@ -6,8 +6,6 @@
 
 .global EventScript_Borgo_Ponente_Sign0
 EventScript_Borgo_Ponente_Sign0:
-
-	call EventScript_LevelPartyToCap
 	msgbox Borgo_Ponente_Sign0 0x7
 	end
 
@@ -450,10 +448,8 @@ gMapScripts_Borgo_Ponente_3_0:
 				pause 0x1E
 				applymovement 0x8 Borgo_Ponente_3_0_MapScriptOnFrame_mov3
 				waitmovement 0x0
-				applymovement 0x8 Borgo_Ponente_3_0_MapScriptOnFrame_mov4
-				waitmovement 0x0
-				movesprite 0x8 0x0E 0x6 @The NPC on screen
-				movesprite2 0x8 0x0E 0x6 @Where it respawns after going off-screen
+				hidesprite 0x8 @The walking Crispy (ID 8) is done: Crispy ID 3 already waits at (14,6)
+				spriteface 0x3 0x1 @Facing down, as Borgo_Ponente_3_0_MapScriptOnLoad_move_Crispy leaves him
 				fadedefault
 				setvar 0x4051 0xE
 				setvar 0x4050 0x2
@@ -485,6 +481,3 @@ gMapScripts_Borgo_Ponente_3_0:
 				.byte 0x60
 				.byte 0xFE
 
-			Borgo_Ponente_3_0_MapScriptOnFrame_mov4:
-				.byte 0x61 @set_visible
-				.byte 0xFE

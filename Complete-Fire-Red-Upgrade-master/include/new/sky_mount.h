@@ -9,6 +9,7 @@
 
 //Exported Functions
 bool8 IsSkyMountActive(void);
+bool8 IsGroundMountActive(void);
 void SkyMount_TryCreate(void);
 void SkyMount_UpdatePlayerSprite(void);
 void SkyMount_Start(void);

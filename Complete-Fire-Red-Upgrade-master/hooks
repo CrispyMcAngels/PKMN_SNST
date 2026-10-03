@@ -661,3 +661,21 @@ ActivateMGBAPrint 81E381C 0
 FixInstantTextOptionSpeed 08002D10 0
 RunTextPrintersForInstantTextHook 08002DEE 0
 #endif
+
+#ifdef VAR_COURIER_STATE
+##"Consegna lampo" side quest: no going into buildings while delivering (courier_quest_hooks.s)
+CourierQuestWarpHook 0806DC30 2
+#endif
+
+#ifdef VAR_PLAYER_CHARACTER
+##Time Echo protagonists don't register Pokemon in the Pokedex (player_characters_hooks.s)
+DexFlagCheckHook 08104AB0 3
+##Time Echo protagonists' bag: picture, palette, no Poke Ball pocket
+LoadBagSpriteSheetHook 08108310 0
+LoadBagSpritePaletteHook 08108340 0
+SwitchBagPocketRightHook 081091B8 0
+##Time Echo protagonists' trainer card: no badges, stars or ID number, can't be flipped
+TrainerCardBadgesHook 08089A94 1
+TrainerCardIdHook 08089F78 0
+TrainerCardFlipHook 0808924C 1
+#endif

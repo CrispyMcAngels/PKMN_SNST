@@ -11,6 +11,9 @@
 #org @sGreenOwText_1
 [GREEN]Verdi
 
+#org @sRedOwText_1
+[RED]Rossi
+
 #org @sInvestAmountText_5000
 5000 Poke
 
@@ -28,6 +31,15 @@ Bilanciato
 
 #org @sInvestPlanText_Speculativo
 Speculativo
+
+#org @sElevatorText_GroundFloor
+Piano terra
+
+#org @sElevatorText_FirstFloor
+Primo piano
+
+#org @sElevatorText_SecondFloor
+Secondo piano
 
 #org @sExampleText_3
 Example 3

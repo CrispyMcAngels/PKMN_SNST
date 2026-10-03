@@ -49,6 +49,21 @@ A quanto pare, non basta essere\npronti all'avventura[.]
 #org @Percorso_4_3_22_NPC7_text3
 [BLACK]Mi alleno in percorsi difficili per\ndiventare forte ovunque.\pAnche con il vento contro!
 
+#org @Percorso_4_3_22_NPC8_text_waiting
+[BLACK]Stavo aspettando una consegna\nurgente, ma il fattorino non si [1A]\lancora fatto vedere[.]\pChiss[16] dove si [1A] perso!
+
+#org @Percorso_4_3_22_NPC8_text_deliver
+[BLACK]Ma quello [1A] il [GREEN]Rapidash[BLACK] dell'agente!\nAllora [1A] arrivato il mio pacco!\pGiusto in tempo: con questi strumenti\nposso finalmente misurare l'energia\ldel [GREEN]Passo Tuono[BLACK]!\pGrazie mille! Avviso subito l'agente\nche la consegna [1A] riuscita.
+
+#org @Percorso_4_3_22_NPC8_text_leave
+[PLAYER_CUSTOM][PLAYER][BLACK] scende dalla sella.\n[GREEN]Rapidash[BLACK] riparte al galoppo!
+
+#org @Percorso_4_3_22_NPC8_text_go_back
+[BLACK]Passa a salutare l'agente sul\nPercorso 2: credo voglia\lringraziarti.
+
+#org @Percorso_4_3_22_NPC8_text_thanks
+[BLACK]Grazie ancora per la consegna! I\nnuovi strumenti funzionano a\lmeraviglia.
+
 #org @Percorso_4_3_22_NPC8_text1
 [BLACK]Sto registrando picchi anomali di\nenergia statica[.]\pSembra che il [GREEN]Passo Tuono[BLACK] stia\ndiventando attivo.
 
@@ -75,7 +90,7 @@ Patti chiari amicizia lunga,\nti dar[22] questa MN.
 [BLACK]Non pensavo sarebbe finita cos[1E],\nma te la sei meritata!
 
 #org @Percorso_4_3_22_NPC11_text4
-[BLACK]Grazie alla [GREEN]MN01 TAGLIO[BLACK] puoi\ntagliare gli alberi che ostacolano\lil tuo percorso!\pTieni a mente che in [ORANGE]Pokemon\nSunset[BLACK] non [1A] necessario insegnare\lle [GREEN]MN[BLACK] ad un Pokemon per usarle.\pIl gioco riconoscer[16] in automatico\nche un Pokemon nella tua squadra\l[1A] in grado di imparare la [GREEN]MN[BLACK] in\lquestione e gli permetter[16] di\lusarla senza averla imparata!
+[BLACK]Grazie alla [GREEN]MN01 TAGLIO[BLACK] puoi\ntagliare gli alberi che ostacolano\lil tuo percorso!\pTieni a mente che in [CUSTOM]Pokemon\nSunset[BLACK] non [1A] necessario insegnare\lle [GREEN]MN[BLACK] ad un Pokemon per usarle.\pIl gioco riconoscer[16] in automatico\nche un Pokemon nella tua squadra\l[1A] in grado di imparare la [GREEN]MN[BLACK] in\lquestione e gli permetter[16] di\lusarla senza averla imparata!
 
 #org @Percorso_4_3_22_Sign0
 Percorso 4:\n[ARROW_UP] Percorso 3\l[ARROW_DOWN] Passo Tuono.

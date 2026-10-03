@@ -44,6 +44,7 @@
 #include "../include/new/read_keys.h"
 #include "../include/new/roamer.h"
 #include "../include/new/text.h"
+#include "../include/new/overworld_shop.h"
 #include "../include/new/scrolling_multichoice.h"
 #include "../include/new/Vanilla_functions_battle.h"
 #include "../include/new/wild_encounter.h"
@@ -3087,12 +3088,16 @@ void ConvertCoinInt(u32 coinAmount)
 extern const u8 sBlueOwText_1[];
 extern const u8 sOrangeOwText_1[];
 extern const u8 sGreenOwText_1[];
+extern const u8 sRedOwText_1[];
 extern const u8 sInvestAmountText_5000[];
 extern const u8 sInvestAmountText_10000[];
 extern const u8 sInvestAmountText_20000[];
 extern const u8 sInvestPlanText_Prudente[];
 extern const u8 sInvestPlanText_Bilanciato[];
 extern const u8 sInvestPlanText_Speculativo[];
+extern const u8 sElevatorText_GroundFloor[];
+extern const u8 sElevatorText_FirstFloor[];
+extern const u8 sElevatorText_SecondFloor[];
 extern const u8 sExampleText_4[];
 extern const u8 sExampleText_5[];
 extern const u8 sExampleText_6[];
@@ -3137,6 +3142,35 @@ static const u8* sMultichoiceSet3[] =
 	sGreenOwText_1,
 };
 
+//Wardrobe lists with the red clothes ("Consegna lampo" side quest)
+static const u8* sMultichoiceSet9[] =
+{
+	sBlueOwText_1,
+	sRedOwText_1,
+};
+
+static const u8* sMultichoiceSet10[] =
+{
+	sBlueOwText_1,
+	sOrangeOwText_1,
+	sRedOwText_1,
+};
+
+static const u8* sMultichoiceSet11[] =
+{
+	sBlueOwText_1,
+	sGreenOwText_1,
+	sRedOwText_1,
+};
+
+static const u8* sMultichoiceSet12[] =
+{
+	sBlueOwText_1,
+	sOrangeOwText_1,
+	sGreenOwText_1,
+	sRedOwText_1,
+};
+
 //Poke-Exchange investment (bank_investment.c): amounts, then plans
 static const u8* sMultichoiceSet4[] =
 {
@@ -3152,6 +3186,25 @@ static const u8* sMultichoiceSet5[] =
 	sInvestPlanText_Speculativo,
 };
 
+//Stellavia bank elevator (map 10.8): the floors other than the one the player is on
+static const u8* sMultichoiceSet6[] = //From the ground floor
+{
+	sElevatorText_FirstFloor,
+	sElevatorText_SecondFloor,
+};
+
+static const u8* sMultichoiceSet7[] = //From the first floor
+{
+	sElevatorText_GroundFloor,
+	sElevatorText_SecondFloor,
+};
+
+static const u8* sMultichoiceSet8[] = //From the second floor
+{
+	sElevatorText_GroundFloor,
+	sElevatorText_FirstFloor,
+};
+
 // Multichoice Lists
 const struct ScrollingMulti gScrollingSets[] =
 {
@@ -3160,7 +3213,71 @@ const struct ScrollingMulti gScrollingSets[] =
 	{sMultichoiceSet3, ARRAY_COUNT(sMultichoiceSet3)},
 	{sMultichoiceSet4, ARRAY_COUNT(sMultichoiceSet4)}, //3: investment amount
 	{sMultichoiceSet5, ARRAY_COUNT(sMultichoiceSet5)}, //4: investment plan
+	{sMultichoiceSet6, ARRAY_COUNT(sMultichoiceSet6)}, //5: elevator, from the ground floor
+	{sMultichoiceSet7, ARRAY_COUNT(sMultichoiceSet7)}, //6: elevator, from the first floor
+	{sMultichoiceSet8, ARRAY_COUNT(sMultichoiceSet8)}, //7: elevator, from the second floor
+	{sMultichoiceSet9, ARRAY_COUNT(sMultichoiceSet9)}, //8: wardrobe, blue/red
+	{sMultichoiceSet10, ARRAY_COUNT(sMultichoiceSet10)}, //9: wardrobe, blue/orange/red
+	{sMultichoiceSet11, ARRAY_COUNT(sMultichoiceSet11)}, //10: wardrobe, blue/green/red
+	{sMultichoiceSet12, ARRAY_COUNT(sMultichoiceSet12)}, //11: wardrobe, blue/orange/green/red
 };
+
+//Wardrobe (Borgo Ponente 4.0): the list of the clothes the player owns, and the outfit (var 0x4068) of each option.
+//Blue is always owned; the others are owned with their flag.
+#define FLAG_OUTFIT_ORANGE 0x964
+#define FLAG_OUTFIT_GREEN 0x966
+#define FLAG_OUTFIT_RED 0x34D //"Consegna lampo" side quest completed
+#define OUTFIT_BLUE 0
+#define OUTFIT_ORANGE 1
+#define OUTFIT_GREEN 2
+#define OUTFIT_RED 3
+#define OUTFIT_NONE 0xFF
+
+struct WardrobeList
+{
+	u8 listId; //In gScrollingSets
+	u8 outfits[4]; //Var 0x4068 for each option
+};
+
+static const struct WardrobeList sWardrobeLists[] = //By owned clothes: orange | green << 1 | red << 2
+{
+	[1] = {0, {OUTFIT_BLUE, OUTFIT_ORANGE}},
+	[2] = {1, {OUTFIT_BLUE, OUTFIT_GREEN}},
+	[3] = {2, {OUTFIT_BLUE, OUTFIT_ORANGE, OUTFIT_GREEN}},
+	[4] = {8, {OUTFIT_BLUE, OUTFIT_RED}},
+	[5] = {9, {OUTFIT_BLUE, OUTFIT_ORANGE, OUTFIT_RED}},
+	[6] = {10, {OUTFIT_BLUE, OUTFIT_GREEN, OUTFIT_RED}},
+	[7] = {11, {OUTFIT_BLUE, OUTFIT_ORANGE, OUTFIT_GREEN, OUTFIT_RED}},
+};
+
+static u8 GetOwnedClothes(void)
+{
+	return (FlagGet(FLAG_OUTFIT_ORANGE) ? 1 : 0)
+		 | (FlagGet(FLAG_OUTFIT_GREEN) ? 2 : 0)
+		 | (FlagGet(FLAG_OUTFIT_RED) ? 4 : 0);
+}
+
+//Var8000 = the list to show. LastResult = FALSE when only the blue clothes are owned
+void Wardrobe_PrepareMenu(void)
+{
+	u8 owned = GetOwnedClothes();
+
+	gSpecialVar_LastResult = owned != 0;
+	if (owned != 0)
+		Var8000 = sWardrobeLists[owned].listId;
+}
+
+//Var8005 = the outfit picked in the menu (var 0x4068 value), or OUTFIT_NONE if cancelled
+void Wardrobe_GetChosenOutfit(void)
+{
+	u8 owned = GetOwnedClothes();
+	u16 choice = gSpecialVar_LastResult;
+
+	if (owned == 0 || choice >= gScrollingSets[sWardrobeLists[owned].listId].count)
+		Var8005 = OUTFIT_NONE; //Cancelled (0x7F)
+	else
+		Var8005 = sWardrobeLists[owned].outfits[choice];
+}
 
 //Link number of opts shown at once to the box height
 struct ScrollingSizePerOpts
@@ -3189,9 +3306,15 @@ static const struct ScrollingSizePerOpts sScrollingSizes[] =
 
 #endif
 
+#define SHOP_LIST_LEFT 15 //Overworld shops: on the right, beside the money box (showmoney 0 0)
+#define SHOP_LIST_WIDTH 14
+
 u32 GetSizeOfMultiList(void)
 {
 #ifdef SCROLLING_MULTICHOICE
+	if (Var8000 == OVERWORLD_SHOP_LIST)
+		return OverworldShop_GetNumItems();
+
 	return gScrollingSets[Var8000].count;
 #else
 	return 0;
@@ -3201,6 +3324,9 @@ u32 GetSizeOfMultiList(void)
 const u8* const* GetScrollingMultiList(void)
 {
 #ifdef SCROLLING_MULTICHOICE
+	if (Var8000 == OVERWORLD_SHOP_LIST)
+		return OverworldShop_GetLabels(); //Built when the shop opened (overworld_shop.c)
+
 	return gScrollingSets[Var8000].set;
 #else
 	return 0;
@@ -3229,5 +3355,11 @@ void SetScrollingListSize(unusedArg u8 taskId)
 	gTasks[taskId].data[2] = 1;	//x
 	gTasks[taskId].data[3] = 1;	//y
 	gTasks[taskId].data[4] = 0xC;	//width?
+
+	if (Var8000 == OVERWORLD_SHOP_LIST) //Item names and prices need more room
+	{
+		gTasks[taskId].data[2] = SHOP_LIST_LEFT;
+		gTasks[taskId].data[4] = SHOP_LIST_WIDTH;
+	}
 #endif
 }

@@ -35,6 +35,7 @@
 #include "../include/new/evolution.h"
 #include "../include/new/follow_me.h"
 #include "../include/new/exp.h"
+#include "../include/new/courier_quest.h"
 #include "../include/new/form_change.h"
 #include "../include/new/item.h"
 #include "../include/new/overworld.h"
@@ -985,6 +986,9 @@ static bool8 SetUpFieldMove_Fly(void)
 	if (gFollowerState.inProgress && !(gFollowerState.flags & FOLLOWER_FLAG_CAN_LEAVE_ROUTE))
 		return FALSE;
 
+	if (IsCourierQuestActive())
+		return FALSE;
+
 	if (Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE)
 		return TRUE;
 
@@ -995,6 +999,9 @@ static bool8 SetUpFieldMove_Fly(void)
 static bool8 SetUpFieldMove_Surf(void)
 {
 	if (gFollowerState.inProgress && !(gFollowerState.flags & FOLLOWER_FLAG_CAN_SURF))
+		return FALSE;
+
+	if (IsCourierQuestActive())
 		return FALSE;
 
 	u16 item = ITEM_NONE;
@@ -1035,6 +1042,9 @@ static bool8 SetUpFieldMove_Waterfall(void)
 static bool8 SetUpFieldMove_Teleport(void)
 {
 	if (gFollowerState.inProgress && !(gFollowerState.flags & FOLLOWER_FLAG_CAN_LEAVE_ROUTE))
+		return FALSE;
+
+	if (IsCourierQuestActive())
 		return FALSE;
 
 	if (Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE)
@@ -1162,6 +1172,9 @@ void sp101_CanPlayerFlyInCurrentLocation(void)
 	if (gFollowerState.inProgress && !(gFollowerState.flags & FOLLOWER_FLAG_CAN_LEAVE_ROUTE))
 		return;
 
+	if (IsCourierQuestActive())
+		return;
+
 	gSpecialVar_LastResult = Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType);
 }
 
@@ -1169,6 +1182,9 @@ void sp102_IsPlayerFacingSurfableWater(void)
 {
 	gSpecialVar_LastResult = FALSE;
 	if (gFollowerState.inProgress && !(gFollowerState.flags & FOLLOWER_FLAG_CAN_SURF))
+		return;
+
+	if (IsCourierQuestActive())
 		return;
 
 	gSpecialVar_LastResult = IsPlayerFacingSurfableFishableWater();

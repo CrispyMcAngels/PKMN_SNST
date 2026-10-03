@@ -117,11 +117,35 @@ EventScript_Percorso_4_3_22_NPC7:
 
 .global EventScript_Percorso_4_3_22_NPC8
 EventScript_Percorso_4_3_22_NPC8:
+	@The scientist waiting for the "Consegna lampo" parcel (src/courier_quest.c, var 0x5042, flag 0x34D)
 	lock
 	faceplayer
-	msgbox Percorso_4_3_22_NPC8_text1 MSG_NORMAL
+	compare 0x5042 0x1
+	if 0x1 _goto EventScript_Percorso_4_3_22_NPC8_Deliver
+	compare 0x5042 0x2
+	if 0x1 _goto EventScript_Percorso_4_3_22_NPC8_Thanks
+	checkflag 0x34D
+	if 0x1 _goto EventScript_Percorso_4_3_22_NPC8_Thanks
+	msgbox Percorso_4_3_22_NPC8_text_waiting MSG_NORMAL
 	release
 	end
+
+	EventScript_Percorso_4_3_22_NPC8_Deliver:
+		msgbox Percorso_4_3_22_NPC8_text_deliver MSG_NORMAL
+		callasm CourierQuest_Deliver @Off Rapidash; the officer gives the reward
+		cry 0x4E 0x0
+		waitcry
+		msgbox Percorso_4_3_22_NPC8_text_leave MSG_NORMAL
+		pause 0x1E
+		msgbox Percorso_4_3_22_NPC8_text_go_back MSG_NORMAL
+		release
+		end
+
+	EventScript_Percorso_4_3_22_NPC8_Thanks:
+		msgbox Percorso_4_3_22_NPC8_text_thanks MSG_NORMAL
+		msgbox Percorso_4_3_22_NPC8_text1 MSG_NORMAL
+		release
+		end
 
 .global EventScript_Percorso_4_3_22_NPC9
 EventScript_Percorso_4_3_22_NPC9:
@@ -157,13 +181,25 @@ EventScript_Percorso_4_3_22_NPC11:
 	giveitem 0x153 0x1 MSG_OBTAIN
 	pause 0x1E
 	faceplayer
+
+	//set color to sunset 
+	setvar 0x503E 0x325F
+	call EventScript_RefreshTextColor
 	msgbox Percorso_4_3_22_NPC11_text4 MSG_NORMAL
+	//set custom color back to dusk
+	setvar 0x503E 0x2447
+	call EventScript_RefreshTextColor
 	setvar 0x4053 0x8
 	releaseall
 	end
 
 	EventScript_Percorso_4_3_22_NPC11_P1:
+		//set color to sunset 
+		setvar 0x503E 0x325F
+		call EventScript_RefreshTextColor
 		msgbox Percorso_4_3_22_NPC11_text4 MSG_NORMAL
+		//set custom color back to dusk
+		setvar 0x503E 0x2447
 		release
 		end
 

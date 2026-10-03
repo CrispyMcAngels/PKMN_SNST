@@ -14,7 +14,7 @@
 [DARK_GRAY]???[BLACK]: [05] ora di tornare a casa,\nmia vecchia amica[.]\pSai cosa fare[.]
 
 #org @EventScript_Capp_temporale_3_47_text6
-[DARK_GRAY]???[BLACK]: Ho portato a termine la mia\nmissione[.]\pOra tutto dipende da te[.]\p[.][LIGHT_BLUE][PLAYER][BLACK][.]
+[DARK_GRAY]???[BLACK]: Ho portato a termine la mia\nmissione[.]\pOra tutto dipende da te[.]\p[.][PLAYER_CUSTOM][PLAYER][BLACK][.]
 
 #org @EventScript_Capp_temporale_3_47_text7
 [BLACK][.]

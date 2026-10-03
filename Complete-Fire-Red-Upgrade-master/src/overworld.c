@@ -41,7 +41,9 @@
 #include "../include/constants/trainers.h"
 #include "../include/constants/trainer_classes.h"
 
+#include "../include/new/player_characters.h"
 #include "../include/new/bg3_parallax.h"
+#include "../include/new/courier_quest.h"
 #include "../include/new/dexnav.h"
 #include "../include/new/item.h"
 #include "../include/new/follow_me.h"
@@ -1492,6 +1494,13 @@ bool8 TryStartStepCountScript(u16 metatileBehavior)
 			ScriptContext1_SetupScript(customWalkingScript);
 			return TRUE;
 		}
+
+		const u8* courierScript = CourierQuest_OnStep(); //Steps left warnings, or too late
+		if (courierScript != NULL)
+		{
+			ScriptContext1_SetupScript(courierScript);
+			return TRUE;
+		}
 	}
 
 	if (SafariZoneTakeStep() == TRUE)
@@ -1564,6 +1573,10 @@ static const u8* TryUseFlashInDarkCave(void)
 
 void RunOnTransitionMapScript(void)
 {
+	#ifdef VAR_PLAYER_CHARACTER
+	PlayerCharacter_Switch(); //If VAR_PLAYER_CHARACTER changed, before the player's sprite is made
+	#endif
+
 	//Reset streaks upon moving to a new map
 	gCurrentDexNavChain = 0;
 	gFishingStreak = 0;
@@ -1571,6 +1584,7 @@ void RunOnTransitionMapScript(void)
 	gDontFadeWhite = FALSE;
 	ResetMiningSpots();
 	ForceClockUpdate();
+	CourierQuest_OnMapLoad(); //Before the map's own scripts, which may check the Cut trees' flag
 	MapHeaderRunScriptByTag(3);
 }
 
@@ -1789,6 +1803,9 @@ void PlayerOnBikeCollide(u8 direction)
 bool8 CanUseEscapeRopeOnCurrMap(void)
 {
 	if (gFollowerState.inProgress && !(gFollowerState.flags & FOLLOWER_FLAG_CAN_LEAVE_ROUTE))
+		return FALSE;
+
+	if (IsCourierQuestActive())
 		return FALSE;
 
 	return (gMapHeader.flags & MAP_ALLOW_ESCAPE_ROPE) != 0;
@@ -2508,7 +2525,9 @@ bool8 IsUnderwater(void)
 
 u8 GetAdjustedInitialTransitionFlags(struct InitialPlayerAvatarState *playerStruct, u16 metatileBehavior, u8 mapType)
 {
-	if (IsSkyMountActive())
+	if (IsGroundMountActive())
+		return PLAYER_AVATAR_FLAG_MACH_BIKE; //Riding on land (sky_mount.c): the bike underneath gives the speed
+	else if (IsSkyMountActive())
 		return PLAYER_AVATAR_FLAG_ON_FOOT; //Riding in the sky (sky_mount.c): never arrive underwater, surfing or on the bike
 	else if (mapType != MAP_TYPE_INDOOR && FlagGet(0x802))
 		return PLAYER_AVATAR_FLAG_ON_FOOT;
@@ -2557,6 +2576,15 @@ void FieldCheckIfPlayerPressedLButton(struct FieldInput* input, u16 newKeys)
 
 bool8 ProcessNewFieldPlayerInput(struct FieldInput* input)
 {
+	if (IsCourierQuestActive())
+	{
+		if (ScriptContext2_IsEnabled())
+			return TRUE; //A door was blocked and the "give up?" question started: don't walk into the door
+
+		if ((input->pressedBButton || input->pressedSelectButton) && CourierQuest_TryAskQuit())
+			return TRUE; //Riding the courier's Rapidash: ask whether to give up instead
+	}
+
 	if (input->pressedSelectButton && UseRegisteredKeyItemOnField())
     {
         gInputToStoreInQuestLogMaybe.pressedSelectButton = TRUE;

@@ -11,14 +11,14 @@
 [BLUE]Crispy[BLACK]: Prenditi il tuo tempo,\nio e [GREEN]Flygon[BLACK] siamo sempre pronti\la partire.
 
 #org @Radiantia_3_4_tile0_text5
-[DARK_GREEN]Eleonora[BLACK]: Questo [1A] lo spirito\ngiusto [LIGHT_BLUE][PLAYER][BLACK]!\pGoditi il panorama sul [GREEN]Percorso 12[BLACK],\nla vista [1A] mozzafiato!\pBene, meglio che ritorni alla\n[GREEN]Palestra di Radiantia[BLACK], fate buon\lviaggio!
+[DARK_GREEN]Eleonora[BLACK]: Questo [1A] lo spirito\ngiusto [PLAYER_CUSTOM][PLAYER][BLACK]!\pGoditi il panorama sul [GREEN]Percorso 12[BLACK],\nla vista [1A] mozzafiato!\pBene, meglio che ritorni alla\n[GREEN]Palestra di Radiantia[BLACK], fate buon\lviaggio!
 
 #org @Radiantia_3_4_tile0_text6
-[BLUE]Crispy[BLACK]: Bene [LIGHT_BLUE][PLAYER][BLACK], non ci resta\nche partire.\pTu volerai sullo [GREEN]Swellow[BLACK] di\n[DARK_GREEN]Eleonora[BLACK].
+[BLUE]Crispy[BLACK]: Bene [PLAYER_CUSTOM][PLAYER][BLACK], non ci resta\nche partire.\pTu volerai sullo [GREEN]Swellow[BLACK] di\n[DARK_GREEN]Eleonora[BLACK].
 
 #org @Radiantia_3_4_NPC12_text1
 //_/////////////////////////////////
-[DARK_GREEN]Eleonora[BLACK]: Ciao [LIGHT_BLUE][PLAYER][BLACK], come va?\nSei emozionato per il viaggio?
+[DARK_GREEN]Eleonora[BLACK]: Ciao [PLAYER_CUSTOM][PLAYER][BLACK], come va?\nSei emozionato per il viaggio?
 
 #org @Radiantia_3_4_Sign0_text1
 Oltre il gran burrone di Radiantia\nsi estende il Percorso 12,\lpercorribile tramite la MN Zenit.
@@ -57,7 +57,7 @@ Palestra Pok\emon di Radiantia.
 [BLACK]Sono originario di [GREEN]Corallia[BLACK] e sto\nviaggiando [GREEN]Eyros[BLACK] per conquistare\ltutte le medaglie.\pLa palestra di questa citt[16] [1A]\nspecializzata in Pok\emon di tipo\lvolante[.]\pD'altronde cosa c'era da aspettarsi\nin una citt[16] sul ciglio di un\lburrone?
 
 #org @Radiantia_3_4_MapScriptOnFrame_text1
-[LIGHT_BLUE][PLAYER][BLACK]: Quei [GREEN]Murkrow[BLACK] sembrano\nveramente arrabbiati, meglio stargli\lalla larga!!!
+[PLAYER_CUSTOM][PLAYER][BLACK]: Quei [GREEN]Murkrow[BLACK] sembrano\nveramente arrabbiati, meglio stargli\lalla larga!!!
 
 #org @Radiantia_3_4_MapScriptOnFrame_text2
 [BLUE]Crispy[BLACK]: Ehi, [PLAYER]!\nProprio te cercavo.\pMi hanno detto che hai gi[16] ottenuto\nla [GREEN]Medaglia Amonite[BLACK] da [ORANGE]Filiberto[BLACK][.]\pNiente male per uno alle prime\narmi, eh?
@@ -75,5 +75,4 @@ Palestra Pok\emon di Radiantia.
 [BLUE]Crispy[BLACK]: Ah, quasi dimenticavo!\pHai sentito che hanno inaugurato la\nnuova linea della metropolitana?\pDa oggi puoi raggiungere [GREEN]Stellavia[BLACK]\ndirettamente da [GREEN]Ardesiopoli[BLACK].\pComodo, no?
 
 #org @Radiantia_3_4_MapScriptOnFrame_text7
-Bene, non ho tempo da perdere.\nCi vediamo al [GREEN]Passo Tuono[BLACK], [LIGHT_BLUE][PLAYER][BLACK].\pE tieni gli occhi aperti[.]\nQualcosa mi dice che questo [1A] solo\ll'inizio.
-
+Bene, non ho tempo da perdere.\nCi vediamo al [GREEN]Passo Tuono[BLACK], [PLAYER_CUSTOM][PLAYER][BLACK].\pE tieni gli occhi aperti[.]\nQualcosa mi dice che questo [1A] solo\ll'inizio.

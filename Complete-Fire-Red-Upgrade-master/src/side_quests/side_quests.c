@@ -106,6 +106,8 @@ extern const u8 gText_SideQuests_StarryKitchen[];
 extern const u8 gText_SideQuests_StarryKitchenDesc[];
 extern const u8 gText_SideQuests_MurkrowInvasion[];
 extern const u8 gText_SideQuests_MurkrowInvasionDesc[];
+extern const u8 gText_SideQuests_Courier[];
+extern const u8 gText_SideQuests_CourierDesc[];
 
 //The quest list, shown in this order. Add new quests before the last line.
 static const struct SideQuest sSideQuests[] =
@@ -116,6 +118,7 @@ static const struct SideQuest sSideQuests[] =
 	{gText_SideQuests_FindShinx,       gText_SideQuests_FindShinxDesc,       0x969, 0x96A, 116},
 	{gText_SideQuests_PokemonThief,    gText_SideQuests_PokemonThiefDesc,    0x96B, 0x96C, 49},
 	{gText_SideQuests_StarryKitchen,   gText_SideQuests_StarryKitchenDesc,   0x96D, 0x96E, 74},
+	{gText_SideQuests_Courier,         gText_SideQuests_CourierDesc,         0x34C, 0x34D, 69},  //courier_quest.c
 	{gText_SideQuests_MurkrowInvasion, gText_SideQuests_MurkrowInvasionDesc, 0x970, 0x971, 133},
 	{NULL}
 };

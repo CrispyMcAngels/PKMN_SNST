@@ -801,29 +801,16 @@ Scogliera_Crepuscolo_42_0_MapScriptOnFrameBegin_P1:
     pause 0x3E
 
 
-    //setplayer invisible
+    //back to the main character (player_characters.c): his party, bag, money, name, sprites and
+    //start menu options come back as they were
+    setvar 0x5035 0x0
+    callasm PlayerCharacter_Switch
+
+    //setplayer invisible (after switching back, which restores his sprite)
     setvar 0x501F 0x12E
 
-    //enable running shoes, 
-    setflag 0x82F
-    //enable pokedex
-    setflag 0x829
-    //enable bag
-    setflag 0x995
-    //enable trainer name
-    setflag 0x996
-    //enable dexnav
-    setflag 0x91E
-    //enable save
-    setflag 0x997
-    //enable side quest 
-    setflag 0x998 
-    //enable time echoes 
-    setflag 0x990
     //Destroy follower NPC 
     special 0xD2
-    //give back pokemon party
-    special 0x28 
     //ask to save 
     special 0x26
     setvar 0x4051 0x53

@@ -1,5 +1,5 @@
 #org @Percorso3_3_21_tile4_text1
-[RED]Naomi[BLACK]: Hei [LIGHT_BLUE][PLAYER][BLACK], ne [1A] passato\ndi tempo!\pChe ti porta da queste parti,\nstai andando pure te a [GREEN]Radiantia[BLACK] a\lsfidare [DARK_GREEN]Eleonora[BLACK]?\pIo purtroppo non sono riuscita\na sconfiggerla, i suoi Pok\emon mi\lhanno spazzata via...
+[RED]Naomi[BLACK]: Hei [PLAYER_CUSTOM][PLAYER][BLACK], ne [1A] passato\ndi tempo!\pChe ti porta da queste parti,\nstai andando pure te a [GREEN]Radiantia[BLACK] a\lsfidare [DARK_GREEN]Eleonora[BLACK]?\pIo purtroppo non sono riuscita\na sconfiggerla, i suoi Pok\emon mi\lhanno spazzata via...
 
 #org @Percorso3_3_21_tile4_text2
 [PLAYER]: [.]
@@ -34,7 +34,7 @@ Naomi: Ancora una volta[.]
 [RED]Naomi[BLACK]: Basta, ho deciso, adesso\nvado dritta a [GREEN]Stellavia[BLACK].\pOgni volta la stessa storia,\ndavvero non ne posso pi[26]! 
 
 #org @Percorso3_3_21_tile4_text12
-[RED]Naomi[BLACK]: Perch[1A] non mi raggiungi l[1E],\n[LIGHT_BLUE][PLAYER][BLACK]?\pNon vedo l'ora di ascoltare i tuoi\nracconti di [GREEN]Roccavento[BLACK].\pInoltre [DARK_GRAY]DJ Ross[BLACK], il capopalestra\ndi [GREEN]Stellavia[BLACK], si esibir[16] fra\lqualche giorno in un gran concerto!
+[RED]Naomi[BLACK]: Perch[1A] non mi raggiungi l[1E],\n[PLAYER_CUSTOM][PLAYER][BLACK]?\pNon vedo l'ora di ascoltare i tuoi\nracconti di [GREEN]Roccavento[BLACK].\pInoltre [DARK_GRAY]DJ Ross[BLACK], il capopalestra\ndi [GREEN]Stellavia[BLACK], si esibir[16] fra\lqualche giorno in un gran concerto!
 
 #org @Percorso3_3_21_tile4_text13
 //_/////////////////////////////////

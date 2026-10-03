@@ -33,6 +33,7 @@ u8 SetUpTreeDisguise(void);
 u8 SetUpRockDisguise(void);
 u8 SetUpWeirdDisguise(void);
 void LoadCloudOrSandstormPalette(u16* pal);
+u16 GetPlayerOutfitTextColor(u16 defaultColor);
 
 //Exported Constants
 #define PalTypeUnused 0

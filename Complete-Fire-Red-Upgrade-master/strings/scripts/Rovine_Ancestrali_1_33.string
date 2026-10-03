@@ -1,17 +1,17 @@
 #org @EventScript_Rovine_Ancestrali_1_33_tile0_text1
-[RED]Naomi[BLACK]: Eccoti [LIGHT_BLUE][PLAYER][BLACK], finalmente\nsono riuscita a raggiungerti!\pWow, hai visto cosa hanno\ncombinato questi farabutti del\l[CUSTOM]Team Dusk[BLACK]?\pChissa cosa stanno cercando qui\nsotto[.]\pI tuoi Pok\emon sono stanchi?\pLascia che li rimetta in sesto[.]
+[RED]Naomi[BLACK]: Eccoti [PLAYER_CUSTOM][PLAYER][BLACK], finalmente\nsono riuscita a raggiungerti!\pWow, hai visto cosa hanno\ncombinato questi farabutti del\l[CUSTOM]Team Dusk[BLACK]?\pChissa cosa stanno cercando qui\nsotto[.]\pI tuoi Pok\emon sono stanchi?\pLascia che li rimetta in sesto[.]
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile0_text2
-[RED]Naomi[BLACK] ha rimesso in sesto i\nPok\emon di [LIGHT_BLUE][PLAYER][BLACK].
+[RED]Naomi[BLACK] ha rimesso in sesto i\nPok\emon di [PLAYER_CUSTOM][PLAYER][BLACK].
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile0_text3
 [RED]Naomi[BLACK]: Queste reclute del [CUSTOM]Team\nDusk[BLACK] sembrano essere molto forti[.]\pPerch[1A] non continuiamo insieme?\pSono sicura che unendo le nostre\nforze li sconfiggeremo!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile0_text4
-[RED]Naomi[BLACK]: [LIGHT_BLUE][PLAYER][BLACK], non possiamo\nandarcene ora.\lDobbiamo sconfiggere il [CUSTOM]Team\lDusk[BLACK]!
+[RED]Naomi[BLACK]: [PLAYER_CUSTOM][PLAYER][BLACK], non possiamo\nandarcene ora.\lDobbiamo sconfiggere il [CUSTOM]Team\lDusk[BLACK]!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile0_text5
-[RED]Naomi[BLACK]: Eccoti [LIGHT_BLUE][PLAYER][BLACK], non\npossiamo mollare proprio ora.\pSconfiggeremo il [CUSTOM]Team Dusk[BLACK]\ninsieme!
+[RED]Naomi[BLACK]: Eccoti [PLAYER_CUSTOM][PLAYER][BLACK], non\npossiamo mollare proprio ora.\pSconfiggeremo il [CUSTOM]Team Dusk[BLACK]\ninsieme!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile1_text1
 [CUSTOM]Recluta Dusk[BLACK]: Cosa ci fate voi qui?
@@ -50,13 +50,13 @@ Non esultate in anticipo, il capo\nvi ridurr[16] in polvere!
 Sconfitta da voi due[.]\nNon merito di far parte del Team\lDusk forse[.]
 
 #org @Rovine_Ancestrali_1_33_NPC0_text1
-[RED]Naomi[BLACK]: Tieni duro [LIGHT_BLUE][PLAYER][BLACK], ci\nsiamo quasi!
+[RED]Naomi[BLACK]: Tieni duro [PLAYER_CUSTOM][PLAYER][BLACK], ci\nsiamo quasi!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile7_text1
 [RED]Naomi[BLACK]: Wow, riesco a crederci a\nstento che siamo arrivati fino a\lquesto punto!\pOra non resta che vedere cosa si\ncela dentro quel tronco!
 
 #org @EventScript_Rovine_Ancestrali_1_33_tile7_text2
-[RED]Naomi[BLACK]: Coraggio [LIGHT_BLUE][PLAYER][BLACK], andiamo!
+[RED]Naomi[BLACK]: Coraggio [PLAYER_CUSTOM][PLAYER][BLACK], andiamo!
 
 #org @EventScript_Rovine_Ancestrali_1_33_NPC1_text1
 [CUSTOM]Recluta Dusk[BLACK]: Sembra che in\nqueste rovine sia custodito\lqualcosa di molto prezioso[.]

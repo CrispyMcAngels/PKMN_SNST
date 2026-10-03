@@ -2,16 +2,16 @@
 [DARK_GRAY]Prof. Kraemer[BLACK]: Wilkommen ragazzi,\na cosa devo qvesta visita?
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text2
-[RED]Naomi[BLACK]: Salve [DARK_GRAY]Prof. Kraemer[BLACK], siamo\nvenuti qui per farle vedere il\lPok\emon che [LIGHT_BLUE][PLAYER][BLACK] ha catturato nel\l[GREEN]Percorso 1[BLACK].
+[RED]Naomi[BLACK]: Salve [DARK_GRAY]Prof. Kraemer[BLACK], siamo\nvenuti qui per farle vedere il\lPok\emon che [PLAYER_CUSTOM][PLAYER][BLACK] ha catturato nel\l[GREEN]Percorso 1[BLACK].
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text3
 [DARK_GRAY]Prof. Kraemer[BLACK]: Natuerlich, vediamo\nsubito di che Pok\emon si tratta[.]
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text4
-[DARK_GRAY]Prof. Kraemer[BLACK]: Wunderbar, ein\n[GREEN]Axew[BLACK]!\pHai avuto davvero molta fortuna,\nio non pensare che ce ne essere\lnel [GREEN]Pevcovso 1[BLACK][.]\pJedenfalls, qvesto esemplare molto in\nsalute e gi[16] affezionato a te, [LIGHT_BLUE][PLAYER][BLACK]!\pSar[16] sicuvamente ottimo\lcompagno per tua avventura.
+[DARK_GRAY]Prof. Kraemer[BLACK]: Wunderbar, ein\n[GREEN]Axew[BLACK]!\pHai avuto davvero molta fortuna,\nio non pensare che ce ne essere\lnel [GREEN]Pevcovso 1[BLACK][.]\pJedenfalls, qvesto esemplare molto in\nsalute e gi[16] affezionato a te, [PLAYER_CUSTOM][PLAYER][BLACK]!\pSar[16] sicuvamente ottimo\lcompagno per tua avventura.
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text5
-[DARK_GRAY]Prof. Kraemer[BLACK]: Immagino dass\nadesso che [LIGHT_BLUE][PLAYER][BLACK] ha un Pok\emon\lanche tu ne vuoi uno [RED]Naomi[BLACK], oder?
+[DARK_GRAY]Prof. Kraemer[BLACK]: Immagino dass\nadesso che [PLAYER_CUSTOM][PLAYER][BLACK] ha un Pok\emon\lanche tu ne vuoi uno [RED]Naomi[BLACK], oder?
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text6
 [RED]Naomi[BLACK]: Si esatto!!!\nNon sto pi[26] nella pelle!
@@ -29,22 +29,22 @@
 [RED]Naomi[BLACK]: Wooow questo Pok\emon\nsembra fortissimo!\pGrazie mille [DARK_GRAY]Prof. Kraemer[BLACK].
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text11
-[DARK_GRAY]Prof. Kraemer[BLACK]: Esatto [RED]Naomi[BLACK], io\nsono sicher che tu e [GREEN]Deino[BLACK] sarete\lottimi amici e buoni rivali per\l[LIGHT_BLUE][PLAYER][BLACK] e [GREEN]Axew[BLACK]!
+[DARK_GRAY]Prof. Kraemer[BLACK]: Esatto [RED]Naomi[BLACK], io\nsono sicher che tu e [GREEN]Deino[BLACK] sarete\lottimi amici e buoni rivali per\l[PLAYER_CUSTOM][PLAYER][BLACK] e [GREEN]Axew[BLACK]!
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text12
-[LIGHT_BLUE][PLAYER][BLACK]: [.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: [.]
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text13
 [DARK_GRAY]Prof. Kraemer[BLACK]: Perch[1A] non fare\nsfida?\pSono sicher che una bella\nsfida vi aiutare per entrare in\lsintonia con vostri Pok\emon[.]
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text14
-[RED]Naomi[BLACK]: Ma certo!\nAspettavo questo momento da\ltantissimo tempo [LIGHT_BLUE][PLAYER][BLACK]!\pNon c'[1A] tempo da perdere,\nvado subito ad allenarmi con\lil mio [GREEN]Deino[BLACK] nel [GREEN]Percorso 11[BLACK].\p[LIGHT_BLUE][PLAYER][BLACK], ti aspetto l[1E]!
+[RED]Naomi[BLACK]: Ma certo!\nAspettavo questo momento da\ltantissimo tempo [PLAYER_CUSTOM][PLAYER][BLACK]!\pNon c'[1A] tempo da perdere,\nvado subito ad allenarmi con\lil mio [GREEN]Deino[BLACK] nel [GREEN]Percorso 11[BLACK].\p[PLAYER_CUSTOM][PLAYER][BLACK], ti aspetto l[1E]!
 
 #org @Borgo_Ponente_4_3_MapScriptOnFrame_text15
 [DARK_GRAY]Prof. Kraemer[BLACK]: Qvella [RED]Naomi[BLACK]\ndavvero testa calda, oder?\pComunque, io sicuro che voi\ndiventare grandi amici.\pPerch[1A] non vai a fare sfida con\nlei in [GREEN]Pevcovso 11[BLACK]?\pIo dovere finire un Experiment in\nlaboratorio e poi venire anche io\ll[1E] in [GREEN]Percorso 11[BLACK][.]
 
 #org @EventScript_Borgo_Ponente_4_3_NPC1_text1
-[DARK_GRAY]Prof. Kraemer[BLACK]: Hallo [LIGHT_BLUE][PLAYER][BLACK],\ncome procedere tuo [GREEN]Pokedex[BLACK]?
+[DARK_GRAY]Prof. Kraemer[BLACK]: Hallo [PLAYER_CUSTOM][PLAYER][BLACK],\ncome procedere tuo [GREEN]Pokedex[BLACK]?
 
 #org @EventScript_Borgo_Ponente_4_3_NPC0_text1
 [BLACK]Sono l'assistente del [DARK_GRAY]Prof.\nKraemer[BLACK] da molti anni ormai.\p[05] arrivato ad [GREEN]Eyros[BLACK] circa 20 anni\nfa e non ha smesso di lavorare\lnemmeno per un giorno.\pCome avrai notato, non ha ancora\nimparato perfettamente la nostra\llingua, infatti spesso lo aiuto\lanche con le traduzioni.\pQuesto lavoro [1A] un sogno per me!

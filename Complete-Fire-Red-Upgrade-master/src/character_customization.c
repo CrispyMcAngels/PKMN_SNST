@@ -144,11 +144,10 @@ static const struct PaletteOverrideEntry sTrainerBackRedPalOverride2[] =
 	{TRAINER_BACK_RED_PAL_OVERRIDE_END, 0},
 };
 
-static const struct PaletteOverrideEntry sTrainerBackRedPalOverride3[] =
+static const struct PaletteOverrideEntry sTrainerBackRedPalOverride3[] = //Red clothes (wardrobe, reward of the "Consegna lampo" side quest)
 {
-	{1, RGB(24, 8, 28)},
-	{2, RGB(17, 5, 20)},
-	{3, RGB(12, 3, 14)},
+	{11, RGB(29, 7, 7)},
+	{13, RGB(19, 3, 4)},
 	{TRAINER_BACK_RED_PAL_OVERRIDE_END, 0},
 };
 
@@ -210,11 +209,10 @@ static const struct PaletteOverrideEntry sTrainerFrontPlayerPalOverride2[] =
 	{TRAINER_FRONT_PLAYER_PAL_OVERRIDE_END, 0},
 };
 
-static const struct PaletteOverrideEntry sTrainerFrontPlayerPalOverride3[] =
+static const struct PaletteOverrideEntry sTrainerFrontPlayerPalOverride3[] = //Red clothes (wardrobe, reward of the "Consegna lampo" side quest)
 {
-	{1, RGB(24, 8, 28)},
-	{2, RGB(17, 5, 20)},
-	{3, RGB(12, 3, 14)},
+	{11, RGB(29, 7, 7)},
+	{13, RGB(19, 3, 4)},
 	{TRAINER_FRONT_PLAYER_PAL_OVERRIDE_END, 0},
 };
 
@@ -382,7 +380,9 @@ u16 GetPlayerAvatarGraphicsIdByStateId(u8 state)
 
 u8 GetPlayerAvatarStateTransitionByGraphicsId(u16 graphicsId, u8 gender)
 {
-	if (IsSkyMountActive())
+	if (IsGroundMountActive())
+		return PLAYER_AVATAR_FLAG_MACH_BIKE; //The sitting sprite while riding on land (sky_mount.c) is on the bike
+	else if (IsSkyMountActive())
 		return PLAYER_AVATAR_FLAG_ON_FOOT; //The sitting sprite while riding in the sky (sky_mount.c) isn't surfing
 
     for (u8 state = 0; state < NELEMS(sPlayerAvatarGfxIds); ++state)

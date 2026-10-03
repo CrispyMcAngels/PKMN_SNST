@@ -1,0 +1,26 @@
+./assembly/../xse_defines.s: Assembler messages:
+./assembly/../xse_defines.s: Warning: end of file not at end of a line; newline inserted
+./assembly/../xse_defines.s: Assembler messages:
+./assembly/../xse_defines.s: Warning: end of file not at end of a line; newline inserted
+./assembly/../xse_defines.s: Assembler messages:
+./assembly/../xse_defines.s: Warning: end of file not at end of a line; newline inserted
+Assembling ./assembly\overworld_scripts\Percorso2_3_41.s
+Assembling ./assembly\overworld_scripts\Percorso4_3_22.s
+Assembling ./assembly\overworld_scripts\Radiantia_3_4.s
+Compiling ./src\courier_quest.c
+Building Strings ./strings\side_quests.string
+Building Strings ./strings\scripts\Ardesiopoli_6_1.string
+Building Strings ./strings\scripts\Ardesiopoli_6_16.string
+Building Strings ./strings\scripts\Ardesiopoli_6_17.string
+Building Strings ./strings\scripts\cielo_stellato_2_60.string
+Building Strings ./strings\scripts\monte_remoto_2_27.string
+Building Strings ./strings\scripts\Percorso2_3_41.string
+Building Strings ./strings\scripts\Percorso4_3_22.string
+Building Strings ./strings\scripts\Radiantia_3_4.string
+Built in 0:00:01.760848.
+Inserting code.
+Symbol missing: //gFieldEffectScript_TallGrass
+Symbol missing: //gFieldEffectScript_JumpTallGrass
+Inserted in 0:00:02.681072.
+Engine: 1,549,077 bytes at 0x9609250-0x9783565. 576,155 bytes left before SPACE_END.
+Engine (second region): 639,520 bytes at 0x9100000-0x919C220. 81,376 bytes left before ROM2_END.

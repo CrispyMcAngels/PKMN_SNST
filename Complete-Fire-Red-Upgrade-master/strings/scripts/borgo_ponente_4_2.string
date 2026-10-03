@@ -1,8 +1,8 @@
 #org @EventScript_Borgo_Ponente_4_2_text1
-[RED]Naomi[BLACK]: Ciao [LIGHT_BLUE][PLAYER][BLACK]!\pChe piacere vederti, cosa\nti porta da queste parti?
+[RED]Naomi[BLACK]: Ciao [PLAYER_CUSTOM][PLAYER][BLACK]!\pChe piacere vederti, cosa\nti porta da queste parti?
 
 #org @EventScript_Borgo_Ponente_4_2_text2
-[LIGHT_BLUE][PLAYER][BLACK]: [.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: [.]
 
 #org @EventScript_Borgo_Ponente_4_2_text3
 [RED]Naomi[BLACK]: Sul serio!?!\pTuo fratello vuole farci vedere\nqualcosa nel [GREEN]Percorso 1[BLACK]?\pNon sto pi[26] nella pelle, parto\nsubito!!!

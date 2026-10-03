@@ -2,10 +2,10 @@
 [BLUE]Bambino[BLACK]: Sigh Sigh[.]
 
 #org @Pozzo_Eco_1_31_NPC0_text2
-[LIGHT_BLUE][PLAYER][BLACK]: Hei piccolino, stai bene?\nTua sorella ti stava cercando.\p[05] molto preoccupata per te[.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: Hei piccolino, stai bene?\nTua sorella ti stava cercando.\p[05] molto preoccupata per te[.]
 
 #org @Pozzo_Eco_1_31_NPC0_text3
 [BLUE]Bambino[BLACK]: Ero sceso per giocare, ma\npoi uno strano Pok\emon [1A] uscito\ldall'acqua e ho avuto paura,\lquindi mi sono nascosto qui[.]
 
 #org @Pozzo_Eco_1_31_NPC0_text4
-[LIGHT_BLUE][PLAYER][BLACK]: Non preoccuparti, andr[16]\ntutto bene, ora ti riporto fuori!
+[PLAYER_CUSTOM][PLAYER][BLACK]: Non preoccuparti, andr[16]\ntutto bene, ora ti riporto fuori!

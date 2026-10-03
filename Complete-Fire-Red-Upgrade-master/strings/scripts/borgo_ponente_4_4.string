@@ -8,7 +8,7 @@
 [BLACK]Tieni, sono sicuro che un allenatore\ncome te ne far[16] buon uso!
 
 #org @Borgo_Ponente_4_4_MapScriptOnFrame_text4
-[LIGHT_BLUE][PLAYER][BLACK] riceve [GREEN]Dexnav[BLACK]!
+[PLAYER_CUSTOM][PLAYER][BLACK] riceve [GREEN]Dexnav[BLACK]!
 
 #org @Borgo_Ponente_4_4_MapScriptOnFrame_text5
 [BLACK]Questo dispositivo si chiama\n[GREEN]Dexnav[BLACK], per accederci premi\l[GREEN]START[BLACK], lo vedrai in fondo al\lmen[26].\pQuando sei in un Percorso o in una\nzona con dei Pok\emon selvatici,\lil [GREEN]Dexnav[BLACK] ti mostrer[16] quali\lPok\emon hai gi[16] visto e quali\ldevi ancora incontrare.

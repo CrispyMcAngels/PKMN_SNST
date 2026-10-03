@@ -1,0 +1,12 @@
+./assembly/../xse_defines.s: Assembler messages:
+./assembly/../xse_defines.s: Warning: end of file not at end of a line; newline inserted
+Assembling ./assembly\overworld_scripts\Percorso2_3_41.s
+Compiling ./src\courier_quest.c
+Building Strings ./strings\scripts\Percorso2_3_41.string
+Built in 0:00:02.005785.
+Inserting code.
+Symbol missing: //gFieldEffectScript_TallGrass
+Symbol missing: //gFieldEffectScript_JumpTallGrass
+Inserted in 0:00:03.912431.
+Engine: 1,549,061 bytes at 0x9609250-0x9783555. 576,171 bytes left before SPACE_END.
+Engine (second region): 639,520 bytes at 0x9100000-0x919C220. 81,376 bytes left before ROM2_END.

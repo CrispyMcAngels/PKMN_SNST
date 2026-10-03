@@ -41,7 +41,7 @@ SpecialBuffers = {
     "CRONO": ["FC", "01", "0A"],
     "CUSTOM": ["FC", "01", "0B"],
     "DARK_GRAY": ["FC", "01", "0C"],
-    "UNUSED2": ["FC", "01", "0D"],
+    "PLAYER_CUSTOM": ["FC", "01", "0D"], #The player's outfit color (text_palette.c)
     "UNUSED3": ["FC", "01", "0E"],
     "UNUSED4": ["FC", "01", "0F"],
 

@@ -5,6 +5,9 @@
 #include "include/new/catching.h"
 
 ##Optional Byte Changes##
+##Sideways stairs patch (injected at 0x08FFF380): its bike collision hook pointed 2 bytes before the bike entry
+##(0x08FFF393 = the patch's "bx r3" helper), so any step on a bike reset the game. Correct entry: 0x08FFF395
+080BD3CC 95 F3 FF 08
 ##Don't Count Eggs Healing PKMN Centre
 08083B8E 08 F0 D5 FA
 ##Extend Direct Sound Tracks

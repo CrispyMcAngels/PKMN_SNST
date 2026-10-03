@@ -74,7 +74,7 @@ E ora che faccio?
 Treecko Treecko!!!
 
 #org @Foresta_Frondosa_1_0_NPC7_text2
-[LIGHT_BLUE][PLAYER][BLACK]: Questi Pok\emon sembrano\nmolto arrabbiati, meglio starne\lalla larga!
+[PLAYER_CUSTOM][PLAYER][BLACK]: Questi Pok\emon sembrano\nmolto arrabbiati, meglio starne\lalla larga!
 
 #org @Foresta_Frondosa_1_0_NPC7_text3
 [ORANGE]???[BLACK]: C'[1A] un motivo se questi\nTreecko sono cos[1E] spaventati.\pIl [CUSTOM]Team Dusk[BLACK], una banda di\ncriminali, ha sradicato tutti gli\lalberi secolari della foresta.\pLa loro casa, per chiss[16] quale\lmotivo[.]\pForse mangiando una Bacca\npotrebbero calmarsi[.]
@@ -128,31 +128,31 @@ Anche con tutti questi Pok\emon,\nnon ho vinto[.]
 [BLACK]Non hai nessuna Bacca!
 
 #org @Foresta_Frondosa_1_0_Sign5_text4
-[LIGHT_BLUE][PLAYER][BLACK] mette una Baccananas nella\nmangiatoia!
+[PLAYER_CUSTOM][PLAYER][BLACK] mette una Baccananas nella\nmangiatoia!
 
 #org @Foresta_Frondosa_1_0_Sign5_text5
 [ORANGE]???[BLACK]: Guarda come i [GREEN]Treecko[BLACK] si\nsono calmati, ora che hanno\lqualcosa che li rassicura.\pQuesta [1A] la spensieratezza della\nvita che dobbiamo proteggere.\pImmagina un mondo in cui il male\nprende il sopravvento.\pLa bellezza della natura e la\ngioia della vita verrebbero\lsoffocate.\pEcco perch[1A] dobbiamo lottare, per\npreservare questa armonia.
 
 #org @Foresta_Frondosa_1_0_Sign5_text6
-[LIGHT_BLUE][PLAYER][BLACK]: ???
+[PLAYER_CUSTOM][PLAYER][BLACK]: ???
 
 #org @Foresta_Frondosa_1_0_NPC21_text1
-[LIGHT_BLUE][PLAYER][BLACK]: Sembra un'[GREEN]Antica\nPergamena[BLACK][.]\p[.]Meglio lasciarla dov'[1A][.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: Sembra un'[GREEN]Antica\nPergamena[BLACK][.]\p[.]Meglio lasciarla dov'[1A][.]
 
 #org @Foresta_Frondosa_1_0_NPC21_text2
-[LIGHT_BLUE][PLAYER][BLACK]: Hei, questa dev'essere\nl'antica pergamena del signore di\l[GREEN]Miralba[BLACK][.]\pVediamo cosa c'[1A] scritto!
+[PLAYER_CUSTOM][PLAYER][BLACK]: Hei, questa dev'essere\nl'antica pergamena del signore di\l[GREEN]Miralba[BLACK][.]\pVediamo cosa c'[1A] scritto!
 
 #org @Foresta_Frondosa_1_0_NPC21_text3
 [BLACK]Si dice che questa zona sia\navvolta da un'antica leggenda[.]\pMolti anni fa, la [GREEN]Foresta\nFrondosa[BLACK] era dimora di un\lPok\emon leggendario, capace di\lviaggiare attraverso il tempo.\pRintracciarlo [1A] quasi\nimpossibile, poich[1A] si dice che\lcontinui a spostarsi senza sosta\ltra diverse linee temporali,\llasciandosi dietro solo un velo\ldi mistero[.]
 
 #org @Foresta_Frondosa_1_0_NPC21_text4
-[LIGHT_BLUE][PLAYER][BLACK]: [05] davvero una storia\ninteressante, ma come ci [1A] finita\lquesta pergamena qui?
+[PLAYER_CUSTOM][PLAYER][BLACK]: [05] davvero una storia\ninteressante, ma come ci [1A] finita\lquesta pergamena qui?
 
 #org @Foresta_Frondosa_1_0_NPC21_text4a
-[LIGHT_BLUE][PLAYER][BLACK]: Oh no! Sono entrato nel\nterritorio di questo [GREEN]Staravia[BLACK]!
+[PLAYER_CUSTOM][PLAYER][BLACK]: Oh no! Sono entrato nel\nterritorio di questo [GREEN]Staravia[BLACK]!
 
 #org @Foresta_Frondosa_1_0_NPC21_text5
 [BLACK]STARAVIAAAA!!!
 
 #org @Foresta_Frondosa_1_0_NPC21_text6
-[LIGHT_BLUE][PLAYER][BLACK]: Probabilmente Staravia\naveva preso la pergamena per\lcostruire il suo nido[.]\pOra non resta che riportarla al\nsuo proprietario[.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: Probabilmente Staravia\naveva preso la pergamena per\lcostruire il suo nido[.]\pOra non resta che riportarla al\nsuo proprietario[.]

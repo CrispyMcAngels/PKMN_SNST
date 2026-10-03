@@ -1,8 +1,8 @@
 #org @GrtVentiSuss_1_38_MapScript_text0
-[LIGHT_BLUE][PLAYER][BLACK]: Quel Pokemon si [1A]\nsicuramente nascosto qui,\ladesso non ha pi[26] via di scampo!
+[PLAYER_CUSTOM][PLAYER][BLACK]: Quel Pokemon si [1A]\nsicuramente nascosto qui,\ladesso non ha pi[26] via di scampo!
 
 #org @GrtVentiSuss_1_38_MapScript_text0a
-[LIGHT_BLUE][PLAYER][BLACK]: Questo posto ha un'aria\ndavvero mistica[.]\p[.]Che razza di posto [1A] questo?
+[PLAYER_CUSTOM][PLAYER][BLACK]: Questo posto ha un'aria\ndavvero mistica[.]\p[.]Che razza di posto [1A] questo?
 
 #org @GrtVentiSuss_1_38_MapScript_text1
 [DARK_GREEN]???[BLACK]: Non temere[.]\p[.]vieni qui[.]
@@ -11,7 +11,7 @@
 [DARK_GREEN]???[BLACK]: Senti anche tu questo\nsussurro?\p[05] il vento del tempo[.]\n[.]porta con s[1A] i frammenti di ci[22]\lche [1A] stato[.]\l[.]e ci[22] che potrebbe essere.
 
 #org @GrtVentiSuss_1_38_MapScript_text3
-[LIGHT_BLUE][PLAYER][BLACK]: [05] come se[.]\p[.]Questo luogo stesse respirando.
+[PLAYER_CUSTOM][PLAYER][BLACK]: [05] come se[.]\p[.]Questo luogo stesse respirando.
 
 #org @GrtVentiSuss_1_38_MapScript_text4
 [DARK_GREEN]???[BLACK]: Non aver paura.\pLa tua anima ha gi[16] varcato confini\nche la mente non osa immaginare.\pNon sei qui per caso.
@@ -20,7 +20,7 @@
 [DARK_GREEN]???[BLACK]: Tu[.]\p[.]Tu sei diverso da come mi\naspettavo.\pMa forse [GREEN]Eyros[BLACK] ha scelto bene.\pIl filo che ti lega a questa terra\n[1A] pi[26] antico di quanto pensi.
 
 #org @GrtVentiSuss_1_38_MapScript_text6
-[LIGHT_BLUE][PLAYER][BLACK]: Non capisco[.]\nChi sei tu, davvero?
+[PLAYER_CUSTOM][PLAYER][BLACK]: Non capisco[.]\nChi sei tu, davvero?
 
 #org @GrtVentiSuss_1_38_MapScript_text7
 [DARK_GREEN]???[BLACK]: Una volta avevo un nome che il\ntempo ha dimenticato[.]\pOra, mi chiamano la Vagabonda delle\nEclissi.\pGuardo oltre le epoche[.]\p[.]e vedo ci[22] che gli altri non osano\nguardare.
@@ -32,31 +32,31 @@
 [DARK_GREEN]???[BLACK]: [DARK_GREEN]Eris[BLACK][.]\pSi[.] [DARK_GREEN]Eris[BLACK] mi piace!
 
 #org @GrtVentiSuss_1_38_MapScript_text10
-[LIGHT_BLUE][PLAYER][BLACK]: [DARK_GREEN]Eris[BLACK][.] Che cosa sta\nsuccedendo a questo mondo?
+[PLAYER_CUSTOM][PLAYER][BLACK]: [DARK_GREEN]Eris[BLACK][.] Che cosa sta\nsuccedendo a questo mondo?
 
 #org @GrtVentiSuss_1_38_MapScript_text11
 [DARK_GREEN]Eris[BLACK]: Il tempo non [1A] pi[26] saldo.\pLe scelte compiute secoli fa stanno\ntornando a pulsare[.]\l[.]Come echi[.]\pE tu sei pi[26] vicino a quelle\norigini di quanto immagini.
 
 #org @GrtVentiSuss_1_38_MapScript_text12
-[LIGHT_BLUE][PLAYER][BLACK]: Ma perch[1A] io?\nCosa cerchi da me?
+[PLAYER_CUSTOM][PLAYER][BLACK]: Ma perch[1A] io?\nCosa cerchi da me?
 
 #org @GrtVentiSuss_1_38_MapScript_text13
 [DARK_GREEN]Eris[BLACK]: Io non cerco nulla[.]\pSono qui per offrirti una scelta.\nMa ogni scelta ha un prezzo.\pE tu[.] dovrai pagarlo[.]
 
 #org @GrtVentiSuss_1_38_MapScript_text14
-[LIGHT_BLUE][PLAYER][BLACK]: La ruota[.]\pSi [1A] attivata da sola.\nChe cos'[1A] esattamente?
+[PLAYER_CUSTOM][PLAYER][BLACK]: La ruota[.]\pSi [1A] attivata da sola.\nChe cos'[1A] esattamente?
 
 #org @GrtVentiSuss_1_38_MapScript_text15
 [DARK_GREEN]Eris[BLACK]: [05] la [GREEN]Ruota del Tempo[BLACK].\pGli Antichi la scolpirono per\ncustodire il cuore di [GREEN]Eyros[BLACK][.]\pMa anche per osservare ci[22] che non\n[1A] ancora accaduto.\pNon gira per chiunque[.]\nGira solo per chi porta sulle\lspalle il peso delle epoche.
 
 #org @GrtVentiSuss_1_38_MapScript_text16
-[LIGHT_BLUE][PLAYER][BLACK]: [.]Allora sono io, vero?\pSono qui per farla girare[.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: [.]Allora sono io, vero?\pSono qui per farla girare[.]
 
 #org @GrtVentiSuss_1_38_MapScript_text17
 [DARK_GREEN]Eris[BLACK]: Questo lo puoi decidere\nsolo tu[.]
 
 #org @GrtVentiSuss_1_38_MapScript_text18
-[LIGHT_BLUE][PLAYER][BLACK], vuoi girare la ruota?
+[PLAYER_CUSTOM][PLAYER][BLACK], vuoi girare la ruota?
 
 #org @GrtVentiSuss_1_38_MapScript_text19
 [DARK_GREEN]Eris[BLACK]: Sarai pronto al destino che\nti attende?
@@ -71,7 +71,7 @@ Non c'[1A] dubbio, sei proprio tu!
 [DARK_GREEN]Eris[BLACK]: Non c'[1A] dubbio.\pHai dentro di te ci[22] che serve[.]\n[.]per vedere l'invisibile[.]\pPer affrontare una verit[16] che\nbrucia pi[26] del sole[.]
 
 #org @GrtVentiSuss_1_38_MapScript_text23
-[LIGHT_BLUE][PLAYER][BLACK]: [.]Non importa quanto\nfaccia paura.\pDevo sapere[.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: [.]Non importa quanto\nfaccia paura.\pDevo sapere[.]
 
 #org @GrtVentiSuss_1_38_MapScript_text24
 [DARK_GREEN]Eris[BLACK]: Allora la ruota ti aspetta!
@@ -80,16 +80,16 @@ Non c'[1A] dubbio, sei proprio tu!
 Premi ripetutamente GIU per\ngirare la ruota!
 
 #org @GrtVentiSuss_1_38_MapScript_text28
-[LIGHT_BLUE][PLAYER][BLACK]: Sento una strana\nenergia[.]\p[.]Che sta succedendo???
+[PLAYER_CUSTOM][PLAYER][BLACK]: Sento una strana\nenergia[.]\p[.]Che sta succedendo???
 
 #org @GrtVentiSuss_1_38_MapScript_text26
 [DARK_GREEN]Eris[BLACK]: Ogni scelta lascia un'eco[.]\pLa tua[.]\n[.]potrebbe essere quella che\l[.]spezzer[16] la spirale!
 
 #org @GrtVentiSuss_1_38_MapScript_text27
-[DARK_GREEN]Eris[BLACK]: [.]\p\p\p[LIGHT_BLUE][PLAYER][BLACK]\p\pBuona fortuna laggi[26]!
+[DARK_GREEN]Eris[BLACK]: [.]\p\p\p[PLAYER_CUSTOM][PLAYER][BLACK]\p\pBuona fortuna laggi[26]!
 
 #org @GrtVentiSuss_1_38_MapScript_text31
-[LIGHT_BLUE][PLAYER][BLACK]: Il mio corpo[.]\p[.][05] come se non rispondesse pi[26]\nai miei comandi!
+[PLAYER_CUSTOM][PLAYER][BLACK]: Il mio corpo[.]\p[.][05] come se non rispondesse pi[26]\nai miei comandi!
 
 #org @GrtVentiSuss_1_38_MapScript_text29
 [DARK_GREEN]Eris[BLACK]: A volte, per custodire il\nfuturo[.]\p[.]bisogna diventare parte del\npassato.
@@ -102,13 +102,13 @@ Premi ripetutamente GIU per\ngirare la ruota!
 
 
 #org @GrtVentiSuss_1_38_MapScript_text32
-[LIGHT_BLUE][PLAYER][BLACK]: Fiuuu! Sono di nuovo qui\nper fortuna!
+[PLAYER_CUSTOM][PLAYER][BLACK]: Fiuuu! Sono di nuovo qui\nper fortuna!
 
 #org @GrtVentiSuss_1_38_MapScript_text33
-[LIGHT_BLUE][PLAYER][BLACK]: Non c'[1A] dubbio[.]\nQuesta [1A] la realt[16]! 
+[PLAYER_CUSTOM][PLAYER][BLACK]: Non c'[1A] dubbio[.]\nQuesta [1A] la realt[16]! 
 
 #org @GrtVentiSuss_1_38_MapScript_text34
-[LIGHT_BLUE][PLAYER][BLACK]: Quello che ho visto[.]\pEra un sogno?
+[PLAYER_CUSTOM][PLAYER][BLACK]: Quello che ho visto[.]\pEra un sogno?
 
 #org @GrtVentiSuss_1_38_MapScript_text35
 No, troppo vivido. Forse[.]\pUn ricordo che non mi appartiene?\pSe era una visione[.]\nallora nasconde una verit[16].
@@ -129,7 +129,7 @@ Ho visto [ORANGE]Raikou[BLACK][.]\pHo visto delle fiamme accendersi[.]
 E quell'uomo col mantello[.]\pChi era?
 
 #org @GrtVentiSuss_1_38_MapScript_text41
-[LIGHT_BLUE][PLAYER][BLACK]: Ma certo!\pChe sia connesso all'[DARK_GRAY]uomo misterioso[BLACK]\nche ho incontrato fuori dalla\l[GREEN]Foresta Frondosa[BLACK]?
+[PLAYER_CUSTOM][PLAYER][BLACK]: Ma certo!\pChe sia connesso all'[DARK_GRAY]uomo misterioso[BLACK]\nche ho incontrato fuori dalla\l[GREEN]Foresta Frondosa[BLACK]?
 
 #org @GrtVentiSuss_1_38_MapScript_text42
 Era vestito in un modo molto simile,\pMa sono sicuro non fossero la stessa\npersona[.]\pLa voce invece[.]\pLa voce sembrava molto familiare[.]
@@ -138,7 +138,7 @@ Era vestito in un modo molto simile,\pMa sono sicuro non fossero la stessa\npers
 La calma precede il vento[.]\n[.]poi viene il pianto del cielo[.]\l[.]e infine la sua collera[.]
 
 #org @GrtVentiSuss_1_38_MapScript_text44
-[LIGHT_BLUE][PLAYER][BLACK]: Queste sue parole mi sono\nrimaste impresse[.]\pChe cosa significa davvero?\pE perch[1A] io sto assistendo a tutto\nquesto?
+[PLAYER_CUSTOM][PLAYER][BLACK]: Queste sue parole mi sono\nrimaste impresse[.]\pChe cosa significa davvero?\pE perch[1A] io sto assistendo a tutto\nquesto?
 
 #org @GrtVentiSuss_1_38_MapScript_text45
 E quel luogo[.] Dev'essere il [GREEN]Passo\nTuono[BLACK], di cui parlava [ORANGE]Filiberto[BLACK]!\pNon pu[22] essere una coincidenza.

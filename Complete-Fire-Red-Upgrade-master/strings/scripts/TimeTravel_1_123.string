@@ -1,5 +1,5 @@
 #org @TimeTravel_1_123_text1
-[LIGHT_BLUE][PLAYER][BLACK]: [.]Dove[.] sono finito?
+[PLAYER_CUSTOM][PLAYER][BLACK]: [.]Dove[.] sono finito?
 
 #org @TimeTravel_1_123_text1a
 [BLACK]Tutto sembra ovattato[.] lontano[.]
@@ -14,35 +14,35 @@
 [BLACK]Non so cosa trover[22] dall'altra\nparte[.]\pMa qualcosa mi dice che era destino\narrivare fin qui[.]
 
 #org @TimeTravel_1_123_text2
-[LIGHT_BLUE][PLAYER][BLACK]:[.]Aspetta[.]\p[.]Cos'[1A] quella luce?
+[PLAYER_CUSTOM][PLAYER][BLACK]:[.]Aspetta[.]\p[.]Cos'[1A] quella luce?
 
 #org @TimeTravel_1_123_text3
-[LIGHT_BLUE][PLAYER][BLACK]: Si sta avvicinando[.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: Si sta avvicinando[.]
 
 #org @TimeTravel_1_123_text4
-[LIGHT_BLUE][PLAYER][BLACK]: [.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: [.]
 
 #org @TimeTravel_1_123_text5
-[LIGHT_BLUE][PLAYER][BLACK]: Il mio corpo[.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: Il mio corpo[.]
 
 #org @TimeTravel_1_123_text6
-[LIGHT_BLUE][PLAYER][BLACK]: Inizio a sentirlo di\nnuovo[.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: Inizio a sentirlo di\nnuovo[.]
 
 #org @TimeTravel_1_123_text7
-[LIGHT_BLUE][PLAYER][BLACK]: [.]\pVedo di nuovo una luce[.]\p[.]Questa volta per[22][.]\n[.][05] diversa[.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: [.]\pVedo di nuovo una luce[.]\p[.]Questa volta per[22][.]\n[.][05] diversa[.]
 
 #org @TimeTravel_1_123_t_echo_2_text1
-[LIGHT_BLUE][PLAYER][BLACK]: Sono di nuovo qui[.]\n[.]in questo limbo[.]\pDove finir[22] stavolta?
+[PLAYER_CUSTOM][PLAYER][BLACK]: Sono di nuovo qui[.]\n[.]in questo limbo[.]\pDove finir[22] stavolta?
 
 #org @TimeTravel_1_123_t_echo_2_text2
-[LIGHT_BLUE][PLAYER][BLACK]: Lo sento [.]\pSto di nuovo riacquistando il\ncontrollo del mio corpo[.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: Lo sento [.]\pSto di nuovo riacquistando il\ncontrollo del mio corpo[.]
 
 #org @TimeTravel_1_123_t_echo_2_text3
 //_/////////////////////////////////
-[LIGHT_BLUE][PLAYER][BLACK]: Questa volta per[22] era\ndiverso da quando ho visto il [GREEN]Passo\lTuono[BLACK][.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: Questa volta per[22] era\ndiverso da quando ho visto il [GREEN]Passo\lTuono[BLACK][.]
 
 #org @TimeTravel_1_123_t_echo_2_text4
-[LIGHT_BLUE][PLAYER][BLACK]: Era pi[26]...\p...Nitido,\lConcreto[.]
+[PLAYER_CUSTOM][PLAYER][BLACK]: Era pi[26]...\p...Nitido,\lConcreto[.]
 
 #org @TimeTravel_1_123_t_echo_2_text5
 Chi erano quelle persone?\p[.]Perch[1A] era sempre crepuscolo?\p[.]E perch[1A] parlavano in maniera\ncos[1E] strana?
