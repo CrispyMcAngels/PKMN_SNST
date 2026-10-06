@@ -22,7 +22,7 @@ gMapScripts_Passo_Tuono_1_2:
 			end	
 
 			Passo_Tuono_1_2_MapScriptOnResume_P1:
-				playsong2 0x188
+				playsong2 0x192
 				return
 
 			Passo_Tuono_1_2_MapScriptOnResume_P2:

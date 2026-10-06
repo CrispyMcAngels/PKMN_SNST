@@ -147,6 +147,10 @@ void BufferStringBattle(u16 stringID)
 				stringPtr = BattleText_TwoWildPkmnAppeared; //0x83FD2BF
 			else if (gBattleTypeFlags & BATTLE_TYPE_OLD_MAN)
 				stringPtr = BattleText_WildPkmnAppearedPause; //0x83FD2AA
+			#ifdef ITEM_LOST_WALLET
+			else if (GetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, NULL) == ITEM_LOST_WALLET)
+				stringPtr = BattleText_WildPkmnAppearedHoldingWallet; //A side quest's lost wallet (build_pokemon.c)
+			#endif
 			else
 				stringPtr = BattleText_WildPkmnAppeared; //0x83FD284
 		}

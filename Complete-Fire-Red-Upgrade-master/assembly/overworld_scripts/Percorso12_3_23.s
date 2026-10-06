@@ -53,6 +53,7 @@ gMapScripts_Percorso12_3_23:
 			applymovement 0xFF Percorso12_3_23_MapScriptOnFrameBegin_mov2
 			applymovement 0x1 Percorso12_3_23_MapScriptOnFrameBegin_mov2
 			waitmovement 0x0	
+			setvar 0x5029 0x0
 			warp 0x3 0x3 0xFF 0x44 0x2C
 			releaseall
 			end

@@ -29,6 +29,36 @@ npc 3 3 4 EventScript_Ardesiopoli_3_2_NPC11
 npc 3 3 5 EventScript_Roccavento_3_3_NPC5
 npc 3 3 12 EventScript_Roccavento_3_3_NPC12
 npc 3 3 14 EventScript_Roccavento_3_3_NPC14
+sign 3 3 0 EventScript_Roccavento_3_3_Sign0
+sign 3 3 1 EventScript_Roccavento_3_3_Sign1
+sign 3 3 2 EventScript_Roccavento_3_3_Sign2
+sign 3 3 3 EventScript_Roccavento_3_3_Sign2
+sign 3 3 5 EventScript_Roccavento_3_3_Sign5
+sign 3 3 6 EventScript_Roccavento_3_3_Sign5
+sign 3 3 7 EventScript_Roccavento_3_3_Sign7
+sign 3 3 8 EventScript_Roccavento_3_3_Sign8
+sign 3 3 9 EventScript_Roccavento_3_3_Sign9
+sign 3 3 10 EventScript_Roccavento_3_3_Sign10
+sign 3 3 11 EventScript_Roccavento_3_3_Sign11
+sign 3 3 12 EventScript_Roccavento_3_3_Sign12
+sign 3 3 13 EventScript_Roccavento_3_3_Sign13
+
+npc 7 0 0 EventScript_Roccavento_7_0_NPC0
+
+npc 7 1 0 EventScript_Roccavento_7_1_NPC0
+npc 7 1 1 EventScript_Roccavento_7_1_NPC1
+
+npc 7 5 0 EventScript_Roccavento_7_5_NPC0
+npc 7 5 1 EventScript_Roccavento_7_5_NPC1
+
+npc 7 6 0 EventScript_Roccavento_7_6_NPC0
+npc 7 6 1 EventScript_Roccavento_7_6_NPC1
+npc 7 6 2 EventScript_Stellavia_10_9_NPC3
+npc 7 6 3 EventScript_Roccavento_7_6_NPC3
+npc 7 6 4 EventScript_Roccavento_7_6_NPC4
+npc 7 6 5 EventScript_Roccavento_7_6_NPC5
+npc 7 6 6 EventScript_Roccavento_7_6_NPC6
+npc 7 6 7 EventScript_Roccavento_7_6_NPC7
 
 map 3 23 gMapScripts_Percorso12_3_23
 
@@ -443,12 +473,14 @@ npc 8 5 3 EventScript_Radiantia_8_5_NPC3
 
 map 8 14 gMapScripts_Radiantia_8_6
 sign 8 14 0 EventScript_Radiantia_8_6_Sign0
+npc 8 14 1 EventScript_Radiantia_8_14_NPC3
 
 map 8 13 gMapScripts_Radiantia_8_9
 sign 8 13 0 EventScript_Radiantia_8_9_Sign0
 sign 8 13 1 EventScript_Radiantia_8_9_Sign1
 npc 8 13 0 EventScript_Radiantia_8_9_NPC0
-npc 8 13 1 EventScript_Radiantia_8_9_NPC1
+
+map 8 11 gMapScripts_Radiantia_8_11
 
 map 8 10 gMapScripts_Radiantia_8_8
 sign 8 10 0 EventScript_Radiantia_8_8_Sign0

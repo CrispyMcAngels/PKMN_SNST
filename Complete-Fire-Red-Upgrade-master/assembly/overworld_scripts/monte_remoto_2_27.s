@@ -9,7 +9,20 @@ gMapScripts_Monte_Remoto_2_27:
     mapscript MAP_SCRIPT_ON_LOAD MonteRemoto_2_27_MapScriptOnLoad
     mapscript MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE MonteRemoto_2_27_MapScriptOnWarpIntoMapTable
     mapscript MAP_SCRIPT_ON_FRAME_TABLE MonteRemoto_2_27_MapScriptOnFrame
+    mapscript MAP_SCRIPT_ON_RESUME MonteRemoto_2_27_MapScriptOnResume
     .byte MAP_SCRIPT_TERMIN
+
+	MonteRemoto_2_27_MapScriptOnResume:
+		compare 0x4051 0x1
+	    if 0x1 _call MonteRemoto_2_27_MapScriptOnResume_P1
+		compare 0x4051 0xB
+	    if 0x1 _call MonteRemoto_2_27_MapScriptOnResume_P1
+		end	
+
+		MonteRemoto_2_27_MapScriptOnResume_P1:
+			playsong2 0x195
+			return
+
 
 MonteRemoto_2_27_MapScriptOnWarpIntoMapTable:
 levelscript 0x4051, 0xB, MonteRemoto_2_27_MapScriptOnWarpIntoMapTableBegin
@@ -101,7 +114,6 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part1:
     sound 0x09
     applymovement 0xFF MonteRemoto_2_27_MapScriptOnFrame_mov1
     waitmovement 0x0
-    playsong 0x0185 0x1
     special 0x113
     applymovement 0x7F MonteRemoto_2_27_MapScriptOnFrame_mov1a
     waitmovement 0x0
@@ -138,11 +150,16 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part1:
     special 0x15A
 
     pause 0x1E
-    
+    setvar 0x503E 0x325F
+    call EventScript_RefreshTextColor
+
     show_mugshot CRONO
     //Fermare il tempo...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text6 MSG_NORMAL
     special 0x15A
+
+    setvar 0x503E 0x2447
+    call EventScript_RefreshTextColor
     
     pause 0x1E
     
@@ -174,7 +191,7 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part1:
 
     fadescreen 0x1
     //transizione al passato
-    playsong 0x0000 0x1
+    playsong 0x0 0x1
     writebytetooffset 0x30 0x4000012
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text10 0x7
     writebytetooffset 0x0 0x4000012
@@ -321,12 +338,16 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part2:
     applymovement 0x10 MonteRemoto_2_27_MapScriptOnFrame_mov16
     waitmovement 0x0
     
+    setvar 0x503E 0x325F             
+    call EventScript_RefreshTextColor
+
     show_mugshot CRONO
     //Grazie alla fiamma...
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text12 MSG_NORMAL
     special 0x15A   
     pause 0x1E
-    
+    setvar 0x503E 0x325F             
+    call EventScript_RefreshTextColor    
     show_mugshot CRONO
     //Oh guardiano del tempo
     msgbox MonteRemoto_2_27_MapScriptOnFrame_text13 MSG_NORMAL
@@ -796,6 +817,8 @@ MonteRemoto_2_27_MapScriptOnFrameBegin_Part4:
     writebytetooffset 0x0 0x4000012
     setflag 0x967
     setvar 0x501F 0x157
+    //colore custom to DUSK
+    setvar 0x503E 0x2447             
     warpmuted 0x2 0x1B 0xFF 0x0C 0x10
     
     releaseall
@@ -870,7 +893,6 @@ MonteRemoto_2_27_MapScriptOnFrame_mov29:
 
 MonteRemoto_2_27_MapScriptOnFrameBegin_Part5:
     lockall
-    playsong 0x0185 0x1
     fadescreen 0x0
     applymovement 0xFF MonteRemoto_2_27_MapScriptOnFrame_mov30
     waitmovement 0x0

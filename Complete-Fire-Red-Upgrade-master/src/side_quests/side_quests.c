@@ -108,6 +108,8 @@ extern const u8 gText_SideQuests_MurkrowInvasion[];
 extern const u8 gText_SideQuests_MurkrowInvasionDesc[];
 extern const u8 gText_SideQuests_Courier[];
 extern const u8 gText_SideQuests_CourierDesc[];
+extern const u8 gText_SideQuests_LostWallet[];
+extern const u8 gText_SideQuests_LostWalletDesc[];
 
 //The quest list, shown in this order. Add new quests before the last line.
 static const struct SideQuest sSideQuests[] =
@@ -120,6 +122,7 @@ static const struct SideQuest sSideQuests[] =
 	{gText_SideQuests_StarryKitchen,   gText_SideQuests_StarryKitchenDesc,   0x96D, 0x96E, 74},
 	{gText_SideQuests_Courier,         gText_SideQuests_CourierDesc,         0x34C, 0x34D, 69},  //courier_quest.c
 	{gText_SideQuests_MurkrowInvasion, gText_SideQuests_MurkrowInvasionDesc, 0x970, 0x971, 133},
+	{gText_SideQuests_LostWallet,      gText_SideQuests_LostWalletDesc,      0x99E, 0x99F, 41},  //Roccavento_7_6.s, icon: the boy (0x29)
 	{NULL}
 };
 

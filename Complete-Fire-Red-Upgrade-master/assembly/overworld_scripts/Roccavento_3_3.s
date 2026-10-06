@@ -205,4 +205,57 @@ EventScript_Roccavento_3_3_NPC14:
 
 //___SIGNs___
 
+.global EventScript_Roccavento_3_3_Sign0
+EventScript_Roccavento_3_3_Sign0:
+	msgbox Roccavento_3_3_Sign0_text1 0x7
+	end
 
+.global EventScript_Roccavento_3_3_Sign1
+EventScript_Roccavento_3_3_Sign1:
+	msgbox Roccavento_3_3_Sign1_text1 0x7
+	end
+
+.global EventScript_Roccavento_3_3_Sign2
+EventScript_Roccavento_3_3_Sign2:
+	msgbox Roccavento_3_3_Sign2_text1 0x7
+	end
+
+.global EventScript_Roccavento_3_3_Sign5
+EventScript_Roccavento_3_3_Sign5:
+	msgbox Roccavento_3_3_Sign5_text1 0x7
+	end
+
+.global EventScript_Roccavento_3_3_Sign7
+EventScript_Roccavento_3_3_Sign7:
+	msgbox Roccavento_3_3_Sign7_text1 0x7
+	end
+
+.global EventScript_Roccavento_3_3_Sign8
+EventScript_Roccavento_3_3_Sign8:
+	msgbox Roccavento_3_3_Sign8_text1 0x7
+	end
+
+.global EventScript_Roccavento_3_3_Sign9
+EventScript_Roccavento_3_3_Sign9:
+	msgbox Roccavento_3_3_Sign9_text1 0x7
+	end
+
+.global EventScript_Roccavento_3_3_Sign10
+EventScript_Roccavento_3_3_Sign10:
+	msgbox Roccavento_3_3_Sign10_text1 0x7
+	end
+
+.global EventScript_Roccavento_3_3_Sign11
+EventScript_Roccavento_3_3_Sign11:
+	msgbox Roccavento_3_3_Sign11_text1 0x7
+	end
+
+.global EventScript_Roccavento_3_3_Sign12
+EventScript_Roccavento_3_3_Sign12:
+	msgbox Roccavento_3_3_Sign12_text1 0x7
+	end
+
+.global EventScript_Roccavento_3_3_Sign13
+EventScript_Roccavento_3_3_Sign13:
+	msgbox Roccavento_3_3_Sign13_text1 0x7
+	end

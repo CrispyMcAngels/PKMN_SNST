@@ -75,6 +75,8 @@ u8 GetLoadedPlayerCharacter(void);
 bool8 IsEchoCharacterLoaded(void);
 bool8 GetEchoCharacterBag(struct ItemSlot** items, struct ItemSlot** keyItems);
 bool8 GetEchoCharacterMenuIcon(const void** gfx, const u16** pal);
+bool8 GetEchoCharacterBagMenuIcon(const void** gfx, const u16** pal);
+bool8 IsRunningPreventedForPlayerCharacter(void);
 void PlayerCharacter_Switch(void);
 void PlayerCharacters_Clear(void);
 

@@ -39,6 +39,7 @@ extern const u8 BattleText_WildPkmnAppeared6[];
 extern const u8 BattleText_TwoWildPkmnAppeared[];
 extern const u8 BattleText_WildPkmnAppearedPause[];
 extern const u8 BattleText_WildPkmnAppeared[];
+extern const u8 BattleText_WildPkmnAppearedHoldingWallet[];
 extern const u8 sText_FoePkmnPrefix2[];
 extern const u8 sText_FoePkmnPrefix3[];
 extern const u8 sText_FoePkmnPrefix4[];

@@ -17,6 +17,7 @@
 #include "../include/new/util.h"
 #include "../include/new/mega.h"
 #include "../include/new/multi.h"
+#include "../include/new/player_characters.h"
 /*
 end_battle.c
 	handles all battle termination logic and data resetting/saving
@@ -334,6 +335,8 @@ bool8 AreAllKindsOfRunningPrevented(void)
 	else if (FlagGet(FLAG_NO_CATCHING_AND_RUNNING))
 		return TRUE;
 	#endif
+	else if (IsRunningPreventedForPlayerCharacter()) //Eg. Myryam's whole echo
+		return TRUE;
 
 	return FALSE;
 }

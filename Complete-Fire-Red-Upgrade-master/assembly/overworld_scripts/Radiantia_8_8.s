@@ -4,7 +4,19 @@
 .include "../xse_commands.s"
 .include "../xse_defines.s"
 
-//___LEVEL___
+//___LEVEL_PIANO_SOPRA___
+
+
+.global gMapScripts_Radiantia_8_11
+gMapScripts_Radiantia_8_11:
+	mapscript MAP_SCRIPT_ON_LOAD Radiantia_8_11_MapScriptOnLoad
+    .byte MAP_SCRIPT_TERMIN
+
+	Radiantia_8_11_MapScriptOnLoad:
+		setvar 0x5029 0x1
+		end
+
+//___LEVEL____
 
 .global gMapScripts_Radiantia_8_8
 gMapScripts_Radiantia_8_8:
@@ -13,7 +25,7 @@ gMapScripts_Radiantia_8_8:
 
 	Radiantia_8_8_MapScriptOnLoad:
 		setvar 0x5007 0x6
-		setvar 0x5025 0x17B
+		setvar 0x5029 0x0
 		checkflag 0x972
 		if 0x1 _call Radiantia_8_8_MapScriptOnLoad_move_ele
 		end

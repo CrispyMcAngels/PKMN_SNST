@@ -31,7 +31,7 @@ gMapScripts_Passo_Tuono_1_124:
 		end	
 
 		Passo_Tuono_1_124_MapScriptOnResume_P1:
-			playsong2 0x188
+			playsong2 0x192
 			return
 
 		Passo_Tuono_1_124_MapScriptOnResume_P1a:
@@ -996,7 +996,7 @@ gMapScripts_Passo_Tuono_1_124:
 				applymovement 0xFF Passo_Tuono_1_124_mov33
 				applymovement 0xB Passo_Tuono_1_124_mov34
 				waitmovement 0xB
-				playsong 0x188 0x0
+				playsong 0x192 0x0
 				pause 0x1E
 				show_mugshot RAITO
 				msgbox Passo_Tuono_1_124_text52 MSG_NORMAL	

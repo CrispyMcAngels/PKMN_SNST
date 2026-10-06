@@ -78,6 +78,11 @@ EventScript_Radiantia_8_9_NPC0:
 	
 	msgbox Radiantia_8_9_NPC0_text4 MSG_NORMAL	
 	giveitem 0x44 0x1 MSG_OBTAIN
+	pause 0x1E
+	applymovement 0x2 Radiantia_8_9_NPC0_mov3a
+	waitmovement 0x2
+	movesprite 0x2 0x0 0x0
+	sound 0x9
 	release
 	end
 
@@ -97,6 +102,12 @@ EventScript_Radiantia_8_9_NPC0:
 		.byte 0x10
 		.byte 0x12
 		.byte 0x1 
+		.byte 0xFE
+
+
+	Radiantia_8_9_NPC0_mov3a:
+		.byte 0x11
+		.byte 0x13
 		.byte 0xFE
 
 	EventScript_Radiantia_8_9_NPC0_U:
@@ -128,6 +139,11 @@ EventScript_Radiantia_8_9_NPC0:
 		
 		msgbox Radiantia_8_9_NPC0_text4 MSG_NORMAL	
 		giveitem 0x44 0x1 MSG_OBTAIN
+		pause 0x1E
+		applymovement 0x2 Radiantia_8_9_NPC0_mov4b
+		waitmovement 0x2		
+		sound 0x9
+		movesprite 0x2 0x0 0x0
 		release
 		end		
 
@@ -135,6 +151,11 @@ EventScript_Radiantia_8_9_NPC0:
 			.byte 0x12
 			.byte 0x12
 			.byte 0x1 
+			.byte 0xFE
+
+		Radiantia_8_9_NPC0_mov4b:
+			.byte 0x13
+			.byte 0x13
 			.byte 0xFE
 
 
@@ -168,6 +189,11 @@ EventScript_Radiantia_8_9_NPC0:
 		
 		msgbox Radiantia_8_9_NPC0_text4 MSG_NORMAL	
 		giveitem 0x44 0x1 MSG_OBTAIN
+		pause 0x1E
+		applymovement 0x2 Radiantia_8_9_NPC0_mov2c
+		waitmovement 0x2
+		movesprite 0x2 0x0 0x0
+		sound 0x9
 		release
 		end
 
@@ -186,10 +212,8 @@ EventScript_Radiantia_8_9_NPC0:
 			.byte 0x12
 			.byte 0xFE
 
-.global EventScript_Radiantia_8_9_NPC1
-EventScript_Radiantia_8_9_NPC1:
-	lock
-	faceplayer
-	msgbox Radiantia_8_9_NPC1_text1 MSG_NORMAL
-	release
-	end
+		Radiantia_8_9_NPC0_mov2c:
+			.byte 0x11
+			.byte 0x13
+			.byte 0xFE
+			

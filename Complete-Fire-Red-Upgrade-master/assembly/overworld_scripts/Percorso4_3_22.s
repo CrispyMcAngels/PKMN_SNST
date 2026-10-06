@@ -131,18 +131,23 @@ EventScript_Percorso_4_3_22_NPC8:
 	end
 
 	EventScript_Percorso_4_3_22_NPC8_Deliver:
+		faceplayer
 		msgbox Percorso_4_3_22_NPC8_text_deliver MSG_NORMAL
 		callasm CourierQuest_Deliver @Off Rapidash; the officer gives the reward
 		cry 0x4E 0x0
 		waitcry
+		faceplayer
 		msgbox Percorso_4_3_22_NPC8_text_leave MSG_NORMAL
 		pause 0x1E
+		faceplayer
 		msgbox Percorso_4_3_22_NPC8_text_go_back MSG_NORMAL
 		release
 		end
 
 	EventScript_Percorso_4_3_22_NPC8_Thanks:
+		faceplayer
 		msgbox Percorso_4_3_22_NPC8_text_thanks MSG_NORMAL
+		faceplayer
 		msgbox Percorso_4_3_22_NPC8_text1 MSG_NORMAL
 		release
 		end

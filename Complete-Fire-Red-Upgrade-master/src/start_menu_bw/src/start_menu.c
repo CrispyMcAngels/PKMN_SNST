@@ -124,6 +124,9 @@ static void ClearVramOamPlttRegs(void);
 static void VBlankCB_StartMenu(void); 
 static void MainCB2_StartMenu(void);
 static void ReturnToFieldFromStartMenu(void);
+static void FieldCB_ReturnFromStartMenu(void);
+void SetUpWarpExitTask(bool8 fadeIn);
+void QuestLog_DrawPreviouslyOnQuestHeaderIfInPlaybackMode(void);
 static bool8 InitStartMenuGUI(void); 
 static void Task_StartMenuFadeIn(u8 taskId); 
 static void Task_StartMenuWaitForKeyPress(u8 taskId); 
@@ -139,6 +142,7 @@ static void CleanWindows(void);
 static void CommitWindows(void); 
 static void PrintGUIMenuItemsName(void);
 bool8 GetEchoCharacterMenuIcon(const void** gfx, const u16** pal); //player_characters.c
+bool8 GetEchoCharacterBagMenuIcon(const void** gfx, const u16** pal); //player_characters.c
 static void DrawIcons(void);
 void CB2_SaveFromStartMenu(void);
 void StartMenu_Init(void); 
@@ -566,6 +570,8 @@ static void DrawIcons(void)
       struct SpritePalette palette = StartMenuIconTable[onscreenmenuitems[counter]].spritepalette;
       if (onscreenmenuitems[counter] == STARTMENU_PLAYER)
         GetEchoCharacterMenuIcon(&sheet.data, &palette.data); //Time Echo protagonists have their own icon (player_characters.c)
+      else if (onscreenmenuitems[counter] == STARTMENU_BAG)
+        GetEchoCharacterBagMenuIcon(&sheet.data, &palette.data); //...and their bag has its own too
       LoadSpriteSheet(&sheet); 
       LoadSpritePalette(&palette);
       u8 SpriteId = CreateSprite(&StartMenuIconTable[onscreenmenuitems[counter]].sprtemplate , x, y, 0);
@@ -597,9 +603,18 @@ static void Task_StartMenuFadeOut(u8 taskId)
 		FreeAndCloseStartMenu(taskId); 
 	}
 }
+//FieldCB_WarpExitFadeFromBlack without its Overworld_PlaySpecialMapMusic, which put the map's default song
+//back over whatever was playing (bike or surf music, a script's song) every time the start menu closed
+static void FieldCB_ReturnFromStartMenu(void)
+{
+  QuestLog_DrawPreviouslyOnQuestHeaderIfInPlaybackMode();
+  SetUpWarpExitTask(TRUE); //Fades the screen in
+  ScriptContext2_Enable();
+}
+
 static void ReturnToFieldFromStartMenu(void) {
   FieldClearVBlankHBlankCallbacks();
-  gFieldCallback = FieldCB_WarpExitFadeFromBlack;
+  gFieldCallback = FieldCB_ReturnFromStartMenu;
   CB2_ReturnToField();
 }
 

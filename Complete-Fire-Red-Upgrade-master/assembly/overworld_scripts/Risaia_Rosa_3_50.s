@@ -23,14 +23,14 @@ gMapScripts_Risaia_Rosa_3_50:
 	//		end	
 
 	Risaia_Rosa_3_50_MapScriptOnLoad:
-		setvar 0x5007 0x14
+		setvar 0x5007 0x16
 		compare 0x4051 0x53
 		if 0x1 _goto Risaia_Rosa_3_50_MapScriptOnLoad_P1
 		end
 
 		Risaia_Rosa_3_50_MapScriptOnLoad_P1:
-			movesprite2 0x0 0xD 0x13
-			spritebehave 0x0 0xA
+			movesprite2 0x1 0xE 0x13
+			spritebehave 0x1 0xA
 			return
 
 		
@@ -96,6 +96,9 @@ gMapScripts_Risaia_Rosa_3_50:
 			show_mugshot PLAYER
 			msgbox Risaia_Rosa_3_50_MapScript_text5 MSG_NORMAL
 			special 0x15A
+			sound 0x15
+			applymovement 0x1 mov_exclamation
+			waitmovement 0x1			
 			playsong 0x192 0x0
 			pause 0x1E
 			show_mugshot RAITO

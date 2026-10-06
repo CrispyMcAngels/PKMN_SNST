@@ -86,7 +86,7 @@ gMapScripts_Ardesiopoli_6_1:
 			pause 0x1E	
 			applymovement 0x1 Ardesiopoli_6_1_MapScriptOnFrame_mov3
 			waitmovement 0x1
-			playsong 0x188 0x0
+			playsong 0x192 0x0
 			show_mugshot FILIBERTO
 			msgbox Ardesiopoli_6_1_MapScriptOnFrame_text6 MSG_NORMAL
 			special 0x15A

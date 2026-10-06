@@ -6,6 +6,10 @@ You are challenged by\n[FD][1C] [FD][1D] and\l[FD][2E] [FD][2F]!\p
 #org @BattleText_ShadowWarriorAttacked
 The Shadow Warrior attacked!\p
 
+#org @BattleText_WildPkmnAppearedHoldingWallet
+//The lost wallet of the side quest "Un appuntamento di fuoco" (ITEM_LOST_WALLET)
+[05] apparso un [FD][06]\nselvatico!\pStringe qualcosa tra le zampe[.]\p
+
 #org @BattleText_InGamePartnerSentOutZGoN
 [FD][32] [FD][33] sent\nout [FD][07]!\lGo, [FD][05]!
 

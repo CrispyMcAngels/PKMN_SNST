@@ -1,0 +1,9 @@
+Compiling ./src\Tables\overworld_sprites.c
+Compiling Images
+Built in 0:00:01.350917.
+Inserting code.
+Symbol missing: //gFieldEffectScript_TallGrass
+Symbol missing: //gFieldEffectScript_JumpTallGrass
+Inserted in 0:00:03.006782.
+Engine: 1,555,165 bytes at 0x9609250-0x9784D2D. 570,067 bytes left before SPACE_END.
+Engine (second region): 645,696 bytes at 0x9100000-0x919DA40. 75,200 bytes left before ROM2_END.

@@ -1,0 +1,8 @@
+Compiling Music
+Built in 0:00:01.040773.
+Inserting code.
+Symbol missing: //gFieldEffectScript_TallGrass
+Symbol missing: //gFieldEffectScript_JumpTallGrass
+Inserted in 0:00:02.328219.
+Engine: 1,555,717 bytes at 0x9609250-0x9784F55. 569,515 bytes left before SPACE_END.
+Engine (second region): 639,520 bytes at 0x9100000-0x919C220. 81,376 bytes left before ROM2_END.

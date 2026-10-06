@@ -65,11 +65,14 @@ struct EchoCharacter
 	u16 spriteVars[NUM_CHAR_SPRITE_VARS]; //Values of the sprite vars, in the CHAR_SPRITE_* order
 	u32 startingMoney;
 	u8 features; //CHAR_FEATURE_* this character has; the others are turned off while they're played
+	bool8 noRunning; //Can't run from battles for the whole echo, like FLAG_NO_RUNNING (0x903), which only lasts one battle
 	const u8* bagClosedGfx; //64x64 bag pictures (LZ77 compressed): closed, and open for every pocket. NULL = the normal bag
 	const u8* bagOpenGfx;
 	const u16* bagPal; //Shared by both pictures
 	const u8* menuIconGfx; //32x32 start menu icon for the trainer card option (uncompressed). NULL = the normal icon
 	const u16* menuIconPal;
+	const u8* bagIconGfx; //Start menu icon for the bag option (32x64 uncompressed: normal and selected frames). NULL = the normal icon
+	const u16* bagIconPal;
 };
 
 extern const u8 gText_EchoCharacterName_Myryam[];
@@ -78,11 +81,14 @@ extern const u8 gText_EchoCharacterName_3[];
 extern const u8 gText_EchoCharacterName_4[];
 extern const u8 gText_EchoCharacterName_5[];
 
-//Time Echo bag (graphics/Other), the same for every echo protagonist
+//Time Echo bag (graphics/Other) and its start menu icon (graphics/StartMenuBW/sprites), the same for every echo protagonist
 extern const u8 TimeEchoBagClosedTiles[];
 extern const u8 TimeEchoBagOpenTiles[];
 extern const u16 TimeEchoBagClosedPal[];
-#define TIME_ECHO_BAG .bagClosedGfx = TimeEchoBagClosedTiles, .bagOpenGfx = TimeEchoBagOpenTiles, .bagPal = TimeEchoBagClosedPal
+extern const u8 bag_TimeEchoTiles[];
+extern const u16 bag_TimeEchoPal[];
+#define TIME_ECHO_BAG .bagClosedGfx = TimeEchoBagClosedTiles, .bagOpenGfx = TimeEchoBagOpenTiles, .bagPal = TimeEchoBagClosedPal, \
+                      .bagIconGfx = bag_TimeEchoTiles, .bagIconPal = bag_TimeEchoPal
 
 //Start menu icons (graphics/StartMenuBW/sprites, 32x64: normal and selected frames)
 extern const u8 EchoIcon_MyryamTiles[];
@@ -115,6 +121,7 @@ const struct EchoCharacter gEchoCharacters[NUM_ECHO_CHARACTERS] =
 		},
 		.startingMoney = 0,
 		.features = CHAR_FEATURE_BAG | CHAR_FEATURE_TRAINER_CARD | CHAR_FEATURE_SAVE,
+		.noRunning = TRUE, //Selva Spenta: no fleeing for the whole echo
 		TIME_ECHO_BAG,
 		.menuIconGfx = EchoIcon_MyryamTiles, //PLACEHOLDER: a violet copy of the player's icon
 		.menuIconPal = EchoIcon_MyryamPal,
@@ -370,6 +377,13 @@ static const struct EchoCharacter* GetLoadedEchoCharacter(void)
 	return (character == CHARACTER_MAIN) ? NULL : &gEchoCharacters[character - 1];
 }
 
+//@Details: Whether the character being played can't run from battles (AreAllKindsOfRunningPrevented, end_battle.c).
+bool8 IsRunningPreventedForPlayerCharacter(void)
+{
+	const struct EchoCharacter* echo = GetLoadedEchoCharacter();
+	return echo != NULL && echo->noRunning;
+}
+
 //Replaces the bag menu loading the backpack or satchel picture (0x8108310): an echo protagonist with bag
 //pictures in gEchoCharacters gets the closed one on frame 0 and the open one on every pocket's frame
 void LoadBagSpriteSheet(void)
@@ -450,5 +464,19 @@ bool8 GetEchoCharacterMenuIcon(const void** gfx, const u16** pal)
 
 	*gfx = echo->menuIconGfx;
 	*pal = echo->menuIconPal;
+	return TRUE;
+}
+
+//Used by the start menu (start_menu_bw) for the bag option's icon: TRUE with the icon of the echo protagonist's bag,
+//if they have one
+bool8 GetEchoCharacterBagMenuIcon(const void** gfx, const u16** pal)
+{
+	const struct EchoCharacter* echo = GetLoadedEchoCharacter();
+
+	if (echo == NULL || echo->bagIconGfx == NULL || echo->bagIconPal == NULL)
+		return FALSE;
+
+	*gfx = echo->bagIconGfx;
+	*pal = echo->bagIconPal;
 	return TRUE;
 }

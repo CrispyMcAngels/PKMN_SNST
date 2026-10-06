@@ -29,6 +29,7 @@
 #include "../include/new/frontier.h"
 #include "../include/new/item.h"
 #include "../include/new/learn_move.h"
+#include "../include/new/pokemon_storage_system.h"
 #include "../include/new/mega.h"
 #include "../include/new/multi.h"
 #include "../include/new/pokemon_storage_system.h"
@@ -153,6 +154,9 @@ static void BuildFrontierMultiParty(u8 multiId);
 static void BuildRaidMultiParty(void);
 static void CreateFrontierMon(struct Pokemon* mon, const u8 level, const struct BattleTowerSpread* spread, const u16 trainerId, const u8 trainerNum, const u8 trainerGender, const bool8 forPlayer);
 static void SetWildMonHeldItem(void);
+#ifdef ITEM_LOST_WALLET
+static void TryGiveWildMonLostWallet(void);
+#endif
 static u8 ConvertFrontierAbilityNumToAbility(const u8 abilityNum, const u16 species);
 static bool8 BaseStatsTotalGEAlreadyOnTeam(const u16 toCheck, const u8 partySize, u16* speciesArray);
 static bool8 SpeciesAlreadyOnTeam(const u16 species, const u8 partySize, const species_t* const speciesArray);
@@ -1907,8 +1911,69 @@ static void SetWildMonHeldItem(void)
 			else
 				SetMonData(&gEnemyParty[i], MON_DATA_HELD_ITEM, &gBaseStats[species].item2);
 		}
+
+		#ifdef ITEM_LOST_WALLET
+		TryGiveWildMonLostWallet();
+		#endif
 	}
 }
+
+#ifdef ITEM_LOST_WALLET
+//Whether the player has the item anywhere: in the bag, or held by a Pokemon in the party or the PC
+static bool8 PlayerHasItemAnywhere(u16 item)
+{
+	if (CheckBagHasItem(item, 1))
+		return TRUE;
+
+	for (u32 i = 0; i < PARTY_SIZE; ++i)
+	{
+		if (GetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, NULL) == item)
+			return TRUE;
+	}
+
+	for (u32 box = 0; box < TOTAL_BOXES_COUNT; ++box)
+	{
+		for (u32 pos = 0; pos < IN_BOX_COUNT; ++pos)
+		{
+			if (GetBoxMonDataAt(box, pos, MON_DATA_HELD_ITEM) == item)
+				return TRUE;
+		}
+	}
+
+	return FALSE;
+}
+
+static const u16 sLostWalletSpecies[] = LOST_WALLET_SPECIES;
+
+static bool8 IsLostWalletSpecies(u16 species)
+{
+	for (u32 i = 0; i < ARRAY_COUNT(sLostWalletSpecies); ++i)
+	{
+		if (sLostWalletSpecies[i] == species)
+			return TRUE;
+	}
+
+	return FALSE;
+}
+
+//"Un appuntamento di fuoco" (Roccavento_7_6.s): while the quest is active, Risaia Rosa's wild Pokemon of the
+//LOST_WALLET_SPECIES hold the lost wallet, until the player has it. Single battles only, so the battle's opening line
+//can point it out (battle_strings.c).
+static void TryGiveWildMonLostWallet(void)
+{
+	u16 item = ITEM_LOST_WALLET;
+
+	if (!FlagGet(FLAG_WALLET_QUEST_ACTIVE) || FlagGet(FLAG_WALLET_QUEST_DONE)
+	|| gSaveBlock1->location.mapGroup != LOST_WALLET_MAP_GROUP || gSaveBlock1->location.mapNum != LOST_WALLET_MAP_NUM
+	|| IS_DOUBLE_BATTLE
+	|| !IsLostWalletSpecies(gEnemyParty[0].species)
+	|| umodsi(Random(), 100) >= LOST_WALLET_CHANCE
+	|| PlayerHasItemAnywhere(item)) //Last: it reads the whole PC
+		return;
+
+	SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &item);
+}
+#endif
 
 void GiveMonNatureAndAbility(struct Pokemon* mon, u8 nature, u8 abilityNum, bool8 forceShiny, bool8 keepGender, bool8 keepLetterCore)
 {

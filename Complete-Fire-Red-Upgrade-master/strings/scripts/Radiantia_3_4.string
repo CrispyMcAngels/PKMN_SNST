@@ -5,7 +5,7 @@
 [DARK_GREEN]Eleonora[BLACK]: Esattamente, dovrete\npercorrere tutto il [GREEN]Percorso 12[BLACK].\p[GREEN]Roccavento[BLACK] si trova proprio in\nfondo al percorso.
 
 #org @Radiantia_3_4_tile0_text3
-[BLUE]Crispy[BLACK]: Eccoti [PLAYER]!\pSei pronto a volare fino a\n[GREEN]Roccavento[BLACK]?\p[ORANGE]Raito[BLACK] ci aspetta l[1E][.]
+[BLUE]Crispy[BLACK]: Eccoti [PLAYER_CUSTOM][PLAYER][BLACK]!\pSei pronto a volare fino a\n[GREEN]Roccavento[BLACK]?\p[ORANGE]Raito[BLACK] ci aspetta l[1E][.]
 
 #org @Radiantia_3_4_tile0_text4
 [BLUE]Crispy[BLACK]: Prenditi il tuo tempo,\nio e [GREEN]Flygon[BLACK] siamo sempre pronti\la partire.

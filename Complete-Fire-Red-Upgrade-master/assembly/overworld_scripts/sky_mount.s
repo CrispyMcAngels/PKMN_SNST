@@ -4,7 +4,7 @@
 .include "../xse_commands.s"
 .include "../xse_defines.s"
 
-@Riding a Pokemon in the sky (src/sky_mount.c). Var 0x5029 (VAR_SKY_MOUNT) picks the Pokemon: 0 = none, 1 = Latios.
+@Riding a Pokemon in the sky (src/sky_mount.c). Var 0x5029 (VAR_SKY_MOUNT) picks the Pokemon: 0 = none, 1 = Swellow, 2 = Rapidash (on the ground).
 @To arrive on a sky map already riding, just set the var before the warp. To leave, set it to 0 before the warp.
 @These are only needed to get on or off without a warp. Use them with "call".
 

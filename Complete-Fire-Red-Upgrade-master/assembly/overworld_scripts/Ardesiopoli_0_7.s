@@ -36,8 +36,8 @@ EventScript_Ardesiopoli_0_7_NPC1:
 		.byte 0xFE
 
 	EventScript_Ardesiopoli_0_7_NPC1_P1:
-		checkitem 0x68 0x1
-		compare 0x800D 0x4
+		checkitem 0x68 0x4 @Four Big Mushrooms (checkitem gives TRUE/FALSE, not the amount)
+		compare 0x800D 0x1
 		if 0x1 _goto EventScript_Ardesiopoli_0_7_NPC1_P2
 		msgbox Ardesiopoli_0_7_NPC1_text2 MSG_NORMAL
 		release
@@ -45,6 +45,7 @@ EventScript_Ardesiopoli_0_7_NPC1:
 
 	EventScript_Ardesiopoli_0_7_NPC1_P2:
 		msgbox Ardesiopoli_0_7_NPC1_text3 MSG_NORMAL
+		removeitem 0x68 0x4
 		pause 0x1E
 		hidesprite 0x9
 		fanfare 0x0103

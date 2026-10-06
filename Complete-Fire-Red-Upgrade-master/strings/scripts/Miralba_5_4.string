@@ -6,3 +6,21 @@
 
 #org @EventScript_Miralba_5_4_NPC3_text1
 [BLACK]Non c'[1A] nulla di meglio di una\nbella sosta in un Centro Pok\emon\ldopo un lungo viaggio.
+
+#org @EventScript_Miralba_5_4_FollowerTip_text_call
+[BLACK]Ehi, tu! Aspetta un attimo!
+
+#org @EventScript_Miralba_5_4_FollowerTip_text_explain1
+[BLACK]Scusa se ti fermo, ma sono un\ngrande fan dei Pok\emon!\pLo sapevi che a [GREEN]Eyros[BLACK] alcuni\nPok\emon possono accompagnarti\lfuori dalla Pok\e Ball?\pDai, fai uscire il tuo compagno!
+
+#org @EventScript_Miralba_5_4_FollowerTip_text_explain2
+[BLACK]Visto? [GREEN]Axew[BLACK] e le sue evoluzioni\nsono gli unici Pok\emon che\lpossono seguirti ovunque.\pSe gli parli, ti risponder[16] con\nil suo verso!
+
+#org @EventScript_Miralba_5_4_FollowerTip_text_off
+[BLACK]Al momento per[22] questa funzione\nnon [1A] attiva.\pPuoi accenderla quando vuoi dal\nmenu [GREEN]OPTIONS[BLACK], alla voce\l[GREEN]FOLLOWING [53][54][BLACK].\pPer ora richiamalo pure nella\nsua Pok\e Ball!
+
+#org @EventScript_Miralba_5_4_FollowerTip_text_on
+[BLACK]E a quanto vedo l'hai gi[16]\nattivata!\pSe un giorno vorrai viaggiare da\nsolo, puoi spegnerla dal menu\l[GREEN]OPTIONS[BLACK], alla voce\l[GREEN]FOLLOWING [53][54][BLACK].
+
+#org @EventScript_Miralba_5_4_FollowerTip_text_bye
+[BLACK]Buon viaggio a te e ai tuoi\nPok\emon!

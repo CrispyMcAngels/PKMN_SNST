@@ -1,0 +1,7 @@
+Built in 0:00:00.986269.
+Inserting code.
+Symbol missing: //gFieldEffectScript_TallGrass
+Symbol missing: //gFieldEffectScript_JumpTallGrass
+Inserted in 0:00:02.474160.
+Engine: 1,554,613 bytes at 0x9609250-0x9784B05. 570,619 bytes left before SPACE_END.
+Engine (second region): 639,520 bytes at 0x9100000-0x919C220. 81,376 bytes left before ROM2_END.

@@ -61,6 +61,7 @@ EventScript_Radiantia_3_4_tile0:
 		msgbox Radiantia_3_4_tile0_text6 MSG_NORMAL
 		special 0x15A	
 		pause 0x1E
+		setvar 0x5029 0x1
 		warp 0x3 0x17 0xFF 0x3F 0x0D
 		releaseall
 		end

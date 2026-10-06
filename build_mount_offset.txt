@@ -1,0 +1,16 @@
+./assembly/../xse_defines.s: Assembler messages:
+./assembly/../xse_defines.s: Warning: end of file not at end of a line; newline inserted
+./assembly\overworld_scripts\Radiantia_8_8.s: Assembler messages:
+./assembly\overworld_scripts\Radiantia_8_8.s: Warning: end of file not at end of a line; newline inserted
+./assembly/../xse_defines.s: Warning: end of file not at end of a line; newline inserted
+Assembling ./assembly\overworld_scripts\Percorso4_3_22.s
+Assembling ./assembly\overworld_scripts\Radiantia_8_8.s
+Compiling ./src\sky_mount.c
+Building Strings ./strings\scripts\Percorso2_3_41.string
+Built in 0:00:02.024546.
+Inserting code.
+Symbol missing: //gFieldEffectScript_TallGrass
+Symbol missing: //gFieldEffectScript_JumpTallGrass
+Inserted in 0:00:02.844642.
+Engine: 1,555,213 bytes at 0x9609250-0x9784D5D. 570,019 bytes left before SPACE_END.
+Engine (second region): 645,696 bytes at 0x9100000-0x919DA40. 75,200 bytes left before ROM2_END.

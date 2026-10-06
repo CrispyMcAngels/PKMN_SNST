@@ -1,0 +1,2 @@
+Error: Could not find source rom: "BPRE0.gba".
+Please make sure a rom with this name exists in the root.

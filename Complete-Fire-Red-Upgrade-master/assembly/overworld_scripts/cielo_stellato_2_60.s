@@ -19,7 +19,7 @@ gMapScripts_CieloStellato_2_60:
 			end	
 
 			CieloStellato_2_60_MapScriptOnResume_P1:
-				playsong2 0x188
+				playsong2 0x192
 				return
 
 

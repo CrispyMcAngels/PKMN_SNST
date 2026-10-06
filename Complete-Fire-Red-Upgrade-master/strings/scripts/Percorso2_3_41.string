@@ -66,7 +66,7 @@ Consigli utili: se fatti tenere\nai Pok\emon, alcuni strumenti ne\lmigliorano le
 [BLUE]Crispy[BLACK]: [PLAYER_CUSTOM][PLAYER][BLACK], io ora devo\nandare.\pRicordati di andare nel\nlaboratorio di [ORANGE]Filiberto[BLACK] ad\l[GREEN]Ardesiopoli[BLACK] dopo essere passato a\lsalutare la [RED]Mamma[BLACK][.]
 
 #org @Percorso_2_3_41_NPC6_text1
-[DARK_GRAY]Hai visto quanti Pok\emon\nselvatici ci sono?\pAlla scuola Pok\emon di\n[GREEN]Ardesiopoli[BLACK] ho studiato che [GREEN]Eyros[BLACK]\l[1A] ricca di biodiversit[16] grazie\lalla sua magnifica natura!\pSi racconta che tutto sia iniziato\ndopo la grande guerra che\ldistrusse i tre regni della\lregione 5 secoli fa[.]\pDa l[1E] in poi si decise di\nricostruire [GREEN]Eyros[BLACK] mantenendo un\lforte contatto con la natura!
+[BLACK]Hai visto quanti Pok\emon\nselvatici ci sono?\pAlla scuola Pok\emon di\n[GREEN]Ardesiopoli[BLACK] ho studiato che [GREEN]Eyros[BLACK]\l[1A] ricca di biodiversit[16] grazie\lalla sua magnifica natura!\pSi racconta che tutto sia iniziato\ndopo la grande guerra che\ldistrusse i tre regni della\lregione 5 secoli fa[.]\pDa l[1E] in poi si decise di\nricostruire [GREEN]Eyros[BLACK] mantenendo un\lforte contatto con la natura!
 
 #org @Percorso_2_3_41_NPC4_text1
 [BLACK]Sei allenatore da poco tempo? 
@@ -97,7 +97,7 @@ Ugh, i miei Pok\emon sono\nfantastici, [1A] solo che oggi non [1A]\lil loro gior
 
 //"Consegna lampo" side quest (src/courier_quest.c)
 #org @Percorso_2_3_41_Courier_text_intro
-[BLACK]Ehi, tu! Hai proprio l'aria di chi sa\nmuoversi in fretta!\pLo scienziato del Percorso 4 aspetta\nun pacco urgente, ma io non posso\llasciare il mio posto di guardia.\pIl mio [GREEN]Rapidash[BLACK] conosce la strada:\nte la senti di fare la consegna al\lposto mio?
+[BLACK]Ehi, tu! Hai proprio l'aria di chi sa\nmuoversi in fretta!\pLo scienziato del Percorso 4 aspetta\nun pacco urgente, ma mi sono slogato\lla caviglia e non riesco a stare in\lsella[.]\pIl mio [GREEN]Rapidash[BLACK] conosce la strada:\nte la senti di fare la consegna al\lposto mio?
 
 #org @Percorso_2_3_41_Courier_text_retry
 [BLACK]Vuoi riprovare a portare il pacco\nallo scienziato del Percorso 4?

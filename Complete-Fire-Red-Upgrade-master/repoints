@@ -276,6 +276,10 @@ gText_TextSpeedInstant 083cc338
 gEventObjectGraphicsInfo_NPC0 08EB1000
 gEventsObjectPic_NPC0Pal 08F15EB0
 
+#NPC2 (player sitting: surfing and sky mounts)
+gEventObjectGraphicsInfo_NPC2 08EB1008
+gEventsObjectPic_NPC2Pal 08F15EB0
+
 #NPC3
 gEventObjectGraphicsInfo_NPC3 08EB100C
 gEventsObjectPic_NPC3Pal 08F15EB0

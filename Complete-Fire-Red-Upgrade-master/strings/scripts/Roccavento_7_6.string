@@ -1,0 +1,43 @@
+#org @Roccavento_7_6_NPC0_text1
+[BLACK]Benvenuto! Qui a [GREEN]Roccavento[BLACK] la\npizzeria fa anche da Centro\lPok\emon.
+
+#org @Roccavento_7_6_NPC0_text2
+[BLACK]Mentre aspetti la pizza, vuoi far\nriposare la tua squadra?
+
+#org @Roccavento_7_6_NPC1_text1
+[GREEN]Chansey[BLACK]: Chans[1E]! Chaaan!
+
+#org @Roccavento_7_6_NPC3_text1
+//PLACEHOLDER: to be rewritten in Neapolitan
+[BLACK]Benvenuto! Qui la pizza si fa\ncome una volta: impasto lievitato\lventiquattr'ore e forno a legna,\lacceso dal mio fidato [GREEN]Charmander[BLACK]!
+
+#org @Roccavento_7_6_NPC4_text1
+[BLACK]Vengo qui ogni sera da\nquarant'anni.\pLa pizza [1A] cambiata, il pizzaiolo [1A]\ncambiato[.] ma il profumo del forno\l[1A] sempre lo stesso.
+
+#org @Roccavento_7_6_NPC5_text1
+[BLACK]Shh! Ho un problema: ho perso il\nportafoglio!\pStamattina mi allenavo alla [GREEN]Risaia\nRosa[BLACK][.] dev'essermi caduto l[1E].\pO peggio, se l'[1A] preso qualche\nPok\emon selvatico!\pTi prego, ritrovalo prima che\narrivi il conto!
+
+#org @Roccavento_7_6_NPC5_text2
+[BLACK]Il portafoglio dev'essere alla\n[GREEN]Risaia Rosa[BLACK][.]\pFai presto, lei sta gi[16] guardando il\nmen[26] dei dolci!
+
+#org @Roccavento_7_6_NPC5_text3
+[BLACK]Il mio portafoglio! Mi hai salvato\nla serata!
+
+#org @Roccavento_7_6_NPC5_text4
+//PLACEHOLDER: the reward
+[BLACK]Tieni, [1A] il minimo che possa fare\nper ringraziarti!
+
+#org @Roccavento_7_6_NPC5_text_bagfull
+[BLACK]Il mio portafoglio! Vorrei darti\nqualcosa per ringraziarti, ma la\ltua borsa [1A] piena[.]\pTorna quando avrai fatto un po' di\nspazio!
+
+#org @Roccavento_7_6_NPC5_text5
+[BLACK]Grazie ancora! Credo proprio di\npiacerle[.] anche se continua a\llamentarsi del piccante.
+
+#org @Roccavento_7_6_NPC6_text1
+[BLACK]Mi ha portata nella pizzeria pi[26]\nromantica di [GREEN]Eyros[BLACK][.]\pPeccato che abbia ordinato la pizza\npi[26] piccante del men[26]!
+
+#org @Roccavento_7_6_NPC6_text2
+[BLACK]Ha insistito per offrire lui! Che\ngentiluomo[.]\pAnche se l'ho visto sudare freddo\nper tutta la sera.
+
+#org @Roccavento_7_6_NPC7_text1
+[BLACK]Pizza e Centro Pok\emon nello stesso\nlocale[.]\pA [GREEN]Roccavento[BLACK] s[1E] che sanno vivere!

@@ -67,6 +67,50 @@
         .affineAnims = gDummySpriteAffineAnimTable,
     };
 
+//_____NPC2_____
+//The player sitting on a Pokemon: surfing and the sky mounts (sky_mount.c), slot 2 = EVENT_OBJ_GFX_RED_SURFING.
+//Frames: 0-2 facing down/up/side, 3-8 moving (2 per direction), 9-11 getting on/off (the vanilla surfing layout).
+//It walks around, so it uses the surfing animations, not the field move ones.
+
+	extern const u8 gEventsObjectPic_NPC2Tiles[];
+
+	static const struct SpriteFrameImage gEventObjectPicTable_NPC2[] =
+	{
+		overworld_frame(gEventsObjectPic_NPC2Tiles, 4, 4, 0),
+		overworld_frame(gEventsObjectPic_NPC2Tiles, 4, 4, 1),
+		overworld_frame(gEventsObjectPic_NPC2Tiles, 4, 4, 2),
+		overworld_frame(gEventsObjectPic_NPC2Tiles, 4, 4, 3),
+		overworld_frame(gEventsObjectPic_NPC2Tiles, 4, 4, 4),
+		overworld_frame(gEventsObjectPic_NPC2Tiles, 4, 4, 5),
+		overworld_frame(gEventsObjectPic_NPC2Tiles, 4, 4, 6),
+		overworld_frame(gEventsObjectPic_NPC2Tiles, 4, 4, 7),
+		overworld_frame(gEventsObjectPic_NPC2Tiles, 4, 4, 8),
+		overworld_frame(gEventsObjectPic_NPC2Tiles, 4, 4, 9),
+		overworld_frame(gEventsObjectPic_NPC2Tiles, 4, 4, 10),
+		overworld_frame(gEventsObjectPic_NPC2Tiles, 4, 4, 11),
+	};
+
+	const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_NPC2 =
+	{
+		.tileTag = 0xFFFF,
+		.paletteTag1 = 0x1100, //NPC0's palette, so the outfit colours apply too
+		.paletteTag2 = EVENT_OBJ_PAL_TAG_NONE,
+		.size = (32 * 32) / 2,
+		.width = 32,
+		.height = 32,
+		.paletteSlot = 0,
+		.shadowSize = SHADOW_SIZE_M,
+		.inanimate = FALSE,
+		.disableReflectionPaletteLoad = FALSE,
+		.tracks = TRACKS_NONE, //No footprints under the mount
+		.gender = MALE,
+		.oam = gEventObjectBaseOam_32x32,
+		.subspriteTables = gEventObjectSpriteOamTables_32x32,
+		.anims = gEventObjectImageAnimTable_Surfing,
+		.images = gEventObjectPicTable_NPC2,
+		.affineAnims = gDummySpriteAffineAnimTable,
+	};
+
 //_____NPC3_____
 
 	extern const u8 gEventsObjectPic_NPC3Tiles[];

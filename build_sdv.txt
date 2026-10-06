@@ -1,0 +1,12 @@
+./assembly/../xse_defines.s: Assembler messages:
+./assembly/../xse_defines.s: Warning: end of file not at end of a line; newline inserted
+Assembling ./assembly\overworld_scripts\Percorso4_3_22.s
+Building Strings ./strings\scripts\Percorso4_3_22.string
+Compiling Music
+Built in 0:00:01.157172.
+Inserting code.
+Symbol missing: //gFieldEffectScript_TallGrass
+Symbol missing: //gFieldEffectScript_JumpTallGrass
+Inserted in 0:00:02.380730.
+Engine: 1,549,761 bytes at 0x9609250-0x9783811. 575,471 bytes left before SPACE_END.
+Engine (second region): 639,520 bytes at 0x9100000-0x919C220. 81,376 bytes left before ROM2_END.

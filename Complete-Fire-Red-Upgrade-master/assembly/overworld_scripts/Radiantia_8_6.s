@@ -21,7 +21,13 @@ gMapScripts_Radiantia_8_6:
 
 	Radiantia_8_6_MapScriptOnLoad:
 		setvar 0x5007 0x17
+		checkflag 0x971
+		if 0x1 _call Radiantia_8_6_MapScriptOnLoad_P1
 		end
+
+		Radiantia_8_6_MapScriptOnLoad_P1:
+			movesprite2 0x4 0x1 0x3
+			return
 
 	Radiantia_8_6_MapScriptOnFrame:
 		levelscript 0x4062, 1, Radiantia_8_6_MapScriptOnFrameBegin
@@ -143,3 +149,11 @@ gMapScripts_Radiantia_8_6:
 					setvar 0x4062 0x2
 					releaseall
 					end	
+
+.global EventScript_Radiantia_8_14_NPC3
+EventScript_Radiantia_8_14_NPC3:
+	lock
+	faceplayer
+	msgbox Radiantia_8_9_NPC1_text1 MSG_NORMAL
+	release
+	end

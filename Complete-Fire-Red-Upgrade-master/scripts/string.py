@@ -41,7 +41,8 @@ SpecialBuffers = {
     "CRONO": ["FC", "01", "0A"],
     "CUSTOM": ["FC", "01", "0B"],
     "DARK_GRAY": ["FC", "01", "0C"],
-    "PLAYER_CUSTOM": ["FC", "01", "0D"], #The player's outfit color (text_palette.c)
+    "PLAYER_CUSTOM": ["FC", "01", "09"], #The player's outfit color (text_palette.c), in LIGHT_BLUE's slot
+    "UNUSED2": ["FC", "01", "0D"], #Slot 13 is the message box's white: don't recolor it
     "UNUSED3": ["FC", "01", "0E"],
     "UNUSED4": ["FC", "01", "0F"],
 

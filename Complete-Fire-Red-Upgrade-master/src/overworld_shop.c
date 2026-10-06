@@ -81,6 +81,7 @@ static const u16 sRoccaventoMarketItems[] =
 	ITEM_BERRY_JUICE,
 	ITEM_ORAN_BERRY,
 	ITEM_PECHA_BERRY,
+	ITEM_FRIEND_BALL, //Handmade from an Apricorn: the market's craft ball
 	ITEM_NONE,
 };
 
