@@ -652,8 +652,16 @@ def main():
                                     rom.seek(eventHeader + 0x10)
                                     signTable = ExtractPointer(rom.read(4)) - 0x08000000
                                     signTables[dictId] = signTable  # Store for later
+                                    rom.seek(eventHeader + 0x3)
+                                    signCounts[dictId] = int(rom.read(1)[0])
                                 else:
                                     signTable = signTables[dictId]
+
+                                # Check if valid sign: past the map's signposts it would overwrite other data
+                                if eventId >= signCounts[dictId]:
+                                    print("Error! Sign id {} exceeds the count of {} on line {}: {}".format(eventId, signCounts[dictId], i, line.strip()))
+                                    continue
+
                                 length = 0xC  # Length of one entry
                                 offset = signTable + eventId * length + 0x8
 

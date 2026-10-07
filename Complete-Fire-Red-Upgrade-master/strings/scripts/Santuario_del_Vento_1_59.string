@@ -1,0 +1,20 @@
+#org @Santuario_del_Vento_1_59_NPC4_text1
+[BLACK]Benvenuto, viandante.\pSono uno dei [GREEN]Monaci del Vento[BLACK].\nDa secoli custodiamo il sentiero\lche porta al [GREEN]Santuario[BLACK].
+
+#org @Santuario_del_Vento_1_59_NPC4_text2
+[BLACK]Come vedi, non esiste alcun\nponte.\pNon ne abbiamo mai avuto\nbisogno[.]
+
+#org @Santuario_del_Vento_1_59_NPC4_text3
+[BLACK]Il vento che sale dal vuoto non\nha mai lasciato cadere chi gli\lha affidato i propri passi.\pQuando sarai pronto, avvicinati al\nbordo e lasciati andare.
+
+#org @Santuario_del_Vento_1_59_NPC4_text4
+[BLACK]Il vento non chiede coraggio,\nsolo fiducia.\pAvvicinati al bordo, quando sarai\npronto.
+
+#org @Santuario_del_Vento_1_59_Sign2_text1
+Una forte corrente d'aria sale\ndal vuoto[.]\pTi affidi al vento?
+
+#org @Santuario_del_Vento_1_59_Sign3_text1
+Il portone del [GREEN]Santuario[BLACK] [1A] molto\npesante[.]\pSpingi con tutte le tue forze!
+
+#org @Santuario_del_Vento_1_59_Sign3_text2
+Il portone si [1A] aperto!

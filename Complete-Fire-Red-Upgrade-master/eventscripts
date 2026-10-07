@@ -69,6 +69,11 @@ npc 32 2 0 dark_future_32_2_NPC0
 
 map 1 61 gMapScripts_Santuario_del_Vento_1_61
 
+npc 1 59 4 EventScript_Santuario_del_Vento_1_59_NPC4
+sign 1 59 1 EventScript_Santuario_del_Vento_1_59_Sign1
+sign 1 59 2 EventScript_Santuario_del_Vento_1_59_Sign2
+sign 1 59 3 EventScript_Santuario_del_Vento_1_59_Sign3
+
 
 map 0 23 gMapScripts_Passo_Tuono_1_3
 sign 0 23 0 EventScript_Centrale_Elettrica_0_13_Sign0
@@ -157,6 +162,7 @@ sign 10 0 0 EventScript_Common_PC
 sign 10 0 1 EventScript_Common_PC
 sign 10 0 2 EventScript_Common_PC
 sign 10 0 3 EventScript_Common_PC
+sign 10 0 4 EventScript_Stellavia_10_14_Sign8
 
 npc 10 1 0 EventScript_Stellavia_10_1_NPC0
 npc 10 1 1 EventScript_Stellavia_10_1_NPC1
@@ -346,7 +352,6 @@ sign 10 14 3 EventScript_Stellavia_10_14_Sign4
 sign 10 14 4 EventScript_Stellavia_10_14_Sign5
 sign 10 14 5 EventScript_Stellavia_10_14_Sign6
 sign 10 14 6 EventScript_Stellavia_10_14_Sign7
-sign 10 14 7 EventScript_Stellavia_10_14_Sign8
 
 npc 10 17 0 EventScript_Stellavia_10_17_NPC0
 npc 10 17 1 EventScript_Stellavia_10_17_NPC1
