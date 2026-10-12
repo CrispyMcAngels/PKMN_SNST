@@ -100,3 +100,87 @@ Apri il men[26] [GREEN]Start[BLACK] per accedere\nad [GREEN]Echi del Tempo[BLACK
 #org @Risaia_Rosa_3_50_MapScript_text11
 //_/////////////////////////////////
 [ORANGE]Raito[BLACK]: Se vuoi comprendere ci[22] che\nhai visto[.]\pDevi venire con me al [GREEN]Santuario\ndel Vento[BLACK]! 
+
+#org @Risaia_Rosa_3_50_NPC3_text1
+[BLACK]Piedi nell'acqua e schiena\npiegata[.] si fa cos[1E] da quando\lero bambina!
+
+#org @Risaia_Rosa_3_50_NPC3_text2
+[BLACK]Vedi quelle statue di [GREEN]Xatu[BLACK] tra\nle risaie? Gli antichi le\lchiamavano [GREEN]Pilastri delle Ere[BLACK].\pMia nonna diceva che guardano il\nraccolto dell'anno prossimo[.]\pE che per questo non sbagliano\nmai il tempo della semina!
+
+#org @Risaia_Rosa_3_50_NPC4_text1
+[BLACK]Il riso rosa cresce solo qui,\ncon il vento che scende da\l[GREEN]Roccavento[BLACK].\pChi lo mangia diventa forte[.]\ne anche i Pok\emon!
+
+#org @Risaia_Rosa_3_50_NPC4_text2
+[BLACK]Tieni, prendi questa: una radice\ndelle nostre risaie.\pUn buon allenatore deve conoscere\nla forza della terra.
+
+#org @Risaia_Rosa_3_50_NPC4_text3
+[BLACK]Quella radice viene dal campo\npi[26] vecchio della risaia.\pTrattala con cura!
+
+#org @Risaia_Rosa_3_50_NPC5_text1
+[BLACK]Nelle risaie non si pesca:\nsi osserva.\pI Pok\emon d'acqua vengono a\nnuotare tra le piantine.
+
+#org @Risaia_Rosa_3_50_NPC5_text2
+[BLACK]Prima un [GREEN]Farfetch'd[BLACK] mi [1A] sfrecciato\ndavanti[.]\pStringeva qualcosa di marrone tra\nle zampe. Sembrava un portafoglio!
+
+#org @Risaia_Rosa_3_50_NPC6_text1
+[BLACK]Hai visto gli [GREEN]Swablu[BLACK]?\pQuando si posano sulle spighe\nsembrano nuvole cadute dal cielo\ldi [GREEN]Roccavento[BLACK]!
+
+#org @Risaia_Rosa_3_50_NPC7_text1
+[BLACK]Il trapianto del riso non aspetta!\nVediamo se tieni il ritmo!
+
+#org @Risaia_Rosa_3_50_NPC7_text2
+Mi hai fatto perdere il ritmo\ndella canzone[.]
+
+#org @Risaia_Rosa_3_50_NPC7_text3
+[BLACK]Le mondine cantano per non\nsentire la fatica.\pE anche per non sentire le\nzanzare!
+
+#org @Risaia_Rosa_3_50_NPC8_text1
+[BLACK]Shh! Qui i Pok\emon abboccano solo\nin silenzio[.]\pOrmai li hai spaventati tutti!
+
+#org @Risaia_Rosa_3_50_NPC8_text2
+Un'altra giornata senza pesca[.]
+
+#org @Risaia_Rosa_3_50_NPC8_text3
+[BLACK]Domani porto i tappi per le\norecchie.\pPer i Pok\emon, non per me.
+
+#org @Risaia_Rosa_3_50_NPC9_text1
+[BLACK]I miei Pok\emon volano con il\nvento di [GREEN]Roccavento[BLACK].\pRiuscirai a starci dietro?
+
+#org @Risaia_Rosa_3_50_NPC9_text2
+Il vento oggi soffia a tuo\nfavore.
+
+#org @Risaia_Rosa_3_50_NPC9_text3
+[BLACK]Quando il vento gira, gli [GREEN]Swablu[BLACK]\nsi alzano tutti insieme.\pSembra che nevichi cotone!
+
+#org @Risaia_Rosa_3_50_NPC10_text1
+[BLACK]Le [GREEN]Ledyba[BLACK] mangiano i parassiti\ndel riso: sono le migliori amiche\ldei contadini!
+
+#org @Risaia_Rosa_3_50_NPC10_text2
+Pineco[.] non esplodere per la\nrabbia!
+
+#org @Risaia_Rosa_3_50_NPC10_text3
+[BLACK]Qui gli insetti sono tutti\nbuoni[.]\ptranne le zanzare.
+
+#org @Risaia_Rosa_3_50_NPC11_text1
+[BLACK]LIA: Balliamo al chiaro di luna\ntra le spighe!\pLEA: E tu balli con noi!
+
+#org @Risaia_Rosa_3_50_NPC11_text2
+LIA: La danza [1A] finita[.]\pLEA: [.]ma ci [1A] piaciuta lo stesso!
+
+#org @Risaia_Rosa_3_50_NPC11_text3
+[BLACK]LIA: Spinda balla sempre storto.\pLEA: Non [1A] storto, [1A] stile!
+
+#org @Risaia_Rosa_3_50_NPC11_text4
+[BLACK]LIA: Per ballare servono almeno\ndue Pok\emon!\pLEA: Torna quando ne avrai due!
+
+#org @Risaia_Rosa_3_50_NPC12_text1
+[BLACK]Questo albero[.] sento una presenza\nantica, come un ricordo che il\lvento non ha portato via.\pMostrami di che spirito sei fatto!
+
+#org @Risaia_Rosa_3_50_NPC12_text2
+[BLACK]Il [GREEN]Pilastro[BLACK] in cima alla collina[.]\nl'ho sentito risvegliarsi.\pPer un istante ho visto ci[22] che\n[1A] stato e ci[22] che sar[16].\pVediamo se il tuo spirito regge\nil peso del tempo!
+
+#org @Risaia_Rosa_3_50_NPC12_text3
+Il tuo spirito [1A] limpido come\nl'acqua delle risaie.
+
+#org @Risaia_Rosa_3_50_NPC12_text4
+[BLACK]Il vento qui porta voci di un\naltro tempo[.]\ptu le senti, vero?

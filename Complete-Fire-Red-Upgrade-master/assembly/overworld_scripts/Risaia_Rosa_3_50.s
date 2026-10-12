@@ -23,6 +23,7 @@ gMapScripts_Risaia_Rosa_3_50:
 	//		end	
 
 	Risaia_Rosa_3_50_MapScriptOnLoad:
+		sethealingplace 0x4 @Roccavento's pizzeria, the nearest nurse (as in Roccavento_3_3)
 		setvar 0x5007 0x16
 		compare 0x4051 0x53
 		if 0x1 _goto Risaia_Rosa_3_50_MapScriptOnLoad_P1
@@ -453,10 +454,139 @@ EventScript_Risaia_Rosa_3_50_tile1:
 		.byte 0x12
 		.byte 0xFE
 
+//___NPCs___
+
+@Risaia Rosa's people and trainers (object list from index 3: 0-2 are the Pilastro scene's)
+.equ FLAG_BIG_ROOT_GIVEN, 0x9A3
+.equ FLAG_PILLAR_AWAKENED, 0x990 @Set by the Pilastro delle Ere scene (time echoes unlocked)
+.equ TRAINER_MONDINA_ROSA, 0x59 @89
+.equ TRAINER_PESCATORE_GINO, 0x5A @90
+.equ TRAINER_ALLEVATORE_PIERO, 0x5B @91
+.equ TRAINER_PIGLIAMOSCHE_TOBIA, 0x5C @92
+.equ TRAINER_GEMELLE_LIA_LEA, 0x5D @93: double battle
+.equ TRAINER_MEDIUM_SELENE, 0x5E @94
+
+@npc 3: Nonna Mondina, in the water among the paddies (the Pilastri delle Ere, as folklore)
+.global EventScript_Risaia_Rosa_3_50_NPC3
+EventScript_Risaia_Rosa_3_50_NPC3:
+	lockall @Not lock: she wanders in the paddy and lock alone didn't stop her while talking
+	faceplayer
+	msgbox Risaia_Rosa_3_50_NPC3_text1 MSG_NORMAL
+	msgbox Risaia_Rosa_3_50_NPC3_text2 MSG_NORMAL
+	releaseall
+	end
+
+@npc 4: the farmer at the farmhouse, gives a Big Root once
+.global EventScript_Risaia_Rosa_3_50_NPC4
+EventScript_Risaia_Rosa_3_50_NPC4:
+	lockall
+	faceplayer
+	checkflag FLAG_BIG_ROOT_GIVEN
+	if 0x1 _goto EventScript_Risaia_Rosa_3_50_NPC4_Given
+	msgbox Risaia_Rosa_3_50_NPC4_text1 MSG_NORMAL
+	msgbox Risaia_Rosa_3_50_NPC4_text2 MSG_NORMAL
+	giveitem 0x2BB 0x1 MSG_OBTAIN @ITEM_BIG_ROOT
+	compare 0x800D 0x0
+	if 0x1 _goto EventScript_Risaia_Rosa_3_50_NPC4_End @No room in the bag: he'll try again next time
+	setflag FLAG_BIG_ROOT_GIVEN
+	releaseall
+	end
+
+EventScript_Risaia_Rosa_3_50_NPC4_Given:
+	msgbox Risaia_Rosa_3_50_NPC4_text3 MSG_NORMAL
+EventScript_Risaia_Rosa_3_50_NPC4_End:
+	release
+	end
+
+@npc 5: the fisherman on the walkway (a hint while the wallet quest is active)
+.global EventScript_Risaia_Rosa_3_50_NPC5
+EventScript_Risaia_Rosa_3_50_NPC5:
+	lock
+	faceplayer
+	checkflag 0x99E @Wallet quest received...
+	if 0x0 _goto EventScript_Risaia_Rosa_3_50_NPC5_Normal
+	checkflag 0x99F @...and not done yet
+	if 0x1 _goto EventScript_Risaia_Rosa_3_50_NPC5_Normal
+	msgbox Risaia_Rosa_3_50_NPC5_text2 MSG_NORMAL
+	release
+	end
+
+EventScript_Risaia_Rosa_3_50_NPC5_Normal:
+	msgbox Risaia_Rosa_3_50_NPC5_text1 MSG_NORMAL
+	release
+	end
+
+@npc 6: the cloud watcher, on the hilltop
+.global EventScript_Risaia_Rosa_3_50_NPC6
+EventScript_Risaia_Rosa_3_50_NPC6:
+	lock
+	faceplayer
+	msgbox Risaia_Rosa_3_50_NPC6_text1 MSG_NORMAL
+	release
+	end
+
+@npc 7: Mondina Rosa (Picnicker)
+.global EventScript_Risaia_Rosa_3_50_NPC7
+EventScript_Risaia_Rosa_3_50_NPC7:
+	trainerbattle0 0x0 TRAINER_MONDINA_ROSA 0x0 Risaia_Rosa_3_50_NPC7_text1 Risaia_Rosa_3_50_NPC7_text2
+	msgbox Risaia_Rosa_3_50_NPC7_text3 MSG_NORMAL
+	end
+
+@npc 8: Pescatore Gino (Fisherman)
+.global EventScript_Risaia_Rosa_3_50_NPC8
+EventScript_Risaia_Rosa_3_50_NPC8:
+	trainerbattle0 0x0 TRAINER_PESCATORE_GINO 0x0 Risaia_Rosa_3_50_NPC8_text1 Risaia_Rosa_3_50_NPC8_text2
+	msgbox Risaia_Rosa_3_50_NPC8_text3 MSG_NORMAL
+	end
+
+@npc 9: Allevatore Piero (Bird Keeper)
+.global EventScript_Risaia_Rosa_3_50_NPC9
+EventScript_Risaia_Rosa_3_50_NPC9:
+	trainerbattle0 0x0 TRAINER_ALLEVATORE_PIERO 0x0 Risaia_Rosa_3_50_NPC9_text1 Risaia_Rosa_3_50_NPC9_text2
+	msgbox Risaia_Rosa_3_50_NPC9_text3 MSG_NORMAL
+	end
+
+@npc 10: Pigliamosche Tobia (Bug Catcher)
+.global EventScript_Risaia_Rosa_3_50_NPC10
+EventScript_Risaia_Rosa_3_50_NPC10:
+	trainerbattle0 0x0 TRAINER_PIGLIAMOSCHE_TOBIA 0x0 Risaia_Rosa_3_50_NPC10_text1 Risaia_Rosa_3_50_NPC10_text2
+	msgbox Risaia_Rosa_3_50_NPC10_text3 MSG_NORMAL
+	end
+
+@npcs 11 and 12: Gemelle Lia e Lea (Twins, one object each), a double battle
+.global EventScript_Risaia_Rosa_3_50_NPC11
+EventScript_Risaia_Rosa_3_50_NPC11:
+	trainerbattle4 0x4 TRAINER_GEMELLE_LIA_LEA 0x0 Risaia_Rosa_3_50_NPC11_text1 Risaia_Rosa_3_50_NPC11_text2 Risaia_Rosa_3_50_NPC11_text4
+	msgbox Risaia_Rosa_3_50_NPC11_text3 MSG_NORMAL
+	end
+
+@npc 13: Medium Selene, near the great tree (the Pilastri delle Ere, as a vision): her intro changes once the Pilastro
+@on the hilltop has been awakened
+.global EventScript_Risaia_Rosa_3_50_NPC12
+EventScript_Risaia_Rosa_3_50_NPC12:
+	trainerbattle0 0x0 TRAINER_MEDIUM_SELENE 0x0 Risaia_Rosa_3_50_NPC12_text1 Risaia_Rosa_3_50_NPC12_text3
+	msgbox Risaia_Rosa_3_50_NPC12_text4 MSG_NORMAL
+	end
 
 //___SIGNs___
 
 .global EventScript_Roccavento_3_50_Sign0
 EventScript_Roccavento_3_50_Sign0:
 	setvar 0x4067 0x2
+	end
+
+@Poke Balls on the ground: the item, and the object's flag (set in HMA) hides them once taken
+.global EventScript_Risaia_Rosa_3_50_ItemBall_ShinyStone
+EventScript_Risaia_Rosa_3_50_ItemBall_ShinyStone: @npc 14, flag 0x19A: Shiny Stone
+	finditem 0x63 0x1
+	end
+
+.global EventScript_Risaia_Rosa_3_50_ItemBall_GreatBalls
+EventScript_Risaia_Rosa_3_50_ItemBall_GreatBalls: @npc 15, flag 0x19B: Great Ball x3
+	finditem 0x3 0x3
+	end
+
+.global EventScript_Risaia_Rosa_3_50_ItemBall_SuperPotions
+EventScript_Risaia_Rosa_3_50_ItemBall_SuperPotions: @npc 16, flag 0x19D: Super Potion x2
+	finditem 0x16 0x2
 	end

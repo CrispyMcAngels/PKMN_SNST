@@ -638,8 +638,16 @@ def main():
                                     rom.seek(eventHeader + 0xC)
                                     tileTable = ExtractPointer(rom.read(4)) - 0x08000000
                                     tileTables[dictId] = tileTable  # Store for later
+                                    rom.seek(eventHeader + 0x2)
+                                    tileCounts[dictId] = int(rom.read(1)[0])
                                 else:
                                     tileTable = tileTables[dictId]
+
+                                # Check if valid tile: past the map's script tiles (or with none) it would overwrite other data
+                                if eventId >= tileCounts[dictId]:
+                                    print("Error! Tile id {} exceeds the count of {} on line {}: {}".format(eventId, tileCounts[dictId], i, line.strip()))
+                                    continue
+
                                 length = 0x10  # Length of one entry
                                 offset = tileTable + eventId * length + 0xC
 

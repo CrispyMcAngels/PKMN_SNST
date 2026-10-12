@@ -82,6 +82,8 @@ enum
 	LAYER_TYPE_COVERED,  //Bottom and middle layers
 	LAYER_TYPE_TRIPLE,   //Bottom, middle and top layers (12 tiles)
 	LAYER_TYPE_SPLIT,    //Bottom and top layers
+	LAYER_TYPE_UNUSED_5,
+	LAYER_TYPE_TRIPLE_HMA, //HMA's "Triple" (0x60000000 in the attributes), the same as LAYER_TYPE_TRIPLE
 };
 
 #define TRANSPARENT_TILE 0
@@ -166,6 +168,7 @@ void ParallaxDrawMetatile(s32 metatileLayerType, const u16* tiles, u16 offset)
 			FillMetatileLayer(gBGTilemapBuffers2, offset, TRANSPARENT_TILE);
 			break;
 		case LAYER_TYPE_TRIPLE:
+		case LAYER_TYPE_TRIPLE_HMA:
 			if (drawBottomLayer)
 				DrawMetatileLayer(gBGTilemapBuffers3, offset, &tiles[0]);
 			DrawMetatileLayer(gBGTilemapBuffers1, offset, &tiles[4]);

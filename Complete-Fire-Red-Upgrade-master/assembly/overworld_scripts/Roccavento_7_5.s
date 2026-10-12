@@ -32,11 +32,3 @@ EventScript_Roccavento_7_5_NPC0_Done:
 	release
 	end
 
-.global EventScript_Roccavento_7_5_NPC1
-EventScript_Roccavento_7_5_NPC1:
-	lock
-	faceplayer
-	msgbox Roccavento_7_5_NPC1_text1 MSG_NORMAL
-	release
-	end
-

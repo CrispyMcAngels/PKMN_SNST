@@ -676,6 +676,7 @@ LoadBagSpritePaletteHook 08108340 0
 SwitchBagPocketRightHook 081091B8 0
 ##Time Echo protagonists' trainer card: no badges, stars or ID number, can't be flipped
 TrainerCardBadgesHook 08089A94 1
+TrainerCardEchoGfxHook 0808959C 0
 TrainerCardIdHook 08089F78 0
 TrainerCardFlipHook 0808924C 1
 #endif

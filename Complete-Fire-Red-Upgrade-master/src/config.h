@@ -291,7 +291,7 @@ enum //These vars need to be one after the other (hence the enum)
 //#define ITEM_DESCRIPTION_ACQUIRE //If uncommented, item descriptions will be shown the first time an item is added to the Bag. ITEM_PICTURE_ACQUIRE must be defined to work
 #define EXPANDED_TEXT_BUFFERS //Expands the number of scripting string buffers available. Comment out to keep original buffer text
 #define FOOTSTEP_NOISES //Sounds will be played when any object moves through grass or across sand
-#define CAN_ONLY_USE_OMNIDRECTIONAL_JUMP_ON_HEIGHT_2 //The omnidirectional jump tiles can only be used if the player is standing on a tile of height 2 (movement permission 0xC in AdvanceMap)
+#define CAN_ONLY_USE_OMNIDRECTIONAL_JUMP_ON_HEIGHT_2 //The omnidirectional jump tiles can only be used if the player is standing on a tile of height 2 or 3 (movement permission 0xC or 0x10 in AdvanceMap, elevation 3 or 4 in HMA)
 #define HOOPA_CHANGE_IN_PC //Hoopa-Unbound will revert to confined form when placed in or withdrawn from a box
 #define SHAYMIN_CHANGE_IN_PC //Shaymin-Sky will revert to sky from when placed in or withdrawn from a box
 #define HIGH_PITCH_MEGA_PRIMAL_CRY //Mega Pokemon cries will be higher pitched. This is useful if you're using the base form cries for Mega Evolutions

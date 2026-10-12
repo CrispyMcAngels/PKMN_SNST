@@ -51,7 +51,6 @@
 [GREEN]Roccavento[BLACK] [1A] un posto unico al\nmondo.\pL'armonia tra Pok\emon, natura e\numani che si trova qui [1A]\limparagonabile.
 
 #org @Roccavento_3_3_NPC5_text1
-//_/////////////////////////////////
 [BLACK]Hai gi[16] visitato la [GREEN]Risaia Rosa[BLACK]?\pIo e [GREEN]Togepi[BLACK] andiamo l[1E] ogni giorno\nad allenarci.\pSai, dicono che il riso speciale\nche cresce solo l[1E], renda i Pok\emon\lpi[26] forti. 
 
 #org @Roccavento_3_3_NPC14_text1
@@ -89,3 +88,13 @@ Sono esposti i prodotti del giorno\ndel Mercato Contadino di Roccavento.\pSolo p
 
 #org @Roccavento_3_3_Sign13_text1
 Sono delle spezie uniche di\nRoccavento, hanno un profumo\lincredibile!
+
+#org @Roccavento_3_3_NPC16_text1
+[BLACK]I tramonti a [GREEN]Roccavento[BLACK] sono\nsemplicemente incredibili[.]\pOgni sera guardo il tramonto da\nquesto posto[.]\pMio nonno dice che un tempo era\ndiverso.\pIo non so come possa essere diverso\nun tramonto[.]\pAlla fine sempre arancione [1A], no?
+
+#org @Roccavento_3_3_NPC17_text1
+[BLACK]Quando sono un po' gi[26] vengo\nsempre in questo posto a guardare\ll'orizzonte[.]\pDa questa parte si vede un'alba\nbellissima, ma poi penso che quella\lche per me [1A] un'alba, pu[22] essere\lun tramonto per qualcun altro[.]\pAlla fine nella vita [1A] tutta una\nquestione di punti di vista[.]\pNiente [1A] certo[.]
+
+#org @Roccavento_3_3_NPC17_text2
+//_/////////////////////////////////
+[BLACK]Ci starebbe proprio una sigaretta\nin momenti come questo[.]

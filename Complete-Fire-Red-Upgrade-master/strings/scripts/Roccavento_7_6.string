@@ -8,8 +8,43 @@
 [GREEN]Chansey[BLACK]: Chans[1E]! Chaaan!
 
 #org @Roccavento_7_6_NPC3_text1
-//PLACEHOLDER: to be rewritten in Neapolitan
-[BLACK]Benvenuto! Qui la pizza si fa\ncome una volta: impasto lievitato\lventiquattr'ore e forno a legna,\lacceso dal mio fidato [GREEN]Charmander[BLACK]!
+[BLACK]U[1A], guagli[26]! Chesta [1A] 'a pizza\ncchi[26] bbona 'e tutta [GREEN]Eyros[BLACK]!
+
+#org @Roccavento_7_6_NPC3_text2
+[BLACK]O ssaje pecch[1B] me vene accuss[1E]\nsoffice?\pPecch[1B] uso 'a Caputo Nuvola!\nAhahah!
+
+#org @Roccavento_7_6_NPC3_text3
+[BLACK]Eh, guagli[26], vuje vulite sap[1B]\n'a ricetta segreta, eh?
+
+#org @Roccavento_7_6_NPC3_text4
+[BLACK]Allora, sentite a me:\nnu chilo 'e farina,\l750 millilitri d'acqua[.]
+
+#org @Roccavento_7_6_NPC3_text5
+[BLACK]Eh, magari fosse chesta 'a stessa\nacqua 'e Napuleeeee!
+
+#org @Roccavento_7_6_NPC3_text6
+[BLACK]NAPULEEEE! NAPULEEEE!\nFORZA NAPOLIIIIII!
+
+#org @Roccavento_7_6_NPC3_text7
+[BLACK]Ah, guagli[26], dicevamo!\pPo' ce mettite 20 grammi 'e sale\ne nu grammo e miezo 'e lievito\l'e birra fresco.
+
+#org @Roccavento_7_6_NPC3_text8
+[BLACK]Mi raccomando, guagli[26]:\nimpastate finch[1B] nun addeventa\lliscia liscia, comm'a 'na\lPok\e Ball!
+
+#org @Roccavento_7_6_NPC3_text9
+[BLACK]Po' 'a mettite rind o frigorifero\ne 'a facite lievit[16] pe' almeno\l24 ore.
+
+#org @Roccavento_7_6_NPC3_text10
+[BLACK]Guagli[26], date retta a me:\n'o segreto pe' 'na pizza comme\lDio comanda [1A] tutto cc[16]!
+
+#org @Roccavento_7_6_NPC3_text11
+[BLACK]E po', 'o resto d'a magia 'o fa\nchillo guaglione 'e [GREEN]Charmander[BLACK],\lquanno 'a mette a cocere!
+
+#org @Roccavento_7_6_NPC3_text12
+[BLACK]Mamma mia, che pizza!
+
+#org @Roccavento_7_6_NPC3_text13
+[BLACK]Ah, nun ve 'mporta? Peggio pe' vuje,\nguagli[26]!\p'O segreto mio resta 'nzieme\na me e a stu forno!
 
 #org @Roccavento_7_6_NPC4_text1
 [BLACK]Vengo qui ogni sera da\nquarant'anni.\pLa pizza [1A] cambiata, il pizzaiolo [1A]\ncambiato[.] ma il profumo del forno\l[1A] sempre lo stesso.
@@ -41,3 +76,36 @@
 
 #org @Roccavento_7_6_NPC7_text1
 [BLACK]Pizza e Centro Pok\emon nello stesso\nlocale[.]\pA [GREEN]Roccavento[BLACK] s[1E] che sanno vivere!
+
+#org @Roccavento_7_6_BoxPC_text1
+Una pila di cartoni per pizza[.]\pIn quello in cima c'[1A] un terminale\ncollegato al sistema Box!
+
+#org @Roccavento_7_6_Sign0_text1
+Una pizza appena uscita dalle\nfiamme di [GREEN]Charmander[BLACK].\pIl cornicione [1A] gonfio e dorato[.]\nsolo un pochino bruciacchiato.
+
+#org @Roccavento_7_6_Sign2_text1
+Una pizza capricciosa.\pIl signore ha tolto tutti i\ncarciofi e li ha messi in fila sul\lbordo del piatto.
+
+#org @Roccavento_7_6_Sign3_text1
+Una pizza a forma di cuore, da\ndividere in due.\pQualcuno ha gi[16] mangiato ben pi[26]\ndella sua met[16][.]
+
+#org @Roccavento_7_6_Sign3_text2
+Il conto non [1A] ancora arrivato.\nSperiamo che il portafoglio\lsi trovi prima di lui[.]
+
+#org @Roccavento_7_6_Sign4_text1
+Una pizza con l'ananas?!\pIn una pizzeria napoletana[.]\nil pizzaiolo fa finta di non\lvederla.
+
+#org @Roccavento_7_6_Sign5_text1
+Una pizza appena sfornata.\nScotta!\pMeglio aspettare che si raffreddi[.]\no chiedere aiuto a un Pok\emon di\ltipo Ghiaccio.
+
+#org @Roccavento_7_6_Sign6_text1
+Una cassetta di legno piena di\npaglia.\pChansey ci sistema le Pok\e Ball\ndei clienti, come fossero uova\lappena raccolte.
+
+#org @Roccavento_7_6_Sign7_text1
+MEN[26] DEL GIORNO\pMargherita alla Bulbasaur\n(basilico a volont[16])\pDiavola alla Charizard\n(piccantissima, firma la liberatoria!)
+
+#org @Roccavento_7_6_Sign7_text2
+Quattro formaggi alla Miltank\n(solo latte Mumu, fresco di giornata)\pMarinara alla Lapras\n(fatta con l'acqua del mare)
+
+#org @Roccavento_7_6_Sign7_text3
+Speciale Snorlax:\nuna pizza intera[.] anzi, due!\pPortate il vostro Pok\emon: la\nprima fetta per lui [1A] offerta!

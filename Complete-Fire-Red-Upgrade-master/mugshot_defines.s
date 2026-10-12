@@ -29,6 +29,7 @@
 .equ MUGSHOT_OLD_CRISPY,	0x3C8
 .equ MUGSHOT_LIO,			0x3C9
 .equ MUGSHOT_SAGGIO_DF,		0x3CA
+.equ MUGSHOT_CUSTODE,		0x3CB
 
 @ Shows a character portrait in the standard position (bottom left, above the text box)
 .macro show_mugshot name:req

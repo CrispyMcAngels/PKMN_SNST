@@ -13,6 +13,9 @@
 #include "../include/new/item.h"
 #include "../include/new/player_characters.h"
 #include "../include/new/Vanilla_functions.h"
+#include "../include/malloc.h"
+#include "../include/palette.h"
+#include "../include/new/trainer_card_echo_gfx.h"
 /*
 player_characters.c
 	playable characters: the main character (VAR_PLAYER_CHARACTER = 0) and up to NUM_ECHO_CHARACTERS
@@ -449,6 +452,73 @@ bool8 TrainerCard_HideAchievements(void)
 
 	Memset(sTrainerCardDataPtr + TRAINER_CARD_STARS_OFFSET, 0, NUM_TRAINER_CARD_STARS + NUM_TRAINER_CARD_BADGES);
 	return TRUE;
+}
+
+#define TRAINER_CARD_IS_LINK 0x5
+#define TRAINER_CARD_FRONT_TILEMAP 0x4BC //The card's buffers, filled by LoadCardGfx (0x8089424)
+#define TRAINER_CARD_BACK_TILEMAP 0x96C
+#define TRAINER_CARD_BG_TILEMAP 0xE1C
+#define TRAINER_CARD_TILES 0x18CC
+#define TRAINER_CARD_TILEMAP_SIZE (30 * 20)
+#define TRAINER_CARD_MAX_TILES 192 //LoadBgTiles copies 0x1800 bytes
+#define TILE_SIZE_4BPP 32
+#define TILEMAP_TILE_NUM 0x3FF
+
+//Called once LoadCardGfx has loaded everything (0x808959C). Echo protagonists get their own card's front
+//(include/new/trainer_card_echo_gfx.h). The back and the background behind the card share the front's tileset,
+//so the tiles they use are moved after the echo card's, and their tilemaps follow them.
+void TrainerCard_TryLoadEchoGfx(void)
+{
+	u8* data = sTrainerCardDataPtr;
+	u8* tiles = data + TRAINER_CARD_TILES;
+	u16* maps[] = {(u16*) (data + TRAINER_CARD_BACK_TILEMAP), (u16*) (data + TRAINER_CARD_BG_TILEMAP)};
+	u8 newTile[TRAINER_CARD_MAX_TILES];
+	u32 i, j, numKept = 0;
+	u8* kept;
+
+	if (!IsEchoCharacterLoaded() || data[TRAINER_CARD_IS_LINK])
+		return;
+
+	Memset(newTile, 0xFF, sizeof(newTile));
+	for (i = 0; i < ARRAY_COUNT(maps); ++i)
+	{
+		for (j = 0; j < TRAINER_CARD_TILEMAP_SIZE; ++j)
+		{
+			u32 tile = maps[i][j] & TILEMAP_TILE_NUM;
+			if (tile < TRAINER_CARD_MAX_TILES && newTile[tile] == 0xFF)
+				newTile[tile] = ECHO_CARD_NUM_TILES + numKept++;
+		}
+	}
+
+	if (ECHO_CARD_NUM_TILES + numKept > TRAINER_CARD_MAX_TILES)
+		return; //Doesn't fit: the normal card
+
+	kept = Malloc(numKept * TILE_SIZE_4BPP);
+	if (kept == NULL)
+		return;
+
+	for (i = 0; i < TRAINER_CARD_MAX_TILES; ++i) //The back's and background's tiles, saved before the echo card's overwrite them
+	{
+		if (newTile[i] != 0xFF)
+			Memcpy(kept + (newTile[i] - ECHO_CARD_NUM_TILES) * TILE_SIZE_4BPP, tiles + i * TILE_SIZE_4BPP, TILE_SIZE_4BPP);
+	}
+
+	Memcpy(tiles, sEchoTrainerCardTiles, ECHO_CARD_NUM_TILES * TILE_SIZE_4BPP);
+	Memcpy(tiles + ECHO_CARD_NUM_TILES * TILE_SIZE_4BPP, kept, numKept * TILE_SIZE_4BPP);
+	Free(kept);
+
+	for (i = 0; i < ARRAY_COUNT(maps); ++i)
+	{
+		for (j = 0; j < TRAINER_CARD_TILEMAP_SIZE; ++j)
+		{
+			u32 tile = maps[i][j] & TILEMAP_TILE_NUM;
+			if (tile < TRAINER_CARD_MAX_TILES)
+				maps[i][j] = (maps[i][j] & ~TILEMAP_TILE_NUM) | newTile[tile];
+		}
+	}
+
+	Memcpy(data + TRAINER_CARD_FRONT_TILEMAP, sEchoTrainerCardFrontTilemap, sizeof(sEchoTrainerCardFrontTilemap));
+	LoadPalette(sEchoTrainerCardPal, ECHO_CARD_PAL_SLOT * 16, sizeof(sEchoTrainerCardPal));
 }
 
 //Echo visuals: the start menu//

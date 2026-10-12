@@ -19,6 +19,23 @@ tile 3 50 1 EventScript_Risaia_Rosa_3_50_tile1
 tile 3 50 2 EventScript_Risaia_Rosa_3_50_tile1
 tile 3 50 3 EventScript_Risaia_Rosa_3_50_tile1
 sign 3 50 0 EventScript_Roccavento_3_50_Sign0
+npc 3 50 3 EventScript_Risaia_Rosa_3_50_NPC3
+npc 3 50 4 EventScript_Risaia_Rosa_3_50_NPC4
+npc 3 50 5 EventScript_Risaia_Rosa_3_50_NPC5
+npc 3 50 6 EventScript_Risaia_Rosa_3_50_NPC6
+npc 3 50 7 EventScript_Risaia_Rosa_3_50_NPC7
+npc 3 50 8 EventScript_Risaia_Rosa_3_50_NPC8
+npc 3 50 9 EventScript_Risaia_Rosa_3_50_NPC9
+npc 3 50 10 EventScript_Risaia_Rosa_3_50_NPC10
+npc 3 50 11 EventScript_Risaia_Rosa_3_50_NPC11
+npc 3 50 12 EventScript_Risaia_Rosa_3_50_NPC11
+npc 3 50 13 EventScript_Risaia_Rosa_3_50_NPC12
+npc 3 50 14 EventScript_Risaia_Rosa_3_50_ItemBall_ShinyStone
+npc 3 50 15 EventScript_Risaia_Rosa_3_50_ItemBall_GreatBalls
+npc 3 50 16 EventScript_Risaia_Rosa_3_50_ItemBall_SuperPotions
+
+npc 0 10 0 EventScript_Risaia_Rosa_0_10_NPC0
+sign 0 10 0 EventScript_Risaia_Rosa_0_10_Sign0
 
 map 3 3 gMapScripts_Roccavento_3_3
 npc 3 3 0 EventScript_Roccavento_3_3_NPC0
@@ -29,6 +46,11 @@ npc 3 3 4 EventScript_Ardesiopoli_3_2_NPC11
 npc 3 3 5 EventScript_Roccavento_3_3_NPC5
 npc 3 3 12 EventScript_Roccavento_3_3_NPC12
 npc 3 3 14 EventScript_Roccavento_3_3_NPC14
+npc 3 3 16 EventScript_Roccavento_3_3_NPC16
+npc 3 3 17 EventScript_Roccavento_3_3_NPC17
+npc 3 3 19 EventScript_Roccavento_3_3_ItemBall_FloatStone
+npc 3 3 20 EventScript_Roccavento_3_3_ItemBall_SuperRepels
+npc 3 3 21 EventScript_Roccavento_3_3_ItemBall_Ether
 sign 3 3 0 EventScript_Roccavento_3_3_Sign0
 sign 3 3 1 EventScript_Roccavento_3_3_Sign1
 sign 3 3 2 EventScript_Roccavento_3_3_Sign2
@@ -49,7 +71,6 @@ npc 7 1 0 EventScript_Roccavento_7_1_NPC0
 npc 7 1 1 EventScript_Roccavento_7_1_NPC1
 
 npc 7 5 0 EventScript_Roccavento_7_5_NPC0
-npc 7 5 1 EventScript_Roccavento_7_5_NPC1
 
 npc 7 6 0 EventScript_Roccavento_7_6_NPC0
 npc 7 6 1 EventScript_Roccavento_7_6_NPC1
@@ -59,6 +80,20 @@ npc 7 6 4 EventScript_Roccavento_7_6_NPC4
 npc 7 6 5 EventScript_Roccavento_7_6_NPC5
 npc 7 6 6 EventScript_Roccavento_7_6_NPC6
 npc 7 6 7 EventScript_Roccavento_7_6_NPC7
+sign 7 6 0 EventScript_Roccavento_7_6_Sign0
+sign 7 6 1 EventScript_Roccavento_7_6_Sign0
+sign 7 6 2 EventScript_Roccavento_7_6_Sign2
+sign 7 6 3 EventScript_Roccavento_7_6_Sign3
+sign 7 6 4 EventScript_Roccavento_7_6_Sign4
+sign 7 6 5 EventScript_Roccavento_7_6_Sign5
+sign 7 6 6 EventScript_Roccavento_7_6_Sign6
+sign 7 6 7 EventScript_Roccavento_7_6_Sign7
+sign 7 6 8 EventScript_Roccavento_7_6_BoxPC
+
+npc 7 9 0 EventScript_Roccavento_7_9_NPC0
+npc 7 9 1 EventScript_Roccavento_7_9_NPC1
+npc 7 9 2 EventScript_Roccavento_7_9_NPC2
+sign 7 9 0 EventScript_Roccavento_7_9_Sign0
 
 map 3 23 gMapScripts_Percorso12_3_23
 
@@ -67,7 +102,15 @@ map 32 3 gMapScripts_Dark_Future_32_3
 npc 32 3 1 dark_future_32_3_NPC1
 npc 32 2 0 dark_future_32_2_NPC0
 
+map 1 60 gMapScripts_Santuario_del_Vento_1_60
+npc 1 60 4 EventScript_Santuario_del_Vento_1_60_Monk1
+npc 1 60 5 EventScript_Santuario_del_Vento_1_60_Monk2
+npc 1 60 6 EventScript_Santuario_del_Vento_1_60_Monk3
+npc 1 60 7 EventScript_Santuario_del_Vento_1_60_Monk4
+npc 1 60 8 EventScript_Santuario_del_Vento_1_60_Monk5
 map 1 61 gMapScripts_Santuario_del_Vento_1_61
+map 1 62 gMapScripts_Santuario_del_Vento_1_62
+tile 1 62 0 EventScript_Santuario_del_Vento_1_62_Tile0
 
 npc 1 59 4 EventScript_Santuario_del_Vento_1_59_NPC4
 sign 1 59 1 EventScript_Santuario_del_Vento_1_59_Sign1

@@ -16,7 +16,7 @@ triple_layer_blocks.s
 DrawBlockHook:
 	lsl r2, r2, #0x10
 	lsr r2, r2, #0x10
-	cmp r0, #0x4
+	cmp r0, #0x6
 	bhi SkipTripleLayer
 	lsl r0, r0, #0x2
 	ldr r3, =sOverworldBlockFuncs
@@ -85,6 +85,8 @@ sOverworldBlockFuncs:
 .word 0x805aa0c @LAYER_TYPE_COVERED_BY_OBJECTS
 .word HandleTripleBlock
 .word 0x805a9ce @LAYER_TYPE_BG3_BG1
+.word 0x805a9ce @5: unused, drawn as split
+.word HandleTripleBlock @6: HMA's "Triple" (0x60000000 in the attributes)
 
 .align 2
 .address:	.word 0x0300501C

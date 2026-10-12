@@ -83,6 +83,19 @@ TrainerCardBadges_Count:
 	bx r2
 
 .pool
+@0x808959C with r0: LoadCardGfx's last step, once the card's tiles and tilemaps are all loaded
+.global TrainerCardEchoGfxHook
+TrainerCardEchoGfxHook:
+	bl TrainerCard_TryLoadEchoGfx @The echo protagonists' own card
+	ldr r0, =0x20397A4 @sTrainerCardDataPtr
+	ldr r1, [r0]
+	mov r0, #0x0
+	strb r0, [r1, #0x2] @gfxLoadState = 0, as the instructions the hook replaced
+	mov r0, #0x1 @Done
+	pop {r1}
+	bx r1
+
+.pool
 @0x8089F78 with r0
 .global TrainerCardIdHook
 TrainerCardIdHook:

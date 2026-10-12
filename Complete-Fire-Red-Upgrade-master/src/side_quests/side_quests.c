@@ -110,6 +110,10 @@ extern const u8 gText_SideQuests_Courier[];
 extern const u8 gText_SideQuests_CourierDesc[];
 extern const u8 gText_SideQuests_LostWallet[];
 extern const u8 gText_SideQuests_LostWalletDesc[];
+extern const u8 gText_SideQuests_LostElder[];
+extern const u8 gText_SideQuests_LostElderDesc[];
+extern const u8 gText_SideQuests_Photographer[];
+extern const u8 gText_SideQuests_PhotographerDesc[];
 
 //The quest list, shown in this order. Add new quests before the last line.
 static const struct SideQuest sSideQuests[] =
@@ -123,6 +127,8 @@ static const struct SideQuest sSideQuests[] =
 	{gText_SideQuests_Courier,         gText_SideQuests_CourierDesc,         0x34C, 0x34D, 69},  //courier_quest.c
 	{gText_SideQuests_MurkrowInvasion, gText_SideQuests_MurkrowInvasionDesc, 0x970, 0x971, 133},
 	{gText_SideQuests_LostWallet,      gText_SideQuests_LostWalletDesc,      0x99E, 0x99F, 41},  //Roccavento_7_6.s, icon: the boy (0x29)
+	{gText_SideQuests_LostElder,       gText_SideQuests_LostElderDesc,       0x97E, 0x97F, 35},  //Stellavia_interni.s (10.2), icon: the old lady (0x23)
+	{gText_SideQuests_Photographer,    gText_SideQuests_PhotographerDesc,    0x980, 0x981, 48},  //Stellavia_3_6.s, icon: the photographer (0x30)
 	{NULL}
 };
 

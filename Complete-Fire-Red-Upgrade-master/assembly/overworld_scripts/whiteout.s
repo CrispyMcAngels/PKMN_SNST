@@ -15,7 +15,15 @@ EventScript_AfterWhiteOutHeal:
 	if notequal _goto EventScript_AfterWhiteOut_CustomRespawn
 	lockall
 	fadedefaultbgm
+	callasm Whiteout_CheckCustomRespawn @Healers outside vanilla-shaped Pokemon Centers (src/overworld.c)
+	compare 0x800D 0x1
+	if 0x1 _goto EventScript_AfterWhiteOut_Pizzeria
 	goto EventScript_common_healing_pkmn_center_P1 @Same healing as talking to the nurse (common.s)
+
+@ Roccavento: the pizzeria's nurse, with her own tray of balls and Chansey (Roccavento_7_6.s)
+EventScript_AfterWhiteOut_Pizzeria:
+	spriteface 0xFF 0x2 @Up, towards the nurse
+	goto EventScript_Roccavento_7_6_NPC0_Heal
 
 @ The mom script itself stays vanilla
 .global EventScript_AfterWhiteOutMomHeal

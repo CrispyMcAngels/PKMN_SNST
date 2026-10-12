@@ -5,6 +5,9 @@
 #include "include/new/catching.h"
 
 ##Optional Byte Changes##
+##Door table moved to 0x08C08000 (HMA graphics.doors.animations): GetDoorSoundEffect (0x805B364) still read the
+##vanilla table, so new doors played the sliding door sound (blocks not found there count as sliding)
+0805B37C 00 80 C0 08
 ##Sideways stairs patch (injected at 0x08FFF380): its bike collision hook pointed 2 bytes before the bike entry
 ##(0x08FFF393 = the patch's "bx r3" helper), so any step on a bike reset the game. Correct entry: 0x08FFF395
 080BD3CC 95 F3 FF 08

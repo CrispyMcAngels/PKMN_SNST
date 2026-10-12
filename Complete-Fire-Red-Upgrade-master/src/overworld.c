@@ -1637,22 +1637,69 @@ void FieldCB_RushInjuredPokemonToCenter(void)
     gTasks[taskId].data[0] = 0;
 }
 
+//Healing places whose healer isn't in a vanilla-shaped Pokemon Center: the vanilla code would respawn the player
+//at (7,5) of the table's map. The healer is still the heal location's entry in the healer NPC table (LASTTALKED)
+struct CustomRespawn
+{
+	u8 townGroup, townNum; //The heal location's map, as set by sethealingplace
+	u8 group, num; //Where the player respawns...
+	u8 x, y; //...in front of the healer
+};
+
+static const struct CustomRespawn sCustomRespawns[] =
+{
+	{3, 3, 7, 6, 3, 6}, //Roccavento (heal location 4): the pizzeria, below the nurse (local id 1)
+};
+
 bool8 WhiteoutLogic(void)
 {
 #ifdef SET_HEALING_PLACE_HACK
 	u16 loc = VarGet(VAR_HEALINGMAP);
-	if (loc == 0)
-		return TRUE; //No custom respawn set, so use the last sethealingplace like normal
-
-	gWarp1->mapNum = (loc >> 8) & 0xFF;	// upper byte
-	gWarp1->mapGroup = loc & 0xFF;	// lower byte
-	gWarp1->warpId = 0xFF;
-	gWarp1->x = VarGet(VAR_HEALING_XPOS);
-	gWarp1->y = VarGet(VAR_HEALING_YPOS);
-	return FALSE;
-#else
-	return TRUE;	// load from original table
+	if (loc != 0)
+	{
+		gWarp1->mapNum = (loc >> 8) & 0xFF;	// upper byte
+		gWarp1->mapGroup = loc & 0xFF;	// lower byte
+		gWarp1->warpId = 0xFF;
+		gWarp1->x = VarGet(VAR_HEALING_XPOS);
+		gWarp1->y = VarGet(VAR_HEALING_YPOS);
+		return FALSE;
+	}
 #endif
+
+	for (u32 i = 0; i < ARRAY_COUNT(sCustomRespawns); ++i)
+	{
+		const struct CustomRespawn* respawn = &sCustomRespawns[i];
+		if (gSaveBlock1->lastHealLocation.mapGroup == respawn->townGroup
+		&&  gSaveBlock1->lastHealLocation.mapNum == respawn->townNum)
+		{
+			gWarp1->mapGroup = respawn->group;
+			gWarp1->mapNum = respawn->num;
+			gWarp1->warpId = 0xFF;
+			gWarp1->x = respawn->x;
+			gWarp1->y = respawn->y;
+			return FALSE;
+		}
+	}
+
+	return TRUE; //Load from the original table
+}
+
+//callasm in EventScript_AfterWhiteOutHeal: 0x800D = 1 + the sCustomRespawns entry the player respawned in, 0 if none.
+//It also selects the healer, so her script's faceplayer turns her and not an object left over from the old map
+void Whiteout_CheckCustomRespawn(void)
+{
+	gSpecialVar_LastResult = 0;
+
+	for (u32 i = 0; i < ARRAY_COUNT(sCustomRespawns); ++i)
+	{
+		if (gSaveBlock1->location.mapGroup == sCustomRespawns[i].group
+		&&  gSaveBlock1->location.mapNum == sCustomRespawns[i].num)
+		{
+			gSelectedEventObject = GetEventObjectIdByLocalId(gSpecialVar_LastTalked);
+			gSpecialVar_LastResult = i + 1;
+			break;
+		}
+	}
 }
 
 #define sText_ScurriedHome (const u8*) 0x841B5B6
@@ -2082,7 +2129,8 @@ u8 GetLedgeJumpDirection(s16 x, s16 y, u8 direction)
 		return direction + 1;
 	else if (behaviour == MB_OMNIDIRECTIONAL_JUMP
 	#ifdef CAN_ONLY_USE_OMNIDRECTIONAL_JUMP_ON_HEIGHT_2
-	&& gEventObjects[GetPlayerMapObjId()].currentElevation == 3 //Movement permission 0xC
+	&& (gEventObjects[GetPlayerMapObjId()].currentElevation == 3 //Movement permission 0xC
+	 || gEventObjects[GetPlayerMapObjId()].currentElevation == 4) //And 0x10, for jumps between triple layer blocks (Roccavento 3.3)
 	#endif
 	)
 	{

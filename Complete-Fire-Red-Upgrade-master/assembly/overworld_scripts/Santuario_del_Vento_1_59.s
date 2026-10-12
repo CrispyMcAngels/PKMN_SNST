@@ -12,17 +12,18 @@
 @Local ID 5 (npc 4): one of the Monaci del Vento, guardian of the crossing, before the jump
 .global EventScript_Santuario_del_Vento_1_59_NPC4
 EventScript_Santuario_del_Vento_1_59_NPC4:
-	lock
+	lockall
 	faceplayer
 	checkflag 0x9A0 @He has already explained the crossing
 	if 0x1 _goto Santuario_del_Vento_1_59_NPC4_Again
+	faceplayer
 	msgbox Santuario_del_Vento_1_59_NPC4_text1 MSG_NORMAL
 	spriteface 0x5 0x2 @He looks at the void
 	msgbox Santuario_del_Vento_1_59_NPC4_text2 MSG_NORMAL
 	faceplayer
 	msgbox Santuario_del_Vento_1_59_NPC4_text3 MSG_NORMAL
 	setflag 0x9A0
-	release
+	releaseall
 	end
 
 Santuario_del_Vento_1_59_NPC4_Again:

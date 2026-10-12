@@ -798,6 +798,15 @@ Scogliera_Crepuscolo_42_0_MapScriptOnFrameBegin_P1:
     show_mugshot SAGGIO_DF
 	msgbox Scogliera_Crepuscolo_42_0_text43 MSG_NORMAL
 	special 0x15A
+    pause 0x1E
+    show_mugshot SAGGIO_DF
+	msgbox Scogliera_Crepuscolo_42_0_text44 MSG_NORMAL
+	special 0x15A
+    pause 0x1E
+    applymovement 0x5 Scogliera_Crepuscolo_42_0_mov8 @Seedot (HMA npc 5) hops
+    cry 0x12A 0x0
+    waitmovement 0x5
+    waitcry
     pause 0x3E
 
 
@@ -818,6 +827,8 @@ Scogliera_Crepuscolo_42_0_MapScriptOnFrameBegin_P1:
     setvar 0x500E 0x0
     //setting healing place back to vanilla settings
     setvar 0x5037 0x0
+    //complete echo
+    setflag 0x993
     //warp a time travel
     warp 0x0 0x11 0xFF 0x7 0x6
     releaseall
@@ -856,5 +867,10 @@ Scogliera_Crepuscolo_42_0_mov6:
 Scogliera_Crepuscolo_42_0_mov7:
     .byte 0x11
     .byte 0x11
+    .byte 0xFE
+
+Scogliera_Crepuscolo_42_0_mov8:
+    .byte 0x52 @Jump in place
+    .byte 0x52
     .byte 0xFE
 

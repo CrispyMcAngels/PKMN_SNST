@@ -41,6 +41,9 @@ Primo piano
 #org @sElevatorText_SecondFloor
 Secondo piano
 
+#org @sSilentAnswerText
+[.]
+
 #org @sExampleText_3
 Example 3
 

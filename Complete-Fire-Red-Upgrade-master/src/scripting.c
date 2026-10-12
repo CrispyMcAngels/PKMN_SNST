@@ -3098,6 +3098,7 @@ extern const u8 sInvestPlanText_Speculativo[];
 extern const u8 sElevatorText_GroundFloor[];
 extern const u8 sElevatorText_FirstFloor[];
 extern const u8 sElevatorText_SecondFloor[];
+extern const u8 sSilentAnswerText[];
 extern const u8 sExampleText_4[];
 extern const u8 sExampleText_5[];
 extern const u8 sExampleText_6[];
@@ -3205,6 +3206,13 @@ static const u8* sMultichoiceSet8[] = //From the second floor
 	sElevatorText_FirstFloor,
 };
 
+//A silent answer: the player can only reply with "..." (Santuario del Vento 1.62)
+static const u8* sMultichoiceSet13[] =
+{
+	sSilentAnswerText,
+	sSilentAnswerText,
+};
+
 // Multichoice Lists
 const struct ScrollingMulti gScrollingSets[] =
 {
@@ -3220,6 +3228,7 @@ const struct ScrollingMulti gScrollingSets[] =
 	{sMultichoiceSet10, ARRAY_COUNT(sMultichoiceSet10)}, //9: wardrobe, blue/orange/red
 	{sMultichoiceSet11, ARRAY_COUNT(sMultichoiceSet11)}, //10: wardrobe, blue/green/red
 	{sMultichoiceSet12, ARRAY_COUNT(sMultichoiceSet12)}, //11: wardrobe, blue/orange/green/red
+	{sMultichoiceSet13, ARRAY_COUNT(sMultichoiceSet13)}, //12: two "...", a silent answer
 };
 
 //Wardrobe (Borgo Ponente 4.0): the list of the clothes the player owns, and the outfit (var 0x4068) of each option.
@@ -3288,7 +3297,7 @@ struct ScrollingSizePerOpts
 
 static const struct ScrollingSizePerOpts sScrollingSizes[] =
 {
-	{.maxShowed = 2, .height = 3},
+	{.maxShowed = 2, .height = 4}, //3 was too short: the 2nd option spilled under the frame
 	{.maxShowed = 3, .height = 5},
 	{.maxShowed = 4, .height = 7},
 	{.maxShowed = 5, .height = 9},
@@ -3308,6 +3317,7 @@ static const struct ScrollingSizePerOpts sScrollingSizes[] =
 
 #define SHOP_LIST_LEFT 15 //Overworld shops: on the right, beside the money box (showmoney 0 0)
 #define SHOP_LIST_WIDTH 14
+#define SILENT_ANSWER_LIST 12 //Two "...": a small box on the right above the message box, like Yes/No, clear of the mugshot (showpokepic 0 6)
 
 u32 GetSizeOfMultiList(void)
 {
@@ -3360,6 +3370,11 @@ void SetScrollingListSize(unusedArg u8 taskId)
 	{
 		gTasks[taskId].data[2] = SHOP_LIST_LEFT;
 		gTasks[taskId].data[4] = SHOP_LIST_WIDTH;
+	}
+	else if (Var8000 == SILENT_ANSWER_LIST)
+	{
+		gTasks[taskId].data[2] = 23;
+		gTasks[taskId].data[3] = 9; //The width is recalculated from the longest option (0x080CB9AE)
 	}
 #endif
 }

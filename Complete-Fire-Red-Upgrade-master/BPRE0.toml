@@ -1,6 +1,6 @@
 [General]
 ApplicationVersion = '''0.5.6'''
-FreeSpaceSearch = '''8A9940'''
+FreeSpaceSearch = '''8ABF40'''
 FreeSpaceBuffer = '''040'''
 NextExportID = '''0'''
 ShowRawIVByteForTrainer = False
@@ -212,8 +212,8 @@ DefaultHash = '''9B0EA3BB'''
 
 [[NamedAnchors]]
 Name = '''data.maps.layouts'''
-Address = 0x8415C0
-Format = '''[layout<[width:: height:: borderblock<> blockmap<`blm`> blockdata1<[isCompressed. isSecondary. padding: tileset<> pal<`ucp4:0123456789ABCDEF`> blockset<> animation<> attributes<>]1> blockdata2<[isCompressed. isSecondary. padding: tileset<> pal<`ucp4:0123456789ABCDEF`> blockset<> animation<> attributes<>]1> borderwidth. borderheight. unused:]1>]427'''
+Address = 0x844F40
+Format = '''[layout<[width:: height:: borderblock<> blockmap<`blm`> blockdata1<[isCompressed. isSecondary. padding: tileset<> pal<`ucp4:0123456789ABCDEF`> blockset<> animation<> attributes<>]1> blockdata2<[isCompressed. isSecondary. padding: tileset<> pal<`ucp4:0123456789ABCDEF`> blockset<> animation<> attributes<>]1> borderwidth. borderheight. unused:]1>]461'''
 DefaultHash = '''A7C5CF7B'''
 
 [[NamedAnchors]]
@@ -3606,6 +3606,29 @@ Address = 0xC08400
 Format = '''`ucs4x2x6`'''
 DefaultHash = '''9E5DE3DA'''
 
+[[NamedAnchors]]
+Name = '''graphics.doors.frames.33'''
+Address = 0xC08700
+Format = '''`ucs4x2x6`'''
+DefaultHash = '''9E5DE3DA'''
+
+[[NamedAnchors]]
+Name = '''graphics.doors.frames.34'''
+Address = 0xC08880
+Format = '''`ucs4x2x6`'''
+DefaultHash = '''9E5DE3DA'''
+
+[[NamedAnchors]]
+Name = '''graphics.doors.frames.35'''
+Address = 0xC08A00
+Format = '''`ucs4x2x6`'''
+DefaultHash = '''9E5DE3DA'''
+
+[[NamedAnchors]]
+Name = '''graphics.doors.frames.36'''
+Address = 0xC08C00
+Format = '''`ucs4x2x6`'''
+
 #################################
 [[UnmappedPointers]]
 Name = '''misc.temp.BPRE_3AC950'''
@@ -5687,11 +5710,12 @@ DefaultHash = '''7F30B505'''
 
 [[List]]
 Name = '''MapLayerOptions'''
-DefaultHash = '''E3ADB58F'''
+DefaultHash = '''7CB630DD'''
 0 = [
    '''Normal''',
    '''Covered''',
    '''Split''',
+   '''Triple''',
 ]
 
 [[List]]
@@ -7368,8 +7392,8 @@ Destination = '''data.items.stats'''
 
 [[GotoShortcut]]
 Name = '''Maps'''
-Image = '''data.maps.banks/3/maps/21/map/0/layout/0/blockmap/'''
-Destination = '''maps.bank3.Percorso 3.3-21'''
+Image = '''data.maps.banks/7/maps/6/map/0/layout/0/blockmap/'''
+Destination = '''maps.bank7.Roccavento.7-6'''
 
 #################################
 [[TableGroup]]

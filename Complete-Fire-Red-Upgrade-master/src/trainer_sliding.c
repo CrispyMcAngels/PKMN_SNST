@@ -34,6 +34,7 @@ static const struct TrainerSlide sTrainerSlides[] =
 	{0x36, NULL, sText_EleonoraLast, NULL, BGM_BATTLE_LASTGYMLEADERMON},
 	{0x37, NULL, NULL, sText_ErisLowHP, BGM_BATTLE_LOWHP},
 	{0x4E, NULL, sText_VesperLast, NULL, BGM_BATTLE_LASTGYMLEADERMON},
+	{0x53, NULL, sText_Naomi3Last, NULL, BGM_BATTLE_LASTGYMLEADERMON},
 
 };
 

@@ -809,7 +809,8 @@ bool8 StandardWildEncounter(const u32 currMetaTileBehavior, const u16 previousMe
 		}
 	}
 	else if (lowerByte & TILE_FLAG_SURFABLE
-		 &&  (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING) || (currMetaTileBehavior & 0xFF) == MB_CAVE)) //For alternate grass data on route
+		 &&  (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING) || (currMetaTileBehavior & 0xFF) == MB_CAVE //For alternate grass data on route
+		   || (currMetaTileBehavior & 0xFF) == MB_04)) //Ricefield grass: walkable water that uses the water table (Risaia Rosa)
 	{
 		if (previousMetaTileBehavior != GetMetatileAttributeFromRawMetatileBehavior(currMetaTileBehavior, METATILE_ATTRIBUTE_BEHAVIOR)
 		&& !DoGlobalWildEncounterDiceRoll())

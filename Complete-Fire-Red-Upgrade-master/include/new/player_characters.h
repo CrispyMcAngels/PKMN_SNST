@@ -85,3 +85,4 @@ void LoadBagSpriteSheet(void);
 void LoadBagSpritePalette(void);
 u8 TrySwitchBagPocketRight(u8 pocket);
 bool8 TrainerCard_HideAchievements(void);
+void TrainerCard_TryLoadEchoGfx(void);

@@ -23,6 +23,7 @@ gMapScripts_Roccavento_3_3:
 			end	
 
 	Roccavento_3_3_MapScriptOnLoad:
+		sethealingplace 0x4 @Whiting out brings the player back to the pizzeria's nurse (7.6)
 		compare 0x4051 0x4C
 		if 0x1 _call Roccavento_3_3_MapScriptOnLoad_1
 		end
@@ -202,6 +203,26 @@ EventScript_Roccavento_3_3_NPC14:
 	release
 	end
 
+.global EventScript_Roccavento_3_3_NPC16
+EventScript_Roccavento_3_3_NPC16:
+	lock
+	faceplayer
+	msgbox Roccavento_3_3_NPC16_text1 MSG_NORMAL
+	release
+	end
+
+.global EventScript_Roccavento_3_3_NPC17
+EventScript_Roccavento_3_3_NPC17:
+	lock
+	faceplayer
+	msgbox Roccavento_3_3_NPC17_text1 MSG_NORMAL
+	pause 0x1E
+	spriteface 0x18 0x4
+	pause 0x3E
+	msgbox Roccavento_3_3_NPC17_text2 MSG_NORMAL
+	release
+	end
+
 
 //___SIGNs___
 
@@ -258,4 +279,20 @@ EventScript_Roccavento_3_3_Sign12:
 .global EventScript_Roccavento_3_3_Sign13
 EventScript_Roccavento_3_3_Sign13:
 	msgbox Roccavento_3_3_Sign13_text1 0x7
+	end
+
+@Poke Balls on the ground: the item, and the object's flag (set in HMA) hides them once taken
+.global EventScript_Roccavento_3_3_ItemBall_FloatStone
+EventScript_Roccavento_3_3_ItemBall_FloatStone: @npc 19, flag 0x1A6: Float Stone
+	finditem 0x2BD 0x1
+	end
+
+.global EventScript_Roccavento_3_3_ItemBall_SuperRepels
+EventScript_Roccavento_3_3_ItemBall_SuperRepels: @npc 20, flag 0x1BC: Super Repel x2
+	finditem 0x53 0x2
+	end
+
+.global EventScript_Roccavento_3_3_ItemBall_Ether
+EventScript_Roccavento_3_3_ItemBall_Ether: @npc 21, flag 0x1BD: Ether
+	finditem 0x22 0x1
 	end
